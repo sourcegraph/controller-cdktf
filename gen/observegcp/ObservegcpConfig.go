@@ -42,7 +42,7 @@ type ObservegcpConfig struct {
 	// Memory (in MB), available to the function.
 	//
 	// Default value is 512. Possible values include 128, 256, 512, 1024, etc.
-	// 4,096.
+	// 4096.
 	FunctionAvailableMemoryMb *float64 `field:"optional" json:"functionAvailableMemoryMb" yaml:"functionAvailableMemoryMb"`
 	// GCS bucket containing the Cloud Function source code observeinc.
 	FunctionBucket *string `field:"optional" json:"functionBucket" yaml:"functionBucket"`
