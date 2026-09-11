@@ -12,7 +12,7 @@ func (c *jsiiProxy_CodepipelineArtifactStoreList) validateGetParameters(index *f
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineArtifactStoreList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineArtifactStoreList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CodepipelineArtifactStoreList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineArtifactStoreList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodepipelineArtifactStoreList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CodepipelineArtifactStoreList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewCodepipelineArtifactStoreListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCodepipelineArtifactStoreListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

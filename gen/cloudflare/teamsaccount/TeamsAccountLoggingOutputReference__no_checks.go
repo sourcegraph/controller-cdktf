@@ -40,7 +40,7 @@ func (t *jsiiProxy_TeamsAccountLoggingOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (t *jsiiProxy_TeamsAccountLoggingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TeamsAccountLoggingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (t *jsiiProxy_TeamsAccountLoggingOutputReference) validatePutSettingsByRule
 	return nil
 }
 
-func (t *jsiiProxy_TeamsAccountLoggingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TeamsAccountLoggingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_TeamsAccountLoggingOutputReference) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountLoggingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TeamsAccountLoggingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTeamsAccountLoggingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTeamsAccountLoggingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

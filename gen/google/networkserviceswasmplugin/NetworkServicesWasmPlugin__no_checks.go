@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetworkServicesWasmPlugin) validateInterpolationForAttributeP
 	return nil
 }
 
+func (n *jsiiProxy_NetworkServicesWasmPlugin) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkServicesWasmPlugin) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (n *jsiiProxy_NetworkServicesWasmPlugin) validatePutTimeoutsParameters(valu
 }
 
 func (n *jsiiProxy_NetworkServicesWasmPlugin) validatePutVersionsParameters(value interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkServicesWasmPlugin) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_NetworkServicesWasmPlugin) validateSetLabelsParameters(val *m
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPlugin) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetworkServicesWasmPlugin) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

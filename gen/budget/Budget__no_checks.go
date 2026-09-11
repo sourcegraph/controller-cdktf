@@ -24,6 +24,10 @@ func (b *jsiiProxy_Budget) validateOverrideLogicalIdParameters(newLogicalId *str
 	return nil
 }
 
+func (b *jsiiProxy_Budget) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateBudget_IsConstructParameters(x interface{}) error {
 	return nil
 }

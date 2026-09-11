@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/monitorv2/internal"
 )
 
 type MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference interfac
 
 // The jsii proxy struct for MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference
 type jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputRefe
 }
 
 
-func NewMonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference {
+func NewMonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewMonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference(terra
 	j := jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.monitorV2.MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference",
+		"@cdktn/provider-observe.monitorV2.MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewMonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference(terra
 	return &j
 }
 
-func NewMonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference_Override(m MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference_Override(m MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.monitorV2.MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference",
+		"@cdktn/provider-observe.monitorV2.MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputRefe
 	)
 }
 
-func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputRefe
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -455,8 +455,8 @@ func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputRefe
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -468,16 +468,16 @@ func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputRefe
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputRefe
 	)
 }
 
-func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsColumnColumnPathOutputRefe
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

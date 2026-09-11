@@ -12,7 +12,7 @@ func (g *jsiiProxy_GkeHubMembershipBindingStateList) validateGetParameters(index
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubMembershipBindingStateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubMembershipBindingStateList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GkeHubMembershipBindingStateList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubMembershipBindingStateList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GkeHubMembershipBindingStateList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GkeHubMembershipBindingStateList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewGkeHubMembershipBindingStateListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGkeHubMembershipBindingStateListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

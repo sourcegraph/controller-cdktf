@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeList) validateGetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewComputeSubnetworkSecondaryIpRangeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeSubnetworkSecondaryIpRangeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

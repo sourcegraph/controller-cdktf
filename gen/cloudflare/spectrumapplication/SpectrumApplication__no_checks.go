@@ -56,6 +56,10 @@ func (s *jsiiProxy_SpectrumApplication) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_SpectrumApplication) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpectrumApplication) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (s *jsiiProxy_SpectrumApplication) validatePutOriginDnsParameters(value *Sp
 }
 
 func (s *jsiiProxy_SpectrumApplication) validatePutOriginPortRangeParameters(value *SpectrumApplicationOriginPortRange) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpectrumApplication) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_SpectrumApplication) validateSetIpFirewallParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_SpectrumApplication) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SpectrumApplication) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

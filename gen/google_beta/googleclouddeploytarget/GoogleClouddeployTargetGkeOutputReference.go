@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleclouddeploytarget/internal"
 )
 
 type GoogleClouddeployTargetGkeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Cluster() *string
 	SetCluster(val *string)
 	ClusterInput() *string
@@ -46,15 +46,15 @@ type GoogleClouddeployTargetGkeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,16 +70,16 @@ type GoogleClouddeployTargetGkeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCluster()
 	ResetDnsEndpoint()
 	ResetInternalIp()
 	ResetProxyUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type GoogleClouddeployTargetGkeOutputReference interface {
 
 // The jsii proxy struct for GoogleClouddeployTargetGkeOutputReference
 type jsiiProxy_GoogleClouddeployTargetGkeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) Cluster() *string {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) TerraformResource(
 }
 
 
-func NewGoogleClouddeployTargetGkeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleClouddeployTargetGkeOutputReference {
+func NewGoogleClouddeployTargetGkeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleClouddeployTargetGkeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleClouddeployTargetGkeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewGoogleClouddeployTargetGkeOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_GoogleClouddeployTargetGkeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetGkeOutputReference",
+		"@cdktn/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetGkeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewGoogleClouddeployTargetGkeOutputReference(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewGoogleClouddeployTargetGkeOutputReference_Override(g GoogleClouddeployTargetGkeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleClouddeployTargetGkeOutputReference_Override(g GoogleClouddeployTargetGkeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetGkeOutputReference",
+		"@cdktn/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetGkeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -358,7 +358,7 @@ func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleClouddeployTargetGkeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,11 +398,11 @@ func (g *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) GetAnyMapAttribute
 	return returns
 }
 
-func (g *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -526,8 +526,8 @@ func (g *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) GetStringMapAttrib
 	return returns
 }
 
-func (g *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -539,16 +539,16 @@ func (g *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (g *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (g *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) ResetProxyUrl() {
 	)
 }
 
-func (g *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (g *jsiiProxy_GoogleClouddeployTargetGkeOutputReference) Resolve(_context c
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

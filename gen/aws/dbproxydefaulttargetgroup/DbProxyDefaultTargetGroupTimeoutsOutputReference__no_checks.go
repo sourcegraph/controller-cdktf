@@ -40,11 +40,11 @@ func (d *jsiiProxy_DbProxyDefaultTargetGroupTimeoutsOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DbProxyDefaultTargetGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DbProxyDefaultTargetGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DbProxyDefaultTargetGroupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DbProxyDefaultTargetGroupTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_DbProxyDefaultTargetGroupTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DbProxyDefaultTargetGroupTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DbProxyDefaultTargetGroupTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DbProxyDefaultTargetGroupTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func validateNewDbProxyDefaultTargetGroupTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDbProxyDefaultTargetGroupTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeWireGroup) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeWireGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeWireGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (g *jsiiProxy_GoogleComputeWireGroup) validatePutWireGroupPropertiesParamet
 }
 
 func (g *jsiiProxy_GoogleComputeWireGroup) validatePutWirePropertiesParameters(value *GoogleComputeWireGroupWireProperties) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeWireGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleComputeWireGroup) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeWireGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

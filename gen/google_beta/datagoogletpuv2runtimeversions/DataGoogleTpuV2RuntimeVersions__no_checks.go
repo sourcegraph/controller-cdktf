@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleTpuV2RuntimeVersions) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleTpuV2RuntimeVersions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

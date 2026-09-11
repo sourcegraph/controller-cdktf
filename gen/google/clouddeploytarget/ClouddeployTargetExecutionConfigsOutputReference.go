@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/clouddeploytarget/internal"
 )
 
 type ClouddeployTargetExecutionConfigsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ArtifactStorage() *string
 	SetArtifactStorage(val *string)
 	ArtifactStorageInput() *string
@@ -47,9 +47,9 @@ type ClouddeployTargetExecutionConfigsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Usages() *[]*string
 	SetUsages(val *[]*string)
 	UsagesInput() *[]*string
@@ -64,7 +64,7 @@ type ClouddeployTargetExecutionConfigsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -80,9 +80,9 @@ type ClouddeployTargetExecutionConfigsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDefaultPool(value *ClouddeployTargetExecutionConfigsDefaultPool)
 	PutPrivatePool(value *ClouddeployTargetExecutionConfigsPrivatePool)
 	ResetArtifactStorage()
@@ -94,7 +94,7 @@ type ClouddeployTargetExecutionConfigsOutputReference interface {
 	ResetWorkerPool()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,7 +104,7 @@ type ClouddeployTargetExecutionConfigsOutputReference interface {
 
 // The jsii proxy struct for ClouddeployTargetExecutionConfigsOutputReference
 type jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) ArtifactStorage() *string {
@@ -267,8 +267,8 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -338,7 +338,7 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) WorkerPoolI
 }
 
 
-func NewClouddeployTargetExecutionConfigsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ClouddeployTargetExecutionConfigsOutputReference {
+func NewClouddeployTargetExecutionConfigsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ClouddeployTargetExecutionConfigsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewClouddeployTargetExecutionConfigsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -347,7 +347,7 @@ func NewClouddeployTargetExecutionConfigsOutputReference(terraformResource cdktf
 	j := jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference",
+		"@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -355,11 +355,11 @@ func NewClouddeployTargetExecutionConfigsOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewClouddeployTargetExecutionConfigsOutputReference_Override(c ClouddeployTargetExecutionConfigsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewClouddeployTargetExecutionConfigsOutputReference_Override(c ClouddeployTargetExecutionConfigsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference",
+		"@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -442,7 +442,7 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,11 +515,11 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -643,8 +643,8 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) GetStringMa
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -656,16 +656,16 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) Interpolati
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -750,8 +750,8 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) ResetWorker
 	)
 }
 
-func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -759,7 +759,7 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

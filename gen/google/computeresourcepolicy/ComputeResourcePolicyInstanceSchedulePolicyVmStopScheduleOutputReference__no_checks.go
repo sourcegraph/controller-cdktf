@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutp
 	return nil
 }
 
-func (c *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutp
 	return nil
 }
 
-func (j *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

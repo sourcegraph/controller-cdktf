@@ -56,6 +56,10 @@ func (s *jsiiProxy_ServiceNetworkingVpcServiceControls) validateInterpolationFor
 	return nil
 }
 
+func (s *jsiiProxy_ServiceNetworkingVpcServiceControls) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceNetworkingVpcServiceControls) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_ServiceNetworkingVpcServiceControls) validateOverrideLogicalI
 }
 
 func (s *jsiiProxy_ServiceNetworkingVpcServiceControls) validatePutTimeoutsParameters(value *ServiceNetworkingVpcServiceControlsTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceNetworkingVpcServiceControls) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_ServiceNetworkingVpcServiceControls) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ServiceNetworkingVpcServiceControls) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ServiceNetworkingVpcServiceControls) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

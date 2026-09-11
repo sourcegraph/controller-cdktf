@@ -40,11 +40,11 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigEndTimeOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ConnectHoursOfOperationConfigEndTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConnectHoursOfOperationConfigEndTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConnectHoursOfOperationConfigEndTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectHoursOfOperationConfigEndTimeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ConnectHoursOfOperationConfigEndTimeOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ConnectHoursOfOperationConfigEndTimeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ConnectHoursOfOperationConfigEndTimeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewConnectHoursOfOperationConfigEndTimeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewConnectHoursOfOperationConfigEndTimeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

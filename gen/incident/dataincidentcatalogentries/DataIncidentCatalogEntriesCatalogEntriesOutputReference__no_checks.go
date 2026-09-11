@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataIncidentCatalogEntriesCatalogEntriesOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataIncidentCatalogEntriesCatalogEntriesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIncidentCatalogEntriesCatalogEntriesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIncidentCatalogEntriesCatalogEntriesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIncidentCatalogEntriesCatalogEntriesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataIncidentCatalogEntriesCatalogEntriesOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataIncidentCatalogEntriesCatalogEntriesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataIncidentCatalogEntriesCatalogEntriesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataIncidentCatalogEntriesCatalogEntriesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataIncidentCatalogEntriesCatalogEntriesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

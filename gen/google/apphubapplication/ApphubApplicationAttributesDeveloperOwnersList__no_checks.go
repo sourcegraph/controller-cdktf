@@ -12,7 +12,7 @@ func (a *jsiiProxy_ApphubApplicationAttributesDeveloperOwnersList) validateGetPa
 	return nil
 }
 
-func (a *jsiiProxy_ApphubApplicationAttributesDeveloperOwnersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApphubApplicationAttributesDeveloperOwnersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ApphubApplicationAttributesDeveloperOwnersList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_ApphubApplicationAttributesDeveloperOwnersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApphubApplicationAttributesDeveloperOwnersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ApphubApplicationAttributesDeveloperOwnersList) validateSetWr
 	return nil
 }
 
-func validateNewApphubApplicationAttributesDeveloperOwnersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewApphubApplicationAttributesDeveloperOwnersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

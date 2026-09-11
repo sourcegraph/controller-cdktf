@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/lambdafunction/internal"
 )
 
 type LambdaFunctionSnapStartOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ApplyOn() *string
 	SetApplyOn(val *string)
 	ApplyOnInput() *string
@@ -38,15 +38,15 @@ type LambdaFunctionSnapStartOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,12 +62,12 @@ type LambdaFunctionSnapStartOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type LambdaFunctionSnapStartOutputReference interface {
 
 // The jsii proxy struct for LambdaFunctionSnapStartOutputReference
 type jsiiProxy_LambdaFunctionSnapStartOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference) ApplyOn() *string {
@@ -170,8 +170,8 @@ func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference) TerraformAttribute() 
 	return returns
 }
 
-func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -181,7 +181,7 @@ func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference) TerraformResource() c
 }
 
 
-func NewLambdaFunctionSnapStartOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LambdaFunctionSnapStartOutputReference {
+func NewLambdaFunctionSnapStartOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LambdaFunctionSnapStartOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLambdaFunctionSnapStartOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -190,7 +190,7 @@ func NewLambdaFunctionSnapStartOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_LambdaFunctionSnapStartOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionSnapStartOutputReference",
+		"@cdktn/provider-aws.lambdaFunction.LambdaFunctionSnapStartOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -198,11 +198,11 @@ func NewLambdaFunctionSnapStartOutputReference(terraformResource cdktf.IInterpol
 	return &j
 }
 
-func NewLambdaFunctionSnapStartOutputReference_Override(l LambdaFunctionSnapStartOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLambdaFunctionSnapStartOutputReference_Override(l LambdaFunctionSnapStartOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionSnapStartOutputReference",
+		"@cdktn/provider-aws.lambdaFunction.LambdaFunctionSnapStartOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -263,7 +263,7 @@ func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LambdaFunctionSnapStartOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,11 +303,11 @@ func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) GetAnyMapAttribute(te
 	return returns
 }
 
-func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -431,8 +431,8 @@ func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) GetStringMapAttribute
 	return returns
 }
 
-func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -444,24 +444,24 @@ func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -469,7 +469,7 @@ func (l *jsiiProxy_LambdaFunctionSnapStartOutputReference) Resolve(_context cdkt
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

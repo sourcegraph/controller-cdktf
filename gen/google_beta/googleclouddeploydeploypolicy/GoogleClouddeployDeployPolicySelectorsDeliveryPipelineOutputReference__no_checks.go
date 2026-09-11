@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleClouddeployDeployPolicySelectorsDeliveryPipelineOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployDeployPolicySelectorsDeliveryPipelineOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleClouddeployDeployPolicySelectorsDeliveryPipelineOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployDeployPolicySelectorsDeliveryPipelineOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleClouddeployDeployPolicySelectorsDeliveryPipelineOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleClouddeployDeployPolicySelectorsDeliveryPipelineOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeployPolicySelectorsDeliveryPipelineOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleClouddeployDeployPolicySelectorsDeliveryPipelineOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleClouddeployDeployPolicySelectorsDeliveryPipelineOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleClouddeployDeployPolicySelectorsDeliveryPipelineOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

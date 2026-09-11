@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleMonitoringSloRequestBasedSliOutputReference) validateGe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringSloRequestBasedSliOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMonitoringSloRequestBasedSliOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleMonitoringSloRequestBasedSliOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringSloRequestBasedSliOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMonitoringSloRequestBasedSliOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleMonitoringSloRequestBasedSliOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringSloRequestBasedSliOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMonitoringSloRequestBasedSliOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleMonitoringSloRequestBasedSliOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleMonitoringSloRequestBasedSliOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

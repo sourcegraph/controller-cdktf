@@ -12,7 +12,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressToPodSelectorMatchExpressionsList) v
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecEgressToPodSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkPolicyV1SpecEgressToPodSelectorMatchExpressionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_NetworkPolicyV1SpecEgressToPodSelectorMatchExpressionsList) v
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecEgressToPodSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkPolicyV1SpecEgressToPodSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_NetworkPolicyV1SpecEgressToPodSelectorMatchExpressionsList) v
 	return nil
 }
 
-func validateNewNetworkPolicyV1SpecEgressToPodSelectorMatchExpressionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNetworkPolicyV1SpecEgressToPodSelectorMatchExpressionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

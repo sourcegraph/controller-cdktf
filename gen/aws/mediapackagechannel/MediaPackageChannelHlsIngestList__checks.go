@@ -5,7 +5,7 @@ package mediapackagechannel
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (m *jsiiProxy_MediaPackageChannelHlsIngestList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (m *jsiiProxy_MediaPackageChannelHlsIngestList) validateGetParameters(index
 	return nil
 }
 
-func (m *jsiiProxy_MediaPackageChannelHlsIngestList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (m *jsiiProxy_MediaPackageChannelHlsIngestList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_MediaPackageChannelHlsIngestList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_MediaPackageChannelHlsIngestList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MediaPackageChannelHlsIngestList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_MediaPackageChannelHlsIngestList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewMediaPackageChannelHlsIngestListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMediaPackageChannelHlsIngestListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

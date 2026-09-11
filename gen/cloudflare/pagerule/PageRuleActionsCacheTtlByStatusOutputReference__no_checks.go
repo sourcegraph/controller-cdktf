@@ -40,11 +40,11 @@ func (p *jsiiProxy_PageRuleActionsCacheTtlByStatusOutputReference) validateGetSt
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsCacheTtlByStatusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PageRuleActionsCacheTtlByStatusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsCacheTtlByStatusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PageRuleActionsCacheTtlByStatusOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_PageRuleActionsCacheTtlByStatusOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheTtlByStatusOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PageRuleActionsCacheTtlByStatusOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_PageRuleActionsCacheTtlByStatusOutputReference) validateSetTt
 	return nil
 }
 
-func validateNewPageRuleActionsCacheTtlByStatusOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPageRuleActionsCacheTtlByStatusOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

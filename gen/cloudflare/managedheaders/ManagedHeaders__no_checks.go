@@ -56,6 +56,10 @@ func (m *jsiiProxy_ManagedHeaders) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (m *jsiiProxy_ManagedHeaders) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedHeaders) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (m *jsiiProxy_ManagedHeaders) validatePutManagedRequestHeadersParameters(va
 }
 
 func (m *jsiiProxy_ManagedHeaders) validatePutManagedResponseHeadersParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagedHeaders) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_ManagedHeaders) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ManagedHeaders) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ManagedHeaders) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

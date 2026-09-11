@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplate",
 		reflect.TypeOf((*FisExperimentTemplate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -40,6 +40,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -52,6 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTarget", GoMethod: "PutTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
@@ -79,19 +81,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_FisExperimentTemplate{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateAction",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateAction",
 		reflect.TypeOf((*FisExperimentTemplateAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionList",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionList",
 		reflect.TypeOf((*FisExperimentTemplateActionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -108,12 +111,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FisExperimentTemplateActionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionOutputReference",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionOutputReference",
 		reflect.TypeOf((*FisExperimentTemplateActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionId", GoGetter: "ActionId"},
@@ -158,16 +161,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FisExperimentTemplateActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionParameter",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionParameter",
 		reflect.TypeOf((*FisExperimentTemplateActionParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionParameterList",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionParameterList",
 		reflect.TypeOf((*FisExperimentTemplateActionParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -184,12 +187,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FisExperimentTemplateActionParameterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionParameterOutputReference",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionParameterOutputReference",
 		reflect.TypeOf((*FisExperimentTemplateActionParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -220,16 +223,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FisExperimentTemplateActionParameterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionTarget",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionTarget",
 		reflect.TypeOf((*FisExperimentTemplateActionTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionTargetOutputReference",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionTargetOutputReference",
 		reflect.TypeOf((*FisExperimentTemplateActionTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -260,20 +263,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FisExperimentTemplateActionTargetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateConfig",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateConfig",
 		reflect.TypeOf((*FisExperimentTemplateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateStopCondition",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateStopCondition",
 		reflect.TypeOf((*FisExperimentTemplateStopCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateStopConditionList",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateStopConditionList",
 		reflect.TypeOf((*FisExperimentTemplateStopConditionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -290,12 +293,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FisExperimentTemplateStopConditionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateStopConditionOutputReference",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateStopConditionOutputReference",
 		reflect.TypeOf((*FisExperimentTemplateStopConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -327,20 +330,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FisExperimentTemplateStopConditionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTarget",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateTarget",
 		reflect.TypeOf((*FisExperimentTemplateTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetFilter",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetFilter",
 		reflect.TypeOf((*FisExperimentTemplateTargetFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetFilterList",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetFilterList",
 		reflect.TypeOf((*FisExperimentTemplateTargetFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -357,12 +360,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FisExperimentTemplateTargetFilterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetFilterOutputReference",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetFilterOutputReference",
 		reflect.TypeOf((*FisExperimentTemplateTargetFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -393,12 +396,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FisExperimentTemplateTargetFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetList",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetList",
 		reflect.TypeOf((*FisExperimentTemplateTargetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -415,12 +418,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FisExperimentTemplateTargetList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetOutputReference",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetOutputReference",
 		reflect.TypeOf((*FisExperimentTemplateTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -464,16 +467,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FisExperimentTemplateTargetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetResourceTag",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetResourceTag",
 		reflect.TypeOf((*FisExperimentTemplateTargetResourceTag)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetResourceTagList",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetResourceTagList",
 		reflect.TypeOf((*FisExperimentTemplateTargetResourceTagList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -490,12 +493,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FisExperimentTemplateTargetResourceTagList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetResourceTagOutputReference",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetResourceTagOutputReference",
 		reflect.TypeOf((*FisExperimentTemplateTargetResourceTagOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -526,16 +529,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FisExperimentTemplateTargetResourceTagOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTimeouts",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateTimeouts",
 		reflect.TypeOf((*FisExperimentTemplateTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTimeoutsOutputReference",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateTimeoutsOutputReference",
 		reflect.TypeOf((*FisExperimentTemplateTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -571,7 +574,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FisExperimentTemplateTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

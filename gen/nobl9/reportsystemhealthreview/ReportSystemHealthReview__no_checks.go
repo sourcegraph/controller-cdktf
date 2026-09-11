@@ -56,6 +56,10 @@ func (r *jsiiProxy_ReportSystemHealthReview) validateInterpolationForAttributePa
 	return nil
 }
 
+func (r *jsiiProxy_ReportSystemHealthReview) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_ReportSystemHealthReview) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (r *jsiiProxy_ReportSystemHealthReview) validatePutThresholdsParameters(val
 }
 
 func (r *jsiiProxy_ReportSystemHealthReview) validatePutTimeFrameParameters(value *ReportSystemHealthReviewTimeFrame) error {
+	return nil
+}
+
+func (r *jsiiProxy_ReportSystemHealthReview) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_ReportSystemHealthReview) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ReportSystemHealthReview) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

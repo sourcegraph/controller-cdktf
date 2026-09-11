@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlemonitoringuptimecheckconfig/internal"
 )
 
 type GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,14 +63,14 @@ type GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutPingConfig(value *GoogleMonitoringUptimeCheckConfigTcpCheckPingConfig)
 	ResetPingConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference interface {
 
 // The jsii proxy struct for GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference
 type jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) Ter
 }
 
 
-func NewGoogleMonitoringUptimeCheckConfigTcpCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference {
+func NewGoogleMonitoringUptimeCheckConfigTcpCheckOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleMonitoringUptimeCheckConfigTcpCheckOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewGoogleMonitoringUptimeCheckConfigTcpCheckOutputReference(terraformResour
 	j := jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference",
+		"@cdktn/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewGoogleMonitoringUptimeCheckConfigTcpCheckOutputReference(terraformResour
 	return &j
 }
 
-func NewGoogleMonitoringUptimeCheckConfigTcpCheckOutputReference_Override(g GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleMonitoringUptimeCheckConfigTcpCheckOutputReference_Override(g GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference",
+		"@cdktn/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) Get
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -444,8 +444,8 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) Get
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -457,16 +457,16 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) Int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) Res
 	)
 }
 
-func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) Res
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apihubPlugin.ApihubPlugin",
+		"@cdktn/provider-google.apihubPlugin.ApihubPlugin",
 		reflect.TypeOf((*ApihubPlugin)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionsConfig", GoGetter: "ActionsConfig"},
@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -72,6 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putHostingService", GoMethod: "PutHostingService"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetActionsConfig", GoMethod: "ResetActionsConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConfigTemplate", GoMethod: "ResetConfigTemplate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -95,19 +97,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ApihubPlugin{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginActionsConfig",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginActionsConfig",
 		reflect.TypeOf((*ApihubPluginActionsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginActionsConfigList",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginActionsConfigList",
 		reflect.TypeOf((*ApihubPluginActionsConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -124,12 +127,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApihubPluginActionsConfigList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginActionsConfigOutputReference",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginActionsConfigOutputReference",
 		reflect.TypeOf((*ApihubPluginActionsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -164,28 +167,28 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApihubPluginActionsConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginConfig",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginConfig",
 		reflect.TypeOf((*ApihubPluginConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginConfigTemplate",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginConfigTemplate",
 		reflect.TypeOf((*ApihubPluginConfigTemplate)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginConfigTemplateAdditionalConfigTemplate",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginConfigTemplateAdditionalConfigTemplate",
 		reflect.TypeOf((*ApihubPluginConfigTemplateAdditionalConfigTemplate)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions",
 		reflect.TypeOf((*ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsList",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsList",
 		reflect.TypeOf((*ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -202,12 +205,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference",
 		reflect.TypeOf((*ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -241,12 +244,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginConfigTemplateAdditionalConfigTemplateList",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginConfigTemplateAdditionalConfigTemplateList",
 		reflect.TypeOf((*ApihubPluginConfigTemplateAdditionalConfigTemplateList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -263,16 +266,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptions",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptions",
 		reflect.TypeOf((*ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsList",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsList",
 		reflect.TypeOf((*ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -289,12 +292,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsOutputReference",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsOutputReference",
 		reflect.TypeOf((*ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -328,12 +331,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginConfigTemplateAdditionalConfigTemplateOutputReference",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginConfigTemplateAdditionalConfigTemplateOutputReference",
 		reflect.TypeOf((*ApihubPluginConfigTemplateAdditionalConfigTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -381,16 +384,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginConfigTemplateAuthConfigTemplate",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginConfigTemplateAuthConfigTemplate",
 		reflect.TypeOf((*ApihubPluginConfigTemplateAuthConfigTemplate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginConfigTemplateAuthConfigTemplateOutputReference",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginConfigTemplateAuthConfigTemplateOutputReference",
 		reflect.TypeOf((*ApihubPluginConfigTemplateAuthConfigTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -423,16 +426,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApihubPluginConfigTemplateAuthConfigTemplateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginConfigTemplateAuthConfigTemplateServiceAccount",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginConfigTemplateAuthConfigTemplateServiceAccount",
 		reflect.TypeOf((*ApihubPluginConfigTemplateAuthConfigTemplateServiceAccount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReference",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReference",
 		reflect.TypeOf((*ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -461,12 +464,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginConfigTemplateOutputReference",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginConfigTemplateOutputReference",
 		reflect.TypeOf((*ApihubPluginConfigTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalConfigTemplate", GoGetter: "AdditionalConfigTemplate"},
@@ -501,16 +504,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApihubPluginConfigTemplateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginDocumentation",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginDocumentation",
 		reflect.TypeOf((*ApihubPluginDocumentation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginDocumentationOutputReference",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginDocumentationOutputReference",
 		reflect.TypeOf((*ApihubPluginDocumentationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -540,16 +543,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApihubPluginDocumentationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginHostingService",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginHostingService",
 		reflect.TypeOf((*ApihubPluginHostingService)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginHostingServiceOutputReference",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginHostingServiceOutputReference",
 		reflect.TypeOf((*ApihubPluginHostingServiceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -579,16 +582,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApihubPluginHostingServiceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginTimeouts",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginTimeouts",
 		reflect.TypeOf((*ApihubPluginTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apihubPlugin.ApihubPluginTimeoutsOutputReference",
+		"@cdktn/provider-google.apihubPlugin.ApihubPluginTimeoutsOutputReference",
 		reflect.TypeOf((*ApihubPluginTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -621,7 +624,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApihubPluginTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleStorageTransferJob) validateInterpolationForAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageTransferJob) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageTransferJob) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (g *jsiiProxy_GoogleStorageTransferJob) validatePutTransferSpecParameters(v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageTransferJob) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleStorageTransferJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleStorageTransferJob) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleStorageTransferJob) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

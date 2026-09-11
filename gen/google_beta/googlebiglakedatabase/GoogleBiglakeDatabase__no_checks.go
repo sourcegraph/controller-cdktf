@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBiglakeDatabase) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBiglakeDatabase) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) validatePutHiveOptionsParameters(value
 }
 
 func (g *jsiiProxy_GoogleBiglakeDatabase) validatePutTimeoutsParameters(value *GoogleBiglakeDatabaseTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBiglakeDatabase) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleBiglakeDatabase) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleBiglakeDatabase) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

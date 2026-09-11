@@ -40,11 +40,11 @@ func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsColumnLinkColumnOutputReferen
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsColumnLinkColumnOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsColumnLinkColumnOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsColumnLinkColumnOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsColumnLinkColumnOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_MonitorV2RulesCountCompareGroupsColumnLinkColumnOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2RulesCountCompareGroupsColumnLinkColumnOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorV2RulesCountCompareGroupsColumnLinkColumnOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMonitorV2RulesCountCompareGroupsColumnLinkColumnOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitorV2RulesCountCompareGroupsColumnLinkColumnOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

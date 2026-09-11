@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/vmwareenginenetworkpolicy/internal"
 )
 
 type VmwareengineNetworkPolicyExternalIpOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,15 +38,15 @@ type VmwareengineNetworkPolicyExternalIpOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,13 +62,13 @@ type VmwareengineNetworkPolicyExternalIpOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,7 +78,7 @@ type VmwareengineNetworkPolicyExternalIpOutputReference interface {
 
 // The jsii proxy struct for VmwareengineNetworkPolicyExternalIpOutputReference
 type jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference) ComplexObjectIndex() interface{} {
@@ -171,8 +171,8 @@ func (j *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -182,7 +182,7 @@ func (j *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference) Terraform
 }
 
 
-func NewVmwareengineNetworkPolicyExternalIpOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VmwareengineNetworkPolicyExternalIpOutputReference {
+func NewVmwareengineNetworkPolicyExternalIpOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) VmwareengineNetworkPolicyExternalIpOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewVmwareengineNetworkPolicyExternalIpOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -191,7 +191,7 @@ func NewVmwareengineNetworkPolicyExternalIpOutputReference(terraformResource cdk
 	j := jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyExternalIpOutputReference",
+		"@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyExternalIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -199,11 +199,11 @@ func NewVmwareengineNetworkPolicyExternalIpOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewVmwareengineNetworkPolicyExternalIpOutputReference_Override(v VmwareengineNetworkPolicyExternalIpOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewVmwareengineNetworkPolicyExternalIpOutputReference_Override(v VmwareengineNetworkPolicyExternalIpOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyExternalIpOutputReference",
+		"@cdktn/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyExternalIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)
@@ -264,7 +264,7 @@ func (j *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,11 +304,11 @@ func (v *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference) GetAnyMap
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -432,8 +432,8 @@ func (v *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference) GetString
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (v *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -445,16 +445,16 @@ func (v *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference) Interpola
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -469,8 +469,8 @@ func (v *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference) ResetEnab
 	)
 }
 
-func (v *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -478,7 +478,7 @@ func (v *jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference) Resolve(_
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

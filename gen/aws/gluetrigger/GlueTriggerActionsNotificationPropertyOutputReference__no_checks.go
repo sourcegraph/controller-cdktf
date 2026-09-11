@@ -40,11 +40,11 @@ func (g *jsiiProxy_GlueTriggerActionsNotificationPropertyOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GlueTriggerActionsNotificationPropertyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueTriggerActionsNotificationPropertyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueTriggerActionsNotificationPropertyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueTriggerActionsNotificationPropertyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GlueTriggerActionsNotificationPropertyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GlueTriggerActionsNotificationPropertyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GlueTriggerActionsNotificationPropertyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGlueTriggerActionsNotificationPropertyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGlueTriggerActionsNotificationPropertyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

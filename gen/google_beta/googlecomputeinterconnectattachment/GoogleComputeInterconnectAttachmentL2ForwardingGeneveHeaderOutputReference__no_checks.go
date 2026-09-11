@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingGeneveHeaderOu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingGeneveHeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingGeneveHeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingGeneveHeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingGeneveHeaderOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingGeneveHeaderOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingGeneveHeaderOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingGeneveHeaderOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingGeneveHeaderOu
 	return nil
 }
 
-func validateNewGoogleComputeInterconnectAttachmentL2ForwardingGeneveHeaderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeInterconnectAttachmentL2ForwardingGeneveHeaderOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

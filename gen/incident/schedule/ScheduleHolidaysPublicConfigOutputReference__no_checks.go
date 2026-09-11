@@ -40,11 +40,11 @@ func (s *jsiiProxy_ScheduleHolidaysPublicConfigOutputReference) validateGetStrin
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleHolidaysPublicConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ScheduleHolidaysPublicConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleHolidaysPublicConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ScheduleHolidaysPublicConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ScheduleHolidaysPublicConfigOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleHolidaysPublicConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ScheduleHolidaysPublicConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewScheduleHolidaysPublicConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewScheduleHolidaysPublicConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

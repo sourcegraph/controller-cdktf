@@ -40,11 +40,11 @@ func (p *jsiiProxy_PreferredPathStepOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (p *jsiiProxy_PreferredPathStepOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PreferredPathStepOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PreferredPathStepOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PreferredPathStepOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_PreferredPathStepOutputReference) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_PreferredPathStepOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PreferredPathStepOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPreferredPathStepOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPreferredPathStepOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

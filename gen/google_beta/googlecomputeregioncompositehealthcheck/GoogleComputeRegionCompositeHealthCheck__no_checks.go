@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeRegionCompositeHealthCheck) validateInterpolatio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionCompositeHealthCheck) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionCompositeHealthCheck) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleComputeRegionCompositeHealthCheck) validateOverrideLogi
 }
 
 func (g *jsiiProxy_GoogleComputeRegionCompositeHealthCheck) validatePutTimeoutsParameters(value *GoogleComputeRegionCompositeHealthCheckTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionCompositeHealthCheck) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleComputeRegionCompositeHealthCheck) validateSetHealthSou
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionCompositeHealthCheck) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeRegionCompositeHealthCheck) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

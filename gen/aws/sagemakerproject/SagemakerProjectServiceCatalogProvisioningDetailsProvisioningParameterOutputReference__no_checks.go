@@ -40,11 +40,11 @@ func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsProvisioning
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsProvisioning
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsProvisioning
 	return nil
 }
 
-func validateNewSagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

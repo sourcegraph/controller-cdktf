@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaCluster",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster",
 		reflect.TypeOf((*ManagedKafkaCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -50,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -69,6 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "rebalanceConfig", GoGetter: "RebalanceConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rebalanceConfigInput", GoGetter: "RebalanceConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBrokerCapacityConfig", GoMethod: "ResetBrokerCapacityConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
@@ -93,19 +95,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKafkaCluster{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterBrokerCapacityConfig",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterBrokerCapacityConfig",
 		reflect.TypeOf((*ManagedKafkaClusterBrokerCapacityConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterBrokerCapacityConfigOutputReference",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterBrokerCapacityConfigOutputReference",
 		reflect.TypeOf((*ManagedKafkaClusterBrokerCapacityConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -135,16 +138,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKafkaClusterBrokerCapacityConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterCapacityConfig",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterCapacityConfig",
 		reflect.TypeOf((*ManagedKafkaClusterCapacityConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterCapacityConfigOutputReference",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterCapacityConfigOutputReference",
 		reflect.TypeOf((*ManagedKafkaClusterCapacityConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -175,28 +178,28 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKafkaClusterCapacityConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterConfig",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterConfig",
 		reflect.TypeOf((*ManagedKafkaClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfig",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfig",
 		reflect.TypeOf((*ManagedKafkaClusterGcpConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfig",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfig",
 		reflect.TypeOf((*ManagedKafkaClusterGcpConfigAccessConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigs",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigs",
 		reflect.TypeOf((*ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList",
 		reflect.TypeOf((*ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -213,12 +216,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference",
 		reflect.TypeOf((*ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -247,12 +250,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference",
 		reflect.TypeOf((*ManagedKafkaClusterGcpConfigAccessConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -282,12 +285,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigOutputReference",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigOutputReference",
 		reflect.TypeOf((*ManagedKafkaClusterGcpConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessConfig", GoGetter: "AccessConfig"},
@@ -320,16 +323,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKafkaClusterGcpConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterRebalanceConfig",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterRebalanceConfig",
 		reflect.TypeOf((*ManagedKafkaClusterRebalanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterRebalanceConfigOutputReference",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterRebalanceConfigOutputReference",
 		reflect.TypeOf((*ManagedKafkaClusterRebalanceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -359,16 +362,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterTimeouts",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTimeouts",
 		reflect.TypeOf((*ManagedKafkaClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterTimeoutsOutputReference",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTimeoutsOutputReference",
 		reflect.TypeOf((*ManagedKafkaClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -404,16 +407,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKafkaClusterTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfig",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfig",
 		reflect.TypeOf((*ManagedKafkaClusterTlsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfigOutputReference",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfigOutputReference",
 		reflect.TypeOf((*ManagedKafkaClusterTlsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -447,20 +450,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKafkaClusterTlsConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfigTrustConfig",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfigTrustConfig",
 		reflect.TypeOf((*ManagedKafkaClusterTlsConfigTrustConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfigTrustConfigCasConfigs",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfigTrustConfigCasConfigs",
 		reflect.TypeOf((*ManagedKafkaClusterTlsConfigTrustConfigCasConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfigTrustConfigCasConfigsList",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfigTrustConfigCasConfigsList",
 		reflect.TypeOf((*ManagedKafkaClusterTlsConfigTrustConfigCasConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -477,12 +480,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKafkaClusterTlsConfigTrustConfigCasConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfigTrustConfigCasConfigsOutputReference",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfigTrustConfigCasConfigsOutputReference",
 		reflect.TypeOf((*ManagedKafkaClusterTlsConfigTrustConfigCasConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caPool", GoGetter: "CaPool"},
@@ -511,12 +514,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKafkaClusterTlsConfigTrustConfigCasConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfigTrustConfigOutputReference",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfigTrustConfigOutputReference",
 		reflect.TypeOf((*ManagedKafkaClusterTlsConfigTrustConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "casConfigs", GoGetter: "CasConfigs"},
@@ -547,7 +550,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedKafkaClusterTlsConfigTrustConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

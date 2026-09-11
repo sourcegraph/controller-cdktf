@@ -56,6 +56,10 @@ func (s *jsiiProxy_SecurityhubFindingAggregator) validateInterpolationForAttribu
 	return nil
 }
 
+func (s *jsiiProxy_SecurityhubFindingAggregator) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityhubFindingAggregator) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (s *jsiiProxy_SecurityhubFindingAggregator) validateMoveToIdParameters(id *
 }
 
 func (s *jsiiProxy_SecurityhubFindingAggregator) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityhubFindingAggregator) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_SecurityhubFindingAggregator) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubFindingAggregator) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SecurityhubFindingAggregator) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

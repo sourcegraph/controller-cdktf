@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSecureSourceManagerInstanceWorkforceIdentityFederationC
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleSecureSourceManagerInstanceWorkforceIdentityFederationC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleSecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/hypercomputeclustercluster/internal"
 )
 
 type HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference i
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference i
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference i
 
 // The jsii proxy struct for HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference
 type jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOut
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOut
 }
 
 
-func NewHypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference {
+func NewHypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewHypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewHypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReferenc
 	j := jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference",
+		"@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewHypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReferenc
 	return &j
 }
 
-func NewHypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference_Override(h HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewHypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference_Override(h HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference",
+		"@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOut
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (h *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOut
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (h *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := h.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -455,8 +455,8 @@ func (h *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOut
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (h *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -468,16 +468,16 @@ func (h *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOut
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := h.validateInterpolationForAttributeParameters(property); err != nil {
+func (h *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (h *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOut
 	)
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := h.validateResolveParameters(_context); err != nil {
+func (h *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := h.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOut
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

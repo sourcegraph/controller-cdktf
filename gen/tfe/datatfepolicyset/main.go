@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySet",
+		"@cdktn/provider-tfe.dataTfePolicySet.DataTfePolicySet",
 		reflect.TypeOf((*DataTfePolicySet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "policyIds", GoGetter: "PolicyIds"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKind", GoMethod: "ResetKind"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOrganization", GoMethod: "ResetOrganization"},
@@ -63,24 +64,25 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vcsRepo", GoGetter: "VcsRepo"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIds", GoGetter: "WorkspaceIds"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataTfePolicySet{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySetConfig",
+		"@cdktn/provider-tfe.dataTfePolicySet.DataTfePolicySetConfig",
 		reflect.TypeOf((*DataTfePolicySetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySetVcsRepo",
+		"@cdktn/provider-tfe.dataTfePolicySet.DataTfePolicySetVcsRepo",
 		reflect.TypeOf((*DataTfePolicySetVcsRepo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySetVcsRepoList",
+		"@cdktn/provider-tfe.dataTfePolicySet.DataTfePolicySetVcsRepoList",
 		reflect.TypeOf((*DataTfePolicySetVcsRepoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -96,12 +98,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataTfePolicySetVcsRepoList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySetVcsRepoOutputReference",
+		"@cdktn/provider-tfe.dataTfePolicySet.DataTfePolicySetVcsRepoOutputReference",
 		reflect.TypeOf((*DataTfePolicySetVcsRepoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
@@ -133,7 +135,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataTfePolicySetVcsRepoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

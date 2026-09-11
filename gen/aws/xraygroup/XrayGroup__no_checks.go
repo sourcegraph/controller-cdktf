@@ -56,6 +56,10 @@ func (x *jsiiProxy_XrayGroup) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (x *jsiiProxy_XrayGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (x *jsiiProxy_XrayGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (x *jsiiProxy_XrayGroup) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (x *jsiiProxy_XrayGroup) validatePutInsightsConfigurationParameters(value *XrayGroupInsightsConfiguration) error {
+	return nil
+}
+
+func (x *jsiiProxy_XrayGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_XrayGroup) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_XrayGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_XrayGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

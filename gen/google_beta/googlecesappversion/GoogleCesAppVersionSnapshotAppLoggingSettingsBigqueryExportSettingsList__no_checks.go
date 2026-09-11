@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsBigqueryExportSe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsBigqueryExportSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsBigqueryExportSe
 	return nil
 }
 
-func validateNewGoogleCesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

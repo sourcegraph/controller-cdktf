@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkServicesEndpointPolicyTrafficPortSelectorOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEndpointPolicyTrafficPortSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkServicesEndpointPolicyTrafficPortSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEndpointPolicyTrafficPortSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesEndpointPolicyTrafficPortSelectorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleNetworkServicesEndpointPolicyTrafficPortSelectorOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEndpointPolicyTrafficPortSelectorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesEndpointPolicyTrafficPortSelectorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkServicesEndpointPolicyTrafficPortSelectorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkServicesEndpointPolicyTrafficPortSelectorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

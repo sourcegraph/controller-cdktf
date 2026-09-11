@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validateGetStringMap
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validatePutCondition
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*EscalationPathPathIfElseConditions:
 		value := value.(*[]*EscalationPathPathIfElseConditions)
@@ -114,7 +114,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validatePutCondition
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EscalationPathPathIfElseConditions; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*EscalationPathPathIfElseConditions; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validatePutElsePathP
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*EscalationPathPathIfElseElsePath:
 		value := value.(*[]*EscalationPathPathIfElseElsePath)
@@ -145,7 +145,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validatePutElsePathP
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EscalationPathPathIfElseElsePath; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*EscalationPathPathIfElseElsePath; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -157,7 +157,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validatePutThenPathP
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*EscalationPathPathIfElseThenPath:
 		value := value.(*[]*EscalationPathPathIfElseThenPath)
@@ -176,16 +176,16 @@ func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validatePutThenPathP
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EscalationPathPathIfElseThenPath; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*EscalationPathPathIfElseThenPath; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (e *jsiiProxy_EscalationPathPathIfElseOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -258,7 +258,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseOutputReference) validateSetComplexOb
 
 func (j *jsiiProxy_EscalationPathPathIfElseOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *EscalationPathPathIfElse:
 		val := val.(*EscalationPathPathIfElse)
@@ -273,7 +273,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseOutputReference) validateSetInternalV
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *EscalationPathPathIfElse; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *EscalationPathPathIfElse; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -288,7 +288,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EscalationPathPathIfElseOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -296,7 +296,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseOutputReference) validateSetTerraform
 	return nil
 }
 
-func validateNewEscalationPathPathIfElseOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEscalationPathPathIfElseOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

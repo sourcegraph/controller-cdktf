@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty",
+		"@cdktn/provider-okta.groupSchemaProperty.GroupSchemaProperty",
 		reflect.TypeOf((*GroupSchemaProperty)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -52,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "indexInput", GoGetter: "IndexInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "master", GoGetter: "Master"},
 			_jsii_.MemberProperty{JsiiProperty: "masterInput", GoGetter: "MasterInput"},
 			_jsii_.MemberProperty{JsiiProperty: "masterOverridePriority", GoGetter: "MasterOverridePriority"},
@@ -75,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMasterOverridePriority", GoMethod: "PutMasterOverridePriority"},
 			_jsii_.MemberMethod{JsiiMethod: "putOneOf", GoMethod: "PutOneOf"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "required", GoGetter: "Required"},
 			_jsii_.MemberProperty{JsiiProperty: "requiredInput", GoGetter: "RequiredInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetArrayEnum", GoMethod: "ResetArrayEnum"},
@@ -112,19 +114,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "unique", GoGetter: "Unique"},
 			_jsii_.MemberProperty{JsiiProperty: "uniqueInput", GoGetter: "UniqueInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GroupSchemaProperty{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOf",
+		"@cdktn/provider-okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOf",
 		reflect.TypeOf((*GroupSchemaPropertyArrayOneOf)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOfList",
+		"@cdktn/provider-okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOfList",
 		reflect.TypeOf((*GroupSchemaPropertyArrayOneOfList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -141,12 +144,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GroupSchemaPropertyArrayOneOfList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOfOutputReference",
+		"@cdktn/provider-okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOfOutputReference",
 		reflect.TypeOf((*GroupSchemaPropertyArrayOneOfOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -177,20 +180,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyConfig",
+		"@cdktn/provider-okta.groupSchemaProperty.GroupSchemaPropertyConfig",
 		reflect.TypeOf((*GroupSchemaPropertyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriority",
+		"@cdktn/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriority",
 		reflect.TypeOf((*GroupSchemaPropertyMasterOverridePriority)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriorityList",
+		"@cdktn/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriorityList",
 		reflect.TypeOf((*GroupSchemaPropertyMasterOverridePriorityList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -207,12 +210,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GroupSchemaPropertyMasterOverridePriorityList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriorityOutputReference",
+		"@cdktn/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriorityOutputReference",
 		reflect.TypeOf((*GroupSchemaPropertyMasterOverridePriorityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -244,16 +247,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyOneOf",
+		"@cdktn/provider-okta.groupSchemaProperty.GroupSchemaPropertyOneOf",
 		reflect.TypeOf((*GroupSchemaPropertyOneOf)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyOneOfList",
+		"@cdktn/provider-okta.groupSchemaProperty.GroupSchemaPropertyOneOfList",
 		reflect.TypeOf((*GroupSchemaPropertyOneOfList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -270,12 +273,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GroupSchemaPropertyOneOfList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyOneOfOutputReference",
+		"@cdktn/provider-okta.groupSchemaProperty.GroupSchemaPropertyOneOfOutputReference",
 		reflect.TypeOf((*GroupSchemaPropertyOneOfOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -306,7 +309,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GroupSchemaPropertyOneOfOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSourcesDataSourcesBackupConfigInfoGcpBa
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrDataSourcesDataSourcesBackupConfigInfoGcpBackupConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBackupDrDataSourcesDataSourcesBackupConfigInfoGcpBackupConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSourcesDataSourcesBackupConfigInfoGcpBa
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSourcesDataSourcesBackupConfigInfoGcpBackupConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleBackupDrDataSourcesDataSourcesBackupConfigInfoGcpBackupConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSourcesDataSourcesBackupConfigInfoGcpBa
 	return nil
 }
 
-func validateNewDataGoogleBackupDrDataSourcesDataSourcesBackupConfigInfoGcpBackupConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleBackupDrDataSourcesDataSourcesBackupConfigInfoGcpBackupConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutpu
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutpu
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

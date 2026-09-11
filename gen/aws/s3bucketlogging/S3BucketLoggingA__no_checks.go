@@ -56,6 +56,10 @@ func (s *jsiiProxy_S3BucketLoggingA) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketLoggingA) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketLoggingA) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_S3BucketLoggingA) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (s *jsiiProxy_S3BucketLoggingA) validatePutTargetGrantParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketLoggingA) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_S3BucketLoggingA) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLoggingA) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_S3BucketLoggingA) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (m *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutpu
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

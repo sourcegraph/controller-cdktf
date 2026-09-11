@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSourceTimeoutsOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccV2OrganizationSourceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSccV2OrganizationSourceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccV2OrganizationSourceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSccV2OrganizationSourceTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSourceTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSourceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSccV2OrganizationSourceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSourceTimeoutsOutputReference) validat
 	return nil
 }
 
-func validateNewGoogleSccV2OrganizationSourceTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleSccV2OrganizationSourceTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/appengineflexibleappversion/internal"
 )
 
 type AppEngineFlexibleAppVersionApiConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthFailAction() *string
 	SetAuthFailAction(val *string)
 	AuthFailActionInput() *string
@@ -46,9 +46,9 @@ type AppEngineFlexibleAppVersionApiConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -57,7 +57,7 @@ type AppEngineFlexibleAppVersionApiConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +73,16 @@ type AppEngineFlexibleAppVersionApiConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAuthFailAction()
 	ResetLogin()
 	ResetSecurityLevel()
 	ResetUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type AppEngineFlexibleAppVersionApiConfigOutputReference interface {
 
 // The jsii proxy struct for AppEngineFlexibleAppVersionApiConfigOutputReference
 type jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) AuthFailAction() *string {
@@ -235,8 +235,8 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -266,7 +266,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) UrlInput
 }
 
 
-func NewAppEngineFlexibleAppVersionApiConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppEngineFlexibleAppVersionApiConfigOutputReference {
+func NewAppEngineFlexibleAppVersionApiConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AppEngineFlexibleAppVersionApiConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAppEngineFlexibleAppVersionApiConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -275,7 +275,7 @@ func NewAppEngineFlexibleAppVersionApiConfigOutputReference(terraformResource cd
 	j := jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionApiConfigOutputReference",
+		"@cdktn/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionApiConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -283,11 +283,11 @@ func NewAppEngineFlexibleAppVersionApiConfigOutputReference(terraformResource cd
 	return &j
 }
 
-func NewAppEngineFlexibleAppVersionApiConfigOutputReference_Override(a AppEngineFlexibleAppVersionApiConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAppEngineFlexibleAppVersionApiConfigOutputReference_Override(a AppEngineFlexibleAppVersionApiConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionApiConfigOutputReference",
+		"@cdktn/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionApiConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -381,7 +381,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,11 +432,11 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) GetAnyMa
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -560,8 +560,8 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) GetStrin
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -573,16 +573,16 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) Interpol
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -621,8 +621,8 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) ResetUrl
 	)
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -630,7 +630,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) Resolve(
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

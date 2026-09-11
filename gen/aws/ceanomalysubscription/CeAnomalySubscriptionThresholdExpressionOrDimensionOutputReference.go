@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/ceanomalysubscription/internal"
 )
 
 type CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Values() *[]*string
 	SetValues(val *[]*string)
 	ValuesInput() *[]*string
@@ -51,7 +51,7 @@ type CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference interfac
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetKey()
 	ResetMatchOptions()
 	ResetValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference interfac
 
 // The jsii proxy struct for CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference
 type jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputRefe
 }
 
 
-func NewCeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference {
+func NewCeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCeAnomalySubscriptionThresholdExpressionOrDimensionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewCeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference(terra
 	j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference",
+		"@cdktn/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewCeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference(terra
 	return &j
 }
 
-func NewCeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference_Override(c CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference_Override(c CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference",
+		"@cdktn/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputRefe
 	)
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputRefe
 	return returns
 }
 
-func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -491,8 +491,8 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputRefe
 	return returns
 }
 
-func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -504,16 +504,16 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputRefe
 	return returns
 }
 
-func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputRefe
 	)
 }
 
-func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrDimensionOutputRefe
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleCesExample) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCesExample) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCesExample) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleCesExample) validatePutMessagesParameters(value interfa
 }
 
 func (g *jsiiProxy_GoogleCesExample) validatePutTimeoutsParameters(value *GoogleCesExampleTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesExample) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleCesExample) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesExample) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleCesExample) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

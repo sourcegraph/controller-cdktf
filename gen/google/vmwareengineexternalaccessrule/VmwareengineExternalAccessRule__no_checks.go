@@ -56,6 +56,10 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) validateInterpolationForAttri
 	return nil
 }
 
+func (v *jsiiProxy_VmwareengineExternalAccessRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareengineExternalAccessRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) validatePutSourceIpRangesPara
 }
 
 func (v *jsiiProxy_VmwareengineExternalAccessRule) validatePutTimeoutsParameters(value *VmwareengineExternalAccessRuleTimeouts) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareengineExternalAccessRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule) validateSetIpProtocolParamete
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

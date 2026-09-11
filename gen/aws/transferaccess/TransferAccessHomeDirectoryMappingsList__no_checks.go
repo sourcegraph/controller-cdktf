@@ -12,7 +12,7 @@ func (t *jsiiProxy_TransferAccessHomeDirectoryMappingsList) validateGetParameter
 	return nil
 }
 
-func (t *jsiiProxy_TransferAccessHomeDirectoryMappingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferAccessHomeDirectoryMappingsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_TransferAccessHomeDirectoryMappingsList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_TransferAccessHomeDirectoryMappingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TransferAccessHomeDirectoryMappingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_TransferAccessHomeDirectoryMappingsList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewTransferAccessHomeDirectoryMappingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewTransferAccessHomeDirectoryMappingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

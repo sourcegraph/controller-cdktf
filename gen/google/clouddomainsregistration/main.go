@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistration",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistration",
 		reflect.TypeOf((*ClouddomainsRegistration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -56,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "managementSettings", GoGetter: "ManagementSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "managementSettingsInput", GoGetter: "ManagementSettingsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -73,6 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putYearlyPrice", GoMethod: "PutYearlyPrice"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "registerFailureReason", GoGetter: "RegisterFailureReason"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContactNotices", GoMethod: "ResetContactNotices"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDnsSettings", GoMethod: "ResetDnsSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDomainNotices", GoMethod: "ResetDomainNotices"},
@@ -96,29 +98,30 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "yearlyPrice", GoGetter: "YearlyPrice"},
 			_jsii_.MemberProperty{JsiiProperty: "yearlyPriceInput", GoGetter: "YearlyPriceInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddomainsRegistration{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationConfig",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationConfig",
 		reflect.TypeOf((*ClouddomainsRegistrationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettings",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettings",
 		reflect.TypeOf((*ClouddomainsRegistrationContactSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsAdminContact",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsAdminContact",
 		reflect.TypeOf((*ClouddomainsRegistrationContactSettingsAdminContact)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsAdminContactOutputReference",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsAdminContactOutputReference",
 		reflect.TypeOf((*ClouddomainsRegistrationContactSettingsAdminContactOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -155,16 +158,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsAdminContactPostalAddress",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsAdminContactPostalAddress",
 		reflect.TypeOf((*ClouddomainsRegistrationContactSettingsAdminContactPostalAddress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference",
 		reflect.TypeOf((*ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addressLines", GoGetter: "AddressLines"},
@@ -211,12 +214,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsOutputReference",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsOutputReference",
 		reflect.TypeOf((*ClouddomainsRegistrationContactSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adminContact", GoGetter: "AdminContact"},
@@ -254,16 +257,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddomainsRegistrationContactSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsRegistrantContact",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsRegistrantContact",
 		reflect.TypeOf((*ClouddomainsRegistrationContactSettingsRegistrantContact)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsRegistrantContactOutputReference",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsRegistrantContactOutputReference",
 		reflect.TypeOf((*ClouddomainsRegistrationContactSettingsRegistrantContactOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -300,16 +303,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddress",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddress",
 		reflect.TypeOf((*ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference",
 		reflect.TypeOf((*ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addressLines", GoGetter: "AddressLines"},
@@ -356,16 +359,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsTechnicalContact",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsTechnicalContact",
 		reflect.TypeOf((*ClouddomainsRegistrationContactSettingsTechnicalContact)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsTechnicalContactOutputReference",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsTechnicalContactOutputReference",
 		reflect.TypeOf((*ClouddomainsRegistrationContactSettingsTechnicalContactOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -402,16 +405,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddomainsRegistrationContactSettingsTechnicalContactOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsTechnicalContactPostalAddress",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsTechnicalContactPostalAddress",
 		reflect.TypeOf((*ClouddomainsRegistrationContactSettingsTechnicalContactPostalAddress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsTechnicalContactPostalAddressOutputReference",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsTechnicalContactPostalAddressOutputReference",
 		reflect.TypeOf((*ClouddomainsRegistrationContactSettingsTechnicalContactPostalAddressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addressLines", GoGetter: "AddressLines"},
@@ -458,24 +461,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddomainsRegistrationContactSettingsTechnicalContactPostalAddressOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettings",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettings",
 		reflect.TypeOf((*ClouddomainsRegistrationDnsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettingsCustomDns",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettingsCustomDns",
 		reflect.TypeOf((*ClouddomainsRegistrationDnsSettingsCustomDns)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettingsCustomDnsDsRecords",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettingsCustomDnsDsRecords",
 		reflect.TypeOf((*ClouddomainsRegistrationDnsSettingsCustomDnsDsRecords)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsList",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsList",
 		reflect.TypeOf((*ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -492,12 +495,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference",
 		reflect.TypeOf((*ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
@@ -536,12 +539,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettingsCustomDnsOutputReference",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettingsCustomDnsOutputReference",
 		reflect.TypeOf((*ClouddomainsRegistrationDnsSettingsCustomDnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -574,16 +577,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddomainsRegistrationDnsSettingsCustomDnsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettingsGlueRecords",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettingsGlueRecords",
 		reflect.TypeOf((*ClouddomainsRegistrationDnsSettingsGlueRecords)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettingsGlueRecordsList",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettingsGlueRecordsList",
 		reflect.TypeOf((*ClouddomainsRegistrationDnsSettingsGlueRecordsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -600,12 +603,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference",
 		reflect.TypeOf((*ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -640,12 +643,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettingsOutputReference",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationDnsSettingsOutputReference",
 		reflect.TypeOf((*ClouddomainsRegistrationDnsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -680,16 +683,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddomainsRegistrationDnsSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationManagementSettings",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationManagementSettings",
 		reflect.TypeOf((*ClouddomainsRegistrationManagementSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationManagementSettingsOutputReference",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationManagementSettingsOutputReference",
 		reflect.TypeOf((*ClouddomainsRegistrationManagementSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -723,16 +726,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationTimeouts",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationTimeouts",
 		reflect.TypeOf((*ClouddomainsRegistrationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationTimeoutsOutputReference",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationTimeoutsOutputReference",
 		reflect.TypeOf((*ClouddomainsRegistrationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -768,16 +771,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddomainsRegistrationTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationYearlyPrice",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationYearlyPrice",
 		reflect.TypeOf((*ClouddomainsRegistrationYearlyPrice)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationYearlyPriceOutputReference",
+		"@cdktn/provider-google.clouddomainsRegistration.ClouddomainsRegistrationYearlyPriceOutputReference",
 		reflect.TypeOf((*ClouddomainsRegistrationYearlyPriceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -810,7 +813,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddomainsRegistrationYearlyPriceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

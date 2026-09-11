@@ -40,11 +40,11 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathLevelRoundRobinConfigOutputRe
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseThenPathLevelRoundRobinConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EscalationPathPathIfElseThenPathLevelRoundRobinConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseThenPathLevelRoundRobinConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EscalationPathPathIfElseThenPathLevelRoundRobinConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelRoundRobinConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelRoundRobinConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelRoundRobinConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEscalationPathPathIfElseThenPathLevelRoundRobinConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEscalationPathPathIfElseThenPathLevelRoundRobinConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

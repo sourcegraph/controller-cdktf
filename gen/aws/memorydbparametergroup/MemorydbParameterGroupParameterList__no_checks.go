@@ -12,7 +12,7 @@ func (m *jsiiProxy_MemorydbParameterGroupParameterList) validateGetParameters(in
 	return nil
 }
 
-func (m *jsiiProxy_MemorydbParameterGroupParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorydbParameterGroupParameterList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_MemorydbParameterGroupParameterList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbParameterGroupParameterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MemorydbParameterGroupParameterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_MemorydbParameterGroupParameterList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewMemorydbParameterGroupParameterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMemorydbParameterGroupParameterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

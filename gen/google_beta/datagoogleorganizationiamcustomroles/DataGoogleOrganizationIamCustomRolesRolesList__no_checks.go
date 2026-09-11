@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleOrganizationIamCustomRolesRolesList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleOrganizationIamCustomRolesRolesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleOrganizationIamCustomRolesRolesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleOrganizationIamCustomRolesRolesList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleOrganizationIamCustomRolesRolesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleOrganizationIamCustomRolesRolesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleOrganizationIamCustomRolesRolesList) validateSetWra
 	return nil
 }
 
-func validateNewDataGoogleOrganizationIamCustomRolesRolesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleOrganizationIamCustomRolesRolesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

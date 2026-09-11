@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDataprocMetastoreService) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocMetastoreService) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocMetastoreService) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (g *jsiiProxy_GoogleDataprocMetastoreService) validatePutTimeoutsParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocMetastoreService) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleDataprocMetastoreService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -148,7 +156,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) validateSetLabelsParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreService) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreService) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

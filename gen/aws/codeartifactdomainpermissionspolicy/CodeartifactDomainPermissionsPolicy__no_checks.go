@@ -56,6 +56,10 @@ func (c *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateInterpolationFor
 	return nil
 }
 
+func (c *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (c *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateMoveToIdParamete
 }
 
 func (c *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

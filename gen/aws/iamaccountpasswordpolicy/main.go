@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
+		"@cdktn/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
 		reflect.TypeOf((*IamAccountPasswordPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -41,6 +41,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maxPasswordAge", GoGetter: "MaxPasswordAge"},
 			_jsii_.MemberProperty{JsiiProperty: "maxPasswordAgeInput", GoGetter: "MaxPasswordAgeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minimumPasswordLength", GoGetter: "MinimumPasswordLength"},
@@ -55,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "requireLowercaseCharacters", GoGetter: "RequireLowercaseCharacters"},
 			_jsii_.MemberProperty{JsiiProperty: "requireLowercaseCharactersInput", GoGetter: "RequireLowercaseCharactersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requireNumbers", GoGetter: "RequireNumbers"},
@@ -83,15 +85,16 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_IamAccountPasswordPolicy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicyConfig",
+		"@cdktn/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicyConfig",
 		reflect.TypeOf((*IamAccountPasswordPolicyConfig)(nil)).Elem(),
 	)
 }

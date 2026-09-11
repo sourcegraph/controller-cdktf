@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleBigqueryBiReservation) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryBiReservation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryBiReservation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleBigqueryBiReservation) validatePutPreferredTablesParame
 }
 
 func (g *jsiiProxy_GoogleBigqueryBiReservation) validatePutTimeoutsParameters(value *GoogleBigqueryBiReservationTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryBiReservation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleBigqueryBiReservation) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryBiReservation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleBigqueryBiReservation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

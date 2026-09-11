@@ -56,6 +56,10 @@ func (d *jsiiProxy_DynamodbTableReplicaA) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (d *jsiiProxy_DynamodbTableReplicaA) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DynamodbTableReplicaA) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DynamodbTableReplicaA) validateOverrideLogicalIdParameters(ne
 }
 
 func (d *jsiiProxy_DynamodbTableReplicaA) validatePutTimeoutsParameters(value *DynamodbTableReplicaTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DynamodbTableReplicaA) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_DynamodbTableReplicaA) validateSetKmsKeyArnParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableReplicaA) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DynamodbTableReplicaA) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

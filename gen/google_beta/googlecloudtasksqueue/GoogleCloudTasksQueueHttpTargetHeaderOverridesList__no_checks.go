@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetHeaderOverridesList) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetHeaderOverridesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetHeaderOverridesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetHeaderOverridesList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetHeaderOverridesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetHeaderOverridesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetHeaderOverridesList) validateS
 	return nil
 }
 
-func validateNewGoogleCloudTasksQueueHttpTargetHeaderOverridesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCloudTasksQueueHttpTargetHeaderOverridesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

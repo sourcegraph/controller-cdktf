@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/privatecacertificate/internal"
 )
 
 type PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -61,15 +61,15 @@ type PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -85,9 +85,9 @@ type PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetExcludedDnsNames()
 	ResetExcludedEmailAddresses()
 	ResetExcludedIpRanges()
@@ -98,7 +98,7 @@ type PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference interfac
 	ResetPermittedUris()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,7 +108,7 @@ type PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference interfac
 
 // The jsii proxy struct for PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference
 type jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference) ComplexObjectIndex() interface{} {
@@ -351,8 +351,8 @@ func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -362,7 +362,7 @@ func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputRefe
 }
 
 
-func NewPrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference {
+func NewPrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPrivatecaCertificateConfigX509ConfigNameConstraintsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -371,7 +371,7 @@ func NewPrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference(terra
 	j := jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference",
+		"@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -379,11 +379,11 @@ func NewPrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference(terra
 	return &j
 }
 
-func NewPrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference_Override(p PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference_Override(p PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference",
+		"@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -532,7 +532,7 @@ func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,11 +572,11 @@ func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputRefe
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -700,8 +700,8 @@ func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputRefe
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -713,16 +713,16 @@ func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputRefe
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -793,8 +793,8 @@ func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputRefe
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -802,7 +802,7 @@ func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputRefe
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsList) validateGetPar
 	return nil
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsList) validateSetWra
 	return nil
 }
 
-func validateNewEc2ClientVpnEndpointAuthenticationOptionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEc2ClientVpnEndpointAuthenticationOptionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

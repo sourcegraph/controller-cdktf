@@ -40,11 +40,11 @@ func (s *jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsOutputReference) val
 	return nil
 }
 
-func validateNewScheduleRotationsVersionsWorkingIntervalsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewScheduleRotationsVersionsWorkingIntervalsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

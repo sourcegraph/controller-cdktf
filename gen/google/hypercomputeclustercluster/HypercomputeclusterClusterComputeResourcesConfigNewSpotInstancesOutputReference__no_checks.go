@@ -40,11 +40,11 @@ func (h *jsiiProxy_HypercomputeclusterClusterComputeResourcesConfigNewSpotInstan
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterComputeResourcesConfigNewSpotInstancesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HypercomputeclusterClusterComputeResourcesConfigNewSpotInstancesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterComputeResourcesConfigNewSpotInstancesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HypercomputeclusterClusterComputeResourcesConfigNewSpotInstancesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterComputeResourcesConfigNewSpotInstan
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterComputeResourcesConfigNewSpotInstancesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_HypercomputeclusterClusterComputeResourcesConfigNewSpotInstancesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterComputeResourcesConfigNewSpotInstan
 	return nil
 }
 
-func validateNewHypercomputeclusterClusterComputeResourcesConfigNewSpotInstancesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewHypercomputeclusterClusterComputeResourcesConfigNewSpotInstancesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

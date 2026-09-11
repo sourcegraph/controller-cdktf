@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlealloydbinstance/internal"
 )
 
 type GoogleAlloydbInstanceObservabilityConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AssistiveExperiencesEnabled() interface{}
 	SetAssistiveExperiencesEnabled(val interface{})
 	AssistiveExperiencesEnabledInput() interface{}
@@ -52,9 +52,9 @@ type GoogleAlloydbInstanceObservabilityConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TrackActiveQueries() interface{}
 	SetTrackActiveQueries(val interface{})
 	TrackActiveQueriesInput() interface{}
@@ -72,7 +72,7 @@ type GoogleAlloydbInstanceObservabilityConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -88,9 +88,9 @@ type GoogleAlloydbInstanceObservabilityConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAssistiveExperiencesEnabled()
 	ResetEnabled()
 	ResetMaxQueryStringLength()
@@ -103,7 +103,7 @@ type GoogleAlloydbInstanceObservabilityConfigOutputReference interface {
 	ResetTrackWaitEventTypes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,7 +113,7 @@ type GoogleAlloydbInstanceObservabilityConfigOutputReference interface {
 
 // The jsii proxy struct for GoogleAlloydbInstanceObservabilityConfigOutputReference
 type jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) AssistiveExperiencesEnabled() interface{} {
@@ -296,8 +296,8 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -387,7 +387,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Trac
 }
 
 
-func NewGoogleAlloydbInstanceObservabilityConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleAlloydbInstanceObservabilityConfigOutputReference {
+func NewGoogleAlloydbInstanceObservabilityConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleAlloydbInstanceObservabilityConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleAlloydbInstanceObservabilityConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -396,7 +396,7 @@ func NewGoogleAlloydbInstanceObservabilityConfigOutputReference(terraformResourc
 	j := jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstanceObservabilityConfigOutputReference",
+		"@cdktn/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstanceObservabilityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -404,11 +404,11 @@ func NewGoogleAlloydbInstanceObservabilityConfigOutputReference(terraformResourc
 	return &j
 }
 
-func NewGoogleAlloydbInstanceObservabilityConfigOutputReference_Override(g GoogleAlloydbInstanceObservabilityConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleAlloydbInstanceObservabilityConfigOutputReference_Override(g GoogleAlloydbInstanceObservabilityConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstanceObservabilityConfigOutputReference",
+		"@cdktn/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstanceObservabilityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -524,7 +524,7 @@ func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,11 +608,11 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) GetA
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -736,8 +736,8 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) GetS
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -749,16 +749,16 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Inte
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -845,8 +845,8 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Rese
 	)
 }
 
-func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -854,7 +854,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) Reso
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

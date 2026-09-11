@@ -56,6 +56,10 @@ func (r *jsiiProxy_RoleBinding) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (r *jsiiProxy_RoleBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RoleBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (r *jsiiProxy_RoleBinding) validatePutRoleRefParameters(value *RoleBindingR
 }
 
 func (r *jsiiProxy_RoleBinding) validatePutSubjectParameters(value interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RoleBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_RoleBinding) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_RoleBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_RoleBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (p *jsiiProxy_PollerAwsSnapshotOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (p *jsiiProxy_PollerAwsSnapshotOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PollerAwsSnapshotOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PollerAwsSnapshotOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PollerAwsSnapshotOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_PollerAwsSnapshotOutputReference) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_PollerAwsSnapshotOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PollerAwsSnapshotOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPollerAwsSnapshotOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPollerAwsSnapshotOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

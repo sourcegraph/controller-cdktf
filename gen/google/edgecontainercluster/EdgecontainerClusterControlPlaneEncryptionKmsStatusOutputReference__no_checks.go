@@ -40,11 +40,11 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusOutputRefe
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEdgecontainerClusterControlPlaneEncryptionKmsStatusOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEdgecontainerClusterControlPlaneEncryptionKmsStatusOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

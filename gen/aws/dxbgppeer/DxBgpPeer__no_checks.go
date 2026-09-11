@@ -56,6 +56,10 @@ func (d *jsiiProxy_DxBgpPeer) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (d *jsiiProxy_DxBgpPeer) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxBgpPeer) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DxBgpPeer) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (d *jsiiProxy_DxBgpPeer) validatePutTimeoutsParameters(value *DxBgpPeerTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxBgpPeer) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_DxBgpPeer) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DxBgpPeer) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DxBgpPeer) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

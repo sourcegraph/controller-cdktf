@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkServicesAgentGatewayAgentGatewayCardOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesAgentGatewayAgentGatewayCardOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkServicesAgentGatewayAgentGatewayCardOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesAgentGatewayAgentGatewayCardOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesAgentGatewayAgentGatewayCardOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleNetworkServicesAgentGatewayAgentGatewayCardOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesAgentGatewayAgentGatewayCardOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesAgentGatewayAgentGatewayCardOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkServicesAgentGatewayAgentGatewayCardOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleNetworkServicesAgentGatewayAgentGatewayCardOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

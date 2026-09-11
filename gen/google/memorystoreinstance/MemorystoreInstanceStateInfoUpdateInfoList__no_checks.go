@@ -12,7 +12,7 @@ func (m *jsiiProxy_MemorystoreInstanceStateInfoUpdateInfoList) validateGetParame
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceStateInfoUpdateInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceStateInfoUpdateInfoList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_MemorystoreInstanceStateInfoUpdateInfoList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceStateInfoUpdateInfoList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MemorystoreInstanceStateInfoUpdateInfoList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_MemorystoreInstanceStateInfoUpdateInfoList) validateSetWrapsS
 	return nil
 }
 
-func validateNewMemorystoreInstanceStateInfoUpdateInfoListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMemorystoreInstanceStateInfoUpdateInfoListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

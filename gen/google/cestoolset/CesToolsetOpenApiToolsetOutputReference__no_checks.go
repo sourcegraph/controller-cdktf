@@ -40,7 +40,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetOutputReference) validateGetStringMap
 	return nil
 }
 
-func (c *jsiiProxy_CesToolsetOpenApiToolsetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesToolsetOpenApiToolsetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetOutputReference) validatePutTlsConfig
 	return nil
 }
 
-func (c *jsiiProxy_CesToolsetOpenApiToolsetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesToolsetOpenApiToolsetOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_CesToolsetOpenApiToolsetOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_CesToolsetOpenApiToolsetOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesToolsetOpenApiToolsetOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesToolsetOpenApiToolsetOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesToolsetOpenApiToolsetOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

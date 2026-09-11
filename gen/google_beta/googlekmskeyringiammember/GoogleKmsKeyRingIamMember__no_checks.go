@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleKmsKeyRingIamMember) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleKmsKeyRingIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleKmsKeyRingIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleKmsKeyRingIamMember) validateOverrideLogicalIdParameter
 }
 
 func (g *jsiiProxy_GoogleKmsKeyRingIamMember) validatePutConditionParameters(value *GoogleKmsKeyRingIamMemberCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleKmsKeyRingIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleKmsKeyRingIamMember) validateSetKeyRingIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsKeyRingIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleKmsKeyRingIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigBearerTokenAuthentication
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigBearerTokenAuthentication
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigBearerTokenAuthentication
 	return nil
 }
 
-func validateNewDeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

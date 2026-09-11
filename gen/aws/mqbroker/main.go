@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.mqBroker.MqBroker",
+		"@cdktn/provider-aws.mqBroker.MqBroker",
 		reflect.TypeOf((*MqBroker)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -64,6 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "logsInput", GoGetter: "LogsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindowStartTime", GoGetter: "MaintenanceWindowStartTime"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindowStartTimeInput", GoGetter: "MaintenanceWindowStartTimeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -81,6 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putUser", GoMethod: "PutUser"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApplyImmediately", GoMethod: "ResetApplyImmediately"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthenticationStrategy", GoMethod: "ResetAuthenticationStrategy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoMinorVersionUpgrade", GoMethod: "ResetAutoMinorVersionUpgrade"},
@@ -122,23 +124,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_MqBroker{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.mqBroker.MqBrokerConfig",
+		"@cdktn/provider-aws.mqBroker.MqBrokerConfig",
 		reflect.TypeOf((*MqBrokerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.mqBroker.MqBrokerConfiguration",
+		"@cdktn/provider-aws.mqBroker.MqBrokerConfiguration",
 		reflect.TypeOf((*MqBrokerConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.mqBroker.MqBrokerConfigurationOutputReference",
+		"@cdktn/provider-aws.mqBroker.MqBrokerConfigurationOutputReference",
 		reflect.TypeOf((*MqBrokerConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -171,16 +174,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MqBrokerConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.mqBroker.MqBrokerEncryptionOptions",
+		"@cdktn/provider-aws.mqBroker.MqBrokerEncryptionOptions",
 		reflect.TypeOf((*MqBrokerEncryptionOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.mqBroker.MqBrokerEncryptionOptionsOutputReference",
+		"@cdktn/provider-aws.mqBroker.MqBrokerEncryptionOptionsOutputReference",
 		reflect.TypeOf((*MqBrokerEncryptionOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -213,16 +216,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MqBrokerEncryptionOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.mqBroker.MqBrokerInstances",
+		"@cdktn/provider-aws.mqBroker.MqBrokerInstances",
 		reflect.TypeOf((*MqBrokerInstances)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.mqBroker.MqBrokerInstancesList",
+		"@cdktn/provider-aws.mqBroker.MqBrokerInstancesList",
 		reflect.TypeOf((*MqBrokerInstancesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -238,12 +241,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MqBrokerInstancesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.mqBroker.MqBrokerInstancesOutputReference",
+		"@cdktn/provider-aws.mqBroker.MqBrokerInstancesOutputReference",
 		reflect.TypeOf((*MqBrokerInstancesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -273,16 +276,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MqBrokerInstancesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.mqBroker.MqBrokerLdapServerMetadata",
+		"@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata",
 		reflect.TypeOf((*MqBrokerLdapServerMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.mqBroker.MqBrokerLdapServerMetadataOutputReference",
+		"@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadataOutputReference",
 		reflect.TypeOf((*MqBrokerLdapServerMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -342,16 +345,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MqBrokerLdapServerMetadataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.mqBroker.MqBrokerLogs",
+		"@cdktn/provider-aws.mqBroker.MqBrokerLogs",
 		reflect.TypeOf((*MqBrokerLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.mqBroker.MqBrokerLogsOutputReference",
+		"@cdktn/provider-aws.mqBroker.MqBrokerLogsOutputReference",
 		reflect.TypeOf((*MqBrokerLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audit", GoGetter: "Audit"},
@@ -384,16 +387,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MqBrokerLogsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTime",
+		"@cdktn/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTime",
 		reflect.TypeOf((*MqBrokerMaintenanceWindowStartTime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTimeOutputReference",
+		"@cdktn/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTimeOutputReference",
 		reflect.TypeOf((*MqBrokerMaintenanceWindowStartTimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -426,16 +429,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MqBrokerMaintenanceWindowStartTimeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.mqBroker.MqBrokerTimeouts",
+		"@cdktn/provider-aws.mqBroker.MqBrokerTimeouts",
 		reflect.TypeOf((*MqBrokerTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference",
+		"@cdktn/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference",
 		reflect.TypeOf((*MqBrokerTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -471,16 +474,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MqBrokerTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.mqBroker.MqBrokerUser",
+		"@cdktn/provider-aws.mqBroker.MqBrokerUser",
 		reflect.TypeOf((*MqBrokerUser)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.mqBroker.MqBrokerUserList",
+		"@cdktn/provider-aws.mqBroker.MqBrokerUserList",
 		reflect.TypeOf((*MqBrokerUserList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -497,12 +500,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MqBrokerUserList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.mqBroker.MqBrokerUserOutputReference",
+		"@cdktn/provider-aws.mqBroker.MqBrokerUserOutputReference",
 		reflect.TypeOf((*MqBrokerUserOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -539,7 +542,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MqBrokerUserOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

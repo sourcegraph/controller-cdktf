@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetappBackupPolicy) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (n *jsiiProxy_NetappBackupPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappBackupPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (n *jsiiProxy_NetappBackupPolicy) validateOverrideLogicalIdParameters(newLo
 }
 
 func (n *jsiiProxy_NetappBackupPolicy) validatePutTimeoutsParameters(value *NetappBackupPolicyTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappBackupPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_NetappBackupPolicy) validateSetLabelsParameters(val *map[stri
 	return nil
 }
 
-func (j *jsiiProxy_NetappBackupPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetappBackupPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

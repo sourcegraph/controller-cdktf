@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleChronicleNativeDashboard) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleChronicleNativeDashboard) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleChronicleNativeDashboard) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleChronicleNativeDashboard) validatePutFiltersParameters(
 }
 
 func (g *jsiiProxy_GoogleChronicleNativeDashboard) validatePutTimeoutsParameters(value *GoogleChronicleNativeDashboardTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleNativeDashboard) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_GoogleChronicleNativeDashboard) validateSetIsPinnedParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleNativeDashboard) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleChronicleNativeDashboard) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

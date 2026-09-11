@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeServiceAttachmentPscServiceAttachmentIdList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ComputeServiceAttachmentPscServiceAttachmentIdList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeServiceAttachmentPscServiceAttachmentIdList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ComputeServiceAttachmentPscServiceAttachmentIdList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ComputeServiceAttachmentPscServiceAttachmentIdList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeServiceAttachmentPscServiceAttachmentIdList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ComputeServiceAttachmentPscServiceAttachmentIdList) validateS
 	return nil
 }
 
-func validateNewComputeServiceAttachmentPscServiceAttachmentIdListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeServiceAttachmentPscServiceAttachmentIdListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

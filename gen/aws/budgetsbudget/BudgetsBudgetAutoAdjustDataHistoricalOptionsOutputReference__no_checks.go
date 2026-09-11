@@ -40,11 +40,11 @@ func (b *jsiiProxy_BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference) 
 	return nil
 }
 
-func (b *jsiiProxy_BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/apprunnerservice/internal"
 )
 
 type ApprunnerServiceSourceConfigurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthenticationConfiguration() ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference
 	AuthenticationConfigurationInput() *ApprunnerServiceSourceConfigurationAuthenticationConfiguration
 	AutoDeploymentsEnabled() interface{}
@@ -43,15 +43,15 @@ type ApprunnerServiceSourceConfigurationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,9 +67,9 @@ type ApprunnerServiceSourceConfigurationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuthenticationConfiguration(value *ApprunnerServiceSourceConfigurationAuthenticationConfiguration)
 	PutCodeRepository(value *ApprunnerServiceSourceConfigurationCodeRepository)
 	PutImageRepository(value *ApprunnerServiceSourceConfigurationImageRepository)
@@ -79,7 +79,7 @@ type ApprunnerServiceSourceConfigurationOutputReference interface {
 	ResetImageRepository()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type ApprunnerServiceSourceConfigurationOutputReference interface {
 
 // The jsii proxy struct for ApprunnerServiceSourceConfigurationOutputReference
 type jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) AuthenticationConfiguration() ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) Terraform
 }
 
 
-func NewApprunnerServiceSourceConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApprunnerServiceSourceConfigurationOutputReference {
+func NewApprunnerServiceSourceConfigurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ApprunnerServiceSourceConfigurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewApprunnerServiceSourceConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewApprunnerServiceSourceConfigurationOutputReference(terraformResource cdk
 	j := jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationOutputReference",
+		"@cdktn/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewApprunnerServiceSourceConfigurationOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewApprunnerServiceSourceConfigurationOutputReference_Override(a ApprunnerServiceSourceConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewApprunnerServiceSourceConfigurationOutputReference_Override(a ApprunnerServiceSourceConfigurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationOutputReference",
+		"@cdktn/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -325,7 +325,7 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -365,11 +365,11 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) GetAnyMap
 	return returns
 }
 
-func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -493,8 +493,8 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) GetString
 	return returns
 }
 
-func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -506,16 +506,16 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) Interpola
 	return returns
 }
 
-func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) ResetImag
 	)
 }
 
-func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationOutputReference) Resolve(_
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

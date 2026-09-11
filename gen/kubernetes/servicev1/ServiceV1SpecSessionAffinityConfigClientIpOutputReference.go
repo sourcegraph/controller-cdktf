@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/servicev1/internal"
 )
 
 type ServiceV1SpecSessionAffinityConfigClientIpOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type ServiceV1SpecSessionAffinityConfigClientIpOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeoutSeconds() *float64
 	SetTimeoutSeconds(val *float64)
 	TimeoutSecondsInput() *float64
@@ -45,7 +45,7 @@ type ServiceV1SpecSessionAffinityConfigClientIpOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type ServiceV1SpecSessionAffinityConfigClientIpOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetTimeoutSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type ServiceV1SpecSessionAffinityConfigClientIpOutputReference interface {
 
 // The jsii proxy struct for ServiceV1SpecSessionAffinityConfigClientIpOutputReference
 type jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) ComplexObjectIndex() interface{} {
@@ -140,8 +140,8 @@ func (j *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) Ti
 }
 
 
-func NewServiceV1SpecSessionAffinityConfigClientIpOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServiceV1SpecSessionAffinityConfigClientIpOutputReference {
+func NewServiceV1SpecSessionAffinityConfigClientIpOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ServiceV1SpecSessionAffinityConfigClientIpOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewServiceV1SpecSessionAffinityConfigClientIpOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewServiceV1SpecSessionAffinityConfigClientIpOutputReference(terraformResou
 	j := jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.serviceV1.ServiceV1SpecSessionAffinityConfigClientIpOutputReference",
+		"@cdktn/provider-kubernetes.serviceV1.ServiceV1SpecSessionAffinityConfigClientIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewServiceV1SpecSessionAffinityConfigClientIpOutputReference(terraformResou
 	return &j
 }
 
-func NewServiceV1SpecSessionAffinityConfigClientIpOutputReference_Override(s ServiceV1SpecSessionAffinityConfigClientIpOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewServiceV1SpecSessionAffinityConfigClientIpOutputReference_Override(s ServiceV1SpecSessionAffinityConfigClientIpOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.serviceV1.ServiceV1SpecSessionAffinityConfigClientIpOutputReference",
+		"@cdktn/provider-kubernetes.serviceV1.ServiceV1SpecSessionAffinityConfigClientIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (s *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) Ge
 	return returns
 }
 
-func (s *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -421,8 +421,8 @@ func (s *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) Ge
 	return returns
 }
 
-func (s *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -434,16 +434,16 @@ func (s *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) In
 	return returns
 }
 
-func (s *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (s *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) Re
 	)
 }
 
-func (s *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (s *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) Re
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (w *jsiiProxy_Workflow) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (w *jsiiProxy_Workflow) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_Workflow) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (w *jsiiProxy_Workflow) validatePutExpressionsParameters(value interface{})
 }
 
 func (w *jsiiProxy_Workflow) validatePutStepsParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_Workflow) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_Workflow) validateSetIncludePrivateIncidentsParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_Workflow) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Workflow) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

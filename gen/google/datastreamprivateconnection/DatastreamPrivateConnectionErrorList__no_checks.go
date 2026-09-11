@@ -12,7 +12,7 @@ func (d *jsiiProxy_DatastreamPrivateConnectionErrorList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamPrivateConnectionErrorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamPrivateConnectionErrorList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DatastreamPrivateConnectionErrorList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamPrivateConnectionErrorList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatastreamPrivateConnectionErrorList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DatastreamPrivateConnectionErrorList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewDatastreamPrivateConnectionErrorListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDatastreamPrivateConnectionErrorListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

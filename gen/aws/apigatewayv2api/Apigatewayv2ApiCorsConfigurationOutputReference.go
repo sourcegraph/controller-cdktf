@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/apigatewayv2api/internal"
 )
 
 type Apigatewayv2ApiCorsConfigurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowCredentials() interface{}
 	SetAllowCredentials(val interface{})
 	AllowCredentialsInput() interface{}
@@ -52,15 +52,15 @@ type Apigatewayv2ApiCorsConfigurationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type Apigatewayv2ApiCorsConfigurationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllowCredentials()
 	ResetAllowHeaders()
 	ResetAllowMethods()
@@ -87,7 +87,7 @@ type Apigatewayv2ApiCorsConfigurationOutputReference interface {
 	ResetMaxAge()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type Apigatewayv2ApiCorsConfigurationOutputReference interface {
 
 // The jsii proxy struct for Apigatewayv2ApiCorsConfigurationOutputReference
 type jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) AllowCredentials() interface{} {
@@ -280,8 +280,8 @@ func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -291,7 +291,7 @@ func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) TerraformRes
 }
 
 
-func NewApigatewayv2ApiCorsConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Apigatewayv2ApiCorsConfigurationOutputReference {
+func NewApigatewayv2ApiCorsConfigurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) Apigatewayv2ApiCorsConfigurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewApigatewayv2ApiCorsConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -300,7 +300,7 @@ func NewApigatewayv2ApiCorsConfigurationOutputReference(terraformResource cdktf.
 	j := jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference",
+		"@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -308,11 +308,11 @@ func NewApigatewayv2ApiCorsConfigurationOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewApigatewayv2ApiCorsConfigurationOutputReference_Override(a Apigatewayv2ApiCorsConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewApigatewayv2ApiCorsConfigurationOutputReference_Override(a Apigatewayv2ApiCorsConfigurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference",
+		"@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -428,7 +428,7 @@ func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,11 +468,11 @@ func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -596,8 +596,8 @@ func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) GetStringMap
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -609,16 +609,16 @@ func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) Interpolatio
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -673,8 +673,8 @@ func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) ResetMaxAge(
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -682,7 +682,7 @@ func (a *jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

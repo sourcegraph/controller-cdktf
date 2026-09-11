@@ -40,7 +40,7 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) validateGetString
 	return nil
 }
 
-func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) validatePutCreati
 	return nil
 }
 
-func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEfsAccessPointRootDirectoryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEfsAccessPointRootDirectoryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

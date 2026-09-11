@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsList) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsList) validateSet
 	return nil
 }
 
-func validateNewGoogleHealthcareFhirStoreNotificationConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleHealthcareFhirStoreNotificationConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

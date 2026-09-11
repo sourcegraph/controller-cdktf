@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineCmekConfigSingleRegionKeysList) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineCmekConfigSingleRegionKeysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineCmekConfigSingleRegionKeysList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineCmekConfigSingleRegionKeysList) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineCmekConfigSingleRegionKeysList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineCmekConfigSingleRegionKeysList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineCmekConfigSingleRegionKeysList) validate
 	return nil
 }
 
-func validateNewGoogleDiscoveryEngineCmekConfigSingleRegionKeysListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDiscoveryEngineCmekConfigSingleRegionKeysListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

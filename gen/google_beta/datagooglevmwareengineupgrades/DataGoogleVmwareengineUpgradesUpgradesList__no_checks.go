@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesList) validateSetWrapsS
 	return nil
 }
 
-func validateNewDataGoogleVmwareengineUpgradesUpgradesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleVmwareengineUpgradesUpgradesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexEntry.DataplexEntry",
+		"@cdktn/provider-google.dataplexEntry.DataplexEntry",
 		reflect.TypeOf((*DataplexEntry)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -67,6 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putEntrySource", GoMethod: "PutEntrySource"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAspects", GoMethod: "ResetAspects"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEntryGroupId", GoMethod: "ResetEntryGroupId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEntryId", GoMethod: "ResetEntryId"},
@@ -90,23 +92,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexEntry{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexEntry.DataplexEntryAspects",
+		"@cdktn/provider-google.dataplexEntry.DataplexEntryAspects",
 		reflect.TypeOf((*DataplexEntryAspects)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexEntry.DataplexEntryAspectsAspect",
+		"@cdktn/provider-google.dataplexEntry.DataplexEntryAspectsAspect",
 		reflect.TypeOf((*DataplexEntryAspectsAspect)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexEntry.DataplexEntryAspectsAspectOutputReference",
+		"@cdktn/provider-google.dataplexEntry.DataplexEntryAspectsAspectOutputReference",
 		reflect.TypeOf((*DataplexEntryAspectsAspectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aspectType", GoGetter: "AspectType"},
@@ -139,12 +142,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexEntryAspectsAspectOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexEntry.DataplexEntryAspectsList",
+		"@cdktn/provider-google.dataplexEntry.DataplexEntryAspectsList",
 		reflect.TypeOf((*DataplexEntryAspectsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -161,12 +164,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexEntryAspectsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexEntry.DataplexEntryAspectsOutputReference",
+		"@cdktn/provider-google.dataplexEntry.DataplexEntryAspectsOutputReference",
 		reflect.TypeOf((*DataplexEntryAspectsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aspect", GoGetter: "Aspect"},
@@ -198,24 +201,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexEntryAspectsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexEntry.DataplexEntryConfig",
+		"@cdktn/provider-google.dataplexEntry.DataplexEntryConfig",
 		reflect.TypeOf((*DataplexEntryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexEntry.DataplexEntryEntrySource",
+		"@cdktn/provider-google.dataplexEntry.DataplexEntryEntrySource",
 		reflect.TypeOf((*DataplexEntryEntrySource)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexEntry.DataplexEntryEntrySourceAncestors",
+		"@cdktn/provider-google.dataplexEntry.DataplexEntryEntrySourceAncestors",
 		reflect.TypeOf((*DataplexEntryEntrySourceAncestors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexEntry.DataplexEntryEntrySourceAncestorsList",
+		"@cdktn/provider-google.dataplexEntry.DataplexEntryEntrySourceAncestorsList",
 		reflect.TypeOf((*DataplexEntryEntrySourceAncestorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -232,12 +235,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexEntryEntrySourceAncestorsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexEntry.DataplexEntryEntrySourceAncestorsOutputReference",
+		"@cdktn/provider-google.dataplexEntry.DataplexEntryEntrySourceAncestorsOutputReference",
 		reflect.TypeOf((*DataplexEntryEntrySourceAncestorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -270,12 +273,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexEntryEntrySourceAncestorsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexEntry.DataplexEntryEntrySourceOutputReference",
+		"@cdktn/provider-google.dataplexEntry.DataplexEntryEntrySourceOutputReference",
 		reflect.TypeOf((*DataplexEntryEntrySourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ancestors", GoGetter: "Ancestors"},
@@ -331,16 +334,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexEntryEntrySourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexEntry.DataplexEntryTimeouts",
+		"@cdktn/provider-google.dataplexEntry.DataplexEntryTimeouts",
 		reflect.TypeOf((*DataplexEntryTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexEntry.DataplexEntryTimeoutsOutputReference",
+		"@cdktn/provider-google.dataplexEntry.DataplexEntryTimeoutsOutputReference",
 		reflect.TypeOf((*DataplexEntryTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -376,7 +379,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexEntryTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

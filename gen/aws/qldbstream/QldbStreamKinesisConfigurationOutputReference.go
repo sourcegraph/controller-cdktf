@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/qldbstream/internal"
 )
 
 type QldbStreamKinesisConfigurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AggregationEnabled() interface{}
 	SetAggregationEnabled(val interface{})
 	AggregationEnabledInput() interface{}
@@ -40,15 +40,15 @@ type QldbStreamKinesisConfigurationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type QldbStreamKinesisConfigurationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAggregationEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type QldbStreamKinesisConfigurationOutputReference interface {
 
 // The jsii proxy struct for QldbStreamKinesisConfigurationOutputReference
 type jsiiProxy_QldbStreamKinesisConfigurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) AggregationEnabled() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) TerraformResou
 }
 
 
-func NewQldbStreamKinesisConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QldbStreamKinesisConfigurationOutputReference {
+func NewQldbStreamKinesisConfigurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) QldbStreamKinesisConfigurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewQldbStreamKinesisConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewQldbStreamKinesisConfigurationOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_QldbStreamKinesisConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.qldbStream.QldbStreamKinesisConfigurationOutputReference",
+		"@cdktn/provider-aws.qldbStream.QldbStreamKinesisConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewQldbStreamKinesisConfigurationOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewQldbStreamKinesisConfigurationOutputReference_Override(q QldbStreamKinesisConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewQldbStreamKinesisConfigurationOutputReference_Override(q QldbStreamKinesisConfigurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.qldbStream.QldbStreamKinesisConfigurationOutputReference",
+		"@cdktn/provider-aws.qldbStream.QldbStreamKinesisConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_QldbStreamKinesisConfigurationOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_QldbStreamKinesisConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_QldbStreamKinesisConfigurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := q.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,
@@ -455,8 +455,8 @@ func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) GetStringMapAt
 	return returns
 }
 
-func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,
@@ -468,16 +468,16 @@ func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) InterpolationA
 	return returns
 }
 
-func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := q.validateInterpolationForAttributeParameters(property); err != nil {
+func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := q.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) ResetAggregati
 	)
 }
 
-func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := q.validateResolveParameters(_context); err != nil {
+func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := q.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		q,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

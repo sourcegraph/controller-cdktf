@@ -40,11 +40,11 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) valida
 	return nil
 }
 
-func (r *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) valida
 	return nil
 }
 
-func validateNewRoute53DomainsRegisteredDomainTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRoute53DomainsRegisteredDomainTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

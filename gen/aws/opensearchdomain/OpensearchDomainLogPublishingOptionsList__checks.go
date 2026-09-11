@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (o *jsiiProxy_OpensearchDomainLogPublishingOptionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (o *jsiiProxy_OpensearchDomainLogPublishingOptionsList) validateGetParamete
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainLogPublishingOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (o *jsiiProxy_OpensearchDomainLogPublishingOptionsList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (o *jsiiProxy_OpensearchDomainLogPublishingOptionsList) validateResolvePara
 
 func (j *jsiiProxy_OpensearchDomainLogPublishingOptionsList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*OpensearchDomainLogPublishingOptions:
 		val := val.(*[]*OpensearchDomainLogPublishingOptions)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_OpensearchDomainLogPublishingOptionsList) validateSetInternal
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*OpensearchDomainLogPublishingOptions; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*OpensearchDomainLogPublishingOptions; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_OpensearchDomainLogPublishingOptionsList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainLogPublishingOptionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpensearchDomainLogPublishingOptionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_OpensearchDomainLogPublishingOptionsList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewOpensearchDomainLogPublishingOptionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewOpensearchDomainLogPublishingOptionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

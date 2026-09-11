@@ -40,11 +40,11 @@ func (g *jsiiProxy_GameliftAliasRoutingStrategyOutputReference) validateGetStrin
 	return nil
 }
 
-func (g *jsiiProxy_GameliftAliasRoutingStrategyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GameliftAliasRoutingStrategyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GameliftAliasRoutingStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GameliftAliasRoutingStrategyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GameliftAliasRoutingStrategyOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_GameliftAliasRoutingStrategyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GameliftAliasRoutingStrategyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GameliftAliasRoutingStrategyOutputReference) validateSetTypeP
 	return nil
 }
 
-func validateNewGameliftAliasRoutingStrategyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGameliftAliasRoutingStrategyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

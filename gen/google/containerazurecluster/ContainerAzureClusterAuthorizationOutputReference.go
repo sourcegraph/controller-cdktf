@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/containerazurecluster/internal"
 )
 
 type ContainerAzureClusterAuthorizationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdminGroups() ContainerAzureClusterAuthorizationAdminGroupsList
 	AdminGroupsInput() interface{}
 	AdminUsers() ContainerAzureClusterAuthorizationAdminUsersList
@@ -38,15 +38,15 @@ type ContainerAzureClusterAuthorizationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,15 +62,15 @@ type ContainerAzureClusterAuthorizationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAdminGroups(value interface{})
 	PutAdminUsers(value interface{})
 	ResetAdminGroups()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type ContainerAzureClusterAuthorizationOutputReference interface {
 
 // The jsii proxy struct for ContainerAzureClusterAuthorizationOutputReference
 type jsiiProxy_ContainerAzureClusterAuthorizationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) AdminGroups() ContainerAzureClusterAuthorizationAdminGroupsList {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) TerraformR
 }
 
 
-func NewContainerAzureClusterAuthorizationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerAzureClusterAuthorizationOutputReference {
+func NewContainerAzureClusterAuthorizationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ContainerAzureClusterAuthorizationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewContainerAzureClusterAuthorizationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewContainerAzureClusterAuthorizationOutputReference(terraformResource cdkt
 	j := jsiiProxy_ContainerAzureClusterAuthorizationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationOutputReference",
+		"@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewContainerAzureClusterAuthorizationOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewContainerAzureClusterAuthorizationOutputReference_Override(c ContainerAzureClusterAuthorizationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContainerAzureClusterAuthorizationOutputReference_Override(c ContainerAzureClusterAuthorizationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationOutputReference",
+		"@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -265,7 +265,7 @@ func (j *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,11 +305,11 @@ func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) GetAnyMapA
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -433,8 +433,8 @@ func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) GetStringM
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -446,16 +446,16 @@ func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) Interpolat
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) ResetAdmin
 	)
 }
 
-func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

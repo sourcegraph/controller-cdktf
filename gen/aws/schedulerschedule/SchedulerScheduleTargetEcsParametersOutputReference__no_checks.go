@@ -40,7 +40,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validate
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validate
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -120,11 +120,11 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSchedulerScheduleTargetEcsParametersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSchedulerScheduleTargetEcsParametersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

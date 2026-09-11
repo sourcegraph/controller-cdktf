@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleBigqueryTableRangePartitioningOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryTableRangePartitioningOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBigqueryTableRangePartitioningOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleBigqueryTableRangePartitioningOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryTableRangePartitioningOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigqueryTableRangePartitioningOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleBigqueryTableRangePartitioningOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableRangePartitioningOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigqueryTableRangePartitioningOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleBigqueryTableRangePartitioningOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBigqueryTableRangePartitioningOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/podsecuritypolicy/internal"
 )
 
 type PodSecurityPolicySpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowedCapabilities() *[]*string
 	SetAllowedCapabilities(val *[]*string)
 	AllowedCapabilitiesInput() *[]*string
@@ -89,9 +89,9 @@ type PodSecurityPolicySpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Volumes() *[]*string
 	SetVolumes(val *[]*string)
 	VolumesInput() *[]*string
@@ -100,7 +100,7 @@ type PodSecurityPolicySpecOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -116,9 +116,9 @@ type PodSecurityPolicySpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAllowedFlexVolumes(value interface{})
 	PutAllowedHostPaths(value interface{})
 	PutFsGroup(value *PodSecurityPolicySpecFsGroup)
@@ -148,7 +148,7 @@ type PodSecurityPolicySpecOutputReference interface {
 	ResetVolumes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -158,7 +158,7 @@ type PodSecurityPolicySpecOutputReference interface {
 
 // The jsii proxy struct for PodSecurityPolicySpecOutputReference
 type jsiiProxy_PodSecurityPolicySpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) AllowedCapabilities() *[]*string {
@@ -641,8 +641,8 @@ func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) TerraformAttribute() *s
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -672,7 +672,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecOutputReference) VolumesInput() *[]*stri
 }
 
 
-func NewPodSecurityPolicySpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodSecurityPolicySpecOutputReference {
+func NewPodSecurityPolicySpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PodSecurityPolicySpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPodSecurityPolicySpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -681,7 +681,7 @@ func NewPodSecurityPolicySpecOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_PodSecurityPolicySpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecOutputReference",
+		"@cdktn/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -689,11 +689,11 @@ func NewPodSecurityPolicySpecOutputReference(terraformResource cdktf.IInterpolat
 	return &j
 }
 
-func NewPodSecurityPolicySpecOutputReference_Override(p PodSecurityPolicySpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPodSecurityPolicySpecOutputReference_Override(p PodSecurityPolicySpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecOutputReference",
+		"@cdktn/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -886,7 +886,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSecurityPolicySpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -937,11 +937,11 @@ func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -1065,8 +1065,8 @@ func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) GetStringMapAttribute(t
 	return returns
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -1078,16 +1078,16 @@ func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1334,8 +1334,8 @@ func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) ResetVolumes() {
 	)
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1343,7 +1343,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

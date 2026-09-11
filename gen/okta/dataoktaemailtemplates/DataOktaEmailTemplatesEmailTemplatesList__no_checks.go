@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewDataOktaEmailTemplatesEmailTemplatesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataOktaEmailTemplatesEmailTemplatesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

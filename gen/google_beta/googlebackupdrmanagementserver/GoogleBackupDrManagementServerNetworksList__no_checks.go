@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleBackupDrManagementServerNetworksList) validateGetParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBackupDrManagementServerNetworksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBackupDrManagementServerNetworksList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleBackupDrManagementServerNetworksList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBackupDrManagementServerNetworksList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBackupDrManagementServerNetworksList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleBackupDrManagementServerNetworksList) validateSetWrapsS
 	return nil
 }
 
-func validateNewGoogleBackupDrManagementServerNetworksListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleBackupDrManagementServerNetworksListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

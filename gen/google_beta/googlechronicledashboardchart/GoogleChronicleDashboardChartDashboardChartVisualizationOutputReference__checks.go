@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -106,7 +106,7 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutpu
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleChronicleDashboardChartDashboardChartVisualizationColumnDefs:
 		value := value.(*[]*GoogleChronicleDashboardChartDashboardChartVisualizationColumnDefs)
@@ -125,7 +125,7 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutpu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleChronicleDashboardChartDashboardChartVisualizationColumnDefs; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*GoogleChronicleDashboardChartDashboardChartVisualizationColumnDefs; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -148,7 +148,7 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutpu
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleChronicleDashboardChartDashboardChartVisualizationLegends:
 		value := value.(*[]*GoogleChronicleDashboardChartDashboardChartVisualizationLegends)
@@ -167,7 +167,7 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutpu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleChronicleDashboardChartDashboardChartVisualizationLegends; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*GoogleChronicleDashboardChartDashboardChartVisualizationLegends; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -190,7 +190,7 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutpu
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleChronicleDashboardChartDashboardChartVisualizationSeries:
 		value := value.(*[]*GoogleChronicleDashboardChartDashboardChartVisualizationSeries)
@@ -209,7 +209,7 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutpu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleChronicleDashboardChartDashboardChartVisualizationSeries; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*GoogleChronicleDashboardChartDashboardChartVisualizationSeries; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -243,7 +243,7 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutpu
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleChronicleDashboardChartDashboardChartVisualizationVisualMaps:
 		value := value.(*[]*GoogleChronicleDashboardChartDashboardChartVisualizationVisualMaps)
@@ -262,7 +262,7 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutpu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleChronicleDashboardChartDashboardChartVisualizationVisualMaps; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*GoogleChronicleDashboardChartDashboardChartVisualizationVisualMaps; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -274,7 +274,7 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutpu
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleChronicleDashboardChartDashboardChartVisualizationXAxes:
 		value := value.(*[]*GoogleChronicleDashboardChartDashboardChartVisualizationXAxes)
@@ -293,7 +293,7 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutpu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleChronicleDashboardChartDashboardChartVisualizationXAxes; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*GoogleChronicleDashboardChartDashboardChartVisualizationXAxes; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -305,7 +305,7 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutpu
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleChronicleDashboardChartDashboardChartVisualizationYAxes:
 		value := value.(*[]*GoogleChronicleDashboardChartDashboardChartVisualizationYAxes)
@@ -324,16 +324,16 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutpu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleChronicleDashboardChartDashboardChartVisualizationYAxes; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*GoogleChronicleDashboardChartDashboardChartVisualizationYAxes; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -436,7 +436,7 @@ func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -453,18 +453,18 @@ func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationOutpu
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
 	return nil
 }
 
-func validateNewGoogleChronicleDashboardChartDashboardChartVisualizationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleDashboardChartDashboardChartVisualizationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

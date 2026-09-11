@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigSecondaryBootDisksList) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigSecondaryBootDisksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigSecondaryBootDisksList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigSecondaryBootDisksList) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigSecondaryBootDisksList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigSecondaryBootDisksList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigSecondaryBootDisksList) vali
 	return nil
 }
 
-func validateNewGoogleContainerNodePoolNodeConfigSecondaryBootDisksListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleContainerNodePoolNodeConfigSecondaryBootDisksListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

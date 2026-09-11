@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/poddisruptionbudget/internal"
 )
 
 type PodDisruptionBudgetMetadataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
@@ -51,16 +51,16 @@ type PodDisruptionBudgetMetadataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uid() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type PodDisruptionBudgetMetadataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAnnotations()
 	ResetGenerateName()
 	ResetLabels()
@@ -86,7 +86,7 @@ type PodDisruptionBudgetMetadataOutputReference interface {
 	ResetNamespace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type PodDisruptionBudgetMetadataOutputReference interface {
 
 // The jsii proxy struct for PodDisruptionBudgetMetadataOutputReference
 type jsiiProxy_PodDisruptionBudgetMetadataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) Annotations() *map[string]*string {
@@ -279,8 +279,8 @@ func (j *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -300,7 +300,7 @@ func (j *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) Uid() *string {
 }
 
 
-func NewPodDisruptionBudgetMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodDisruptionBudgetMetadataOutputReference {
+func NewPodDisruptionBudgetMetadataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PodDisruptionBudgetMetadataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPodDisruptionBudgetMetadataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -309,7 +309,7 @@ func NewPodDisruptionBudgetMetadataOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_PodDisruptionBudgetMetadataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.podDisruptionBudget.PodDisruptionBudgetMetadataOutputReference",
+		"@cdktn/provider-kubernetes.podDisruptionBudget.PodDisruptionBudgetMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -317,11 +317,11 @@ func NewPodDisruptionBudgetMetadataOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewPodDisruptionBudgetMetadataOutputReference_Override(p PodDisruptionBudgetMetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPodDisruptionBudgetMetadataOutputReference_Override(p PodDisruptionBudgetMetadataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.podDisruptionBudget.PodDisruptionBudgetMetadataOutputReference",
+		"@cdktn/provider-kubernetes.podDisruptionBudget.PodDisruptionBudgetMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -426,7 +426,7 @@ func (j *jsiiProxy_PodDisruptionBudgetMetadataOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodDisruptionBudgetMetadataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,11 +466,11 @@ func (p *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (p *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -594,8 +594,8 @@ func (p *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (p *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -607,16 +607,16 @@ func (p *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (p *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -663,8 +663,8 @@ func (p *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) ResetNamespace() 
 	)
 }
 
-func (p *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -672,7 +672,7 @@ func (p *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

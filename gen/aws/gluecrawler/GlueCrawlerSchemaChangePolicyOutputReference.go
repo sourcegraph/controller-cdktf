@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/gluecrawler/internal"
 )
 
 type GlueCrawlerSchemaChangePolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type GlueCrawlerSchemaChangePolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UpdateBehavior() *string
 	SetUpdateBehavior(val *string)
 	UpdateBehaviorInput() *string
@@ -48,7 +48,7 @@ type GlueCrawlerSchemaChangePolicyOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type GlueCrawlerSchemaChangePolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDeleteBehavior()
 	ResetUpdateBehavior()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GlueCrawlerSchemaChangePolicyOutputReference interface {
 
 // The jsii proxy struct for GlueCrawlerSchemaChangePolicyOutputReference
 type jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) ComplexObjectIndex() interface{} {
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) UpdateBehaviorI
 }
 
 
-func NewGlueCrawlerSchemaChangePolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GlueCrawlerSchemaChangePolicyOutputReference {
+func NewGlueCrawlerSchemaChangePolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GlueCrawlerSchemaChangePolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGlueCrawlerSchemaChangePolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewGlueCrawlerSchemaChangePolicyOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicyOutputReference",
+		"@cdktn/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGlueCrawlerSchemaChangePolicyOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewGlueCrawlerSchemaChangePolicyOutputReference_Override(g GlueCrawlerSchemaChangePolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGlueCrawlerSchemaChangePolicyOutputReference_Override(g GlueCrawlerSchemaChangePolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicyOutputReference",
+		"@cdktn/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -456,8 +456,8 @@ func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -469,16 +469,16 @@ func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) InterpolationAs
 	return returns
 }
 
-func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) ResetUpdateBeha
 	)
 }
 
-func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

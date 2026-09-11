@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleTpuV2VmSymptomsList) validateGetParameters(index *float
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTpuV2VmSymptomsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleTpuV2VmSymptomsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleTpuV2VmSymptomsList) validateSetTerraformAttributeParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSymptomsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleTpuV2VmSymptomsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleTpuV2VmSymptomsList) validateSetWrapsSetParameters(val 
 	return nil
 }
 
-func validateNewGoogleTpuV2VmSymptomsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleTpuV2VmSymptomsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

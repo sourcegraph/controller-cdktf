@@ -40,7 +40,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionHandlersOutputReference) validateG
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineStandardAppVersionHandlersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppEngineStandardAppVersionHandlersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionHandlersOutputReference) validateP
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineStandardAppVersionHandlersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppEngineStandardAppVersionHandlersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersOutputReference) validateS
 	return nil
 }
 
-func validateNewAppEngineStandardAppVersionHandlersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAppEngineStandardAppVersionHandlersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

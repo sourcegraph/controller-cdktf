@@ -40,7 +40,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateGetStri
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validatePutLaun
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEmrClusterMasterInstanceFleetOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEmrClusterMasterInstanceFleetOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

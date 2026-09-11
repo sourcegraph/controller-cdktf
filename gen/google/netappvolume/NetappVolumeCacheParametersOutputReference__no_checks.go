@@ -40,7 +40,7 @@ func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) validateGetString
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) validatePutCacheC
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,11 +92,11 @@ func (j *jsiiProxy_NetappVolumeCacheParametersOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeCacheParametersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetappVolumeCacheParametersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewNetappVolumeCacheParametersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetappVolumeCacheParametersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsCeCostCategoryRuleList) validateGetParameters(index *f
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeCostCategoryRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCeCostCategoryRuleList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsCeCostCategoryRuleList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCeCostCategoryRuleList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsCeCostCategoryRuleList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsCeCostCategoryRuleList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewDataAwsCeCostCategoryRuleListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsCeCostCategoryRuleListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

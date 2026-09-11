@@ -40,11 +40,11 @@ func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

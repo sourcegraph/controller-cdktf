@@ -40,7 +40,7 @@ func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewConfigRemediationConfigurationExecutionControlsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewConfigRemediationConfigurationExecutionControlsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

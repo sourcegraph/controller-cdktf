@@ -40,11 +40,11 @@ func (b *jsiiProxy_BackupSelectionConditionStringLikeOutputReference) validateGe
 	return nil
 }
 
-func (b *jsiiProxy_BackupSelectionConditionStringLikeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupSelectionConditionStringLikeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupSelectionConditionStringLikeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupSelectionConditionStringLikeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_BackupSelectionConditionStringLikeOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_BackupSelectionConditionStringLikeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BackupSelectionConditionStringLikeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_BackupSelectionConditionStringLikeOutputReference) validateSe
 	return nil
 }
 
-func validateNewBackupSelectionConditionStringLikeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewBackupSelectionConditionStringLikeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

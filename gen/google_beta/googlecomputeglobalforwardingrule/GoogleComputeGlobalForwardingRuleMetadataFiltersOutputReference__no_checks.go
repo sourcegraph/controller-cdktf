@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeGlobalForwardingRuleMetadataFiltersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeGlobalForwardingRuleMetadataFiltersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

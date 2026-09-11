@@ -12,7 +12,7 @@ func (f *jsiiProxy_FirestoreUserCredsResourceIdentityList) validateGetParameters
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreUserCredsResourceIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirestoreUserCredsResourceIdentityList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_FirestoreUserCredsResourceIdentityList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreUserCredsResourceIdentityList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FirestoreUserCredsResourceIdentityList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_FirestoreUserCredsResourceIdentityList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewFirestoreUserCredsResourceIdentityListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewFirestoreUserCredsResourceIdentityListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

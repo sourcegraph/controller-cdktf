@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamMemberConditionOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshotIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionInstantSnapshotIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshotIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionInstantSnapshotIamMemberConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamMemberConditionOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamMemberConditionOutputReference
 	return nil
 }
 
-func validateNewComputeRegionInstantSnapshotIamMemberConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeRegionInstantSnapshotIamMemberConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

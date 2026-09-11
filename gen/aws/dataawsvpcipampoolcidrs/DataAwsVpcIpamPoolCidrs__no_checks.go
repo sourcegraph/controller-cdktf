@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataAwsVpcIpamPoolCidrs) validatePutTimeoutsParameters(value 
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsVpcIpamPoolCidrs) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsVpcIpamPoolCidrs_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,7 +92,7 @@ func (j *jsiiProxy_DataAwsVpcIpamPoolCidrs) validateSetIpamPoolIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPoolCidrs) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsVpcIpamPoolCidrs) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

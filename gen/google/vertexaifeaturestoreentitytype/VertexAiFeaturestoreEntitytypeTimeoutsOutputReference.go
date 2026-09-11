@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/vertexaifeaturestoreentitytype/internal"
 )
 
 type VertexAiFeaturestoreEntitytypeTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type VertexAiFeaturestoreEntitytypeTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type VertexAiFeaturestoreEntitytypeTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type VertexAiFeaturestoreEntitytypeTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type VertexAiFeaturestoreEntitytypeTimeoutsOutputReference interface {
 
 // The jsii proxy struct for VertexAiFeaturestoreEntitytypeTimeoutsOutputReference
 type jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference) Update
 }
 
 
-func NewVertexAiFeaturestoreEntitytypeTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VertexAiFeaturestoreEntitytypeTimeoutsOutputReference {
+func NewVertexAiFeaturestoreEntitytypeTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) VertexAiFeaturestoreEntitytypeTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewVertexAiFeaturestoreEntitytypeTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewVertexAiFeaturestoreEntitytypeTimeoutsOutputReference(terraformResource 
 	j := jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeTimeoutsOutputReference",
+		"@cdktn/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewVertexAiFeaturestoreEntitytypeTimeoutsOutputReference(terraformResource 
 	return &j
 }
 
-func NewVertexAiFeaturestoreEntitytypeTimeoutsOutputReference_Override(v VertexAiFeaturestoreEntitytypeTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewVertexAiFeaturestoreEntitytypeTimeoutsOutputReference_Override(v VertexAiFeaturestoreEntitytypeTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeTimeoutsOutputReference",
+		"@cdktn/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference) GetAny
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -491,8 +491,8 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference) GetStr
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -504,16 +504,16 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference) Interp
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference) ResetU
 	)
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference) Resolv
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

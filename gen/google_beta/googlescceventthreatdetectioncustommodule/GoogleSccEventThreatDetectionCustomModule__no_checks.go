@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleSccEventThreatDetectionCustomModule) validateInterpolat
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSccEventThreatDetectionCustomModule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSccEventThreatDetectionCustomModule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleSccEventThreatDetectionCustomModule) validateOverrideLo
 }
 
 func (g *jsiiProxy_GoogleSccEventThreatDetectionCustomModule) validatePutTimeoutsParameters(value *GoogleSccEventThreatDetectionCustomModuleTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSccEventThreatDetectionCustomModule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleSccEventThreatDetectionCustomModule) validateSetIdParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccEventThreatDetectionCustomModule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleSccEventThreatDetectionCustomModule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

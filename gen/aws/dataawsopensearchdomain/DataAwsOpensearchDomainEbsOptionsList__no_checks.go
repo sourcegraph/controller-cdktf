@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsOpensearchDomainEbsOptionsList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainEbsOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainEbsOptionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsOpensearchDomainEbsOptionsList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsOpensearchDomainEbsOptionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsOpensearchDomainEbsOptionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsOpensearchDomainEbsOptionsList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewDataAwsOpensearchDomainEbsOptionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsOpensearchDomainEbsOptionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

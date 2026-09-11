@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOsTypesList) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOsTypesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOsTypesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOsTypesList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOsTypesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOsTypesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOsTypesList) validateSet
 	return nil
 }
 
-func validateNewGoogleOsConfigGuestPoliciesAssignmentOsTypesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleOsConfigGuestPoliciesAssignmentOsTypesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (l *jsiiProxy_LightsailCertificateDomainValidationOptionsList) validateGetP
 	return nil
 }
 
-func (l *jsiiProxy_LightsailCertificateDomainValidationOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LightsailCertificateDomainValidationOptionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_LightsailCertificateDomainValidationOptionsList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_LightsailCertificateDomainValidationOptionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LightsailCertificateDomainValidationOptionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_LightsailCertificateDomainValidationOptionsList) validateSetW
 	return nil
 }
 
-func validateNewLightsailCertificateDomainValidationOptionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLightsailCertificateDomainValidationOptionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

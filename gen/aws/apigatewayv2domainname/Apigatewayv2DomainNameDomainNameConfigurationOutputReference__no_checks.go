@@ -40,11 +40,11 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewApigatewayv2DomainNameDomainNameConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApigatewayv2DomainNameDomainNameConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

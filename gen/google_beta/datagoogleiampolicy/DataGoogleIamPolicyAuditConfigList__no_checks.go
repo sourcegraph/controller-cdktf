@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleIamPolicyAuditConfigList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleIamPolicyAuditConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleIamPolicyAuditConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataGoogleIamPolicyAuditConfigList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleIamPolicyAuditConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleIamPolicyAuditConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataGoogleIamPolicyAuditConfigList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewDataGoogleIamPolicyAuditConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleIamPolicyAuditConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

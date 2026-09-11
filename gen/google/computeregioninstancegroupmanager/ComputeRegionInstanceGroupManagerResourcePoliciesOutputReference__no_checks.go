@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManagerResourcePoliciesOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceGroupManagerResourcePoliciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionInstanceGroupManagerResourcePoliciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceGroupManagerResourcePoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionInstanceGroupManagerResourcePoliciesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManagerResourcePoliciesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceGroupManagerResourcePoliciesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionInstanceGroupManagerResourcePoliciesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManagerResourcePoliciesOutputRefere
 	return nil
 }
 
-func validateNewComputeRegionInstanceGroupManagerResourcePoliciesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeRegionInstanceGroupManagerResourcePoliciesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

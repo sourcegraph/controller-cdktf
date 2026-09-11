@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateInterpolationFo
 	return nil
 }
 
+func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateOverrideLogical
 }
 
 func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validatePutTimeoutsParameters(value *CloudsearchDomainServiceAccessPolicyTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateSetIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

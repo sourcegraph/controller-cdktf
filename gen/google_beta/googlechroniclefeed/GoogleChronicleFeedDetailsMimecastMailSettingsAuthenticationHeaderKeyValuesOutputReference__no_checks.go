@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationH
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationH
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationH
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (d *jsiiProxy_DmsS3Endpoint) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (d *jsiiProxy_DmsS3Endpoint) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DmsS3Endpoint) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DmsS3Endpoint) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (d *jsiiProxy_DmsS3Endpoint) validatePutTimeoutsParameters(value *DmsS3EndpointTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -236,7 +244,7 @@ func (j *jsiiProxy_DmsS3Endpoint) validateSetKmsKeyArnParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_DmsS3Endpoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DmsS3Endpoint) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

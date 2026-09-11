@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigqueryconnection/internal"
 )
 
 type BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference 
 
 // The jsii proxy struct for BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference
 type jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOu
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOu
 }
 
 
-func NewBigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference {
+func NewBigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewBigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReferen
 	j := jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference",
+		"@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewBigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReferen
 	return &j
 }
 
-func NewBigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference_Override(b BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference_Override(b BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference",
+		"@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOu
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOu
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -420,8 +420,8 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOu
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -433,24 +433,24 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOu
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOu
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

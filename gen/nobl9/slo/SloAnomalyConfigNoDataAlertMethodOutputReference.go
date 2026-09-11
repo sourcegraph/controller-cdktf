@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/slo/internal"
 )
 
 type SloAnomalyConfigNoDataAlertMethodOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type SloAnomalyConfigNoDataAlertMethodOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type SloAnomalyConfigNoDataAlertMethodOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type SloAnomalyConfigNoDataAlertMethodOutputReference interface {
 
 // The jsii proxy struct for SloAnomalyConfigNoDataAlertMethodOutputReference
 type jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) TerraformRe
 }
 
 
-func NewSloAnomalyConfigNoDataAlertMethodOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloAnomalyConfigNoDataAlertMethodOutputReference {
+func NewSloAnomalyConfigNoDataAlertMethodOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloAnomalyConfigNoDataAlertMethodOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSloAnomalyConfigNoDataAlertMethodOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -202,7 +202,7 @@ func NewSloAnomalyConfigNoDataAlertMethodOutputReference(terraformResource cdktf
 	j := jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.slo.SloAnomalyConfigNoDataAlertMethodOutputReference",
+		"@cdktn/provider-nobl9.slo.SloAnomalyConfigNoDataAlertMethodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewSloAnomalyConfigNoDataAlertMethodOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewSloAnomalyConfigNoDataAlertMethodOutputReference_Override(s SloAnomalyConfigNoDataAlertMethodOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSloAnomalyConfigNoDataAlertMethodOutputReference_Override(s SloAnomalyConfigNoDataAlertMethodOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.slo.SloAnomalyConfigNoDataAlertMethodOutputReference",
+		"@cdktn/provider-nobl9.slo.SloAnomalyConfigNoDataAlertMethodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (s *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (s *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -454,8 +454,8 @@ func (s *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) GetStringMa
 	return returns
 }
 
-func (s *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -467,24 +467,24 @@ func (s *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) Interpolati
 	return returns
 }
 
-func (s *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (s *jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

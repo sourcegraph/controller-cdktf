@@ -40,11 +40,11 @@ func (m *jsiiProxy_ManagedKafkaClusterCapacityConfigOutputReference) validateGet
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKafkaClusterCapacityConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedKafkaClusterCapacityConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKafkaClusterCapacityConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedKafkaClusterCapacityConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ManagedKafkaClusterCapacityConfigOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaClusterCapacityConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ManagedKafkaClusterCapacityConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ManagedKafkaClusterCapacityConfigOutputReference) validateSet
 	return nil
 }
 
-func validateNewManagedKafkaClusterCapacityConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewManagedKafkaClusterCapacityConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

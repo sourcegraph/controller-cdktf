@@ -56,6 +56,10 @@ func (d *jsiiProxy_DnsManagedZone) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (d *jsiiProxy_DnsManagedZone) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsManagedZone) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (d *jsiiProxy_DnsManagedZone) validatePutPrivateVisibilityConfigParameters(
 }
 
 func (d *jsiiProxy_DnsManagedZone) validatePutTimeoutsParameters(value *DnsManagedZoneTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DnsManagedZone) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -140,7 +148,7 @@ func (j *jsiiProxy_DnsManagedZone) validateSetLabelsParameters(val *map[string]*
 	return nil
 }
 
-func (j *jsiiProxy_DnsManagedZone) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DnsManagedZone) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

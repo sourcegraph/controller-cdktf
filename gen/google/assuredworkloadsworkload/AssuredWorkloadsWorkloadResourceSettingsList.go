@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/assuredworkloadsworkload/internal"
 )
 
 type AssuredWorkloadsWorkloadResourceSettingsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type AssuredWorkloadsWorkloadResourceSettingsList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) AssuredWorkloadsWorkloadResourceSettingsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type AssuredWorkloadsWorkloadResourceSettingsList interface {
 
 // The jsii proxy struct for AssuredWorkloadsWorkloadResourceSettingsList
 type jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList) WrapsSet() *boo
 }
 
 
-func NewAssuredWorkloadsWorkloadResourceSettingsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AssuredWorkloadsWorkloadResourceSettingsList {
+func NewAssuredWorkloadsWorkloadResourceSettingsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AssuredWorkloadsWorkloadResourceSettingsList {
 	_init_.Initialize()
 
 	if err := validateNewAssuredWorkloadsWorkloadResourceSettingsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewAssuredWorkloadsWorkloadResourceSettingsList(terraformResource cdktf.IIn
 	j := jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourceSettingsList",
+		"@cdktn/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourceSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewAssuredWorkloadsWorkloadResourceSettingsList(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewAssuredWorkloadsWorkloadResourceSettingsList_Override(a AssuredWorkloadsWorkloadResourceSettingsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewAssuredWorkloadsWorkloadResourceSettingsList_Override(a AssuredWorkloadsWorkloadResourceSettingsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourceSettingsList",
+		"@cdktn/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourceSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList)SetWrapsSet(val 
 	)
 }
 
-func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := a.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		a,
@@ -228,8 +231,8 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList) Get(index *floa
 	return returns
 }
 
-func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList) Resolve(_contex
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

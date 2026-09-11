@@ -40,11 +40,11 @@ func (d *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDynamodbTablePointInTimeRecoveryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDynamodbTablePointInTimeRecoveryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

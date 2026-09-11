@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) validateOverrideLogicalIdP
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsNeptuneOrderableDbInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -92,7 +96,7 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) validateSetLicenseModelPar
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

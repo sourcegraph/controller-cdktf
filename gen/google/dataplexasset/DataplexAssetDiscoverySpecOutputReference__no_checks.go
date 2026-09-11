@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) validateGetStringM
 	return nil
 }
 
-func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) validatePutJsonOpt
 	return nil
 }
 
-func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataplexAssetDiscoverySpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataplexAssetDiscoverySpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

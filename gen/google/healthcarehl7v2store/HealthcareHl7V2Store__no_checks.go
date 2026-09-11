@@ -56,6 +56,10 @@ func (h *jsiiProxy_HealthcareHl7V2Store) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareHl7V2Store) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareHl7V2Store) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (h *jsiiProxy_HealthcareHl7V2Store) validatePutParserConfigParameters(value
 }
 
 func (h *jsiiProxy_HealthcareHl7V2Store) validatePutTimeoutsParameters(value *HealthcareHl7V2StoreTimeouts) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareHl7V2Store) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_HealthcareHl7V2Store) validateSetLabelsParameters(val *map[st
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareHl7V2Store) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_HealthcareHl7V2Store) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

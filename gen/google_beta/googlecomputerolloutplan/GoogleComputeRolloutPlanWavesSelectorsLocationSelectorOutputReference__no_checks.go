@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsLocationSelectorOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsLocationSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsLocationSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsLocationSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsLocationSelectorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsLocationSelectorOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsLocationSelectorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsLocationSelectorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeRolloutPlanWavesSelectorsLocationSelectorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeRolloutPlanWavesSelectorsLocationSelectorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

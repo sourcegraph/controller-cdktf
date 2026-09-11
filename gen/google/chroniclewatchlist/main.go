@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlist",
+		"@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist",
 		reflect.TypeOf((*ChronicleWatchlist)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -64,6 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putWatchlistUserPreferences", GoMethod: "PutWatchlistUserPreferences"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMultiplyingFactor", GoMethod: "ResetMultiplyingFactor"},
@@ -88,23 +90,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "watchlistIdInput", GoGetter: "WatchlistIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "watchlistUserPreferences", GoGetter: "WatchlistUserPreferences"},
 			_jsii_.MemberProperty{JsiiProperty: "watchlistUserPreferencesInput", GoGetter: "WatchlistUserPreferencesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleWatchlist{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistConfig",
+		"@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig",
 		reflect.TypeOf((*ChronicleWatchlistConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistEntityCount",
+		"@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityCount",
 		reflect.TypeOf((*ChronicleWatchlistEntityCount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistEntityCountList",
+		"@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityCountList",
 		reflect.TypeOf((*ChronicleWatchlistEntityCountList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -120,12 +123,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleWatchlistEntityCountList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistEntityCountOutputReference",
+		"@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityCountOutputReference",
 		reflect.TypeOf((*ChronicleWatchlistEntityCountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "asset", GoGetter: "Asset"},
@@ -154,20 +157,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleWatchlistEntityCountOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanism",
+		"@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanism",
 		reflect.TypeOf((*ChronicleWatchlistEntityPopulationMechanism)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanismManual",
+		"@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanismManual",
 		reflect.TypeOf((*ChronicleWatchlistEntityPopulationMechanismManual)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanismManualOutputReference",
+		"@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanismManualOutputReference",
 		reflect.TypeOf((*ChronicleWatchlistEntityPopulationMechanismManualOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -194,12 +197,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleWatchlistEntityPopulationMechanismManualOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanismOutputReference",
+		"@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanismOutputReference",
 		reflect.TypeOf((*ChronicleWatchlistEntityPopulationMechanismOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -230,16 +233,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts",
+		"@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts",
 		reflect.TypeOf((*ChronicleWatchlistTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistTimeoutsOutputReference",
+		"@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeoutsOutputReference",
 		reflect.TypeOf((*ChronicleWatchlistTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -275,16 +278,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleWatchlistTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistWatchlistUserPreferences",
+		"@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistWatchlistUserPreferences",
 		reflect.TypeOf((*ChronicleWatchlistWatchlistUserPreferences)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistWatchlistUserPreferencesOutputReference",
+		"@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistWatchlistUserPreferencesOutputReference",
 		reflect.TypeOf((*ChronicleWatchlistWatchlistUserPreferencesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -314,7 +317,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDataflowJob) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataflowJob) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataflowJob) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleDataflowJob) validateOverrideLogicalIdParameters(newLog
 }
 
 func (g *jsiiProxy_GoogleDataflowJob) validatePutTimeoutsParameters(value *GoogleDataflowJobTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataflowJob) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_GoogleDataflowJob) validateSetLabelsParameters(val *map[strin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataflowJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDataflowJob) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

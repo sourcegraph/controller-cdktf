@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleComputeReservationBlockPhysicalTopologyOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeReservationBlockPhysicalTopologyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeReservationBlockPhysicalTopologyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeReservationBlockPhysicalTopologyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeReservationBlockPhysicalTopologyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleComputeReservationBlockPhysicalTopologyOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservationBlockPhysicalTopologyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeReservationBlockPhysicalTopologyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleComputeReservationBlockPhysicalTopologyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleComputeReservationBlockPhysicalTopologyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

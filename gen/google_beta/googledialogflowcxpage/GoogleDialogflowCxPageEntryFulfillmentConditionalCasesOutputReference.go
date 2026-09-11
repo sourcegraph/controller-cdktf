@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledialogflowcxpage/internal"
 )
 
 type GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Cases() *string
 	SetCases(val *string)
 	CasesInput() *string
@@ -37,15 +37,15 @@ type GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference inter
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCases()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference inter
 
 // The jsii proxy struct for GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference
 type jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) Cases() *string {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputR
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputR
 }
 
 
-func NewGoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference {
+func NewGoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -180,7 +180,7 @@ func NewGoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference(te
 	j := jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference",
+		"@cdktn/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewGoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference(te
 	return &j
 }
 
-func NewGoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference_Override(g GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference_Override(g GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference",
+		"@cdktn/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputR
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -421,8 +421,8 @@ func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputR
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -434,16 +434,16 @@ func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputR
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputR
 	)
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesOutputR
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSecretManagerRegionalSecretIamMemberConditionOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecretManagerRegionalSecretIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSecretManagerRegionalSecretIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecretManagerRegionalSecretIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSecretManagerRegionalSecretIamMemberConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecretIamMemberConditionOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerRegionalSecretIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecretIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecretIamMemberConditionOutputRefe
 	return nil
 }
 
-func validateNewGoogleSecretManagerRegionalSecretIamMemberConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleSecretManagerRegionalSecretIamMemberConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

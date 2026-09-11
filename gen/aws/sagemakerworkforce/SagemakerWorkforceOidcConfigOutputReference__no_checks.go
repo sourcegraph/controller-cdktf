@@ -40,11 +40,11 @@ func (s *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateGetStrin
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateSetUserI
 	return nil
 }
 
-func validateNewSagemakerWorkforceOidcConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSagemakerWorkforceOidcConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

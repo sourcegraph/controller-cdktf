@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerClusterEnableK8SBetaApisOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterEnableK8SBetaApisOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerClusterEnableK8SBetaApisOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterEnableK8SBetaApisOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerClusterEnableK8SBetaApisOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleContainerClusterEnableK8SBetaApisOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterEnableK8SBetaApisOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerClusterEnableK8SBetaApisOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerClusterEnableK8SBetaApisOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerClusterEnableK8SBetaApisOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

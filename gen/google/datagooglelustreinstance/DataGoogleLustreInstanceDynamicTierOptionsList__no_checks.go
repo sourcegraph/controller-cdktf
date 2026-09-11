@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleLustreInstanceDynamicTierOptionsList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleLustreInstanceDynamicTierOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleLustreInstanceDynamicTierOptionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleLustreInstanceDynamicTierOptionsList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleLustreInstanceDynamicTierOptionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleLustreInstanceDynamicTierOptionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleLustreInstanceDynamicTierOptionsList) validateSetWr
 	return nil
 }
 
-func validateNewDataGoogleLustreInstanceDynamicTierOptionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleLustreInstanceDynamicTierOptionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (e *jsiiProxy_EvidentlyFeatureVariationsList) validateGetParameters(index *
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyFeatureVariationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyFeatureVariationsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EvidentlyFeatureVariationsList) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyFeatureVariationsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EvidentlyFeatureVariationsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EvidentlyFeatureVariationsList) validateSetWrapsSetParameters
 	return nil
 }
 
-func validateNewEvidentlyFeatureVariationsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEvidentlyFeatureVariationsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

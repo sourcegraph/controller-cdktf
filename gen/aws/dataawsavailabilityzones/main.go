@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZones",
+		"@cdktn/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZones",
 		reflect.TypeOf((*DataAwsAvailabilityZones)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putFilter", GoMethod: "PutFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllAvailabilityZones", GoMethod: "ResetAllAvailabilityZones"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcludeNames", GoMethod: "ResetExcludeNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcludeZoneIds", GoMethod: "ResetExcludeZoneIds"},
@@ -69,24 +70,25 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIds", GoGetter: "ZoneIds"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsAvailabilityZones{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesConfig",
+		"@cdktn/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesConfig",
 		reflect.TypeOf((*DataAwsAvailabilityZonesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesFilter",
+		"@cdktn/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesFilter",
 		reflect.TypeOf((*DataAwsAvailabilityZonesFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesFilterList",
+		"@cdktn/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesFilterList",
 		reflect.TypeOf((*DataAwsAvailabilityZonesFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -103,12 +105,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsAvailabilityZonesFilterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesFilterOutputReference",
+		"@cdktn/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesFilterOutputReference",
 		reflect.TypeOf((*DataAwsAvailabilityZonesFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,16 +141,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsAvailabilityZonesFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesTimeouts",
+		"@cdktn/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesTimeouts",
 		reflect.TypeOf((*DataAwsAvailabilityZonesTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesTimeoutsOutputReference",
+		"@cdktn/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsAvailabilityZonesTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -178,7 +180,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsAvailabilityZonesTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

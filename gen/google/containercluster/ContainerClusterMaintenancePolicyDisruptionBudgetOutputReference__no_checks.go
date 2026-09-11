@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerClusterMaintenancePolicyDisruptionBudgetOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerClusterMaintenancePolicyDisruptionBudgetOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (o *jsiiProxy_OpsworksHaproxyLayerCloudwatchConfigurationOutputReference) v
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksHaproxyLayerCloudwatchConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpsworksHaproxyLayerCloudwatchConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (o *jsiiProxy_OpsworksHaproxyLayerCloudwatchConfigurationOutputReference) v
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksHaproxyLayerCloudwatchConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksHaproxyLayerCloudwatchConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_OpsworksHaproxyLayerCloudwatchConfigurationOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksHaproxyLayerCloudwatchConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksHaproxyLayerCloudwatchConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewOpsworksHaproxyLayerCloudwatchConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOpsworksHaproxyLayerCloudwatchConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

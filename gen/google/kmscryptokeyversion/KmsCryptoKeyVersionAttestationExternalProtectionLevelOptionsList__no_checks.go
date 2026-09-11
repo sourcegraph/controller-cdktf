@@ -12,7 +12,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsL
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsL
 	return nil
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsL
 	return nil
 }
 
-func validateNewKmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewKmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

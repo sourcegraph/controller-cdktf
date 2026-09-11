@@ -56,6 +56,10 @@ func (r *jsiiProxy_RateLimit) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (r *jsiiProxy_RateLimit) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RateLimit) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (r *jsiiProxy_RateLimit) validatePutCorrelateParameters(value *RateLimitCor
 }
 
 func (r *jsiiProxy_RateLimit) validatePutMatchParameters(value *RateLimitMatch) error {
+	return nil
+}
+
+func (r *jsiiProxy_RateLimit) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_RateLimit) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_RateLimit) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_RateLimit) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

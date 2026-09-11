@@ -56,6 +56,10 @@ func (p *jsiiProxy_PodSecurityPolicy) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (p *jsiiProxy_PodSecurityPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PodSecurityPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (p *jsiiProxy_PodSecurityPolicy) validatePutMetadataParameters(value *PodSe
 }
 
 func (p *jsiiProxy_PodSecurityPolicy) validatePutSpecParameters(value *PodSecurityPolicySpec) error {
+	return nil
+}
+
+func (p *jsiiProxy_PodSecurityPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_PodSecurityPolicy) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PodSecurityPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

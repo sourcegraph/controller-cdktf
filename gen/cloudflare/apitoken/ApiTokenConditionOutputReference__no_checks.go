@@ -40,7 +40,7 @@ func (a *jsiiProxy_ApiTokenConditionOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (a *jsiiProxy_ApiTokenConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiTokenConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (a *jsiiProxy_ApiTokenConditionOutputReference) validatePutRequestIpParamet
 	return nil
 }
 
-func (a *jsiiProxy_ApiTokenConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiTokenConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ApiTokenConditionOutputReference) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_ApiTokenConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApiTokenConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewApiTokenConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApiTokenConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

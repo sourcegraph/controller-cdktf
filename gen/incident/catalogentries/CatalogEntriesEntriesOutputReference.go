@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/incident/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/incident/catalogentries/internal"
 )
 
 type CatalogEntriesEntriesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Aliases() *[]*string
 	SetAliases(val *[]*string)
 	AliasesInput() *[]*string
@@ -46,15 +46,15 @@ type CatalogEntriesEntriesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type CatalogEntriesEntriesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAttributeValues(value interface{})
 	ResetAliases()
 	ResetRank()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type CatalogEntriesEntriesOutputReference interface {
 
 // The jsii proxy struct for CatalogEntriesEntriesOutputReference
 type jsiiProxy_CatalogEntriesEntriesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) Aliases() *[]*string {
@@ -241,8 +241,8 @@ func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) TerraformAttribute() *s
 	return returns
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -252,7 +252,7 @@ func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) TerraformResource() cdk
 }
 
 
-func NewCatalogEntriesEntriesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) CatalogEntriesEntriesOutputReference {
+func NewCatalogEntriesEntriesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) CatalogEntriesEntriesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCatalogEntriesEntriesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectKey); err != nil {
@@ -261,7 +261,7 @@ func NewCatalogEntriesEntriesOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_CatalogEntriesEntriesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.catalogEntries.CatalogEntriesEntriesOutputReference",
+		"@cdktn/provider-incident.catalogEntries.CatalogEntriesEntriesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectKey},
 		&j,
 	)
@@ -269,11 +269,11 @@ func NewCatalogEntriesEntriesOutputReference(terraformResource cdktf.IInterpolat
 	return &j
 }
 
-func NewCatalogEntriesEntriesOutputReference_Override(c CatalogEntriesEntriesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) {
+func NewCatalogEntriesEntriesOutputReference_Override(c CatalogEntriesEntriesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.catalogEntries.CatalogEntriesEntriesOutputReference",
+		"@cdktn/provider-incident.catalogEntries.CatalogEntriesEntriesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectKey},
 		c,
 	)
@@ -356,7 +356,7 @@ func (j *jsiiProxy_CatalogEntriesEntriesOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CatalogEntriesEntriesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,11 +396,11 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -524,8 +524,8 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) GetStringMapAttribute(t
 	return returns
 }
 
-func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -537,16 +537,16 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -580,8 +580,8 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) ResetRank() {
 	)
 }
 
-func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -589,7 +589,7 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

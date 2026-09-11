@@ -12,7 +12,7 @@ func (m *jsiiProxy_MemcacheInstanceMemcacheNodesList) validateGetParameters(inde
 	return nil
 }
 
-func (m *jsiiProxy_MemcacheInstanceMemcacheNodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemcacheInstanceMemcacheNodesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_MemcacheInstanceMemcacheNodesList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_MemcacheInstanceMemcacheNodesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MemcacheInstanceMemcacheNodesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_MemcacheInstanceMemcacheNodesList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewMemcacheInstanceMemcacheNodesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMemcacheInstanceMemcacheNodesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

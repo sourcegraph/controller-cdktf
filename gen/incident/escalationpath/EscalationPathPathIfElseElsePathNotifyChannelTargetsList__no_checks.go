@@ -12,7 +12,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathNotifyChannelTargetsList) val
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseElsePathNotifyChannelTargetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EscalationPathPathIfElseElsePathNotifyChannelTargetsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathNotifyChannelTargetsList) val
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathNotifyChannelTargetsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathNotifyChannelTargetsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathNotifyChannelTargetsList) val
 	return nil
 }
 
-func validateNewEscalationPathPathIfElseElsePathNotifyChannelTargetsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEscalationPathPathIfElseElsePathNotifyChannelTargetsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (v *jsiiProxy_VectorSearchCollection) validateInterpolationForAttributePara
 	return nil
 }
 
+func (v *jsiiProxy_VectorSearchCollection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VectorSearchCollection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (v *jsiiProxy_VectorSearchCollection) validatePutTimeoutsParameters(value *
 }
 
 func (v *jsiiProxy_VectorSearchCollection) validatePutVectorSchemaParameters(value interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VectorSearchCollection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_VectorSearchCollection) validateSetLabelsParameters(val *map[
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchCollection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_VectorSearchCollection) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

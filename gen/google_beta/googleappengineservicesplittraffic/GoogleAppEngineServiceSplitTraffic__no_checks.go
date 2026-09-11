@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateInterpolationForA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validatePutSplitParameter
 }
 
 func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validatePutTimeoutsParameters(value *GoogleAppEngineServiceSplitTrafficTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

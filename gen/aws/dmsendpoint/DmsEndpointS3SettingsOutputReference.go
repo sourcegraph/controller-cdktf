@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/dmsendpoint/internal"
 )
 
 type DmsEndpointS3SettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AddColumnName() interface{}
 	SetAddColumnName(val interface{})
 	AddColumnNameInput() interface{}
@@ -139,9 +139,9 @@ type DmsEndpointS3SettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimestampColumnName() *string
 	SetTimestampColumnName(val *string)
 	TimestampColumnNameInput() *string
@@ -156,7 +156,7 @@ type DmsEndpointS3SettingsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -172,9 +172,9 @@ type DmsEndpointS3SettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAddColumnName()
 	ResetBucketFolder()
 	ResetBucketName()
@@ -215,7 +215,7 @@ type DmsEndpointS3SettingsOutputReference interface {
 	ResetUseTaskStartTimeForFullLoadTimestamp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -225,7 +225,7 @@ type DmsEndpointS3SettingsOutputReference interface {
 
 // The jsii proxy struct for DmsEndpointS3SettingsOutputReference
 type jsiiProxy_DmsEndpointS3SettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) AddColumnName() interface{} {
@@ -988,8 +988,8 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) TerraformAttribute() *s
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -1059,7 +1059,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) UseTaskStartTimeForFull
 }
 
 
-func NewDmsEndpointS3SettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DmsEndpointS3SettingsOutputReference {
+func NewDmsEndpointS3SettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DmsEndpointS3SettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDmsEndpointS3SettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -1068,7 +1068,7 @@ func NewDmsEndpointS3SettingsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DmsEndpointS3SettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointS3SettingsOutputReference",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointS3SettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -1076,11 +1076,11 @@ func NewDmsEndpointS3SettingsOutputReference(terraformResource cdktf.IInterpolat
 	return &j
 }
 
-func NewDmsEndpointS3SettingsOutputReference_Override(d DmsEndpointS3SettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDmsEndpointS3SettingsOutputReference_Override(d DmsEndpointS3SettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointS3SettingsOutputReference",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointS3SettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -1515,7 +1515,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1588,11 +1588,11 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1716,8 +1716,8 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) GetStringMapAttribute(t
 	return returns
 }
 
-func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1729,16 +1729,16 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -2049,8 +2049,8 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) ResetUseTaskStartTimeFo
 	)
 }
 
-func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -2058,7 +2058,7 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

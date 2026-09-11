@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCloudSecurityComplianceFrameworkDeploymentCloudControlD
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleCloudSecurityComplianceFrameworkDeploymentCloudControlD
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleCloudSecurityComplianceFrameworkDeploymentCloudControlD
 	return nil
 }
 
-func validateNewGoogleCloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (c *jsiiProxy_CustomField) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (c *jsiiProxy_CustomField) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomField) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_CustomField) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (c *jsiiProxy_CustomField) validatePutFilterByParameters(value *CustomFieldFilterBy) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomField) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_CustomField) validateSetHelptextCatalogAttributeIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_CustomField) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CustomField) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

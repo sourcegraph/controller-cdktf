@@ -40,11 +40,11 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (l *jsiiProxy_LbSubnetMappingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbSubnetMappingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LbSubnetMappingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbSubnetMappingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_LbSubnetMappingOutputReference) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_LbSubnetMappingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LbSubnetMappingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLbSubnetMappingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLbSubnetMappingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (s *jsiiProxy_SpannerInstancePartitionAutoscalingConfigAutoscalingLimitsOut
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstancePartitionAutoscalingConfigAutoscalingLimitsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpannerInstancePartitionAutoscalingConfigAutoscalingLimitsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstancePartitionAutoscalingConfigAutoscalingLimitsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpannerInstancePartitionAutoscalingConfigAutoscalingLimitsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_SpannerInstancePartitionAutoscalingConfigAutoscalingLimitsOut
 	return nil
 }
 
-func (j *jsiiProxy_SpannerInstancePartitionAutoscalingConfigAutoscalingLimitsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SpannerInstancePartitionAutoscalingConfigAutoscalingLimitsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSpannerInstancePartitionAutoscalingConfigAutoscalingLimitsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSpannerInstancePartitionAutoscalingConfigAutoscalingLimitsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

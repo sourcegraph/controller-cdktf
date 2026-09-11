@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCloudbuildTriggerBitbucketServerTriggerConfigPushOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudbuildTriggerBitbucketServerTriggerConfigPushOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

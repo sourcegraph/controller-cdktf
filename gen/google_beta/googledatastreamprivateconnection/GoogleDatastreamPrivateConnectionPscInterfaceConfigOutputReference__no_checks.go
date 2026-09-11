@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

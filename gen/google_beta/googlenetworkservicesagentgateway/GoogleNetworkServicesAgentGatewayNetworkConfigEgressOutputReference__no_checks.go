@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkServicesAgentGatewayNetworkConfigEgressOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesAgentGatewayNetworkConfigEgressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkServicesAgentGatewayNetworkConfigEgressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesAgentGatewayNetworkConfigEgressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesAgentGatewayNetworkConfigEgressOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleNetworkServicesAgentGatewayNetworkConfigEgressOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesAgentGatewayNetworkConfigEgressOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesAgentGatewayNetworkConfigEgressOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkServicesAgentGatewayNetworkConfigEgressOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkServicesAgentGatewayNetworkConfigEgressOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

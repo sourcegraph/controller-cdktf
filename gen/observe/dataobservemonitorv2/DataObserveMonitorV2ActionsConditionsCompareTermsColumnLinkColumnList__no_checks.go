@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsColumnLinkCo
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsColumnLinkColumnList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsColumnLinkColumnList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsColumnLinkCo
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsColumnLinkColumnList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsColumnLinkColumnList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsColumnLinkCo
 	return nil
 }
 
-func validateNewDataObserveMonitorV2ActionsConditionsCompareTermsColumnLinkColumnListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataObserveMonitorV2ActionsConditionsCompareTermsColumnLinkColumnListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

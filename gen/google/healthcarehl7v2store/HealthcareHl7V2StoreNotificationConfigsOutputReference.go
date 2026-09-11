@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/healthcarehl7v2store/internal"
 )
 
 type HealthcareHl7V2StoreNotificationConfigsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type HealthcareHl7V2StoreNotificationConfigsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type HealthcareHl7V2StoreNotificationConfigsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetFilter()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type HealthcareHl7V2StoreNotificationConfigsOutputReference interface {
 
 // The jsii proxy struct for HealthcareHl7V2StoreNotificationConfigsOutputReference
 type jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) Terra
 }
 
 
-func NewHealthcareHl7V2StoreNotificationConfigsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) HealthcareHl7V2StoreNotificationConfigsOutputReference {
+func NewHealthcareHl7V2StoreNotificationConfigsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) HealthcareHl7V2StoreNotificationConfigsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewHealthcareHl7V2StoreNotificationConfigsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +203,7 @@ func NewHealthcareHl7V2StoreNotificationConfigsOutputReference(terraformResource
 	j := jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference",
+		"@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewHealthcareHl7V2StoreNotificationConfigsOutputReference(terraformResource
 	return &j
 }
 
-func NewHealthcareHl7V2StoreNotificationConfigsOutputReference_Override(h HealthcareHl7V2StoreNotificationConfigsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewHealthcareHl7V2StoreNotificationConfigsOutputReference_Override(h HealthcareHl7V2StoreNotificationConfigsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference",
+		"@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		h,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) GetAn
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := h.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -455,8 +455,8 @@ func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) GetSt
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -468,16 +468,16 @@ func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) Inter
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := h.validateInterpolationForAttributeParameters(property); err != nil {
+func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) Reset
 	)
 }
 
-func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := h.validateResolveParameters(_context); err != nil {
+func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := h.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) Resol
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

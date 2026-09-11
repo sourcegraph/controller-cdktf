@@ -40,7 +40,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactOutpu
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactOutpu
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewClouddomainsRegistrationContactSettingsRegistrantContactOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewClouddomainsRegistrationContactSettingsRegistrantContactOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

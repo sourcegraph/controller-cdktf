@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkApplication) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsElasticBeanstalkApplication) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsElasticBeanstalkApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkApplication) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkApplication) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsElasticBeanstalkApplication) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

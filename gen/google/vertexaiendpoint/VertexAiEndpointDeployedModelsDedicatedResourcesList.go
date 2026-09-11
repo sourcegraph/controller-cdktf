@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/vertexaiendpoint/internal"
 )
 
 type VertexAiEndpointDeployedModelsDedicatedResourcesList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type VertexAiEndpointDeployedModelsDedicatedResourcesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) VertexAiEndpointDeployedModelsDedicatedResourcesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type VertexAiEndpointDeployedModelsDedicatedResourcesList interface {
 
 // The jsii proxy struct for VertexAiEndpointDeployedModelsDedicatedResourcesList
 type jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesList) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesList) WrapsSe
 }
 
 
-func NewVertexAiEndpointDeployedModelsDedicatedResourcesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiEndpointDeployedModelsDedicatedResourcesList {
+func NewVertexAiEndpointDeployedModelsDedicatedResourcesList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiEndpointDeployedModelsDedicatedResourcesList {
 	_init_.Initialize()
 
 	if err := validateNewVertexAiEndpointDeployedModelsDedicatedResourcesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewVertexAiEndpointDeployedModelsDedicatedResourcesList(terraformResource c
 	j := jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesList",
+		"@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewVertexAiEndpointDeployedModelsDedicatedResourcesList(terraformResource c
 	return &j
 }
 
-func NewVertexAiEndpointDeployedModelsDedicatedResourcesList_Override(v VertexAiEndpointDeployedModelsDedicatedResourcesList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewVertexAiEndpointDeployedModelsDedicatedResourcesList_Override(v VertexAiEndpointDeployedModelsDedicatedResourcesList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesList",
+		"@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesList)SetTerra
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesList)SetWraps
 	)
 }
 
-func (v *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (v *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := v.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		v,
@@ -205,8 +208,8 @@ func (v *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesList) Get(ind
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (v *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesList) Resolve
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

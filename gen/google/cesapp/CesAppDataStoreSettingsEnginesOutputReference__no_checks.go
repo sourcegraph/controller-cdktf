@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesAppDataStoreSettingsEnginesOutputReference) validateGetStr
 	return nil
 }
 
-func (c *jsiiProxy_CesAppDataStoreSettingsEnginesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAppDataStoreSettingsEnginesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesAppDataStoreSettingsEnginesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppDataStoreSettingsEnginesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_CesAppDataStoreSettingsEnginesOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_CesAppDataStoreSettingsEnginesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppDataStoreSettingsEnginesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesAppDataStoreSettingsEnginesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCesAppDataStoreSettingsEnginesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

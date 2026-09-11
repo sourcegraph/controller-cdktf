@@ -56,6 +56,10 @@ func (r *jsiiProxy_RamResourceShare) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (r *jsiiProxy_RamResourceShare) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RamResourceShare) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (r *jsiiProxy_RamResourceShare) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (r *jsiiProxy_RamResourceShare) validatePutTimeoutsParameters(value *RamResourceShareTimeouts) error {
+	return nil
+}
+
+func (r *jsiiProxy_RamResourceShare) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_RamResourceShare) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_RamResourceShare) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_RamResourceShare) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

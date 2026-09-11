@@ -56,6 +56,10 @@ func (d *jsiiProxy_DiscoveryEngineTargetSite) validateInterpolationForAttributeP
 	return nil
 }
 
+func (d *jsiiProxy_DiscoveryEngineTargetSite) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiscoveryEngineTargetSite) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DiscoveryEngineTargetSite) validateOverrideLogicalIdParameter
 }
 
 func (d *jsiiProxy_DiscoveryEngineTargetSite) validatePutTimeoutsParameters(value *DiscoveryEngineTargetSiteTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineTargetSite) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_DiscoveryEngineTargetSite) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineTargetSite) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DiscoveryEngineTargetSite) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

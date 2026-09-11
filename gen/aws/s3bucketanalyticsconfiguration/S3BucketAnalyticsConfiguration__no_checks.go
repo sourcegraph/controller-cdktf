@@ -56,6 +56,10 @@ func (s *jsiiProxy_S3BucketAnalyticsConfiguration) validateInterpolationForAttri
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketAnalyticsConfiguration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketAnalyticsConfiguration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (s *jsiiProxy_S3BucketAnalyticsConfiguration) validatePutFilterParameters(v
 }
 
 func (s *jsiiProxy_S3BucketAnalyticsConfiguration) validatePutStorageClassAnalysisParameters(value *S3BucketAnalyticsConfigurationStorageClassAnalysis) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketAnalyticsConfiguration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_S3BucketAnalyticsConfiguration) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketAnalyticsConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_S3BucketAnalyticsConfiguration) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

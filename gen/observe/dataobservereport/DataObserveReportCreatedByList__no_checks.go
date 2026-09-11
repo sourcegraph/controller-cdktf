@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataObserveReportCreatedByList) validateGetParameters(index *
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveReportCreatedByList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataObserveReportCreatedByList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataObserveReportCreatedByList) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveReportCreatedByList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataObserveReportCreatedByList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataObserveReportCreatedByList) validateSetWrapsSetParameters
 	return nil
 }
 
-func validateNewDataObserveReportCreatedByListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataObserveReportCreatedByListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

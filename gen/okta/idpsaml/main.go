@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.idpSaml.IdpSaml",
+		"@cdktn/provider-okta.idpSaml.IdpSaml",
 		reflect.TypeOf((*IdpSaml)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountLinkAction", GoGetter: "AccountLinkAction"},
@@ -60,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kid", GoGetter: "Kid"},
 			_jsii_.MemberProperty{JsiiProperty: "kidInput", GoGetter: "KidInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maxClockSkew", GoGetter: "MaxClockSkew"},
 			_jsii_.MemberProperty{JsiiProperty: "maxClockSkewInput", GoGetter: "MaxClockSkewInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -78,6 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioningAction", GoGetter: "ProvisioningAction"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioningActionInput", GoGetter: "ProvisioningActionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "requestSignatureAlgorithm", GoGetter: "RequestSignatureAlgorithm"},
 			_jsii_.MemberProperty{JsiiProperty: "requestSignatureAlgorithmInput", GoGetter: "RequestSignatureAlgorithmInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requestSignatureScope", GoGetter: "RequestSignatureScope"},
@@ -145,15 +147,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usernameTemplate", GoGetter: "UsernameTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameTemplateInput", GoGetter: "UsernameTemplateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "userTypeId", GoGetter: "UserTypeId"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_IdpSaml{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.idpSaml.IdpSamlConfig",
+		"@cdktn/provider-okta.idpSaml.IdpSamlConfig",
 		reflect.TypeOf((*IdpSamlConfig)(nil)).Elem(),
 	)
 }

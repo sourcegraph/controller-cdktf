@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceConfigReplicasList) validateGetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSpannerInstanceConfigReplicasList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSpannerInstanceConfigReplicasList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleSpannerInstanceConfigReplicasList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceConfigReplicasList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSpannerInstanceConfigReplicasList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleSpannerInstanceConfigReplicasList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewGoogleSpannerInstanceConfigReplicasListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleSpannerInstanceConfigReplicasListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

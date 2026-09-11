@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -5,15 +5,15 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogleparametermanagerparameter/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_parameter_manager_parameter google_parameter_manager_parameter}.
 type DataGoogleParameterManagerParameter interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -25,11 +25,11 @@ type DataGoogleParameterManagerParameter interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EffectiveLabels() cdktf.StringMap
+	EffectiveLabels() cdktn.StringMap
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	Format() *string
 	// Experimental.
 	Fqn() *string
@@ -39,11 +39,11 @@ type DataGoogleParameterManagerParameter interface {
 	SetId(val *string)
 	IdInput() *string
 	KmsKey() *string
-	Labels() cdktf.StringMap
+	Labels() cdktn.StringMap
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -55,14 +55,14 @@ type DataGoogleParameterManagerParameter interface {
 	SetProject(val *string)
 	ProjectInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
-	TerraformLabels() cdktf.StringMap
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktn.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -73,7 +73,7 @@ type DataGoogleParameterManagerParameter interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -89,10 +89,23 @@ type DataGoogleParameterManagerParameter interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -110,15 +123,24 @@ type DataGoogleParameterManagerParameter interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataGoogleParameterManagerParameter
 type jsiiProxy_DataGoogleParameterManagerParameter struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -167,8 +189,8 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter) EffectiveLabels() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) EffectiveLabels() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
@@ -177,8 +199,8 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter) EffectiveLabels() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -247,8 +269,8 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter) KmsKey() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter) Labels() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) Labels() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"labels",
@@ -257,8 +279,8 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter) Labels() cdktf.StringMap
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -337,8 +359,8 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter) ProjectInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -357,8 +379,8 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter) RawOverrides() interface
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -367,8 +389,8 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter) TerraformGeneratorMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter) TerraformLabels() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) TerraformLabels() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"terraformLabels",
@@ -418,7 +440,7 @@ func NewDataGoogleParameterManagerParameter(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataGoogleParameterManagerParameter{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
+		"@cdktn/provider-google-beta.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -431,7 +453,7 @@ func NewDataGoogleParameterManagerParameter_Override(d DataGoogleParameterManage
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
+		"@cdktn/provider-google-beta.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -456,7 +478,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -475,7 +497,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +530,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -516,17 +538,17 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetProvider(val cdktf.Ter
 	)
 }
 
-// Generates CDKTF code for importing a DataGoogleParameterManagerParameter resource upon running "cdktf plan <stack-name>".
-func DataGoogleParameterManagerParameter_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataGoogleParameterManagerParameter resource upon running "cdktn plan <stack-name>".
+func DataGoogleParameterManagerParameter_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataGoogleParameterManagerParameter_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google-beta.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
+		"@cdktn/provider-google-beta.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -561,7 +583,7 @@ func DataGoogleParameterManagerParameter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google-beta.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
+		"@cdktn/provider-google-beta.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -580,7 +602,7 @@ func DataGoogleParameterManagerParameter_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google-beta.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
+		"@cdktn/provider-google-beta.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +621,7 @@ func DataGoogleParameterManagerParameter_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google-beta.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
+		"@cdktn/provider-google-beta.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +634,7 @@ func DataGoogleParameterManagerParameter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-google-beta.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
+		"@cdktn/provider-google-beta.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
 		"tfResourceType",
 		&returns,
 	)
@@ -646,11 +668,11 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleParameterManagerParameter) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleParameterManagerParameter) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -774,11 +796,11 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) GetStringMapAttribute(te
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleParameterManagerParameter) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleParameterManagerParameter) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -798,6 +820,17 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) OverrideLogicalId(newLog
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataGoogleParameterManagerParameter) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -897,6 +930,24 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) ToTerraform() interface{
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGoogleParameterManagerParameter) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

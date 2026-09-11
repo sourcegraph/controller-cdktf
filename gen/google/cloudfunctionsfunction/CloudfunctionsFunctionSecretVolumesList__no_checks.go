@@ -12,7 +12,7 @@ func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesList) validateGetParameter
 	return nil
 }
 
-func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewCloudfunctionsFunctionSecretVolumesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCloudfunctionsFunctionSecretVolumesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

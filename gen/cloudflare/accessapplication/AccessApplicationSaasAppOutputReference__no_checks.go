@@ -40,11 +40,11 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAccessApplicationSaasAppOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAccessApplicationSaasAppOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

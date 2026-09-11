@@ -12,7 +12,7 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterList) validateGetParameters(ind
 	return nil
 }
 
-func (n *jsiiProxy_NeptuneParameterGroupParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NeptuneParameterGroupParameterList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneParameterGroupParameterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NeptuneParameterGroupParameterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewNeptuneParameterGroupParameterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNeptuneParameterGroupParameterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

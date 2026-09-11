@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterMaintenanceEventsOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerClusterMaintenanceEventsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleEdgecontainerClusterMaintenanceEventsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerClusterMaintenanceEventsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleEdgecontainerClusterMaintenanceEventsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleEdgecontainerClusterMaintenanceEventsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterMaintenanceEventsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleEdgecontainerClusterMaintenanceEventsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleEdgecontainerClusterMaintenanceEventsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleEdgecontainerClusterMaintenanceEventsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

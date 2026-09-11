@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/devicefarmtestgridproject/internal"
 )
 
 type DevicefarmTestGridProjectVpcConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type DevicefarmTestGridProjectVpcConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VpcId() *string
 	SetVpcId(val *string)
 	VpcIdInput() *string
@@ -51,7 +51,7 @@ type DevicefarmTestGridProjectVpcConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type DevicefarmTestGridProjectVpcConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type DevicefarmTestGridProjectVpcConfigOutputReference interface {
 
 // The jsii proxy struct for DevicefarmTestGridProjectVpcConfigOutputReference
 type jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -185,8 +185,8 @@ func (j *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -216,7 +216,7 @@ func (j *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) VpcIdInput
 }
 
 
-func NewDevicefarmTestGridProjectVpcConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DevicefarmTestGridProjectVpcConfigOutputReference {
+func NewDevicefarmTestGridProjectVpcConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DevicefarmTestGridProjectVpcConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDevicefarmTestGridProjectVpcConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -225,7 +225,7 @@ func NewDevicefarmTestGridProjectVpcConfigOutputReference(terraformResource cdkt
 	j := jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProjectVpcConfigOutputReference",
+		"@cdktn/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProjectVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -233,11 +233,11 @@ func NewDevicefarmTestGridProjectVpcConfigOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewDevicefarmTestGridProjectVpcConfigOutputReference_Override(d DevicefarmTestGridProjectVpcConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDevicefarmTestGridProjectVpcConfigOutputReference_Override(d DevicefarmTestGridProjectVpcConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProjectVpcConfigOutputReference",
+		"@cdktn/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProjectVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,11 +360,11 @@ func (d *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) GetAnyMapA
 	return returns
 }
 
-func (d *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -488,8 +488,8 @@ func (d *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) GetStringM
 	return returns
 }
 
-func (d *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -501,24 +501,24 @@ func (d *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) Interpolat
 	return returns
 }
 
-func (d *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -526,7 +526,7 @@ func (d *jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (e *jsiiProxy_EventarcTriggerMatchingCriteriaList) validateGetParameters(in
 	return nil
 }
 
-func (e *jsiiProxy_EventarcTriggerMatchingCriteriaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcTriggerMatchingCriteriaList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewEventarcTriggerMatchingCriteriaListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEventarcTriggerMatchingCriteriaListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

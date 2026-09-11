@@ -56,6 +56,10 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateInterpo
 	return nil
 }
 
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateOverrid
 }
 
 func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validatePutConditionParameters(value *GooglePrivatecaCertificateTemplateIamBindingCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateSetIdPa
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

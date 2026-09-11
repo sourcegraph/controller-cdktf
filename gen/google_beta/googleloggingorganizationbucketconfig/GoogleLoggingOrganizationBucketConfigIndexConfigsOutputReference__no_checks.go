@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleLoggingOrganizationBucketConfigIndexConfigsOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationBucketConfigIndexConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleLoggingOrganizationBucketConfigIndexConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationBucketConfigIndexConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleLoggingOrganizationBucketConfigIndexConfigsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationBucketConfigIndexConfigsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationBucketConfigIndexConfigsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleLoggingOrganizationBucketConfigIndexConfigsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationBucketConfigIndexConfigsOutputRefere
 	return nil
 }
 
-func validateNewGoogleLoggingOrganizationBucketConfigIndexConfigsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleLoggingOrganizationBucketConfigIndexConfigsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyTimeoutsOutputReference) vali
 	return nil
 }
 
-func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_IamPrincipalAccessBoundaryPolicyTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_IamPrincipalAccessBoundaryPolicyTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IamPrincipalAccessBoundaryPolicyTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_IamPrincipalAccessBoundaryPolicyTimeoutsOutputReference) vali
 	return nil
 }
 
-func validateNewIamPrincipalAccessBoundaryPolicyTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIamPrincipalAccessBoundaryPolicyTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

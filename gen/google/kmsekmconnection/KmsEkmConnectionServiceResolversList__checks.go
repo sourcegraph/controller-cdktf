@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (k *jsiiProxy_KmsEkmConnectionServiceResolversList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversList) validateGetParameters(i
 	return nil
 }
 
-func (k *jsiiProxy_KmsEkmConnectionServiceResolversList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (k *jsiiProxy_KmsEkmConnectionServiceResolversList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversList) validateResolveParamete
 
 func (j *jsiiProxy_KmsEkmConnectionServiceResolversList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*KmsEkmConnectionServiceResolvers:
 		val := val.(*[]*KmsEkmConnectionServiceResolvers)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_KmsEkmConnectionServiceResolversList) validateSetInternalValu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*KmsEkmConnectionServiceResolvers; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*KmsEkmConnectionServiceResolvers; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_KmsEkmConnectionServiceResolversList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_KmsEkmConnectionServiceResolversList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewKmsEkmConnectionServiceResolversListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewKmsEkmConnectionServiceResolversListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -56,6 +56,10 @@ func (l *jsiiProxy_LightsailLbStickinessPolicy) validateInterpolationForAttribut
 	return nil
 }
 
+func (l *jsiiProxy_LightsailLbStickinessPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailLbStickinessPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (l *jsiiProxy_LightsailLbStickinessPolicy) validateMoveToIdParameters(id *s
 }
 
 func (l *jsiiProxy_LightsailLbStickinessPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LightsailLbStickinessPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_LightsailLbStickinessPolicy) validateSetLbNameParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_LightsailLbStickinessPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LightsailLbStickinessPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

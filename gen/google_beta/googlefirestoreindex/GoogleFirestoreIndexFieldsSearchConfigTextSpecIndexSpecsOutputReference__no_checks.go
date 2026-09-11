@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

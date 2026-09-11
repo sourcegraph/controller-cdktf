@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleVertexAiRagEngineConfigRagManagedDbConfigUnprovisionedO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiRagEngineConfigRagManagedDbConfigUnprovisionedOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleVertexAiRagEngineConfigRagManagedDbConfigUnprovisionedOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiRagEngineConfigRagManagedDbConfigUnprovisionedOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleVertexAiRagEngineConfigRagManagedDbConfigUnprovisionedOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleVertexAiRagEngineConfigRagManagedDbConfigUnprovisionedO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiRagEngineConfigRagManagedDbConfigUnprovisionedOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleVertexAiRagEngineConfigRagManagedDbConfigUnprovisionedOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleVertexAiRagEngineConfigRagManagedDbConfigUnprovisionedOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleVertexAiRagEngineConfigRagManagedDbConfigUnprovisionedOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

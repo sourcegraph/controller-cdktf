@@ -40,11 +40,11 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsUntrustedCertOutputReference) validateGe
 	return nil
 }
 
-func (t *jsiiProxy_TeamsRuleRuleSettingsUntrustedCertOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TeamsRuleRuleSettingsUntrustedCertOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TeamsRuleRuleSettingsUntrustedCertOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TeamsRuleRuleSettingsUntrustedCertOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsUntrustedCertOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsUntrustedCertOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsUntrustedCertOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTeamsRuleRuleSettingsUntrustedCertOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTeamsRuleRuleSettingsUntrustedCertOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

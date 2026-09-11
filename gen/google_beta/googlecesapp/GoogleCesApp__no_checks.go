@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleCesApp) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCesApp) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCesApp) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (g *jsiiProxy_GoogleCesApp) validatePutVariableDeclarationsParameters(value
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCesApp) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleCesApp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -164,7 +172,7 @@ func (j *jsiiProxy_GoogleCesApp) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesApp) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleCesApp) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

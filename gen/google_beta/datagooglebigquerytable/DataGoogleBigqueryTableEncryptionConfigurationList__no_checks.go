@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleBigqueryTableEncryptionConfigurationList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryTableEncryptionConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryTableEncryptionConfigurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleBigqueryTableEncryptionConfigurationList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBigqueryTableEncryptionConfigurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleBigqueryTableEncryptionConfigurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleBigqueryTableEncryptionConfigurationList) validateS
 	return nil
 }
 
-func validateNewDataGoogleBigqueryTableEncryptionConfigurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleBigqueryTableEncryptionConfigurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

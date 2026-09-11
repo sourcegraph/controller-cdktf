@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppmeshMeshSpecEgressFilterOutputReference) validateGetString
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshMeshSpecEgressFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshMeshSpecEgressFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshMeshSpecEgressFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshMeshSpecEgressFilterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_AppmeshMeshSpecEgressFilterOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshMeshSpecEgressFilterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppmeshMeshSpecEgressFilterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_AppmeshMeshSpecEgressFilterOutputReference) validateSetTypePa
 	return nil
 }
 
-func validateNewAppmeshMeshSpecEgressFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppmeshMeshSpecEgressFilterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

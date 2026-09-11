@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleOrgPolicyPolicySpecOutputReference) validateGetStringMa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOrgPolicyPolicySpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleOrgPolicyPolicySpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleOrgPolicyPolicySpecOutputReference) validatePutRulesPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOrgPolicyPolicySpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOrgPolicyPolicySpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleOrgPolicyPolicySpecOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOrgPolicyPolicySpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOrgPolicyPolicySpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleOrgPolicyPolicySpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleOrgPolicyPolicySpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

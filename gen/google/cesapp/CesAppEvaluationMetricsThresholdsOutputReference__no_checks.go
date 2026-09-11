@@ -40,7 +40,7 @@ func (c *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validatePut
 	return nil
 }
 
-func (c *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesAppEvaluationMetricsThresholdsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesAppEvaluationMetricsThresholdsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

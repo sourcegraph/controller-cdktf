@@ -40,11 +40,11 @@ func (p *jsiiProxy_PollerMongodbatlasOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (p *jsiiProxy_PollerMongodbatlasOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PollerMongodbatlasOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PollerMongodbatlasOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PollerMongodbatlasOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_PollerMongodbatlasOutputReference) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_PollerMongodbatlasOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PollerMongodbatlasOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPollerMongodbatlasOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPollerMongodbatlasOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesCountryPoolsList) validateGetParame
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesCountryPoolsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesCountryPoolsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesCountryPoolsList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesCountryPoolsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesCountryPoolsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesCountryPoolsList) validateSetWrapsS
 	return nil
 }
 
-func validateNewLoadBalancerRulesOverridesCountryPoolsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLoadBalancerRulesOverridesCountryPoolsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

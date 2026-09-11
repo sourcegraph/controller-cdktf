@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsNetskopeAlertSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsNetskopeAlertSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

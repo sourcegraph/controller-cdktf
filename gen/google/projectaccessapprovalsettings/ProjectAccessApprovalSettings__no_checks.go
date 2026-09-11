@@ -56,6 +56,10 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) validateInterpolationForAttrib
 	return nil
 }
 
+func (p *jsiiProxy_ProjectAccessApprovalSettings) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectAccessApprovalSettings) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) validatePutEnrolledServicesPar
 }
 
 func (p *jsiiProxy_ProjectAccessApprovalSettings) validatePutTimeoutsParameters(value *ProjectAccessApprovalSettingsTimeouts) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectAccessApprovalSettings) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ProjectAccessApprovalSettings) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

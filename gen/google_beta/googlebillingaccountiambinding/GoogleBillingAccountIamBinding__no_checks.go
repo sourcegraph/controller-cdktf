@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleBillingAccountIamBinding) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBillingAccountIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBillingAccountIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleBillingAccountIamBinding) validateOverrideLogicalIdPara
 }
 
 func (g *jsiiProxy_GoogleBillingAccountIamBinding) validatePutConditionParameters(value *GoogleBillingAccountIamBindingCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBillingAccountIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleBillingAccountIamBinding) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBillingAccountIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleBillingAccountIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

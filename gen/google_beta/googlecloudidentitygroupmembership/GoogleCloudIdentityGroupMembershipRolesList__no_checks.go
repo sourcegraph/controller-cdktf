@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesList) validateGetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesList) validateSetWraps
 	return nil
 }
 
-func validateNewGoogleCloudIdentityGroupMembershipRolesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCloudIdentityGroupMembershipRolesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

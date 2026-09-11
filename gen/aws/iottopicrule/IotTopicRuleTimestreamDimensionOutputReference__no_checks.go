@@ -40,11 +40,11 @@ func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateGetSt
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateSetVa
 	return nil
 }
 
-func validateNewIotTopicRuleTimestreamDimensionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewIotTopicRuleTimestreamDimensionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

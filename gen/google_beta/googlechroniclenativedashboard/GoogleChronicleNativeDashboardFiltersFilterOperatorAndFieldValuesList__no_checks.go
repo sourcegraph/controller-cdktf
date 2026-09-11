@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldVa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldVa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldVa
 	return nil
 }
 
-func validateNewGoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleNetworkConnectivityGatewayAdvertisedRoute) validateInte
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivityGatewayAdvertisedRoute) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivityGatewayAdvertisedRoute) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleNetworkConnectivityGatewayAdvertisedRoute) validateOver
 }
 
 func (g *jsiiProxy_GoogleNetworkConnectivityGatewayAdvertisedRoute) validatePutTimeoutsParameters(value *GoogleNetworkConnectivityGatewayAdvertisedRouteTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkConnectivityGatewayAdvertisedRoute) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityGatewayAdvertisedRoute) validateSetL
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityGatewayAdvertisedRoute) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityGatewayAdvertisedRoute) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

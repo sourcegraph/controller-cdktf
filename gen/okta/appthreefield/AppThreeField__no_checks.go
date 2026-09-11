@@ -56,6 +56,10 @@ func (a *jsiiProxy_AppThreeField) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (a *jsiiProxy_AppThreeField) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppThreeField) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (a *jsiiProxy_AppThreeField) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (a *jsiiProxy_AppThreeField) validatePutTimeoutsParameters(value *AppThreeFieldTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppThreeField) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -160,7 +168,7 @@ func (j *jsiiProxy_AppThreeField) validateSetLabelParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_AppThreeField) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AppThreeField) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

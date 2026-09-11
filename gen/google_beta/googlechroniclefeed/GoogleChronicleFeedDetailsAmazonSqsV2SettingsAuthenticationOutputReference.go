@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlechroniclefeed/internal"
 )
 
 type GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AwsIamRoleAuth() GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIamRoleAuthOutputReference
 	AwsIamRoleAuthInput() *GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIamRoleAuth
 	// the index of the complex object in a list.
@@ -38,15 +38,15 @@ type GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,14 +62,14 @@ type GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAwsIamRoleAuth(value *GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIamRoleAuth)
 	PutSqsV2AccessKeySecretAuth(value *GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationSqsV2AccessKeySecretAuth)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference 
 
 // The jsii proxy struct for GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference
 type jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference) AwsIamRoleAuth() GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIamRoleAuthOutputReference {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOu
 }
 
 
-func NewGoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference {
+func NewGoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewGoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReferen
 	j := jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewGoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReferen
 	return &j
 }
 
-func NewGoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference_Override(g GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference_Override(g GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -264,7 +264,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOu
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,11 +304,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -432,8 +432,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -445,16 +445,16 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -483,8 +483,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOu
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOu
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

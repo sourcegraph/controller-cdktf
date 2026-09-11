@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeinterconnectattachment/internal"
 )
 
 type GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ApplianceIpAddress() *string
 	SetApplianceIpAddress(val *string)
 	ApplianceIpAddressInput() *string
@@ -42,9 +42,9 @@ type GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputRefer
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VlanId() *string
 	SetVlanId(val *string)
 	VlanIdInput() *string
@@ -53,7 +53,7 @@ type GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputRefer
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,9 +69,9 @@ type GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputRefer
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutInnerVlanToApplianceMappings(value interface{})
 	ResetApplianceIpAddress()
 	ResetInnerVlanToApplianceMappings()
@@ -79,7 +79,7 @@ type GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputRefer
 	ResetVlanId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputRefer
 
 // The jsii proxy struct for GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference
 type jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference) ApplianceIpAddress() *string {
@@ -212,8 +212,8 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappi
 }
 
 
-func NewGoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference {
+func NewGoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -252,7 +252,7 @@ func NewGoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputRe
 	j := jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference",
+		"@cdktn/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewGoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputRe
 	return &j
 }
 
-func NewGoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference_Override(g GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference_Override(g GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference",
+		"@cdktn/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -336,7 +336,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappi
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -387,11 +387,11 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappi
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -515,8 +515,8 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappi
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -528,16 +528,16 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappi
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappi
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappi
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

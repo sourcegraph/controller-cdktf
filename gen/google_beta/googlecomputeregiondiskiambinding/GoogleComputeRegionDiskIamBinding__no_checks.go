@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleComputeRegionDiskIamBinding) validatePutConditionParameters(value *GoogleComputeRegionDiskIamBindingCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

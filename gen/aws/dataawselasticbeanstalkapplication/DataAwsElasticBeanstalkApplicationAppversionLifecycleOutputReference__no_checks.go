@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

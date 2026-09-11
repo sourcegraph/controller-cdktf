@@ -56,6 +56,10 @@ func (m *jsiiProxy_MediaConvertQueue) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (m *jsiiProxy_MediaConvertQueue) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaConvertQueue) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (m *jsiiProxy_MediaConvertQueue) validateOverrideLogicalIdParameters(newLog
 }
 
 func (m *jsiiProxy_MediaConvertQueue) validatePutReservationPlanSettingsParameters(value *MediaConvertQueueReservationPlanSettings) error {
+	return nil
+}
+
+func (m *jsiiProxy_MediaConvertQueue) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_MediaConvertQueue) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_MediaConvertQueue) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MediaConvertQueue) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

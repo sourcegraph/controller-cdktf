@@ -40,11 +40,11 @@ func (s *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateGetStrin
 	return nil
 }
 
-func (s *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateSetUpdat
 	return nil
 }
 
-func validateNewStorageAnywhereCacheTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewStorageAnywhereCacheTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

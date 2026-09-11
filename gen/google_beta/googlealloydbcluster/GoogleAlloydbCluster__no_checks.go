@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleAlloydbCluster) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAlloydbCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -128,6 +132,10 @@ func (g *jsiiProxy_GoogleAlloydbCluster) validatePutTimeoutsParameters(value *Go
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAlloydbCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleAlloydbCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -192,7 +200,7 @@ func (j *jsiiProxy_GoogleAlloydbCluster) validateSetLabelsParameters(val *map[st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleAlloydbCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

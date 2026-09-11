@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsMskBrokerNodesNodeInfoListStructList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMskBrokerNodesNodeInfoListStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsMskBrokerNodesNodeInfoListStructList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsMskBrokerNodesNodeInfoListStructList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsMskBrokerNodesNodeInfoListStructList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsMskBrokerNodesNodeInfoListStructList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsMskBrokerNodesNodeInfoListStructList) validateSetWraps
 	return nil
 }
 
-func validateNewDataAwsMskBrokerNodesNodeInfoListStructListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsMskBrokerNodesNodeInfoListStructListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

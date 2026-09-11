@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

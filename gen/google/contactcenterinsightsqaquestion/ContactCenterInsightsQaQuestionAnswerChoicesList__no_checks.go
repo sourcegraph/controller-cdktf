@@ -12,7 +12,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesList) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesList) validateSet
 	return nil
 }
 
-func validateNewContactCenterInsightsQaQuestionAnswerChoicesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewContactCenterInsightsQaQuestionAnswerChoicesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

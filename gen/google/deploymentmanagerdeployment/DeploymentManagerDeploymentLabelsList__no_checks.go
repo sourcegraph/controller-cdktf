@@ -12,7 +12,7 @@ func (d *jsiiProxy_DeploymentManagerDeploymentLabelsList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentManagerDeploymentLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentManagerDeploymentLabelsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DeploymentManagerDeploymentLabelsList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentManagerDeploymentLabelsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeploymentManagerDeploymentLabelsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DeploymentManagerDeploymentLabelsList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewDeploymentManagerDeploymentLabelsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDeploymentManagerDeploymentLabelsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

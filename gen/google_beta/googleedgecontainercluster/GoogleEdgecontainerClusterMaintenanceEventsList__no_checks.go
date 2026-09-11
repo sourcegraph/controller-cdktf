@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterMaintenanceEventsList) validateGetP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerClusterMaintenanceEventsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleEdgecontainerClusterMaintenanceEventsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleEdgecontainerClusterMaintenanceEventsList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterMaintenanceEventsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleEdgecontainerClusterMaintenanceEventsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleEdgecontainerClusterMaintenanceEventsList) validateSetW
 	return nil
 }
 
-func validateNewGoogleEdgecontainerClusterMaintenanceEventsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleEdgecontainerClusterMaintenanceEventsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

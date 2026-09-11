@@ -12,7 +12,7 @@ func (a *jsiiProxy_ApihubPluginInstanceActionsHubInstanceActionList) validateGet
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginInstanceActionsHubInstanceActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApihubPluginInstanceActionsHubInstanceActionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ApihubPluginInstanceActionsHubInstanceActionList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceActionsHubInstanceActionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApihubPluginInstanceActionsHubInstanceActionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ApihubPluginInstanceActionsHubInstanceActionList) validateSet
 	return nil
 }
 
-func validateNewApihubPluginInstanceActionsHubInstanceActionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewApihubPluginInstanceActionsHubInstanceActionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

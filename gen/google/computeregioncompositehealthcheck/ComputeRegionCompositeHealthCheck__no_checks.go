@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeRegionCompositeHealthCheck) validateInterpolationForAt
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionCompositeHealthCheck) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionCompositeHealthCheck) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ComputeRegionCompositeHealthCheck) validateOverrideLogicalIdP
 }
 
 func (c *jsiiProxy_ComputeRegionCompositeHealthCheck) validatePutTimeoutsParameters(value *ComputeRegionCompositeHealthCheckTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionCompositeHealthCheck) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_ComputeRegionCompositeHealthCheck) validateSetHealthSourcesPa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionCompositeHealthCheck) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeRegionCompositeHealthCheck) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

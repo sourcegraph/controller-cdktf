@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSet",
+		"@cdktn/provider-aws.ecsTaskSet.EcsTaskSet",
 		reflect.TypeOf((*EcsTaskSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -49,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancer", GoGetter: "LoadBalancer"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancerInput", GoGetter: "LoadBalancerInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -66,6 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putScale", GoMethod: "PutScale"},
 			_jsii_.MemberMethod{JsiiMethod: "putServiceRegistries", GoMethod: "PutServiceRegistries"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCapacityProviderStrategy", GoMethod: "ResetCapacityProviderStrategy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExternalId", GoMethod: "ResetExternalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForceDelete", GoMethod: "ResetForceDelete"},
@@ -109,19 +111,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "waitUntilStableInput", GoGetter: "WaitUntilStableInput"},
 			_jsii_.MemberProperty{JsiiProperty: "waitUntilStableTimeout", GoGetter: "WaitUntilStableTimeout"},
 			_jsii_.MemberProperty{JsiiProperty: "waitUntilStableTimeoutInput", GoGetter: "WaitUntilStableTimeoutInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_EcsTaskSet{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategy",
+		"@cdktn/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategy",
 		reflect.TypeOf((*EcsTaskSetCapacityProviderStrategy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategyList",
+		"@cdktn/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategyList",
 		reflect.TypeOf((*EcsTaskSetCapacityProviderStrategyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -138,12 +141,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EcsTaskSetCapacityProviderStrategyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategyOutputReference",
+		"@cdktn/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategyOutputReference",
 		reflect.TypeOf((*EcsTaskSetCapacityProviderStrategyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "base", GoGetter: "Base"},
@@ -177,20 +180,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EcsTaskSetCapacityProviderStrategyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetConfig",
+		"@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig",
 		reflect.TypeOf((*EcsTaskSetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancer",
+		"@cdktn/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancer",
 		reflect.TypeOf((*EcsTaskSetLoadBalancer)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancerList",
+		"@cdktn/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancerList",
 		reflect.TypeOf((*EcsTaskSetLoadBalancerList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -207,12 +210,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EcsTaskSetLoadBalancerList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancerOutputReference",
+		"@cdktn/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancerOutputReference",
 		reflect.TypeOf((*EcsTaskSetLoadBalancerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -250,16 +253,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EcsTaskSetLoadBalancerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetNetworkConfiguration",
+		"@cdktn/provider-aws.ecsTaskSet.EcsTaskSetNetworkConfiguration",
 		reflect.TypeOf((*EcsTaskSetNetworkConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetNetworkConfigurationOutputReference",
+		"@cdktn/provider-aws.ecsTaskSet.EcsTaskSetNetworkConfigurationOutputReference",
 		reflect.TypeOf((*EcsTaskSetNetworkConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assignPublicIp", GoGetter: "AssignPublicIp"},
@@ -294,16 +297,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EcsTaskSetNetworkConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetScale",
+		"@cdktn/provider-aws.ecsTaskSet.EcsTaskSetScale",
 		reflect.TypeOf((*EcsTaskSetScale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetScaleOutputReference",
+		"@cdktn/provider-aws.ecsTaskSet.EcsTaskSetScaleOutputReference",
 		reflect.TypeOf((*EcsTaskSetScaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -336,16 +339,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EcsTaskSetScaleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistries",
+		"@cdktn/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistries",
 		reflect.TypeOf((*EcsTaskSetServiceRegistries)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistriesOutputReference",
+		"@cdktn/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistriesOutputReference",
 		reflect.TypeOf((*EcsTaskSetServiceRegistriesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -383,7 +386,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EcsTaskSetServiceRegistriesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

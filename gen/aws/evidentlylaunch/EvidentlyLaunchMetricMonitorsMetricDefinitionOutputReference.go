@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/evidentlylaunch/internal"
 )
 
 type EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UnitLabel() *string
 	SetUnitLabel(val *string)
 	UnitLabelInput() *string
@@ -57,7 +57,7 @@ type EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,14 +73,14 @@ type EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEventPattern()
 	ResetUnitLabel()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,7 +90,7 @@ type EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference interface {
 
 // The jsii proxy struct for EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference
 type jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) ComplexObjectIndex() interface{} {
@@ -213,8 +213,8 @@ func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -264,7 +264,7 @@ func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference)
 }
 
 
-func NewEvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference {
+func NewEvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEvidentlyLaunchMetricMonitorsMetricDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -273,7 +273,7 @@ func NewEvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference(terraformRe
 	j := jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference",
+		"@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -281,11 +281,11 @@ func NewEvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference(terraformRe
 	return &j
 }
 
-func NewEvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference_Override(e EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference_Override(e EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference",
+		"@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -368,7 +368,7 @@ func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,11 +430,11 @@ func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference)
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -558,8 +558,8 @@ func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference)
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -571,16 +571,16 @@ func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference)
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -603,8 +603,8 @@ func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference)
 	)
 }
 
-func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -612,7 +612,7 @@ func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference)
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

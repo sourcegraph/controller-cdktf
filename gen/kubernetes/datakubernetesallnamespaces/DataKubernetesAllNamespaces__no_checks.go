@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataKubernetesAllNamespaces) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func (d *jsiiProxy_DataKubernetesAllNamespaces) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataKubernetesAllNamespaces_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataKubernetesAllNamespaces) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesAllNamespaces) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataKubernetesAllNamespaces) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

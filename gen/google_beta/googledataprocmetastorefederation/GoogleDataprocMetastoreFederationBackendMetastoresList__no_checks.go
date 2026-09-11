@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDataprocMetastoreFederationBackendMetastoresList) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocMetastoreFederationBackendMetastoresList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataprocMetastoreFederationBackendMetastoresList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreFederationBackendMetastoresList) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreFederationBackendMetastoresList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreFederationBackendMetastoresList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreFederationBackendMetastoresList) valid
 	return nil
 }
 
-func validateNewGoogleDataprocMetastoreFederationBackendMetastoresListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDataprocMetastoreFederationBackendMetastoresListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

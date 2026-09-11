@@ -40,11 +40,11 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOut
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOut
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

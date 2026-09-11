@@ -40,11 +40,11 @@ func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) validateGetStrin
 	return nil
 }
 
-func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) validateSetTlsSo
 	return nil
 }
 
-func validateNewDeviceManagedNetworksConfigAOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDeviceManagedNetworksConfigAOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

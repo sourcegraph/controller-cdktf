@@ -40,7 +40,7 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) validateGetStringMapAttributePa
 	return nil
 }
 
-func (s *jsiiProxy_SloTimeWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SloTimeWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) validatePutCalendarParameters(v
 	return nil
 }
 
-func (s *jsiiProxy_SloTimeWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloTimeWindowOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_SloTimeWindowOutputReference) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_SloTimeWindowOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloTimeWindowOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_SloTimeWindowOutputReference) validateSetUnitParameters(val *
 	return nil
 }
 
-func validateNewSloTimeWindowOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSloTimeWindowOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

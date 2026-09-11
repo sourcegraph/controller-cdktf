@@ -56,6 +56,10 @@ func (g *jsiiProxy_GooglePubsubSubscription) validateInterpolationForAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubSubscription) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubSubscription) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (g *jsiiProxy_GooglePubsubSubscription) validatePutRetryPolicyParameters(va
 }
 
 func (g *jsiiProxy_GooglePubsubSubscription) validatePutTimeoutsParameters(value *GooglePubsubSubscriptionTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubSubscription) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -152,7 +160,7 @@ func (j *jsiiProxy_GooglePubsubSubscription) validateSetLabelsParameters(val *ma
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscription) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GooglePubsubSubscription) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

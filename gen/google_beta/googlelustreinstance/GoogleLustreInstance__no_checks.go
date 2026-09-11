@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleLustreInstance) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLustreInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLustreInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (g *jsiiProxy_GoogleLustreInstance) validatePutMaintenancePolicyParameters(
 }
 
 func (g *jsiiProxy_GoogleLustreInstance) validatePutTimeoutsParameters(value *GoogleLustreInstanceTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLustreInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -144,7 +152,7 @@ func (j *jsiiProxy_GoogleLustreInstance) validateSetLabelsParameters(val *map[st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLustreInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleLustreInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (a *jsiiProxy_Apigatewayv2IntegrationResponseParametersList) validateGetPar
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2IntegrationResponseParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_Apigatewayv2IntegrationResponseParametersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_Apigatewayv2IntegrationResponseParametersList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2IntegrationResponseParametersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Apigatewayv2IntegrationResponseParametersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_Apigatewayv2IntegrationResponseParametersList) validateSetWra
 	return nil
 }
 
-func validateNewApigatewayv2IntegrationResponseParametersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewApigatewayv2IntegrationResponseParametersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

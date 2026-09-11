@@ -56,6 +56,10 @@ func (d *jsiiProxy_DatastreamConnectionProfile) validateInterpolationForAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamConnectionProfile) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamConnectionProfile) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func (d *jsiiProxy_DatastreamConnectionProfile) validatePutTimeoutsParameters(va
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamConnectionProfile) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDatastreamConnectionProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -156,7 +164,7 @@ func (j *jsiiProxy_DatastreamConnectionProfile) validateSetLabelsParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfile) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DatastreamConnectionProfile) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

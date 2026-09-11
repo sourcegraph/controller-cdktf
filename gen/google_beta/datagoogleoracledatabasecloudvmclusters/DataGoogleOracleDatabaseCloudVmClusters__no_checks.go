@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudVmClusters) validateOverrideLogi
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleOracleDatabaseCloudVmClusters) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleOracleDatabaseCloudVmClusters_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmClusters) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmClusters) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmClusters) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

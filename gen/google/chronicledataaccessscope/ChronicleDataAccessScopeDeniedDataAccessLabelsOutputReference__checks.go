@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (c *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (c *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -101,9 +101,9 @@ func (c *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -192,7 +192,7 @@ func (j *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference
 
 func (j *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *ChronicleDataAccessScopeDeniedDataAccessLabels:
 		val := val.(*ChronicleDataAccessScopeDeniedDataAccessLabels)
@@ -207,7 +207,7 @@ func (j *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ChronicleDataAccessScopeDeniedDataAccessLabels; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *ChronicleDataAccessScopeDeniedDataAccessLabels; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -230,7 +230,7 @@ func (j *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,7 +238,7 @@ func (j *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference
 	return nil
 }
 
-func validateNewChronicleDataAccessScopeDeniedDataAccessLabelsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewChronicleDataAccessScopeDeniedDataAccessLabelsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

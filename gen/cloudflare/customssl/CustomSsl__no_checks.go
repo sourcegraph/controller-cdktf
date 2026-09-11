@@ -56,6 +56,10 @@ func (c *jsiiProxy_CustomSsl) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (c *jsiiProxy_CustomSsl) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomSsl) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (c *jsiiProxy_CustomSsl) validatePutCustomSslOptionsParameters(value *Custo
 }
 
 func (c *jsiiProxy_CustomSsl) validatePutCustomSslPriorityParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomSsl) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_CustomSsl) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CustomSsl) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CustomSsl) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolume",
+		"@cdktn/provider-google.netappVolume.NetappVolume",
 		reflect.TypeOf((*NetappVolume)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeDirectory", GoGetter: "ActiveDirectory"},
@@ -71,6 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "mountOptions", GoGetter: "MountOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
@@ -100,6 +101,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTieringPolicy", GoMethod: "PutTieringPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "replicaZone", GoGetter: "ReplicaZone"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackupConfig", GoMethod: "ResetBackupConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBlockDevices", GoMethod: "ResetBlockDevices"},
@@ -165,20 +167,21 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unixPermissions", GoGetter: "UnixPermissions"},
 			_jsii_.MemberProperty{JsiiProperty: "unixPermissionsInput", GoGetter: "UnixPermissionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "usedGib", GoGetter: "UsedGib"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolume{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappVolume.NetappVolumeBackupConfig",
+		"@cdktn/provider-google.netappVolume.NetappVolumeBackupConfig",
 		reflect.TypeOf((*NetappVolumeBackupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference",
 		reflect.TypeOf((*NetappVolumeBackupConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupPolicies", GoGetter: "BackupPolicies"},
@@ -214,16 +217,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeBackupConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappVolume.NetappVolumeBlockDevices",
+		"@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices",
 		reflect.TypeOf((*NetappVolumeBlockDevices)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeBlockDevicesList",
+		"@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList",
 		reflect.TypeOf((*NetappVolumeBlockDevicesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -240,12 +243,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeBlockDevicesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference",
 		reflect.TypeOf((*NetappVolumeBlockDevicesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -282,20 +285,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeBlockDevicesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappVolume.NetappVolumeCacheParameters",
+		"@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters",
 		reflect.TypeOf((*NetappVolumeCacheParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfig",
+		"@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfig",
 		reflect.TypeOf((*NetappVolumeCacheParametersCacheConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference",
 		reflect.TypeOf((*NetappVolumeCacheParametersCacheConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cifsChangeNotifyEnabled", GoGetter: "CifsChangeNotifyEnabled"},
@@ -325,12 +328,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference",
 		reflect.TypeOf((*NetappVolumeCacheParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cacheConfig", GoGetter: "CacheConfig"},
@@ -383,20 +386,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeCacheParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappVolume.NetappVolumeConfig",
+		"@cdktn/provider-google.netappVolume.NetappVolumeConfig",
 		reflect.TypeOf((*NetappVolumeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappVolume.NetappVolumeExportPolicy",
+		"@cdktn/provider-google.netappVolume.NetappVolumeExportPolicy",
 		reflect.TypeOf((*NetappVolumeExportPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference",
 		reflect.TypeOf((*NetappVolumeExportPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -426,16 +429,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeExportPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappVolume.NetappVolumeExportPolicyRules",
+		"@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules",
 		reflect.TypeOf((*NetappVolumeExportPolicyRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeExportPolicyRulesList",
+		"@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesList",
 		reflect.TypeOf((*NetappVolumeExportPolicyRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -452,12 +455,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeExportPolicyRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference",
 		reflect.TypeOf((*NetappVolumeExportPolicyRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessType", GoGetter: "AccessType"},
@@ -523,16 +526,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeExportPolicyRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappVolume.NetappVolumeHybridReplicationParameters",
+		"@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters",
 		reflect.TypeOf((*NetappVolumeHybridReplicationParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference",
 		reflect.TypeOf((*NetappVolumeHybridReplicationParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterLocation", GoGetter: "ClusterLocation"},
@@ -592,16 +595,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappVolume.NetappVolumeLargeCapacityConfig",
+		"@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfig",
 		reflect.TypeOf((*NetappVolumeLargeCapacityConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference",
 		reflect.TypeOf((*NetappVolumeLargeCapacityConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -631,16 +634,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeLargeCapacityConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappVolume.NetappVolumeMountOptions",
+		"@cdktn/provider-google.netappVolume.NetappVolumeMountOptions",
 		reflect.TypeOf((*NetappVolumeMountOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeMountOptionsList",
+		"@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsList",
 		reflect.TypeOf((*NetappVolumeMountOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -656,12 +659,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeMountOptionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeMountOptionsOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsOutputReference",
 		reflect.TypeOf((*NetappVolumeMountOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -693,16 +696,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeMountOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappVolume.NetappVolumeRestoreParameters",
+		"@cdktn/provider-google.netappVolume.NetappVolumeRestoreParameters",
 		reflect.TypeOf((*NetappVolumeRestoreParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeRestoreParametersOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeRestoreParametersOutputReference",
 		reflect.TypeOf((*NetappVolumeRestoreParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -735,20 +738,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeRestoreParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicy",
+		"@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicy",
 		reflect.TypeOf((*NetappVolumeSnapshotPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicyDailySchedule",
+		"@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyDailySchedule",
 		reflect.TypeOf((*NetappVolumeSnapshotPolicyDailySchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicyDailyScheduleOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyDailyScheduleOutputReference",
 		reflect.TypeOf((*NetappVolumeSnapshotPolicyDailyScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -783,16 +786,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeSnapshotPolicyDailyScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicyHourlySchedule",
+		"@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyHourlySchedule",
 		reflect.TypeOf((*NetappVolumeSnapshotPolicyHourlySchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicyHourlyScheduleOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyHourlyScheduleOutputReference",
 		reflect.TypeOf((*NetappVolumeSnapshotPolicyHourlyScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -824,16 +827,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeSnapshotPolicyHourlyScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicyMonthlySchedule",
+		"@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyMonthlySchedule",
 		reflect.TypeOf((*NetappVolumeSnapshotPolicyMonthlySchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference",
 		reflect.TypeOf((*NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -871,12 +874,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference",
 		reflect.TypeOf((*NetappVolumeSnapshotPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -922,16 +925,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeSnapshotPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicyWeeklySchedule",
+		"@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyWeeklySchedule",
 		reflect.TypeOf((*NetappVolumeSnapshotPolicyWeeklySchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference",
 		reflect.TypeOf((*NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -969,16 +972,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappVolume.NetappVolumeTieringPolicy",
+		"@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicy",
 		reflect.TypeOf((*NetappVolumeTieringPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference",
 		reflect.TypeOf((*NetappVolumeTieringPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1014,16 +1017,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeTieringPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappVolume.NetappVolumeTimeouts",
+		"@cdktn/provider-google.netappVolume.NetappVolumeTimeouts",
 		reflect.TypeOf((*NetappVolumeTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappVolume.NetappVolumeTimeoutsOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeTimeoutsOutputReference",
 		reflect.TypeOf((*NetappVolumeTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1059,7 +1062,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

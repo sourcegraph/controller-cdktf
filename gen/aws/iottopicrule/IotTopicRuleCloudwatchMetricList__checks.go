@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (i *jsiiProxy_IotTopicRuleCloudwatchMetricList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchMetricList) validateGetParameters(index
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleCloudwatchMetricList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (i *jsiiProxy_IotTopicRuleCloudwatchMetricList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchMetricList) validateResolveParameters(_
 
 func (j *jsiiProxy_IotTopicRuleCloudwatchMetricList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*IotTopicRuleCloudwatchMetric:
 		val := val.(*[]*IotTopicRuleCloudwatchMetric)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchMetricList) validateSetInternalValuePar
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*IotTopicRuleCloudwatchMetric; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*IotTopicRuleCloudwatchMetric; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchMetricList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleCloudwatchMetricList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IotTopicRuleCloudwatchMetricList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchMetricList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewIotTopicRuleCloudwatchMetricListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewIotTopicRuleCloudwatchMetricListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

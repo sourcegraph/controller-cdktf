@@ -56,6 +56,10 @@ func (e *jsiiProxy_EmrInstanceGroup) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (e *jsiiProxy_EmrInstanceGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrInstanceGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (e *jsiiProxy_EmrInstanceGroup) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (e *jsiiProxy_EmrInstanceGroup) validatePutEbsConfigParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmrInstanceGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_EmrInstanceGroup) validateSetInstanceTypeParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_EmrInstanceGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EmrInstanceGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

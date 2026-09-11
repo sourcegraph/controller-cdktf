@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateGetS
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validatePutP
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*ImagebuilderImageRecipeComponentParameter:
 		value := value.(*[]*ImagebuilderImageRecipeComponentParameter)
@@ -114,16 +114,16 @@ func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validatePutP
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ImagebuilderImageRecipeComponentParameter; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ImagebuilderImageRecipeComponentParameter; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (i *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -204,7 +204,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateSetC
 
 func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *ImagebuilderImageRecipeComponent:
 		val := val.(*ImagebuilderImageRecipeComponent)
@@ -219,7 +219,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateSetI
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ImagebuilderImageRecipeComponent; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *ImagebuilderImageRecipeComponent; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -234,7 +234,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeComponentOutputReference) validateSetT
 	return nil
 }
 
-func validateNewImagebuilderImageRecipeComponentOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewImagebuilderImageRecipeComponentOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

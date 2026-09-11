@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataAwsEc2ClientVpnEndpoint) validatePutTimeoutsParameters(va
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsEc2ClientVpnEndpoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsEc2ClientVpnEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,7 +92,7 @@ func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

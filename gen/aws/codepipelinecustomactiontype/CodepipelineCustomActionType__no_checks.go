@@ -56,6 +56,10 @@ func (c *jsiiProxy_CodepipelineCustomActionType) validateInterpolationForAttribu
 	return nil
 }
 
+func (c *jsiiProxy_CodepipelineCustomActionType) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodepipelineCustomActionType) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (c *jsiiProxy_CodepipelineCustomActionType) validatePutOutputArtifactDetail
 }
 
 func (c *jsiiProxy_CodepipelineCustomActionType) validatePutSettingsParameters(value *CodepipelineCustomActionTypeSettings) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodepipelineCustomActionType) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CodepipelineCustomActionType) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

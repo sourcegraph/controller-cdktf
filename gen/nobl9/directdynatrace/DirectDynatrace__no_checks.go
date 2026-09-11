@@ -56,6 +56,10 @@ func (d *jsiiProxy_DirectDynatrace) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DirectDynatrace) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectDynatrace) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (d *jsiiProxy_DirectDynatrace) validatePutHistoricalDataRetrievalParameters
 }
 
 func (d *jsiiProxy_DirectDynatrace) validatePutQueryDelayParameters(value *DirectDynatraceQueryDelay) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectDynatrace) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_DirectDynatrace) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DirectDynatrace) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DirectDynatrace) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

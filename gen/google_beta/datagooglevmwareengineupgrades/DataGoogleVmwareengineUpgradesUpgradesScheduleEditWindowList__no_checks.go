@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowList)
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowList)
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowList)
 	return nil
 }
 
-func validateNewDataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

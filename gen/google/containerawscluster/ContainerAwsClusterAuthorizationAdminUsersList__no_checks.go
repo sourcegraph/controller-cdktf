@@ -12,7 +12,7 @@ func (c *jsiiProxy_ContainerAwsClusterAuthorizationAdminUsersList) validateGetPa
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsClusterAuthorizationAdminUsersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAwsClusterAuthorizationAdminUsersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ContainerAwsClusterAuthorizationAdminUsersList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsClusterAuthorizationAdminUsersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerAwsClusterAuthorizationAdminUsersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ContainerAwsClusterAuthorizationAdminUsersList) validateSetWr
 	return nil
 }
 
-func validateNewContainerAwsClusterAuthorizationAdminUsersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewContainerAwsClusterAuthorizationAdminUsersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

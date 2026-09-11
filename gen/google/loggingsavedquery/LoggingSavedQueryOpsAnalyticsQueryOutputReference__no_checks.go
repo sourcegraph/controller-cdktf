@@ -40,11 +40,11 @@ func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLoggingSavedQueryOpsAnalyticsQueryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLoggingSavedQueryOpsAnalyticsQueryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

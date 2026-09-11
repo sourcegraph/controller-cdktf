@@ -56,6 +56,10 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validatePutPortOverrideParame
 }
 
 func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validatePutTimeoutsParameters(value *GlobalacceleratorEndpointGroupTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

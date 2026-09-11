@@ -56,6 +56,10 @@ func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateInterpolationF
 	return nil
 }
 
+func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateOverrideLogica
 }
 
 func (c *jsiiProxy_CodestarnotificationsNotificationRule) validatePutTargetParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_CodestarnotificationsNotificationRule) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_CodestarnotificationsNotificationRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CodestarnotificationsNotificationRule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

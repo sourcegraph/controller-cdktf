@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/contactcenterinsightsqaquestion/internal"
 )
 
 type ContactCenterInsightsQaQuestionTuningMetadataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type ContactCenterInsightsQaQuestionTuningMetadataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TotalValidLabelCount() *string
 	SetTotalValidLabelCount(val *string)
 	TotalValidLabelCountInput() *string
@@ -51,7 +51,7 @@ type ContactCenterInsightsQaQuestionTuningMetadataOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type ContactCenterInsightsQaQuestionTuningMetadataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDatasetValidationWarnings()
 	ResetTotalValidLabelCount()
 	ResetTuningError()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type ContactCenterInsightsQaQuestionTuningMetadataOutputReference interface {
 
 // The jsii proxy struct for ContactCenterInsightsQaQuestionTuningMetadataOutputReference
 type jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference) ComplexObjectIndex() interface{} {
@@ -168,8 +168,8 @@ func (j *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference)
 }
 
 
-func NewContactCenterInsightsQaQuestionTuningMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContactCenterInsightsQaQuestionTuningMetadataOutputReference {
+func NewContactCenterInsightsQaQuestionTuningMetadataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ContactCenterInsightsQaQuestionTuningMetadataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewContactCenterInsightsQaQuestionTuningMetadataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewContactCenterInsightsQaQuestionTuningMetadataOutputReference(terraformRe
 	j := jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionTuningMetadataOutputReference",
+		"@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionTuningMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewContactCenterInsightsQaQuestionTuningMetadataOutputReference(terraformRe
 	return &j
 }
 
-func NewContactCenterInsightsQaQuestionTuningMetadataOutputReference_Override(c ContactCenterInsightsQaQuestionTuningMetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContactCenterInsightsQaQuestionTuningMetadataOutputReference_Override(c ContactCenterInsightsQaQuestionTuningMetadataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionTuningMetadataOutputReference",
+		"@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionTuningMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -301,7 +301,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (c *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference)
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -491,8 +491,8 @@ func (c *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference)
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -504,16 +504,16 @@ func (c *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference)
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (c *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference)
 	)
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaQuestionTuningMetadataOutputReference)
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

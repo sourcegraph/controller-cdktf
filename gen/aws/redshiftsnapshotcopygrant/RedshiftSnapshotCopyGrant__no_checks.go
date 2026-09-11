@@ -56,6 +56,10 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) validateInterpolationForAttributeP
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftSnapshotCopyGrant) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftSnapshotCopyGrant) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (r *jsiiProxy_RedshiftSnapshotCopyGrant) validateMoveToIdParameters(id *str
 }
 
 func (r *jsiiProxy_RedshiftSnapshotCopyGrant) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftSnapshotCopyGrant) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant) validateSetKmsKeyIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftSnapshotCopyGrant) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

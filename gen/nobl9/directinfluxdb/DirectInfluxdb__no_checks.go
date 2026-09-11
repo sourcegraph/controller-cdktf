@@ -56,6 +56,10 @@ func (d *jsiiProxy_DirectInfluxdb) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (d *jsiiProxy_DirectInfluxdb) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectInfluxdb) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DirectInfluxdb) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (d *jsiiProxy_DirectInfluxdb) validatePutQueryDelayParameters(value *DirectInfluxdbQueryDelay) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectInfluxdb) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_DirectInfluxdb) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DirectInfluxdb) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DirectInfluxdb) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

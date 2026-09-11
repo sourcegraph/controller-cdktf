@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/neptuneparametergroup/internal"
 )
 
 type NeptuneParameterGroupParameterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ApplyMethod() *string
 	SetApplyMethod(val *string)
 	ApplyMethodInput() *string
@@ -40,9 +40,9 @@ type NeptuneParameterGroupParameterOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
@@ -51,7 +51,7 @@ type NeptuneParameterGroupParameterOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type NeptuneParameterGroupParameterOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetApplyMethod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type NeptuneParameterGroupParameterOutputReference interface {
 
 // The jsii proxy struct for NeptuneParameterGroupParameterOutputReference
 type jsiiProxy_NeptuneParameterGroupParameterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) ApplyMethod() *string {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) ValueInput() *
 }
 
 
-func NewNeptuneParameterGroupParameterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NeptuneParameterGroupParameterOutputReference {
+func NewNeptuneParameterGroupParameterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NeptuneParameterGroupParameterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNeptuneParameterGroupParameterOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -226,7 +226,7 @@ func NewNeptuneParameterGroupParameterOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_NeptuneParameterGroupParameterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroupParameterOutputReference",
+		"@cdktn/provider-aws.neptuneParameterGroup.NeptuneParameterGroupParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewNeptuneParameterGroupParameterOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewNeptuneParameterGroupParameterOutputReference_Override(n NeptuneParameterGroupParameterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewNeptuneParameterGroupParameterOutputReference_Override(n NeptuneParameterGroupParameterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroupParameterOutputReference",
+		"@cdktn/provider-aws.neptuneParameterGroup.NeptuneParameterGroupParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -489,8 +489,8 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) GetStringMapAt
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -502,16 +502,16 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) InterpolationA
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) ResetApplyMeth
 	)
 }
 
-func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

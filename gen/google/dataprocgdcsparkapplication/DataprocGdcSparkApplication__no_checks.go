@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) validateInterpolationForAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DataprocGdcSparkApplication) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocGdcSparkApplication) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) validatePutSparkSqlApplicationCo
 }
 
 func (d *jsiiProxy_DataprocGdcSparkApplication) validatePutTimeoutsParameters(value *DataprocGdcSparkApplicationTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocGdcSparkApplication) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -140,7 +148,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication) validateSetLabelsParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataprocGdcSparkApplication) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

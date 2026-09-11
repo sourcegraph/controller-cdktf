@@ -56,6 +56,10 @@ func (r *jsiiProxy_Route53ResolverConfig) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (r *jsiiProxy_Route53ResolverConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53ResolverConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (r *jsiiProxy_Route53ResolverConfig) validateMoveToIdParameters(id *string)
 }
 
 func (r *jsiiProxy_Route53ResolverConfig) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53ResolverConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_Route53ResolverConfig) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_Route53ResolverConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Route53ResolverConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

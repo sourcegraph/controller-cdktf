@@ -56,6 +56,10 @@ func (r *jsiiProxy_Route53Record) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (r *jsiiProxy_Route53Record) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53Record) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (r *jsiiProxy_Route53Record) validatePutLatencyRoutingPolicyParameters(valu
 }
 
 func (r *jsiiProxy_Route53Record) validatePutWeightedRoutingPolicyParameters(value *Route53RecordWeightedRoutingPolicy) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53Record) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_Route53Record) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Route53Record) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Route53Record) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

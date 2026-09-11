@@ -56,6 +56,10 @@ func (p *jsiiProxy_PinpointApnsSandboxChannel) validateInterpolationForAttribute
 	return nil
 }
 
+func (p *jsiiProxy_PinpointApnsSandboxChannel) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PinpointApnsSandboxChannel) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (p *jsiiProxy_PinpointApnsSandboxChannel) validateMoveToIdParameters(id *st
 }
 
 func (p *jsiiProxy_PinpointApnsSandboxChannel) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PinpointApnsSandboxChannel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_PinpointApnsSandboxChannel) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_PinpointApnsSandboxChannel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PinpointApnsSandboxChannel) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

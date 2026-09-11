@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/opensearchdomainsamloptions/internal"
 )
 
 type OpensearchDomainSamlOptionsSamlOptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -54,15 +54,15 @@ type OpensearchDomainSamlOptionsSamlOptionsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -78,9 +78,9 @@ type OpensearchDomainSamlOptionsSamlOptionsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutIdp(value *OpensearchDomainSamlOptionsSamlOptionsIdp)
 	ResetEnabled()
 	ResetIdp()
@@ -91,7 +91,7 @@ type OpensearchDomainSamlOptionsSamlOptionsOutputReference interface {
 	ResetSubjectKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,7 +101,7 @@ type OpensearchDomainSamlOptionsSamlOptionsOutputReference interface {
 
 // The jsii proxy struct for OpensearchDomainSamlOptionsSamlOptionsOutputReference
 type jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) ComplexObjectIndex() interface{} {
@@ -304,8 +304,8 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) Terraf
 }
 
 
-func NewOpensearchDomainSamlOptionsSamlOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OpensearchDomainSamlOptionsSamlOptionsOutputReference {
+func NewOpensearchDomainSamlOptionsSamlOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) OpensearchDomainSamlOptionsSamlOptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOpensearchDomainSamlOptionsSamlOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -324,7 +324,7 @@ func NewOpensearchDomainSamlOptionsSamlOptionsOutputReference(terraformResource 
 	j := jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsOutputReference",
+		"@cdktn/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -332,11 +332,11 @@ func NewOpensearchDomainSamlOptionsSamlOptionsOutputReference(terraformResource 
 	return &j
 }
 
-func NewOpensearchDomainSamlOptionsSamlOptionsOutputReference_Override(o OpensearchDomainSamlOptionsSamlOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewOpensearchDomainSamlOptionsSamlOptionsOutputReference_Override(o OpensearchDomainSamlOptionsSamlOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsOutputReference",
+		"@cdktn/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)
@@ -452,7 +452,7 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -492,11 +492,11 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) GetAny
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -620,8 +620,8 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) GetStr
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -633,16 +633,16 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) Interp
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -716,8 +716,8 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) ResetS
 	)
 }
 
-func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -725,7 +725,7 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) Resolv
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/imagebuilderinfrastructureconfiguration/internal"
 )
 
 type ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReferen
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReferen
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetHttpPutResponseHopLimit()
 	ResetHttpTokens()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReferen
 
 // The jsii proxy struct for ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference
 type jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOption
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOption
 }
 
 
-func NewImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference {
+func NewImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputRefe
 	j := jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference",
+		"@cdktn/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputRefe
 	return &j
 }
 
-func NewImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference_Override(i ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference_Override(i ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference",
+		"@cdktn/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOption
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOption
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -456,8 +456,8 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOption
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -469,16 +469,16 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOption
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOption
 	)
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOption
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

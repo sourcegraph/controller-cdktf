@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTags",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTags",
 		reflect.TypeOf((*DataAwsCeTags)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -41,6 +41,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSortBy", GoMethod: "PutSortBy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimePeriod", GoMethod: "PutTimePeriod"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilter", GoMethod: "ResetFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -65,31 +66,32 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTags{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsConfig",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsConfig",
 		reflect.TypeOf((*DataAwsCeTagsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilter",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilter",
 		reflect.TypeOf((*DataAwsCeTagsFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAnd",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAnd",
 		reflect.TypeOf((*DataAwsCeTagsFilterAnd)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndCostCategory",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndCostCategory",
 		reflect.TypeOf((*DataAwsCeTagsFilterAndCostCategory)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndCostCategoryOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndCostCategoryOutputReference",
 		reflect.TypeOf((*DataAwsCeTagsFilterAndCostCategoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,16 +127,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsFilterAndCostCategoryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndDimension",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndDimension",
 		reflect.TypeOf((*DataAwsCeTagsFilterAndDimension)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndDimensionOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndDimensionOutputReference",
 		reflect.TypeOf((*DataAwsCeTagsFilterAndDimensionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -170,12 +172,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsFilterAndDimensionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndList",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndList",
 		reflect.TypeOf((*DataAwsCeTagsFilterAndList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -192,12 +194,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsFilterAndList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndOutputReference",
 		reflect.TypeOf((*DataAwsCeTagsFilterAndOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -236,16 +238,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsFilterAndOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndTags",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndTags",
 		reflect.TypeOf((*DataAwsCeTagsFilterAndTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndTagsOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndTagsOutputReference",
 		reflect.TypeOf((*DataAwsCeTagsFilterAndTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -281,16 +283,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsFilterAndTagsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterCostCategory",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterCostCategory",
 		reflect.TypeOf((*DataAwsCeTagsFilterCostCategory)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterCostCategoryOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterCostCategoryOutputReference",
 		reflect.TypeOf((*DataAwsCeTagsFilterCostCategoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -326,16 +328,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterDimension",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterDimension",
 		reflect.TypeOf((*DataAwsCeTagsFilterDimension)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterDimensionOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterDimensionOutputReference",
 		reflect.TypeOf((*DataAwsCeTagsFilterDimensionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -371,20 +373,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsFilterDimensionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNot",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNot",
 		reflect.TypeOf((*DataAwsCeTagsFilterNot)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotCostCategory",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotCostCategory",
 		reflect.TypeOf((*DataAwsCeTagsFilterNotCostCategory)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotCostCategoryOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotCostCategoryOutputReference",
 		reflect.TypeOf((*DataAwsCeTagsFilterNotCostCategoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -420,16 +422,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsFilterNotCostCategoryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotDimension",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotDimension",
 		reflect.TypeOf((*DataAwsCeTagsFilterNotDimension)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotDimensionOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotDimensionOutputReference",
 		reflect.TypeOf((*DataAwsCeTagsFilterNotDimensionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -465,12 +467,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsFilterNotDimensionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotOutputReference",
 		reflect.TypeOf((*DataAwsCeTagsFilterNotOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -509,16 +511,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsFilterNotOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotTags",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotTags",
 		reflect.TypeOf((*DataAwsCeTagsFilterNotTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotTagsOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotTagsOutputReference",
 		reflect.TypeOf((*DataAwsCeTagsFilterNotTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -554,20 +556,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsFilterNotTagsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOr",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOr",
 		reflect.TypeOf((*DataAwsCeTagsFilterOr)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrCostCategory",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrCostCategory",
 		reflect.TypeOf((*DataAwsCeTagsFilterOrCostCategory)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrCostCategoryOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrCostCategoryOutputReference",
 		reflect.TypeOf((*DataAwsCeTagsFilterOrCostCategoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -603,16 +605,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsFilterOrCostCategoryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrDimension",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrDimension",
 		reflect.TypeOf((*DataAwsCeTagsFilterOrDimension)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrDimensionOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrDimensionOutputReference",
 		reflect.TypeOf((*DataAwsCeTagsFilterOrDimensionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -648,12 +650,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsFilterOrDimensionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrList",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrList",
 		reflect.TypeOf((*DataAwsCeTagsFilterOrList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -670,12 +672,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsFilterOrList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrOutputReference",
 		reflect.TypeOf((*DataAwsCeTagsFilterOrOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -714,16 +716,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsFilterOrOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrTags",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrTags",
 		reflect.TypeOf((*DataAwsCeTagsFilterOrTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrTagsOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrTagsOutputReference",
 		reflect.TypeOf((*DataAwsCeTagsFilterOrTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -759,12 +761,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsFilterOrTagsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOutputReference",
 		reflect.TypeOf((*DataAwsCeTagsFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "and", GoGetter: "And"},
@@ -815,16 +817,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterTags",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterTags",
 		reflect.TypeOf((*DataAwsCeTagsFilterTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterTagsOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterTagsOutputReference",
 		reflect.TypeOf((*DataAwsCeTagsFilterTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -860,16 +862,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsFilterTagsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsSortBy",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsSortBy",
 		reflect.TypeOf((*DataAwsCeTagsSortBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsSortByList",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsSortByList",
 		reflect.TypeOf((*DataAwsCeTagsSortByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -886,12 +888,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsSortByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsSortByOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsSortByOutputReference",
 		reflect.TypeOf((*DataAwsCeTagsSortByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -924,16 +926,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsSortByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsTimePeriod",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsTimePeriod",
 		reflect.TypeOf((*DataAwsCeTagsTimePeriod)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsTimePeriodOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsTimePeriodOutputReference",
 		reflect.TypeOf((*DataAwsCeTagsTimePeriodOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -964,7 +966,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsCeTagsTimePeriodOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

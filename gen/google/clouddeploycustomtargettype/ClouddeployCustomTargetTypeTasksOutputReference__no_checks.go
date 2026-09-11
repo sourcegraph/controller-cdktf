@@ -40,7 +40,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) validatePutR
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewClouddeployCustomTargetTypeTasksOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewClouddeployCustomTargetTypeTasksOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

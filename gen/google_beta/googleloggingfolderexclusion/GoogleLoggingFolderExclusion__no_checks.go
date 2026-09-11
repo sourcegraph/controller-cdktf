@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleLoggingFolderExclusion) validateInterpolationForAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingFolderExclusion) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingFolderExclusion) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (g *jsiiProxy_GoogleLoggingFolderExclusion) validateMoveToIdParameters(id *
 }
 
 func (g *jsiiProxy_GoogleLoggingFolderExclusion) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingFolderExclusion) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleLoggingFolderExclusion) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderExclusion) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleLoggingFolderExclusion) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

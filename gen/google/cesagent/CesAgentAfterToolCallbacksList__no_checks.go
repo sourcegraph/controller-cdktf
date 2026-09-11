@@ -12,7 +12,7 @@ func (c *jsiiProxy_CesAgentAfterToolCallbacksList) validateGetParameters(index *
 	return nil
 }
 
-func (c *jsiiProxy_CesAgentAfterToolCallbacksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAgentAfterToolCallbacksList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CesAgentAfterToolCallbacksList) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_CesAgentAfterToolCallbacksList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAgentAfterToolCallbacksList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CesAgentAfterToolCallbacksList) validateSetWrapsSetParameters
 	return nil
 }
 
-func validateNewCesAgentAfterToolCallbacksListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCesAgentAfterToolCallbacksListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

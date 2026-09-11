@@ -56,6 +56,10 @@ func (s *jsiiProxy_SpannerBackupSchedule) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SpannerBackupSchedule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpannerBackupSchedule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (s *jsiiProxy_SpannerBackupSchedule) validatePutSpecParameters(value *Spann
 }
 
 func (s *jsiiProxy_SpannerBackupSchedule) validatePutTimeoutsParameters(value *SpannerBackupScheduleTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpannerBackupSchedule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_SpannerBackupSchedule) validateSetInstanceParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SpannerBackupSchedule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

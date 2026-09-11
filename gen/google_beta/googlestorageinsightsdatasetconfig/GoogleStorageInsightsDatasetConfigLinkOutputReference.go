@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestorageinsightsdatasetconfig/internal"
 )
 
 type GoogleStorageInsightsDatasetConfigLinkOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,21 +30,21 @@ type GoogleStorageInsightsDatasetConfigLinkOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleStorageInsightsDatasetConfigLink
 	SetInternalValue(val *GoogleStorageInsightsDatasetConfigLink)
-	Linked() cdktf.IResolvable
+	Linked() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,12 +60,12 @@ type GoogleStorageInsightsDatasetConfigLinkOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -75,7 +75,7 @@ type GoogleStorageInsightsDatasetConfigLinkOutputReference interface {
 
 // The jsii proxy struct for GoogleStorageInsightsDatasetConfigLinkOutputReference
 type jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) ComplexObjectIndex() interface{} {
@@ -138,8 +138,8 @@ func (j *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) Intern
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) Linked() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) Linked() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"linked",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -169,7 +169,7 @@ func (j *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) Terraf
 }
 
 
-func NewGoogleStorageInsightsDatasetConfigLinkOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleStorageInsightsDatasetConfigLinkOutputReference {
+func NewGoogleStorageInsightsDatasetConfigLinkOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleStorageInsightsDatasetConfigLinkOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleStorageInsightsDatasetConfigLinkOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -178,7 +178,7 @@ func NewGoogleStorageInsightsDatasetConfigLinkOutputReference(terraformResource 
 	j := jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleStorageInsightsDatasetConfig.GoogleStorageInsightsDatasetConfigLinkOutputReference",
+		"@cdktn/provider-google-beta.googleStorageInsightsDatasetConfig.GoogleStorageInsightsDatasetConfigLinkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -186,11 +186,11 @@ func NewGoogleStorageInsightsDatasetConfigLinkOutputReference(terraformResource 
 	return &j
 }
 
-func NewGoogleStorageInsightsDatasetConfigLinkOutputReference_Override(g GoogleStorageInsightsDatasetConfigLinkOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleStorageInsightsDatasetConfigLinkOutputReference_Override(g GoogleStorageInsightsDatasetConfigLinkOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleStorageInsightsDatasetConfig.GoogleStorageInsightsDatasetConfigLinkOutputReference",
+		"@cdktn/provider-google-beta.googleStorageInsightsDatasetConfig.GoogleStorageInsightsDatasetConfigLinkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -240,7 +240,7 @@ func (j *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,11 +280,11 @@ func (g *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) GetAny
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -408,8 +408,8 @@ func (g *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) GetStr
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -421,24 +421,24 @@ func (g *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) Interp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -446,7 +446,7 @@ func (g *jsiiProxy_GoogleStorageInsightsDatasetConfigLinkOutputReference) Resolv
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (c *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionList) va
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionList) va
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionList) va
 	return nil
 }
 
-func validateNewContainerClusterMaintenancePolicyMaintenanceExclusionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewContainerClusterMaintenancePolicyMaintenanceExclusionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

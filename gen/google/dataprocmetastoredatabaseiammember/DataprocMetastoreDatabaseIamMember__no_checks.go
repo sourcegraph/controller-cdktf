@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataprocMetastoreDatabaseIamMember) validateInterpolationForA
 	return nil
 }
 
+func (d *jsiiProxy_DataprocMetastoreDatabaseIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreDatabaseIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DataprocMetastoreDatabaseIamMember) validateOverrideLogicalId
 }
 
 func (d *jsiiProxy_DataprocMetastoreDatabaseIamMember) validatePutConditionParameters(value *DataprocMetastoreDatabaseIamMemberCondition) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreDatabaseIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_DataprocMetastoreDatabaseIamMember) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreDatabaseIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataprocMetastoreDatabaseIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

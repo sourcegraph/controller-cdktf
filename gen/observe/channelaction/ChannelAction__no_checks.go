@@ -56,6 +56,10 @@ func (c *jsiiProxy_ChannelAction) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (c *jsiiProxy_ChannelAction) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChannelAction) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (c *jsiiProxy_ChannelAction) validatePutEmailParameters(value *ChannelActio
 }
 
 func (c *jsiiProxy_ChannelAction) validatePutWebhookParameters(value *ChannelActionWebhook) error {
+	return nil
+}
+
+func (c *jsiiProxy_ChannelAction) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_ChannelAction) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ChannelAction) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ChannelAction) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

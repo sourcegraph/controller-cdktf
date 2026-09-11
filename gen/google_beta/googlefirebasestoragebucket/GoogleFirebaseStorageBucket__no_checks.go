@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateOverrideLogicalIdParamet
 }
 
 func (g *jsiiProxy_GoogleFirebaseStorageBucket) validatePutTimeoutsParameters(value *GoogleFirebaseStorageBucketTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

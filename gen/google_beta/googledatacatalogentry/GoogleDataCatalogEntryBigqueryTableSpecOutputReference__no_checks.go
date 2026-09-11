@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataCatalogEntryBigqueryTableSpecOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataCatalogEntryBigqueryTableSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataCatalogEntryBigqueryTableSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataCatalogEntryBigqueryTableSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataCatalogEntryBigqueryTableSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleDataCatalogEntryBigqueryTableSpecOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataCatalogEntryBigqueryTableSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataCatalogEntryBigqueryTableSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataCatalogEntryBigqueryTableSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDataCatalogEntryBigqueryTableSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

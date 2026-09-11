@@ -40,7 +40,7 @@ func (l *jsiiProxy_LexBotClarificationPromptOutputReference) validateGetStringMa
 	return nil
 }
 
-func (l *jsiiProxy_LexBotClarificationPromptOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LexBotClarificationPromptOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (l *jsiiProxy_LexBotClarificationPromptOutputReference) validatePutMessageP
 	return nil
 }
 
-func (l *jsiiProxy_LexBotClarificationPromptOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexBotClarificationPromptOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_LexBotClarificationPromptOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_LexBotClarificationPromptOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LexBotClarificationPromptOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLexBotClarificationPromptOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLexBotClarificationPromptOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

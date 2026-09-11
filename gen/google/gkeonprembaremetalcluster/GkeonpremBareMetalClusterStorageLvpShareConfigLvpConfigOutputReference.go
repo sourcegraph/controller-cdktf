@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/gkeonprembaremetalcluster/internal"
 )
 
 type GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference inte
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference inte
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference inte
 
 // The jsii proxy struct for GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference
 type jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutput
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutput
 }
 
 
-func NewGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference {
+func NewGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference(t
 	j := jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.gkeonpremBareMetalCluster.GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference",
+		"@cdktn/provider-google.gkeonpremBareMetalCluster.GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference(t
 	return &j
 }
 
-func NewGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference_Override(g GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference_Override(g GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.gkeonpremBareMetalCluster.GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference",
+		"@cdktn/provider-google.gkeonpremBareMetalCluster.GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutput
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutput
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -454,8 +454,8 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutput
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -467,24 +467,24 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutput
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutput
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (p *jsiiProxy_PodV1SpecTopologySpreadConstraintList) validateGetParameters(
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecTopologySpreadConstraintList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecTopologySpreadConstraintList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewPodV1SpecTopologySpreadConstraintListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPodV1SpecTopologySpreadConstraintListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

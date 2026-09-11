@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validateGetS
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (g *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -112,9 +112,9 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validatePutL
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -201,7 +201,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -209,7 +209,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validateSetT
 	return nil
 }
 
-func validateNewGkeonpremBareMetalClusterStorageOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGkeonpremBareMetalClusterStorageOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

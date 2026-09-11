@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/defaultroutetable/internal"
 )
 
 type DefaultRouteTableRouteOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CidrBlock() *string
 	SetCidrBlock(val *string)
 	CidrBlockInput() *string
@@ -61,9 +61,9 @@ type DefaultRouteTableRouteOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TransitGatewayId() *string
 	SetTransitGatewayId(val *string)
 	TransitGatewayIdInput() *string
@@ -78,7 +78,7 @@ type DefaultRouteTableRouteOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -94,9 +94,9 @@ type DefaultRouteTableRouteOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCidrBlock()
 	ResetCoreNetworkArn()
 	ResetDestinationPrefixListId()
@@ -111,7 +111,7 @@ type DefaultRouteTableRouteOutputReference interface {
 	ResetVpcPeeringConnectionId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -121,7 +121,7 @@ type DefaultRouteTableRouteOutputReference interface {
 
 // The jsii proxy struct for DefaultRouteTableRouteOutputReference
 type jsiiProxy_DefaultRouteTableRouteOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) CidrBlock() *string {
@@ -364,8 +364,8 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -435,7 +435,7 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference) VpcPeeringConnectionId
 }
 
 
-func NewDefaultRouteTableRouteOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DefaultRouteTableRouteOutputReference {
+func NewDefaultRouteTableRouteOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DefaultRouteTableRouteOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDefaultRouteTableRouteOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -444,7 +444,7 @@ func NewDefaultRouteTableRouteOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DefaultRouteTableRouteOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTableRouteOutputReference",
+		"@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRouteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -452,11 +452,11 @@ func NewDefaultRouteTableRouteOutputReference(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewDefaultRouteTableRouteOutputReference_Override(d DefaultRouteTableRouteOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDefaultRouteTableRouteOutputReference_Override(d DefaultRouteTableRouteOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTableRouteOutputReference",
+		"@cdktn/provider-aws.defaultRouteTable.DefaultRouteTableRouteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -605,7 +605,7 @@ func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DefaultRouteTableRouteOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,11 +678,11 @@ func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -806,8 +806,8 @@ func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) GetStringMapAttribute(
 	return returns
 }
 
-func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -819,16 +819,16 @@ func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -931,8 +931,8 @@ func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) ResetVpcPeeringConnect
 	)
 }
 
-func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -940,7 +940,7 @@ func (d *jsiiProxy_DefaultRouteTableRouteOutputReference) Resolve(_context cdktf
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

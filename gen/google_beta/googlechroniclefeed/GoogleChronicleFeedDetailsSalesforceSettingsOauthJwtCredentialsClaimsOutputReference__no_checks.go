@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentia
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaimsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaimsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaimsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaimsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentia
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaimsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaimsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaimsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaimsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

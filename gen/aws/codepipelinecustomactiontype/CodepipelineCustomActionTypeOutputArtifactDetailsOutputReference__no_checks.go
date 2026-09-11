@@ -40,11 +40,11 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeOutputArtifactDetailsOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeOutputArtifactDetailsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCodepipelineCustomActionTypeOutputArtifactDetailsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCodepipelineCustomActionTypeOutputArtifactDetailsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

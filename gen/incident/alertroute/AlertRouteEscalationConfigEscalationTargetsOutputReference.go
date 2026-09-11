@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/incident/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/incident/alertroute/internal"
 )
 
 type AlertRouteEscalationConfigEscalationTargetsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,9 +36,9 @@ type AlertRouteEscalationConfigEscalationTargetsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Users() AlertRouteEscalationConfigEscalationTargetsUsersOutputReference
 	UsersInput() interface{}
 	// Experimental.
@@ -46,7 +46,7 @@ type AlertRouteEscalationConfigEscalationTargetsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,16 +62,16 @@ type AlertRouteEscalationConfigEscalationTargetsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEscalationPaths(value *AlertRouteEscalationConfigEscalationTargetsEscalationPaths)
 	PutUsers(value *AlertRouteEscalationConfigEscalationTargetsUsers)
 	ResetEscalationPaths()
 	ResetUsers()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type AlertRouteEscalationConfigEscalationTargetsOutputReference interface {
 
 // The jsii proxy struct for AlertRouteEscalationConfigEscalationTargetsOutputReference
 type jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference) ComplexObjectIndex() interface{} {
@@ -164,8 +164,8 @@ func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference) U
 }
 
 
-func NewAlertRouteEscalationConfigEscalationTargetsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AlertRouteEscalationConfigEscalationTargetsOutputReference {
+func NewAlertRouteEscalationConfigEscalationTargetsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AlertRouteEscalationConfigEscalationTargetsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAlertRouteEscalationConfigEscalationTargetsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -204,7 +204,7 @@ func NewAlertRouteEscalationConfigEscalationTargetsOutputReference(terraformReso
 	j := jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.alertRoute.AlertRouteEscalationConfigEscalationTargetsOutputReference",
+		"@cdktn/provider-incident.alertRoute.AlertRouteEscalationConfigEscalationTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewAlertRouteEscalationConfigEscalationTargetsOutputReference(terraformReso
 	return &j
 }
 
-func NewAlertRouteEscalationConfigEscalationTargetsOutputReference_Override(a AlertRouteEscalationConfigEscalationTargetsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewAlertRouteEscalationConfigEscalationTargetsOutputReference_Override(a AlertRouteEscalationConfigEscalationTargetsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.alertRoute.AlertRouteEscalationConfigEscalationTargetsOutputReference",
+		"@cdktn/provider-incident.alertRoute.AlertRouteEscalationConfigEscalationTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -266,7 +266,7 @@ func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,11 +306,11 @@ func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference) G
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -434,8 +434,8 @@ func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference) G
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -447,16 +447,16 @@ func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference) I
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference) R
 	)
 }
 
-func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsOutputReference) R
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

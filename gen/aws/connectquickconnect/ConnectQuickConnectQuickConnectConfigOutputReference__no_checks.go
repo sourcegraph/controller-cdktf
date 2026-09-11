@@ -40,7 +40,7 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewConnectQuickConnectQuickConnectConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewConnectQuickConnectQuickConnectConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

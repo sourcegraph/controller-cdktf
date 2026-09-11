@@ -12,7 +12,7 @@ func (m *jsiiProxy_MemcacheInstanceMaintenanceScheduleList) validateGetParameter
 	return nil
 }
 
-func (m *jsiiProxy_MemcacheInstanceMaintenanceScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemcacheInstanceMaintenanceScheduleList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_MemcacheInstanceMaintenanceScheduleList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_MemcacheInstanceMaintenanceScheduleList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MemcacheInstanceMaintenanceScheduleList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_MemcacheInstanceMaintenanceScheduleList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewMemcacheInstanceMaintenanceScheduleListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMemcacheInstanceMaintenanceScheduleListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthPasswordGran
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuthOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthPasswordGran
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuthOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuthOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthPasswordGran
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuthOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuthOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

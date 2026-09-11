@@ -56,6 +56,10 @@ func (c *jsiiProxy_Cloudbuildv2Connection) validateInterpolationForAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_Cloudbuildv2Connection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudbuildv2Connection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (c *jsiiProxy_Cloudbuildv2Connection) validatePutTimeoutsParameters(value *
 	return nil
 }
 
+func (c *jsiiProxy_Cloudbuildv2Connection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateCloudbuildv2Connection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -132,7 +140,7 @@ func (j *jsiiProxy_Cloudbuildv2Connection) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_Cloudbuildv2Connection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Cloudbuildv2Connection) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (a *jsiiProxy_AccessGroupExcludeOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroupExcludeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_AccessGroupExcludeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) validatePutAzureParameters
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AccessGroupExcludeAzure:
 		value := value.(*[]*AccessGroupExcludeAzure)
@@ -114,7 +114,7 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) validatePutAzureParameters
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccessGroupExcludeAzure; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AccessGroupExcludeAzure; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -137,7 +137,7 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) validatePutGithubParameter
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AccessGroupExcludeGithub:
 		value := value.(*[]*AccessGroupExcludeGithub)
@@ -156,7 +156,7 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) validatePutGithubParameter
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccessGroupExcludeGithub; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AccessGroupExcludeGithub; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -168,7 +168,7 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) validatePutGsuiteParameter
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AccessGroupExcludeGsuite:
 		value := value.(*[]*AccessGroupExcludeGsuite)
@@ -187,7 +187,7 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) validatePutGsuiteParameter
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccessGroupExcludeGsuite; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AccessGroupExcludeGsuite; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -199,7 +199,7 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) validatePutOktaParameters(
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AccessGroupExcludeOkta:
 		value := value.(*[]*AccessGroupExcludeOkta)
@@ -218,7 +218,7 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) validatePutOktaParameters(
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccessGroupExcludeOkta; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AccessGroupExcludeOkta; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -230,7 +230,7 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) validatePutSamlParameters(
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AccessGroupExcludeSaml:
 		value := value.(*[]*AccessGroupExcludeSaml)
@@ -249,16 +249,16 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) validatePutSamlParameters(
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccessGroupExcludeSaml; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AccessGroupExcludeSaml; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroupExcludeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AccessGroupExcludeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -273,11 +273,11 @@ func (j *jsiiProxy_AccessGroupExcludeOutputReference) validateSetAnyValidService
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -301,11 +301,11 @@ func (j *jsiiProxy_AccessGroupExcludeOutputReference) validateSetCertificatePara
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -418,11 +418,11 @@ func (j *jsiiProxy_AccessGroupExcludeOutputReference) validateSetEveryoneParamet
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -447,7 +447,7 @@ func (j *jsiiProxy_AccessGroupExcludeOutputReference) validateSetGroupParameters
 
 func (j *jsiiProxy_AccessGroupExcludeOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *AccessGroupExclude:
 		val := val.(*AccessGroupExclude)
@@ -462,7 +462,7 @@ func (j *jsiiProxy_AccessGroupExcludeOutputReference) validateSetInternalValuePa
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AccessGroupExclude; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *AccessGroupExclude; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -509,7 +509,7 @@ func (j *jsiiProxy_AccessGroupExcludeOutputReference) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroupExcludeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccessGroupExcludeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -517,7 +517,7 @@ func (j *jsiiProxy_AccessGroupExcludeOutputReference) validateSetTerraformResour
 	return nil
 }
 
-func validateNewAccessGroupExcludeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAccessGroupExcludeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

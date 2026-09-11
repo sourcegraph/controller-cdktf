@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validateInterpolatio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validatePutPropertyD
 }
 
 func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validatePutTimeoutsParameters(value *GoogleDocumentAiWarehouseDocumentSchemaTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

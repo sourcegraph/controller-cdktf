@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesToolsetMcpToolsetTlsConfigCaCertsOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesToolsetMcpToolsetTlsConfigCaCertsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesToolsetMcpToolsetTlsConfigCaCertsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesToolsetMcpToolsetTlsConfigCaCertsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesToolsetMcpToolsetTlsConfigCaCertsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleCesToolsetMcpToolsetTlsConfigCaCertsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesToolsetMcpToolsetTlsConfigCaCertsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesToolsetMcpToolsetTlsConfigCaCertsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCesToolsetMcpToolsetTlsConfigCaCertsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleCesToolsetMcpToolsetTlsConfigCaCertsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

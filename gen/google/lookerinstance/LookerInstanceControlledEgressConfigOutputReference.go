@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/lookerinstance/internal"
 )
 
 type LookerInstanceControlledEgressConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type LookerInstanceControlledEgressConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type LookerInstanceControlledEgressConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEgressFqdns()
 	ResetMarketplaceEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type LookerInstanceControlledEgressConfigOutputReference interface {
 
 // The jsii proxy struct for LookerInstanceControlledEgressConfigOutputReference
 type jsiiProxy_LookerInstanceControlledEgressConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) Terrafor
 }
 
 
-func NewLookerInstanceControlledEgressConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LookerInstanceControlledEgressConfigOutputReference {
+func NewLookerInstanceControlledEgressConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LookerInstanceControlledEgressConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLookerInstanceControlledEgressConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewLookerInstanceControlledEgressConfigOutputReference(terraformResource cd
 	j := jsiiProxy_LookerInstanceControlledEgressConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewLookerInstanceControlledEgressConfigOutputReference(terraformResource cd
 	return &j
 }
 
-func NewLookerInstanceControlledEgressConfigOutputReference_Override(l LookerInstanceControlledEgressConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLookerInstanceControlledEgressConfigOutputReference_Override(l LookerInstanceControlledEgressConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) GetAnyMa
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -456,8 +456,8 @@ func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) GetStrin
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -469,16 +469,16 @@ func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) Interpol
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) ResetMar
 	)
 }
 
-func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) Resolve(
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

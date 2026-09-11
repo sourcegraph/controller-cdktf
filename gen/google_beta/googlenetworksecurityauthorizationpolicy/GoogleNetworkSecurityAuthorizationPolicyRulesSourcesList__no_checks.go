@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesSourcesList) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesSourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesSourcesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesSourcesList) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesSourcesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesSourcesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesSourcesList) val
 	return nil
 }
 
-func validateNewGoogleNetworkSecurityAuthorizationPolicyRulesSourcesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleNetworkSecurityAuthorizationPolicyRulesSourcesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

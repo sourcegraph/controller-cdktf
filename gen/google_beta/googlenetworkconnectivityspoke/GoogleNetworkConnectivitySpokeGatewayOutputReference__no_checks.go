@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkConnectivitySpokeGatewayOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkConnectivitySpokeGatewayOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

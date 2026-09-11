@@ -12,7 +12,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteRelatedUrlList) validateGetParameters(in
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteRelatedUrlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAnalysisNoteRelatedUrlList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteRelatedUrlList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteRelatedUrlList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerAnalysisNoteRelatedUrlList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteRelatedUrlList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewContainerAnalysisNoteRelatedUrlListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewContainerAnalysisNoteRelatedUrlListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) validateGe
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) validateSe
 	return nil
 }
 
-func validateNewBigtableAuthorizedViewSubsetViewFamilySubsetsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBigtableAuthorizedViewSubsetViewFamilySubsetsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

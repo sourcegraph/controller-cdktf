@@ -56,6 +56,10 @@ func (v *jsiiProxy_VpcIpamPoolCidr) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (v *jsiiProxy_VpcIpamPoolCidr) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpamPoolCidr) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (v *jsiiProxy_VpcIpamPoolCidr) validatePutCidrAuthorizationContextParameter
 }
 
 func (v *jsiiProxy_VpcIpamPoolCidr) validatePutTimeoutsParameters(value *VpcIpamPoolCidrTimeouts) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcIpamPoolCidr) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_VpcIpamPoolCidr) validateSetIpamPoolIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidr) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_VpcIpamPoolCidr) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecesappversion/internal"
 )
 
 type GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,15 +35,15 @@ type GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -59,12 +59,12 @@ type GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -74,7 +74,7 @@ type GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference 
 
 // The jsii proxy struct for GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference
 type jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference) ComplexObjectIndex() interface{} {
@@ -147,8 +147,8 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -158,7 +158,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOu
 }
 
 
-func NewGoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference {
+func NewGoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -167,7 +167,7 @@ func NewGoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReferen
 	j := jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCesAppVersion.GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference",
+		"@cdktn/provider-google-beta.googleCesAppVersion.GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -175,11 +175,11 @@ func NewGoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReferen
 	return &j
 }
 
-func NewGoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference_Override(g GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference_Override(g GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCesAppVersion.GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference",
+		"@cdktn/provider-google-beta.googleCesAppVersion.GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -229,7 +229,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOu
 	)
 }
 
-func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -269,11 +269,11 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -397,8 +397,8 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -410,24 +410,24 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -435,7 +435,7 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsActionGenerativeAnswerOu
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

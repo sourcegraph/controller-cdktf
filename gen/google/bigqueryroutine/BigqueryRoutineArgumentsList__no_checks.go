@@ -12,7 +12,7 @@ func (b *jsiiProxy_BigqueryRoutineArgumentsList) validateGetParameters(index *fl
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryRoutineArgumentsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryRoutineArgumentsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_BigqueryRoutineArgumentsList) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryRoutineArgumentsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryRoutineArgumentsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_BigqueryRoutineArgumentsList) validateSetWrapsSetParameters(v
 	return nil
 }
 
-func validateNewBigqueryRoutineArgumentsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBigqueryRoutineArgumentsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (d *jsiiProxy_DirectSplunk) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (d *jsiiProxy_DirectSplunk) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectSplunk) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (d *jsiiProxy_DirectSplunk) validatePutHistoricalDataRetrievalParameters(va
 }
 
 func (d *jsiiProxy_DirectSplunk) validatePutQueryDelayParameters(value *DirectSplunkQueryDelay) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectSplunk) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_DirectSplunk) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DirectSplunk) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DirectSplunk) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

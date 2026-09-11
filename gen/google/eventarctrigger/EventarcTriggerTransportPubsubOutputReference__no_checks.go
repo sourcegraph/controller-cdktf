@@ -40,11 +40,11 @@ func (e *jsiiProxy_EventarcTriggerTransportPubsubOutputReference) validateGetStr
 	return nil
 }
 
-func (e *jsiiProxy_EventarcTriggerTransportPubsubOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventarcTriggerTransportPubsubOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventarcTriggerTransportPubsubOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcTriggerTransportPubsubOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_EventarcTriggerTransportPubsubOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_EventarcTriggerTransportPubsubOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EventarcTriggerTransportPubsubOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_EventarcTriggerTransportPubsubOutputReference) validateSetTop
 	return nil
 }
 
-func validateNewEventarcTriggerTransportPubsubOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEventarcTriggerTransportPubsubOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

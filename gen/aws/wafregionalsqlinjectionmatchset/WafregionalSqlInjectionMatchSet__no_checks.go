@@ -56,6 +56,10 @@ func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateInterpolationForAttr
 	return nil
 }
 
+func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateOverrideLogicalIdPar
 }
 
 func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validatePutSqlInjectionMatchTupleParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_WafregionalSqlInjectionMatchSet) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalSqlInjectionMatchSet) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_WafregionalSqlInjectionMatchSet) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

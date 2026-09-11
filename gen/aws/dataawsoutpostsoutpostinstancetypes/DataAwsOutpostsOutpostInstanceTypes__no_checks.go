@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsOutpostsOutpostInstanceTypes) validateOverrideLogicalI
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsOutpostsOutpostInstanceTypes) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsOutpostsOutpostInstanceTypes_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceTypes) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceTypes) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceTypes) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

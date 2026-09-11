@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleAccessApprovalFolderServiceAccount) validateOverrid
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleAccessApprovalFolderServiceAccount) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleAccessApprovalFolderServiceAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGoogleAccessApprovalFolderServiceAccount) validateSetIdPa
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleAccessApprovalFolderServiceAccount) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleAccessApprovalFolderServiceAccount) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

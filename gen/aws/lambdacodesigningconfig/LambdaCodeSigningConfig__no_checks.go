@@ -56,6 +56,10 @@ func (l *jsiiProxy_LambdaCodeSigningConfig) validateInterpolationForAttributePar
 	return nil
 }
 
+func (l *jsiiProxy_LambdaCodeSigningConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaCodeSigningConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (l *jsiiProxy_LambdaCodeSigningConfig) validatePutAllowedPublishersParamete
 }
 
 func (l *jsiiProxy_LambdaCodeSigningConfig) validatePutPoliciesParameters(value *LambdaCodeSigningConfigPolicies) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaCodeSigningConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_LambdaCodeSigningConfig) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_LambdaCodeSigningConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LambdaCodeSigningConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

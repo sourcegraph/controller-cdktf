@@ -56,6 +56,10 @@ func (o *jsiiProxy_OpsworksStack) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksStack) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksStack) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (o *jsiiProxy_OpsworksStack) validatePutCustomCookbooksSourceParameters(val
 }
 
 func (o *jsiiProxy_OpsworksStack) validatePutTimeoutsParameters(value *OpsworksStackTimeouts) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksStack) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -160,7 +168,7 @@ func (j *jsiiProxy_OpsworksStack) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksStack) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_OpsworksStack) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

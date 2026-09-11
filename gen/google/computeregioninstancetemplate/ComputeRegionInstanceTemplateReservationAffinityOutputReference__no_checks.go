@@ -40,7 +40,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateReservationAffinityOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateReservationAffinityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateReservationAffinityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateReservationAffinityOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateReservationAffinityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateReservationAffinityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateReservationAffinityOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateReservationAffinityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateReservationAffinityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateReservationAffinityOutputReferen
 	return nil
 }
 
-func validateNewComputeRegionInstanceTemplateReservationAffinityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeRegionInstanceTemplateReservationAffinityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

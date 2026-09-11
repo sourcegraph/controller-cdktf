@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsBatchJobQueueComputeEnvironmentOrderOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBatchJobQueueComputeEnvironmentOrderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsBatchJobQueueComputeEnvironmentOrderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBatchJobQueueComputeEnvironmentOrderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBatchJobQueueComputeEnvironmentOrderOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsBatchJobQueueComputeEnvironmentOrderOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsBatchJobQueueComputeEnvironmentOrderOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsBatchJobQueueComputeEnvironmentOrderOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsBatchJobQueueComputeEnvironmentOrderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsBatchJobQueueComputeEnvironmentOrderOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

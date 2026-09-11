@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/lakeformationresourcelftags/internal"
 )
 
 type LakeformationResourceLfTagsTableWithColumnsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CatalogId() *string
 	SetCatalogId(val *string)
 	CatalogIdInput() *string
@@ -49,9 +49,9 @@ type LakeformationResourceLfTagsTableWithColumnsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Wildcard() interface{}
 	SetWildcard(val interface{})
 	WildcardInput() interface{}
@@ -60,7 +60,7 @@ type LakeformationResourceLfTagsTableWithColumnsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,16 +76,16 @@ type LakeformationResourceLfTagsTableWithColumnsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCatalogId()
 	ResetColumnNames()
 	ResetExcludedColumnNames()
 	ResetWildcard()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,7 +95,7 @@ type LakeformationResourceLfTagsTableWithColumnsOutputReference interface {
 
 // The jsii proxy struct for LakeformationResourceLfTagsTableWithColumnsOutputReference
 type jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) CatalogId() *string {
@@ -258,8 +258,8 @@ func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -289,7 +289,7 @@ func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) W
 }
 
 
-func NewLakeformationResourceLfTagsTableWithColumnsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LakeformationResourceLfTagsTableWithColumnsOutputReference {
+func NewLakeformationResourceLfTagsTableWithColumnsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LakeformationResourceLfTagsTableWithColumnsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLakeformationResourceLfTagsTableWithColumnsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -298,7 +298,7 @@ func NewLakeformationResourceLfTagsTableWithColumnsOutputReference(terraformReso
 	j := jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumnsOutputReference",
+		"@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumnsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -306,11 +306,11 @@ func NewLakeformationResourceLfTagsTableWithColumnsOutputReference(terraformReso
 	return &j
 }
 
-func NewLakeformationResourceLfTagsTableWithColumnsOutputReference_Override(l LakeformationResourceLfTagsTableWithColumnsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLakeformationResourceLfTagsTableWithColumnsOutputReference_Override(l LakeformationResourceLfTagsTableWithColumnsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumnsOutputReference",
+		"@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumnsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -415,7 +415,7 @@ func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,11 +466,11 @@ func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) G
 	return returns
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -594,8 +594,8 @@ func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) G
 	return returns
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -607,16 +607,16 @@ func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) I
 	return returns
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -655,8 +655,8 @@ func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) R
 	)
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -664,7 +664,7 @@ func (l *jsiiProxy_LakeformationResourceLfTagsTableWithColumnsOutputReference) R
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

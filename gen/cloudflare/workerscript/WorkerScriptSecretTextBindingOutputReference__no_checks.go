@@ -40,11 +40,11 @@ func (w *jsiiProxy_WorkerScriptSecretTextBindingOutputReference) validateGetStri
 	return nil
 }
 
-func (w *jsiiProxy_WorkerScriptSecretTextBindingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkerScriptSecretTextBindingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkerScriptSecretTextBindingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerScriptSecretTextBindingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_WorkerScriptSecretTextBindingOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScriptSecretTextBindingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkerScriptSecretTextBindingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_WorkerScriptSecretTextBindingOutputReference) validateSetText
 	return nil
 }
 
-func validateNewWorkerScriptSecretTextBindingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWorkerScriptSecretTextBindingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

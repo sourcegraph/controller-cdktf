@@ -40,11 +40,11 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationAppversionLifecycleOutputReference
 	return nil
 }
 
-func (e *jsiiProxy_ElasticBeanstalkApplicationAppversionLifecycleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticBeanstalkApplicationAppversionLifecycleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticBeanstalkApplicationAppversionLifecycleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticBeanstalkApplicationAppversionLifecycleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationAppversionLifecycleOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplicationAppversionLifecycleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ElasticBeanstalkApplicationAppversionLifecycleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewElasticBeanstalkApplicationAppversionLifecycleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewElasticBeanstalkApplicationAppversionLifecycleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataObserveReferenceTableSchemaList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveReferenceTableSchemaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataObserveReferenceTableSchemaList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataObserveReferenceTableSchemaList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveReferenceTableSchemaList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataObserveReferenceTableSchemaList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataObserveReferenceTableSchemaList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewDataObserveReferenceTableSchemaListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataObserveReferenceTableSchemaListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (a *jsiiProxy_AppsyncDatasourceHttpConfigOutputReference) validateGetString
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncDatasourceHttpConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncDatasourceHttpConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (a *jsiiProxy_AppsyncDatasourceHttpConfigOutputReference) validatePutAuthor
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncDatasourceHttpConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncDatasourceHttpConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AppsyncDatasourceHttpConfigOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncDatasourceHttpConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppsyncDatasourceHttpConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppsyncDatasourceHttpConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppsyncDatasourceHttpConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/fmspolicy/internal"
 )
 
 type FmsPolicyExcludeMapOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Account() *[]*string
 	SetAccount(val *[]*string)
 	AccountInput() *[]*string
@@ -40,15 +40,15 @@ type FmsPolicyExcludeMapOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type FmsPolicyExcludeMapOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAccount()
 	ResetOrgunit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type FmsPolicyExcludeMapOutputReference interface {
 
 // The jsii proxy struct for FmsPolicyExcludeMapOutputReference
 type jsiiProxy_FmsPolicyExcludeMapOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference) Account() *[]*string {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference) TerraformAttribute() *str
 	return returns
 }
 
-func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference) TerraformResource() cdktf
 }
 
 
-func NewFmsPolicyExcludeMapOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FmsPolicyExcludeMapOutputReference {
+func NewFmsPolicyExcludeMapOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) FmsPolicyExcludeMapOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewFmsPolicyExcludeMapOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewFmsPolicyExcludeMapOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_FmsPolicyExcludeMapOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.fmsPolicy.FmsPolicyExcludeMapOutputReference",
+		"@cdktn/provider-aws.fmsPolicy.FmsPolicyExcludeMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewFmsPolicyExcludeMapOutputReference(terraformResource cdktf.IInterpolatin
 	return &j
 }
 
-func NewFmsPolicyExcludeMapOutputReference_Override(f FmsPolicyExcludeMapOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewFmsPolicyExcludeMapOutputReference_Override(f FmsPolicyExcludeMapOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.fmsPolicy.FmsPolicyExcludeMapOutputReference",
+		"@cdktn/provider-aws.fmsPolicy.FmsPolicyExcludeMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FmsPolicyExcludeMapOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) GetAnyMapAttribute(terraf
 	return returns
 }
 
-func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -456,8 +456,8 @@ func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) GetStringMapAttribute(ter
 	return returns
 }
 
-func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -469,16 +469,16 @@ func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) InterpolationAsList() cdk
 	return returns
 }
 
-func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) ResetOrgunit() {
 	)
 }
 
-func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (f *jsiiProxy_FmsPolicyExcludeMapOutputReference) Resolve(_context cdktf.IR
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

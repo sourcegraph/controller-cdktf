@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsElasticacheClusterCacheNodesList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElasticacheClusterCacheNodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsElasticacheClusterCacheNodesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsElasticacheClusterCacheNodesList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsElasticacheClusterCacheNodesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsElasticacheClusterCacheNodesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsElasticacheClusterCacheNodesList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewDataAwsElasticacheClusterCacheNodesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsElasticacheClusterCacheNodesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDeveloperConnectConnection) validateInterpolationForAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDeveloperConnectConnection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (g *jsiiProxy_GoogleDeveloperConnectConnection) validatePutTimeoutsParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleDeveloperConnectConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -156,7 +164,7 @@ func (j *jsiiProxy_GoogleDeveloperConnectConnection) validateSetLabelsParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeveloperConnectConnection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDeveloperConnectConnection) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/lexbotalias/internal"
 )
 
 type LexBotAliasConversationLogsLogSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -47,15 +47,15 @@ type LexBotAliasConversationLogsLogSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,13 +71,13 @@ type LexBotAliasConversationLogsLogSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetKmsKeyArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type LexBotAliasConversationLogsLogSettingsOutputReference interface {
 
 // The jsii proxy struct for LexBotAliasConversationLogsLogSettingsOutputReference
 type jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) ComplexObjectIndex() interface{} {
@@ -240,8 +240,8 @@ func (j *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -251,7 +251,7 @@ func (j *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) Terraf
 }
 
 
-func NewLexBotAliasConversationLogsLogSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LexBotAliasConversationLogsLogSettingsOutputReference {
+func NewLexBotAliasConversationLogsLogSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LexBotAliasConversationLogsLogSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLexBotAliasConversationLogsLogSettingsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -260,7 +260,7 @@ func NewLexBotAliasConversationLogsLogSettingsOutputReference(terraformResource 
 	j := jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsOutputReference",
+		"@cdktn/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -268,11 +268,11 @@ func NewLexBotAliasConversationLogsLogSettingsOutputReference(terraformResource 
 	return &j
 }
 
-func NewLexBotAliasConversationLogsLogSettingsOutputReference_Override(l LexBotAliasConversationLogsLogSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewLexBotAliasConversationLogsLogSettingsOutputReference_Override(l LexBotAliasConversationLogsLogSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsOutputReference",
+		"@cdktn/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
@@ -366,7 +366,7 @@ func (j *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,11 +406,11 @@ func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) GetAny
 	return returns
 }
 
-func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -534,8 +534,8 @@ func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) GetStr
 	return returns
 }
 
-func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -547,16 +547,16 @@ func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) Interp
 	return returns
 }
 
-func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -571,8 +571,8 @@ func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) ResetK
 	)
 }
 
-func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -580,7 +580,7 @@ func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference) Resolv
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

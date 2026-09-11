@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesDbHomeDatabaseOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesDbHomeDatabaseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesDbHomeDatabaseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesDbHomeDatabaseOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesDbHomeDatabaseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesDbHomeDatabaseOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -112,11 +112,11 @@ func (j *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesDbHomeDatabaseOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesDbHomeDatabaseOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesDbHomeDatabaseOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleOracleDatabaseDbSystemPropertiesDbHomeDatabaseOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleOracleDatabaseDbSystemPropertiesDbHomeDatabaseOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

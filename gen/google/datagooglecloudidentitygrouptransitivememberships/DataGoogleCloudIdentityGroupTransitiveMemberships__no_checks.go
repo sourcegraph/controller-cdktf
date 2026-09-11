@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleCloudIdentityGroupTransitiveMemberships) validateOv
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleCloudIdentityGroupTransitiveMemberships) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleCloudIdentityGroupTransitiveMemberships_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGoogleCloudIdentityGroupTransitiveMemberships) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudIdentityGroupTransitiveMemberships) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleCloudIdentityGroupTransitiveMemberships) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

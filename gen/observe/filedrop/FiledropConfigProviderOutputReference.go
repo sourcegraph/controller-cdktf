@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/filedrop/internal"
 )
 
 type FiledropConfigProviderOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Aws() FiledropConfigProviderAwsOutputReference
 	AwsInput() *FiledropConfigProviderAws
 	// the index of the complex object in a list.
@@ -36,15 +36,15 @@ type FiledropConfigProviderOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,13 +60,13 @@ type FiledropConfigProviderOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAws(value *FiledropConfigProviderAws)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type FiledropConfigProviderOutputReference interface {
 
 // The jsii proxy struct for FiledropConfigProviderOutputReference
 type jsiiProxy_FiledropConfigProviderOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_FiledropConfigProviderOutputReference) Aws() FiledropConfigProviderAwsOutputReference {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_FiledropConfigProviderOutputReference) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_FiledropConfigProviderOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FiledropConfigProviderOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_FiledropConfigProviderOutputReference) TerraformResource() cd
 }
 
 
-func NewFiledropConfigProviderOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FiledropConfigProviderOutputReference {
+func NewFiledropConfigProviderOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) FiledropConfigProviderOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewFiledropConfigProviderOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewFiledropConfigProviderOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_FiledropConfigProviderOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.filedrop.FiledropConfigProviderOutputReference",
+		"@cdktn/provider-observe.filedrop.FiledropConfigProviderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewFiledropConfigProviderOutputReference(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewFiledropConfigProviderOutputReference_Override(f FiledropConfigProviderOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewFiledropConfigProviderOutputReference_Override(f FiledropConfigProviderOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.filedrop.FiledropConfigProviderOutputReference",
+		"@cdktn/provider-observe.filedrop.FiledropConfigProviderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)
@@ -241,7 +241,7 @@ func (j *jsiiProxy_FiledropConfigProviderOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_FiledropConfigProviderOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FiledropConfigProviderOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,11 +281,11 @@ func (f *jsiiProxy_FiledropConfigProviderOutputReference) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (f *jsiiProxy_FiledropConfigProviderOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FiledropConfigProviderOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -409,8 +409,8 @@ func (f *jsiiProxy_FiledropConfigProviderOutputReference) GetStringMapAttribute(
 	return returns
 }
 
-func (f *jsiiProxy_FiledropConfigProviderOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (f *jsiiProxy_FiledropConfigProviderOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -422,16 +422,16 @@ func (f *jsiiProxy_FiledropConfigProviderOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (f *jsiiProxy_FiledropConfigProviderOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+func (f *jsiiProxy_FiledropConfigProviderOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -449,8 +449,8 @@ func (f *jsiiProxy_FiledropConfigProviderOutputReference) PutAws(value *Filedrop
 	)
 }
 
-func (f *jsiiProxy_FiledropConfigProviderOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FiledropConfigProviderOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (f *jsiiProxy_FiledropConfigProviderOutputReference) Resolve(_context cdktf
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

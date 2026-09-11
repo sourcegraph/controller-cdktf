@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/zonesettingsoverride/internal"
 )
 
 type ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,21 +31,21 @@ type ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference interface 
 	SetInternalValue(val *ZoneSettingsOverrideInitialSettingsMobileRedirect)
 	MobileSubdomain() *string
 	Status() *string
-	StripUri() cdktf.IResolvable
+	StripUri() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference interface 
 
 // The jsii proxy struct for ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference
 type jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) ComplexObjectIndex() interface{} {
@@ -149,8 +149,8 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) StripUri() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) StripUri() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"stripUri",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -180,7 +180,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputRefere
 }
 
 
-func NewZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference {
+func NewZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewZoneSettingsOverrideInitialSettingsMobileRedirectOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -189,7 +189,7 @@ func NewZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference(terrafo
 	j := jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference",
+		"@cdktn/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -197,11 +197,11 @@ func NewZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference(terrafo
 	return &j
 }
 
-func NewZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference_Override(z ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference_Override(z ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference",
+		"@cdktn/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		z,
 	)
@@ -251,7 +251,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,11 +291,11 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputRefere
 	return returns
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -419,8 +419,8 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputRefere
 	return returns
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -432,24 +432,24 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputRefere
 	return returns
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := z.validateInterpolationForAttributeParameters(property); err != nil {
+func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := z.validateResolveParameters(_context); err != nil {
+func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -457,7 +457,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputRefere
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

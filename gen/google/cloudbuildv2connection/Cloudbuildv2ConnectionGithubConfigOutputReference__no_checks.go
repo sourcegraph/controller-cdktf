@@ -40,7 +40,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionGithubConfigOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionGithubConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_Cloudbuildv2ConnectionGithubConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionGithubConfigOutputReference) validatePu
 	return nil
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionGithubConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_Cloudbuildv2ConnectionGithubConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionGithubConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionGithubConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Cloudbuildv2ConnectionGithubConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCloudbuildv2ConnectionGithubConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudbuildv2ConnectionGithubConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

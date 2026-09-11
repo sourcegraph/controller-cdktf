@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolIamPolicy) validateInterpolationForAttrib
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunV2WorkerPoolIamPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunV2WorkerPoolIamPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolIamPolicy) validateMoveToIdParameters(id 
 }
 
 func (c *jsiiProxy_CloudRunV2WorkerPoolIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudRunV2WorkerPoolIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolIamPolicy) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudRunV2WorkerPoolIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

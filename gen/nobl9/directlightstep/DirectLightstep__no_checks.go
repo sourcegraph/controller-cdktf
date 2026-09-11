@@ -56,6 +56,10 @@ func (d *jsiiProxy_DirectLightstep) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DirectLightstep) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectLightstep) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (d *jsiiProxy_DirectLightstep) validatePutHistoricalDataRetrievalParameters
 }
 
 func (d *jsiiProxy_DirectLightstep) validatePutQueryDelayParameters(value *DirectLightstepQueryDelay) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectLightstep) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_DirectLightstep) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DirectLightstep) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DirectLightstep) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

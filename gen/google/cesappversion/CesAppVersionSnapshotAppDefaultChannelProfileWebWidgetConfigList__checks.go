@@ -5,7 +5,7 @@ package cesappversion
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (c *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (c *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigL
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigL
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigL
 	return nil
 }
 
-func validateNewCesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

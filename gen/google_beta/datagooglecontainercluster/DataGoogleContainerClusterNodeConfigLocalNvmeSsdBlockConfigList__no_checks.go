@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigLi
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigLi
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigLi
 	return nil
 }
 
-func validateNewDataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

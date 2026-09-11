@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (w *jsiiProxy_WorkerScriptSecretTextBindingList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (w *jsiiProxy_WorkerScriptSecretTextBindingList) validateGetParameters(inde
 	return nil
 }
 
-func (w *jsiiProxy_WorkerScriptSecretTextBindingList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (w *jsiiProxy_WorkerScriptSecretTextBindingList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (w *jsiiProxy_WorkerScriptSecretTextBindingList) validateResolveParameters(
 
 func (j *jsiiProxy_WorkerScriptSecretTextBindingList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*WorkerScriptSecretTextBinding:
 		val := val.(*[]*WorkerScriptSecretTextBinding)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_WorkerScriptSecretTextBindingList) validateSetInternalValuePa
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*WorkerScriptSecretTextBinding; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*WorkerScriptSecretTextBinding; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_WorkerScriptSecretTextBindingList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScriptSecretTextBindingList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkerScriptSecretTextBindingList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_WorkerScriptSecretTextBindingList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewWorkerScriptSecretTextBindingListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWorkerScriptSecretTextBindingListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

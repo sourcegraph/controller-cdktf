@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeNetworkAttachment) validateInterpolationForAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_ComputeNetworkAttachment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeNetworkAttachment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ComputeNetworkAttachment) validateOverrideLogicalIdParameters
 }
 
 func (c *jsiiProxy_ComputeNetworkAttachment) validatePutTimeoutsParameters(value *ComputeNetworkAttachmentTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeNetworkAttachment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_ComputeNetworkAttachment) validateSetDescriptionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetworkAttachment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeNetworkAttachment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

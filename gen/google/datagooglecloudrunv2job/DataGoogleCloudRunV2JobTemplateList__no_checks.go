@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2JobTemplateList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2JobTemplateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudRunV2JobTemplateList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewDataGoogleCloudRunV2JobTemplateListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleCloudRunV2JobTemplateListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

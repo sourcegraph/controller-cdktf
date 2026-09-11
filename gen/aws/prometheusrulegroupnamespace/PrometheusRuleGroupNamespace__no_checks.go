@@ -56,6 +56,10 @@ func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateInterpolationForAttribu
 	return nil
 }
 
+func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateMoveToIdParameters(id *
 }
 
 func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_PrometheusRuleGroupNamespace) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_PrometheusRuleGroupNamespace) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PrometheusRuleGroupNamespace) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

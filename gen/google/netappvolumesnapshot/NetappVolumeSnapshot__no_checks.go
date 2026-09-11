@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetappVolumeSnapshot) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (n *jsiiProxy_NetappVolumeSnapshot) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolumeSnapshot) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (n *jsiiProxy_NetappVolumeSnapshot) validateOverrideLogicalIdParameters(new
 }
 
 func (n *jsiiProxy_NetappVolumeSnapshot) validatePutTimeoutsParameters(value *NetappVolumeSnapshotTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappVolumeSnapshot) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_NetappVolumeSnapshot) validateSetLabelsParameters(val *map[st
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetappVolumeSnapshot) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

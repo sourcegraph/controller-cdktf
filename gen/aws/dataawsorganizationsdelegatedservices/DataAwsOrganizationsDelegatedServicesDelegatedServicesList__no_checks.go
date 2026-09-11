@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsOrganizationsDelegatedServicesDelegatedServicesList) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsDelegatedServicesDelegatedServicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOrganizationsDelegatedServicesDelegatedServicesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsOrganizationsDelegatedServicesDelegatedServicesList) v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsOrganizationsDelegatedServicesDelegatedServicesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsOrganizationsDelegatedServicesDelegatedServicesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsOrganizationsDelegatedServicesDelegatedServicesList) v
 	return nil
 }
 
-func validateNewDataAwsOrganizationsDelegatedServicesDelegatedServicesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsOrganizationsDelegatedServicesDelegatedServicesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

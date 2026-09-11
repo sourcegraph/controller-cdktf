@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataplexTaskExecutionStatusLatestJobOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskExecutionStatusLatestJobOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataplexTaskExecutionStatusLatestJobOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskExecutionStatusLatestJobOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataplexTaskExecutionStatusLatestJobOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleDataplexTaskExecutionStatusLatestJobOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskExecutionStatusLatestJobOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataplexTaskExecutionStatusLatestJobOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataplexTaskExecutionStatusLatestJobOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDataplexTaskExecutionStatusLatestJobOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

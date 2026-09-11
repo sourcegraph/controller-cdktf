@@ -5,7 +5,7 @@ package hypercomputeclustercluster
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesBucketList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesBucketList) validat
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesBucketList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesBucketList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesBucketList) validat
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesBucketList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesBucketList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesBucketList) validat
 	return nil
 }
 
-func validateNewHypercomputeclusterClusterStorageResourcesBucketListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewHypercomputeclusterClusterStorageResourcesBucketListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

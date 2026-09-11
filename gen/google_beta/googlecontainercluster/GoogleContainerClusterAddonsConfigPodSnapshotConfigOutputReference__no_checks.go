@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigPodSnapshotConfigOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterAddonsConfigPodSnapshotConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigPodSnapshotConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterAddonsConfigPodSnapshotConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigPodSnapshotConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleContainerClusterAddonsConfigPodSnapshotConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterAddonsConfigPodSnapshotConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigPodSnapshotConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerClusterAddonsConfigPodSnapshotConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerClusterAddonsConfigPodSnapshotConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

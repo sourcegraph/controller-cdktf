@@ -56,6 +56,10 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) validateInterpolationForAttributeP
 	return nil
 }
 
+func (c *jsiiProxy_CodedeployDeploymentGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodedeployDeploymentGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) validatePutTriggerConfigurationPar
 	return nil
 }
 
+func (c *jsiiProxy_CodedeployDeploymentGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateCodedeployDeploymentGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -156,7 +164,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

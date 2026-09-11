@@ -56,6 +56,10 @@ func (a *jsiiProxy_AppmeshGatewayRoute) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (a *jsiiProxy_AppmeshGatewayRoute) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshGatewayRoute) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (a *jsiiProxy_AppmeshGatewayRoute) validateOverrideLogicalIdParameters(newL
 }
 
 func (a *jsiiProxy_AppmeshGatewayRoute) validatePutSpecParameters(value *AppmeshGatewayRouteSpec) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppmeshGatewayRoute) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_AppmeshGatewayRoute) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshGatewayRoute) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AppmeshGatewayRoute) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

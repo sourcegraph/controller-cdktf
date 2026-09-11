@@ -12,7 +12,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueList) v
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueList) v
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueList) v
 	return nil
 }
 
-func validateNewAlertRouteChannelConfigMsTeamsTargetsBindingArrayValueListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAlertRouteChannelConfigMsTeamsTargetsBindingArrayValueListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

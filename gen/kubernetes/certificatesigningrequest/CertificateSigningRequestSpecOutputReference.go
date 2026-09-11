@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/certificatesigningrequest/internal"
 )
 
 type CertificateSigningRequestSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type CertificateSigningRequestSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Usages() *[]*string
 	SetUsages(val *[]*string)
 	UsagesInput() *[]*string
@@ -51,7 +51,7 @@ type CertificateSigningRequestSpecOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type CertificateSigningRequestSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetSignerName()
 	ResetUsages()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type CertificateSigningRequestSpecOutputReference interface {
 
 // The jsii proxy struct for CertificateSigningRequestSpecOutputReference
 type jsiiProxy_CertificateSigningRequestSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CertificateSigningRequestSpecOutputReference) ComplexObjectIndex() interface{} {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_CertificateSigningRequestSpecOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_CertificateSigningRequestSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CertificateSigningRequestSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_CertificateSigningRequestSpecOutputReference) UsagesInput() *
 }
 
 
-func NewCertificateSigningRequestSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CertificateSigningRequestSpecOutputReference {
+func NewCertificateSigningRequestSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CertificateSigningRequestSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCertificateSigningRequestSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -227,7 +227,7 @@ func NewCertificateSigningRequestSpecOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_CertificateSigningRequestSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestSpecOutputReference",
+		"@cdktn/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewCertificateSigningRequestSpecOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewCertificateSigningRequestSpecOutputReference_Override(c CertificateSigningRequestSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCertificateSigningRequestSpecOutputReference_Override(c CertificateSigningRequestSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestSpecOutputReference",
+		"@cdktn/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -311,7 +311,7 @@ func (j *jsiiProxy_CertificateSigningRequestSpecOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_CertificateSigningRequestSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CertificateSigningRequestSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (c *jsiiProxy_CertificateSigningRequestSpecOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (c *jsiiProxy_CertificateSigningRequestSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CertificateSigningRequestSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -490,8 +490,8 @@ func (c *jsiiProxy_CertificateSigningRequestSpecOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (c *jsiiProxy_CertificateSigningRequestSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CertificateSigningRequestSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -503,16 +503,16 @@ func (c *jsiiProxy_CertificateSigningRequestSpecOutputReference) InterpolationAs
 	return returns
 }
 
-func (c *jsiiProxy_CertificateSigningRequestSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CertificateSigningRequestSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (c *jsiiProxy_CertificateSigningRequestSpecOutputReference) ResetUsages() {
 	)
 }
 
-func (c *jsiiProxy_CertificateSigningRequestSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CertificateSigningRequestSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (c *jsiiProxy_CertificateSigningRequestSpecOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

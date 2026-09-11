@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeinstancetemplate/internal"
 )
 
 type ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,15 +41,15 @@ type ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,14 +65,14 @@ type ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetNatIp()
 	ResetNetworkTier()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference interfac
 
 // The jsii proxy struct for ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference
 type jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -195,8 +195,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -206,7 +206,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputRefe
 }
 
 
-func NewComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference {
+func NewComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -215,7 +215,7 @@ func NewComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference(terra
 	j := jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference",
+		"@cdktn/provider-google.computeInstanceTemplate.ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,11 +223,11 @@ func NewComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference(terra
 	return &j
 }
 
-func NewComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference_Override(c ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference_Override(c ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference",
+		"@cdktn/provider-google.computeInstanceTemplate.ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,11 +339,11 @@ func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputRefe
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -467,8 +467,8 @@ func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputRefe
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -480,16 +480,16 @@ func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputRefe
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -512,8 +512,8 @@ func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputRefe
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -521,7 +521,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAccessConfigOutputRefe
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

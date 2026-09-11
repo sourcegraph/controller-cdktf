@@ -56,6 +56,10 @@ func (r *jsiiProxy_RecaptchaEnterpriseKey) validateInterpolationForAttributePara
 	return nil
 }
 
+func (r *jsiiProxy_RecaptchaEnterpriseKey) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RecaptchaEnterpriseKey) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (r *jsiiProxy_RecaptchaEnterpriseKey) validatePutWebSettingsParameters(valu
 	return nil
 }
 
+func (r *jsiiProxy_RecaptchaEnterpriseKey) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateRecaptchaEnterpriseKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -132,7 +140,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKey) validateSetLabelsParameters(val *map[
 	return nil
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKey) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_RecaptchaEnterpriseKey) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

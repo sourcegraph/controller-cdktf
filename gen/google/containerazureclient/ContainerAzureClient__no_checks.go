@@ -56,6 +56,10 @@ func (c *jsiiProxy_ContainerAzureClient) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAzureClient) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAzureClient) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ContainerAzureClient) validateOverrideLogicalIdParameters(new
 }
 
 func (c *jsiiProxy_ContainerAzureClient) validatePutTimeoutsParameters(value *ContainerAzureClientTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAzureClient) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_ContainerAzureClient) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureClient) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ContainerAzureClient) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

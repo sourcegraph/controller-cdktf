@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudIdsEndpoint) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (c *jsiiProxy_CloudIdsEndpoint) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudIdsEndpoint) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_CloudIdsEndpoint) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (c *jsiiProxy_CloudIdsEndpoint) validatePutTimeoutsParameters(value *CloudIdsEndpointTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudIdsEndpoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_CloudIdsEndpoint) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_CloudIdsEndpoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudIdsEndpoint) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

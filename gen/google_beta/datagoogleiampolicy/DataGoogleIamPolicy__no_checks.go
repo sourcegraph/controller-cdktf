@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataGoogleIamPolicy) validatePutBindingParameters(value inter
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,7 +88,7 @@ func (j *jsiiProxy_DataGoogleIamPolicy) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

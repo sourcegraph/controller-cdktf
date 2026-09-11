@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFil
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFil
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFil
 	return nil
 }
 
-func validateNewGoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

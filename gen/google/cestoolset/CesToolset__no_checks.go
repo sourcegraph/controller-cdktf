@@ -56,6 +56,10 @@ func (c *jsiiProxy_CesToolset) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (c *jsiiProxy_CesToolset) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CesToolset) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (c *jsiiProxy_CesToolset) validatePutOpenApiToolsetParameters(value *CesToo
 }
 
 func (c *jsiiProxy_CesToolset) validatePutTimeoutsParameters(value *CesToolsetTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CesToolset) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_CesToolset) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CesToolset) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CesToolset) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

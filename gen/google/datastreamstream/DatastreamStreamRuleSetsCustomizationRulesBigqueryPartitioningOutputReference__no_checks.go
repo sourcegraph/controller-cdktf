@@ -40,7 +40,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

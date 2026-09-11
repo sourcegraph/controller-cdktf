@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos",
+		"@cdktn/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos",
 		reflect.TypeOf((*PolicyDeviceAssuranceChromeos)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -39,6 +39,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lastUpdate", GoGetter: "LastUpdate"},
 			_jsii_.MemberProperty{JsiiProperty: "lastUpdatedBy", GoGetter: "LastUpdatedBy"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -50,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTpspAllowScreenLock", GoMethod: "ResetTpspAllowScreenLock"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTpspBrowserVersion", GoMethod: "ResetTpspBrowserVersion"},
@@ -102,15 +104,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tpspScreenLockSecuredInput", GoGetter: "TpspScreenLockSecuredInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tpspSiteIsolationEnabled", GoGetter: "TpspSiteIsolationEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "tpspSiteIsolationEnabledInput", GoGetter: "TpspSiteIsolationEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyDeviceAssuranceChromeos{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig",
+		"@cdktn/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig",
 		reflect.TypeOf((*PolicyDeviceAssuranceChromeosConfig)(nil)).Elem(),
 	)
 }

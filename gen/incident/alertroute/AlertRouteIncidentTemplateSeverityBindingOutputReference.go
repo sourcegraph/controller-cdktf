@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/incident/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/incident/alertroute/internal"
 )
 
 type AlertRouteIncidentTemplateSeverityBindingOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ArrayValue() AlertRouteIncidentTemplateSeverityBindingArrayValueList
 	ArrayValueInput() interface{}
 	// the index of the complex object in a list.
@@ -36,9 +36,9 @@ type AlertRouteIncidentTemplateSeverityBindingOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() AlertRouteIncidentTemplateSeverityBindingValueOutputReference
 	ValueInput() interface{}
 	// Experimental.
@@ -46,7 +46,7 @@ type AlertRouteIncidentTemplateSeverityBindingOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,16 +62,16 @@ type AlertRouteIncidentTemplateSeverityBindingOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutArrayValue(value interface{})
 	PutValue(value *AlertRouteIncidentTemplateSeverityBindingValue)
 	ResetArrayValue()
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type AlertRouteIncidentTemplateSeverityBindingOutputReference interface {
 
 // The jsii proxy struct for AlertRouteIncidentTemplateSeverityBindingOutputReference
 type jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference) ArrayValue() AlertRouteIncidentTemplateSeverityBindingArrayValueList {
@@ -164,8 +164,8 @@ func (j *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference) Val
 }
 
 
-func NewAlertRouteIncidentTemplateSeverityBindingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlertRouteIncidentTemplateSeverityBindingOutputReference {
+func NewAlertRouteIncidentTemplateSeverityBindingOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AlertRouteIncidentTemplateSeverityBindingOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAlertRouteIncidentTemplateSeverityBindingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewAlertRouteIncidentTemplateSeverityBindingOutputReference(terraformResour
 	j := jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.alertRoute.AlertRouteIncidentTemplateSeverityBindingOutputReference",
+		"@cdktn/provider-incident.alertRoute.AlertRouteIncidentTemplateSeverityBindingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewAlertRouteIncidentTemplateSeverityBindingOutputReference(terraformResour
 	return &j
 }
 
-func NewAlertRouteIncidentTemplateSeverityBindingOutputReference_Override(a AlertRouteIncidentTemplateSeverityBindingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAlertRouteIncidentTemplateSeverityBindingOutputReference_Override(a AlertRouteIncidentTemplateSeverityBindingOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.alertRoute.AlertRouteIncidentTemplateSeverityBindingOutputReference",
+		"@cdktn/provider-incident.alertRoute.AlertRouteIncidentTemplateSeverityBindingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -266,7 +266,7 @@ func (j *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,11 +306,11 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference) Get
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -434,8 +434,8 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference) Get
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -447,16 +447,16 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference) Int
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference) Res
 	)
 }
 
-func (a *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingOutputReference) Res
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

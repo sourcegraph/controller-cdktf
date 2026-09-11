@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig",
+		"@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig",
 		reflect.TypeOf((*LoggingProjectBucketConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "locked", GoGetter: "Locked"},
 			_jsii_.MemberProperty{JsiiProperty: "lockedInput", GoGetter: "LockedInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -64,6 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCmekSettings", GoMethod: "PutCmekSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putIndexConfigs", GoMethod: "PutIndexConfigs"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCmekSettings", GoMethod: "ResetCmekSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableAnalytics", GoMethod: "ResetEnableAnalytics"},
@@ -83,19 +85,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_LoggingProjectBucketConfig{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettings",
+		"@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettings",
 		reflect.TypeOf((*LoggingProjectBucketConfigCmekSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettingsOutputReference",
+		"@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettingsOutputReference",
 		reflect.TypeOf((*LoggingProjectBucketConfigCmekSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -127,20 +130,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LoggingProjectBucketConfigCmekSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig",
+		"@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig",
 		reflect.TypeOf((*LoggingProjectBucketConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs",
+		"@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs",
 		reflect.TypeOf((*LoggingProjectBucketConfigIndexConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsList",
+		"@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsList",
 		reflect.TypeOf((*LoggingProjectBucketConfigIndexConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -157,12 +160,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LoggingProjectBucketConfigIndexConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsOutputReference",
+		"@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsOutputReference",
 		reflect.TypeOf((*LoggingProjectBucketConfigIndexConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -193,7 +196,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LoggingProjectBucketConfigIndexConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

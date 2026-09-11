@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/slo/internal"
 )
 
 type SloObjectiveCountMetricsGoodCloudwatchOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -57,15 +57,15 @@ type SloObjectiveCountMetricsGoodCloudwatchOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,9 +81,9 @@ type SloObjectiveCountMetricsGoodCloudwatchOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDimensions(value interface{})
 	ResetAccountId()
 	ResetDimensions()
@@ -94,7 +94,7 @@ type SloObjectiveCountMetricsGoodCloudwatchOutputReference interface {
 	ResetStat()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,7 +104,7 @@ type SloObjectiveCountMetricsGoodCloudwatchOutputReference interface {
 
 // The jsii proxy struct for SloObjectiveCountMetricsGoodCloudwatchOutputReference
 type jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference) AccountId() *string {
@@ -327,8 +327,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -338,7 +338,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference) Terraf
 }
 
 
-func NewSloObjectiveCountMetricsGoodCloudwatchOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveCountMetricsGoodCloudwatchOutputReference {
+func NewSloObjectiveCountMetricsGoodCloudwatchOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveCountMetricsGoodCloudwatchOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSloObjectiveCountMetricsGoodCloudwatchOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -347,7 +347,7 @@ func NewSloObjectiveCountMetricsGoodCloudwatchOutputReference(terraformResource 
 	j := jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodCloudwatchOutputReference",
+		"@cdktn/provider-nobl9.slo.SloObjectiveCountMetricsGoodCloudwatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -355,11 +355,11 @@ func NewSloObjectiveCountMetricsGoodCloudwatchOutputReference(terraformResource 
 	return &j
 }
 
-func NewSloObjectiveCountMetricsGoodCloudwatchOutputReference_Override(s SloObjectiveCountMetricsGoodCloudwatchOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSloObjectiveCountMetricsGoodCloudwatchOutputReference_Override(s SloObjectiveCountMetricsGoodCloudwatchOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodCloudwatchOutputReference",
+		"@cdktn/provider-nobl9.slo.SloObjectiveCountMetricsGoodCloudwatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -486,7 +486,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,11 +526,11 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference) GetAny
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -654,8 +654,8 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference) GetStr
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -667,16 +667,16 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference) Interp
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -750,8 +750,8 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference) ResetS
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -759,7 +759,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference) Resolv
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/transcoderjobtemplate/internal"
 )
 
 type TranscoderJobTemplateConfigOutputOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type TranscoderJobTemplateConfigOutputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uri() *string
 	SetUri(val *string)
 	UriInput() *string
@@ -45,7 +45,7 @@ type TranscoderJobTemplateConfigOutputOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type TranscoderJobTemplateConfigOutputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetUri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type TranscoderJobTemplateConfigOutputOutputReference interface {
 
 // The jsii proxy struct for TranscoderJobTemplateConfigOutputOutputReference
 type jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) ComplexObjectIndex() interface{} {
@@ -140,8 +140,8 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) UriInput() 
 }
 
 
-func NewTranscoderJobTemplateConfigOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TranscoderJobTemplateConfigOutputOutputReference {
+func NewTranscoderJobTemplateConfigOutputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) TranscoderJobTemplateConfigOutputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewTranscoderJobTemplateConfigOutputOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewTranscoderJobTemplateConfigOutputOutputReference(terraformResource cdktf
 	j := jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOutputOutputReference",
+		"@cdktn/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewTranscoderJobTemplateConfigOutputOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewTranscoderJobTemplateConfigOutputOutputReference_Override(t TranscoderJobTemplateConfigOutputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewTranscoderJobTemplateConfigOutputOutputReference_Override(t TranscoderJobTemplateConfigOutputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOutputOutputReference",
+		"@cdktn/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOutputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -421,8 +421,8 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) GetStringMa
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -434,16 +434,16 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) Interpolati
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) ResetUri() 
 	)
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

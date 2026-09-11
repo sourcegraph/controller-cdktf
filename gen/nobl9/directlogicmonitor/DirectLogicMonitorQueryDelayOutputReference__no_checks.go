@@ -40,11 +40,11 @@ func (d *jsiiProxy_DirectLogicMonitorQueryDelayOutputReference) validateGetStrin
 	return nil
 }
 
-func (d *jsiiProxy_DirectLogicMonitorQueryDelayOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DirectLogicMonitorQueryDelayOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DirectLogicMonitorQueryDelayOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectLogicMonitorQueryDelayOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_DirectLogicMonitorQueryDelayOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_DirectLogicMonitorQueryDelayOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DirectLogicMonitorQueryDelayOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DirectLogicMonitorQueryDelayOutputReference) validateSetValue
 	return nil
 }
 
-func validateNewDirectLogicMonitorQueryDelayOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDirectLogicMonitorQueryDelayOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

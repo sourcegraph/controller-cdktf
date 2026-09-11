@@ -40,11 +40,11 @@ func (e *jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsOutputReference) valida
 	return nil
 }
 
-func (e *jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEksNodeGroupResourcesAutoscalingGroupsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEksNodeGroupResourcesAutoscalingGroupsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverC
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverC
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverC
 	return nil
 }
 
-func validateNewDataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

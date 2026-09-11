@@ -40,7 +40,7 @@ func (s *jsiiProxy_S3BucketInventoryDestinationBucketEncryptionOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketInventoryDestinationBucketEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketInventoryDestinationBucketEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (s *jsiiProxy_S3BucketInventoryDestinationBucketEncryptionOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketInventoryDestinationBucketEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketInventoryDestinationBucketEncryptionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_S3BucketInventoryDestinationBucketEncryptionOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketInventoryDestinationBucketEncryptionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_S3BucketInventoryDestinationBucketEncryptionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewS3BucketInventoryDestinationBucketEncryptionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewS3BucketInventoryDestinationBucketEncryptionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

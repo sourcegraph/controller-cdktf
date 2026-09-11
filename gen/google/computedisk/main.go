@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeDisk.ComputeDisk",
+		"@cdktn/provider-google.computeDisk.ComputeDisk",
 		reflect.TypeOf((*ComputeDisk)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessMode", GoGetter: "AccessMode"},
@@ -66,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "licenses", GoGetter: "Licenses"},
 			_jsii_.MemberProperty{JsiiProperty: "licensesInput", GoGetter: "LicensesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -93,6 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSourceSnapshotEncryptionKey", GoMethod: "PutSourceSnapshotEncryptionKey"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessMode", GoMethod: "ResetAccessMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetArchitecture", GoMethod: "ResetArchitecture"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAsyncPrimaryDisk", GoMethod: "ResetAsyncPrimaryDisk"},
@@ -159,21 +161,22 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "users", GoGetter: "Users"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeDisk{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeDisk.ComputeDiskAsyncPrimaryDisk",
+		"@cdktn/provider-google.computeDisk.ComputeDiskAsyncPrimaryDisk",
 		reflect.TypeOf((*ComputeDiskAsyncPrimaryDisk)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeDisk.ComputeDiskAsyncPrimaryDiskOutputReference",
+		"@cdktn/provider-google.computeDisk.ComputeDiskAsyncPrimaryDiskOutputReference",
 		reflect.TypeOf((*ComputeDiskAsyncPrimaryDiskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -202,20 +205,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeDiskAsyncPrimaryDiskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeDisk.ComputeDiskConfig",
+		"@cdktn/provider-google.computeDisk.ComputeDiskConfig",
 		reflect.TypeOf((*ComputeDiskConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeDisk.ComputeDiskDiskEncryptionKey",
+		"@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKey",
 		reflect.TypeOf((*ComputeDiskDiskEncryptionKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference",
+		"@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference",
 		reflect.TypeOf((*ComputeDiskDiskEncryptionKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -255,16 +258,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeDiskDiskEncryptionKeyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeDisk.ComputeDiskGuestOsFeatures",
+		"@cdktn/provider-google.computeDisk.ComputeDiskGuestOsFeatures",
 		reflect.TypeOf((*ComputeDiskGuestOsFeatures)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeDisk.ComputeDiskGuestOsFeaturesList",
+		"@cdktn/provider-google.computeDisk.ComputeDiskGuestOsFeaturesList",
 		reflect.TypeOf((*ComputeDiskGuestOsFeaturesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -281,12 +284,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeDiskGuestOsFeaturesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeDisk.ComputeDiskGuestOsFeaturesOutputReference",
+		"@cdktn/provider-google.computeDisk.ComputeDiskGuestOsFeaturesOutputReference",
 		reflect.TypeOf((*ComputeDiskGuestOsFeaturesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -315,16 +318,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeDiskGuestOsFeaturesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeDisk.ComputeDiskParams",
+		"@cdktn/provider-google.computeDisk.ComputeDiskParams",
 		reflect.TypeOf((*ComputeDiskParams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeDisk.ComputeDiskParamsOutputReference",
+		"@cdktn/provider-google.computeDisk.ComputeDiskParamsOutputReference",
 		reflect.TypeOf((*ComputeDiskParamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -354,16 +357,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeDiskParamsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeDisk.ComputeDiskSourceImageEncryptionKey",
+		"@cdktn/provider-google.computeDisk.ComputeDiskSourceImageEncryptionKey",
 		reflect.TypeOf((*ComputeDiskSourceImageEncryptionKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeDisk.ComputeDiskSourceImageEncryptionKeyOutputReference",
+		"@cdktn/provider-google.computeDisk.ComputeDiskSourceImageEncryptionKeyOutputReference",
 		reflect.TypeOf((*ComputeDiskSourceImageEncryptionKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -400,16 +403,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeDiskSourceImageEncryptionKeyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeDisk.ComputeDiskSourceSnapshotEncryptionKey",
+		"@cdktn/provider-google.computeDisk.ComputeDiskSourceSnapshotEncryptionKey",
 		reflect.TypeOf((*ComputeDiskSourceSnapshotEncryptionKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeDisk.ComputeDiskSourceSnapshotEncryptionKeyOutputReference",
+		"@cdktn/provider-google.computeDisk.ComputeDiskSourceSnapshotEncryptionKeyOutputReference",
 		reflect.TypeOf((*ComputeDiskSourceSnapshotEncryptionKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -446,16 +449,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeDiskSourceSnapshotEncryptionKeyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeDisk.ComputeDiskTimeouts",
+		"@cdktn/provider-google.computeDisk.ComputeDiskTimeouts",
 		reflect.TypeOf((*ComputeDiskTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeDisk.ComputeDiskTimeoutsOutputReference",
+		"@cdktn/provider-google.computeDisk.ComputeDiskTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeDiskTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -491,7 +494,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeDiskTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

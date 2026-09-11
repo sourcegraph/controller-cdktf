@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeou
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeou
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeou
 	return nil
 }
 
-func validateNewComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

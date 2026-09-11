@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleHealthcareDicomStore) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleHealthcareDicomStore) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareDicomStore) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleHealthcareDicomStore) validatePutStreamConfigsParameter
 }
 
 func (g *jsiiProxy_GoogleHealthcareDicomStore) validatePutTimeoutsParameters(value *GoogleHealthcareDicomStoreTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcareDicomStore) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleHealthcareDicomStore) validateSetLabelsParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStore) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleHealthcareDicomStore) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

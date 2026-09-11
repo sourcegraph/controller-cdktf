@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

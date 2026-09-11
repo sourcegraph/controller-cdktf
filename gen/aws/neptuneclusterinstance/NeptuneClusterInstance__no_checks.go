@@ -56,6 +56,10 @@ func (n *jsiiProxy_NeptuneClusterInstance) validateInterpolationForAttributePara
 	return nil
 }
 
+func (n *jsiiProxy_NeptuneClusterInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NeptuneClusterInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (n *jsiiProxy_NeptuneClusterInstance) validateOverrideLogicalIdParameters(n
 }
 
 func (n *jsiiProxy_NeptuneClusterInstance) validatePutTimeoutsParameters(value *NeptuneClusterInstanceTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NeptuneClusterInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -140,7 +148,7 @@ func (j *jsiiProxy_NeptuneClusterInstance) validateSetInstanceClassParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneClusterInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NeptuneClusterInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/tunnelconfig/internal"
 )
 
 type TunnelConfigConfigWarpRoutingOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type TunnelConfigConfigWarpRoutingOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type TunnelConfigConfigWarpRoutingOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type TunnelConfigConfigWarpRoutingOutputReference interface {
 
 // The jsii proxy struct for TunnelConfigConfigWarpRoutingOutputReference
 type jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference) TerraformResour
 }
 
 
-func NewTunnelConfigConfigWarpRoutingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TunnelConfigConfigWarpRoutingOutputReference {
+func NewTunnelConfigConfigWarpRoutingOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) TunnelConfigConfigWarpRoutingOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewTunnelConfigConfigWarpRoutingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewTunnelConfigConfigWarpRoutingOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigWarpRoutingOutputReference",
+		"@cdktn/provider-cloudflare.tunnelConfig.TunnelConfigConfigWarpRoutingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewTunnelConfigConfigWarpRoutingOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewTunnelConfigConfigWarpRoutingOutputReference_Override(t TunnelConfigConfigWarpRoutingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewTunnelConfigConfigWarpRoutingOutputReference_Override(t TunnelConfigConfigWarpRoutingOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigWarpRoutingOutputReference",
+		"@cdktn/provider-cloudflare.tunnelConfig.TunnelConfigConfigWarpRoutingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (t *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (t *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -421,8 +421,8 @@ func (t *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (t *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (t *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -434,16 +434,16 @@ func (t *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference) InterpolationAs
 	return returns
 }
 
-func (t *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+func (t *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (t *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference) ResetEnabled() 
 	)
 }
 
-func (t *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (t *jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

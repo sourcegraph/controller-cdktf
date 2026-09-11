@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppautoscalingScheduledActionScalableTargetActionOutputRefere
 	return nil
 }
 
-func (a *jsiiProxy_AppautoscalingScheduledActionScalableTargetActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppautoscalingScheduledActionScalableTargetActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppautoscalingScheduledActionScalableTargetActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppautoscalingScheduledActionScalableTargetActionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AppautoscalingScheduledActionScalableTargetActionOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_AppautoscalingScheduledActionScalableTargetActionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppautoscalingScheduledActionScalableTargetActionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppautoscalingScheduledActionScalableTargetActionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppautoscalingScheduledActionScalableTargetActionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

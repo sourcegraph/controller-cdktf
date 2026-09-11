@@ -5,15 +5,15 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglevmwareenginenetworkpeering/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/vmwareengine_network_peering google_vmwareengine_network_peering}.
 type DataGoogleVmwareengineNetworkPeering interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -26,12 +26,12 @@ type DataGoogleVmwareengineNetworkPeering interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	ExportCustomRoutes() cdktf.IResolvable
-	ExportCustomRoutesWithPublicIp() cdktf.IResolvable
+	ExportCustomRoutes() cdktn.IResolvable
+	ExportCustomRoutesWithPublicIp() cdktn.IResolvable
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -39,12 +39,12 @@ type DataGoogleVmwareengineNetworkPeering interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	ImportCustomRoutes() cdktf.IResolvable
-	ImportCustomRoutesWithPublicIp() cdktf.IResolvable
+	ImportCustomRoutes() cdktn.IResolvable
+	ImportCustomRoutesWithPublicIp() cdktn.IResolvable
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -56,15 +56,15 @@ type DataGoogleVmwareengineNetworkPeering interface {
 	SetProject(val *string)
 	ProjectInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	State() *string
 	StateDetails() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -78,7 +78,7 @@ type DataGoogleVmwareengineNetworkPeering interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -94,10 +94,23 @@ type DataGoogleVmwareengineNetworkPeering interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -115,15 +128,24 @@ type DataGoogleVmwareengineNetworkPeering interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataGoogleVmwareengineNetworkPeering
 type jsiiProxy_DataGoogleVmwareengineNetworkPeering struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -182,8 +204,8 @@ func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) Description() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) ExportCustomRoutes() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) ExportCustomRoutes() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"exportCustomRoutes",
@@ -192,8 +214,8 @@ func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) ExportCustomRoutes() cd
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) ExportCustomRoutesWithPublicIp() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) ExportCustomRoutesWithPublicIp() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"exportCustomRoutesWithPublicIp",
@@ -202,8 +224,8 @@ func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) ExportCustomRoutesWithP
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -252,8 +274,8 @@ func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) ImportCustomRoutes() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) ImportCustomRoutes() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"importCustomRoutes",
@@ -262,8 +284,8 @@ func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) ImportCustomRoutes() cd
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) ImportCustomRoutesWithPublicIp() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) ImportCustomRoutesWithPublicIp() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"importCustomRoutesWithPublicIp",
@@ -272,8 +294,8 @@ func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) ImportCustomRoutesWithP
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -352,8 +374,8 @@ func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) ProjectInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -392,8 +414,8 @@ func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) StateDetails() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -473,7 +495,7 @@ func NewDataGoogleVmwareengineNetworkPeering(scope constructs.Construct, id *str
 	j := jsiiProxy_DataGoogleVmwareengineNetworkPeering{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering",
+		"@cdktn/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -486,7 +508,7 @@ func NewDataGoogleVmwareengineNetworkPeering_Override(d DataGoogleVmwareengineNe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering",
+		"@cdktn/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -511,7 +533,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -530,7 +552,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +585,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering)SetProject(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -571,17 +593,17 @@ func (j *jsiiProxy_DataGoogleVmwareengineNetworkPeering)SetProvider(val cdktf.Te
 	)
 }
 
-// Generates CDKTF code for importing a DataGoogleVmwareengineNetworkPeering resource upon running "cdktf plan <stack-name>".
-func DataGoogleVmwareengineNetworkPeering_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataGoogleVmwareengineNetworkPeering resource upon running "cdktn plan <stack-name>".
+func DataGoogleVmwareengineNetworkPeering_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataGoogleVmwareengineNetworkPeering_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering",
+		"@cdktn/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -616,7 +638,7 @@ func DataGoogleVmwareengineNetworkPeering_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering",
+		"@cdktn/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -635,7 +657,7 @@ func DataGoogleVmwareengineNetworkPeering_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering",
+		"@cdktn/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +676,7 @@ func DataGoogleVmwareengineNetworkPeering_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering",
+		"@cdktn/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +689,7 @@ func DataGoogleVmwareengineNetworkPeering_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering",
+		"@cdktn/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering",
 		"tfResourceType",
 		&returns,
 	)
@@ -701,11 +723,11 @@ func (d *jsiiProxy_DataGoogleVmwareengineNetworkPeering) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineNetworkPeering) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleVmwareengineNetworkPeering) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -829,11 +851,11 @@ func (d *jsiiProxy_DataGoogleVmwareengineNetworkPeering) GetStringMapAttribute(t
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineNetworkPeering) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleVmwareengineNetworkPeering) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -853,6 +875,17 @@ func (d *jsiiProxy_DataGoogleVmwareengineNetworkPeering) OverrideLogicalId(newLo
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataGoogleVmwareengineNetworkPeering) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -952,6 +985,24 @@ func (d *jsiiProxy_DataGoogleVmwareengineNetworkPeering) ToTerraform() interface
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGoogleVmwareengineNetworkPeering) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

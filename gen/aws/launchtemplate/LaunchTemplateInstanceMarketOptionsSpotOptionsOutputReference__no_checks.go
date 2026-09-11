@@ -40,11 +40,11 @@ func (l *jsiiProxy_LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference
 	return nil
 }
 
-func validateNewLaunchTemplateInstanceMarketOptionsSpotOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLaunchTemplateInstanceMarketOptionsSpotOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

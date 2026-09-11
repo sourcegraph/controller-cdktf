@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateGetStri
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validatePutInst
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*EmrClusterMasterInstanceFleetInstanceTypeConfigs:
 		value := value.(*[]*EmrClusterMasterInstanceFleetInstanceTypeConfigs)
@@ -114,7 +114,7 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validatePutInst
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EmrClusterMasterInstanceFleetInstanceTypeConfigs; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*EmrClusterMasterInstanceFleetInstanceTypeConfigs; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -132,9 +132,9 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validatePutLaun
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (e *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -245,7 +245,7 @@ func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func (j *jsiiProxy_EmrClusterMasterInstanceFleetOutputReference) validateSetTerr
 	return nil
 }
 
-func validateNewEmrClusterMasterInstanceFleetOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEmrClusterMasterInstanceFleetOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

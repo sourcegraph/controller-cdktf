@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datalosspreventiondiscoveryconfig/internal"
 )
 
 type DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AwsLocation() DataLossPreventionDiscoveryConfigOtherCloudStartingLocationAwsLocationOutputReference
 	AwsLocationInput() *DataLossPreventionDiscoveryConfigOtherCloudStartingLocationAwsLocation
 	// the index of the complex object in a list.
@@ -36,15 +36,15 @@ type DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,14 +60,14 @@ type DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAwsLocation(value *DataLossPreventionDiscoveryConfigOtherCloudStartingLocationAwsLocation)
 	ResetAwsLocation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference 
 
 // The jsii proxy struct for DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference
 type jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference) AwsLocation() DataLossPreventionDiscoveryConfigOtherCloudStartingLocationAwsLocationOutputReference {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOu
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOu
 }
 
 
-func NewDataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference {
+func NewDataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewDataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReferen
 	j := jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference",
+		"@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewDataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReferen
 	return &j
 }
 
-func NewDataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference_Override(d DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference_Override(d DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference",
+		"@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOu
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -282,11 +282,11 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOu
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -410,8 +410,8 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOu
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -423,16 +423,16 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOu
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOu
 	)
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOu
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

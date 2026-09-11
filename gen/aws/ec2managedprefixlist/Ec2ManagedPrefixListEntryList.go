@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/ec2managedprefixlist/internal"
 )
 
 type Ec2ManagedPrefixListEntryList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type Ec2ManagedPrefixListEntryList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) Ec2ManagedPrefixListEntryOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type Ec2ManagedPrefixListEntryList interface {
 
 // The jsii proxy struct for Ec2ManagedPrefixListEntryList
 type jsiiProxy_Ec2ManagedPrefixListEntryList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_Ec2ManagedPrefixListEntryList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_Ec2ManagedPrefixListEntryList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ManagedPrefixListEntryList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_Ec2ManagedPrefixListEntryList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_Ec2ManagedPrefixListEntryList) WrapsSet() *bool {
 }
 
 
-func NewEc2ManagedPrefixListEntryList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Ec2ManagedPrefixListEntryList {
+func NewEc2ManagedPrefixListEntryList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Ec2ManagedPrefixListEntryList {
 	_init_.Initialize()
 
 	if err := validateNewEc2ManagedPrefixListEntryListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewEc2ManagedPrefixListEntryList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_Ec2ManagedPrefixListEntryList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntryList",
+		"@cdktn/provider-aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewEc2ManagedPrefixListEntryList(terraformResource cdktf.IInterpolatingPare
 	return &j
 }
 
-func NewEc2ManagedPrefixListEntryList_Override(e Ec2ManagedPrefixListEntryList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewEc2ManagedPrefixListEntryList_Override(e Ec2ManagedPrefixListEntryList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntryList",
+		"@cdktn/provider-aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_Ec2ManagedPrefixListEntryList)SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_Ec2ManagedPrefixListEntryList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Ec2ManagedPrefixListEntryList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_Ec2ManagedPrefixListEntryList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (e *jsiiProxy_Ec2ManagedPrefixListEntryList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (e *jsiiProxy_Ec2ManagedPrefixListEntryList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := e.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		e,
@@ -228,8 +231,8 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryList) Get(index *float64) Ec2Managed
 	return returns
 }
 
-func (e *jsiiProxy_Ec2ManagedPrefixListEntryList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_Ec2ManagedPrefixListEntryList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryList) Resolve(_context cdktf.IResolv
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

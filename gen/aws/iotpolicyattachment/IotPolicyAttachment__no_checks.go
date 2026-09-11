@@ -56,6 +56,10 @@ func (i *jsiiProxy_IotPolicyAttachment) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (i *jsiiProxy_IotPolicyAttachment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotPolicyAttachment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (i *jsiiProxy_IotPolicyAttachment) validateMoveToIdParameters(id *string) e
 }
 
 func (i *jsiiProxy_IotPolicyAttachment) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotPolicyAttachment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_IotPolicyAttachment) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_IotPolicyAttachment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IotPolicyAttachment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

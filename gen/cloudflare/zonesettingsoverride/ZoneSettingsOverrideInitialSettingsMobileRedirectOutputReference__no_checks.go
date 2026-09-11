@@ -40,11 +40,11 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputRefere
 	return nil
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewZoneSettingsOverrideInitialSettingsMobileRedirectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewZoneSettingsOverrideInitialSettingsMobileRedirectOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

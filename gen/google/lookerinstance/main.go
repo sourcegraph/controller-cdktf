@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstance",
+		"@cdktn/provider-google.lookerInstance.LookerInstance",
 		reflect.TypeOf((*LookerInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -64,6 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lookerVersion", GoGetter: "LookerVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindow", GoGetter: "MaintenanceWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindowInput", GoGetter: "MaintenanceWindowInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -103,6 +104,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "reservedRange", GoGetter: "ReservedRange"},
 			_jsii_.MemberProperty{JsiiProperty: "reservedRangeInput", GoGetter: "ReservedRangeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdminSettings", GoMethod: "ResetAdminSettings"},
@@ -143,19 +145,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "userMetadata", GoGetter: "UserMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "userMetadataInput", GoGetter: "UserMetadataInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstance{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceAdminSettings",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceAdminSettings",
 		reflect.TypeOf((*LookerInstanceAdminSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceAdminSettingsOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceAdminSettingsOutputReference",
 		reflect.TypeOf((*LookerInstanceAdminSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedEmailDomains", GoGetter: "AllowedEmailDomains"},
@@ -185,20 +188,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstanceAdminSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceConfig",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceConfig",
 		reflect.TypeOf((*LookerInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceControlledEgressConfig",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfig",
 		reflect.TypeOf((*LookerInstanceControlledEgressConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference",
 		reflect.TypeOf((*LookerInstanceControlledEgressConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -231,16 +234,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstanceControlledEgressConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceCustomDomain",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceCustomDomain",
 		reflect.TypeOf((*LookerInstanceCustomDomain)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceCustomDomainOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceCustomDomainOutputReference",
 		reflect.TypeOf((*LookerInstanceCustomDomainOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -271,20 +274,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstanceCustomDomainOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriod",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriod",
 		reflect.TypeOf((*LookerInstanceDenyMaintenancePeriod)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodEndDate",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodEndDate",
 		reflect.TypeOf((*LookerInstanceDenyMaintenancePeriodEndDate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodEndDateOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodEndDateOutputReference",
 		reflect.TypeOf((*LookerInstanceDenyMaintenancePeriodEndDateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -320,12 +323,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodOutputReference",
 		reflect.TypeOf((*LookerInstanceDenyMaintenancePeriodOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -361,16 +364,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstanceDenyMaintenancePeriodOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodStartDate",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodStartDate",
 		reflect.TypeOf((*LookerInstanceDenyMaintenancePeriodStartDate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodStartDateOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodStartDateOutputReference",
 		reflect.TypeOf((*LookerInstanceDenyMaintenancePeriodStartDateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -406,16 +409,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstanceDenyMaintenancePeriodStartDateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodTime",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodTime",
 		reflect.TypeOf((*LookerInstanceDenyMaintenancePeriodTime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodTimeOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodTimeOutputReference",
 		reflect.TypeOf((*LookerInstanceDenyMaintenancePeriodTimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -454,16 +457,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstanceDenyMaintenancePeriodTimeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceEncryptionConfig",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceEncryptionConfig",
 		reflect.TypeOf((*LookerInstanceEncryptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceEncryptionConfigOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceEncryptionConfigOutputReference",
 		reflect.TypeOf((*LookerInstanceEncryptionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -495,16 +498,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstanceEncryptionConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceMaintenanceWindow",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceMaintenanceWindow",
 		reflect.TypeOf((*LookerInstanceMaintenanceWindow)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceMaintenanceWindowOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceMaintenanceWindowOutputReference",
 		reflect.TypeOf((*LookerInstanceMaintenanceWindowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -536,16 +539,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstanceMaintenanceWindowOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceMaintenanceWindowStartTime",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceMaintenanceWindowStartTime",
 		reflect.TypeOf((*LookerInstanceMaintenanceWindowStartTime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceMaintenanceWindowStartTimeOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceMaintenanceWindowStartTimeOutputReference",
 		reflect.TypeOf((*LookerInstanceMaintenanceWindowStartTimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -584,16 +587,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstanceMaintenanceWindowStartTimeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceOauthConfig",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceOauthConfig",
 		reflect.TypeOf((*LookerInstanceOauthConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceOauthConfigOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceOauthConfigOutputReference",
 		reflect.TypeOf((*LookerInstanceOauthConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -624,16 +627,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstanceOauthConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lookerInstance.LookerInstancePeriodicExportConfig",
+		"@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfig",
 		reflect.TypeOf((*LookerInstancePeriodicExportConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference",
 		reflect.TypeOf((*LookerInstancePeriodicExportConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -667,16 +670,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstancePeriodicExportConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime",
+		"@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime",
 		reflect.TypeOf((*LookerInstancePeriodicExportConfigStartTime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference",
 		reflect.TypeOf((*LookerInstancePeriodicExportConfigStartTimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -715,16 +718,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstancePeriodicExportConfigStartTimeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lookerInstance.LookerInstancePscConfig",
+		"@cdktn/provider-google.lookerInstance.LookerInstancePscConfig",
 		reflect.TypeOf((*LookerInstancePscConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstancePscConfigOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstancePscConfigOutputReference",
 		reflect.TypeOf((*LookerInstancePscConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedVpcs", GoGetter: "AllowedVpcs"},
@@ -759,16 +762,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstancePscConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lookerInstance.LookerInstancePscConfigServiceAttachments",
+		"@cdktn/provider-google.lookerInstance.LookerInstancePscConfigServiceAttachments",
 		reflect.TypeOf((*LookerInstancePscConfigServiceAttachments)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstancePscConfigServiceAttachmentsList",
+		"@cdktn/provider-google.lookerInstance.LookerInstancePscConfigServiceAttachmentsList",
 		reflect.TypeOf((*LookerInstancePscConfigServiceAttachmentsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -785,12 +788,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstancePscConfigServiceAttachmentsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstancePscConfigServiceAttachmentsOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstancePscConfigServiceAttachmentsOutputReference",
 		reflect.TypeOf((*LookerInstancePscConfigServiceAttachmentsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -824,16 +827,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstancePscConfigServiceAttachmentsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceTimeouts",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceTimeouts",
 		reflect.TypeOf((*LookerInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceTimeoutsOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*LookerInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -869,16 +872,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstanceTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceUserMetadata",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceUserMetadata",
 		reflect.TypeOf((*LookerInstanceUserMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceUserMetadataOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceUserMetadataOutputReference",
 		reflect.TypeOf((*LookerInstanceUserMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalDeveloperUserCount", GoGetter: "AdditionalDeveloperUserCount"},
@@ -914,7 +917,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LookerInstanceUserMetadataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

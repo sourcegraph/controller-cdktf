@@ -56,6 +56,10 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validateInterpolationForAt
 	return nil
 }
 
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validatePutCmekSettingsPar
 }
 
 func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validatePutIndexConfigsParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

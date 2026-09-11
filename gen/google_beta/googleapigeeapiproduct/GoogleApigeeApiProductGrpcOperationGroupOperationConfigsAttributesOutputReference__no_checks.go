@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleApigeeApiProductGrpcOperationGroupOperationConfigsAttri
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleApigeeApiProductGrpcOperationGroupOperationConfigsAttri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleApigeeApiProductGrpcOperationGroupOperationConfigsAttri
 	return nil
 }
 
-func validateNewGoogleApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

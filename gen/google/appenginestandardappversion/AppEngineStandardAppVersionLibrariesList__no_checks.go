@@ -12,7 +12,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionLibrariesList) validateGetParamete
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineStandardAppVersionLibrariesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppEngineStandardAppVersionLibrariesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersionLibrariesList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionLibrariesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppEngineStandardAppVersionLibrariesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersionLibrariesList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewAppEngineStandardAppVersionLibrariesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAppEngineStandardAppVersionLibrariesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

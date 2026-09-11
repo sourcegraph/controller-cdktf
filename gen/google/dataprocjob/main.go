@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJob",
+		"@cdktn/provider-google.dataprocJob.DataprocJob",
 		reflect.TypeOf((*DataprocJob)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -80,6 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "referenceInput", GoGetter: "ReferenceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForceDelete", GoMethod: "ResetForceDelete"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHadoopConfig", GoMethod: "ResetHadoopConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHiveConfig", GoMethod: "ResetHiveConfig"},
@@ -118,27 +120,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForCompletion", GoGetter: "WaitForCompletion"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForCompletionInput", GoGetter: "WaitForCompletionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJob{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobConfig",
+		"@cdktn/provider-google.dataprocJob.DataprocJobConfig",
 		reflect.TypeOf((*DataprocJobConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobHadoopConfig",
+		"@cdktn/provider-google.dataprocJob.DataprocJobHadoopConfig",
 		reflect.TypeOf((*DataprocJobHadoopConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobHadoopConfigLoggingConfig",
+		"@cdktn/provider-google.dataprocJob.DataprocJobHadoopConfigLoggingConfig",
 		reflect.TypeOf((*DataprocJobHadoopConfigLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobHadoopConfigLoggingConfigOutputReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobHadoopConfigLoggingConfigOutputReference",
 		reflect.TypeOf((*DataprocJobHadoopConfigLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -167,12 +170,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobHadoopConfigLoggingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobHadoopConfigOutputReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobHadoopConfigOutputReference",
 		reflect.TypeOf((*DataprocJobHadoopConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
@@ -224,16 +227,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobHadoopConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobHiveConfig",
+		"@cdktn/provider-google.dataprocJob.DataprocJobHiveConfig",
 		reflect.TypeOf((*DataprocJobHiveConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobHiveConfigOutputReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobHiveConfigOutputReference",
 		reflect.TypeOf((*DataprocJobHiveConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -278,20 +281,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobHiveConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobPigConfig",
+		"@cdktn/provider-google.dataprocJob.DataprocJobPigConfig",
 		reflect.TypeOf((*DataprocJobPigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobPigConfigLoggingConfig",
+		"@cdktn/provider-google.dataprocJob.DataprocJobPigConfigLoggingConfig",
 		reflect.TypeOf((*DataprocJobPigConfigLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobPigConfigLoggingConfigOutputReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobPigConfigLoggingConfigOutputReference",
 		reflect.TypeOf((*DataprocJobPigConfigLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -320,12 +323,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobPigConfigLoggingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobPigConfigOutputReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobPigConfigOutputReference",
 		reflect.TypeOf((*DataprocJobPigConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -374,16 +377,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobPigConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobPlacement",
+		"@cdktn/provider-google.dataprocJob.DataprocJobPlacement",
 		reflect.TypeOf((*DataprocJobPlacement)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobPlacementOutputReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobPlacementOutputReference",
 		reflect.TypeOf((*DataprocJobPlacementOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterName", GoGetter: "ClusterName"},
@@ -413,20 +416,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobPlacementOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobPrestoConfig",
+		"@cdktn/provider-google.dataprocJob.DataprocJobPrestoConfig",
 		reflect.TypeOf((*DataprocJobPrestoConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobPrestoConfigLoggingConfig",
+		"@cdktn/provider-google.dataprocJob.DataprocJobPrestoConfigLoggingConfig",
 		reflect.TypeOf((*DataprocJobPrestoConfigLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobPrestoConfigLoggingConfigOutputReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobPrestoConfigLoggingConfigOutputReference",
 		reflect.TypeOf((*DataprocJobPrestoConfigLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -455,12 +458,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobPrestoConfigLoggingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobPrestoConfigOutputReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobPrestoConfigOutputReference",
 		reflect.TypeOf((*DataprocJobPrestoConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientTags", GoGetter: "ClientTags"},
@@ -509,20 +512,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobPrestoConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobPysparkConfig",
+		"@cdktn/provider-google.dataprocJob.DataprocJobPysparkConfig",
 		reflect.TypeOf((*DataprocJobPysparkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobPysparkConfigLoggingConfig",
+		"@cdktn/provider-google.dataprocJob.DataprocJobPysparkConfigLoggingConfig",
 		reflect.TypeOf((*DataprocJobPysparkConfigLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobPysparkConfigLoggingConfigOutputReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobPysparkConfigLoggingConfigOutputReference",
 		reflect.TypeOf((*DataprocJobPysparkConfigLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -551,12 +554,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobPysparkConfigLoggingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobPysparkConfigOutputReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobPysparkConfigOutputReference",
 		reflect.TypeOf((*DataprocJobPysparkConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
@@ -607,16 +610,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobPysparkConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobReference",
 		reflect.TypeOf((*DataprocJobReference)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobReferenceOutputReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobReferenceOutputReference",
 		reflect.TypeOf((*DataprocJobReferenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -646,16 +649,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobReferenceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobScheduling",
+		"@cdktn/provider-google.dataprocJob.DataprocJobScheduling",
 		reflect.TypeOf((*DataprocJobScheduling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobSchedulingOutputReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobSchedulingOutputReference",
 		reflect.TypeOf((*DataprocJobSchedulingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -686,20 +689,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobSchedulingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobSparkConfig",
+		"@cdktn/provider-google.dataprocJob.DataprocJobSparkConfig",
 		reflect.TypeOf((*DataprocJobSparkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobSparkConfigLoggingConfig",
+		"@cdktn/provider-google.dataprocJob.DataprocJobSparkConfigLoggingConfig",
 		reflect.TypeOf((*DataprocJobSparkConfigLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobSparkConfigLoggingConfigOutputReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobSparkConfigLoggingConfigOutputReference",
 		reflect.TypeOf((*DataprocJobSparkConfigLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -728,12 +731,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobSparkConfigLoggingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobSparkConfigOutputReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobSparkConfigOutputReference",
 		reflect.TypeOf((*DataprocJobSparkConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
@@ -785,20 +788,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobSparkConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobSparksqlConfig",
+		"@cdktn/provider-google.dataprocJob.DataprocJobSparksqlConfig",
 		reflect.TypeOf((*DataprocJobSparksqlConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobSparksqlConfigLoggingConfig",
+		"@cdktn/provider-google.dataprocJob.DataprocJobSparksqlConfigLoggingConfig",
 		reflect.TypeOf((*DataprocJobSparksqlConfigLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobSparksqlConfigLoggingConfigOutputReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobSparksqlConfigLoggingConfigOutputReference",
 		reflect.TypeOf((*DataprocJobSparksqlConfigLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -827,12 +830,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobSparksqlConfigLoggingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobSparksqlConfigOutputReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobSparksqlConfigOutputReference",
 		reflect.TypeOf((*DataprocJobSparksqlConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -878,16 +881,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobSparksqlConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobStatus",
+		"@cdktn/provider-google.dataprocJob.DataprocJobStatus",
 		reflect.TypeOf((*DataprocJobStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobStatusList",
+		"@cdktn/provider-google.dataprocJob.DataprocJobStatusList",
 		reflect.TypeOf((*DataprocJobStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -903,12 +906,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobStatusList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobStatusOutputReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobStatusOutputReference",
 		reflect.TypeOf((*DataprocJobStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -939,16 +942,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobStatusOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataprocJob.DataprocJobTimeouts",
+		"@cdktn/provider-google.dataprocJob.DataprocJobTimeouts",
 		reflect.TypeOf((*DataprocJobTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataprocJob.DataprocJobTimeoutsOutputReference",
+		"@cdktn/provider-google.dataprocJob.DataprocJobTimeoutsOutputReference",
 		reflect.TypeOf((*DataprocJobTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -981,7 +984,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataprocJobTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

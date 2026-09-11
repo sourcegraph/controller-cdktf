@@ -12,7 +12,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryList) validateGetParameters(index *
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryList) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryList) validateSetWrapsSetParameters
 	return nil
 }
 
-func validateNewSloObjectiveRawMetricQueryListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSloObjectiveRawMetricQueryListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

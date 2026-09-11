@@ -12,7 +12,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) validateSet
 	return nil
 }
 
-func validateNewEscalationPathPathIfElseThenPathLevelTargetsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEscalationPathPathIfElseThenPathLevelTargetsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeaders",
+		"@cdktn/provider-cloudflare.managedHeaders.ManagedHeaders",
 		reflect.TypeOf((*ManagedHeaders)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -40,6 +40,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "managedRequestHeadersInput", GoGetter: "ManagedRequestHeadersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "managedResponseHeaders", GoGetter: "ManagedResponseHeaders"},
 			_jsii_.MemberProperty{JsiiProperty: "managedResponseHeadersInput", GoGetter: "ManagedResponseHeadersInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -50,6 +51,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putManagedRequestHeaders", GoMethod: "PutManagedRequestHeaders"},
 			_jsii_.MemberMethod{JsiiMethod: "putManagedResponseHeaders", GoMethod: "PutManagedResponseHeaders"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetManagedRequestHeaders", GoMethod: "ResetManagedRequestHeaders"},
 			_jsii_.MemberMethod{JsiiMethod: "resetManagedResponseHeaders", GoMethod: "ResetManagedResponseHeaders"},
@@ -63,25 +65,26 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedHeaders{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersConfig",
+		"@cdktn/provider-cloudflare.managedHeaders.ManagedHeadersConfig",
 		reflect.TypeOf((*ManagedHeadersConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeaders",
+		"@cdktn/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeaders",
 		reflect.TypeOf((*ManagedHeadersManagedRequestHeaders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersList",
+		"@cdktn/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersList",
 		reflect.TypeOf((*ManagedHeadersManagedRequestHeadersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -98,12 +101,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedHeadersManagedRequestHeadersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersOutputReference",
+		"@cdktn/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersOutputReference",
 		reflect.TypeOf((*ManagedHeadersManagedRequestHeadersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -134,16 +137,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedHeadersManagedRequestHeadersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeaders",
+		"@cdktn/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeaders",
 		reflect.TypeOf((*ManagedHeadersManagedResponseHeaders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeadersList",
+		"@cdktn/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeadersList",
 		reflect.TypeOf((*ManagedHeadersManagedResponseHeadersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -160,12 +163,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedHeadersManagedResponseHeadersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeadersOutputReference",
+		"@cdktn/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeadersOutputReference",
 		reflect.TypeOf((*ManagedHeadersManagedResponseHeadersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -196,7 +199,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

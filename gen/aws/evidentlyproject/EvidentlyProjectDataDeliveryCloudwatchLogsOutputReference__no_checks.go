@@ -40,11 +40,11 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference) va
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEvidentlyProjectDataDeliveryCloudwatchLogsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEvidentlyProjectDataDeliveryCloudwatchLogsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

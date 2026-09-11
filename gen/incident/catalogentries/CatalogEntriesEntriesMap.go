@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/incident/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/incident/catalogentries/internal"
 )
 
 type CatalogEntriesEntriesMap interface {
-	cdktf.ComplexMap
+	cdktn.ComplexMap
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,20 +19,22 @@ type CatalogEntriesEntriesMap interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	Get(key *string) CatalogEntriesEntriesOutputReference
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(property *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -42,7 +44,7 @@ type CatalogEntriesEntriesMap interface {
 
 // The jsii proxy struct for CatalogEntriesEntriesMap
 type jsiiProxy_CatalogEntriesEntriesMap struct {
-	internal.Type__cdktfComplexMap
+	internal.Type__cdktnComplexMap
 }
 
 func (j *jsiiProxy_CatalogEntriesEntriesMap) CreationStack() *[]*string {
@@ -85,8 +87,8 @@ func (j *jsiiProxy_CatalogEntriesEntriesMap) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesMap) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CatalogEntriesEntriesMap) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -96,7 +98,7 @@ func (j *jsiiProxy_CatalogEntriesEntriesMap) TerraformResource() cdktf.IInterpol
 }
 
 
-func NewCatalogEntriesEntriesMap(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CatalogEntriesEntriesMap {
+func NewCatalogEntriesEntriesMap(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CatalogEntriesEntriesMap {
 	_init_.Initialize()
 
 	if err := validateNewCatalogEntriesEntriesMapParameters(terraformResource, terraformAttribute); err != nil {
@@ -105,7 +107,7 @@ func NewCatalogEntriesEntriesMap(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_CatalogEntriesEntriesMap{}
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.catalogEntries.CatalogEntriesEntriesMap",
+		"@cdktn/provider-incident.catalogEntries.CatalogEntriesEntriesMap",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -113,11 +115,11 @@ func NewCatalogEntriesEntriesMap(terraformResource cdktf.IInterpolatingParent, t
 	return &j
 }
 
-func NewCatalogEntriesEntriesMap_Override(c CatalogEntriesEntriesMap, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCatalogEntriesEntriesMap_Override(c CatalogEntriesEntriesMap, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.catalogEntries.CatalogEntriesEntriesMap",
+		"@cdktn/provider-incident.catalogEntries.CatalogEntriesEntriesMap",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -145,7 +147,7 @@ func (j *jsiiProxy_CatalogEntriesEntriesMap)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesMap)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CatalogEntriesEntriesMap)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -185,11 +187,11 @@ func (c *jsiiProxy_CatalogEntriesEntriesMap) Get(key *string) CatalogEntriesEntr
 	return returns
 }
 
-func (c *jsiiProxy_CatalogEntriesEntriesMap) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (c *jsiiProxy_CatalogEntriesEntriesMap) InterpolationForAttribute(property *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -201,8 +203,8 @@ func (c *jsiiProxy_CatalogEntriesEntriesMap) InterpolationForAttribute(property 
 	return returns
 }
 
-func (c *jsiiProxy_CatalogEntriesEntriesMap) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CatalogEntriesEntriesMap) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -210,7 +212,7 @@ func (c *jsiiProxy_CatalogEntriesEntriesMap) Resolve(_context cdktf.IResolveCont
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

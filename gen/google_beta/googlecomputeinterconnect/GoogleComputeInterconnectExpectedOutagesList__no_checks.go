@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectExpectedOutagesList) validateGetPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectExpectedOutagesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInterconnectExpectedOutagesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectExpectedOutagesList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectExpectedOutagesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInterconnectExpectedOutagesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectExpectedOutagesList) validateSetWrap
 	return nil
 }
 
-func validateNewGoogleComputeInterconnectExpectedOutagesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeInterconnectExpectedOutagesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

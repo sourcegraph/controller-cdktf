@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeNodeGroup) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeNodeGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeNodeGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (g *jsiiProxy_GoogleComputeNodeGroup) validatePutShareSettingsParameters(va
 }
 
 func (g *jsiiProxy_GoogleComputeNodeGroup) validatePutTimeoutsParameters(value *GoogleComputeNodeGroupTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeNodeGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_GoogleComputeNodeGroup) validateSetInitialSizeParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNodeGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeNodeGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

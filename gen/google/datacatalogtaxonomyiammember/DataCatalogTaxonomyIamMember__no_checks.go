@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataCatalogTaxonomyIamMember) validateInterpolationForAttribu
 	return nil
 }
 
+func (d *jsiiProxy_DataCatalogTaxonomyIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogTaxonomyIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DataCatalogTaxonomyIamMember) validateOverrideLogicalIdParame
 }
 
 func (d *jsiiProxy_DataCatalogTaxonomyIamMember) validatePutConditionParameters(value *DataCatalogTaxonomyIamMemberCondition) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCatalogTaxonomyIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_DataCatalogTaxonomyIamMember) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogTaxonomyIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataCatalogTaxonomyIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataplexTask) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (d *jsiiProxy_DataplexTask) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexTask) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (d *jsiiProxy_DataplexTask) validatePutTimeoutsParameters(value *DataplexTa
 }
 
 func (d *jsiiProxy_DataplexTask) validatePutTriggerSpecParameters(value *DataplexTaskTriggerSpec) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplexTask) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -136,7 +144,7 @@ func (j *jsiiProxy_DataplexTask) validateSetLakeParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataplexTask) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataplexTask) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

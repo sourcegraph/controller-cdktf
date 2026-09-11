@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/memorystoreinstance/internal"
 )
 
 type MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference interface {
 
 // The jsii proxy struct for MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference
 type jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference
 }
 
 
-func NewMemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference {
+func NewMemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMemorystoreInstanceDesiredAutoCreatedEndpointsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -202,7 +202,7 @@ func NewMemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference(terraformR
 	j := jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference",
+		"@cdktn/provider-google.memorystoreInstance.MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewMemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference(terraformR
 	return &j
 }
 
-func NewMemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference_Override(m MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewMemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference_Override(m MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference",
+		"@cdktn/provider-google.memorystoreInstance.MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (m *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -454,8 +454,8 @@ func (m *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -467,24 +467,24 @@ func (m *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (m *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

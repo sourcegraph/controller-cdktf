@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/workloadidentityserviceagent/internal"
 )
 
 type WorkloadIdentityServiceAgentTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type WorkloadIdentityServiceAgentTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type WorkloadIdentityServiceAgentTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type WorkloadIdentityServiceAgentTimeoutsOutputReference interface {
 
 // The jsii proxy struct for WorkloadIdentityServiceAgentTimeoutsOutputReference
 type jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference) Terrafor
 }
 
 
-func NewWorkloadIdentityServiceAgentTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkloadIdentityServiceAgentTimeoutsOutputReference {
+func NewWorkloadIdentityServiceAgentTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) WorkloadIdentityServiceAgentTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewWorkloadIdentityServiceAgentTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewWorkloadIdentityServiceAgentTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentTimeoutsOutputReference",
+		"@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewWorkloadIdentityServiceAgentTimeoutsOutputReference(terraformResource cd
 	return &j
 }
 
-func NewWorkloadIdentityServiceAgentTimeoutsOutputReference_Override(w WorkloadIdentityServiceAgentTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewWorkloadIdentityServiceAgentTimeoutsOutputReference_Override(w WorkloadIdentityServiceAgentTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentTimeoutsOutputReference",
+		"@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference) GetAnyMa
 	return returns
 }
 
-func (w *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -456,8 +456,8 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference) GetStrin
 	return returns
 }
 
-func (w *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (w *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -469,16 +469,16 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference) Interpol
 	return returns
 }
 
-func (w *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference) ResetDel
 	)
 }
 
-func (w *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference) Resolve(
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

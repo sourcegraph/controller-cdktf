@@ -5,13 +5,13 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/postgresql/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/postgresql/provider/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.25.0/docs postgresql}.
 type PostgresqlProvider interface {
-	cdktf.TerraformProvider
+	cdktn.TerraformProvider
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
@@ -34,7 +34,7 @@ type PostgresqlProvider interface {
 	SetAzureTenantId(val *string)
 	AzureTenantIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Clientcert() *PostgresqlProviderClientcert
 	SetClientcert(val *PostgresqlProviderClientcert)
 	ClientcertInput() *PostgresqlProviderClientcert
@@ -93,7 +93,7 @@ type PostgresqlProvider interface {
 	SetSuperuser(val interface{})
 	SuperuserInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformProviderSource() *string
 	// Experimental.
@@ -106,6 +106,19 @@ type PostgresqlProvider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAlias()
 	ResetAwsRdsIamAuth()
 	ResetAwsRdsIamProfile()
@@ -143,11 +156,20 @@ type PostgresqlProvider interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for PostgresqlProvider
 type jsiiProxy_PostgresqlProvider struct {
-	internal.Type__cdktfTerraformProvider
+	internal.Type__cdktnTerraformProvider
 }
 
 func (j *jsiiProxy_PostgresqlProvider) Alias() *string {
@@ -290,8 +312,8 @@ func (j *jsiiProxy_PostgresqlProvider) AzureTenantIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PostgresqlProvider) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_PostgresqlProvider) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -660,8 +682,8 @@ func (j *jsiiProxy_PostgresqlProvider) SuperuserInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PostgresqlProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_PostgresqlProvider) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -721,7 +743,7 @@ func NewPostgresqlProvider(scope constructs.Construct, id *string, config *Postg
 	j := jsiiProxy_PostgresqlProvider{}
 
 	_jsii_.Create(
-		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
+		"@cdktn/provider-postgresql.provider.PostgresqlProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -734,7 +756,7 @@ func NewPostgresqlProvider_Override(p PostgresqlProvider, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
+		"@cdktn/provider-postgresql.provider.PostgresqlProvider",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -936,17 +958,17 @@ func (j *jsiiProxy_PostgresqlProvider)SetUsername(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a PostgresqlProvider resource upon running "cdktf plan <stack-name>".
-func PostgresqlProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a PostgresqlProvider resource upon running "cdktn plan <stack-name>".
+func PostgresqlProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validatePostgresqlProvider_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
+		"@cdktn/provider-postgresql.provider.PostgresqlProvider",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -981,7 +1003,7 @@ func PostgresqlProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
+		"@cdktn/provider-postgresql.provider.PostgresqlProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1000,7 +1022,7 @@ func PostgresqlProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
+		"@cdktn/provider-postgresql.provider.PostgresqlProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1019,7 +1041,7 @@ func PostgresqlProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
+		"@cdktn/provider-postgresql.provider.PostgresqlProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -1032,7 +1054,7 @@ func PostgresqlProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
+		"@cdktn/provider-postgresql.provider.PostgresqlProvider",
 		"tfResourceType",
 		&returns,
 	)
@@ -1058,6 +1080,17 @@ func (p *jsiiProxy_PostgresqlProvider) OverrideLogicalId(newLogicalId *string) {
 		p,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (p *jsiiProxy_PostgresqlProvider) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := p.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -1325,6 +1358,24 @@ func (p *jsiiProxy_PostgresqlProvider) ToTerraform() interface{} {
 		p,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PostgresqlProvider) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		p,
+		"with",
+		args,
 		&returns,
 	)
 

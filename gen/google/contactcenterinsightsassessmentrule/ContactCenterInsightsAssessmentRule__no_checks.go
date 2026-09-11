@@ -56,6 +56,10 @@ func (c *jsiiProxy_ContactCenterInsightsAssessmentRule) validateInterpolationFor
 	return nil
 }
 
+func (c *jsiiProxy_ContactCenterInsightsAssessmentRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContactCenterInsightsAssessmentRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (c *jsiiProxy_ContactCenterInsightsAssessmentRule) validatePutScheduleInfoP
 }
 
 func (c *jsiiProxy_ContactCenterInsightsAssessmentRule) validatePutTimeoutsParameters(value *ContactCenterInsightsAssessmentRuleTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContactCenterInsightsAssessmentRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_ContactCenterInsightsAssessmentRule) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAssessmentRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ContactCenterInsightsAssessmentRule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

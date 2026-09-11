@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDataprocMetastoreTableIamPolicy) validateInterpolationF
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocMetastoreTableIamPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocMetastoreTableIamPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (g *jsiiProxy_GoogleDataprocMetastoreTableIamPolicy) validateMoveToIdParame
 }
 
 func (g *jsiiProxy_GoogleDataprocMetastoreTableIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataprocMetastoreTableIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreTableIamPolicy) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreTableIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreTableIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

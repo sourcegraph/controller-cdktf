@@ -56,6 +56,10 @@ func (m *jsiiProxy_MskConfiguration) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (m *jsiiProxy_MskConfiguration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskConfiguration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (m *jsiiProxy_MskConfiguration) validateMoveToIdParameters(id *string) erro
 }
 
 func (m *jsiiProxy_MskConfiguration) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MskConfiguration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_MskConfiguration) validateSetKafkaVersionsParameters(val *[]*
 	return nil
 }
 
-func (j *jsiiProxy_MskConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MskConfiguration) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

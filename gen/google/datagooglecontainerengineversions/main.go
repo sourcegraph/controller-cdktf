@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
+		"@cdktn/provider-google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
 		reflect.TypeOf((*DataGoogleContainerEngineVersions)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -43,6 +43,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseChannelDefaultVersion", GoGetter: "ReleaseChannelDefaultVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseChannelLatestVersion", GoGetter: "ReleaseChannelLatestVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseChannelUpgradeTargetVersion", GoGetter: "ReleaseChannelUpgradeTargetVersion"},
@@ -64,15 +65,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validNodeVersions", GoGetter: "ValidNodeVersions"},
 			_jsii_.MemberProperty{JsiiProperty: "versionPrefix", GoGetter: "VersionPrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "versionPrefixInput", GoGetter: "VersionPrefixInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleContainerEngineVersions{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersionsConfig",
+		"@cdktn/provider-google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersionsConfig",
 		reflect.TypeOf((*DataGoogleContainerEngineVersionsConfig)(nil)).Elem(),
 	)
 }

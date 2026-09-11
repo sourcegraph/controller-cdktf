@@ -56,6 +56,10 @@ func (t *jsiiProxy_TagsTagBinding) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (t *jsiiProxy_TagsTagBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TagsTagBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (t *jsiiProxy_TagsTagBinding) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (t *jsiiProxy_TagsTagBinding) validatePutTimeoutsParameters(value *TagsTagBindingTimeouts) error {
+	return nil
+}
+
+func (t *jsiiProxy_TagsTagBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_TagsTagBinding) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_TagsTagBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_TagsTagBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

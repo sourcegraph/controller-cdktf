@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/medialivechannel/internal"
 )
 
 type MedialiveChannelMaintenanceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type MedialiveChannelMaintenanceOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type MedialiveChannelMaintenanceOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type MedialiveChannelMaintenanceOutputReference interface {
 
 // The jsii proxy struct for MedialiveChannelMaintenanceOutputReference
 type jsiiProxy_MedialiveChannelMaintenanceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MedialiveChannelMaintenanceOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_MedialiveChannelMaintenanceOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelMaintenanceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MedialiveChannelMaintenanceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_MedialiveChannelMaintenanceOutputReference) TerraformResource
 }
 
 
-func NewMedialiveChannelMaintenanceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MedialiveChannelMaintenanceOutputReference {
+func NewMedialiveChannelMaintenanceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MedialiveChannelMaintenanceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMedialiveChannelMaintenanceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewMedialiveChannelMaintenanceOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_MedialiveChannelMaintenanceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelMaintenanceOutputReference",
+		"@cdktn/provider-aws.medialiveChannel.MedialiveChannelMaintenanceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewMedialiveChannelMaintenanceOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewMedialiveChannelMaintenanceOutputReference_Override(m MedialiveChannelMaintenanceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMedialiveChannelMaintenanceOutputReference_Override(m MedialiveChannelMaintenanceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelMaintenanceOutputReference",
+		"@cdktn/provider-aws.medialiveChannel.MedialiveChannelMaintenanceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_MedialiveChannelMaintenanceOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelMaintenanceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MedialiveChannelMaintenanceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (m *jsiiProxy_MedialiveChannelMaintenanceOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveChannelMaintenanceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MedialiveChannelMaintenanceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -454,8 +454,8 @@ func (m *jsiiProxy_MedialiveChannelMaintenanceOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveChannelMaintenanceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MedialiveChannelMaintenanceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -467,24 +467,24 @@ func (m *jsiiProxy_MedialiveChannelMaintenanceOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveChannelMaintenanceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MedialiveChannelMaintenanceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveChannelMaintenanceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MedialiveChannelMaintenanceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (m *jsiiProxy_MedialiveChannelMaintenanceOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

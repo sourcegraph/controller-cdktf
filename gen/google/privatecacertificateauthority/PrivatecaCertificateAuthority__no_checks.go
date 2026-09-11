@@ -56,6 +56,10 @@ func (p *jsiiProxy_PrivatecaCertificateAuthority) validateInterpolationForAttrib
 	return nil
 }
 
+func (p *jsiiProxy_PrivatecaCertificateAuthority) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCertificateAuthority) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (p *jsiiProxy_PrivatecaCertificateAuthority) validatePutTimeoutsParameters(
 }
 
 func (p *jsiiProxy_PrivatecaCertificateAuthority) validatePutUserDefinedAccessUrlsParameters(value *PrivatecaCertificateAuthorityUserDefinedAccessUrls) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivatecaCertificateAuthority) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -144,7 +152,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthority) validateSetLabelsParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthority) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PrivatecaCertificateAuthority) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

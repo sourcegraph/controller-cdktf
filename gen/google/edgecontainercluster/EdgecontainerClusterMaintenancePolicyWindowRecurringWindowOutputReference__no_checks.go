@@ -40,7 +40,7 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyWindowRecurringWindowOut
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyWindowRecurringWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyWindowRecurringWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyWindowRecurringWindowOut
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyWindowRecurringWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyWindowRecurringWindowOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyWindowRecurringWindowOut
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyWindowRecurringWindowOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyWindowRecurringWindowOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEdgecontainerClusterMaintenancePolicyWindowRecurringWindowOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEdgecontainerClusterMaintenancePolicyWindowRecurringWindowOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewFile
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewFile
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleHypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleHypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/rolev1/internal"
 )
 
 type RoleV1RuleOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ApiGroups() *[]*string
 	SetApiGroups(val *[]*string)
 	ApiGroupsInput() *[]*string
@@ -43,9 +43,9 @@ type RoleV1RuleOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Verbs() *[]*string
 	SetVerbs(val *[]*string)
 	VerbsInput() *[]*string
@@ -54,7 +54,7 @@ type RoleV1RuleOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,13 +70,13 @@ type RoleV1RuleOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetResourceNames()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type RoleV1RuleOutputReference interface {
 
 // The jsii proxy struct for RoleV1RuleOutputReference
 type jsiiProxy_RoleV1RuleOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_RoleV1RuleOutputReference) ApiGroups() *[]*string {
@@ -209,8 +209,8 @@ func (j *jsiiProxy_RoleV1RuleOutputReference) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RoleV1RuleOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_RoleV1RuleOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -240,7 +240,7 @@ func (j *jsiiProxy_RoleV1RuleOutputReference) VerbsInput() *[]*string {
 }
 
 
-func NewRoleV1RuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RoleV1RuleOutputReference {
+func NewRoleV1RuleOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RoleV1RuleOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewRoleV1RuleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -249,7 +249,7 @@ func NewRoleV1RuleOutputReference(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_RoleV1RuleOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.roleV1.RoleV1RuleOutputReference",
+		"@cdktn/provider-kubernetes.roleV1.RoleV1RuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -257,11 +257,11 @@ func NewRoleV1RuleOutputReference(terraformResource cdktf.IInterpolatingParent, 
 	return &j
 }
 
-func NewRoleV1RuleOutputReference_Override(r RoleV1RuleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRoleV1RuleOutputReference_Override(r RoleV1RuleOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.roleV1.RoleV1RuleOutputReference",
+		"@cdktn/provider-kubernetes.roleV1.RoleV1RuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
@@ -344,7 +344,7 @@ func (j *jsiiProxy_RoleV1RuleOutputReference)SetTerraformAttribute(val *string) 
 	)
 }
 
-func (j *jsiiProxy_RoleV1RuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RoleV1RuleOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,11 +395,11 @@ func (r *jsiiProxy_RoleV1RuleOutputReference) GetAnyMapAttribute(terraformAttrib
 	return returns
 }
 
-func (r *jsiiProxy_RoleV1RuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RoleV1RuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -523,8 +523,8 @@ func (r *jsiiProxy_RoleV1RuleOutputReference) GetStringMapAttribute(terraformAtt
 	return returns
 }
 
-func (r *jsiiProxy_RoleV1RuleOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_RoleV1RuleOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -536,16 +536,16 @@ func (r *jsiiProxy_RoleV1RuleOutputReference) InterpolationAsList() cdktf.IResol
 	return returns
 }
 
-func (r *jsiiProxy_RoleV1RuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_RoleV1RuleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -560,8 +560,8 @@ func (r *jsiiProxy_RoleV1RuleOutputReference) ResetResourceNames() {
 	)
 }
 
-func (r *jsiiProxy_RoleV1RuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_RoleV1RuleOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -569,7 +569,7 @@ func (r *jsiiProxy_RoleV1RuleOutputReference) Resolve(_context cdktf.IResolveCon
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

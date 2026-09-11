@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesSubnetworksOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesSubnetworksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesSubnetworksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesSubnetworksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesSubnetworksOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesSubnetworksOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesSubnetworksOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesSubnetworksOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesSubnetworksOutpu
 	return nil
 }
 
-func validateNewGoogleComputePacketMirroringMirroredResourcesSubnetworksOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputePacketMirroringMirroredResourcesSubnetworksOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

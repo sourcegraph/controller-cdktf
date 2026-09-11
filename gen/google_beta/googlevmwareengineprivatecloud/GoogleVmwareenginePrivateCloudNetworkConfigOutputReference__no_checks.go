@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleVmwareenginePrivateCloudNetworkConfigOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVmwareenginePrivateCloudNetworkConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleVmwareenginePrivateCloudNetworkConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVmwareenginePrivateCloudNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleVmwareenginePrivateCloudNetworkConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleVmwareenginePrivateCloudNetworkConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareenginePrivateCloudNetworkConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleVmwareenginePrivateCloudNetworkConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleVmwareenginePrivateCloudNetworkConfigOutputReference) v
 	return nil
 }
 
-func validateNewGoogleVmwareenginePrivateCloudNetworkConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleVmwareenginePrivateCloudNetworkConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

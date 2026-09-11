@@ -56,6 +56,10 @@ func (p *jsiiProxy_PhysicalReplicationSlot) validateInterpolationForAttributePar
 	return nil
 }
 
+func (p *jsiiProxy_PhysicalReplicationSlot) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PhysicalReplicationSlot) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (p *jsiiProxy_PhysicalReplicationSlot) validateMoveToIdParameters(id *strin
 }
 
 func (p *jsiiProxy_PhysicalReplicationSlot) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PhysicalReplicationSlot) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_PhysicalReplicationSlot) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_PhysicalReplicationSlot) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PhysicalReplicationSlot) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeDiskAsyncPrimaryDiskList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeDiskAsyncPrimaryDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeDiskAsyncPrimaryDiskList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeDiskAsyncPrimaryDiskList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeDiskAsyncPrimaryDiskList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeDiskAsyncPrimaryDiskList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeDiskAsyncPrimaryDiskList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewDataGoogleComputeDiskAsyncPrimaryDiskListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeDiskAsyncPrimaryDiskListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

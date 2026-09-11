@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/containercluster/internal"
 )
 
 type ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,15 +42,15 @@ type ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,14 +66,14 @@ type ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMinorVersionDisruptionInterval()
 	ResetPatchVersionDisruptionInterval()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference interface 
 
 // The jsii proxy struct for ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference
 type jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) ComplexObjectIndex() interface{} {
@@ -206,8 +206,8 @@ func (j *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputRefere
 }
 
 
-func NewContainerClusterMaintenancePolicyDisruptionBudgetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference {
+func NewContainerClusterMaintenancePolicyDisruptionBudgetOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewContainerClusterMaintenancePolicyDisruptionBudgetOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewContainerClusterMaintenancePolicyDisruptionBudgetOutputReference(terrafo
 	j := jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference",
+		"@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewContainerClusterMaintenancePolicyDisruptionBudgetOutputReference(terrafo
 	return &j
 }
 
-func NewContainerClusterMaintenancePolicyDisruptionBudgetOutputReference_Override(c ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContainerClusterMaintenancePolicyDisruptionBudgetOutputReference_Override(c ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference",
+		"@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,11 +350,11 @@ func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -478,8 +478,8 @@ func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -491,16 +491,16 @@ func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -523,8 +523,8 @@ func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputRefere
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -532,7 +532,7 @@ func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputRefere
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,7 +40,7 @@ func (c *jsiiProxy_ComputePreviewFeatureRolloutOperationOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ComputePreviewFeatureRolloutOperationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputePreviewFeatureRolloutOperationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ComputePreviewFeatureRolloutOperationOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ComputePreviewFeatureRolloutOperationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputePreviewFeatureRolloutOperationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ComputePreviewFeatureRolloutOperationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ComputePreviewFeatureRolloutOperationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputePreviewFeatureRolloutOperationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputePreviewFeatureRolloutOperationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputePreviewFeatureRolloutOperationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

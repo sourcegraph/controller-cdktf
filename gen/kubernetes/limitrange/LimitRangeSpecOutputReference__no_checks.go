@@ -40,7 +40,7 @@ func (l *jsiiProxy_LimitRangeSpecOutputReference) validateGetStringMapAttributeP
 	return nil
 }
 
-func (l *jsiiProxy_LimitRangeSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LimitRangeSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (l *jsiiProxy_LimitRangeSpecOutputReference) validatePutLimitParameters(val
 	return nil
 }
 
-func (l *jsiiProxy_LimitRangeSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LimitRangeSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_LimitRangeSpecOutputReference) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_LimitRangeSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LimitRangeSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLimitRangeSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLimitRangeSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaireasoningengine/internal"
 )
 
 type GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,9 +41,9 @@ type GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference int
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TtlConfig() GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigOutputReference
 	TtlConfigInput() *GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfig
 	// Experimental.
@@ -51,7 +51,7 @@ type GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference int
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,9 +67,9 @@ type GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference int
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutGenerationConfig(value *GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfig)
 	PutSimilaritySearchConfig(value *GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfig)
 	PutTtlConfig(value *GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfig)
@@ -79,7 +79,7 @@ type GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference int
 	ResetTtlConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference int
 
 // The jsii proxy struct for GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference
 type jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -212,8 +212,8 @@ func (j *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutpu
 }
 
 
-func NewGoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference {
+func NewGoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewGoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference(
 	j := jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleVertexAiReasoningEngine.GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference",
+		"@cdktn/provider-google-beta.googleVertexAiReasoningEngine.GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewGoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference(
 	return &j
 }
 
-func NewGoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference_Override(g GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference_Override(g GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleVertexAiReasoningEngine.GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference",
+		"@cdktn/provider-google-beta.googleVertexAiReasoningEngine.GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -325,7 +325,7 @@ func (j *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -365,11 +365,11 @@ func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -493,8 +493,8 @@ func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -506,16 +506,16 @@ func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutpu
 	)
 }
 
-func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigOutpu
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (m *jsiiProxy_Macie2ClassificationJob) validateInterpolationForAttributePar
 	return nil
 }
 
+func (m *jsiiProxy_Macie2ClassificationJob) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2ClassificationJob) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (m *jsiiProxy_Macie2ClassificationJob) validatePutS3JobDefinitionParameters
 }
 
 func (m *jsiiProxy_Macie2ClassificationJob) validatePutScheduleFrequencyParameters(value *Macie2ClassificationJobScheduleFrequency) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2ClassificationJob) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_Macie2ClassificationJob) validateSetJobTypeParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_Macie2ClassificationJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Macie2ClassificationJob) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

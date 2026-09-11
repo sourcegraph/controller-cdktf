@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsEc2InstanceTypeInferenceAcceleratorsList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2InstanceTypeInferenceAcceleratorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2InstanceTypeInferenceAcceleratorsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsEc2InstanceTypeInferenceAcceleratorsList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2InstanceTypeInferenceAcceleratorsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsEc2InstanceTypeInferenceAcceleratorsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsEc2InstanceTypeInferenceAcceleratorsList) validateSetW
 	return nil
 }
 
-func validateNewDataAwsEc2InstanceTypeInferenceAcceleratorsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsEc2InstanceTypeInferenceAcceleratorsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

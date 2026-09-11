@@ -40,11 +40,11 @@ func (b *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesOutputReference) 
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBigqueryJobQueryUserDefinedFunctionResourcesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewBigqueryJobQueryUserDefinedFunctionResourcesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

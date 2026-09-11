@@ -40,11 +40,11 @@ func (s *jsiiProxy_SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputRef
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

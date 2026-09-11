@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataprocJobStatusList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (d *jsiiProxy_DataprocJobStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocJobStatusList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataprocJobStatusList) validateSetTerraformAttributeParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataprocJobStatusList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataprocJobStatusList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataprocJobStatusList) validateSetWrapsSetParameters(val *boo
 	return nil
 }
 
-func validateNewDataprocJobStatusListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataprocJobStatusListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

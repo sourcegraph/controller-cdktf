@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComposerImageVersionsImageVersionsList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComposerImageVersionsImageVersionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComposerImageVersionsImageVersionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComposerImageVersionsImageVersionsList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComposerImageVersionsImageVersionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComposerImageVersionsImageVersionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComposerImageVersionsImageVersionsList) validateSet
 	return nil
 }
 
-func validateNewDataGoogleComposerImageVersionsImageVersionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComposerImageVersionsImageVersionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

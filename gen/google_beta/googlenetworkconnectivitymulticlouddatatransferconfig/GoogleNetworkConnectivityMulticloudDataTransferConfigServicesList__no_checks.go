@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityMulticloudDataTransferConfigServices
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityMulticloudDataTransferConfigServicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkConnectivityMulticloudDataTransferConfigServicesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityMulticloudDataTransferConfigServices
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityMulticloudDataTransferConfigServicesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityMulticloudDataTransferConfigServicesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityMulticloudDataTransferConfigServices
 	return nil
 }
 
-func validateNewGoogleNetworkConnectivityMulticloudDataTransferConfigServicesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleNetworkConnectivityMulticloudDataTransferConfigServicesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

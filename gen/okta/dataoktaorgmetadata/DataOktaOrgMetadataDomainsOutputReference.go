@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/okta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/okta/dataoktaorgmetadata/internal"
 )
 
 type DataOktaOrgMetadataDomainsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Alternate() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -36,15 +36,15 @@ type DataOktaOrgMetadataDomainsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,12 +60,12 @@ type DataOktaOrgMetadataDomainsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -75,7 +75,7 @@ type DataOktaOrgMetadataDomainsOutputReference interface {
 
 // The jsii proxy struct for DataOktaOrgMetadataDomainsOutputReference
 type jsiiProxy_DataOktaOrgMetadataDomainsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) Alternate() *string {
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -169,7 +169,7 @@ func (j *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) TerraformResource(
 }
 
 
-func NewDataOktaOrgMetadataDomainsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataOktaOrgMetadataDomainsOutputReference {
+func NewDataOktaOrgMetadataDomainsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataOktaOrgMetadataDomainsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataOktaOrgMetadataDomainsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -178,7 +178,7 @@ func NewDataOktaOrgMetadataDomainsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DataOktaOrgMetadataDomainsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataDomainsOutputReference",
+		"@cdktn/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataDomainsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -186,11 +186,11 @@ func NewDataOktaOrgMetadataDomainsOutputReference(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewDataOktaOrgMetadataDomainsOutputReference_Override(d DataOktaOrgMetadataDomainsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataOktaOrgMetadataDomainsOutputReference_Override(d DataOktaOrgMetadataDomainsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataDomainsOutputReference",
+		"@cdktn/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataDomainsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -240,7 +240,7 @@ func (j *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,11 +280,11 @@ func (d *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) GetAnyMapAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -408,8 +408,8 @@ func (d *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) GetStringMapAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -421,24 +421,24 @@ func (d *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -446,7 +446,7 @@ func (d *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) Resolve(_context c
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

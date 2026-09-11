@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesDeploymentChannelProfilePersonaPropertyOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CesDeploymentChannelProfilePersonaPropertyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesDeploymentChannelProfilePersonaPropertyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesDeploymentChannelProfilePersonaPropertyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesDeploymentChannelProfilePersonaPropertyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_CesDeploymentChannelProfilePersonaPropertyOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CesDeploymentChannelProfilePersonaPropertyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesDeploymentChannelProfilePersonaPropertyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesDeploymentChannelProfilePersonaPropertyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesDeploymentChannelProfilePersonaPropertyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

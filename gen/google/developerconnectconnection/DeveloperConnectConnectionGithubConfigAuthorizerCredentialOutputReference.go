@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/developerconnectconnection/internal"
 )
 
 type DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,16 +37,16 @@ type DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference i
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Username() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,12 +62,12 @@ type DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference i
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference i
 
 // The jsii proxy struct for DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference
 type jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOut
 	return returns
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -181,7 +181,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOut
 }
 
 
-func NewDeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference {
+func NewDeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -190,7 +190,7 @@ func NewDeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReferenc
 	j := jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -198,11 +198,11 @@ func NewDeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReferenc
 	return &j
 }
 
-func NewDeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference_Override(d DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference_Override(d DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -263,7 +263,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOut
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,11 +303,11 @@ func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOut
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -431,8 +431,8 @@ func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOut
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -444,24 +444,24 @@ func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOut
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -469,7 +469,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOut
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

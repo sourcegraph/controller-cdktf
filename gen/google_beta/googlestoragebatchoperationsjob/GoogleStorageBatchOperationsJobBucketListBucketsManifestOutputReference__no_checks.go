@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleStorageBatchOperationsJobBucketListBucketsManifestOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBatchOperationsJobBucketListBucketsManifestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleStorageBatchOperationsJobBucketListBucketsManifestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBatchOperationsJobBucketListBucketsManifestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleStorageBatchOperationsJobBucketListBucketsManifestOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleStorageBatchOperationsJobBucketListBucketsManifestOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBatchOperationsJobBucketListBucketsManifestOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleStorageBatchOperationsJobBucketListBucketsManifestOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleStorageBatchOperationsJobBucketListBucketsManifestOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleStorageBatchOperationsJobBucketListBucketsManifestOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

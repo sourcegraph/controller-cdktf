@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCesToolOpenApiToolApiAuthenticationServiceAgentIdTokenA
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleCesToolOpenApiToolApiAuthenticationServiceAgentIdTokenA
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleCesToolOpenApiToolApiAuthenticationServiceAgentIdTokenA
 	return nil
 }
 
-func validateNewGoogleCesToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCesToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

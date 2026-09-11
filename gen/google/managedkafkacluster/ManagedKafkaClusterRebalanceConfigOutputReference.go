@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/managedkafkacluster/internal"
 )
 
 type ManagedKafkaClusterRebalanceConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type ManagedKafkaClusterRebalanceConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type ManagedKafkaClusterRebalanceConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type ManagedKafkaClusterRebalanceConfigOutputReference interface {
 
 // The jsii proxy struct for ManagedKafkaClusterRebalanceConfigOutputReference
 type jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) TerraformR
 }
 
 
-func NewManagedKafkaClusterRebalanceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ManagedKafkaClusterRebalanceConfigOutputReference {
+func NewManagedKafkaClusterRebalanceConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ManagedKafkaClusterRebalanceConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewManagedKafkaClusterRebalanceConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewManagedKafkaClusterRebalanceConfigOutputReference(terraformResource cdkt
 	j := jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterRebalanceConfigOutputReference",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterRebalanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewManagedKafkaClusterRebalanceConfigOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewManagedKafkaClusterRebalanceConfigOutputReference_Override(m ManagedKafkaClusterRebalanceConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewManagedKafkaClusterRebalanceConfigOutputReference_Override(m ManagedKafkaClusterRebalanceConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterRebalanceConfigOutputReference",
+		"@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterRebalanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (m *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) GetAnyMapA
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -421,8 +421,8 @@ func (m *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) GetStringM
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -434,16 +434,16 @@ func (m *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) Interpolat
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (m *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) ResetMode(
 	)
 }
 
-func (m *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (m *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetappHostGroup) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (n *jsiiProxy_NetappHostGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappHostGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (n *jsiiProxy_NetappHostGroup) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (n *jsiiProxy_NetappHostGroup) validatePutTimeoutsParameters(value *NetappHostGroupTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappHostGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_NetappHostGroup) validateSetLabelsParameters(val *map[string]
 	return nil
 }
 
-func (j *jsiiProxy_NetappHostGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetappHostGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

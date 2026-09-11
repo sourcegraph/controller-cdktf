@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/folderorganizationpolicy/internal"
 )
 
 type FolderOrganizationPolicyRestorePolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type FolderOrganizationPolicyRestorePolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type FolderOrganizationPolicyRestorePolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type FolderOrganizationPolicyRestorePolicyOutputReference interface {
 
 // The jsii proxy struct for FolderOrganizationPolicyRestorePolicyOutputReference
 type jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) Terrafo
 }
 
 
-func NewFolderOrganizationPolicyRestorePolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FolderOrganizationPolicyRestorePolicyOutputReference {
+func NewFolderOrganizationPolicyRestorePolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) FolderOrganizationPolicyRestorePolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewFolderOrganizationPolicyRestorePolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewFolderOrganizationPolicyRestorePolicyOutputReference(terraformResource c
 	j := jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyRestorePolicyOutputReference",
+		"@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyRestorePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewFolderOrganizationPolicyRestorePolicyOutputReference(terraformResource c
 	return &j
 }
 
-func NewFolderOrganizationPolicyRestorePolicyOutputReference_Override(f FolderOrganizationPolicyRestorePolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewFolderOrganizationPolicyRestorePolicyOutputReference_Override(f FolderOrganizationPolicyRestorePolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyRestorePolicyOutputReference",
+		"@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyRestorePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) GetAnyM
 	return returns
 }
 
-func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -420,8 +420,8 @@ func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) GetStri
 	return returns
 }
 
-func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -433,24 +433,24 @@ func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) Interpo
 	return returns
 }
 
-func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) Resolve
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

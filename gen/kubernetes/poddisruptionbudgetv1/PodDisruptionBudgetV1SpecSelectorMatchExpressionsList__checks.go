@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (p *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (p *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList) valida
 	return nil
 }
 
-func (p *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (p *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList) valida
 
 func (j *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*PodDisruptionBudgetV1SpecSelectorMatchExpressions:
 		val := val.(*[]*PodDisruptionBudgetV1SpecSelectorMatchExpressions)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList) valida
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*PodDisruptionBudgetV1SpecSelectorMatchExpressions; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*PodDisruptionBudgetV1SpecSelectorMatchExpressions; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList) valida
 	return nil
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList) valida
 	return nil
 }
 
-func validateNewPodDisruptionBudgetV1SpecSelectorMatchExpressionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPodDisruptionBudgetV1SpecSelectorMatchExpressionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

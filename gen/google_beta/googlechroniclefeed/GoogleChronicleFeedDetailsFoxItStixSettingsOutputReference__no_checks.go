@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsFoxItStixSettingsOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsFoxItStixSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsFoxItStixSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsFoxItStixSettingsOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsFoxItStixSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsFoxItStixSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsFoxItStixSettingsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsFoxItStixSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsFoxItStixSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsFoxItStixSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsFoxItStixSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

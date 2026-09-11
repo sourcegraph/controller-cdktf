@@ -56,6 +56,10 @@ func (b *jsiiProxy_BatchJobQueue) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (b *jsiiProxy_BatchJobQueue) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchJobQueue) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (b *jsiiProxy_BatchJobQueue) validateMoveToIdParameters(id *string) error {
 }
 
 func (b *jsiiProxy_BatchJobQueue) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BatchJobQueue) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_BatchJobQueue) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_BatchJobQueue) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BatchJobQueue) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

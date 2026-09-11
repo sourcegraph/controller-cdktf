@@ -56,6 +56,10 @@ func (c *jsiiProxy_CesApp) validateInterpolationForAttributeParameters(terraform
 	return nil
 }
 
+func (c *jsiiProxy_CesApp) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CesApp) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (c *jsiiProxy_CesApp) validatePutVariableDeclarationsParameters(value inter
 	return nil
 }
 
+func (c *jsiiProxy_CesApp) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateCesApp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -164,7 +172,7 @@ func (j *jsiiProxy_CesApp) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CesApp) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CesApp) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

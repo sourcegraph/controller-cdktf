@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesList) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesList) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesList) 
 	return nil
 }
 
-func validateNewGoogleAppEngineApplicationUrlDispatchRulesDispatchRulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleAppEngineApplicationUrlDispatchRulesDispatchRulesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

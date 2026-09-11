@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) validateGet
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) validateSet
 	return nil
 }
 
-func validateNewNetworkServicesWasmPluginVersionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewNetworkServicesWasmPluginVersionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

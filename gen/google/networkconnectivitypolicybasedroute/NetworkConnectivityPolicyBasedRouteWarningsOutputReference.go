@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/networkconnectivitypolicybasedroute/internal"
 )
 
 type NetworkConnectivityPolicyBasedRouteWarningsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Code() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -26,7 +26,7 @@ type NetworkConnectivityPolicyBasedRouteWarningsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Data() cdktf.StringMap
+	Data() cdktn.StringMap
 	// Experimental.
 	Fqn() *string
 	InternalValue() *NetworkConnectivityPolicyBasedRouteWarnings
@@ -36,16 +36,16 @@ type NetworkConnectivityPolicyBasedRouteWarningsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WarningMessage() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type NetworkConnectivityPolicyBasedRouteWarningsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type NetworkConnectivityPolicyBasedRouteWarningsOutputReference interface {
 
 // The jsii proxy struct for NetworkConnectivityPolicyBasedRouteWarningsOutputReference
 type jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) Code() *string {
@@ -119,8 +119,8 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) Data() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) Data() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"data",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -180,7 +180,7 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) W
 }
 
 
-func NewNetworkConnectivityPolicyBasedRouteWarningsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetworkConnectivityPolicyBasedRouteWarningsOutputReference {
+func NewNetworkConnectivityPolicyBasedRouteWarningsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetworkConnectivityPolicyBasedRouteWarningsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNetworkConnectivityPolicyBasedRouteWarningsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -189,7 +189,7 @@ func NewNetworkConnectivityPolicyBasedRouteWarningsOutputReference(terraformReso
 	j := jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRouteWarningsOutputReference",
+		"@cdktn/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRouteWarningsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -197,11 +197,11 @@ func NewNetworkConnectivityPolicyBasedRouteWarningsOutputReference(terraformReso
 	return &j
 }
 
-func NewNetworkConnectivityPolicyBasedRouteWarningsOutputReference_Override(n NetworkConnectivityPolicyBasedRouteWarningsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewNetworkConnectivityPolicyBasedRouteWarningsOutputReference_Override(n NetworkConnectivityPolicyBasedRouteWarningsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRouteWarningsOutputReference",
+		"@cdktn/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRouteWarningsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
@@ -251,7 +251,7 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,11 +291,11 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) G
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -419,8 +419,8 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) G
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -432,24 +432,24 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) I
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -457,7 +457,7 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference) R
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

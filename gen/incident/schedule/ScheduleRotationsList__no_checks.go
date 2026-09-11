@@ -12,7 +12,7 @@ func (s *jsiiProxy_ScheduleRotationsList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleRotationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ScheduleRotationsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ScheduleRotationsList) validateSetTerraformAttributeParameter
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotationsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ScheduleRotationsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ScheduleRotationsList) validateSetWrapsSetParameters(val *boo
 	return nil
 }
 
-func validateNewScheduleRotationsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewScheduleRotationsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

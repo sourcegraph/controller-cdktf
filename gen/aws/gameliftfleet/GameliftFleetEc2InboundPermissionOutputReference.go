@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/gameliftfleet/internal"
 )
 
 type GameliftFleetEc2InboundPermissionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type GameliftFleetEc2InboundPermissionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ToPort() *float64
 	SetToPort(val *float64)
 	ToPortInput() *float64
@@ -54,7 +54,7 @@ type GameliftFleetEc2InboundPermissionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,12 +70,12 @@ type GameliftFleetEc2InboundPermissionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type GameliftFleetEc2InboundPermissionOutputReference interface {
 
 // The jsii proxy struct for GameliftFleetEc2InboundPermissionOutputReference
 type jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) ComplexObjectIndex() interface{} {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -239,7 +239,7 @@ func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) ToPortInput
 }
 
 
-func NewGameliftFleetEc2InboundPermissionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GameliftFleetEc2InboundPermissionOutputReference {
+func NewGameliftFleetEc2InboundPermissionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GameliftFleetEc2InboundPermissionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGameliftFleetEc2InboundPermissionOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -248,7 +248,7 @@ func NewGameliftFleetEc2InboundPermissionOutputReference(terraformResource cdktf
 	j := jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionOutputReference",
+		"@cdktn/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -256,11 +256,11 @@ func NewGameliftFleetEc2InboundPermissionOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewGameliftFleetEc2InboundPermissionOutputReference_Override(g GameliftFleetEc2InboundPermissionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGameliftFleetEc2InboundPermissionOutputReference_Override(g GameliftFleetEc2InboundPermissionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionOutputReference",
+		"@cdktn/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -343,7 +343,7 @@ func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,11 +394,11 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -522,8 +522,8 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) GetStringMa
 	return returns
 }
 
-func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -535,24 +535,24 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) Interpolati
 	return returns
 }
 
-func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -560,7 +560,7 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

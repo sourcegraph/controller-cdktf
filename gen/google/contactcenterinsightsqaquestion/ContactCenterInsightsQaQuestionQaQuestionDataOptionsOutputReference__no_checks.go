@@ -40,7 +40,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaQuestionQaQuestionDataOptionsOutputRef
 	return nil
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaQuestionQaQuestionDataOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContactCenterInsightsQaQuestionQaQuestionDataOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaQuestionQaQuestionDataOptionsOutputRef
 	return nil
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaQuestionQaQuestionDataOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContactCenterInsightsQaQuestionQaQuestionDataOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ContactCenterInsightsQaQuestionQaQuestionDataOptionsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaQuestionQaQuestionDataOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContactCenterInsightsQaQuestionQaQuestionDataOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContactCenterInsightsQaQuestionQaQuestionDataOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContactCenterInsightsQaQuestionQaQuestionDataOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

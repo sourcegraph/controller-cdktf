@@ -40,11 +40,11 @@ func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateGe
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateSe
 	return nil
 }
 
-func validateNewRulesetRulesExposedCredentialCheckOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRulesetRulesExposedCredentialCheckOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsLocationGeofenceCollection) validateOverrideLogicalIdP
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsLocationGeofenceCollection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsLocationGeofenceCollection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,7 +88,7 @@ func (j *jsiiProxy_DataAwsLocationGeofenceCollection) validateSetKmsKeyIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLocationGeofenceCollection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsLocationGeofenceCollection) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

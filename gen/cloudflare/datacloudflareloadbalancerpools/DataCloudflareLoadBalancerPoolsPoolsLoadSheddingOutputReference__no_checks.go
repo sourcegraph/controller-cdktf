@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleServiceDirectoryEndpointTimeoutsOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleServiceDirectoryEndpointTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleServiceDirectoryEndpointTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleServiceDirectoryEndpointTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleServiceDirectoryEndpointTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleServiceDirectoryEndpointTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleServiceDirectoryEndpointTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleServiceDirectoryEndpointTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleServiceDirectoryEndpointTimeoutsOutputReference) valida
 	return nil
 }
 
-func validateNewGoogleServiceDirectoryEndpointTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleServiceDirectoryEndpointTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -5,18 +5,18 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglebiglakeicebergtableiampolicy/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_biglake_iceberg_table_iam_policy google_biglake_iceberg_table_iam_policy}.
 type DataGoogleBiglakeIcebergTableIamPolicy interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	Catalog() *string
 	SetCatalog(val *string)
 	CatalogInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -29,9 +29,9 @@ type DataGoogleBiglakeIcebergTableIamPolicy interface {
 	SetDependsOn(val *[]*string)
 	Etag() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -40,9 +40,9 @@ type DataGoogleBiglakeIcebergTableIamPolicy interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -56,13 +56,13 @@ type DataGoogleBiglakeIcebergTableIamPolicy interface {
 	SetProject(val *string)
 	ProjectInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -72,7 +72,7 @@ type DataGoogleBiglakeIcebergTableIamPolicy interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -88,10 +88,23 @@ type DataGoogleBiglakeIcebergTableIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -109,11 +122,20 @@ type DataGoogleBiglakeIcebergTableIamPolicy interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataGoogleBiglakeIcebergTableIamPolicy
 type jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) Catalog() *string {
@@ -136,8 +158,8 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) CatalogInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -186,8 +208,8 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) Etag() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -236,8 +258,8 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -326,8 +348,8 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) ProjectInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -346,8 +368,8 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) RawOverrides() interf
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -387,7 +409,7 @@ func NewDataGoogleBiglakeIcebergTableIamPolicy(scope constructs.Construct, id *s
 	j := jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleBiglakeIcebergTableIamPolicy.DataGoogleBiglakeIcebergTableIamPolicy",
+		"@cdktn/provider-google-beta.dataGoogleBiglakeIcebergTableIamPolicy.DataGoogleBiglakeIcebergTableIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -400,7 +422,7 @@ func NewDataGoogleBiglakeIcebergTableIamPolicy_Override(d DataGoogleBiglakeIcebe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleBiglakeIcebergTableIamPolicy.DataGoogleBiglakeIcebergTableIamPolicy",
+		"@cdktn/provider-google-beta.dataGoogleBiglakeIcebergTableIamPolicy.DataGoogleBiglakeIcebergTableIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -436,7 +458,7 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy)SetDependsOn(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +477,7 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +521,7 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy)SetProject(val *string
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -507,17 +529,17 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy)SetProvider(val cdktf.
 	)
 }
 
-// Generates CDKTF code for importing a DataGoogleBiglakeIcebergTableIamPolicy resource upon running "cdktf plan <stack-name>".
-func DataGoogleBiglakeIcebergTableIamPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataGoogleBiglakeIcebergTableIamPolicy resource upon running "cdktn plan <stack-name>".
+func DataGoogleBiglakeIcebergTableIamPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataGoogleBiglakeIcebergTableIamPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google-beta.dataGoogleBiglakeIcebergTableIamPolicy.DataGoogleBiglakeIcebergTableIamPolicy",
+		"@cdktn/provider-google-beta.dataGoogleBiglakeIcebergTableIamPolicy.DataGoogleBiglakeIcebergTableIamPolicy",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -552,7 +574,7 @@ func DataGoogleBiglakeIcebergTableIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google-beta.dataGoogleBiglakeIcebergTableIamPolicy.DataGoogleBiglakeIcebergTableIamPolicy",
+		"@cdktn/provider-google-beta.dataGoogleBiglakeIcebergTableIamPolicy.DataGoogleBiglakeIcebergTableIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -571,7 +593,7 @@ func DataGoogleBiglakeIcebergTableIamPolicy_IsTerraformDataSource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google-beta.dataGoogleBiglakeIcebergTableIamPolicy.DataGoogleBiglakeIcebergTableIamPolicy",
+		"@cdktn/provider-google-beta.dataGoogleBiglakeIcebergTableIamPolicy.DataGoogleBiglakeIcebergTableIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -590,7 +612,7 @@ func DataGoogleBiglakeIcebergTableIamPolicy_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google-beta.dataGoogleBiglakeIcebergTableIamPolicy.DataGoogleBiglakeIcebergTableIamPolicy",
+		"@cdktn/provider-google-beta.dataGoogleBiglakeIcebergTableIamPolicy.DataGoogleBiglakeIcebergTableIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -603,7 +625,7 @@ func DataGoogleBiglakeIcebergTableIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-google-beta.dataGoogleBiglakeIcebergTableIamPolicy.DataGoogleBiglakeIcebergTableIamPolicy",
+		"@cdktn/provider-google-beta.dataGoogleBiglakeIcebergTableIamPolicy.DataGoogleBiglakeIcebergTableIamPolicy",
 		"tfResourceType",
 		&returns,
 	)
@@ -637,11 +659,11 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) GetAnyMapAttribute(te
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -765,11 +787,11 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) GetStringMapAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -789,6 +811,17 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) OverrideLogicalId(new
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -888,6 +921,24 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) ToTerraform() interfa
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

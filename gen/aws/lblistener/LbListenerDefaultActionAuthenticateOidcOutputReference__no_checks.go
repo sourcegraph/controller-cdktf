@@ -40,11 +40,11 @@ func (l *jsiiProxy_LbListenerDefaultActionAuthenticateOidcOutputReference) valid
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerDefaultActionAuthenticateOidcOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbListenerDefaultActionAuthenticateOidcOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerDefaultActionAuthenticateOidcOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbListenerDefaultActionAuthenticateOidcOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_LbListenerDefaultActionAuthenticateOidcOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerDefaultActionAuthenticateOidcOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LbListenerDefaultActionAuthenticateOidcOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -112,7 +112,7 @@ func (j *jsiiProxy_LbListenerDefaultActionAuthenticateOidcOutputReference) valid
 	return nil
 }
 
-func validateNewLbListenerDefaultActionAuthenticateOidcOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLbListenerDefaultActionAuthenticateOidcOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

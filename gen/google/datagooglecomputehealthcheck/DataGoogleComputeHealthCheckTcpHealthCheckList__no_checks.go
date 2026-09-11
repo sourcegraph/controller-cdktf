@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeHealthCheckTcpHealthCheckList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeHealthCheckTcpHealthCheckList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeHealthCheckTcpHealthCheckList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeHealthCheckTcpHealthCheckList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeHealthCheckTcpHealthCheckList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeHealthCheckTcpHealthCheckList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeHealthCheckTcpHealthCheckList) validateSetWr
 	return nil
 }
 
-func validateNewDataGoogleComputeHealthCheckTcpHealthCheckListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeHealthCheckTcpHealthCheckListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

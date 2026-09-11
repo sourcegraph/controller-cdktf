@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesAppClientCertificateSettingsOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_CesAppClientCertificateSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAppClientCertificateSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesAppClientCertificateSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppClientCertificateSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_CesAppClientCertificateSettingsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_CesAppClientCertificateSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppClientCertificateSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CesAppClientCertificateSettingsOutputReference) validateSetTl
 	return nil
 }
 
-func validateNewCesAppClientCertificateSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesAppClientCertificateSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

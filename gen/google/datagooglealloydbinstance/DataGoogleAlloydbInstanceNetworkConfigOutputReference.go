@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglealloydbinstance/internal"
 )
 
 type DataGoogleAlloydbInstanceNetworkConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllocatedIpRangeOverride() *string
 	AuthorizedExternalNetworks() DataGoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetworksList
 	// the index of the complex object in a list.
@@ -27,8 +27,8 @@ type DataGoogleAlloydbInstanceNetworkConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableOutboundPublicIp() cdktf.IResolvable
-	EnablePublicIp() cdktf.IResolvable
+	EnableOutboundPublicIp() cdktn.IResolvable
+	EnablePublicIp() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleAlloydbInstanceNetworkConfig
@@ -38,15 +38,15 @@ type DataGoogleAlloydbInstanceNetworkConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,12 +62,12 @@ type DataGoogleAlloydbInstanceNetworkConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type DataGoogleAlloydbInstanceNetworkConfigOutputReference interface {
 
 // The jsii proxy struct for DataGoogleAlloydbInstanceNetworkConfigOutputReference
 type jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) AllocatedIpRangeOverride() *string {
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) Creati
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) EnableOutboundPublicIp() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) EnableOutboundPublicIp() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enableOutboundPublicIp",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) Enable
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) EnablePublicIp() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) EnablePublicIp() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enablePublicIp",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -191,7 +191,7 @@ func (j *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) Terraf
 }
 
 
-func NewDataGoogleAlloydbInstanceNetworkConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleAlloydbInstanceNetworkConfigOutputReference {
+func NewDataGoogleAlloydbInstanceNetworkConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleAlloydbInstanceNetworkConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleAlloydbInstanceNetworkConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -200,7 +200,7 @@ func NewDataGoogleAlloydbInstanceNetworkConfigOutputReference(terraformResource 
 	j := jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleAlloydbInstance.DataGoogleAlloydbInstanceNetworkConfigOutputReference",
+		"@cdktn/provider-google.dataGoogleAlloydbInstance.DataGoogleAlloydbInstanceNetworkConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -208,11 +208,11 @@ func NewDataGoogleAlloydbInstanceNetworkConfigOutputReference(terraformResource 
 	return &j
 }
 
-func NewDataGoogleAlloydbInstanceNetworkConfigOutputReference_Override(d DataGoogleAlloydbInstanceNetworkConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleAlloydbInstanceNetworkConfigOutputReference_Override(d DataGoogleAlloydbInstanceNetworkConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleAlloydbInstance.DataGoogleAlloydbInstanceNetworkConfigOutputReference",
+		"@cdktn/provider-google.dataGoogleAlloydbInstance.DataGoogleAlloydbInstanceNetworkConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -262,7 +262,7 @@ func (j *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,11 +302,11 @@ func (d *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) GetAny
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -430,8 +430,8 @@ func (d *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) GetStr
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -443,24 +443,24 @@ func (d *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) Interp
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -468,7 +468,7 @@ func (d *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) Resolv
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

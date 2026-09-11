@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleDataLineageConfigIngestionRuleIntegrationSelectorLi
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataLineageConfigIngestionRuleIntegrationSelectorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDataLineageConfigIngestionRuleIntegrationSelectorList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleDataLineageConfigIngestionRuleIntegrationSelectorLi
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDataLineageConfigIngestionRuleIntegrationSelectorList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleDataLineageConfigIngestionRuleIntegrationSelectorList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleDataLineageConfigIngestionRuleIntegrationSelectorLi
 	return nil
 }
 
-func validateNewDataGoogleDataLineageConfigIngestionRuleIntegrationSelectorListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleDataLineageConfigIngestionRuleIntegrationSelectorListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

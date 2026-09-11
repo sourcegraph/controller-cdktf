@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContainerClusterResourceUsageExportConfigBigqueryDestinationO
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ContainerClusterResourceUsageExportConfigBigqueryDestinationO
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

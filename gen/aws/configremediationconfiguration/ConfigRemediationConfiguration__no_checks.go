@@ -56,6 +56,10 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) validateInterpolationForAttri
 	return nil
 }
 
+func (c *jsiiProxy_ConfigRemediationConfiguration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigRemediationConfiguration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (c *jsiiProxy_ConfigRemediationConfiguration) validatePutExecutionControlsP
 }
 
 func (c *jsiiProxy_ConfigRemediationConfiguration) validatePutParameterParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigRemediationConfiguration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

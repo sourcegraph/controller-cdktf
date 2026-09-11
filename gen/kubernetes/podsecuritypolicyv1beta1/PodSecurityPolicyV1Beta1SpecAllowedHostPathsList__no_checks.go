@@ -12,7 +12,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedHostPathsList) validateGet
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedHostPathsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedHostPathsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedHostPathsList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedHostPathsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedHostPathsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedHostPathsList) validateSet
 	return nil
 }
 
-func validateNewPodSecurityPolicyV1Beta1SpecAllowedHostPathsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPodSecurityPolicyV1Beta1SpecAllowedHostPathsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

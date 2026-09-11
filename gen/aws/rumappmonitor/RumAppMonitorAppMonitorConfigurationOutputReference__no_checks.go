@@ -40,11 +40,11 @@ func (r *jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference) validate
 	return nil
 }
 
-func (r *jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -100,11 +100,11 @@ func (j *jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewRumAppMonitorAppMonitorConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRumAppMonitorAppMonitorConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

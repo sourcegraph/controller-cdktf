@@ -56,6 +56,10 @@ func (a *jsiiProxy_ApigeeEnvironment) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeEnvironment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeEnvironment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (a *jsiiProxy_ApigeeEnvironment) validatePutPropertiesParameters(value *Api
 }
 
 func (a *jsiiProxy_ApigeeEnvironment) validatePutTimeoutsParameters(value *ApigeeEnvironmentTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeEnvironment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -136,7 +144,7 @@ func (j *jsiiProxy_ApigeeEnvironment) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeEnvironment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ApigeeEnvironment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

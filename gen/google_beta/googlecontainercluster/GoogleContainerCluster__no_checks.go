@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -280,6 +284,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutWorkloadIdentityConfigPara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleContainerCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -388,7 +396,7 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetInTransitEncryptionConfigP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleContainerCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

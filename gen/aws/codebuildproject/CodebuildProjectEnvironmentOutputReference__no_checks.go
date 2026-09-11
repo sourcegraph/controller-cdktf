@@ -40,7 +40,7 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) validatePutRegist
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) validateSetTypePa
 	return nil
 }
 
-func validateNewCodebuildProjectEnvironmentOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCodebuildProjectEnvironmentOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

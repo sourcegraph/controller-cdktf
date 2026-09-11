@@ -12,7 +12,7 @@ func (p *jsiiProxy_ProjectLabelList) validateGetParameters(index *float64) error
 	return nil
 }
 
-func (p *jsiiProxy_ProjectLabelList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProjectLabelList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ProjectLabelList) validateSetTerraformAttributeParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ProjectLabelList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ProjectLabelList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ProjectLabelList) validateSetWrapsSetParameters(val *bool) er
 	return nil
 }
 
-func validateNewProjectLabelListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewProjectLabelListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

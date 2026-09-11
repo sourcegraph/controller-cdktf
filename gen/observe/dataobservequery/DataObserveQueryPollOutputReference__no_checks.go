@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataObserveQueryPollOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveQueryPollOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataObserveQueryPollOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveQueryPollOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataObserveQueryPollOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_DataObserveQueryPollOutputReference) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveQueryPollOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataObserveQueryPollOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DataObserveQueryPollOutputReference) validateSetTimeoutParame
 	return nil
 }
 
-func validateNewDataObserveQueryPollOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataObserveQueryPollOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

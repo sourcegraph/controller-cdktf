@@ -40,7 +40,7 @@ func (f *jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference) validateGetS
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (f *jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference) validatePutF
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewFirestoreIndexFieldsVectorConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFirestoreIndexFieldsVectorConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

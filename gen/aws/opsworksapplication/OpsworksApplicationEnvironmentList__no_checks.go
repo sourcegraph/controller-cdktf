@@ -12,7 +12,7 @@ func (o *jsiiProxy_OpsworksApplicationEnvironmentList) validateGetParameters(ind
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksApplicationEnvironmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksApplicationEnvironmentList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_OpsworksApplicationEnvironmentList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksApplicationEnvironmentList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksApplicationEnvironmentList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_OpsworksApplicationEnvironmentList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewOpsworksApplicationEnvironmentListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewOpsworksApplicationEnvironmentListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

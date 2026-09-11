@@ -5,15 +5,15 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglesqldatabaseinstancelatestrecoverytime/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/sql_database_instance_latest_recovery_time google_sql_database_instance_latest_recovery_time}.
 type DataGoogleSqlDatabaseInstanceLatestRecoveryTime interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -25,9 +25,9 @@ type DataGoogleSqlDatabaseInstanceLatestRecoveryTime interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -40,25 +40,25 @@ type DataGoogleSqlDatabaseInstanceLatestRecoveryTime interface {
 	InstanceInput() *string
 	LatestRecoveryTime() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	SourceInstanceDeletionTime() *string
 	SetSourceInstanceDeletionTime(val *string)
 	SourceInstanceDeletionTimeInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -68,7 +68,7 @@ type DataGoogleSqlDatabaseInstanceLatestRecoveryTime interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -84,10 +84,23 @@ type DataGoogleSqlDatabaseInstanceLatestRecoveryTime interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -106,15 +119,24 @@ type DataGoogleSqlDatabaseInstanceLatestRecoveryTime interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataGoogleSqlDatabaseInstanceLatestRecoveryTime
 type jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -153,8 +175,8 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) DependsOn() 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -233,8 +255,8 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) LatestRecove
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -273,8 +295,8 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) ProjectInput
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -313,8 +335,8 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) SourceInstan
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -354,7 +376,7 @@ func NewDataGoogleSqlDatabaseInstanceLatestRecoveryTime(scope constructs.Constru
 	j := jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime",
+		"@cdktn/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +389,7 @@ func NewDataGoogleSqlDatabaseInstanceLatestRecoveryTime_Override(d DataGoogleSql
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime",
+		"@cdktn/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -392,7 +414,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime)SetDependsOn(
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -422,7 +444,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime)SetInstance(v
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +466,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime)SetProject(va
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -463,17 +485,17 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime)SetSourceInst
 	)
 }
 
-// Generates CDKTF code for importing a DataGoogleSqlDatabaseInstanceLatestRecoveryTime resource upon running "cdktf plan <stack-name>".
-func DataGoogleSqlDatabaseInstanceLatestRecoveryTime_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataGoogleSqlDatabaseInstanceLatestRecoveryTime resource upon running "cdktn plan <stack-name>".
+func DataGoogleSqlDatabaseInstanceLatestRecoveryTime_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataGoogleSqlDatabaseInstanceLatestRecoveryTime_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime",
+		"@cdktn/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -508,7 +530,7 @@ func DataGoogleSqlDatabaseInstanceLatestRecoveryTime_IsConstruct(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime",
+		"@cdktn/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +549,7 @@ func DataGoogleSqlDatabaseInstanceLatestRecoveryTime_IsTerraformDataSource(x int
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime",
+		"@cdktn/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -546,7 +568,7 @@ func DataGoogleSqlDatabaseInstanceLatestRecoveryTime_IsTerraformElement(x interf
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime",
+		"@cdktn/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -559,7 +581,7 @@ func DataGoogleSqlDatabaseInstanceLatestRecoveryTime_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime",
+		"@cdktn/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime",
 		"tfResourceType",
 		&returns,
 	)
@@ -593,11 +615,11 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) GetAnyMapAtt
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -721,11 +743,11 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) GetStringMap
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -745,6 +767,17 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) OverrideLogi
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -852,6 +885,24 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) ToTerraform(
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

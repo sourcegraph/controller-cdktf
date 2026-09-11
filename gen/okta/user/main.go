@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.user.User",
+		"@cdktn/provider-okta.user.User",
 		reflect.TypeOf((*User)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -74,6 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "managerId", GoGetter: "ManagerId"},
 			_jsii_.MemberProperty{JsiiProperty: "managerIdInput", GoGetter: "ManagerIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "managerInput", GoGetter: "ManagerInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "middleName", GoGetter: "MiddleName"},
 			_jsii_.MemberProperty{JsiiProperty: "middleNameInput", GoGetter: "MiddleNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mobilePhone", GoGetter: "MobilePhone"},
@@ -112,6 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "recoveryAnswerInput", GoGetter: "RecoveryAnswerInput"},
 			_jsii_.MemberProperty{JsiiProperty: "recoveryQuestion", GoGetter: "RecoveryQuestion"},
 			_jsii_.MemberProperty{JsiiProperty: "recoveryQuestionInput", GoGetter: "RecoveryQuestionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCity", GoMethod: "ResetCity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCostCenter", GoMethod: "ResetCostCenter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCountryCode", GoMethod: "ResetCountryCode"},
@@ -177,25 +179,26 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "userType", GoGetter: "UserType"},
 			_jsii_.MemberProperty{JsiiProperty: "userTypeInput", GoGetter: "UserTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zipCode", GoGetter: "ZipCode"},
 			_jsii_.MemberProperty{JsiiProperty: "zipCodeInput", GoGetter: "ZipCodeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_User{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.user.UserConfig",
+		"@cdktn/provider-okta.user.UserConfig",
 		reflect.TypeOf((*UserConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.user.UserPasswordHash",
+		"@cdktn/provider-okta.user.UserPasswordHash",
 		reflect.TypeOf((*UserPasswordHash)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.user.UserPasswordHashOutputReference",
+		"@cdktn/provider-okta.user.UserPasswordHashOutputReference",
 		reflect.TypeOf((*UserPasswordHashOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
@@ -235,7 +238,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_UserPasswordHashOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -40,7 +40,7 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) validateGetStrin
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) validatePutS3Des
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEvidentlyProjectDataDeliveryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEvidentlyProjectDataDeliveryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

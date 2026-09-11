@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleIamProjectsPolicyBindingTargetOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamProjectsPolicyBindingTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIamProjectsPolicyBindingTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamProjectsPolicyBindingTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIamProjectsPolicyBindingTargetOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleIamProjectsPolicyBindingTargetOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamProjectsPolicyBindingTargetOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIamProjectsPolicyBindingTargetOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleIamProjectsPolicyBindingTargetOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleIamProjectsPolicyBindingTargetOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnectionDetailsCloudVpnsOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerVpnConnectionDetailsCloudVpnsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnectionDetailsCloudVpnsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerVpnConnectionDetailsCloudVpnsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnectionDetailsCloudVpnsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnectionDetailsCloudVpnsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnectionDetailsCloudVpnsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnectionDetailsCloudVpnsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleEdgecontainerVpnConnectionDetailsCloudVpnsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleEdgecontainerVpnConnectionDetailsCloudVpnsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

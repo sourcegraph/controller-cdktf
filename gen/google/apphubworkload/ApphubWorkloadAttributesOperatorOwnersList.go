@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/apphubworkload/internal"
 )
 
 type ApphubWorkloadAttributesOperatorOwnersList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type ApphubWorkloadAttributesOperatorOwnersList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ApphubWorkloadAttributesOperatorOwnersOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type ApphubWorkloadAttributesOperatorOwnersList interface {
 
 // The jsii proxy struct for ApphubWorkloadAttributesOperatorOwnersList
 type jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList) WrapsSet() *bool 
 }
 
 
-func NewApphubWorkloadAttributesOperatorOwnersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubWorkloadAttributesOperatorOwnersList {
+func NewApphubWorkloadAttributesOperatorOwnersList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubWorkloadAttributesOperatorOwnersList {
 	_init_.Initialize()
 
 	if err := validateNewApphubWorkloadAttributesOperatorOwnersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewApphubWorkloadAttributesOperatorOwnersList(terraformResource cdktf.IInte
 	j := jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributesOperatorOwnersList",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesOperatorOwnersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewApphubWorkloadAttributesOperatorOwnersList(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewApphubWorkloadAttributesOperatorOwnersList_Override(a ApphubWorkloadAttributesOperatorOwnersList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewApphubWorkloadAttributesOperatorOwnersList_Override(a ApphubWorkloadAttributesOperatorOwnersList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributesOperatorOwnersList",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesOperatorOwnersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList)SetWrapsSet(val *b
 	)
 }
 
-func (a *jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (a *jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := a.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		a,
@@ -228,8 +231,8 @@ func (a *jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList) Get(index *float6
 	return returns
 }
 
-func (a *jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (a *jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList) Resolve(_context 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

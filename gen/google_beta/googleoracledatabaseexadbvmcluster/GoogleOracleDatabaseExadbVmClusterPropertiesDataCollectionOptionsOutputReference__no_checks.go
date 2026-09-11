@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesDataCollectionOpt
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesDataCollectionOpt
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleOracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleOracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

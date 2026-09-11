@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleParameterManagerParameterPolicyMemberList) validateGetP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleParameterManagerParameterPolicyMemberList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleParameterManagerParameterPolicyMemberList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleParameterManagerParameterPolicyMemberList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_GoogleParameterManagerParameterPolicyMemberList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleParameterManagerParameterPolicyMemberList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleParameterManagerParameterPolicyMemberList) validateSetW
 	return nil
 }
 
-func validateNewGoogleParameterManagerParameterPolicyMemberListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleParameterManagerParameterPolicyMemberListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

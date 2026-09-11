@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataprocJobPrestoConfigOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (d *jsiiProxy_DataprocJobPrestoConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocJobPrestoConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DataprocJobPrestoConfigOutputReference) validatePutLoggingCon
 	return nil
 }
 
-func (d *jsiiProxy_DataprocJobPrestoConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocJobPrestoConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,11 +92,11 @@ func (j *jsiiProxy_DataprocJobPrestoConfigOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_DataprocJobPrestoConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataprocJobPrestoConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataprocJobPrestoConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataprocJobPrestoConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

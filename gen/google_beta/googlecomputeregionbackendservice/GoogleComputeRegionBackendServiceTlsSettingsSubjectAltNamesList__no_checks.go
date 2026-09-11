@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesLi
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesLi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesLi
 	return nil
 }
 
-func validateNewGoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

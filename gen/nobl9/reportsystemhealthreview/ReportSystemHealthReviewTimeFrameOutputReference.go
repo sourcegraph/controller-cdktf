@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/reportsystemhealthreview/internal"
 )
 
 type ReportSystemHealthReviewTimeFrameOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,9 +36,9 @@ type ReportSystemHealthReviewTimeFrameOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeZone() *string
 	SetTimeZone(val *string)
 	TimeZoneInput() *string
@@ -47,7 +47,7 @@ type ReportSystemHealthReviewTimeFrameOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,13 +63,13 @@ type ReportSystemHealthReviewTimeFrameOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutSnapshot(value *ReportSystemHealthReviewTimeFrameSnapshot)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type ReportSystemHealthReviewTimeFrameOutputReference interface {
 
 // The jsii proxy struct for ReportSystemHealthReviewTimeFrameOutputReference
 type jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) ComplexObjectIndex() interface{} {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) TimeZoneInp
 }
 
 
-func NewReportSystemHealthReviewTimeFrameOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ReportSystemHealthReviewTimeFrameOutputReference {
+func NewReportSystemHealthReviewTimeFrameOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ReportSystemHealthReviewTimeFrameOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewReportSystemHealthReviewTimeFrameOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewReportSystemHealthReviewTimeFrameOutputReference(terraformResource cdktf
 	j := jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewTimeFrameOutputReference",
+		"@cdktn/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewTimeFrameOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewReportSystemHealthReviewTimeFrameOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewReportSystemHealthReviewTimeFrameOutputReference_Override(r ReportSystemHealthReviewTimeFrameOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewReportSystemHealthReviewTimeFrameOutputReference_Override(r ReportSystemHealthReviewTimeFrameOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewTimeFrameOutputReference",
+		"@cdktn/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewTimeFrameOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -264,7 +264,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,11 +315,11 @@ func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -443,8 +443,8 @@ func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) GetStringMa
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -456,16 +456,16 @@ func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) Interpolati
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -483,8 +483,8 @@ func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) PutSnapshot
 	)
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

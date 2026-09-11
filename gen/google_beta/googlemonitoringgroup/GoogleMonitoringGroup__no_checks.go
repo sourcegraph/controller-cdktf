@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleMonitoringGroup) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleMonitoringGroup) validateOverrideLogicalIdParameters(ne
 }
 
 func (g *jsiiProxy_GoogleMonitoringGroup) validatePutTimeoutsParameters(value *GoogleMonitoringGroupTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMonitoringGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleMonitoringGroup) validateSetIsClusterParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleMonitoringGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

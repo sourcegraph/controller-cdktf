@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivationStateLis
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivationStateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivationStateList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivationStateLis
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivationStateList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivationStateList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivationStateLis
 	return nil
 }
 
-func validateNewGoogleNetworkServicesMulticastGroupProducerActivationStateListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleNetworkServicesMulticastGroupProducerActivationStateListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (g *jsiiProxy_GeminiCodeToolsSettingEnabledToolOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GeminiCodeToolsSettingEnabledToolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GeminiCodeToolsSettingEnabledToolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GeminiCodeToolsSettingEnabledToolOutputReference) validatePut
 	return nil
 }
 
-func (g *jsiiProxy_GeminiCodeToolsSettingEnabledToolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GeminiCodeToolsSettingEnabledToolOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolOutputReference) validateSet
 	return nil
 }
 
-func validateNewGeminiCodeToolsSettingEnabledToolOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGeminiCodeToolsSettingEnabledToolOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

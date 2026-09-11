@@ -12,7 +12,7 @@ func (w *jsiiProxy_WorkflowConditionGroupsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowConditionGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkflowConditionGroupsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WorkflowConditionGroupsList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkflowConditionGroupsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WorkflowConditionGroupsList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewWorkflowConditionGroupsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWorkflowConditionGroupsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

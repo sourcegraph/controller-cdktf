@@ -40,11 +40,11 @@ func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionOutputReference) 
 	return nil
 }
 
-func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,11 +96,11 @@ func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMacie2FindingsFilterFindingCriteriaCriterionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewMacie2FindingsFilterFindingCriteriaCriterionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

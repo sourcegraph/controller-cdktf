@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataPostgresqlSequencesSequencesList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataPostgresqlSequencesSequencesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataPostgresqlSequencesSequencesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataPostgresqlSequencesSequencesList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_DataPostgresqlSequencesSequencesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataPostgresqlSequencesSequencesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataPostgresqlSequencesSequencesList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewDataPostgresqlSequencesSequencesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataPostgresqlSequencesSequencesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

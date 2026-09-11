@@ -40,7 +40,7 @@ func (r *jsiiProxy_ReportDashboardOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (r *jsiiProxy_ReportDashboardOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ReportDashboardOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (r *jsiiProxy_ReportDashboardOutputReference) validatePutParametersParamete
 	return nil
 }
 
-func (r *jsiiProxy_ReportDashboardOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ReportDashboardOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_ReportDashboardOutputReference) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_ReportDashboardOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ReportDashboardOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewReportDashboardOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewReportDashboardOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkServicesLbEdgeExtensionExtensionChainsMatchCondi
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleNetworkServicesLbEdgeExtensionExtensionChainsMatchCondi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (b *jsiiProxy_BillingBudgetThresholdRulesList) validateGetParameters(index 
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudgetThresholdRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BillingBudgetThresholdRulesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_BillingBudgetThresholdRulesList) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_BillingBudgetThresholdRulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BillingBudgetThresholdRulesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_BillingBudgetThresholdRulesList) validateSetWrapsSetParameter
 	return nil
 }
 
-func validateNewBillingBudgetThresholdRulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBillingBudgetThresholdRulesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateInterpolatio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateOverrideLogi
 }
 
 func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validatePutTimeoutsParameters(value *GoogleAccessContextManagerIngressPolicyTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateSetIngressPo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

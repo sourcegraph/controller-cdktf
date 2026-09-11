@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleCertificateManagerCertificateMap) validateOverrideL
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleCertificateManagerCertificateMap) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleCertificateManagerCertificateMap_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleCertificateManagerCertificateMap) validateSetIdPara
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCertificateManagerCertificateMap) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleCertificateManagerCertificateMap) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

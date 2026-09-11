@@ -40,11 +40,11 @@ func (d *jsiiProxy_DnsManagedZonePeeringConfigTargetNetworkOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DnsManagedZonePeeringConfigTargetNetworkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DnsManagedZonePeeringConfigTargetNetworkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DnsManagedZonePeeringConfigTargetNetworkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsManagedZonePeeringConfigTargetNetworkOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DnsManagedZonePeeringConfigTargetNetworkOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DnsManagedZonePeeringConfigTargetNetworkOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DnsManagedZonePeeringConfigTargetNetworkOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDnsManagedZonePeeringConfigTargetNetworkOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDnsManagedZonePeeringConfigTargetNetworkOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

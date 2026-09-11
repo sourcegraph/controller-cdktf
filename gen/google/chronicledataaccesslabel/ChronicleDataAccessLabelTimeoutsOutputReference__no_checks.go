@@ -40,11 +40,11 @@ func (c *jsiiProxy_ChronicleDataAccessLabelTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDataAccessLabelTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChronicleDataAccessLabelTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDataAccessLabelTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleDataAccessLabelTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ChronicleDataAccessLabelTimeoutsOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDataAccessLabelTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ChronicleDataAccessLabelTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ChronicleDataAccessLabelTimeoutsOutputReference) validateSetU
 	return nil
 }
 
-func validateNewChronicleDataAccessLabelTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewChronicleDataAccessLabelTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

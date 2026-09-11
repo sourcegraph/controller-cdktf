@@ -56,6 +56,10 @@ func (e *jsiiProxy_EscalationPath) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (e *jsiiProxy_EscalationPath) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EscalationPath) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (e *jsiiProxy_EscalationPath) validatePutPathParameters(value interface{}) 
 }
 
 func (e *jsiiProxy_EscalationPath) validatePutWorkingHoursParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EscalationPath) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_EscalationPath) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPath) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EscalationPath) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

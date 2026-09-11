@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeFirewall) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeFirewall) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeFirewall) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (g *jsiiProxy_GoogleComputeFirewall) validatePutParamsParameters(value *Goo
 }
 
 func (g *jsiiProxy_GoogleComputeFirewall) validatePutTimeoutsParameters(value *GoogleComputeFirewallTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeFirewall) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -140,7 +148,7 @@ func (j *jsiiProxy_GoogleComputeFirewall) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFirewall) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeFirewall) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

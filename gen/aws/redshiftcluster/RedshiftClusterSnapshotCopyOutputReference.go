@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/redshiftcluster/internal"
 )
 
 type RedshiftClusterSnapshotCopyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type RedshiftClusterSnapshotCopyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type RedshiftClusterSnapshotCopyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetGrantName()
 	ResetRetentionPeriod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type RedshiftClusterSnapshotCopyOutputReference interface {
 
 // The jsii proxy struct for RedshiftClusterSnapshotCopyOutputReference
 type jsiiProxy_RedshiftClusterSnapshotCopyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) ComplexObjectIndex() interface{} {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) TerraformResource
 }
 
 
-func NewRedshiftClusterSnapshotCopyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RedshiftClusterSnapshotCopyOutputReference {
+func NewRedshiftClusterSnapshotCopyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) RedshiftClusterSnapshotCopyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewRedshiftClusterSnapshotCopyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -227,7 +227,7 @@ func NewRedshiftClusterSnapshotCopyOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_RedshiftClusterSnapshotCopyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterSnapshotCopyOutputReference",
+		"@cdktn/provider-aws.redshiftCluster.RedshiftClusterSnapshotCopyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewRedshiftClusterSnapshotCopyOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewRedshiftClusterSnapshotCopyOutputReference_Override(r RedshiftClusterSnapshotCopyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRedshiftClusterSnapshotCopyOutputReference_Override(r RedshiftClusterSnapshotCopyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterSnapshotCopyOutputReference",
+		"@cdktn/provider-aws.redshiftCluster.RedshiftClusterSnapshotCopyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -322,7 +322,7 @@ func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -490,8 +490,8 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -503,16 +503,16 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) ResetRetentionPer
 	)
 }
 
-func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

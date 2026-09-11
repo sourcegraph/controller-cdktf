@@ -40,11 +40,11 @@ func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) validateGetString
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_MonitorV2ActionsActionEmailOutputReference) validateSetUsersP
 	return nil
 }
 
-func validateNewMonitorV2ActionsActionEmailOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitorV2ActionsActionEmailOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

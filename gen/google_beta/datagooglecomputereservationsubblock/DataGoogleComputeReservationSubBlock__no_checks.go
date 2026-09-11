@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleComputeReservationSubBlock) validateOverrideLogical
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleComputeReservationSubBlock) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleComputeReservationSubBlock_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleComputeReservationSubBlock) validateSetIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservationSubBlock) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleComputeReservationSubBlock) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

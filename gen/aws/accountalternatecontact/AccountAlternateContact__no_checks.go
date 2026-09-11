@@ -56,6 +56,10 @@ func (a *jsiiProxy_AccountAlternateContact) validateInterpolationForAttributePar
 	return nil
 }
 
+func (a *jsiiProxy_AccountAlternateContact) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountAlternateContact) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (a *jsiiProxy_AccountAlternateContact) validateOverrideLogicalIdParameters(
 }
 
 func (a *jsiiProxy_AccountAlternateContact) validatePutTimeoutsParameters(value *AccountAlternateContactTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountAlternateContact) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_AccountAlternateContact) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_AccountAlternateContact) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AccountAlternateContact) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

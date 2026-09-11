@@ -56,6 +56,10 @@ func (d *jsiiProxy_DirectNewrelic) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (d *jsiiProxy_DirectNewrelic) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectNewrelic) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (d *jsiiProxy_DirectNewrelic) validatePutHistoricalDataRetrievalParameters(
 }
 
 func (d *jsiiProxy_DirectNewrelic) validatePutQueryDelayParameters(value *DirectNewrelicQueryDelay) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectNewrelic) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_DirectNewrelic) validateSetInsightsQueryKeyParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DirectNewrelic) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DirectNewrelic) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

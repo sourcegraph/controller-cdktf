@@ -56,6 +56,10 @@ func (b *jsiiProxy_BigqueryDataset) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryDataset) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDataset) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (b *jsiiProxy_BigqueryDataset) validatePutExternalDatasetReferenceParameter
 }
 
 func (b *jsiiProxy_BigqueryDataset) validatePutTimeoutsParameters(value *BigqueryDatasetTimeouts) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryDataset) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -156,7 +164,7 @@ func (j *jsiiProxy_BigqueryDataset) validateSetLabelsParameters(val *map[string]
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryDataset) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BigqueryDataset) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

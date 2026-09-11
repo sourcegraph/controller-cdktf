@@ -40,7 +40,7 @@ func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) validateGetString
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) validatePutMessag
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexIntentConfirmationPromptOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LexIntentConfirmationPromptOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLexIntentConfirmationPromptOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLexIntentConfirmationPromptOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

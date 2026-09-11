@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.ivschatRoom.IvschatRoom",
+		"@cdktn/provider-aws.ivschatRoom.IvschatRoom",
 		reflect.TypeOf((*IvschatRoom)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -39,6 +39,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "loggingConfigurationIdentifiers", GoGetter: "LoggingConfigurationIdentifiers"},
 			_jsii_.MemberProperty{JsiiProperty: "loggingConfigurationIdentifiersInput", GoGetter: "LoggingConfigurationIdentifiersInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumMessageLength", GoGetter: "MaximumMessageLength"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumMessageLengthInput", GoGetter: "MaximumMessageLengthInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumMessageRatePerSecond", GoGetter: "MaximumMessageRatePerSecond"},
@@ -57,6 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMessageReviewHandler", GoMethod: "PutMessageReviewHandler"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLoggingConfigurationIdentifiers", GoMethod: "ResetLoggingConfigurationIdentifiers"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaximumMessageLength", GoMethod: "ResetMaximumMessageLength"},
@@ -82,23 +84,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_IvschatRoom{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.ivschatRoom.IvschatRoomConfig",
+		"@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig",
 		reflect.TypeOf((*IvschatRoomConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.ivschatRoom.IvschatRoomMessageReviewHandler",
+		"@cdktn/provider-aws.ivschatRoom.IvschatRoomMessageReviewHandler",
 		reflect.TypeOf((*IvschatRoomMessageReviewHandler)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.ivschatRoom.IvschatRoomMessageReviewHandlerOutputReference",
+		"@cdktn/provider-aws.ivschatRoom.IvschatRoomMessageReviewHandlerOutputReference",
 		reflect.TypeOf((*IvschatRoomMessageReviewHandlerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -131,16 +134,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IvschatRoomMessageReviewHandlerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.ivschatRoom.IvschatRoomTimeouts",
+		"@cdktn/provider-aws.ivschatRoom.IvschatRoomTimeouts",
 		reflect.TypeOf((*IvschatRoomTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.ivschatRoom.IvschatRoomTimeoutsOutputReference",
+		"@cdktn/provider-aws.ivschatRoom.IvschatRoomTimeoutsOutputReference",
 		reflect.TypeOf((*IvschatRoomTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -176,7 +179,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IvschatRoomTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

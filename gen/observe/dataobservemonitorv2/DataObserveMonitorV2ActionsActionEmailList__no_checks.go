@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsActionEmailList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2ActionsActionEmailList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataObserveMonitorV2ActionsActionEmailList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataObserveMonitorV2ActionsActionEmailList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2ActionsActionEmailList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataObserveMonitorV2ActionsActionEmailList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataObserveMonitorV2ActionsActionEmailList) validateSetWrapsS
 	return nil
 }
 
-func validateNewDataObserveMonitorV2ActionsActionEmailListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataObserveMonitorV2ActionsActionEmailListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

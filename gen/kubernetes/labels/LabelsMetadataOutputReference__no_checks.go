@@ -40,11 +40,11 @@ func (l *jsiiProxy_LabelsMetadataOutputReference) validateGetStringMapAttributeP
 	return nil
 }
 
-func (l *jsiiProxy_LabelsMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LabelsMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LabelsMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LabelsMetadataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_LabelsMetadataOutputReference) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_LabelsMetadataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LabelsMetadataOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLabelsMetadataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLabelsMetadataOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

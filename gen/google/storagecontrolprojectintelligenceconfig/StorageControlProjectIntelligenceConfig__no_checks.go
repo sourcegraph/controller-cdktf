@@ -56,6 +56,10 @@ func (s *jsiiProxy_StorageControlProjectIntelligenceConfig) validateInterpolatio
 	return nil
 }
 
+func (s *jsiiProxy_StorageControlProjectIntelligenceConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageControlProjectIntelligenceConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (s *jsiiProxy_StorageControlProjectIntelligenceConfig) validatePutFilterPar
 }
 
 func (s *jsiiProxy_StorageControlProjectIntelligenceConfig) validatePutTimeoutsParameters(value *StorageControlProjectIntelligenceConfigTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageControlProjectIntelligenceConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_StorageControlProjectIntelligenceConfig) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_StorageControlProjectIntelligenceConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_StorageControlProjectIntelligenceConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

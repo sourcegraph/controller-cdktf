@@ -40,11 +40,11 @@ func (c *jsiiProxy_ChimeVoiceConnectorOriginationRouteOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorOriginationRouteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChimeVoiceConnectorOriginationRouteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorOriginationRouteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChimeVoiceConnectorOriginationRouteOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorOriginationRouteOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOriginationRouteOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ChimeVoiceConnectorOriginationRouteOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorOriginationRouteOutputReference) validateS
 	return nil
 }
 
-func validateNewChimeVoiceConnectorOriginationRouteOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewChimeVoiceConnectorOriginationRouteOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

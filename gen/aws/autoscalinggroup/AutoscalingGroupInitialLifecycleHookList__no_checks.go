@@ -12,7 +12,7 @@ func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookList) validateGetParamete
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AutoscalingGroupInitialLifecycleHookList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewAutoscalingGroupInitialLifecycleHookListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAutoscalingGroupInitialLifecycleHookListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

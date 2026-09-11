@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) validateInterpolationForAtt
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontMonitoringSubscription) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontMonitoringSubscription) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) validateOverrideLogicalIdPa
 }
 
 func (c *jsiiProxy_CloudfrontMonitoringSubscription) validatePutMonitoringSubscriptionParameters(value *CloudfrontMonitoringSubscriptionMonitoringSubscription) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontMonitoringSubscription) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_CloudfrontMonitoringSubscription) validateSetIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontMonitoringSubscription) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudfrontMonitoringSubscription) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

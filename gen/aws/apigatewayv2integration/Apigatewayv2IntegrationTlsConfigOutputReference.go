@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/apigatewayv2integration/internal"
 )
 
 type Apigatewayv2IntegrationTlsConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type Apigatewayv2IntegrationTlsConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type Apigatewayv2IntegrationTlsConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetServerNameToVerify()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type Apigatewayv2IntegrationTlsConfigOutputReference interface {
 
 // The jsii proxy struct for Apigatewayv2IntegrationTlsConfigOutputReference
 type jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) TerraformRes
 }
 
 
-func NewApigatewayv2IntegrationTlsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Apigatewayv2IntegrationTlsConfigOutputReference {
+func NewApigatewayv2IntegrationTlsConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) Apigatewayv2IntegrationTlsConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewApigatewayv2IntegrationTlsConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewApigatewayv2IntegrationTlsConfigOutputReference(terraformResource cdktf.
 	j := jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationTlsConfigOutputReference",
+		"@cdktn/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationTlsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewApigatewayv2IntegrationTlsConfigOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewApigatewayv2IntegrationTlsConfigOutputReference_Override(a Apigatewayv2IntegrationTlsConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewApigatewayv2IntegrationTlsConfigOutputReference_Override(a Apigatewayv2IntegrationTlsConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationTlsConfigOutputReference",
+		"@cdktn/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationTlsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -421,8 +421,8 @@ func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) GetStringMap
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -434,16 +434,16 @@ func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) Interpolatio
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) ResetServerN
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

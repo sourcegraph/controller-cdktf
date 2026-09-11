@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeinstancetemplate/internal"
 )
 
 type ComputeInstanceTemplateDiskOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Architecture() *string
 	SetArchitecture(val *string)
 	ArchitectureInput() *string
@@ -97,9 +97,9 @@ type ComputeInstanceTemplateDiskOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -108,7 +108,7 @@ type ComputeInstanceTemplateDiskOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -124,9 +124,9 @@ type ComputeInstanceTemplateDiskOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDiskEncryptionKey(value *ComputeInstanceTemplateDiskDiskEncryptionKey)
 	PutSourceImageEncryptionKey(value *ComputeInstanceTemplateDiskSourceImageEncryptionKey)
 	PutSourceSnapshotEncryptionKey(value *ComputeInstanceTemplateDiskSourceSnapshotEncryptionKey)
@@ -155,7 +155,7 @@ type ComputeInstanceTemplateDiskOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -165,7 +165,7 @@ type ComputeInstanceTemplateDiskOutputReference interface {
 
 // The jsii proxy struct for ComputeInstanceTemplateDiskOutputReference
 type jsiiProxy_ComputeInstanceTemplateDiskOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) Architecture() *string {
@@ -668,8 +668,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -699,7 +699,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) TypeInput() *stri
 }
 
 
-func NewComputeInstanceTemplateDiskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeInstanceTemplateDiskOutputReference {
+func NewComputeInstanceTemplateDiskOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeInstanceTemplateDiskOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeInstanceTemplateDiskOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -708,7 +708,7 @@ func NewComputeInstanceTemplateDiskOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_ComputeInstanceTemplateDiskOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateDiskOutputReference",
+		"@cdktn/provider-google.computeInstanceTemplate.ComputeInstanceTemplateDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -716,11 +716,11 @@ func NewComputeInstanceTemplateDiskOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewComputeInstanceTemplateDiskOutputReference_Override(c ComputeInstanceTemplateDiskOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewComputeInstanceTemplateDiskOutputReference_Override(c ComputeInstanceTemplateDiskOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateDiskOutputReference",
+		"@cdktn/provider-google.computeInstanceTemplate.ComputeInstanceTemplateDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -979,7 +979,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1030,11 +1030,11 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -1158,8 +1158,8 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -1171,16 +1171,16 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1404,8 +1404,8 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ResetType() {
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1413,7 +1413,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

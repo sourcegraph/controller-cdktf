@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticat
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (a *jsiiProxy_AthenaDataCatalog) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (a *jsiiProxy_AthenaDataCatalog) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AthenaDataCatalog) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (a *jsiiProxy_AthenaDataCatalog) validateMoveToIdParameters(id *string) err
 }
 
 func (a *jsiiProxy_AthenaDataCatalog) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AthenaDataCatalog) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_AthenaDataCatalog) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_AthenaDataCatalog) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AthenaDataCatalog) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

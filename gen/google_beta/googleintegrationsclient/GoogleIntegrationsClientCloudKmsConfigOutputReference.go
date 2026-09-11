@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleintegrationsclient/internal"
 )
 
 type GoogleIntegrationsClientCloudKmsConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -49,15 +49,15 @@ type GoogleIntegrationsClientCloudKmsConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,14 +73,14 @@ type GoogleIntegrationsClientCloudKmsConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetKeyVersion()
 	ResetKmsProjectId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,7 +90,7 @@ type GoogleIntegrationsClientCloudKmsConfigOutputReference interface {
 
 // The jsii proxy struct for GoogleIntegrationsClientCloudKmsConfigOutputReference
 type jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -253,8 +253,8 @@ func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -264,7 +264,7 @@ func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) Terraf
 }
 
 
-func NewGoogleIntegrationsClientCloudKmsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleIntegrationsClientCloudKmsConfigOutputReference {
+func NewGoogleIntegrationsClientCloudKmsConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleIntegrationsClientCloudKmsConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleIntegrationsClientCloudKmsConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -273,7 +273,7 @@ func NewGoogleIntegrationsClientCloudKmsConfigOutputReference(terraformResource 
 	j := jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientCloudKmsConfigOutputReference",
+		"@cdktn/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientCloudKmsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -281,11 +281,11 @@ func NewGoogleIntegrationsClientCloudKmsConfigOutputReference(terraformResource 
 	return &j
 }
 
-func NewGoogleIntegrationsClientCloudKmsConfigOutputReference_Override(g GoogleIntegrationsClientCloudKmsConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleIntegrationsClientCloudKmsConfigOutputReference_Override(g GoogleIntegrationsClientCloudKmsConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientCloudKmsConfigOutputReference",
+		"@cdktn/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientCloudKmsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -390,7 +390,7 @@ func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,11 +430,11 @@ func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) GetAny
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -558,8 +558,8 @@ func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) GetStr
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -571,16 +571,16 @@ func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) Interp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -603,8 +603,8 @@ func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) ResetK
 	)
 }
 
-func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -612,7 +612,7 @@ func (g *jsiiProxy_GoogleIntegrationsClientCloudKmsConfigOutputReference) Resolv
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

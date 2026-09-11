@@ -56,6 +56,10 @@ func (t *jsiiProxy_TimestreamwriteDatabase) validateInterpolationForAttributePar
 	return nil
 }
 
+func (t *jsiiProxy_TimestreamwriteDatabase) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TimestreamwriteDatabase) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (t *jsiiProxy_TimestreamwriteDatabase) validateMoveToIdParameters(id *strin
 }
 
 func (t *jsiiProxy_TimestreamwriteDatabase) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TimestreamwriteDatabase) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_TimestreamwriteDatabase) validateSetKmsKeyIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_TimestreamwriteDatabase) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_TimestreamwriteDatabase) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

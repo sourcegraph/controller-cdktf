@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/dnsmanagedzone/internal"
 )
 
 type DnsManagedZoneDnssecConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -45,15 +45,15 @@ type DnsManagedZoneDnssecConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,9 +69,9 @@ type DnsManagedZoneDnssecConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDefaultKeySpecs(value interface{})
 	ResetDefaultKeySpecs()
 	ResetKind()
@@ -79,7 +79,7 @@ type DnsManagedZoneDnssecConfigOutputReference interface {
 	ResetState()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type DnsManagedZoneDnssecConfigOutputReference interface {
 
 // The jsii proxy struct for DnsManagedZoneDnssecConfigOutputReference
 type jsiiProxy_DnsManagedZoneDnssecConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference) TerraformResource(
 }
 
 
-func NewDnsManagedZoneDnssecConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DnsManagedZoneDnssecConfigOutputReference {
+func NewDnsManagedZoneDnssecConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DnsManagedZoneDnssecConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDnsManagedZoneDnssecConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewDnsManagedZoneDnssecConfigOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DnsManagedZoneDnssecConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference",
+		"@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewDnsManagedZoneDnssecConfigOutputReference(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewDnsManagedZoneDnssecConfigOutputReference_Override(d DnsManagedZoneDnssecConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDnsManagedZoneDnssecConfigOutputReference_Override(d DnsManagedZoneDnssecConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference",
+		"@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -387,11 +387,11 @@ func (d *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference) GetAnyMapAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -515,8 +515,8 @@ func (d *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference) GetStringMapAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -528,16 +528,16 @@ func (d *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (d *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (d *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference) ResetState() {
 	)
 }
 
-func (d *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (d *jsiiProxy_DnsManagedZoneDnssecConfigOutputReference) Resolve(_context c
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

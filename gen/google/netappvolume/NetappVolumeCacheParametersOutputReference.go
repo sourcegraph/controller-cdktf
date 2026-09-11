@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/netappvolume/internal"
 )
 
 type NetappVolumeCacheParametersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CacheConfig() NetappVolumeCacheParametersCacheConfigOutputReference
 	CacheConfigInput() *NetappVolumeCacheParametersCacheConfig
 	CacheState() *string
@@ -58,15 +58,15 @@ type NetappVolumeCacheParametersOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -82,9 +82,9 @@ type NetappVolumeCacheParametersOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCacheConfig(value *NetappVolumeCacheParametersCacheConfig)
 	ResetCacheConfig()
 	ResetEnableGlobalFileLock()
@@ -95,7 +95,7 @@ type NetappVolumeCacheParametersOutputReference interface {
 	ResetPeerVolumeName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,7 +105,7 @@ type NetappVolumeCacheParametersOutputReference interface {
 
 // The jsii proxy struct for NetappVolumeCacheParametersOutputReference
 type jsiiProxy_NetappVolumeCacheParametersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NetappVolumeCacheParametersOutputReference) CacheConfig() NetappVolumeCacheParametersCacheConfigOutputReference {
@@ -348,8 +348,8 @@ func (j *jsiiProxy_NetappVolumeCacheParametersOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_NetappVolumeCacheParametersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NetappVolumeCacheParametersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -359,7 +359,7 @@ func (j *jsiiProxy_NetappVolumeCacheParametersOutputReference) TerraformResource
 }
 
 
-func NewNetappVolumeCacheParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetappVolumeCacheParametersOutputReference {
+func NewNetappVolumeCacheParametersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) NetappVolumeCacheParametersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNetappVolumeCacheParametersOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -368,7 +368,7 @@ func NewNetappVolumeCacheParametersOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_NetappVolumeCacheParametersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -376,11 +376,11 @@ func NewNetappVolumeCacheParametersOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewNetappVolumeCacheParametersOutputReference_Override(n NetappVolumeCacheParametersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewNetappVolumeCacheParametersOutputReference_Override(n NetappVolumeCacheParametersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference",
+		"@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)
@@ -496,7 +496,7 @@ func (j *jsiiProxy_NetappVolumeCacheParametersOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeCacheParametersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetappVolumeCacheParametersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,11 +536,11 @@ func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -664,8 +664,8 @@ func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -677,16 +677,16 @@ func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -760,8 +760,8 @@ func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) ResetPeerVolumeNa
 	)
 }
 
-func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -769,7 +769,7 @@ func (n *jsiiProxy_NetappVolumeCacheParametersOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

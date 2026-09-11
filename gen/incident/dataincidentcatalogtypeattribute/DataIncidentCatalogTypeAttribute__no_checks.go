@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataIncidentCatalogTypeAttribute) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (d *jsiiProxy_DataIncidentCatalogTypeAttribute) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataIncidentCatalogTypeAttribute_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataIncidentCatalogTypeAttribute) validateSetCountParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataIncidentCatalogTypeAttribute) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataIncidentCatalogTypeAttribute) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

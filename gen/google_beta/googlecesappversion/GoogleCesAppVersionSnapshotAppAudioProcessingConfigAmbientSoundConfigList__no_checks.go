@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigAmbientSou
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigAmbientSou
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigAmbientSou
 	return nil
 }
 
-func validateNewGoogleCesAppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCesAppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

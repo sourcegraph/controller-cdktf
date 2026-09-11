@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDataplexAssetIamMember) validateInterpolationForAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataplexAssetIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexAssetIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleDataplexAssetIamMember) validateOverrideLogicalIdParame
 }
 
 func (g *jsiiProxy_GoogleDataplexAssetIamMember) validatePutConditionParameters(value *GoogleDataplexAssetIamMemberCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexAssetIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleDataplexAssetIamMember) validateSetLakeParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDataplexAssetIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

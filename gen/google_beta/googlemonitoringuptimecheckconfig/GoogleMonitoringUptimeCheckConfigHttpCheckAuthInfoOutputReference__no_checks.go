@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputRefer
 	return nil
 }
 
-func validateNewGoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

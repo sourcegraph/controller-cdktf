@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsList
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsList
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsList
 	return nil
 }
 
-func validateNewGoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

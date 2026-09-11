@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGatewayVpnInterfacesList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeHaVpnGatewayVpnInterfacesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeHaVpnGatewayVpnInterfacesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGatewayVpnInterfacesList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeHaVpnGatewayVpnInterfacesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeHaVpnGatewayVpnInterfacesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGatewayVpnInterfacesList) validateSetWr
 	return nil
 }
 
-func validateNewDataGoogleComputeHaVpnGatewayVpnInterfacesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeHaVpnGatewayVpnInterfacesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

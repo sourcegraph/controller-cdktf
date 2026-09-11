@@ -40,7 +40,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesOutputReference
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesOutputReference
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewOracleDatabaseExascaleDbStorageVaultPropertiesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOracleDatabaseExascaleDbStorageVaultPropertiesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

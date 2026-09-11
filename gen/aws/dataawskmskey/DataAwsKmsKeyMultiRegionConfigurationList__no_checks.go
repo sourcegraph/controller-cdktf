@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewDataAwsKmsKeyMultiRegionConfigurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsKmsKeyMultiRegionConfigurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

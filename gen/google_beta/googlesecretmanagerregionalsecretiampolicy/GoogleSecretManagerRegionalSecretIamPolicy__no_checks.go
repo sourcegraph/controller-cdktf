@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleSecretManagerRegionalSecretIamPolicy) validateInterpola
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSecretManagerRegionalSecretIamPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecretManagerRegionalSecretIamPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (g *jsiiProxy_GoogleSecretManagerRegionalSecretIamPolicy) validateMoveToIdP
 }
 
 func (g *jsiiProxy_GoogleSecretManagerRegionalSecretIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecretManagerRegionalSecretIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecretIamPolicy) validateSetIdPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerRegionalSecretIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecretIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

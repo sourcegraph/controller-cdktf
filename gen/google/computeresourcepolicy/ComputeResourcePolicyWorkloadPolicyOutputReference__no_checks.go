@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeResourcePolicyWorkloadPolicyOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ComputeResourcePolicyWorkloadPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeResourcePolicyWorkloadPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeResourcePolicyWorkloadPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeResourcePolicyWorkloadPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ComputeResourcePolicyWorkloadPolicyOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ComputeResourcePolicyWorkloadPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeResourcePolicyWorkloadPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ComputeResourcePolicyWorkloadPolicyOutputReference) validateS
 	return nil
 }
 
-func validateNewComputeResourcePolicyWorkloadPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeResourcePolicyWorkloadPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

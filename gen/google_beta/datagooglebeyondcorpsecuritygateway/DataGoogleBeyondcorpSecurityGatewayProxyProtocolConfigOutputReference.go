@@ -4,14 +4,14 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglebeyondcorpsecuritygateway/internal"
 )
 
 type DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowedClientHeaders() *[]*string
-	ClientIp() cdktf.IResolvable
+	ClientIp() cdktn.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -33,21 +33,21 @@ type DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference inter
 	GatewayIdentity() *string
 	InternalValue() *DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfig
 	SetInternalValue(val *DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfig)
-	MetadataHeaders() cdktf.StringMap
+	MetadataHeaders() cdktn.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,12 +63,12 @@ type DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,7 +78,7 @@ type DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference inter
 
 // The jsii proxy struct for DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference
 type jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) AllowedClientHeaders() *[]*string {
@@ -91,8 +91,8 @@ func (j *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) ClientIp() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) ClientIp() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"clientIp",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) MetadataHeaders() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) MetadataHeaders() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"metadataHeaders",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -202,7 +202,7 @@ func (j *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputR
 }
 
 
-func NewDataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference {
+func NewDataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -211,7 +211,7 @@ func NewDataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference(te
 	j := jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleBeyondcorpSecurityGateway.DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleBeyondcorpSecurityGateway.DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -219,11 +219,11 @@ func NewDataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference(te
 	return &j
 }
 
-func NewDataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference_Override(d DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference_Override(d DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleBeyondcorpSecurityGateway.DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleBeyondcorpSecurityGateway.DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -273,7 +273,7 @@ func (j *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,11 +313,11 @@ func (d *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -441,8 +441,8 @@ func (d *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -454,24 +454,24 @@ func (d *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -479,7 +479,7 @@ func (d *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputR
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

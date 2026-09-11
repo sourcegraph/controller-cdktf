@@ -56,6 +56,10 @@ func (d *jsiiProxy_DirectBigquery) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (d *jsiiProxy_DirectBigquery) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectBigquery) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DirectBigquery) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (d *jsiiProxy_DirectBigquery) validatePutQueryDelayParameters(value *DirectBigqueryQueryDelay) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectBigquery) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_DirectBigquery) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DirectBigquery) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DirectBigquery) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

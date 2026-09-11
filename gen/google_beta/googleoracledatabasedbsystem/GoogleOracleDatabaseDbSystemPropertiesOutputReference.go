@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleoracledatabasedbsystem/internal"
 )
 
 type GoogleOracleDatabaseDbSystemPropertiesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -85,9 +85,9 @@ type GoogleOracleDatabaseDbSystemPropertiesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeZone() GoogleOracleDatabaseDbSystemPropertiesTimeZoneOutputReference
 	TimeZoneInput() *GoogleOracleDatabaseDbSystemPropertiesTimeZone
 	// Experimental.
@@ -95,7 +95,7 @@ type GoogleOracleDatabaseDbSystemPropertiesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -111,9 +111,9 @@ type GoogleOracleDatabaseDbSystemPropertiesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDataCollectionOptions(value *GoogleOracleDatabaseDbSystemPropertiesDataCollectionOptions)
 	PutDbHome(value *GoogleOracleDatabaseDbSystemPropertiesDbHome)
 	PutDbSystemOptions(value *GoogleOracleDatabaseDbSystemPropertiesDbSystemOptions)
@@ -132,7 +132,7 @@ type GoogleOracleDatabaseDbSystemPropertiesOutputReference interface {
 	ResetTimeZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -142,7 +142,7 @@ type GoogleOracleDatabaseDbSystemPropertiesOutputReference interface {
 
 // The jsii proxy struct for GoogleOracleDatabaseDbSystemPropertiesOutputReference
 type jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference) ComplexObjectIndex() interface{} {
@@ -575,8 +575,8 @@ func (j *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -606,7 +606,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference) TimeZo
 }
 
 
-func NewGoogleOracleDatabaseDbSystemPropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleOracleDatabaseDbSystemPropertiesOutputReference {
+func NewGoogleOracleDatabaseDbSystemPropertiesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleOracleDatabaseDbSystemPropertiesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleOracleDatabaseDbSystemPropertiesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -615,7 +615,7 @@ func NewGoogleOracleDatabaseDbSystemPropertiesOutputReference(terraformResource 
 	j := jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleOracleDatabaseDbSystem.GoogleOracleDatabaseDbSystemPropertiesOutputReference",
+		"@cdktn/provider-google-beta.googleOracleDatabaseDbSystem.GoogleOracleDatabaseDbSystemPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -623,11 +623,11 @@ func NewGoogleOracleDatabaseDbSystemPropertiesOutputReference(terraformResource 
 	return &j
 }
 
-func NewGoogleOracleDatabaseDbSystemPropertiesOutputReference_Override(g GoogleOracleDatabaseDbSystemPropertiesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleOracleDatabaseDbSystemPropertiesOutputReference_Override(g GoogleOracleDatabaseDbSystemPropertiesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleOracleDatabaseDbSystem.GoogleOracleDatabaseDbSystemPropertiesOutputReference",
+		"@cdktn/provider-google-beta.googleOracleDatabaseDbSystem.GoogleOracleDatabaseDbSystemPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -831,7 +831,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -871,11 +871,11 @@ func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference) GetAny
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -999,8 +999,8 @@ func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference) GetStr
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -1012,16 +1012,16 @@ func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference) Interp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1168,8 +1168,8 @@ func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference) ResetT
 	)
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1177,7 +1177,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesOutputReference) Resolv
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

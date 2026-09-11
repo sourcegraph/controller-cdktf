@@ -40,11 +40,11 @@ func (d *jsiiProxy_DeploymentManagerDeploymentLabelsOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentManagerDeploymentLabelsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeploymentManagerDeploymentLabelsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentManagerDeploymentLabelsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentManagerDeploymentLabelsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_DeploymentManagerDeploymentLabelsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentManagerDeploymentLabelsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeploymentManagerDeploymentLabelsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DeploymentManagerDeploymentLabelsOutputReference) validateSet
 	return nil
 }
 
-func validateNewDeploymentManagerDeploymentLabelsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDeploymentManagerDeploymentLabelsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

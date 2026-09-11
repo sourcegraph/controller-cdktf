@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/containercluster/internal"
 )
 
 type ContainerClusterUserManagedKeysConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AggregationCa() *string
 	SetAggregationCa(val *string)
 	AggregationCaInput() *string
@@ -59,15 +59,15 @@ type ContainerClusterUserManagedKeysConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -83,9 +83,9 @@ type ContainerClusterUserManagedKeysConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAggregationCa()
 	ResetClusterCa()
 	ResetControlPlaneDiskEncryptionKey()
@@ -96,7 +96,7 @@ type ContainerClusterUserManagedKeysConfigOutputReference interface {
 	ResetServiceAccountVerificationKeys()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -106,7 +106,7 @@ type ContainerClusterUserManagedKeysConfigOutputReference interface {
 
 // The jsii proxy struct for ContainerClusterUserManagedKeysConfigOutputReference
 type jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference) AggregationCa() *string {
@@ -339,8 +339,8 @@ func (j *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -350,7 +350,7 @@ func (j *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference) Terrafo
 }
 
 
-func NewContainerClusterUserManagedKeysConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterUserManagedKeysConfigOutputReference {
+func NewContainerClusterUserManagedKeysConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ContainerClusterUserManagedKeysConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewContainerClusterUserManagedKeysConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -359,7 +359,7 @@ func NewContainerClusterUserManagedKeysConfigOutputReference(terraformResource c
 	j := jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerCluster.ContainerClusterUserManagedKeysConfigOutputReference",
+		"@cdktn/provider-google.containerCluster.ContainerClusterUserManagedKeysConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -367,11 +367,11 @@ func NewContainerClusterUserManagedKeysConfigOutputReference(terraformResource c
 	return &j
 }
 
-func NewContainerClusterUserManagedKeysConfigOutputReference_Override(c ContainerClusterUserManagedKeysConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContainerClusterUserManagedKeysConfigOutputReference_Override(c ContainerClusterUserManagedKeysConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerCluster.ContainerClusterUserManagedKeysConfigOutputReference",
+		"@cdktn/provider-google.containerCluster.ContainerClusterUserManagedKeysConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -509,7 +509,7 @@ func (j *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,11 +549,11 @@ func (c *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference) GetAnyM
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -677,8 +677,8 @@ func (c *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference) GetStri
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -690,16 +690,16 @@ func (c *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference) Interpo
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -770,8 +770,8 @@ func (c *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference) ResetSe
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -779,7 +779,7 @@ func (c *jsiiProxy_ContainerClusterUserManagedKeysConfigOutputReference) Resolve
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleNetworkConnectivityDestination) validateInterpolationFo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivityDestination) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivityDestination) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleNetworkConnectivityDestination) validatePutEndpointsPar
 }
 
 func (g *jsiiProxy_GoogleNetworkConnectivityDestination) validatePutTimeoutsParameters(value *GoogleNetworkConnectivityDestinationTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkConnectivityDestination) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityDestination) validateSetLabelsParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityDestination) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityDestination) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

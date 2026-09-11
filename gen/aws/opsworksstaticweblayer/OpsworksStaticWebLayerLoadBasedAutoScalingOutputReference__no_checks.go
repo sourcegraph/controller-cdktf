@@ -40,7 +40,7 @@ func (o *jsiiProxy_OpsworksStaticWebLayerLoadBasedAutoScalingOutputReference) va
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksStaticWebLayerLoadBasedAutoScalingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpsworksStaticWebLayerLoadBasedAutoScalingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (o *jsiiProxy_OpsworksStaticWebLayerLoadBasedAutoScalingOutputReference) va
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksStaticWebLayerLoadBasedAutoScalingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksStaticWebLayerLoadBasedAutoScalingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_OpsworksStaticWebLayerLoadBasedAutoScalingOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksStaticWebLayerLoadBasedAutoScalingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksStaticWebLayerLoadBasedAutoScalingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewOpsworksStaticWebLayerLoadBasedAutoScalingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOpsworksStaticWebLayerLoadBasedAutoScalingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

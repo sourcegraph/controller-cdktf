@@ -56,6 +56,10 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) validateInterpolationForAttribut
 	return nil
 }
 
+func (k *jsiiProxy_KinesisAnalyticsApplication) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisAnalyticsApplication) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) validatePutOutputsParameters(val
 }
 
 func (k *jsiiProxy_KinesisAnalyticsApplication) validatePutReferenceDataSourcesParameters(value *KinesisAnalyticsApplicationReferenceDataSources) error {
+	return nil
+}
+
+func (k *jsiiProxy_KinesisAnalyticsApplication) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplication) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplication) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KinesisAnalyticsApplication) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -128,6 +132,10 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutVersionParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleComputeInstanceGroupManager_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -164,7 +172,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

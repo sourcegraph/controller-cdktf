@@ -40,11 +40,11 @@ func (a *jsiiProxy_AcmCertificateValidationOptionOutputReference) validateGetStr
 	return nil
 }
 
-func (a *jsiiProxy_AcmCertificateValidationOptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AcmCertificateValidationOptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AcmCertificateValidationOptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AcmCertificateValidationOptionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_AcmCertificateValidationOptionOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_AcmCertificateValidationOptionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AcmCertificateValidationOptionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_AcmCertificateValidationOptionOutputReference) validateSetVal
 	return nil
 }
 
-func validateNewAcmCertificateValidationOptionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAcmCertificateValidationOptionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

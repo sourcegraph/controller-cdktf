@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsKmsSecretSecretList) validateGetParameters(index *floa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKmsSecretSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKmsSecretSecretList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataAwsKmsSecretSecretList) validateSetTerraformAttributePara
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKmsSecretSecretList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsKmsSecretSecretList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataAwsKmsSecretSecretList) validateSetWrapsSetParameters(val
 	return nil
 }
 
-func validateNewDataAwsKmsSecretSecretListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsKmsSecretSecretListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

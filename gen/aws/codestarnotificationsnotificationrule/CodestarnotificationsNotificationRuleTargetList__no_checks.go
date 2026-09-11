@@ -12,7 +12,7 @@ func (c *jsiiProxy_CodestarnotificationsNotificationRuleTargetList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_CodestarnotificationsNotificationRuleTargetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodestarnotificationsNotificationRuleTargetList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CodestarnotificationsNotificationRuleTargetList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_CodestarnotificationsNotificationRuleTargetList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodestarnotificationsNotificationRuleTargetList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CodestarnotificationsNotificationRuleTargetList) validateSetW
 	return nil
 }
 
-func validateNewCodestarnotificationsNotificationRuleTargetListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCodestarnotificationsNotificationRuleTargetListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

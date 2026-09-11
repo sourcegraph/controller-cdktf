@@ -56,6 +56,10 @@ func (d *jsiiProxy_DatasyncLocationSmb) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncLocationSmb) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationSmb) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DatasyncLocationSmb) validateOverrideLogicalIdParameters(newL
 }
 
 func (d *jsiiProxy_DatasyncLocationSmb) validatePutMountOptionsParameters(value *DatasyncLocationSmbMountOptions) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncLocationSmb) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_DatasyncLocationSmb) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncLocationSmb) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DatasyncLocationSmb) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDataprocBatchStateHistoryList) validateGetParameters(in
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocBatchStateHistoryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataprocBatchStateHistoryList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleDataprocBatchStateHistoryList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchStateHistoryList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataprocBatchStateHistoryList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleDataprocBatchStateHistoryList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewGoogleDataprocBatchStateHistoryListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDataprocBatchStateHistoryListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

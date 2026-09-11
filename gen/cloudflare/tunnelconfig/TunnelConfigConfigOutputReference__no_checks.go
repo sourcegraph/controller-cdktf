@@ -40,7 +40,7 @@ func (t *jsiiProxy_TunnelConfigConfigOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (t *jsiiProxy_TunnelConfigConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TunnelConfigConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (t *jsiiProxy_TunnelConfigConfigOutputReference) validatePutWarpRoutingPara
 	return nil
 }
 
-func (t *jsiiProxy_TunnelConfigConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TunnelConfigConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_TunnelConfigConfigOutputReference) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TunnelConfigConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTunnelConfigConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTunnelConfigConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

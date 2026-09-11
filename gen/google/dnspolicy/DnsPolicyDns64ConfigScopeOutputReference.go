@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/dnspolicy/internal"
 )
 
 type DnsPolicyDns64ConfigScopeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllQueries() interface{}
 	SetAllQueries(val interface{})
 	AllQueriesInput() interface{}
@@ -37,15 +37,15 @@ type DnsPolicyDns64ConfigScopeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type DnsPolicyDns64ConfigScopeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllQueries()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type DnsPolicyDns64ConfigScopeOutputReference interface {
 
 // The jsii proxy struct for DnsPolicyDns64ConfigScopeOutputReference
 type jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) AllQueries() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) TerraformResource()
 }
 
 
-func NewDnsPolicyDns64ConfigScopeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DnsPolicyDns64ConfigScopeOutputReference {
+func NewDnsPolicyDns64ConfigScopeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DnsPolicyDns64ConfigScopeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDnsPolicyDns64ConfigScopeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewDnsPolicyDns64ConfigScopeOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference",
+		"@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewDnsPolicyDns64ConfigScopeOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewDnsPolicyDns64ConfigScopeOutputReference_Override(d DnsPolicyDns64ConfigScopeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDnsPolicyDns64ConfigScopeOutputReference_Override(d DnsPolicyDns64ConfigScopeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference",
+		"@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -421,8 +421,8 @@ func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -434,16 +434,16 @@ func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) InterpolationAsList
 	return returns
 }
 
-func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) ResetAllQueries() {
 	)
 }
 
-func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

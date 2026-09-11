@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

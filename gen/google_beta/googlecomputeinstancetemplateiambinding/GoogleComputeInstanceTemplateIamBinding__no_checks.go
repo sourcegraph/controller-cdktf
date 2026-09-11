@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateIamBinding) validateInterpolatio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceTemplateIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceTemplateIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateIamBinding) validateOverrideLogi
 }
 
 func (g *jsiiProxy_GoogleComputeInstanceTemplateIamBinding) validatePutConditionParameters(value *GoogleComputeInstanceTemplateIamBindingCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceTemplateIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateIamBinding) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

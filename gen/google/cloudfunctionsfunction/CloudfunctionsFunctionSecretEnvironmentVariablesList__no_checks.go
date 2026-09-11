@@ -12,7 +12,7 @@ func (c *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesList) validat
 	return nil
 }
 
-func (c *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesList) validat
 	return nil
 }
 
-func (j *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesList) validat
 	return nil
 }
 
-func validateNewCloudfunctionsFunctionSecretEnvironmentVariablesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCloudfunctionsFunctionSecretEnvironmentVariablesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

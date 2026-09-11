@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleWorkbenchInstanceUpgradeHistoryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleWorkbenchInstanceUpgradeHistoryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleWorkbenchInstanceUpgradeHistoryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateInterpolatio
 	return nil
 }
 
+func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateMoveToIdPara
 }
 
 func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

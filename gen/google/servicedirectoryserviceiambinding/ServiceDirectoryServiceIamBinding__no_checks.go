@@ -56,6 +56,10 @@ func (s *jsiiProxy_ServiceDirectoryServiceIamBinding) validateInterpolationForAt
 	return nil
 }
 
+func (s *jsiiProxy_ServiceDirectoryServiceIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceDirectoryServiceIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_ServiceDirectoryServiceIamBinding) validateOverrideLogicalIdP
 }
 
 func (s *jsiiProxy_ServiceDirectoryServiceIamBinding) validatePutConditionParameters(value *ServiceDirectoryServiceIamBindingCondition) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceDirectoryServiceIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_ServiceDirectoryServiceIamBinding) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ServiceDirectoryServiceIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ServiceDirectoryServiceIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

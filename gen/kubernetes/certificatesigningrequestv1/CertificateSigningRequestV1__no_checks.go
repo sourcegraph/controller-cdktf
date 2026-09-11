@@ -56,6 +56,10 @@ func (c *jsiiProxy_CertificateSigningRequestV1) validateInterpolationForAttribut
 	return nil
 }
 
+func (c *jsiiProxy_CertificateSigningRequestV1) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CertificateSigningRequestV1) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (c *jsiiProxy_CertificateSigningRequestV1) validatePutSpecParameters(value 
 }
 
 func (c *jsiiProxy_CertificateSigningRequestV1) validatePutTimeoutsParameters(value *CertificateSigningRequestV1Timeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateSigningRequestV1) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_CertificateSigningRequestV1) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_CertificateSigningRequestV1) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CertificateSigningRequestV1) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

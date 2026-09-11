@@ -12,7 +12,7 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) validateGetP
 	return nil
 }
 
-func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) validateSetW
 	return nil
 }
 
-func validateNewFilestoreInstanceFileSharesNfsExportOptionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewFilestoreInstanceFileSharesNfsExportOptionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

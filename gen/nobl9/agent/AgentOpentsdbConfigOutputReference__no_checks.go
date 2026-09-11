@@ -40,11 +40,11 @@ func (a *jsiiProxy_AgentOpentsdbConfigOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (a *jsiiProxy_AgentOpentsdbConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AgentOpentsdbConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AgentOpentsdbConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AgentOpentsdbConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_AgentOpentsdbConfigOutputReference) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_AgentOpentsdbConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AgentOpentsdbConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_AgentOpentsdbConfigOutputReference) validateSetUrlParameters(
 	return nil
 }
 
-func validateNewAgentOpentsdbConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAgentOpentsdbConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

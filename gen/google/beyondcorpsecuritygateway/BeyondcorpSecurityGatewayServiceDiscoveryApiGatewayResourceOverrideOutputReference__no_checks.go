@@ -40,11 +40,11 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOv
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverrideOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverrideOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverrideOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverrideOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOv
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverrideOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverrideOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverrideOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverrideOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

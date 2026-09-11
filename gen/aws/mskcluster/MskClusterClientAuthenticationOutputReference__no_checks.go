@@ -40,7 +40,7 @@ func (m *jsiiProxy_MskClusterClientAuthenticationOutputReference) validateGetStr
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterClientAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskClusterClientAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (m *jsiiProxy_MskClusterClientAuthenticationOutputReference) validatePutTls
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterClientAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskClusterClientAuthenticationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_MskClusterClientAuthenticationOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_MskClusterClientAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MskClusterClientAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_MskClusterClientAuthenticationOutputReference) validateSetUna
 	return nil
 }
 
-func validateNewMskClusterClientAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMskClusterClientAuthenticationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

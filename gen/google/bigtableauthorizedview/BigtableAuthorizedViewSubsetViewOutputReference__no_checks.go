@@ -40,7 +40,7 @@ func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validateGetS
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validatePutF
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBigtableAuthorizedViewSubsetViewOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBigtableAuthorizedViewSubsetViewOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

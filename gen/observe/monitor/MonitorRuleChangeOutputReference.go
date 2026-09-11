@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/monitor/internal"
 )
 
 type MonitorRuleChangeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AggregateFunction() *string
 	SetAggregateFunction(val *string)
 	AggregateFunctionInput() *string
@@ -55,15 +55,15 @@ type MonitorRuleChangeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,16 +79,16 @@ type MonitorRuleChangeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAggregateFunction()
 	ResetChangeType()
 	ResetCompareValue()
 	ResetCompareValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,7 +98,7 @@ type MonitorRuleChangeOutputReference interface {
 
 // The jsii proxy struct for MonitorRuleChangeOutputReference
 type jsiiProxy_MonitorRuleChangeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MonitorRuleChangeOutputReference) AggregateFunction() *string {
@@ -301,8 +301,8 @@ func (j *jsiiProxy_MonitorRuleChangeOutputReference) TerraformAttribute() *strin
 	return returns
 }
 
-func (j *jsiiProxy_MonitorRuleChangeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MonitorRuleChangeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -312,7 +312,7 @@ func (j *jsiiProxy_MonitorRuleChangeOutputReference) TerraformResource() cdktf.I
 }
 
 
-func NewMonitorRuleChangeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorRuleChangeOutputReference {
+func NewMonitorRuleChangeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MonitorRuleChangeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMonitorRuleChangeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -321,7 +321,7 @@ func NewMonitorRuleChangeOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_MonitorRuleChangeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.monitor.MonitorRuleChangeOutputReference",
+		"@cdktn/provider-observe.monitor.MonitorRuleChangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -329,11 +329,11 @@ func NewMonitorRuleChangeOutputReference(terraformResource cdktf.IInterpolatingP
 	return &j
 }
 
-func NewMonitorRuleChangeOutputReference_Override(m MonitorRuleChangeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMonitorRuleChangeOutputReference_Override(m MonitorRuleChangeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.monitor.MonitorRuleChangeOutputReference",
+		"@cdktn/provider-observe.monitor.MonitorRuleChangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -460,7 +460,7 @@ func (j *jsiiProxy_MonitorRuleChangeOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_MonitorRuleChangeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorRuleChangeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,11 +500,11 @@ func (m *jsiiProxy_MonitorRuleChangeOutputReference) GetAnyMapAttribute(terrafor
 	return returns
 }
 
-func (m *jsiiProxy_MonitorRuleChangeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitorRuleChangeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -628,8 +628,8 @@ func (m *jsiiProxy_MonitorRuleChangeOutputReference) GetStringMapAttribute(terra
 	return returns
 }
 
-func (m *jsiiProxy_MonitorRuleChangeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MonitorRuleChangeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -641,16 +641,16 @@ func (m *jsiiProxy_MonitorRuleChangeOutputReference) InterpolationAsList() cdktf
 	return returns
 }
 
-func (m *jsiiProxy_MonitorRuleChangeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MonitorRuleChangeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -689,8 +689,8 @@ func (m *jsiiProxy_MonitorRuleChangeOutputReference) ResetCompareValues() {
 	)
 }
 
-func (m *jsiiProxy_MonitorRuleChangeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MonitorRuleChangeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -698,7 +698,7 @@ func (m *jsiiProxy_MonitorRuleChangeOutputReference) Resolve(_context cdktf.IRes
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

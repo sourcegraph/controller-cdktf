@@ -40,11 +40,11 @@ func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -100,11 +100,11 @@ func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSelfSignedCertSubjectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSelfSignedCertSubjectOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

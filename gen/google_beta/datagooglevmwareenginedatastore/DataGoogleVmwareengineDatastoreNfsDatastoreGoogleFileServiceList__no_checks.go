@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceL
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceL
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceL
 	return nil
 }
 
-func validateNewDataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

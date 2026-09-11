@@ -40,11 +40,11 @@ func (b *jsiiProxy_BigqueryDatasetAccessConditionAOutputReference) validateGetSt
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryDatasetAccessConditionAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryDatasetAccessConditionAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryDatasetAccessConditionAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryDatasetAccessConditionAOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessConditionAOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessConditionAOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryDatasetAccessConditionAOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessConditionAOutputReference) validateSetTi
 	return nil
 }
 
-func validateNewBigqueryDatasetAccessConditionAOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBigqueryDatasetAccessConditionAOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

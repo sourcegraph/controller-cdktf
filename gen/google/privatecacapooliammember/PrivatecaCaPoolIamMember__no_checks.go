@@ -56,6 +56,10 @@ func (p *jsiiProxy_PrivatecaCaPoolIamMember) validateInterpolationForAttributePa
 	return nil
 }
 
+func (p *jsiiProxy_PrivatecaCaPoolIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCaPoolIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (p *jsiiProxy_PrivatecaCaPoolIamMember) validateOverrideLogicalIdParameters
 }
 
 func (p *jsiiProxy_PrivatecaCaPoolIamMember) validatePutConditionParameters(value *PrivatecaCaPoolIamMemberCondition) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivatecaCaPoolIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamMember) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PrivatecaCaPoolIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

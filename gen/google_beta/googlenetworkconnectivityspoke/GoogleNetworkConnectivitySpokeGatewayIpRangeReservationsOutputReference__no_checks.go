@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayIpRangeReservationsOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayIpRangeReservationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayIpRangeReservationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayIpRangeReservationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayIpRangeReservationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayIpRangeReservationsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayIpRangeReservationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayIpRangeReservationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkConnectivitySpokeGatewayIpRangeReservationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleNetworkConnectivitySpokeGatewayIpRangeReservationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

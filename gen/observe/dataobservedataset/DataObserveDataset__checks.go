@@ -8,7 +8,7 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DataObserveDataset) validateAddOverrideParameters(path *string, value interface{}) error {
@@ -116,7 +116,7 @@ func (d *jsiiProxy_DataObserveDataset) validatePutCorrelationTagParameters(value
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataObserveDatasetCorrelationTag:
 		value := value.(*[]*DataObserveDatasetCorrelationTag)
@@ -135,7 +135,7 @@ func (d *jsiiProxy_DataObserveDataset) validatePutCorrelationTagParameters(value
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataObserveDatasetCorrelationTag; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataObserveDatasetCorrelationTag; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -147,7 +147,7 @@ func (d *jsiiProxy_DataObserveDataset) validatePutStageParameters(value interfac
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataObserveDatasetStage:
 		value := value.(*[]*DataObserveDatasetStage)
@@ -166,8 +166,16 @@ func (d *jsiiProxy_DataObserveDataset) validatePutStageParameters(value interfac
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataObserveDatasetStage; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataObserveDatasetStage; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataObserveDataset) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil
@@ -259,11 +267,11 @@ func (j *jsiiProxy_DataObserveDataset) validateSetCountParameters(val interface{
 		// ok
 	case uint64:
 		// ok
-	case cdktf.TerraformCount:
+	case cdktn.TerraformCount:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktn.TerraformCount; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -278,7 +286,7 @@ func (j *jsiiProxy_DataObserveDataset) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveDataset) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataObserveDataset) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}

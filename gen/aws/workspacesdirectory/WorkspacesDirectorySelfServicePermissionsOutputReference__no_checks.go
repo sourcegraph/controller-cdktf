@@ -40,11 +40,11 @@ func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) val
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWorkspacesDirectorySelfServicePermissionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWorkspacesDirectorySelfServicePermissionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

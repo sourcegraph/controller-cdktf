@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicy) validateInterpolationForAt
 	return nil
 }
 
+func (c *jsiiProxy_ComputeOrganizationSecurityPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeOrganizationSecurityPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicy) validatePutAdvancedOptions
 }
 
 func (c *jsiiProxy_ComputeOrganizationSecurityPolicy) validatePutTimeoutsParameters(value *ComputeOrganizationSecurityPolicyTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeOrganizationSecurityPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicy) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

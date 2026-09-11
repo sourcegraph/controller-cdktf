@@ -12,7 +12,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingList) valid
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingList) valid
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingList) valid
 	return nil
 }
 
-func validateNewPagesProjectDeploymentConfigsPreviewServiceBindingListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPagesProjectDeploymentConfigsPreviewServiceBindingListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

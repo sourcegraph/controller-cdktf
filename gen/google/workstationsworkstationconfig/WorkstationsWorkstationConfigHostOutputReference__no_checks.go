@@ -40,7 +40,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigHostOutputReference) validateGet
 	return nil
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationConfigHostOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkstationsWorkstationConfigHostOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigHostOutputReference) validatePut
 	return nil
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationConfigHostOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkstationsWorkstationConfigHostOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigHostOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigHostOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigHostOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWorkstationsWorkstationConfigHostOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWorkstationsWorkstationConfigHostOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

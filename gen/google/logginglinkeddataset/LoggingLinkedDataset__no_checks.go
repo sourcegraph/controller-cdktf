@@ -56,6 +56,10 @@ func (l *jsiiProxy_LoggingLinkedDataset) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (l *jsiiProxy_LoggingLinkedDataset) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingLinkedDataset) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (l *jsiiProxy_LoggingLinkedDataset) validatePutBigqueryDatasetParameters(va
 }
 
 func (l *jsiiProxy_LoggingLinkedDataset) validatePutTimeoutsParameters(value *LoggingLinkedDatasetTimeouts) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingLinkedDataset) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_LoggingLinkedDataset) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LoggingLinkedDataset) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

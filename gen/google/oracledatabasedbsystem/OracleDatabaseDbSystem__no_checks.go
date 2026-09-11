@@ -56,6 +56,10 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) validateInterpolationForAttributePara
 	return nil
 }
 
+func (o *jsiiProxy_OracleDatabaseDbSystem) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OracleDatabaseDbSystem) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) validatePutPropertiesParameters(value
 }
 
 func (o *jsiiProxy_OracleDatabaseDbSystem) validatePutTimeoutsParameters(value *OracleDatabaseDbSystemTimeouts) error {
+	return nil
+}
+
+func (o *jsiiProxy_OracleDatabaseDbSystem) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystem) validateSetLabelsParameters(val *map[
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_OracleDatabaseDbSystem) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

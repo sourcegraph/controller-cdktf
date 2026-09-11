@@ -40,11 +40,11 @@ func (l *jsiiProxy_LexIntentDialogCodeHookOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentDialogCodeHookOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LexIntentDialogCodeHookOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentDialogCodeHookOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexIntentDialogCodeHookOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_LexIntentDialogCodeHookOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentDialogCodeHookOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LexIntentDialogCodeHookOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_LexIntentDialogCodeHookOutputReference) validateSetUriParamet
 	return nil
 }
 
-func validateNewLexIntentDialogCodeHookOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLexIntentDialogCodeHookOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

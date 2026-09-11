@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsOpensearchDomainNodeToNodeEncryptionList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainNodeToNodeEncryptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainNodeToNodeEncryptionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsOpensearchDomainNodeToNodeEncryptionList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsOpensearchDomainNodeToNodeEncryptionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsOpensearchDomainNodeToNodeEncryptionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsOpensearchDomainNodeToNodeEncryptionList) validateSetW
 	return nil
 }
 
-func validateNewDataAwsOpensearchDomainNodeToNodeEncryptionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsOpensearchDomainNodeToNodeEncryptionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

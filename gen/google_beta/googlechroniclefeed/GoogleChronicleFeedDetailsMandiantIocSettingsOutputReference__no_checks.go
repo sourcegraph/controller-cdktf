@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsMandiantIocSettingsOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsMandiantIocSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsMandiantIocSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsMandiantIocSettingsOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsMandiantIocSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsMandiantIocSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsMandiantIocSettingsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsMandiantIocSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsMandiantIocSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsMandiantIocSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsMandiantIocSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (m *jsiiProxy_MonitorV2NoDataRulesThresholdCompareGroupsCompareValuesOutput
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2NoDataRulesThresholdCompareGroupsCompareValuesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorV2NoDataRulesThresholdCompareGroupsCompareValuesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2NoDataRulesThresholdCompareGroupsCompareValuesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorV2NoDataRulesThresholdCompareGroupsCompareValuesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareGroupsCompareValuesOutput
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareGroupsCompareValuesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareGroupsCompareValuesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareGroupsCompareValuesOutput
 	return nil
 }
 
-func validateNewMonitorV2NoDataRulesThresholdCompareGroupsCompareValuesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewMonitorV2NoDataRulesThresholdCompareGroupsCompareValuesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

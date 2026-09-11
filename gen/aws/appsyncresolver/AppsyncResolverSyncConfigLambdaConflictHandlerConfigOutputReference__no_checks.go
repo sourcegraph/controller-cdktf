@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputRef
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

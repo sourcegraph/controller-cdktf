@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterface",
+		"@cdktn/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterface",
 		reflect.TypeOf((*DataAwsNetworkInterface)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -53,6 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putFilter", GoMethod: "PutFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "requesterId", GoGetter: "RequesterId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilter", GoMethod: "ResetFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -75,19 +76,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsNetworkInterface{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociation",
+		"@cdktn/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociation",
 		reflect.TypeOf((*DataAwsNetworkInterfaceAssociation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociationList",
+		"@cdktn/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociationList",
 		reflect.TypeOf((*DataAwsNetworkInterfaceAssociationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -103,12 +105,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsNetworkInterfaceAssociationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociationOutputReference",
+		"@cdktn/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociationOutputReference",
 		reflect.TypeOf((*DataAwsNetworkInterfaceAssociationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocationId", GoGetter: "AllocationId"},
@@ -142,16 +144,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsNetworkInterfaceAssociationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachment",
+		"@cdktn/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachment",
 		reflect.TypeOf((*DataAwsNetworkInterfaceAttachment)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachmentList",
+		"@cdktn/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachmentList",
 		reflect.TypeOf((*DataAwsNetworkInterfaceAttachmentList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -167,12 +169,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsNetworkInterfaceAttachmentList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachmentOutputReference",
+		"@cdktn/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachmentOutputReference",
 		reflect.TypeOf((*DataAwsNetworkInterfaceAttachmentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attachmentId", GoGetter: "AttachmentId"},
@@ -203,20 +205,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsNetworkInterfaceAttachmentOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceConfig",
+		"@cdktn/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceConfig",
 		reflect.TypeOf((*DataAwsNetworkInterfaceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceFilter",
+		"@cdktn/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceFilter",
 		reflect.TypeOf((*DataAwsNetworkInterfaceFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceFilterList",
+		"@cdktn/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceFilterList",
 		reflect.TypeOf((*DataAwsNetworkInterfaceFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -233,12 +235,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsNetworkInterfaceFilterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceFilterOutputReference",
+		"@cdktn/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceFilterOutputReference",
 		reflect.TypeOf((*DataAwsNetworkInterfaceFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -269,16 +271,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsNetworkInterfaceFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceTimeouts",
+		"@cdktn/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceTimeouts",
 		reflect.TypeOf((*DataAwsNetworkInterfaceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceTimeoutsOutputReference",
+		"@cdktn/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsNetworkInterfaceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -308,7 +310,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsNetworkInterfaceTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -5,13 +5,13 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/provider/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs google}.
 type GoogleProvider interface {
-	cdktf.TerraformProvider
+	cdktn.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
 	SetAccessApprovalCustomEndpoint(val *string)
 	AccessApprovalCustomEndpointInput() *string
@@ -109,7 +109,7 @@ type GoogleProvider interface {
 	SetBlockchainNodeEngineCustomEndpoint(val *string)
 	BlockchainNodeEngineCustomEndpointInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	CertificateManagerCustomEndpoint() *string
 	SetCertificateManagerCustomEndpoint(val *string)
 	CertificateManagerCustomEndpointInput() *string
@@ -582,7 +582,7 @@ type GoogleProvider interface {
 	SetTerraformAttributionLabelAdditionStrategy(val *string)
 	TerraformAttributionLabelAdditionStrategyInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformProviderSource() *string
 	// Experimental.
@@ -628,6 +628,19 @@ type GoogleProvider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAccessApprovalCustomEndpoint()
 	ResetAccessContextManagerCustomEndpoint()
 	ResetAccessToken()
@@ -839,11 +852,20 @@ type GoogleProvider interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for GoogleProvider
 type jsiiProxy_GoogleProvider struct {
-	internal.Type__cdktfTerraformProvider
+	internal.Type__cdktnTerraformProvider
 }
 
 func (j *jsiiProxy_GoogleProvider) AccessApprovalCustomEndpoint() *string {
@@ -1486,8 +1508,8 @@ func (j *jsiiProxy_GoogleProvider) BlockchainNodeEngineCustomEndpointInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProvider) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_GoogleProvider) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -4616,8 +4638,8 @@ func (j *jsiiProxy_GoogleProvider) TerraformAttributionLabelAdditionStrategyInpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_GoogleProvider) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -4897,7 +4919,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	j := jsiiProxy_GoogleProvider{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.provider.GoogleProvider",
+		"@cdktn/provider-google.provider.GoogleProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -4910,7 +4932,7 @@ func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.provider.GoogleProvider",
+		"@cdktn/provider-google.provider.GoogleProvider",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -6510,17 +6532,17 @@ func (j *jsiiProxy_GoogleProvider)SetZone(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a GoogleProvider resource upon running "cdktf plan <stack-name>".
-func GoogleProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a GoogleProvider resource upon running "cdktn plan <stack-name>".
+func GoogleProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateGoogleProvider_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.provider.GoogleProvider",
+		"@cdktn/provider-google.provider.GoogleProvider",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -6555,7 +6577,7 @@ func GoogleProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.provider.GoogleProvider",
+		"@cdktn/provider-google.provider.GoogleProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -6574,7 +6596,7 @@ func GoogleProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.provider.GoogleProvider",
+		"@cdktn/provider-google.provider.GoogleProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -6593,7 +6615,7 @@ func GoogleProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.provider.GoogleProvider",
+		"@cdktn/provider-google.provider.GoogleProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -6606,7 +6628,7 @@ func GoogleProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-google.provider.GoogleProvider",
+		"@cdktn/provider-google.provider.GoogleProvider",
 		"tfResourceType",
 		&returns,
 	)
@@ -6632,6 +6654,17 @@ func (g *jsiiProxy_GoogleProvider) OverrideLogicalId(newLogicalId *string) {
 		g,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := g.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -8291,6 +8324,24 @@ func (g *jsiiProxy_GoogleProvider) ToTerraform() interface{} {
 		g,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleProvider) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		g,
+		"with",
+		args,
 		&returns,
 	)
 

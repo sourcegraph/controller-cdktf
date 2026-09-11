@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerAzureClusterControlPlaneReplicaPlacementsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewContainerAzureClusterControlPlaneReplicaPlacementsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

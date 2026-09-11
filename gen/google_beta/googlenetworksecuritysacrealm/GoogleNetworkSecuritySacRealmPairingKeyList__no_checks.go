@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleNetworkSecuritySacRealmPairingKeyList) validateGetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecuritySacRealmPairingKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkSecuritySacRealmPairingKeyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleNetworkSecuritySacRealmPairingKeyList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecuritySacRealmPairingKeyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkSecuritySacRealmPairingKeyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleNetworkSecuritySacRealmPairingKeyList) validateSetWraps
 	return nil
 }
 
-func validateNewGoogleNetworkSecuritySacRealmPairingKeyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleNetworkSecuritySacRealmPairingKeyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

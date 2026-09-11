@@ -56,6 +56,10 @@ func (f *jsiiProxy_FisExperimentTemplate) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (f *jsiiProxy_FisExperimentTemplate) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FisExperimentTemplate) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (f *jsiiProxy_FisExperimentTemplate) validatePutTargetParameters(value inte
 }
 
 func (f *jsiiProxy_FisExperimentTemplate) validatePutTimeoutsParameters(value *FisExperimentTemplateTimeouts) error {
+	return nil
+}
+
+func (f *jsiiProxy_FisExperimentTemplate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_FisExperimentTemplate) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_FisExperimentTemplate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FisExperimentTemplate) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

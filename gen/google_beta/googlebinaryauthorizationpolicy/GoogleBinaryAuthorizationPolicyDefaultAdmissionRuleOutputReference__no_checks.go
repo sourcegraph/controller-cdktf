@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

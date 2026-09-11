@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleSecureSourceManagerRepositoryUrisList) validateGetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerRepositoryUrisList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSecureSourceManagerRepositoryUrisList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerRepositoryUrisList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerRepositoryUrisList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSecureSourceManagerRepositoryUrisList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerRepositoryUrisList) validateSetWraps
 	return nil
 }
 
-func validateNewGoogleSecureSourceManagerRepositoryUrisListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleSecureSourceManagerRepositoryUrisListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataplexEntryLinkAspectsAspectOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexEntryLinkAspectsAspectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataplexEntryLinkAspectsAspectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexEntryLinkAspectsAspectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataplexEntryLinkAspectsAspectOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleDataplexEntryLinkAspectsAspectOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryLinkAspectsAspectOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataplexEntryLinkAspectsAspectOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataplexEntryLinkAspectsAspectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataplexEntryLinkAspectsAspectOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

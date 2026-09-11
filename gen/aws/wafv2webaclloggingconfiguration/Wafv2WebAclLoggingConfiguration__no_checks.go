@@ -56,6 +56,10 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateInterpolationForAttr
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfiguration) validatePutLoggingFilterPara
 }
 
 func (w *jsiiProxy_Wafv2WebAclLoggingConfiguration) validatePutRedactedFieldsParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

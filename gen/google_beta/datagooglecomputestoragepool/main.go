@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePool",
+		"@cdktn/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePool",
 		reflect.TypeOf((*DataGoogleComputeStoragePool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -52,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceStatus", GoGetter: "ResourceStatus"},
@@ -67,25 +68,26 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeStoragePool{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolConfig",
+		"@cdktn/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolConfig",
 		reflect.TypeOf((*DataGoogleComputeStoragePoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolParams",
+		"@cdktn/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolParams",
 		reflect.TypeOf((*DataGoogleComputeStoragePoolParams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolParamsList",
+		"@cdktn/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolParamsList",
 		reflect.TypeOf((*DataGoogleComputeStoragePoolParamsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -101,12 +103,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeStoragePoolParamsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolParamsOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolParamsOutputReference",
 		reflect.TypeOf((*DataGoogleComputeStoragePoolParamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -134,16 +136,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeStoragePoolParamsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolResourceStatus",
+		"@cdktn/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolResourceStatus",
 		reflect.TypeOf((*DataGoogleComputeStoragePoolResourceStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolResourceStatusList",
+		"@cdktn/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolResourceStatusList",
 		reflect.TypeOf((*DataGoogleComputeStoragePoolResourceStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -159,12 +161,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeStoragePoolResourceStatusList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolResourceStatusOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolResourceStatusOutputReference",
 		reflect.TypeOf((*DataGoogleComputeStoragePoolResourceStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -201,16 +203,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeStoragePoolResourceStatusOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolStatus",
+		"@cdktn/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolStatus",
 		reflect.TypeOf((*DataGoogleComputeStoragePoolStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolStatusList",
+		"@cdktn/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolStatusList",
 		reflect.TypeOf((*DataGoogleComputeStoragePoolStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -226,12 +228,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeStoragePoolStatusList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolStatusOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolStatusOutputReference",
 		reflect.TypeOf((*DataGoogleComputeStoragePoolStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -268,7 +270,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeStoragePoolStatusOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

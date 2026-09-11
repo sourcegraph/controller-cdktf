@@ -12,7 +12,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotAppTimeZoneSettingsList) validateGetPara
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotAppTimeZoneSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppVersionSnapshotAppTimeZoneSettingsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotAppTimeZoneSettingsList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotAppTimeZoneSettingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppVersionSnapshotAppTimeZoneSettingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotAppTimeZoneSettingsList) validateSetWrap
 	return nil
 }
 
-func validateNewCesAppVersionSnapshotAppTimeZoneSettingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCesAppVersionSnapshotAppTimeZoneSettingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

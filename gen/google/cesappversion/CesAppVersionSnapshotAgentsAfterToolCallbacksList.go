@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cesappversion/internal"
 )
 
 type CesAppVersionSnapshotAgentsAfterToolCallbacksList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type CesAppVersionSnapshotAgentsAfterToolCallbacksList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) CesAppVersionSnapshotAgentsAfterToolCallbacksOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type CesAppVersionSnapshotAgentsAfterToolCallbacksList interface {
 
 // The jsii proxy struct for CesAppVersionSnapshotAgentsAfterToolCallbacksList
 type jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksList) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksList) WrapsSet()
 }
 
 
-func NewCesAppVersionSnapshotAgentsAfterToolCallbacksList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CesAppVersionSnapshotAgentsAfterToolCallbacksList {
+func NewCesAppVersionSnapshotAgentsAfterToolCallbacksList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CesAppVersionSnapshotAgentsAfterToolCallbacksList {
 	_init_.Initialize()
 
 	if err := validateNewCesAppVersionSnapshotAgentsAfterToolCallbacksListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewCesAppVersionSnapshotAgentsAfterToolCallbacksList(terraformResource cdkt
 	j := jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterToolCallbacksList",
+		"@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterToolCallbacksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewCesAppVersionSnapshotAgentsAfterToolCallbacksList(terraformResource cdkt
 	return &j
 }
 
-func NewCesAppVersionSnapshotAgentsAfterToolCallbacksList_Override(c CesAppVersionSnapshotAgentsAfterToolCallbacksList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewCesAppVersionSnapshotAgentsAfterToolCallbacksList_Override(c CesAppVersionSnapshotAgentsAfterToolCallbacksList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterToolCallbacksList",
+		"@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterToolCallbacksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksList)SetWrapsSet
 	)
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (c *jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := c.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		c,
@@ -205,8 +208,8 @@ func (c *jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksList) Get(index 
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksList) Resolve(_c
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfos) validateOverrideLogicalIdPar
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfos) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleCloudQuotasQuotaInfos_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleCloudQuotasQuotaInfos) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudQuotasQuotaInfos) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleCloudQuotasQuotaInfos) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

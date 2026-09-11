@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComposerEnvironment) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_ComposerEnvironment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComposerEnvironment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (c *jsiiProxy_ComposerEnvironment) validatePutStorageConfigParameters(value
 }
 
 func (c *jsiiProxy_ComposerEnvironment) validatePutTimeoutsParameters(value *ComposerEnvironmentTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComposerEnvironment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_ComposerEnvironment) validateSetLabelsParameters(val *map[str
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComposerEnvironment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

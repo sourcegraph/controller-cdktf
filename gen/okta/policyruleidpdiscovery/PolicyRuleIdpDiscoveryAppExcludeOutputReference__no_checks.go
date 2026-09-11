@@ -40,11 +40,11 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) validateGetS
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) validateSetT
 	return nil
 }
 
-func validateNewPolicyRuleIdpDiscoveryAppExcludeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPolicyRuleIdpDiscoveryAppExcludeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

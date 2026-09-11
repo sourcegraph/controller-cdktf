@@ -12,6 +12,10 @@ func (n *jsiiProxy_Nobl9Provider) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (n *jsiiProxy_Nobl9Provider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateNobl9Provider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

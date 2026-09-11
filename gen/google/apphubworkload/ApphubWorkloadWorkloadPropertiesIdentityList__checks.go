@@ -5,7 +5,7 @@ package apphubworkload
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityList) validateGetPara
 	return nil
 }
 
-func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityList) validateSetWrap
 	return nil
 }
 
-func validateNewApphubWorkloadWorkloadPropertiesIdentityListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewApphubWorkloadWorkloadPropertiesIdentityListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

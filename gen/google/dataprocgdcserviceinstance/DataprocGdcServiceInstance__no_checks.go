@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataprocGdcServiceInstance) validateInterpolationForAttribute
 	return nil
 }
 
+func (d *jsiiProxy_DataprocGdcServiceInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocGdcServiceInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (d *jsiiProxy_DataprocGdcServiceInstance) validatePutSparkServiceInstanceCo
 }
 
 func (d *jsiiProxy_DataprocGdcServiceInstance) validatePutTimeoutsParameters(value *DataprocGdcServiceInstanceTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocGdcServiceInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_DataprocGdcServiceInstance) validateSetLabelsParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DataprocGdcServiceInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataprocGdcServiceInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/poller/internal"
 )
 
 type PollerHttpOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Body() *string
 	SetBody(val *string)
 	BodyInput() *string
@@ -55,9 +55,9 @@ type PollerHttpOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Timestamp() PollerHttpTimestampList
 	TimestampInput() interface{}
 	// Experimental.
@@ -65,7 +65,7 @@ type PollerHttpOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,9 +81,9 @@ type PollerHttpOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutRequest(value interface{})
 	PutRule(value interface{})
 	PutTemplate(value *PollerHttpTemplate)
@@ -99,7 +99,7 @@ type PollerHttpOutputReference interface {
 	ResetTimestamp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -109,7 +109,7 @@ type PollerHttpOutputReference interface {
 
 // The jsii proxy struct for PollerHttpOutputReference
 type jsiiProxy_PollerHttpOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PollerHttpOutputReference) Body() *string {
@@ -332,8 +332,8 @@ func (j *jsiiProxy_PollerHttpOutputReference) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PollerHttpOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PollerHttpOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -363,7 +363,7 @@ func (j *jsiiProxy_PollerHttpOutputReference) TimestampInput() interface{} {
 }
 
 
-func NewPollerHttpOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PollerHttpOutputReference {
+func NewPollerHttpOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PollerHttpOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPollerHttpOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -372,7 +372,7 @@ func NewPollerHttpOutputReference(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_PollerHttpOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.poller.PollerHttpOutputReference",
+		"@cdktn/provider-observe.poller.PollerHttpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -380,11 +380,11 @@ func NewPollerHttpOutputReference(terraformResource cdktf.IInterpolatingParent, 
 	return &j
 }
 
-func NewPollerHttpOutputReference_Override(p PollerHttpOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPollerHttpOutputReference_Override(p PollerHttpOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.poller.PollerHttpOutputReference",
+		"@cdktn/provider-observe.poller.PollerHttpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -489,7 +489,7 @@ func (j *jsiiProxy_PollerHttpOutputReference)SetTerraformAttribute(val *string) 
 	)
 }
 
-func (j *jsiiProxy_PollerHttpOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PollerHttpOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,11 +529,11 @@ func (p *jsiiProxy_PollerHttpOutputReference) GetAnyMapAttribute(terraformAttrib
 	return returns
 }
 
-func (p *jsiiProxy_PollerHttpOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PollerHttpOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -657,8 +657,8 @@ func (p *jsiiProxy_PollerHttpOutputReference) GetStringMapAttribute(terraformAtt
 	return returns
 }
 
-func (p *jsiiProxy_PollerHttpOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PollerHttpOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -670,16 +670,16 @@ func (p *jsiiProxy_PollerHttpOutputReference) InterpolationAsList() cdktf.IResol
 	return returns
 }
 
-func (p *jsiiProxy_PollerHttpOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PollerHttpOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -802,8 +802,8 @@ func (p *jsiiProxy_PollerHttpOutputReference) ResetTimestamp() {
 	)
 }
 
-func (p *jsiiProxy_PollerHttpOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PollerHttpOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -811,7 +811,7 @@ func (p *jsiiProxy_PollerHttpOutputReference) Resolve(_context cdktf.IResolveCon
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

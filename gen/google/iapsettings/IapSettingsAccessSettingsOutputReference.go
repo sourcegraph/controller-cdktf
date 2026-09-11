@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/iapsettings/internal"
 )
 
 type IapSettingsAccessSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowedDomainsSettings() IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference
 	AllowedDomainsSettingsInput() *IapSettingsAccessSettingsAllowedDomainsSettings
 	// the index of the complex object in a list.
@@ -47,9 +47,9 @@ type IapSettingsAccessSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WorkforceIdentitySettings() IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference
 	WorkforceIdentitySettingsInput() *IapSettingsAccessSettingsWorkforceIdentitySettings
 	// Experimental.
@@ -57,7 +57,7 @@ type IapSettingsAccessSettingsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,9 +73,9 @@ type IapSettingsAccessSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAllowedDomainsSettings(value *IapSettingsAccessSettingsAllowedDomainsSettings)
 	PutCorsSettings(value *IapSettingsAccessSettingsCorsSettings)
 	PutGcipSettings(value *IapSettingsAccessSettingsGcipSettings)
@@ -91,7 +91,7 @@ type IapSettingsAccessSettingsOutputReference interface {
 	ResetWorkforceIdentitySettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,7 +101,7 @@ type IapSettingsAccessSettingsOutputReference interface {
 
 // The jsii proxy struct for IapSettingsAccessSettingsOutputReference
 type jsiiProxy_IapSettingsAccessSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference) AllowedDomainsSettings() IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference {
@@ -284,8 +284,8 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference) WorkforceIdentitySe
 }
 
 
-func NewIapSettingsAccessSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IapSettingsAccessSettingsOutputReference {
+func NewIapSettingsAccessSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) IapSettingsAccessSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIapSettingsAccessSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -324,7 +324,7 @@ func NewIapSettingsAccessSettingsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_IapSettingsAccessSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsOutputReference",
+		"@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -332,11 +332,11 @@ func NewIapSettingsAccessSettingsOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewIapSettingsAccessSettingsOutputReference_Override(i IapSettingsAccessSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIapSettingsAccessSettingsOutputReference_Override(i IapSettingsAccessSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsOutputReference",
+		"@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -397,7 +397,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -437,11 +437,11 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -565,8 +565,8 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -578,16 +578,16 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) InterpolationAsList
 	return returns
 }
 
-func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -716,8 +716,8 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) ResetWorkforceIdent
 	)
 }
 
-func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -725,7 +725,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

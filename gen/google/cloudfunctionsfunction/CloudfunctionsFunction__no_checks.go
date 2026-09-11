@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudfunctionsFunction) validateInterpolationForAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_CloudfunctionsFunction) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfunctionsFunction) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (c *jsiiProxy_CloudfunctionsFunction) validatePutSourceRepositoryParameters
 }
 
 func (c *jsiiProxy_CloudfunctionsFunction) validatePutTimeoutsParameters(value *CloudfunctionsFunctionTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfunctionsFunction) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -184,7 +192,7 @@ func (j *jsiiProxy_CloudfunctionsFunction) validateSetLabelsParameters(val *map[
 	return nil
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudfunctionsFunction) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (i *jsiiProxy_IamRoleInlinePolicyList) validateGetParameters(index *float64
 	return nil
 }
 
-func (i *jsiiProxy_IamRoleInlinePolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamRoleInlinePolicyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_IamRoleInlinePolicyList) validateSetTerraformAttributeParamet
 	return nil
 }
 
-func (j *jsiiProxy_IamRoleInlinePolicyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IamRoleInlinePolicyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_IamRoleInlinePolicyList) validateSetWrapsSetParameters(val *b
 	return nil
 }
 
-func validateNewIamRoleInlinePolicyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewIamRoleInlinePolicyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesAppLoggingSettingsAudioRecordingConfigOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppLoggingSettingsAudioRecordingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesAppLoggingSettingsAudioRecordingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppLoggingSettingsAudioRecordingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppLoggingSettingsAudioRecordingConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleCesAppLoggingSettingsAudioRecordingConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppLoggingSettingsAudioRecordingConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppLoggingSettingsAudioRecordingConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCesAppLoggingSettingsAudioRecordingConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesAppLoggingSettingsAudioRecordingConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

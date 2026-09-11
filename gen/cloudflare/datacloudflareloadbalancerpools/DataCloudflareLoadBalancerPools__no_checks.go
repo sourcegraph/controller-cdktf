@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPools) validatePutPoolsParameters(v
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareLoadBalancerPools) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareLoadBalancerPools_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,7 +92,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPools) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPools) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancerPools) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

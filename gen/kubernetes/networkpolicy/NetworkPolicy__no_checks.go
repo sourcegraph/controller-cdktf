@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetworkPolicy) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (n *jsiiProxy_NetworkPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (n *jsiiProxy_NetworkPolicy) validatePutMetadataParameters(value *NetworkPo
 }
 
 func (n *jsiiProxy_NetworkPolicy) validatePutSpecParameters(value *NetworkPolicySpec) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_NetworkPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetworkPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

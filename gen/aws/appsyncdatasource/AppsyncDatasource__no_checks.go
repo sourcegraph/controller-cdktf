@@ -56,6 +56,10 @@ func (a *jsiiProxy_AppsyncDatasource) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (a *jsiiProxy_AppsyncDatasource) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppsyncDatasource) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (a *jsiiProxy_AppsyncDatasource) validatePutLambdaConfigParameters(value *A
 }
 
 func (a *jsiiProxy_AppsyncDatasource) validatePutRelationalDatabaseConfigParameters(value *AppsyncDatasourceRelationalDatabaseConfig) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppsyncDatasource) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_AppsyncDatasource) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncDatasource) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AppsyncDatasource) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

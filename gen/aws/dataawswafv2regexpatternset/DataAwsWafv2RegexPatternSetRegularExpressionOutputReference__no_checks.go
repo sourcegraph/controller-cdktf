@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsWafv2RegexPatternSetRegularExpressionOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsWafv2RegexPatternSetRegularExpressionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsWafv2RegexPatternSetRegularExpressionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsWafv2RegexPatternSetRegularExpressionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsWafv2RegexPatternSetRegularExpressionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsWafv2RegexPatternSetRegularExpressionOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsWafv2RegexPatternSetRegularExpressionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsWafv2RegexPatternSetRegularExpressionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsWafv2RegexPatternSetRegularExpressionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsWafv2RegexPatternSetRegularExpressionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

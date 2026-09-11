@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/appengineflexibleappversion/internal"
 )
 
 type AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ApplicationReadable() interface{}
 	SetApplicationReadable(val interface{})
 	ApplicationReadableInput() interface{}
@@ -52,9 +52,9 @@ type AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UploadPathRegex() *string
 	SetUploadPathRegex(val *string)
 	UploadPathRegexInput() *string
@@ -63,7 +63,7 @@ type AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,9 +79,9 @@ type AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetApplicationReadable()
 	ResetExpiration()
 	ResetHttpHeaders()
@@ -91,7 +91,7 @@ type AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference interface {
 	ResetUploadPathRegex()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,7 +101,7 @@ type AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference interface {
 
 // The jsii proxy struct for AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference
 type jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference) ApplicationReadable() interface{} {
@@ -284,8 +284,8 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference
 }
 
 
-func NewAppEngineFlexibleAppVersionHandlersStaticFilesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference {
+func NewAppEngineFlexibleAppVersionHandlersStaticFilesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAppEngineFlexibleAppVersionHandlersStaticFilesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -324,7 +324,7 @@ func NewAppEngineFlexibleAppVersionHandlersStaticFilesOutputReference(terraformR
 	j := jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference",
+		"@cdktn/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -332,11 +332,11 @@ func NewAppEngineFlexibleAppVersionHandlersStaticFilesOutputReference(terraformR
 	return &j
 }
 
-func NewAppEngineFlexibleAppVersionHandlersStaticFilesOutputReference_Override(a AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAppEngineFlexibleAppVersionHandlersStaticFilesOutputReference_Override(a AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference",
+		"@cdktn/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -452,7 +452,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,11 +503,11 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -631,8 +631,8 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -644,16 +644,16 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -716,8 +716,8 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference
 	)
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -725,7 +725,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

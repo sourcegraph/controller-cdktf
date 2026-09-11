@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (n *jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference) validate
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference) validate
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*NetworkServicesHttpRouteRulesMatchesHeaders:
 		value := value.(*[]*NetworkServicesHttpRouteRulesMatchesHeaders)
@@ -114,7 +114,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference) validate
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*NetworkServicesHttpRouteRulesMatchesHeaders; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*NetworkServicesHttpRouteRulesMatchesHeaders; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference) validate
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*NetworkServicesHttpRouteRulesMatchesQueryParameters:
 		value := value.(*[]*NetworkServicesHttpRouteRulesMatchesQueryParameters)
@@ -145,16 +145,16 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference) validate
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*NetworkServicesHttpRouteRulesMatchesQueryParameters; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*NetworkServicesHttpRouteRulesMatchesQueryParameters; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -242,11 +242,11 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference) validate
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -255,7 +255,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference) validate
 
 func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *NetworkServicesHttpRouteRulesMatches:
 		val := val.(*NetworkServicesHttpRouteRulesMatches)
@@ -270,7 +270,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference) validate
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *NetworkServicesHttpRouteRulesMatches; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *NetworkServicesHttpRouteRulesMatches; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -301,7 +301,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference) validate
 	return nil
 }
 
-func validateNewNetworkServicesHttpRouteRulesMatchesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewNetworkServicesHttpRouteRulesMatchesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -12,7 +12,7 @@ func (c *jsiiProxy_CesGuardrailModelSafetySafetySettingsList) validateGetParamet
 	return nil
 }
 
-func (c *jsiiProxy_CesGuardrailModelSafetySafetySettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesGuardrailModelSafetySafetySettingsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CesGuardrailModelSafetySafetySettingsList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailModelSafetySafetySettingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesGuardrailModelSafetySafetySettingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CesGuardrailModelSafetySafetySettingsList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewCesGuardrailModelSafetySafetySettingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCesGuardrailModelSafetySafetySettingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

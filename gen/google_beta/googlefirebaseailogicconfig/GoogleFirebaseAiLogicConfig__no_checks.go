@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleFirebaseAiLogicConfig) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseAiLogicConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseAiLogicConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (g *jsiiProxy_GoogleFirebaseAiLogicConfig) validatePutTrafficFilterParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseAiLogicConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleFirebaseAiLogicConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleFirebaseAiLogicConfig) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAiLogicConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleFirebaseAiLogicConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

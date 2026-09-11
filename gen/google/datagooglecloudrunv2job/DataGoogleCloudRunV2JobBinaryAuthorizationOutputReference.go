@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecloudrunv2job/internal"
 )
 
 type DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BreakglassJustification() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -36,16 +36,16 @@ type DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UseDefault() cdktf.IResolvable
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UseDefault() cdktn.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference interface {
 
 // The jsii proxy struct for DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference
 type jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) BreakglassJustification() *string {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) UseDefault() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) UseDefault() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"useDefault",
@@ -180,7 +180,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) Us
 }
 
 
-func NewDataGoogleCloudRunV2JobBinaryAuthorizationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference {
+func NewDataGoogleCloudRunV2JobBinaryAuthorizationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleCloudRunV2JobBinaryAuthorizationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -189,7 +189,7 @@ func NewDataGoogleCloudRunV2JobBinaryAuthorizationOutputReference(terraformResou
 	j := jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference",
+		"@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -197,11 +197,11 @@ func NewDataGoogleCloudRunV2JobBinaryAuthorizationOutputReference(terraformResou
 	return &j
 }
 
-func NewDataGoogleCloudRunV2JobBinaryAuthorizationOutputReference_Override(d DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleCloudRunV2JobBinaryAuthorizationOutputReference_Override(d DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference",
+		"@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -251,7 +251,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,11 +291,11 @@ func (d *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) Ge
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -419,8 +419,8 @@ func (d *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) Ge
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -432,24 +432,24 @@ func (d *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) In
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -457,7 +457,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) Re
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

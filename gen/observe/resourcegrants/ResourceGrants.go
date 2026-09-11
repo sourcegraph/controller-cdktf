@@ -5,15 +5,15 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/resourcegrants/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/resource_grants observe_resource_grants}.
 type ResourceGrants interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -29,9 +29,9 @@ type ResourceGrants interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -42,18 +42,18 @@ type ResourceGrants interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	Oid() *string
 	SetOid(val *string)
 	OidInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -61,7 +61,7 @@ type ResourceGrants interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -74,7 +74,7 @@ type ResourceGrants interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -92,12 +92,48 @@ type ResourceGrants interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	// Wraps a write-only attribute's already-mapped value so that `ProviderFeature.WRITE_ONLY_ATTRIBUTES` usage is registered at *resolve* time instead of at mutation time (setter/constructor). Called by generated bindings from `synthesizeAttributes()` and `synthesizeHclAttributes()`, e.g. `secret_key_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._secretKeyWo))`; not intended to be called directly.
+	//
+	// `undefined` passes through completely unchanged, so the existing
+	// undefined-filtering that omits unset attributes from synthesized
+	// output (see `resolve()` in `tokens/private/resolve.ts`, and the
+	// `value.value !== undefined` filter in generated
+	// `synthesizeHclAttributes()`) keeps working untouched. `null` is also
+	// passed through unchanged: it already renders as an explicit
+	// null-out and must not arm the validation either.
+	//
+	// Any other value - including one that will itself resolve to nothing
+	// (e.g. a `Lazy`/`IResolvable` producer with no value to contribute) -
+	// is wrapped in a token whose `resolve()` defers to the real resolver
+	// first and registers usage only if what comes back is not
+	// `null`/`undefined`; the resolved value is then returned unchanged,
+	// so what actually renders is untouched by this wrapper. A producer
+	// that resolves to `undefined` therefore neither registers usage nor
+	// leaves anything behind in the synthesized attribute - the omission
+	// behaves exactly as if the attribute had never been set.
+	//
+	// Registration goes through `_registerResolveDiscoveredProviderFeatureUsage`
+	// rather than `registerProviderFeatureUsage`: usage here is only known at
+	// resolve time, and a given element can be resolved across many
+	// synthesis passes over its lifetime (repeated `app.synth()` calls,
+	// tests reusing a construct tree), so it must represent only the CURRENT
+	// pass rather than accumulate forever. Every validation-enabled entry
+	// point (`App.synth`; `Testing.synth`/`synthHcl` with validations;
+	// `StackSynthesizer.synthesize`) runs a prepare step that deactivates any
+	// stale registration and then resolves every element's `toTerraform()`
+	// before that same entry point's validations run - see
+	// `TerraformStack._runPreparingResolve` - so whatever this closure
+	// (re-)registers during that prepare step is always visible to the
+	// validation that reads it afterwards, and nothing left over from an
+	// earlier pass leaks into the current one.
+	// Experimental.
+	MarkWriteOnlyAttribute(value interface{}) interface{}
 	// Move the resource corresponding to "id" to this resource.
 	//
-	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Note that the resource being moved from must be marked as moved using its instance function.
 	// Experimental.
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
@@ -110,6 +146,19 @@ type ResourceGrants interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutGrant(value interface{})
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetGrant()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -126,15 +175,24 @@ type ResourceGrants interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ResourceGrants
 type jsiiProxy_ResourceGrants struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_ResourceGrants) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ResourceGrants) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -183,8 +241,8 @@ func (j *jsiiProxy_ResourceGrants) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ResourceGrants) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ResourceGrants) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -253,8 +311,8 @@ func (j *jsiiProxy_ResourceGrants) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ResourceGrants) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ResourceGrants) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -293,8 +351,8 @@ func (j *jsiiProxy_ResourceGrants) OidInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ResourceGrants) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ResourceGrants) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -323,8 +381,8 @@ func (j *jsiiProxy_ResourceGrants) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ResourceGrants) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ResourceGrants) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -364,7 +422,7 @@ func NewResourceGrants(scope constructs.Construct, id *string, config *ResourceG
 	j := jsiiProxy_ResourceGrants{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.resourceGrants.ResourceGrants",
+		"@cdktn/provider-observe.resourceGrants.ResourceGrants",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -377,7 +435,7 @@ func NewResourceGrants_Override(r ResourceGrants, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.resourceGrants.ResourceGrants",
+		"@cdktn/provider-observe.resourceGrants.ResourceGrants",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -413,7 +471,7 @@ func (j *jsiiProxy_ResourceGrants)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ResourceGrants)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ResourceGrants)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -432,7 +490,7 @@ func (j *jsiiProxy_ResourceGrants)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ResourceGrants)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ResourceGrants)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +512,7 @@ func (j *jsiiProxy_ResourceGrants)SetOid(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ResourceGrants)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ResourceGrants)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -473,17 +531,17 @@ func (j *jsiiProxy_ResourceGrants)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a ResourceGrants resource upon running "cdktf plan <stack-name>".
-func ResourceGrants_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ResourceGrants resource upon running "cdktn plan <stack-name>".
+func ResourceGrants_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateResourceGrants_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-observe.resourceGrants.ResourceGrants",
+		"@cdktn/provider-observe.resourceGrants.ResourceGrants",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -518,7 +576,7 @@ func ResourceGrants_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-observe.resourceGrants.ResourceGrants",
+		"@cdktn/provider-observe.resourceGrants.ResourceGrants",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +595,7 @@ func ResourceGrants_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-observe.resourceGrants.ResourceGrants",
+		"@cdktn/provider-observe.resourceGrants.ResourceGrants",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -556,7 +614,7 @@ func ResourceGrants_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-observe.resourceGrants.ResourceGrants",
+		"@cdktn/provider-observe.resourceGrants.ResourceGrants",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -569,7 +627,7 @@ func ResourceGrants_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-observe.resourceGrants.ResourceGrants",
+		"@cdktn/provider-observe.resourceGrants.ResourceGrants",
 		"tfResourceType",
 		&returns,
 	)
@@ -614,11 +672,11 @@ func (r *jsiiProxy_ResourceGrants) GetAnyMapAttribute(terraformAttribute *string
 	return returns
 }
 
-func (r *jsiiProxy_ResourceGrants) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_ResourceGrants) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -755,7 +813,7 @@ func (r *jsiiProxy_ResourceGrants) HasResourceMove() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_ResourceGrants) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (r *jsiiProxy_ResourceGrants) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -766,16 +824,32 @@ func (r *jsiiProxy_ResourceGrants) ImportFrom(id *string, provider cdktf.Terrafo
 	)
 }
 
-func (r *jsiiProxy_ResourceGrants) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_ResourceGrants) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
 		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_ResourceGrants) MarkWriteOnlyAttribute(value interface{}) interface{} {
+	if err := r.validateMarkWriteOnlyAttributeParameters(value); err != nil {
+		panic(err)
+	}
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"markWriteOnlyAttribute",
+		[]interface{}{value},
 		&returns,
 	)
 
@@ -834,6 +908,17 @@ func (r *jsiiProxy_ResourceGrants) PutGrant(value interface{}) {
 		r,
 		"putGrant",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_ResourceGrants) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := r.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -933,6 +1018,24 @@ func (r *jsiiProxy_ResourceGrants) ToTerraform() interface{} {
 		r,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_ResourceGrants) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		r,
+		"with",
+		args,
 		&returns,
 	)
 

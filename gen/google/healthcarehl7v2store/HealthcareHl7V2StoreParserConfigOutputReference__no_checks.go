@@ -40,11 +40,11 @@ func (h *jsiiProxy_HealthcareHl7V2StoreParserConfigOutputReference) validateGetS
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareHl7V2StoreParserConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HealthcareHl7V2StoreParserConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareHl7V2StoreParserConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HealthcareHl7V2StoreParserConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreParserConfigOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreParserConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_HealthcareHl7V2StoreParserConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreParserConfigOutputReference) validateSetV
 	return nil
 }
 
-func validateNewHealthcareHl7V2StoreParserConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewHealthcareHl7V2StoreParserConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

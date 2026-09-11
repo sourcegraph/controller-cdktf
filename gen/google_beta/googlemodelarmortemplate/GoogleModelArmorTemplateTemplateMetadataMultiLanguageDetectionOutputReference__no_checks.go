@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectio
 	return nil
 }
 
-func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

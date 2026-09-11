@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlehealthcarefhirstore/internal"
 )
 
 type GoogleHealthcareFhirStoreConsentConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccessDeterminationLogConfig() GoogleHealthcareFhirStoreConsentConfigAccessDeterminationLogConfigOutputReference
 	AccessDeterminationLogConfigInput() *GoogleHealthcareFhirStoreConsentConfigAccessDeterminationLogConfig
 	AccessEnforced() interface{}
@@ -42,9 +42,9 @@ type GoogleHealthcareFhirStoreConsentConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -53,7 +53,7 @@ type GoogleHealthcareFhirStoreConsentConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,9 +69,9 @@ type GoogleHealthcareFhirStoreConsentConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAccessDeterminationLogConfig(value *GoogleHealthcareFhirStoreConsentConfigAccessDeterminationLogConfig)
 	PutConsentHeaderHandling(value *GoogleHealthcareFhirStoreConsentConfigConsentHeaderHandling)
 	ResetAccessDeterminationLogConfig()
@@ -79,7 +79,7 @@ type GoogleHealthcareFhirStoreConsentConfigOutputReference interface {
 	ResetConsentHeaderHandling()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type GoogleHealthcareFhirStoreConsentConfigOutputReference interface {
 
 // The jsii proxy struct for GoogleHealthcareFhirStoreConsentConfigOutputReference
 type jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) AccessDeterminationLogConfig() GoogleHealthcareFhirStoreConsentConfigAccessDeterminationLogConfigOutputReference {
@@ -222,8 +222,8 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -253,7 +253,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) Versio
 }
 
 
-func NewGoogleHealthcareFhirStoreConsentConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleHealthcareFhirStoreConsentConfigOutputReference {
+func NewGoogleHealthcareFhirStoreConsentConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleHealthcareFhirStoreConsentConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleHealthcareFhirStoreConsentConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -262,7 +262,7 @@ func NewGoogleHealthcareFhirStoreConsentConfigOutputReference(terraformResource 
 	j := jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreConsentConfigOutputReference",
+		"@cdktn/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreConsentConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -270,11 +270,11 @@ func NewGoogleHealthcareFhirStoreConsentConfigOutputReference(terraformResource 
 	return &j
 }
 
-func NewGoogleHealthcareFhirStoreConsentConfigOutputReference_Override(g GoogleHealthcareFhirStoreConsentConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleHealthcareFhirStoreConsentConfigOutputReference_Override(g GoogleHealthcareFhirStoreConsentConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreConsentConfigOutputReference",
+		"@cdktn/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreConsentConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -335,7 +335,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,11 +386,11 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) GetAny
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -514,8 +514,8 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) GetStr
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -527,16 +527,16 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) Interp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -589,8 +589,8 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) ResetC
 	)
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -598,7 +598,7 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) Resolv
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,7 +40,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validatePutSource
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -152,7 +152,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -160,7 +160,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetTypePa
 	return nil
 }
 
-func validateNewComputeInstanceTemplateDiskOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewComputeInstanceTemplateDiskOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

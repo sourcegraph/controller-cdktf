@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsIcon
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsIcon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsIcon
 	return nil
 }
 
-func validateNewGoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

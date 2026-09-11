@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsEfsAccessPointRootDirectoryCreationInfoList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEfsAccessPointRootDirectoryCreationInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEfsAccessPointRootDirectoryCreationInfoList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsEfsAccessPointRootDirectoryCreationInfoList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEfsAccessPointRootDirectoryCreationInfoList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsEfsAccessPointRootDirectoryCreationInfoList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsEfsAccessPointRootDirectoryCreationInfoList) validateS
 	return nil
 }
 
-func validateNewDataAwsEfsAccessPointRootDirectoryCreationInfoListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsEfsAccessPointRootDirectoryCreationInfoListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

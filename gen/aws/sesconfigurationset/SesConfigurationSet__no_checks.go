@@ -56,6 +56,10 @@ func (s *jsiiProxy_SesConfigurationSet) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_SesConfigurationSet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesConfigurationSet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (s *jsiiProxy_SesConfigurationSet) validatePutDeliveryOptionsParameters(val
 }
 
 func (s *jsiiProxy_SesConfigurationSet) validatePutTrackingOptionsParameters(value *SesConfigurationSetTrackingOptions) error {
+	return nil
+}
+
+func (s *jsiiProxy_SesConfigurationSet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_SesConfigurationSet) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_SesConfigurationSet) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SesConfigurationSet) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

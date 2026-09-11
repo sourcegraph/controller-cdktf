@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroup",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroup",
 		reflect.TypeOf((*EksNodeGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -53,6 +53,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "launchTemplate", GoGetter: "LaunchTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "launchTemplateInput", GoGetter: "LaunchTemplateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -73,6 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putUpdateConfig", GoMethod: "PutUpdateConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseVersion", GoGetter: "ReleaseVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseVersionInput", GoGetter: "ReleaseVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteAccess", GoGetter: "RemoteAccess"},
@@ -123,23 +125,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateConfigInput", GoGetter: "UpdateConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_EksNodeGroup{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupConfig",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupConfig",
 		reflect.TypeOf((*EksNodeGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplate",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplate",
 		reflect.TypeOf((*EksNodeGroupLaunchTemplate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplateOutputReference",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplateOutputReference",
 		reflect.TypeOf((*EksNodeGroupLaunchTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -174,16 +177,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksNodeGroupLaunchTemplateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccess",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccess",
 		reflect.TypeOf((*EksNodeGroupRemoteAccess)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccessOutputReference",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccessOutputReference",
 		reflect.TypeOf((*EksNodeGroupRemoteAccessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -216,20 +219,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksNodeGroupRemoteAccessOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResources",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupResources",
 		reflect.TypeOf((*EksNodeGroupResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroups",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroups",
 		reflect.TypeOf((*EksNodeGroupResourcesAutoscalingGroups)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsList",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsList",
 		reflect.TypeOf((*EksNodeGroupResourcesAutoscalingGroupsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -245,12 +248,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsOutputReference",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsOutputReference",
 		reflect.TypeOf((*EksNodeGroupResourcesAutoscalingGroupsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -278,12 +281,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesList",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupResourcesList",
 		reflect.TypeOf((*EksNodeGroupResourcesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -299,12 +302,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksNodeGroupResourcesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesOutputReference",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupResourcesOutputReference",
 		reflect.TypeOf((*EksNodeGroupResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingGroups", GoGetter: "AutoscalingGroups"},
@@ -333,16 +336,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksNodeGroupResourcesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupScalingConfig",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupScalingConfig",
 		reflect.TypeOf((*EksNodeGroupScalingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupScalingConfigOutputReference",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupScalingConfigOutputReference",
 		reflect.TypeOf((*EksNodeGroupScalingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -375,16 +378,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksNodeGroupScalingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaint",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupTaint",
 		reflect.TypeOf((*EksNodeGroupTaint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaintList",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupTaintList",
 		reflect.TypeOf((*EksNodeGroupTaintList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -401,12 +404,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksNodeGroupTaintList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaintOutputReference",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupTaintOutputReference",
 		reflect.TypeOf((*EksNodeGroupTaintOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -440,16 +443,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksNodeGroupTaintOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTimeouts",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupTimeouts",
 		reflect.TypeOf((*EksNodeGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTimeoutsOutputReference",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupTimeoutsOutputReference",
 		reflect.TypeOf((*EksNodeGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -485,16 +488,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksNodeGroupTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfig",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfig",
 		reflect.TypeOf((*EksNodeGroupUpdateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfigOutputReference",
+		"@cdktn/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfigOutputReference",
 		reflect.TypeOf((*EksNodeGroupUpdateConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -527,7 +530,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksNodeGroupUpdateConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

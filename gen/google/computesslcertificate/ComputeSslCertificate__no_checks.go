@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeSslCertificate) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSslCertificate) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSslCertificate) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ComputeSslCertificate) validateOverrideLogicalIdParameters(ne
 }
 
 func (c *jsiiProxy_ComputeSslCertificate) validatePutTimeoutsParameters(value *ComputeSslCertificateTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSslCertificate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_ComputeSslCertificate) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSslCertificate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeSslCertificate) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

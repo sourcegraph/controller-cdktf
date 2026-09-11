@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDataplexGlossaryTerm) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataplexGlossaryTerm) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexGlossaryTerm) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleDataplexGlossaryTerm) validateOverrideLogicalIdParamete
 }
 
 func (g *jsiiProxy_GoogleDataplexGlossaryTerm) validatePutTimeoutsParameters(value *GoogleDataplexGlossaryTermTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexGlossaryTerm) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleDataplexGlossaryTerm) validateSetLabelsParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexGlossaryTerm) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDataplexGlossaryTerm) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

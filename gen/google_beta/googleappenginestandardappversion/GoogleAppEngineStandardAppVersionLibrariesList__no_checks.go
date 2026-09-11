@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleAppEngineStandardAppVersionLibrariesList) validateGetPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineStandardAppVersionLibrariesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleAppEngineStandardAppVersionLibrariesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersionLibrariesList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersionLibrariesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersionLibrariesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersionLibrariesList) validateSetWr
 	return nil
 }
 
-func validateNewGoogleAppEngineStandardAppVersionLibrariesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleAppEngineStandardAppVersionLibrariesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

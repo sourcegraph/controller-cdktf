@@ -40,7 +40,7 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerRuleActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlbListenerRuleActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) validatePutRedirectPara
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerRuleActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbListenerRuleActionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_AlbListenerRuleActionOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerRuleActionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlbListenerRuleActionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_AlbListenerRuleActionOutputReference) validateSetTypeParamete
 	return nil
 }
 
-func validateNewAlbListenerRuleActionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAlbListenerRuleActionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

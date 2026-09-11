@@ -56,6 +56,10 @@ func (a *jsiiProxy_ArtifactRegistryRepository) validateInterpolationForAttribute
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepository) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepository) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (a *jsiiProxy_ArtifactRegistryRepository) validatePutVirtualRepositoryConfi
 }
 
 func (a *jsiiProxy_ArtifactRegistryRepository) validatePutVulnerabilityScanningConfigParameters(value *ArtifactRegistryRepositoryVulnerabilityScanningConfig) error {
+	return nil
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepository) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -148,7 +156,7 @@ func (j *jsiiProxy_ArtifactRegistryRepository) validateSetLabelsParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepository) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ArtifactRegistryRepository) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

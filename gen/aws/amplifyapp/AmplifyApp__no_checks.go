@@ -56,6 +56,10 @@ func (a *jsiiProxy_AmplifyApp) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (a *jsiiProxy_AmplifyApp) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AmplifyApp) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (a *jsiiProxy_AmplifyApp) validatePutAutoBranchCreationConfigParameters(val
 }
 
 func (a *jsiiProxy_AmplifyApp) validatePutCustomRuleParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AmplifyApp) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -152,7 +160,7 @@ func (j *jsiiProxy_AmplifyApp) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyApp) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AmplifyApp) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

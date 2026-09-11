@@ -40,11 +40,11 @@ func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) validateGetString
 	return nil
 }
 
-func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEfsBackupPolicyBackupPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEfsBackupPolicyBackupPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

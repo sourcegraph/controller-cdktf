@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecontainercluster/internal"
 )
 
 type DataGoogleContainerClusterIpAllocationPolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdditionalIpRangesConfig() DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList
 	AdditionalPodRangesConfig() DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigList
 	AutoIpamConfig() DataGoogleContainerClusterIpAllocationPolicyAutoIpamConfigList
@@ -44,15 +44,15 @@ type DataGoogleContainerClusterIpAllocationPolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,12 +68,12 @@ type DataGoogleContainerClusterIpAllocationPolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type DataGoogleContainerClusterIpAllocationPolicyOutputReference interface {
 
 // The jsii proxy struct for DataGoogleContainerClusterIpAllocationPolicyOutputReference
 type jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) AdditionalIpRangesConfig() DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList {
@@ -246,8 +246,8 @@ func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -257,7 +257,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) 
 }
 
 
-func NewDataGoogleContainerClusterIpAllocationPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleContainerClusterIpAllocationPolicyOutputReference {
+func NewDataGoogleContainerClusterIpAllocationPolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleContainerClusterIpAllocationPolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleContainerClusterIpAllocationPolicyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -266,7 +266,7 @@ func NewDataGoogleContainerClusterIpAllocationPolicyOutputReference(terraformRes
 	j := jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -274,11 +274,11 @@ func NewDataGoogleContainerClusterIpAllocationPolicyOutputReference(terraformRes
 	return &j
 }
 
-func NewDataGoogleContainerClusterIpAllocationPolicyOutputReference_Override(d DataGoogleContainerClusterIpAllocationPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleContainerClusterIpAllocationPolicyOutputReference_Override(d DataGoogleContainerClusterIpAllocationPolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -368,11 +368,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -496,8 +496,8 @@ func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -509,24 +509,24 @@ func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -534,7 +534,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,7 +40,7 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionOutputReference) validateG
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftScheduledActionTargetActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedshiftScheduledActionTargetActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionOutputReference) validateP
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftScheduledActionTargetActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedshiftScheduledActionTargetActionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_RedshiftScheduledActionTargetActionOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftScheduledActionTargetActionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RedshiftScheduledActionTargetActionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewRedshiftScheduledActionTargetActionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRedshiftScheduledActionTargetActionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

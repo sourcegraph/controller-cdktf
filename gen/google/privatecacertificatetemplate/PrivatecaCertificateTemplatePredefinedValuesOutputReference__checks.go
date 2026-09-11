@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) 
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) 
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*PrivatecaCertificateTemplatePredefinedValuesAdditionalExtensions:
 		value := value.(*[]*PrivatecaCertificateTemplatePredefinedValuesAdditionalExtensions)
@@ -114,7 +114,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) 
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*PrivatecaCertificateTemplatePredefinedValuesAdditionalExtensions; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*PrivatecaCertificateTemplatePredefinedValuesAdditionalExtensions; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -159,7 +159,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) 
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*PrivatecaCertificateTemplatePredefinedValuesPolicyIds:
 		value := value.(*[]*PrivatecaCertificateTemplatePredefinedValuesPolicyIds)
@@ -178,16 +178,16 @@ func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) 
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*PrivatecaCertificateTemplatePredefinedValuesPolicyIds; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*PrivatecaCertificateTemplatePredefinedValuesPolicyIds; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -282,7 +282,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -290,7 +290,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) 
 	return nil
 }
 
-func validateNewPrivatecaCertificateTemplatePredefinedValuesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPrivatecaCertificateTemplatePredefinedValuesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

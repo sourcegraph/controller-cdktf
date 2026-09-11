@@ -40,7 +40,7 @@ func (p *jsiiProxy_PodSpecInitContainerOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecInitContainerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSpecInitContainerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (p *jsiiProxy_PodSpecInitContainerOutputReference) validatePutVolumeMountPa
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecInitContainerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecInitContainerOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -140,7 +140,7 @@ func (j *jsiiProxy_PodSpecInitContainerOutputReference) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecInitContainerOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSpecInitContainerOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -152,7 +152,7 @@ func (j *jsiiProxy_PodSpecInitContainerOutputReference) validateSetWorkingDirPar
 	return nil
 }
 
-func validateNewPodSpecInitContainerOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPodSpecInitContainerOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

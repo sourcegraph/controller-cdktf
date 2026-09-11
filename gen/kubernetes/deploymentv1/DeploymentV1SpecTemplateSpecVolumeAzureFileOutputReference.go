@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/deploymentv1/internal"
 )
 
 type DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,15 +46,15 @@ type DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,14 +70,14 @@ type DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetReadOnly()
 	ResetSecretNamespace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference interface {
 
 // The jsii proxy struct for DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference
 type jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference) ComplexObjectIndex() interface{} {
@@ -230,8 +230,8 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -241,7 +241,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference) T
 }
 
 
-func NewDeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference {
+func NewDeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDeploymentV1SpecTemplateSpecVolumeAzureFileOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -250,7 +250,7 @@ func NewDeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference(terraformReso
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference",
+		"@cdktn/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -258,11 +258,11 @@ func NewDeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference(terraformReso
 	return &j
 }
 
-func NewDeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference_Override(d DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference_Override(d DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference",
+		"@cdktn/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -356,7 +356,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,11 +396,11 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -524,8 +524,8 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -537,16 +537,16 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference) I
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -569,8 +569,8 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference) R
 	)
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -578,7 +578,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureFileOutputReference) R
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

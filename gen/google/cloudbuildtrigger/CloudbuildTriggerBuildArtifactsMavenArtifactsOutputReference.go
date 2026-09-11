@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudbuildtrigger/internal"
 )
 
 type CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ArtifactId() *string
 	SetArtifactId(val *string)
 	ArtifactIdInput() *string
@@ -46,9 +46,9 @@ type CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -57,7 +57,7 @@ type CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,9 +73,9 @@ type CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetArtifactId()
 	ResetGroupId()
 	ResetPath()
@@ -83,7 +83,7 @@ type CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference interface {
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference interface {
 
 // The jsii proxy struct for CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference
 type jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference) ArtifactId() *string {
@@ -236,8 +236,8 @@ func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -267,7 +267,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference)
 }
 
 
-func NewCloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference {
+func NewCloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudbuildTriggerBuildArtifactsMavenArtifactsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -276,7 +276,7 @@ func NewCloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference(terraformRe
 	j := jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -284,11 +284,11 @@ func NewCloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference(terraformRe
 	return &j
 }
 
-func NewCloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference_Override(c CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewCloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference_Override(c CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -382,7 +382,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,11 +433,11 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference)
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -561,8 +561,8 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference)
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -574,16 +574,16 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference)
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -630,8 +630,8 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference)
 	)
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -639,7 +639,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference)
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

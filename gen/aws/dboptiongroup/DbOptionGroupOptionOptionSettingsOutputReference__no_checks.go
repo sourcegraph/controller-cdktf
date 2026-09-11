@@ -40,11 +40,11 @@ func (d *jsiiProxy_DbOptionGroupOptionOptionSettingsOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DbOptionGroupOptionOptionSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DbOptionGroupOptionOptionSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DbOptionGroupOptionOptionSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DbOptionGroupOptionOptionSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_DbOptionGroupOptionOptionSettingsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DbOptionGroupOptionOptionSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DbOptionGroupOptionOptionSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DbOptionGroupOptionOptionSettingsOutputReference) validateSet
 	return nil
 }
 
-func validateNewDbOptionGroupOptionOptionSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDbOptionGroupOptionOptionSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

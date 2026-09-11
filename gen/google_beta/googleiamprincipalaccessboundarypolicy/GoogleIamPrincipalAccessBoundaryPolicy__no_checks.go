@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateInterpolation
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validatePutDetailsPar
 }
 
 func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validatePutTimeoutsParameters(value *GoogleIamPrincipalAccessBoundaryPolicyTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateSetIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (c *jsiiProxy_CodebuildReportGroup) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_CodebuildReportGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodebuildReportGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_CodebuildReportGroup) validateOverrideLogicalIdParameters(new
 }
 
 func (c *jsiiProxy_CodebuildReportGroup) validatePutExportConfigParameters(value *CodebuildReportGroupExportConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodebuildReportGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_CodebuildReportGroup) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildReportGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CodebuildReportGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

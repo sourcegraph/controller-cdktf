@@ -56,6 +56,10 @@ func (s *jsiiProxy_SpannerDatabase) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (s *jsiiProxy_SpannerDatabase) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpannerDatabase) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (s *jsiiProxy_SpannerDatabase) validatePutEncryptionConfigParameters(value 
 }
 
 func (s *jsiiProxy_SpannerDatabase) validatePutTimeoutsParameters(value *SpannerDatabaseTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpannerDatabase) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_SpannerDatabase) validateSetInstanceParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_SpannerDatabase) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SpannerDatabase) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

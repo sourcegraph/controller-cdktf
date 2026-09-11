@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeInfoApproximateUsageOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocBatchRuntimeInfoApproximateUsageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataprocBatchRuntimeInfoApproximateUsageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocBatchRuntimeInfoApproximateUsageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataprocBatchRuntimeInfoApproximateUsageOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleDataprocBatchRuntimeInfoApproximateUsageOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchRuntimeInfoApproximateUsageOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeInfoApproximateUsageOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataprocBatchRuntimeInfoApproximateUsageOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDataprocBatchRuntimeInfoApproximateUsageOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

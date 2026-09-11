@@ -12,7 +12,7 @@ func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DialogflowCxIntentTrainingPhrasesList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxIntentTrainingPhrasesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxIntentTrainingPhrasesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DialogflowCxIntentTrainingPhrasesList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewDialogflowCxIntentTrainingPhrasesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDialogflowCxIntentTrainingPhrasesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

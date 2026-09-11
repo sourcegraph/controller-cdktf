@@ -40,11 +40,11 @@ func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStackTimeoutsOut
 	return nil
 }
 
-func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStackTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStackTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStackTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStackTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ServerlessapplicationrepositoryCloudformationStackTimeoutsOut
 	return nil
 }
 
-func (j *jsiiProxy_ServerlessapplicationrepositoryCloudformationStackTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ServerlessapplicationrepositoryCloudformationStackTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ServerlessapplicationrepositoryCloudformationStackTimeoutsOut
 	return nil
 }
 
-func validateNewServerlessapplicationrepositoryCloudformationStackTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewServerlessapplicationrepositoryCloudformationStackTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

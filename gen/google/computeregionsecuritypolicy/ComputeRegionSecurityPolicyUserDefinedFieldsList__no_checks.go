@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyUserDefinedFieldsList) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyUserDefinedFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyUserDefinedFieldsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyUserDefinedFieldsList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyUserDefinedFieldsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyUserDefinedFieldsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyUserDefinedFieldsList) validateSet
 	return nil
 }
 
-func validateNewComputeRegionSecurityPolicyUserDefinedFieldsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeRegionSecurityPolicyUserDefinedFieldsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

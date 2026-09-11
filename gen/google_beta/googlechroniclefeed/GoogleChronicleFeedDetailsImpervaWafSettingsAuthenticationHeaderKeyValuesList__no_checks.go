@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHea
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHea
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHea
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

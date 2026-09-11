@@ -56,6 +56,10 @@ func (e *jsiiProxy_EmailSenderVerification) validateInterpolationForAttributePar
 	return nil
 }
 
+func (e *jsiiProxy_EmailSenderVerification) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailSenderVerification) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (e *jsiiProxy_EmailSenderVerification) validateMoveToIdParameters(id *strin
 }
 
 func (e *jsiiProxy_EmailSenderVerification) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmailSenderVerification) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_EmailSenderVerification) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_EmailSenderVerification) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EmailSenderVerification) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

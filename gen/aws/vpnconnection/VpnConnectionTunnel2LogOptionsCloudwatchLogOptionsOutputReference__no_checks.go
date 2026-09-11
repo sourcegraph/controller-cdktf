@@ -40,11 +40,11 @@ func (v *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputRefer
 	return nil
 }
 
-func (v *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewVpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

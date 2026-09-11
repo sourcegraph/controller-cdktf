@@ -56,6 +56,10 @@ func (f *jsiiProxy_FsxFileCache) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (f *jsiiProxy_FsxFileCache) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxFileCache) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (f *jsiiProxy_FsxFileCache) validatePutLustreConfigurationParameters(value 
 }
 
 func (f *jsiiProxy_FsxFileCache) validatePutTimeoutsParameters(value *FsxFileCacheTimeouts) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxFileCache) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_FsxFileCache) validateSetKmsKeyIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_FsxFileCache) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FsxFileCache) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

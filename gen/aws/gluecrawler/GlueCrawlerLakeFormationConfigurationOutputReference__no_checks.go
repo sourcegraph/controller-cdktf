@@ -40,11 +40,11 @@ func (g *jsiiProxy_GlueCrawlerLakeFormationConfigurationOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GlueCrawlerLakeFormationConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueCrawlerLakeFormationConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueCrawlerLakeFormationConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCrawlerLakeFormationConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GlueCrawlerLakeFormationConfigurationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerLakeFormationConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GlueCrawlerLakeFormationConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GlueCrawlerLakeFormationConfigurationOutputReference) validat
 	return nil
 }
 
-func validateNewGlueCrawlerLakeFormationConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGlueCrawlerLakeFormationConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

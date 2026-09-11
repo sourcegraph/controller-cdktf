@@ -56,6 +56,10 @@ func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validateInterpolationForAttrib
 	return nil
 }
 
+func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validatePutActiveDirectoryConf
 }
 
 func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validatePutTimeoutsParameters(value *FsxOntapStorageVirtualMachineTimeouts) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_FsxOntapStorageVirtualMachine) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_FsxOntapStorageVirtualMachine) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FsxOntapStorageVirtualMachine) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

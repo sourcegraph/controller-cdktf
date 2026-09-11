@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCloudRunDomainMappingStatusResourceRecordsOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunDomainMappingStatusResourceRecordsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudRunDomainMappingStatusResourceRecordsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunDomainMappingStatusResourceRecordsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudRunDomainMappingStatusResourceRecordsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleCloudRunDomainMappingStatusResourceRecordsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunDomainMappingStatusResourceRecordsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudRunDomainMappingStatusResourceRecordsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCloudRunDomainMappingStatusResourceRecordsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleCloudRunDomainMappingStatusResourceRecordsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

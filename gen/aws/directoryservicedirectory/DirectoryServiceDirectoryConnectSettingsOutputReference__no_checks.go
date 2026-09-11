@@ -40,11 +40,11 @@ func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) vali
 	return nil
 }
 
-func validateNewDirectoryServiceDirectoryConnectSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDirectoryServiceDirectoryConnectSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

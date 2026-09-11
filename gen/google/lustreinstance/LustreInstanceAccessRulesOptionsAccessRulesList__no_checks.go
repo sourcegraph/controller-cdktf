@@ -12,7 +12,7 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesList) validateGetP
 	return nil
 }
 
-func (l *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesList) validateSetW
 	return nil
 }
 
-func validateNewLustreInstanceAccessRulesOptionsAccessRulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLustreInstanceAccessRulesOptionsAccessRulesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

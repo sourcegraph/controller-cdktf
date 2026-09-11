@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleSccSource) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSccSource) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSccSource) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleSccSource) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (g *jsiiProxy_GoogleSccSource) validatePutTimeoutsParameters(value *GoogleSccSourceTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSccSource) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleSccSource) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccSource) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleSccSource) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

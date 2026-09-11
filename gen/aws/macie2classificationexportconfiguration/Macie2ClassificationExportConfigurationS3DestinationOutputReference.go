@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/macie2classificationexportconfiguration/internal"
 )
 
 type Macie2ClassificationExportConfigurationS3DestinationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BucketName() *string
 	SetBucketName(val *string)
 	BucketNameInput() *string
@@ -43,15 +43,15 @@ type Macie2ClassificationExportConfigurationS3DestinationOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type Macie2ClassificationExportConfigurationS3DestinationOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetKeyPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type Macie2ClassificationExportConfigurationS3DestinationOutputReference interfa
 
 // The jsii proxy struct for Macie2ClassificationExportConfigurationS3DestinationOutputReference
 type jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) BucketName() *string {
@@ -206,8 +206,8 @@ func (j *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputRef
 }
 
 
-func NewMacie2ClassificationExportConfigurationS3DestinationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Macie2ClassificationExportConfigurationS3DestinationOutputReference {
+func NewMacie2ClassificationExportConfigurationS3DestinationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) Macie2ClassificationExportConfigurationS3DestinationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMacie2ClassificationExportConfigurationS3DestinationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewMacie2ClassificationExportConfigurationS3DestinationOutputReference(terr
 	j := jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfigurationS3DestinationOutputReference",
+		"@cdktn/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfigurationS3DestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewMacie2ClassificationExportConfigurationS3DestinationOutputReference(terr
 	return &j
 }
 
-func NewMacie2ClassificationExportConfigurationS3DestinationOutputReference_Override(m Macie2ClassificationExportConfigurationS3DestinationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMacie2ClassificationExportConfigurationS3DestinationOutputReference_Override(m Macie2ClassificationExportConfigurationS3DestinationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfigurationS3DestinationOutputReference",
+		"@cdktn/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfigurationS3DestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -321,7 +321,7 @@ func (j *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputRef
 	)
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputRef
 	return returns
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -489,8 +489,8 @@ func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputRef
 	return returns
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -502,16 +502,16 @@ func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputRef
 	return returns
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputRef
 	)
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputRef
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

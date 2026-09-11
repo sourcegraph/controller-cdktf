@@ -56,6 +56,10 @@ func (e *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) validateInterpolatio
 	return nil
 }
 
+func (e *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (e *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) validateMoveToIdPara
 }
 
 func (e *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputerouter/internal"
 )
 
 type GoogleComputeRouterBgpOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdvertisedGroups() *[]*string
 	SetAdvertisedGroups(val *[]*string)
 	AdvertisedGroupsInput() *[]*string
@@ -51,15 +51,15 @@ type GoogleComputeRouterBgpOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -75,9 +75,9 @@ type GoogleComputeRouterBgpOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAdvertisedIpRanges(value interface{})
 	ResetAdvertisedGroups()
 	ResetAdvertisedIpRanges()
@@ -86,7 +86,7 @@ type GoogleComputeRouterBgpOutputReference interface {
 	ResetKeepaliveInterval()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type GoogleComputeRouterBgpOutputReference interface {
 
 // The jsii proxy struct for GoogleComputeRouterBgpOutputReference
 type jsiiProxy_GoogleComputeRouterBgpOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference) AdvertisedGroups() *[]*string {
@@ -279,8 +279,8 @@ func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -290,7 +290,7 @@ func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference) TerraformResource() cd
 }
 
 
-func NewGoogleComputeRouterBgpOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeRouterBgpOutputReference {
+func NewGoogleComputeRouterBgpOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleComputeRouterBgpOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeRouterBgpOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -299,7 +299,7 @@ func NewGoogleComputeRouterBgpOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_GoogleComputeRouterBgpOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouterBgpOutputReference",
+		"@cdktn/provider-google-beta.googleComputeRouter.GoogleComputeRouterBgpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -307,11 +307,11 @@ func NewGoogleComputeRouterBgpOutputReference(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewGoogleComputeRouterBgpOutputReference_Override(g GoogleComputeRouterBgpOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleComputeRouterBgpOutputReference_Override(g GoogleComputeRouterBgpOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouterBgpOutputReference",
+		"@cdktn/provider-google-beta.googleComputeRouter.GoogleComputeRouterBgpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -416,7 +416,7 @@ func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,11 +456,11 @@ func (g *jsiiProxy_GoogleComputeRouterBgpOutputReference) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRouterBgpOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeRouterBgpOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -584,8 +584,8 @@ func (g *jsiiProxy_GoogleComputeRouterBgpOutputReference) GetStringMapAttribute(
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRouterBgpOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeRouterBgpOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -597,16 +597,16 @@ func (g *jsiiProxy_GoogleComputeRouterBgpOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRouterBgpOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeRouterBgpOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -664,8 +664,8 @@ func (g *jsiiProxy_GoogleComputeRouterBgpOutputReference) ResetKeepaliveInterval
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRouterBgpOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeRouterBgpOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -673,7 +673,7 @@ func (g *jsiiProxy_GoogleComputeRouterBgpOutputReference) Resolve(_context cdktf
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

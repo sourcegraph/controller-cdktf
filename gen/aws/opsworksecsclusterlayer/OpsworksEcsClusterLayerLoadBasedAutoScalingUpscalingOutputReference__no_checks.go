@@ -40,11 +40,11 @@ func (o *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputRef
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputRef
 	return nil
 }
 
-func validateNewOpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

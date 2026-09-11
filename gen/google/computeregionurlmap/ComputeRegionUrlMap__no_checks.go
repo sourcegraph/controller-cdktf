@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeRegionUrlMap) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionUrlMap) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionUrlMap) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (c *jsiiProxy_ComputeRegionUrlMap) validatePutTimeoutsParameters(value *Com
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionUrlMap) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateComputeRegionUrlMap_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -136,7 +144,7 @@ func (j *jsiiProxy_ComputeRegionUrlMap) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeRegionUrlMap) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

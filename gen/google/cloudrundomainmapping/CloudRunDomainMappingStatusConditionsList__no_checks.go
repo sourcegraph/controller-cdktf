@@ -12,7 +12,7 @@ func (c *jsiiProxy_CloudRunDomainMappingStatusConditionsList) validateGetParamet
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunDomainMappingStatusConditionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunDomainMappingStatusConditionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_CloudRunDomainMappingStatusConditionsList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunDomainMappingStatusConditionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudRunDomainMappingStatusConditionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_CloudRunDomainMappingStatusConditionsList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewCloudRunDomainMappingStatusConditionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCloudRunDomainMappingStatusConditionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

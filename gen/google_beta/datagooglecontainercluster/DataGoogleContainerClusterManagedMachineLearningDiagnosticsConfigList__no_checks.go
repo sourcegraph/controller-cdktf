@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterManagedMachineLearningDiagnosticsCo
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterManagedMachineLearningDiagnosticsConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterManagedMachineLearningDiagnosticsConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterManagedMachineLearningDiagnosticsCo
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterManagedMachineLearningDiagnosticsConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleContainerClusterManagedMachineLearningDiagnosticsConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterManagedMachineLearningDiagnosticsCo
 	return nil
 }
 
-func validateNewDataGoogleContainerClusterManagedMachineLearningDiagnosticsConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleContainerClusterManagedMachineLearningDiagnosticsConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

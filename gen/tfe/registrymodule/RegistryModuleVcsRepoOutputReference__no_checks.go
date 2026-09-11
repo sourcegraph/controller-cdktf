@@ -40,11 +40,11 @@ func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RegistryModuleVcsRepoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RegistryModuleVcsRepoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewRegistryModuleVcsRepoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRegistryModuleVcsRepoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

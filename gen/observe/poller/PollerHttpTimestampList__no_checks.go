@@ -12,7 +12,7 @@ func (p *jsiiProxy_PollerHttpTimestampList) validateGetParameters(index *float64
 	return nil
 }
 
-func (p *jsiiProxy_PollerHttpTimestampList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PollerHttpTimestampList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PollerHttpTimestampList) validateSetTerraformAttributeParamet
 	return nil
 }
 
-func (j *jsiiProxy_PollerHttpTimestampList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PollerHttpTimestampList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PollerHttpTimestampList) validateSetWrapsSetParameters(val *b
 	return nil
 }
 
-func validateNewPollerHttpTimestampListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPollerHttpTimestampListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

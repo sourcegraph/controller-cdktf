@@ -12,7 +12,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorOriginationRouteList) validateGetParameter
 	return nil
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorOriginationRouteList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChimeVoiceConnectorOriginationRouteList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorOriginationRouteList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOriginationRouteList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ChimeVoiceConnectorOriginationRouteList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorOriginationRouteList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewChimeVoiceConnectorOriginationRouteListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewChimeVoiceConnectorOriginationRouteListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

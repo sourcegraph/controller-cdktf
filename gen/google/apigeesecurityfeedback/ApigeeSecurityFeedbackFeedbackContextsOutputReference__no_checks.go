@@ -40,11 +40,11 @@ func (a *jsiiProxy_ApigeeSecurityFeedbackFeedbackContextsOutputReference) valida
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeSecurityFeedbackFeedbackContextsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigeeSecurityFeedbackFeedbackContextsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeSecurityFeedbackFeedbackContextsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeSecurityFeedbackFeedbackContextsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ApigeeSecurityFeedbackFeedbackContextsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedbackFeedbackContextsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApigeeSecurityFeedbackFeedbackContextsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ApigeeSecurityFeedbackFeedbackContextsOutputReference) valida
 	return nil
 }
 
-func validateNewApigeeSecurityFeedbackFeedbackContextsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewApigeeSecurityFeedbackFeedbackContextsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

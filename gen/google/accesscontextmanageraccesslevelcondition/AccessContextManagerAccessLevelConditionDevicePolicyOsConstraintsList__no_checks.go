@@ -12,7 +12,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstra
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstra
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstra
 	return nil
 }
 
-func validateNewAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

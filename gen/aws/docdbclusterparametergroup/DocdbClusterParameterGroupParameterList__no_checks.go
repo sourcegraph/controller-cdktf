@@ -12,7 +12,7 @@ func (d *jsiiProxy_DocdbClusterParameterGroupParameterList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DocdbClusterParameterGroupParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DocdbClusterParameterGroupParameterList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DocdbClusterParameterGroupParameterList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_DocdbClusterParameterGroupParameterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DocdbClusterParameterGroupParameterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DocdbClusterParameterGroupParameterList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewDocdbClusterParameterGroupParameterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDocdbClusterParameterGroupParameterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

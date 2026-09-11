@@ -56,6 +56,10 @@ func (t *jsiiProxy_TagsLocationTagBinding) validateInterpolationForAttributePara
 	return nil
 }
 
+func (t *jsiiProxy_TagsLocationTagBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TagsLocationTagBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (t *jsiiProxy_TagsLocationTagBinding) validateOverrideLogicalIdParameters(n
 }
 
 func (t *jsiiProxy_TagsLocationTagBinding) validatePutTimeoutsParameters(value *TagsLocationTagBindingTimeouts) error {
+	return nil
+}
+
+func (t *jsiiProxy_TagsLocationTagBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_TagsLocationTagBinding) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_TagsLocationTagBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_TagsLocationTagBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

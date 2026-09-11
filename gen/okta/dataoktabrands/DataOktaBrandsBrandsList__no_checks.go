@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataOktaBrandsBrandsList) validateGetParameters(index *float6
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaBrandsBrandsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaBrandsBrandsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataOktaBrandsBrandsList) validateSetTerraformAttributeParame
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaBrandsBrandsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataOktaBrandsBrandsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataOktaBrandsBrandsList) validateSetWrapsSetParameters(val *
 	return nil
 }
 
-func validateNewDataOktaBrandsBrandsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataOktaBrandsBrandsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

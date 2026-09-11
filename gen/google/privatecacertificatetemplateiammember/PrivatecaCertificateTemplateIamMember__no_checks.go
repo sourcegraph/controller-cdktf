@@ -56,6 +56,10 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateInterpolationF
 	return nil
 }
 
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateOverrideLogica
 }
 
 func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validatePutConditionParameters(value *PrivatecaCertificateTemplateIamMemberCondition) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

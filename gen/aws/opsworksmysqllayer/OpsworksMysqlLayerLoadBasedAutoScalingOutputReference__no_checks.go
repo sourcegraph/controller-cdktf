@@ -40,7 +40,7 @@ func (o *jsiiProxy_OpsworksMysqlLayerLoadBasedAutoScalingOutputReference) valida
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksMysqlLayerLoadBasedAutoScalingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpsworksMysqlLayerLoadBasedAutoScalingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (o *jsiiProxy_OpsworksMysqlLayerLoadBasedAutoScalingOutputReference) valida
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksMysqlLayerLoadBasedAutoScalingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksMysqlLayerLoadBasedAutoScalingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_OpsworksMysqlLayerLoadBasedAutoScalingOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayerLoadBasedAutoScalingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksMysqlLayerLoadBasedAutoScalingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewOpsworksMysqlLayerLoadBasedAutoScalingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOpsworksMysqlLayerLoadBasedAutoScalingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataplextask/internal"
 )
 
 type GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetNetwork()
 	ResetNetworkTags()
 	ResetSubNetwork()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference interfac
 
 // The jsii proxy struct for GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference
 type jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference) ComplexObjectIndex() interface{} {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputRefe
 }
 
 
-func NewGoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference {
+func NewGoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewGoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference(terra
 	j := jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDataplexTask.GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference",
+		"@cdktn/provider-google-beta.googleDataplexTask.GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewGoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference(terra
 	return &j
 }
 
-func NewGoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference_Override(g GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference_Override(g GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDataplexTask.GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference",
+		"@cdktn/provider-google-beta.googleDataplexTask.GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -491,8 +491,8 @@ func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -504,16 +504,16 @@ func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputRefe
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecVpcNetworkOutputRefe
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

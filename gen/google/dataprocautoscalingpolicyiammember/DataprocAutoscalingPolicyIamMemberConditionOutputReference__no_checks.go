@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataprocAutoscalingPolicyIamMemberConditionOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataprocAutoscalingPolicyIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocAutoscalingPolicyIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocAutoscalingPolicyIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocAutoscalingPolicyIamMemberConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_DataprocAutoscalingPolicyIamMemberConditionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataprocAutoscalingPolicyIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataprocAutoscalingPolicyIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_DataprocAutoscalingPolicyIamMemberConditionOutputReference) v
 	return nil
 }
 
-func validateNewDataprocAutoscalingPolicyIamMemberConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataprocAutoscalingPolicyIamMemberConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

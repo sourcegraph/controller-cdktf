@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorLabelsList) validateGetPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorLabelsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorLabelsList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorLabelsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorLabelsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorLabelsList) validateSetWra
 	return nil
 }
 
-func validateNewGoogleLoggingMetricMetricDescriptorLabelsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleLoggingMetricMetricDescriptorLabelsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

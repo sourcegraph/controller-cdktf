@@ -56,6 +56,10 @@ func (f *jsiiProxy_FirebaseAppCheckAppAttestConfig) validateInterpolationForAttr
 	return nil
 }
 
+func (f *jsiiProxy_FirebaseAppCheckAppAttestConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirebaseAppCheckAppAttestConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (f *jsiiProxy_FirebaseAppCheckAppAttestConfig) validateOverrideLogicalIdPar
 }
 
 func (f *jsiiProxy_FirebaseAppCheckAppAttestConfig) validatePutTimeoutsParameters(value *FirebaseAppCheckAppAttestConfigTimeouts) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirebaseAppCheckAppAttestConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_FirebaseAppCheckAppAttestConfig) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppCheckAppAttestConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FirebaseAppCheckAppAttestConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleMonitoringSlo) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringSlo) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringSlo) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (g *jsiiProxy_GoogleMonitoringSlo) validatePutTimeoutsParameters(value *Goo
 }
 
 func (g *jsiiProxy_GoogleMonitoringSlo) validatePutWindowsBasedSliParameters(value *GoogleMonitoringSloWindowsBasedSli) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMonitoringSlo) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleMonitoringSlo) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringSlo) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleMonitoringSlo) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

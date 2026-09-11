@@ -40,11 +40,11 @@ func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) validateGetString
 	return nil
 }
 
-func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_EbsSnapshotImportClientDataOutputReference) validateSetUpload
 	return nil
 }
 
-func validateNewEbsSnapshotImportClientDataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEbsSnapshotImportClientDataOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

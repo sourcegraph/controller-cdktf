@@ -56,6 +56,10 @@ func (o *jsiiProxy_OpsworksHaproxyLayer) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksHaproxyLayer) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksHaproxyLayer) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (o *jsiiProxy_OpsworksHaproxyLayer) validatePutEbsVolumeParameters(value in
 }
 
 func (o *jsiiProxy_OpsworksHaproxyLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksHaproxyLayerLoadBasedAutoScaling) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksHaproxyLayer) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -180,7 +188,7 @@ func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetInstanceShutdownTimeoutParam
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

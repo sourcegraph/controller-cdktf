@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validateGetStringM
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validatePutAdditio
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*ApihubPluginConfigTemplateAdditionalConfigTemplate:
 		value := value.(*[]*ApihubPluginConfigTemplateAdditionalConfigTemplate)
@@ -114,7 +114,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validatePutAdditio
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ApihubPluginConfigTemplateAdditionalConfigTemplate; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ApihubPluginConfigTemplateAdditionalConfigTemplate; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -132,9 +132,9 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validatePutAuthCon
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -221,7 +221,7 @@ func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -229,7 +229,7 @@ func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validateSetTerrafo
 	return nil
 }
 
-func validateNewApihubPluginConfigTemplateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApihubPluginConfigTemplateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

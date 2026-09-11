@@ -12,7 +12,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginGroupMemberList) validateGetParam
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginGroupMemberList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionOriginGroupMemberList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginGroupMemberList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginGroupMemberList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudfrontDistributionOriginGroupMemberList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginGroupMemberList) validateSetWraps
 	return nil
 }
 
-func validateNewCloudfrontDistributionOriginGroupMemberListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCloudfrontDistributionOriginGroupMemberListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

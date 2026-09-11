@@ -40,7 +40,7 @@ func (b *jsiiProxy_BigqueryJobCopyOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobCopyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryJobCopyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (b *jsiiProxy_BigqueryJobCopyOutputReference) validatePutSourceTablesParame
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobCopyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryJobCopyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_BigqueryJobCopyOutputReference) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobCopyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryJobCopyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_BigqueryJobCopyOutputReference) validateSetWriteDispositionPa
 	return nil
 }
 
-func validateNewBigqueryJobCopyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBigqueryJobCopyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

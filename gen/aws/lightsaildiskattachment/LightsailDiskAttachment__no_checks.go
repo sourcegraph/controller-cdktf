@@ -56,6 +56,10 @@ func (l *jsiiProxy_LightsailDiskAttachment) validateInterpolationForAttributePar
 	return nil
 }
 
+func (l *jsiiProxy_LightsailDiskAttachment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailDiskAttachment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (l *jsiiProxy_LightsailDiskAttachment) validateMoveToIdParameters(id *strin
 }
 
 func (l *jsiiProxy_LightsailDiskAttachment) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LightsailDiskAttachment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_LightsailDiskAttachment) validateSetInstanceNameParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_LightsailDiskAttachment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LightsailDiskAttachment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

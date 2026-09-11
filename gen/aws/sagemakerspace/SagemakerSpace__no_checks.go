@@ -56,6 +56,10 @@ func (s *jsiiProxy_SagemakerSpace) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerSpace) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerSpace) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_SagemakerSpace) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (s *jsiiProxy_SagemakerSpace) validatePutSpaceSettingsParameters(value *SagemakerSpaceSpaceSettings) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerSpace) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_SagemakerSpace) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerSpace) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SagemakerSpace) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

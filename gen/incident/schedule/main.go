@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.schedule.Schedule",
+		"@cdktn/provider-incident.schedule.Schedule",
 		reflect.TypeOf((*Schedule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -37,6 +37,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -49,6 +50,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putHolidaysPublicConfig", GoMethod: "PutHolidaysPublicConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putRotations", GoMethod: "PutRotations"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHolidaysPublicConfig", GoMethod: "ResetHolidaysPublicConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTeamIds", GoMethod: "ResetTeamIds"},
@@ -67,23 +69,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Schedule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.schedule.ScheduleConfig",
+		"@cdktn/provider-incident.schedule.ScheduleConfig",
 		reflect.TypeOf((*ScheduleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.schedule.ScheduleHolidaysPublicConfig",
+		"@cdktn/provider-incident.schedule.ScheduleHolidaysPublicConfig",
 		reflect.TypeOf((*ScheduleHolidaysPublicConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.schedule.ScheduleHolidaysPublicConfigOutputReference",
+		"@cdktn/provider-incident.schedule.ScheduleHolidaysPublicConfigOutputReference",
 		reflect.TypeOf((*ScheduleHolidaysPublicConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -112,16 +115,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ScheduleHolidaysPublicConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.schedule.ScheduleRotations",
+		"@cdktn/provider-incident.schedule.ScheduleRotations",
 		reflect.TypeOf((*ScheduleRotations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.schedule.ScheduleRotationsList",
+		"@cdktn/provider-incident.schedule.ScheduleRotationsList",
 		reflect.TypeOf((*ScheduleRotationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -138,12 +141,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ScheduleRotationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.schedule.ScheduleRotationsOutputReference",
+		"@cdktn/provider-incident.schedule.ScheduleRotationsOutputReference",
 		reflect.TypeOf((*ScheduleRotationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -177,20 +180,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ScheduleRotationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.schedule.ScheduleRotationsVersions",
+		"@cdktn/provider-incident.schedule.ScheduleRotationsVersions",
 		reflect.TypeOf((*ScheduleRotationsVersions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsHandovers",
+		"@cdktn/provider-incident.schedule.ScheduleRotationsVersionsHandovers",
 		reflect.TypeOf((*ScheduleRotationsVersionsHandovers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsHandoversList",
+		"@cdktn/provider-incident.schedule.ScheduleRotationsVersionsHandoversList",
 		reflect.TypeOf((*ScheduleRotationsVersionsHandoversList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -207,12 +210,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ScheduleRotationsVersionsHandoversList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsHandoversOutputReference",
+		"@cdktn/provider-incident.schedule.ScheduleRotationsVersionsHandoversOutputReference",
 		reflect.TypeOf((*ScheduleRotationsVersionsHandoversOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -243,16 +246,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ScheduleRotationsVersionsHandoversOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsLayers",
+		"@cdktn/provider-incident.schedule.ScheduleRotationsVersionsLayers",
 		reflect.TypeOf((*ScheduleRotationsVersionsLayers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsLayersList",
+		"@cdktn/provider-incident.schedule.ScheduleRotationsVersionsLayersList",
 		reflect.TypeOf((*ScheduleRotationsVersionsLayersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -269,12 +272,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ScheduleRotationsVersionsLayersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsLayersOutputReference",
+		"@cdktn/provider-incident.schedule.ScheduleRotationsVersionsLayersOutputReference",
 		reflect.TypeOf((*ScheduleRotationsVersionsLayersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -305,12 +308,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ScheduleRotationsVersionsLayersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsList",
+		"@cdktn/provider-incident.schedule.ScheduleRotationsVersionsList",
 		reflect.TypeOf((*ScheduleRotationsVersionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -327,12 +330,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ScheduleRotationsVersionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsOutputReference",
+		"@cdktn/provider-incident.schedule.ScheduleRotationsVersionsOutputReference",
 		reflect.TypeOf((*ScheduleRotationsVersionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -376,16 +379,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ScheduleRotationsVersionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsWorkingIntervals",
+		"@cdktn/provider-incident.schedule.ScheduleRotationsVersionsWorkingIntervals",
 		reflect.TypeOf((*ScheduleRotationsVersionsWorkingIntervals)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsWorkingIntervalsList",
+		"@cdktn/provider-incident.schedule.ScheduleRotationsVersionsWorkingIntervalsList",
 		reflect.TypeOf((*ScheduleRotationsVersionsWorkingIntervalsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -402,12 +405,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsWorkingIntervalsOutputReference",
+		"@cdktn/provider-incident.schedule.ScheduleRotationsVersionsWorkingIntervalsOutputReference",
 		reflect.TypeOf((*ScheduleRotationsVersionsWorkingIntervalsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -440,7 +443,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

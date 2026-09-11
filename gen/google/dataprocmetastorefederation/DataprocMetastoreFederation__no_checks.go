@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataprocMetastoreFederation) validateInterpolationForAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DataprocMetastoreFederation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreFederation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (d *jsiiProxy_DataprocMetastoreFederation) validatePutBackendMetastoresPara
 }
 
 func (d *jsiiProxy_DataprocMetastoreFederation) validatePutTimeoutsParameters(value *DataprocMetastoreFederationTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreFederation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation) validateSetLabelsParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataprocMetastoreFederation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

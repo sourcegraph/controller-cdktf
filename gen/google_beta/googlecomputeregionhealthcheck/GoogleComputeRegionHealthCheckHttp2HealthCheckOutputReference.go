@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionhealthcheck/internal"
 )
 
 type GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -55,15 +55,15 @@ type GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,9 +79,9 @@ type GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetHost()
 	ResetPort()
 	ResetPortName()
@@ -91,7 +91,7 @@ type GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference interface {
 	ResetResponse()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,7 +101,7 @@ type GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference interface {
 
 // The jsii proxy struct for GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference
 type jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference) ComplexObjectIndex() interface{} {
@@ -304,8 +304,8 @@ func (j *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference
 }
 
 
-func NewGoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference {
+func NewGoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeRegionHealthCheckHttp2HealthCheckOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -324,7 +324,7 @@ func NewGoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference(terraformR
 	j := jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference",
+		"@cdktn/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -332,11 +332,11 @@ func NewGoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference(terraformR
 	return &j
 }
 
-func NewGoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference_Override(g GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference_Override(g GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference",
+		"@cdktn/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -463,7 +463,7 @@ func (j *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,11 +503,11 @@ func (g *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -631,8 +631,8 @@ func (g *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -644,16 +644,16 @@ func (g *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -716,8 +716,8 @@ func (g *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -725,7 +725,7 @@ func (g *jsiiProxy_GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

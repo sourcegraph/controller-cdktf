@@ -56,6 +56,10 @@ func (z *jsiiProxy_ZoneSettingsOverride) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (z *jsiiProxy_ZoneSettingsOverride) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneSettingsOverride) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (z *jsiiProxy_ZoneSettingsOverride) validateOverrideLogicalIdParameters(new
 }
 
 func (z *jsiiProxy_ZoneSettingsOverride) validatePutSettingsParameters(value *ZoneSettingsOverrideSettings) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_ZoneSettingsOverride) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSettingsOverride) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ZoneSettingsOverride) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DatasetStageList) validateGetParameters(index *float64) error
 	return nil
 }
 
-func (d *jsiiProxy_DatasetStageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatasetStageList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DatasetStageList) validateSetTerraformAttributeParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DatasetStageList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatasetStageList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DatasetStageList) validateSetWrapsSetParameters(val *bool) er
 	return nil
 }
 
-func validateNewDatasetStageListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDatasetStageListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

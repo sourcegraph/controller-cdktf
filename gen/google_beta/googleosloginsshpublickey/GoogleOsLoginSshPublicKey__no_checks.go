@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleOsLoginSshPublicKey) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOsLoginSshPublicKey) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOsLoginSshPublicKey) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleOsLoginSshPublicKey) validateOverrideLogicalIdParameter
 }
 
 func (g *jsiiProxy_GoogleOsLoginSshPublicKey) validatePutTimeoutsParameters(value *GoogleOsLoginSshPublicKeyTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOsLoginSshPublicKey) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleOsLoginSshPublicKey) validateSetKeyParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsLoginSshPublicKey) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleOsLoginSshPublicKey) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DataObserveMonitorV2SchedulingScheduledOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,17 +82,17 @@ func (d *jsiiProxy_DataObserveMonitorV2SchedulingScheduledOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2SchedulingScheduledOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataObserveMonitorV2SchedulingScheduledOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2SchedulingScheduledOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataObserveMonitorV2SchedulingScheduledOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -165,7 +165,7 @@ func (j *jsiiProxy_DataObserveMonitorV2SchedulingScheduledOutputReference) valid
 
 func (j *jsiiProxy_DataObserveMonitorV2SchedulingScheduledOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *DataObserveMonitorV2SchedulingScheduled:
 		val := val.(*DataObserveMonitorV2SchedulingScheduled)
@@ -180,7 +180,7 @@ func (j *jsiiProxy_DataObserveMonitorV2SchedulingScheduledOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataObserveMonitorV2SchedulingScheduled; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *DataObserveMonitorV2SchedulingScheduled; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -195,7 +195,7 @@ func (j *jsiiProxy_DataObserveMonitorV2SchedulingScheduledOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2SchedulingScheduledOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataObserveMonitorV2SchedulingScheduledOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_DataObserveMonitorV2SchedulingScheduledOutputReference) valid
 	return nil
 }
 
-func validateNewDataObserveMonitorV2SchedulingScheduledOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataObserveMonitorV2SchedulingScheduledOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

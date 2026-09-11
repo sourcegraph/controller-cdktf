@@ -56,6 +56,10 @@ func (b *jsiiProxy_BigtableTable) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (b *jsiiProxy_BigtableTable) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableTable) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (b *jsiiProxy_BigtableTable) validatePutColumnFamilyParameters(value interf
 }
 
 func (b *jsiiProxy_BigtableTable) validatePutTimeoutsParameters(value *BigtableTableTimeouts) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigtableTable) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_BigtableTable) validateSetInstanceNameParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_BigtableTable) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BigtableTable) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

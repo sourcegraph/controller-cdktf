@@ -56,6 +56,10 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) validateInterpolationForAttribu
 	return nil
 }
 
+func (l *jsiiProxy_LightsailInstancePublicPorts) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailInstancePublicPorts) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) validateOverrideLogicalIdParame
 }
 
 func (l *jsiiProxy_LightsailInstancePublicPorts) validatePutPortInfoParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LightsailInstancePublicPorts) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_LightsailInstancePublicPorts) validateSetInstanceNameParamete
 	return nil
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPorts) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LightsailInstancePublicPorts) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

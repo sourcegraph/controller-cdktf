@@ -12,7 +12,7 @@ func (e *jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsList) validateGetParame
 	return nil
 }
 
-func (e *jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsList) validateSetWrapsS
 	return nil
 }
 
-func validateNewEksNodeGroupResourcesAutoscalingGroupsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEksNodeGroupResourcesAutoscalingGroupsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

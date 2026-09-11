@@ -12,7 +12,7 @@ func (a *jsiiProxy_AccessOrganizationLoginDesignList) validateGetParameters(inde
 	return nil
 }
 
-func (a *jsiiProxy_AccessOrganizationLoginDesignList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessOrganizationLoginDesignList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_AccessOrganizationLoginDesignList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccessOrganizationLoginDesignList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewAccessOrganizationLoginDesignListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAccessOrganizationLoginDesignListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

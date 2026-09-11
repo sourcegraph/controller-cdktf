@@ -56,6 +56,10 @@ func (p *jsiiProxy_PersistentVolumeClaimV1) validateInterpolationForAttributePar
 	return nil
 }
 
+func (p *jsiiProxy_PersistentVolumeClaimV1) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PersistentVolumeClaimV1) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (p *jsiiProxy_PersistentVolumeClaimV1) validatePutSpecParameters(value *Per
 }
 
 func (p *jsiiProxy_PersistentVolumeClaimV1) validatePutTimeoutsParameters(value *PersistentVolumeClaimV1Timeouts) error {
+	return nil
+}
+
+func (p *jsiiProxy_PersistentVolumeClaimV1) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_PersistentVolumeClaimV1) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeClaimV1) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PersistentVolumeClaimV1) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

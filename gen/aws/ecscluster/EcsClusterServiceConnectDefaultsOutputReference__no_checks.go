@@ -40,11 +40,11 @@ func (e *jsiiProxy_EcsClusterServiceConnectDefaultsOutputReference) validateGetS
 	return nil
 }
 
-func (e *jsiiProxy_EcsClusterServiceConnectDefaultsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsClusterServiceConnectDefaultsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsClusterServiceConnectDefaultsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsClusterServiceConnectDefaultsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_EcsClusterServiceConnectDefaultsOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_EcsClusterServiceConnectDefaultsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcsClusterServiceConnectDefaultsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEcsClusterServiceConnectDefaultsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEcsClusterServiceConnectDefaultsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionAutomaticScalingOutputReference) v
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineStandardAppVersionAutomaticScalingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppEngineStandardAppVersionAutomaticScalingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionAutomaticScalingOutputReference) v
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineStandardAppVersionAutomaticScalingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppEngineStandardAppVersionAutomaticScalingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_AppEngineStandardAppVersionAutomaticScalingOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionAutomaticScalingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppEngineStandardAppVersionAutomaticScalingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppEngineStandardAppVersionAutomaticScalingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppEngineStandardAppVersionAutomaticScalingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

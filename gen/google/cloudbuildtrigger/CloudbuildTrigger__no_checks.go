@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudbuildTrigger) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_CloudbuildTrigger) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudbuildTrigger) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -120,6 +124,10 @@ func (c *jsiiProxy_CloudbuildTrigger) validatePutWebhookConfigParameters(value *
 	return nil
 }
 
+func (c *jsiiProxy_CloudbuildTrigger) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateCloudbuildTrigger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -176,7 +184,7 @@ func (j *jsiiProxy_CloudbuildTrigger) validateSetIncludedFilesParameters(val *[]
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTrigger) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudbuildTrigger) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

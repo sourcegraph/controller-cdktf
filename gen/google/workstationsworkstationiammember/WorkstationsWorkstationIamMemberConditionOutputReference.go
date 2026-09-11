@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/workstationsworkstationiammember/internal"
 )
 
 type WorkstationsWorkstationIamMemberConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type WorkstationsWorkstationIamMemberConditionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -51,7 +51,7 @@ type WorkstationsWorkstationIamMemberConditionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type WorkstationsWorkstationIamMemberConditionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type WorkstationsWorkstationIamMemberConditionOutputReference interface {
 
 // The jsii proxy struct for WorkstationsWorkstationIamMemberConditionOutputReference
 type jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference) Tit
 }
 
 
-func NewWorkstationsWorkstationIamMemberConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationIamMemberConditionOutputReference {
+func NewWorkstationsWorkstationIamMemberConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationIamMemberConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewWorkstationsWorkstationIamMemberConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewWorkstationsWorkstationIamMemberConditionOutputReference(terraformResour
 	j := jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConditionOutputReference",
+		"@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewWorkstationsWorkstationIamMemberConditionOutputReference(terraformResour
 	return &j
 }
 
-func NewWorkstationsWorkstationIamMemberConditionOutputReference_Override(w WorkstationsWorkstationIamMemberConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewWorkstationsWorkstationIamMemberConditionOutputReference_Override(w WorkstationsWorkstationIamMemberConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConditionOutputReference",
+		"@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference) Get
 	return returns
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -489,8 +489,8 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference) Get
 	return returns
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (w *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -502,16 +502,16 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference) Int
 	return returns
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference) Res
 	)
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMemberConditionOutputReference) Res
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

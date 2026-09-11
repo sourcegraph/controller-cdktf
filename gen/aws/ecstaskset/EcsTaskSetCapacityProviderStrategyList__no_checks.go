@@ -12,7 +12,7 @@ func (e *jsiiProxy_EcsTaskSetCapacityProviderStrategyList) validateGetParameters
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskSetCapacityProviderStrategyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsTaskSetCapacityProviderStrategyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EcsTaskSetCapacityProviderStrategyList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskSetCapacityProviderStrategyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcsTaskSetCapacityProviderStrategyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EcsTaskSetCapacityProviderStrategyList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewEcsTaskSetCapacityProviderStrategyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEcsTaskSetCapacityProviderStrategyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

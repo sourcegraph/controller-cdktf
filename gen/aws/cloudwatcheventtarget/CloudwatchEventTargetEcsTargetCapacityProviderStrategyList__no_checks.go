@@ -12,7 +12,7 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyList) v
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyList) v
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyList) v
 	return nil
 }
 
-func validateNewCloudwatchEventTargetEcsTargetCapacityProviderStrategyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCloudwatchEventTargetEcsTargetCapacityProviderStrategyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

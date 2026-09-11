@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDialogflowCxToolDataStoreSpecDataStoreConnectionsList) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxToolDataStoreSpecDataStoreConnectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxToolDataStoreSpecDataStoreConnectionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDialogflowCxToolDataStoreSpecDataStoreConnectionsList) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxToolDataStoreSpecDataStoreConnectionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxToolDataStoreSpecDataStoreConnectionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDialogflowCxToolDataStoreSpecDataStoreConnectionsList) 
 	return nil
 }
 
-func validateNewGoogleDialogflowCxToolDataStoreSpecDataStoreConnectionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDialogflowCxToolDataStoreSpecDataStoreConnectionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

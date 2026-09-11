@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/integrationsauthconfig/internal"
 )
 
 type IntegrationsAuthConfigDecryptedCredentialOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthToken() IntegrationsAuthConfigDecryptedCredentialAuthTokenOutputReference
 	AuthTokenInput() *IntegrationsAuthConfigDecryptedCredentialAuthToken
 	// the index of the complex object in a list.
@@ -49,9 +49,9 @@ type IntegrationsAuthConfigDecryptedCredentialOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UsernameAndPassword() IntegrationsAuthConfigDecryptedCredentialUsernameAndPasswordOutputReference
 	UsernameAndPasswordInput() *IntegrationsAuthConfigDecryptedCredentialUsernameAndPassword
 	// Experimental.
@@ -59,7 +59,7 @@ type IntegrationsAuthConfigDecryptedCredentialOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -75,9 +75,9 @@ type IntegrationsAuthConfigDecryptedCredentialOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuthToken(value *IntegrationsAuthConfigDecryptedCredentialAuthToken)
 	PutJwt(value *IntegrationsAuthConfigDecryptedCredentialJwt)
 	PutOauth2AuthorizationCode(value *IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCode)
@@ -94,7 +94,7 @@ type IntegrationsAuthConfigDecryptedCredentialOutputReference interface {
 	ResetUsernameAndPassword()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,7 +104,7 @@ type IntegrationsAuthConfigDecryptedCredentialOutputReference interface {
 
 // The jsii proxy struct for IntegrationsAuthConfigDecryptedCredentialOutputReference
 type jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference) AuthToken() IntegrationsAuthConfigDecryptedCredentialAuthTokenOutputReference {
@@ -307,8 +307,8 @@ func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -338,7 +338,7 @@ func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference) Use
 }
 
 
-func NewIntegrationsAuthConfigDecryptedCredentialOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IntegrationsAuthConfigDecryptedCredentialOutputReference {
+func NewIntegrationsAuthConfigDecryptedCredentialOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) IntegrationsAuthConfigDecryptedCredentialOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIntegrationsAuthConfigDecryptedCredentialOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -347,7 +347,7 @@ func NewIntegrationsAuthConfigDecryptedCredentialOutputReference(terraformResour
 	j := jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOutputReference",
+		"@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -355,11 +355,11 @@ func NewIntegrationsAuthConfigDecryptedCredentialOutputReference(terraformResour
 	return &j
 }
 
-func NewIntegrationsAuthConfigDecryptedCredentialOutputReference_Override(i IntegrationsAuthConfigDecryptedCredentialOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIntegrationsAuthConfigDecryptedCredentialOutputReference_Override(i IntegrationsAuthConfigDecryptedCredentialOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOutputReference",
+		"@cdktn/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -420,7 +420,7 @@ func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,11 +460,11 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference) Get
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -588,8 +588,8 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference) Get
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -601,16 +601,16 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference) Int
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -750,8 +750,8 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference) Res
 	)
 }
 
-func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -759,7 +759,7 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOutputReference) Res
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

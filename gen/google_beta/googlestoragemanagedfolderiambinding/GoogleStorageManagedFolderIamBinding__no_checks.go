@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleStorageManagedFolderIamBinding) validateInterpolationFo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageManagedFolderIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageManagedFolderIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleStorageManagedFolderIamBinding) validateOverrideLogical
 }
 
 func (g *jsiiProxy_GoogleStorageManagedFolderIamBinding) validatePutConditionParameters(value *GoogleStorageManagedFolderIamBindingCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageManagedFolderIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleStorageManagedFolderIamBinding) validateSetIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageManagedFolderIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleStorageManagedFolderIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

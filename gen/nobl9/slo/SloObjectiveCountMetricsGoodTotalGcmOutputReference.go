@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/slo/internal"
 )
 
 type SloObjectiveCountMetricsGoodTotalGcmOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type SloObjectiveCountMetricsGoodTotalGcmOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type SloObjectiveCountMetricsGoodTotalGcmOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetPromql()
 	ResetQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type SloObjectiveCountMetricsGoodTotalGcmOutputReference interface {
 
 // The jsii proxy struct for SloObjectiveCountMetricsGoodTotalGcmOutputReference
 type jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference) ComplexObjectIndex() interface{} {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference) Terrafor
 }
 
 
-func NewSloObjectiveCountMetricsGoodTotalGcmOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveCountMetricsGoodTotalGcmOutputReference {
+func NewSloObjectiveCountMetricsGoodTotalGcmOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveCountMetricsGoodTotalGcmOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSloObjectiveCountMetricsGoodTotalGcmOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -227,7 +227,7 @@ func NewSloObjectiveCountMetricsGoodTotalGcmOutputReference(terraformResource cd
 	j := jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGcmOutputReference",
+		"@cdktn/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGcmOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewSloObjectiveCountMetricsGoodTotalGcmOutputReference(terraformResource cd
 	return &j
 }
 
-func NewSloObjectiveCountMetricsGoodTotalGcmOutputReference_Override(s SloObjectiveCountMetricsGoodTotalGcmOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSloObjectiveCountMetricsGoodTotalGcmOutputReference_Override(s SloObjectiveCountMetricsGoodTotalGcmOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGcmOutputReference",
+		"@cdktn/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGcmOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -322,7 +322,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference) GetAnyMa
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -490,8 +490,8 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference) GetStrin
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -503,16 +503,16 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference) Interpol
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference) ResetQue
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference) Resolve(
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

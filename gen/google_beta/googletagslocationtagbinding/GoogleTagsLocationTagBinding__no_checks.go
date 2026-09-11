@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) validateInterpolationForAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleTagsLocationTagBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleTagsLocationTagBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleTagsLocationTagBinding) validateOverrideLogicalIdParame
 }
 
 func (g *jsiiProxy_GoogleTagsLocationTagBinding) validatePutTimeoutsParameters(value *GoogleTagsLocationTagBindingTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTagsLocationTagBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GoogleTagsLocationTagBinding) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleTagsLocationTagBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

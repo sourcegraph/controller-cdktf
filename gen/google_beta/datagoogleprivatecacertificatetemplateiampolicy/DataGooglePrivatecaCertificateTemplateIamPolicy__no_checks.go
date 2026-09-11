@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGooglePrivatecaCertificateTemplateIamPolicy) validateOver
 	return nil
 }
 
+func (d *jsiiProxy_DataGooglePrivatecaCertificateTemplateIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGooglePrivatecaCertificateTemplateIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGooglePrivatecaCertificateTemplateIamPolicy) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePrivatecaCertificateTemplateIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGooglePrivatecaCertificateTemplateIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (b *jsiiProxy_BeyondcorpAppGatewayAllocatedConnectionsList) validateGetPara
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpAppGatewayAllocatedConnectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BeyondcorpAppGatewayAllocatedConnectionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_BeyondcorpAppGatewayAllocatedConnectionsList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpAppGatewayAllocatedConnectionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BeyondcorpAppGatewayAllocatedConnectionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_BeyondcorpAppGatewayAllocatedConnectionsList) validateSetWrap
 	return nil
 }
 
-func validateNewBeyondcorpAppGatewayAllocatedConnectionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBeyondcorpAppGatewayAllocatedConnectionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

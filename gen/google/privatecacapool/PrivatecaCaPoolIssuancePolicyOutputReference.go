@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/privatecacapool/internal"
 )
 
 type PrivatecaCaPoolIssuancePolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowedIssuanceModes() PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference
 	AllowedIssuanceModesInput() *PrivatecaCaPoolIssuancePolicyAllowedIssuanceModes
 	AllowedKeyTypes() PrivatecaCaPoolIssuancePolicyAllowedKeyTypesList
@@ -48,15 +48,15 @@ type PrivatecaCaPoolIssuancePolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,9 +72,9 @@ type PrivatecaCaPoolIssuancePolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAllowedIssuanceModes(value *PrivatecaCaPoolIssuancePolicyAllowedIssuanceModes)
 	PutAllowedKeyTypes(value interface{})
 	PutBaselineValues(value *PrivatecaCaPoolIssuancePolicyBaselineValues)
@@ -87,7 +87,7 @@ type PrivatecaCaPoolIssuancePolicyOutputReference interface {
 	ResetMaximumLifetime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type PrivatecaCaPoolIssuancePolicyOutputReference interface {
 
 // The jsii proxy struct for PrivatecaCaPoolIssuancePolicyOutputReference
 type jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) AllowedIssuanceModes() PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference {
@@ -280,8 +280,8 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -291,7 +291,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) TerraformResour
 }
 
 
-func NewPrivatecaCaPoolIssuancePolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PrivatecaCaPoolIssuancePolicyOutputReference {
+func NewPrivatecaCaPoolIssuancePolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PrivatecaCaPoolIssuancePolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPrivatecaCaPoolIssuancePolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -300,7 +300,7 @@ func NewPrivatecaCaPoolIssuancePolicyOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyOutputReference",
+		"@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -308,11 +308,11 @@ func NewPrivatecaCaPoolIssuancePolicyOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewPrivatecaCaPoolIssuancePolicyOutputReference_Override(p PrivatecaCaPoolIssuancePolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPrivatecaCaPoolIssuancePolicyOutputReference_Override(p PrivatecaCaPoolIssuancePolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyOutputReference",
+		"@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -384,7 +384,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -424,11 +424,11 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -552,8 +552,8 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -565,16 +565,16 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) InterpolationAs
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -673,8 +673,8 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) ResetMaximumLif
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -682,7 +682,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

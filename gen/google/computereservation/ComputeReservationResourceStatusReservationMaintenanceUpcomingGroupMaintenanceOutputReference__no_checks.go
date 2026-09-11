@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomin
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomin
 	return nil
 }
 
-func (j *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComposerEnvironmentConfigRecoveryConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComposerEnvironmentConfigRecoveryConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

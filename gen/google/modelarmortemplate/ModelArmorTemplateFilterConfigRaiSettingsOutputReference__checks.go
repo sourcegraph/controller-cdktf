@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsOutputReference) val
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsOutputReference) val
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*ModelArmorTemplateFilterConfigRaiSettingsRaiFilters:
 		value := value.(*[]*ModelArmorTemplateFilterConfigRaiSettingsRaiFilters)
@@ -114,16 +114,16 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsOutputReference) val
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ModelArmorTemplateFilterConfigRaiSettingsRaiFilters; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ModelArmorTemplateFilterConfigRaiSettingsRaiFilters; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -210,7 +210,7 @@ func (j *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,7 +218,7 @@ func (j *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsOutputReference) val
 	return nil
 }
 
-func validateNewModelArmorTemplateFilterConfigRaiSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewModelArmorTemplateFilterConfigRaiSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

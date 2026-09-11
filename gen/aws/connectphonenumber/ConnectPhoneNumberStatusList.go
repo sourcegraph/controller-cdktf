@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/connectphonenumber/internal"
 )
 
 type ConnectPhoneNumberStatusList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type ConnectPhoneNumberStatusList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ConnectPhoneNumberStatusOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type ConnectPhoneNumberStatusList interface {
 
 // The jsii proxy struct for ConnectPhoneNumberStatusList
 type jsiiProxy_ConnectPhoneNumberStatusList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ConnectPhoneNumberStatusList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_ConnectPhoneNumberStatusList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectPhoneNumberStatusList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ConnectPhoneNumberStatusList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_ConnectPhoneNumberStatusList) WrapsSet() *bool {
 }
 
 
-func NewConnectPhoneNumberStatusList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectPhoneNumberStatusList {
+func NewConnectPhoneNumberStatusList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectPhoneNumberStatusList {
 	_init_.Initialize()
 
 	if err := validateNewConnectPhoneNumberStatusListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewConnectPhoneNumberStatusList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_ConnectPhoneNumberStatusList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatusList",
+		"@cdktn/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewConnectPhoneNumberStatusList(terraformResource cdktf.IInterpolatingParen
 	return &j
 }
 
-func NewConnectPhoneNumberStatusList_Override(c ConnectPhoneNumberStatusList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewConnectPhoneNumberStatusList_Override(c ConnectPhoneNumberStatusList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatusList",
+		"@cdktn/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_ConnectPhoneNumberStatusList)SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_ConnectPhoneNumberStatusList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ConnectPhoneNumberStatusList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_ConnectPhoneNumberStatusList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (c *jsiiProxy_ConnectPhoneNumberStatusList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (c *jsiiProxy_ConnectPhoneNumberStatusList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := c.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		c,
@@ -205,8 +208,8 @@ func (c *jsiiProxy_ConnectPhoneNumberStatusList) Get(index *float64) ConnectPhon
 	return returns
 }
 
-func (c *jsiiProxy_ConnectPhoneNumberStatusList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ConnectPhoneNumberStatusList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (c *jsiiProxy_ConnectPhoneNumberStatusList) Resolve(_context cdktf.IResolve
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

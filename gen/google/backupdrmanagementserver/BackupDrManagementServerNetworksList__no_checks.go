@@ -12,7 +12,7 @@ func (b *jsiiProxy_BackupDrManagementServerNetworksList) validateGetParameters(i
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrManagementServerNetworksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupDrManagementServerNetworksList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_BackupDrManagementServerNetworksList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrManagementServerNetworksList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BackupDrManagementServerNetworksList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_BackupDrManagementServerNetworksList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewBackupDrManagementServerNetworksListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBackupDrManagementServerNetworksListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

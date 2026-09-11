@@ -40,11 +40,11 @@ func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroupTimeoutsOutputReference)
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroupTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_Route53RecoveryreadinessRecoveryGroupTimeoutsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessRecoveryGroupTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Route53RecoveryreadinessRecoveryGroupTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewRoute53RecoveryreadinessRecoveryGroupTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRoute53RecoveryreadinessRecoveryGroupTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

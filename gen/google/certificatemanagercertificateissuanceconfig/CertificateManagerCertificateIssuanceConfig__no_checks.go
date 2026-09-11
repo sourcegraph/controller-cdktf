@@ -56,6 +56,10 @@ func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateInterpol
 	return nil
 }
 
+func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validatePutCerti
 }
 
 func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validatePutTimeoutsParameters(value *CertificateManagerCertificateIssuanceConfigTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateSetLabel
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

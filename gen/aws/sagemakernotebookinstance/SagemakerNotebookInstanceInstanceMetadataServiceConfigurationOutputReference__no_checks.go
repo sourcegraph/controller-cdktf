@@ -40,11 +40,11 @@ func (s *jsiiProxy_SagemakerNotebookInstanceInstanceMetadataServiceConfiguration
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_SagemakerNotebookInstanceInstanceMetadataServiceConfiguration
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

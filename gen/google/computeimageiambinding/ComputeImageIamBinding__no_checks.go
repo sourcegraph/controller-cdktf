@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeImageIamBinding) validateInterpolationForAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_ComputeImageIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeImageIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ComputeImageIamBinding) validateOverrideLogicalIdParameters(n
 }
 
 func (c *jsiiProxy_ComputeImageIamBinding) validatePutConditionParameters(value *ComputeImageIamBindingCondition) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeImageIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_ComputeImageIamBinding) validateSetImageParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_ComputeImageIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeImageIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

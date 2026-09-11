@@ -56,6 +56,10 @@ func (d *jsiiProxy_DirectoryServiceConditionalForwarder) validateInterpolationFo
 	return nil
 }
 
+func (d *jsiiProxy_DirectoryServiceConditionalForwarder) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectoryServiceConditionalForwarder) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (d *jsiiProxy_DirectoryServiceConditionalForwarder) validateMoveToIdParamet
 }
 
 func (d *jsiiProxy_DirectoryServiceConditionalForwarder) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectoryServiceConditionalForwarder) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_DirectoryServiceConditionalForwarder) validateSetIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_DirectoryServiceConditionalForwarder) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DirectoryServiceConditionalForwarder) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

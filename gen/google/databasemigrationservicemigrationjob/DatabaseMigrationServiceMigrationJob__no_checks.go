@@ -56,6 +56,10 @@ func (d *jsiiProxy_DatabaseMigrationServiceMigrationJob) validateInterpolationFo
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseMigrationServiceMigrationJob) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseMigrationServiceMigrationJob) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (d *jsiiProxy_DatabaseMigrationServiceMigrationJob) validatePutTimeoutsPara
 }
 
 func (d *jsiiProxy_DatabaseMigrationServiceMigrationJob) validatePutVpcPeeringConnectivityParameters(value *DatabaseMigrationServiceMigrationJobVpcPeeringConnectivity) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseMigrationServiceMigrationJob) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -148,7 +156,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceMigrationJob) validateSetLabelsParame
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceMigrationJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DatabaseMigrationServiceMigrationJob) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

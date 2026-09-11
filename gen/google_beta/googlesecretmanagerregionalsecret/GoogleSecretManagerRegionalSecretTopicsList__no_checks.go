@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleSecretManagerRegionalSecretTopicsList) validateGetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecretManagerRegionalSecretTopicsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSecretManagerRegionalSecretTopicsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecretTopicsList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerRegionalSecretTopicsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecretTopicsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecretTopicsList) validateSetWraps
 	return nil
 }
 
-func validateNewGoogleSecretManagerRegionalSecretTopicsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleSecretManagerRegionalSecretTopicsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

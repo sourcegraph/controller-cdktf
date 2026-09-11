@@ -12,7 +12,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsList) validateSe
 	return nil
 }
 
-func validateNewCloudbuildTriggerBuildArtifactsMavenArtifactsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCloudbuildTriggerBuildArtifactsMavenArtifactsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

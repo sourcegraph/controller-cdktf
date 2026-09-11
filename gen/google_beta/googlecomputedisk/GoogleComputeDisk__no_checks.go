@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeDisk) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeDisk) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeDisk) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (g *jsiiProxy_GoogleComputeDisk) validatePutSourceSnapshotEncryptionKeyPara
 }
 
 func (g *jsiiProxy_GoogleComputeDisk) validatePutTimeoutsParameters(value *GoogleComputeDiskTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeDisk) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -172,7 +180,7 @@ func (j *jsiiProxy_GoogleComputeDisk) validateSetLicensesParameters(val *[]*stri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeDisk) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeDisk) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

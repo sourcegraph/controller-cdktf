@@ -40,11 +40,11 @@ func (a *jsiiProxy_AlloydbClusterInitialUserOutputReference) validateGetStringMa
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterInitialUserOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlloydbClusterInitialUserOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterInitialUserOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbClusterInitialUserOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_AlloydbClusterInitialUserOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbClusterInitialUserOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlloydbClusterInitialUserOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_AlloydbClusterInitialUserOutputReference) validateSetUserPara
 	return nil
 }
 
-func validateNewAlloydbClusterInitialUserOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAlloydbClusterInitialUserOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

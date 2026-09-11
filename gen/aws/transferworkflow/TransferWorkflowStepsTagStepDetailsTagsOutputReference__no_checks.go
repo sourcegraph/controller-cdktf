@@ -40,11 +40,11 @@ func (t *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) valid
 	return nil
 }
 
-func (t *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) valid
 	return nil
 }
 
-func validateNewTransferWorkflowStepsTagStepDetailsTagsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewTransferWorkflowStepsTagStepDetailsTagsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/iamworkloadidentitypool/internal"
 )
 
 type IamWorkloadIdentityPoolInlineTrustConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdditionalTrustBundles() IamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesList
 	AdditionalTrustBundlesInput() interface{}
 	// the index of the complex object in a list.
@@ -36,15 +36,15 @@ type IamWorkloadIdentityPoolInlineTrustConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,14 +60,14 @@ type IamWorkloadIdentityPoolInlineTrustConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAdditionalTrustBundles(value interface{})
 	ResetAdditionalTrustBundles()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type IamWorkloadIdentityPoolInlineTrustConfigOutputReference interface {
 
 // The jsii proxy struct for IamWorkloadIdentityPoolInlineTrustConfigOutputReference
 type jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) AdditionalTrustBundles() IamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesList {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) Terr
 }
 
 
-func NewIamWorkloadIdentityPoolInlineTrustConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IamWorkloadIdentityPoolInlineTrustConfigOutputReference {
+func NewIamWorkloadIdentityPoolInlineTrustConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) IamWorkloadIdentityPoolInlineTrustConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIamWorkloadIdentityPoolInlineTrustConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewIamWorkloadIdentityPoolInlineTrustConfigOutputReference(terraformResourc
 	j := jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolInlineTrustConfigOutputReference",
+		"@cdktn/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolInlineTrustConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewIamWorkloadIdentityPoolInlineTrustConfigOutputReference(terraformResourc
 	return &j
 }
 
-func NewIamWorkloadIdentityPoolInlineTrustConfigOutputReference_Override(i IamWorkloadIdentityPoolInlineTrustConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIamWorkloadIdentityPoolInlineTrustConfigOutputReference_Override(i IamWorkloadIdentityPoolInlineTrustConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolInlineTrustConfigOutputReference",
+		"@cdktn/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolInlineTrustConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -282,11 +282,11 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) GetA
 	return returns
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -410,8 +410,8 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) GetS
 	return returns
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -423,16 +423,16 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) Inte
 	return returns
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) Rese
 	)
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) Reso
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

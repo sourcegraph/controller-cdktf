@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRuleHeaderActionReques
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRuleHeaderActionRequestHeadersToAddsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRuleHeaderActionRequestHeadersToAddsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRuleHeaderActionReques
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRuleHeaderActionRequestHeadersToAddsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRuleHeaderActionRequestHeadersToAddsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRuleHeaderActionReques
 	return nil
 }
 
-func validateNewGoogleComputeOrganizationSecurityPolicyRuleHeaderActionRequestHeadersToAddsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeOrganizationSecurityPolicyRuleHeaderActionRequestHeadersToAddsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

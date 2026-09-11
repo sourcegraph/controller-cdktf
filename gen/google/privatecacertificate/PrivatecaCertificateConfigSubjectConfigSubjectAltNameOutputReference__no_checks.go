@@ -40,11 +40,11 @@ func (p *jsiiProxy_PrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputRe
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_PrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_PrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputRe
 	return nil
 }
 
-func validateNewPrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

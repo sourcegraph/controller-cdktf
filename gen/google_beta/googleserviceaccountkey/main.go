@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleServiceAccountKey.GoogleServiceAccountKey",
+		"@cdktn/provider-google-beta.googleServiceAccountKey.GoogleServiceAccountKey",
 		reflect.TypeOf((*GoogleServiceAccountKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -40,6 +40,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "keyAlgorithm", GoGetter: "KeyAlgorithm"},
 			_jsii_.MemberProperty{JsiiProperty: "keyAlgorithmInput", GoGetter: "KeyAlgorithmInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -57,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "publicKeyType", GoGetter: "PublicKeyType"},
 			_jsii_.MemberProperty{JsiiProperty: "publicKeyTypeInput", GoGetter: "PublicKeyTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeepers", GoMethod: "ResetKeepers"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeyAlgorithm", GoMethod: "ResetKeyAlgorithm"},
@@ -77,15 +79,16 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "validAfter", GoGetter: "ValidAfter"},
 			_jsii_.MemberProperty{JsiiProperty: "validBefore", GoGetter: "ValidBefore"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleServiceAccountKey{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleServiceAccountKey.GoogleServiceAccountKeyConfig",
+		"@cdktn/provider-google-beta.googleServiceAccountKey.GoogleServiceAccountKeyConfig",
 		reflect.TypeOf((*GoogleServiceAccountKeyConfig)(nil)).Elem(),
 	)
 }

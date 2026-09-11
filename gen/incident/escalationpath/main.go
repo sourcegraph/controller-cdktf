@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPath",
+		"@cdktn/provider-incident.escalationPath.EscalationPath",
 		reflect.TypeOf((*EscalationPath)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -35,6 +35,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -49,6 +50,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putPath", GoMethod: "PutPath"},
 			_jsii_.MemberMethod{JsiiMethod: "putWorkingHours", GoMethod: "PutWorkingHours"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTeamIds", GoMethod: "ResetTeamIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkingHours", GoMethod: "ResetWorkingHours"},
@@ -63,33 +65,34 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workingHours", GoGetter: "WorkingHours"},
 			_jsii_.MemberProperty{JsiiProperty: "workingHoursInput", GoGetter: "WorkingHoursInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPath{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathConfig",
+		"@cdktn/provider-incident.escalationPath.EscalationPathConfig",
 		reflect.TypeOf((*EscalationPathConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPath",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPath",
 		reflect.TypeOf((*EscalationPathPath)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElse",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElse",
 		reflect.TypeOf((*EscalationPathPathIfElse)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditions",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseConditions",
 		reflect.TypeOf((*EscalationPathPathIfElseConditions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsList",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseConditionsList",
 		reflect.TypeOf((*EscalationPathPathIfElseConditionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -106,12 +109,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseConditionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseConditionsOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseConditionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -145,20 +148,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseConditionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindings",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindings",
 		reflect.TypeOf((*EscalationPathPathIfElseConditionsParamBindings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsArrayValue",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsArrayValue",
 		reflect.TypeOf((*EscalationPathPathIfElseConditionsParamBindingsArrayValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsArrayValueList",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsArrayValueList",
 		reflect.TypeOf((*EscalationPathPathIfElseConditionsParamBindingsArrayValueList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -175,12 +178,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseConditionsParamBindingsArrayValueList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsArrayValueOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsArrayValueOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseConditionsParamBindingsArrayValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -213,12 +216,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseConditionsParamBindingsArrayValueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsList",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsList",
 		reflect.TypeOf((*EscalationPathPathIfElseConditionsParamBindingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -235,12 +238,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseConditionsParamBindingsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseConditionsParamBindingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arrayValue", GoGetter: "ArrayValue"},
@@ -275,16 +278,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseConditionsParamBindingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsValue",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsValue",
 		reflect.TypeOf((*EscalationPathPathIfElseConditionsParamBindingsValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsValueOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsValueOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseConditionsParamBindingsValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -317,20 +320,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseConditionsParamBindingsValueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePath",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePath",
 		reflect.TypeOf((*EscalationPathPathIfElseElsePath)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevel",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevel",
 		reflect.TypeOf((*EscalationPathPathIfElseElsePathLevel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseElsePathLevelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ackMode", GoGetter: "AckMode"},
@@ -376,16 +379,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathLevelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelRoundRobinConfig",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelRoundRobinConfig",
 		reflect.TypeOf((*EscalationPathPathIfElseElsePathLevelRoundRobinConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -417,16 +420,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelTargets",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelTargets",
 		reflect.TypeOf((*EscalationPathPathIfElseElsePathLevelTargets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelTargetsList",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelTargetsList",
 		reflect.TypeOf((*EscalationPathPathIfElseElsePathLevelTargetsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -443,12 +446,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathLevelTargetsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelTargetsOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelTargetsOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseElsePathLevelTargetsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -484,12 +487,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathLevelTargetsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathList",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePathList",
 		reflect.TypeOf((*EscalationPathPathIfElseElsePathList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -506,16 +509,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathNotifyChannel",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePathNotifyChannel",
 		reflect.TypeOf((*EscalationPathPathIfElseElsePathNotifyChannel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathNotifyChannelOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePathNotifyChannelOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseElsePathNotifyChannelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -554,16 +557,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathNotifyChannelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathNotifyChannelTargets",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePathNotifyChannelTargets",
 		reflect.TypeOf((*EscalationPathPathIfElseElsePathNotifyChannelTargets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathNotifyChannelTargetsList",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePathNotifyChannelTargetsList",
 		reflect.TypeOf((*EscalationPathPathIfElseElsePathNotifyChannelTargetsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -580,12 +583,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathNotifyChannelTargetsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathNotifyChannelTargetsOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePathNotifyChannelTargetsOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseElsePathNotifyChannelTargetsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -621,12 +624,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathNotifyChannelTargetsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePathOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseElsePathOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -674,16 +677,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathRepeat",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePathRepeat",
 		reflect.TypeOf((*EscalationPathPathIfElseElsePathRepeat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathRepeatOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePathRepeatOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseElsePathRepeatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -714,12 +717,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathRepeatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -756,20 +759,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPath",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPath",
 		reflect.TypeOf((*EscalationPathPathIfElseThenPath)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevel",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevel",
 		reflect.TypeOf((*EscalationPathPathIfElseThenPathLevel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseThenPathLevelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ackMode", GoGetter: "AckMode"},
@@ -815,16 +818,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathLevelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelRoundRobinConfig",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelRoundRobinConfig",
 		reflect.TypeOf((*EscalationPathPathIfElseThenPathLevelRoundRobinConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelRoundRobinConfigOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelRoundRobinConfigOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseThenPathLevelRoundRobinConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -856,16 +859,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathLevelRoundRobinConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelTargets",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelTargets",
 		reflect.TypeOf((*EscalationPathPathIfElseThenPathLevelTargets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelTargetsList",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelTargetsList",
 		reflect.TypeOf((*EscalationPathPathIfElseThenPathLevelTargetsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -882,12 +885,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelTargetsOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelTargetsOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseThenPathLevelTargetsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -923,12 +926,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathList",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPathList",
 		reflect.TypeOf((*EscalationPathPathIfElseThenPathList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -945,16 +948,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannel",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannel",
 		reflect.TypeOf((*EscalationPathPathIfElseThenPathNotifyChannel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannelOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannelOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseThenPathNotifyChannelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -993,16 +996,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannelTargets",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannelTargets",
 		reflect.TypeOf((*EscalationPathPathIfElseThenPathNotifyChannelTargets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannelTargetsList",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannelTargetsList",
 		reflect.TypeOf((*EscalationPathPathIfElseThenPathNotifyChannelTargetsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1019,12 +1022,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1060,12 +1063,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPathOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseThenPathOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1113,16 +1116,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathRepeat",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPathRepeat",
 		reflect.TypeOf((*EscalationPathPathIfElseThenPathRepeat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathRepeatOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPathRepeatOutputReference",
 		reflect.TypeOf((*EscalationPathPathIfElseThenPathRepeatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1153,16 +1156,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathRepeatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathLevel",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathLevel",
 		reflect.TypeOf((*EscalationPathPathLevel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathLevelOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathLevelOutputReference",
 		reflect.TypeOf((*EscalationPathPathLevelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ackMode", GoGetter: "AckMode"},
@@ -1208,16 +1211,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathLevelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathLevelRoundRobinConfig",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathLevelRoundRobinConfig",
 		reflect.TypeOf((*EscalationPathPathLevelRoundRobinConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathLevelRoundRobinConfigOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathLevelRoundRobinConfigOutputReference",
 		reflect.TypeOf((*EscalationPathPathLevelRoundRobinConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1249,16 +1252,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathLevelRoundRobinConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathLevelTargets",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathLevelTargets",
 		reflect.TypeOf((*EscalationPathPathLevelTargets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathLevelTargetsList",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathLevelTargetsList",
 		reflect.TypeOf((*EscalationPathPathLevelTargetsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1275,12 +1278,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathLevelTargetsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathLevelTargetsOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathLevelTargetsOutputReference",
 		reflect.TypeOf((*EscalationPathPathLevelTargetsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1316,12 +1319,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathLevelTargetsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathList",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathList",
 		reflect.TypeOf((*EscalationPathPathList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1338,16 +1341,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathNotifyChannel",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathNotifyChannel",
 		reflect.TypeOf((*EscalationPathPathNotifyChannel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathNotifyChannelOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathNotifyChannelOutputReference",
 		reflect.TypeOf((*EscalationPathPathNotifyChannelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1386,16 +1389,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathNotifyChannelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathNotifyChannelTargets",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathNotifyChannelTargets",
 		reflect.TypeOf((*EscalationPathPathNotifyChannelTargets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathNotifyChannelTargetsList",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathNotifyChannelTargetsList",
 		reflect.TypeOf((*EscalationPathPathNotifyChannelTargetsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1412,12 +1415,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathNotifyChannelTargetsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathNotifyChannelTargetsOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathNotifyChannelTargetsOutputReference",
 		reflect.TypeOf((*EscalationPathPathNotifyChannelTargetsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1453,12 +1456,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathNotifyChannelTargetsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathOutputReference",
 		reflect.TypeOf((*EscalationPathPathOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1506,16 +1509,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathRepeat",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathRepeat",
 		reflect.TypeOf((*EscalationPathPathRepeat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathRepeatOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathRepeatOutputReference",
 		reflect.TypeOf((*EscalationPathPathRepeatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1546,16 +1549,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathPathRepeatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathWorkingHours",
+		"@cdktn/provider-incident.escalationPath.EscalationPathWorkingHours",
 		reflect.TypeOf((*EscalationPathWorkingHours)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathWorkingHoursList",
+		"@cdktn/provider-incident.escalationPath.EscalationPathWorkingHoursList",
 		reflect.TypeOf((*EscalationPathWorkingHoursList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1572,12 +1575,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathWorkingHoursList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathWorkingHoursOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathWorkingHoursOutputReference",
 		reflect.TypeOf((*EscalationPathWorkingHoursOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1613,16 +1616,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathWorkingHoursOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.escalationPath.EscalationPathWorkingHoursWeekdayIntervals",
+		"@cdktn/provider-incident.escalationPath.EscalationPathWorkingHoursWeekdayIntervals",
 		reflect.TypeOf((*EscalationPathWorkingHoursWeekdayIntervals)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathWorkingHoursWeekdayIntervalsList",
+		"@cdktn/provider-incident.escalationPath.EscalationPathWorkingHoursWeekdayIntervalsList",
 		reflect.TypeOf((*EscalationPathWorkingHoursWeekdayIntervalsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1639,12 +1642,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.escalationPath.EscalationPathWorkingHoursWeekdayIntervalsOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathWorkingHoursWeekdayIntervalsOutputReference",
 		reflect.TypeOf((*EscalationPathWorkingHoursWeekdayIntervalsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1677,7 +1680,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

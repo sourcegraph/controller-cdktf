@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsApigatewayv2ApiCorsConfigurationList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsApigatewayv2ApiCorsConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsApigatewayv2ApiCorsConfigurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2ApiCorsConfigurationList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2ApiCorsConfigurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsApigatewayv2ApiCorsConfigurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2ApiCorsConfigurationList) validateSetWraps
 	return nil
 }
 
-func validateNewDataAwsApigatewayv2ApiCorsConfigurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsApigatewayv2ApiCorsConfigurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

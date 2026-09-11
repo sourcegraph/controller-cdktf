@@ -12,7 +12,7 @@ func (s *jsiiProxy_SsmPatchBaselineApprovalRuleList) validateGetParameters(index
 	return nil
 }
 
-func (s *jsiiProxy_SsmPatchBaselineApprovalRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmPatchBaselineApprovalRuleList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SsmPatchBaselineApprovalRuleList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_SsmPatchBaselineApprovalRuleList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SsmPatchBaselineApprovalRuleList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SsmPatchBaselineApprovalRuleList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewSsmPatchBaselineApprovalRuleListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSsmPatchBaselineApprovalRuleListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

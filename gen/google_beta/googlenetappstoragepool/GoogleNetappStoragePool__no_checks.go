@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleNetappStoragePool) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetappStoragePool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappStoragePool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleNetappStoragePool) validateOverrideLogicalIdParameters(
 }
 
 func (g *jsiiProxy_GoogleNetappStoragePool) validatePutTimeoutsParameters(value *GoogleNetappStoragePoolTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappStoragePool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -144,7 +152,7 @@ func (j *jsiiProxy_GoogleNetappStoragePool) validateSetLdapEnabledParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappStoragePool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

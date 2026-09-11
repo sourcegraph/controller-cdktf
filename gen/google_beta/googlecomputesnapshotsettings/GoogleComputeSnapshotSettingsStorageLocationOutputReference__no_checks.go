@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleComputeSnapshotSettingsStorageLocationOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeSnapshotSettingsStorageLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeSnapshotSettingsStorageLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleComputeSnapshotSettingsStorageLocationOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeSnapshotSettingsStorageLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeSnapshotSettingsStorageLocationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleComputeSnapshotSettingsStorageLocationOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSnapshotSettingsStorageLocationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeSnapshotSettingsStorageLocationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeSnapshotSettingsStorageLocationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeSnapshotSettingsStorageLocationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

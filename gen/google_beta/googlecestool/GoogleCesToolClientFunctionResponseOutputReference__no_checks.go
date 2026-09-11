@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesToolClientFunctionResponseOutputReference) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesToolClientFunctionResponseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesToolClientFunctionResponseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesToolClientFunctionResponseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesToolClientFunctionResponseOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -128,7 +128,7 @@ func (j *jsiiProxy_GoogleCesToolClientFunctionResponseOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesToolClientFunctionResponseOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesToolClientFunctionResponseOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -144,7 +144,7 @@ func (j *jsiiProxy_GoogleCesToolClientFunctionResponseOutputReference) validateS
 	return nil
 }
 
-func validateNewGoogleCesToolClientFunctionResponseOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesToolClientFunctionResponseOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

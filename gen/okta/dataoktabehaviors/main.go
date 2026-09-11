@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviors",
+		"@cdktn/provider-okta.dataOktaBehaviors.DataOktaBehaviors",
 		reflect.TypeOf((*DataOktaBehaviors)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -39,6 +39,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "q", GoGetter: "Q"},
 			_jsii_.MemberProperty{JsiiProperty: "qInput", GoGetter: "QInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQ", GoMethod: "ResetQ"},
@@ -51,19 +52,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaBehaviors{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviors",
+		"@cdktn/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviors",
 		reflect.TypeOf((*DataOktaBehaviorsBehaviors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsList",
+		"@cdktn/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsList",
 		reflect.TypeOf((*DataOktaBehaviorsBehaviorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -79,12 +81,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaBehaviorsBehaviorsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsOutputReference",
+		"@cdktn/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsOutputReference",
 		reflect.TypeOf((*DataOktaBehaviorsBehaviorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -116,12 +118,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaBehaviorsBehaviorsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsConfig",
+		"@cdktn/provider-okta.dataOktaBehaviors.DataOktaBehaviorsConfig",
 		reflect.TypeOf((*DataOktaBehaviorsConfig)(nil)).Elem(),
 	)
 }

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestor) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestor) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBinaryAuthorizationAttestor) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestor) validatePutAttestationAuth
 }
 
 func (g *jsiiProxy_GoogleBinaryAuthorizationAttestor) validatePutTimeoutsParameters(value *GoogleBinaryAuthorizationAttestorTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestor) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestor) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestor) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestor) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

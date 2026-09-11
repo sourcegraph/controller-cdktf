@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/serviceaccountv1/internal"
 )
 
 type ServiceAccountV1SecretList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type ServiceAccountV1SecretList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ServiceAccountV1SecretOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type ServiceAccountV1SecretList interface {
 
 // The jsii proxy struct for ServiceAccountV1SecretList
 type jsiiProxy_ServiceAccountV1SecretList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ServiceAccountV1SecretList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_ServiceAccountV1SecretList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceAccountV1SecretList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ServiceAccountV1SecretList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_ServiceAccountV1SecretList) WrapsSet() *bool {
 }
 
 
-func NewServiceAccountV1SecretList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceAccountV1SecretList {
+func NewServiceAccountV1SecretList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceAccountV1SecretList {
 	_init_.Initialize()
 
 	if err := validateNewServiceAccountV1SecretListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewServiceAccountV1SecretList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_ServiceAccountV1SecretList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.serviceAccountV1.ServiceAccountV1SecretList",
+		"@cdktn/provider-kubernetes.serviceAccountV1.ServiceAccountV1SecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewServiceAccountV1SecretList(terraformResource cdktf.IInterpolatingParent,
 	return &j
 }
 
-func NewServiceAccountV1SecretList_Override(s ServiceAccountV1SecretList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewServiceAccountV1SecretList_Override(s ServiceAccountV1SecretList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.serviceAccountV1.ServiceAccountV1SecretList",
+		"@cdktn/provider-kubernetes.serviceAccountV1.ServiceAccountV1SecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_ServiceAccountV1SecretList)SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountV1SecretList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceAccountV1SecretList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_ServiceAccountV1SecretList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (s *jsiiProxy_ServiceAccountV1SecretList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (s *jsiiProxy_ServiceAccountV1SecretList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := s.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		s,
@@ -228,8 +231,8 @@ func (s *jsiiProxy_ServiceAccountV1SecretList) Get(index *float64) ServiceAccoun
 	return returns
 }
 
-func (s *jsiiProxy_ServiceAccountV1SecretList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_ServiceAccountV1SecretList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (s *jsiiProxy_ServiceAccountV1SecretList) Resolve(_context cdktf.IResolveCo
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

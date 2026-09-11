@@ -40,11 +40,11 @@ func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DbSecurityGroupIngressOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DbSecurityGroupIngressOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDbSecurityGroupIngressOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDbSecurityGroupIngressOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

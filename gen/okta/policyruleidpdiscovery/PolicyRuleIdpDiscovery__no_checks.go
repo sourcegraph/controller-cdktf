@@ -56,6 +56,10 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateInterpolationForAttributePara
 	return nil
 }
 
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) validatePutPlatformIncludeParameters(
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscovery) validatePutUserIdentifierPatternsParameters(value interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetIdpTypeParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

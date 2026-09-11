@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiapsettings/internal"
 )
 
 type GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccessDeniedPageUri() *string
 	SetAccessDeniedPageUri(val *string)
 	AccessDeniedPageUriInput() *string
@@ -43,15 +43,15 @@ type GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAccessDeniedPageUri()
 	ResetGenerateTroubleshootingUri()
 	ResetRemediationTokenGenerationEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference
 
 // The jsii proxy struct for GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference
 type jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) AccessDeniedPageUri() *string {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsO
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsO
 }
 
 
-func NewGoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference {
+func NewGoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewGoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputRefere
 	j := jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleIapSettings.GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleIapSettings.GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewGoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputRefere
 	return &j
 }
 
-func NewGoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference_Override(g GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference_Override(g GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleIapSettings.GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleIapSettings.GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsO
 	)
 }
 
-func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsO
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -491,8 +491,8 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsO
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -504,16 +504,16 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsO
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsO
 	)
 }
 
-func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsAccessDeniedPageSettingsO
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

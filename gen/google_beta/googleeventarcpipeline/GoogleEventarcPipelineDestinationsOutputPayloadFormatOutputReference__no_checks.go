@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleEventarcPipelineDestinationsOutputPayloadFormatOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEventarcPipelineDestinationsOutputPayloadFormatOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleEventarcPipelineDestinationsOutputPayloadFormatOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (g *jsiiProxy_GoogleEventarcPipelineDestinationsOutputPayloadFormatOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEventarcPipelineDestinationsOutputPayloadFormatOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleEventarcPipelineDestinationsOutputPayloadFormatOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleEventarcPipelineDestinationsOutputPayloadFormatOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcPipelineDestinationsOutputPayloadFormatOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleEventarcPipelineDestinationsOutputPayloadFormatOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleEventarcPipelineDestinationsOutputPayloadFormatOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleEventarcPipelineDestinationsOutputPayloadFormatOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

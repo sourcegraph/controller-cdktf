@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleSaasRuntimeSaasLocationsList) validateGetParameters(ind
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSaasRuntimeSaasLocationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSaasRuntimeSaasLocationsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleSaasRuntimeSaasLocationsList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSaasRuntimeSaasLocationsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSaasRuntimeSaasLocationsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleSaasRuntimeSaasLocationsList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewGoogleSaasRuntimeSaasLocationsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleSaasRuntimeSaasLocationsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

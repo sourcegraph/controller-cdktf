@@ -56,6 +56,10 @@ func (r *jsiiProxy_RdsClusterRoleAssociation) validateInterpolationForAttributeP
 	return nil
 }
 
+func (r *jsiiProxy_RdsClusterRoleAssociation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsClusterRoleAssociation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (r *jsiiProxy_RdsClusterRoleAssociation) validateMoveToIdParameters(id *str
 }
 
 func (r *jsiiProxy_RdsClusterRoleAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RdsClusterRoleAssociation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_RdsClusterRoleAssociation) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterRoleAssociation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_RdsClusterRoleAssociation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

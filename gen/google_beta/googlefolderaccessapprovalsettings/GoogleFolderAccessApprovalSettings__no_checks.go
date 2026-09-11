@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateInterpolationForA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validatePutEnrolledServic
 }
 
 func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validatePutTimeoutsParameters(value *GoogleFolderAccessApprovalSettingsTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleFolderAccessApprovalSettings) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFolderAccessApprovalSettings) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleFolderAccessApprovalSettings) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

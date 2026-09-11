@@ -56,6 +56,10 @@ func (l *jsiiProxy_LoggingOrganizationExclusion) validateInterpolationForAttribu
 	return nil
 }
 
+func (l *jsiiProxy_LoggingOrganizationExclusion) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingOrganizationExclusion) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (l *jsiiProxy_LoggingOrganizationExclusion) validateMoveToIdParameters(id *
 }
 
 func (l *jsiiProxy_LoggingOrganizationExclusion) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingOrganizationExclusion) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_LoggingOrganizationExclusion) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationExclusion) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LoggingOrganizationExclusion) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasList) validateGetParameters(inde
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstanceConfigReplicasList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpannerInstanceConfigReplicasList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewSpannerInstanceConfigReplicasListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSpannerInstanceConfigReplicasListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

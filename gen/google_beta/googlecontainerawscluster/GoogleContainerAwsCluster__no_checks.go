@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleContainerAwsCluster) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAwsCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAwsCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (g *jsiiProxy_GoogleContainerAwsCluster) validatePutTimeoutsParameters(valu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAwsCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleContainerAwsCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -140,7 +148,7 @@ func (j *jsiiProxy_GoogleContainerAwsCluster) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAwsCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleContainerAwsCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

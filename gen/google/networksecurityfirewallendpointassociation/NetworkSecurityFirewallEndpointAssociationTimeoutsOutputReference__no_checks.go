@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpointAssociationTimeoutsOutputRefer
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityFirewallEndpointAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkSecurityFirewallEndpointAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityFirewallEndpointAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkSecurityFirewallEndpointAssociationTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpointAssociationTimeoutsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpointAssociationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkSecurityFirewallEndpointAssociationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpointAssociationTimeoutsOutputRefer
 	return nil
 }
 
-func validateNewNetworkSecurityFirewallEndpointAssociationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkSecurityFirewallEndpointAssociationTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

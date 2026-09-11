@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsList) validateSetWraps
 	return nil
 }
 
-func validateNewDataAwsSesv2DedicatedIpPoolDedicatedIpsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsSesv2DedicatedIpPoolDedicatedIpsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

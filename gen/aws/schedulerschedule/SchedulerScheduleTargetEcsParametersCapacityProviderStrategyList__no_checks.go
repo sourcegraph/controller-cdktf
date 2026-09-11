@@ -12,7 +12,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyL
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyL
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyL
 	return nil
 }
 
-func validateNewSchedulerScheduleTargetEcsParametersCapacityProviderStrategyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSchedulerScheduleTargetEcsParametersCapacityProviderStrategyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (d *jsiiProxy_DbProxyEndpoint) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DbProxyEndpoint) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbProxyEndpoint) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DbProxyEndpoint) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (d *jsiiProxy_DbProxyEndpoint) validatePutTimeoutsParameters(value *DbProxyEndpointTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbProxyEndpoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_DbProxyEndpoint) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DbProxyEndpoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DbProxyEndpoint) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

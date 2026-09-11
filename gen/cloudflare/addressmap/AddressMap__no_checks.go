@@ -56,6 +56,10 @@ func (a *jsiiProxy_AddressMap) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (a *jsiiProxy_AddressMap) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AddressMap) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (a *jsiiProxy_AddressMap) validatePutIpsParameters(value interface{}) error
 }
 
 func (a *jsiiProxy_AddressMap) validatePutMembershipsParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AddressMap) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_AddressMap) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AddressMap) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AddressMap) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

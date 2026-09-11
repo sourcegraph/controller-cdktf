@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleLoggingProjectCmekSettings) validateOverrideLogical
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleLoggingProjectCmekSettings) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleLoggingProjectCmekSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGoogleLoggingProjectCmekSettings) validateSetKmsKeyNamePa
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleLoggingProjectCmekSettings) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleLoggingProjectCmekSettings) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

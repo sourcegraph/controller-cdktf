@@ -12,7 +12,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationList) valid
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationList) valid
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationList) valid
 	return nil
 }
 
-func validateNewAuditmanagerAssessmentAssessmentReportsDestinationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAuditmanagerAssessmentAssessmentReportsDestinationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

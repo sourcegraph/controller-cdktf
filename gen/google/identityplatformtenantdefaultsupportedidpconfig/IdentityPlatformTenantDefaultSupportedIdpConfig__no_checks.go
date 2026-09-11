@@ -56,6 +56,10 @@ func (i *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig) validateInte
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (i *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig) validateOver
 }
 
 func (i *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig) validatePutTimeoutsParameters(value *IdentityPlatformTenantDefaultSupportedIdpConfigTimeouts) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

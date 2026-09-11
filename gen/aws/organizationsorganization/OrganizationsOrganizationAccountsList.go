@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/organizationsorganization/internal"
 )
 
 type OrganizationsOrganizationAccountsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type OrganizationsOrganizationAccountsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) OrganizationsOrganizationAccountsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type OrganizationsOrganizationAccountsList interface {
 
 // The jsii proxy struct for OrganizationsOrganizationAccountsList
 type jsiiProxy_OrganizationsOrganizationAccountsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_OrganizationsOrganizationAccountsList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_OrganizationsOrganizationAccountsList) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationsOrganizationAccountsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OrganizationsOrganizationAccountsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_OrganizationsOrganizationAccountsList) WrapsSet() *bool {
 }
 
 
-func NewOrganizationsOrganizationAccountsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OrganizationsOrganizationAccountsList {
+func NewOrganizationsOrganizationAccountsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OrganizationsOrganizationAccountsList {
 	_init_.Initialize()
 
 	if err := validateNewOrganizationsOrganizationAccountsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewOrganizationsOrganizationAccountsList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_OrganizationsOrganizationAccountsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationAccountsList",
+		"@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganizationAccountsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewOrganizationsOrganizationAccountsList(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewOrganizationsOrganizationAccountsList_Override(o OrganizationsOrganizationAccountsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewOrganizationsOrganizationAccountsList_Override(o OrganizationsOrganizationAccountsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationAccountsList",
+		"@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganizationAccountsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_OrganizationsOrganizationAccountsList)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_OrganizationsOrganizationAccountsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OrganizationsOrganizationAccountsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_OrganizationsOrganizationAccountsList)SetWrapsSet(val *bool) 
 	)
 }
 
-func (o *jsiiProxy_OrganizationsOrganizationAccountsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (o *jsiiProxy_OrganizationsOrganizationAccountsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := o.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		o,
@@ -205,8 +208,8 @@ func (o *jsiiProxy_OrganizationsOrganizationAccountsList) Get(index *float64) Or
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationsOrganizationAccountsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OrganizationsOrganizationAccountsList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (o *jsiiProxy_OrganizationsOrganizationAccountsList) Resolve(_context cdktf
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

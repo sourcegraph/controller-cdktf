@@ -40,11 +40,11 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigWhis
 	return nil
 }
 
-func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigWhis
 	return nil
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigWhis
 	return nil
 }
 
-func validateNewHealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewHealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

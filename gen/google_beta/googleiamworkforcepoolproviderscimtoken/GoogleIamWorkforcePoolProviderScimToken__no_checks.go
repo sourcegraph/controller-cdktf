@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProviderScimToken) validateInterpolatio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamWorkforcePoolProviderScimToken) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamWorkforcePoolProviderScimToken) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProviderScimToken) validateOverrideLogi
 }
 
 func (g *jsiiProxy_GoogleIamWorkforcePoolProviderScimToken) validatePutTimeoutsParameters(value *GoogleIamWorkforcePoolProviderScimTokenTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIamWorkforcePoolProviderScimToken) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolProviderScimToken) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolProviderScimToken) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleIamWorkforcePoolProviderScimToken) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

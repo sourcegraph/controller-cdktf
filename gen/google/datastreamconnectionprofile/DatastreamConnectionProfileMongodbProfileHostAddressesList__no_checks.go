@@ -12,7 +12,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileHostAddressesList) v
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileHostAddressesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileHostAddressesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileHostAddressesList) v
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileHostAddressesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileHostAddressesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileHostAddressesList) v
 	return nil
 }
 
-func validateNewDatastreamConnectionProfileMongodbProfileHostAddressesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDatastreamConnectionProfileMongodbProfileHostAddressesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

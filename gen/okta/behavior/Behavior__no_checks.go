@@ -56,6 +56,10 @@ func (b *jsiiProxy_Behavior) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (b *jsiiProxy_Behavior) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_Behavior) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (b *jsiiProxy_Behavior) validateMoveToIdParameters(id *string) error {
 }
 
 func (b *jsiiProxy_Behavior) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_Behavior) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_Behavior) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Behavior) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Behavior) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

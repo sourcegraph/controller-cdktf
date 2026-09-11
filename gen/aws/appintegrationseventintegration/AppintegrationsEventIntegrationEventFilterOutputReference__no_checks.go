@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppintegrationsEventIntegrationEventFilterOutputReference) va
 	return nil
 }
 
-func (a *jsiiProxy_AppintegrationsEventIntegrationEventFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppintegrationsEventIntegrationEventFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppintegrationsEventIntegrationEventFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppintegrationsEventIntegrationEventFilterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_AppintegrationsEventIntegrationEventFilterOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_AppintegrationsEventIntegrationEventFilterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppintegrationsEventIntegrationEventFilterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppintegrationsEventIntegrationEventFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppintegrationsEventIntegrationEventFilterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

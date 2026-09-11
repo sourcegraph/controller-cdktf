@@ -12,7 +12,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesList) valid
 	return nil
 }
 
-func (k *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesList) valid
 	return nil
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesList) valid
 	return nil
 }
 
-func validateNewKmsEkmConnectionServiceResolversServerCertificatesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewKmsEkmConnectionServiceResolversServerCertificatesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

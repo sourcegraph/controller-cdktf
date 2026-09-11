@@ -40,11 +40,11 @@ func (i *jsiiProxy_IdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) 
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_IdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

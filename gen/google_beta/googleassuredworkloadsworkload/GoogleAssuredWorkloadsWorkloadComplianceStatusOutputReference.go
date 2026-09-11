@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleassuredworkloadsworkload/internal"
 )
 
 type GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AcknowledgedViolationCount() *[]*float64
 	ActiveViolationCount() *[]*float64
 	// the index of the complex object in a list.
@@ -36,15 +36,15 @@ type GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,12 +60,12 @@ type GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -75,7 +75,7 @@ type GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference interface {
 
 // The jsii proxy struct for GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference
 type jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference) AcknowledgedViolationCount() *[]*float64 {
@@ -158,8 +158,8 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -169,7 +169,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference
 }
 
 
-func NewGoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference {
+func NewGoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleAssuredWorkloadsWorkloadComplianceStatusOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -178,7 +178,7 @@ func NewGoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference(terraformR
 	j := jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference",
+		"@cdktn/provider-google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -186,11 +186,11 @@ func NewGoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference(terraformR
 	return &j
 }
 
-func NewGoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference_Override(g GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference_Override(g GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference",
+		"@cdktn/provider-google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -240,7 +240,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,11 +280,11 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -408,8 +408,8 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -421,24 +421,24 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -446,7 +446,7 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadComplianceStatusOutputReference
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

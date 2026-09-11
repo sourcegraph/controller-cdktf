@@ -12,7 +12,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotAppVariableDeclarationsSchemaList) valid
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotAppVariableDeclarationsSchemaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppVersionSnapshotAppVariableDeclarationsSchemaList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotAppVariableDeclarationsSchemaList) valid
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotAppVariableDeclarationsSchemaList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppVersionSnapshotAppVariableDeclarationsSchemaList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotAppVariableDeclarationsSchemaList) valid
 	return nil
 }
 
-func validateNewCesAppVersionSnapshotAppVariableDeclarationsSchemaListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCesAppVersionSnapshotAppVariableDeclarationsSchemaListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

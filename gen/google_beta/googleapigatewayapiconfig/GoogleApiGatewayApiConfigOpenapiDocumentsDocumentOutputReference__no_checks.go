@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

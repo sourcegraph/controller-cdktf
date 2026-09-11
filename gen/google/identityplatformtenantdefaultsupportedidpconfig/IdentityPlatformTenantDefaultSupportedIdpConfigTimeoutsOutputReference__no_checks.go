@@ -40,11 +40,11 @@ func (i *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfigTimeoutsOutput
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfigTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfigTimeoutsOutput
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfigTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfigTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfigTimeoutsOutput
 	return nil
 }
 
-func validateNewIdentityPlatformTenantDefaultSupportedIdpConfigTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIdentityPlatformTenantDefaultSupportedIdpConfigTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

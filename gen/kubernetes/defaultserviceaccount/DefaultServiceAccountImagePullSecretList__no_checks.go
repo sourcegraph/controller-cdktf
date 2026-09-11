@@ -12,7 +12,7 @@ func (d *jsiiProxy_DefaultServiceAccountImagePullSecretList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DefaultServiceAccountImagePullSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DefaultServiceAccountImagePullSecretList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DefaultServiceAccountImagePullSecretList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_DefaultServiceAccountImagePullSecretList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DefaultServiceAccountImagePullSecretList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DefaultServiceAccountImagePullSecretList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewDefaultServiceAccountImagePullSecretListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDefaultServiceAccountImagePullSecretListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

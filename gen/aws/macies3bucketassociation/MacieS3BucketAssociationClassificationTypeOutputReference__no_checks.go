@@ -40,11 +40,11 @@ func (m *jsiiProxy_MacieS3BucketAssociationClassificationTypeOutputReference) va
 	return nil
 }
 
-func (m *jsiiProxy_MacieS3BucketAssociationClassificationTypeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MacieS3BucketAssociationClassificationTypeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MacieS3BucketAssociationClassificationTypeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MacieS3BucketAssociationClassificationTypeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_MacieS3BucketAssociationClassificationTypeOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociationClassificationTypeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MacieS3BucketAssociationClassificationTypeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMacieS3BucketAssociationClassificationTypeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMacieS3BucketAssociationClassificationTypeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

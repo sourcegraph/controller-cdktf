@@ -12,7 +12,7 @@ func (d *jsiiProxy_DialogflowCxPlaybookInstructionStepsList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxPlaybookInstructionStepsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxPlaybookInstructionStepsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DialogflowCxPlaybookInstructionStepsList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPlaybookInstructionStepsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxPlaybookInstructionStepsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DialogflowCxPlaybookInstructionStepsList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewDialogflowCxPlaybookInstructionStepsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDialogflowCxPlaybookInstructionStepsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

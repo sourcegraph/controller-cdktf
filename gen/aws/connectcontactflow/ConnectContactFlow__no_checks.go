@@ -56,6 +56,10 @@ func (c *jsiiProxy_ConnectContactFlow) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (c *jsiiProxy_ConnectContactFlow) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectContactFlow) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (c *jsiiProxy_ConnectContactFlow) validateMoveToIdParameters(id *string) er
 }
 
 func (c *jsiiProxy_ConnectContactFlow) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectContactFlow) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_ConnectContactFlow) validateSetInstanceIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_ConnectContactFlow) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ConnectContactFlow) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

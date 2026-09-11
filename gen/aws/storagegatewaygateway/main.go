@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway",
+		"@cdktn/provider-aws.storagegatewayGateway.StoragegatewayGateway",
 		reflect.TypeOf((*StoragegatewayGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activationKey", GoGetter: "ActivationKey"},
@@ -62,6 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceStartTime", GoGetter: "MaintenanceStartTime"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceStartTimeInput", GoGetter: "MaintenanceStartTimeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "mediumChangerType", GoGetter: "MediumChangerType"},
 			_jsii_.MemberProperty{JsiiProperty: "mediumChangerTypeInput", GoGetter: "MediumChangerTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -75,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSmbActiveDirectorySettings", GoMethod: "PutSmbActiveDirectorySettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetActivationKey", GoMethod: "ResetActivationKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAverageDownloadRateLimitInBitsPerSec", GoMethod: "ResetAverageDownloadRateLimitInBitsPerSec"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAverageUploadRateLimitInBitsPerSec", GoMethod: "ResetAverageUploadRateLimitInBitsPerSec"},
@@ -119,23 +121,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_StoragegatewayGateway{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayConfig",
+		"@cdktn/provider-aws.storagegatewayGateway.StoragegatewayGatewayConfig",
 		reflect.TypeOf((*StoragegatewayGatewayConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterface",
+		"@cdktn/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterface",
 		reflect.TypeOf((*StoragegatewayGatewayGatewayNetworkInterface)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceList",
+		"@cdktn/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceList",
 		reflect.TypeOf((*StoragegatewayGatewayGatewayNetworkInterfaceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -151,12 +154,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceOutputReference",
+		"@cdktn/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceOutputReference",
 		reflect.TypeOf((*StoragegatewayGatewayGatewayNetworkInterfaceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -184,16 +187,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayMaintenanceStartTime",
+		"@cdktn/provider-aws.storagegatewayGateway.StoragegatewayGatewayMaintenanceStartTime",
 		reflect.TypeOf((*StoragegatewayGatewayMaintenanceStartTime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayMaintenanceStartTimeOutputReference",
+		"@cdktn/provider-aws.storagegatewayGateway.StoragegatewayGatewayMaintenanceStartTimeOutputReference",
 		reflect.TypeOf((*StoragegatewayGatewayMaintenanceStartTimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -231,16 +234,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StoragegatewayGatewayMaintenanceStartTimeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewaySmbActiveDirectorySettings",
+		"@cdktn/provider-aws.storagegatewayGateway.StoragegatewayGatewaySmbActiveDirectorySettings",
 		reflect.TypeOf((*StoragegatewayGatewaySmbActiveDirectorySettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference",
+		"@cdktn/provider-aws.storagegatewayGateway.StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference",
 		reflect.TypeOf((*StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeDirectoryStatus", GoGetter: "ActiveDirectoryStatus"},
@@ -283,16 +286,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayTimeouts",
+		"@cdktn/provider-aws.storagegatewayGateway.StoragegatewayGatewayTimeouts",
 		reflect.TypeOf((*StoragegatewayGatewayTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayTimeoutsOutputReference",
+		"@cdktn/provider-aws.storagegatewayGateway.StoragegatewayGatewayTimeoutsOutputReference",
 		reflect.TypeOf((*StoragegatewayGatewayTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -322,7 +325,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StoragegatewayGatewayTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

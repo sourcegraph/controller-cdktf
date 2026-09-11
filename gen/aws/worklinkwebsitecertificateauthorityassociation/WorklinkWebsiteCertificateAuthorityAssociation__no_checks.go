@@ -56,6 +56,10 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateInter
 	return nil
 }
 
+func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateMoveT
 }
 
 func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateSetId
 	return nil
 }
 
-func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleFilestoreInstanceDirectoryServicesLdapOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFilestoreInstanceDirectoryServicesLdapOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFilestoreInstanceDirectoryServicesLdapOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFilestoreInstanceDirectoryServicesLdapOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFilestoreInstanceDirectoryServicesLdapOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleFilestoreInstanceDirectoryServicesLdapOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstanceDirectoryServicesLdapOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFilestoreInstanceDirectoryServicesLdapOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleFilestoreInstanceDirectoryServicesLdapOutputReference) 
 	return nil
 }
 
-func validateNewGoogleFilestoreInstanceDirectoryServicesLdapOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleFilestoreInstanceDirectoryServicesLdapOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataAwsEmrReleaseLabels) validatePutFiltersParameters(value *
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsEmrReleaseLabels) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsEmrReleaseLabels_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsEmrReleaseLabels) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEmrReleaseLabels) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsEmrReleaseLabels) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

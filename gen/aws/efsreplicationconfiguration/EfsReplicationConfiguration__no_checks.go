@@ -56,6 +56,10 @@ func (e *jsiiProxy_EfsReplicationConfiguration) validateInterpolationForAttribut
 	return nil
 }
 
+func (e *jsiiProxy_EfsReplicationConfiguration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EfsReplicationConfiguration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (e *jsiiProxy_EfsReplicationConfiguration) validatePutDestinationParameters
 }
 
 func (e *jsiiProxy_EfsReplicationConfiguration) validatePutTimeoutsParameters(value *EfsReplicationConfigurationTimeouts) error {
+	return nil
+}
+
+func (e *jsiiProxy_EfsReplicationConfiguration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_EfsReplicationConfiguration) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_EfsReplicationConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EfsReplicationConfiguration) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

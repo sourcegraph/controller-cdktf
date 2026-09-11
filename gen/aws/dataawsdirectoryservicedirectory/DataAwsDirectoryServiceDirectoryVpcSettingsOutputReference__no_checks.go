@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsDirectoryServiceDirectoryVpcSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsDirectoryServiceDirectoryVpcSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

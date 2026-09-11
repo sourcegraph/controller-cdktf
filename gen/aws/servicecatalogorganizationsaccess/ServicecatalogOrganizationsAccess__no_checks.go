@@ -56,6 +56,10 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) validateInterpolationForAt
 	return nil
 }
 
+func (s *jsiiProxy_ServicecatalogOrganizationsAccess) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicecatalogOrganizationsAccess) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) validateOverrideLogicalIdP
 }
 
 func (s *jsiiProxy_ServicecatalogOrganizationsAccess) validatePutTimeoutsParameters(value *ServicecatalogOrganizationsAccessTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicecatalogOrganizationsAccess) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

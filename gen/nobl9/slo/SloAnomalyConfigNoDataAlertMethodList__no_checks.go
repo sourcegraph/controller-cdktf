@@ -12,7 +12,7 @@ func (s *jsiiProxy_SloAnomalyConfigNoDataAlertMethodList) validateGetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SloAnomalyConfigNoDataAlertMethodList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloAnomalyConfigNoDataAlertMethodList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewSloAnomalyConfigNoDataAlertMethodListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSloAnomalyConfigNoDataAlertMethodListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

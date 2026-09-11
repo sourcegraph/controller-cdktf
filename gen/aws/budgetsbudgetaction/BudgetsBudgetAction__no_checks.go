@@ -56,6 +56,10 @@ func (b *jsiiProxy_BudgetsBudgetAction) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (b *jsiiProxy_BudgetsBudgetAction) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BudgetsBudgetAction) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (b *jsiiProxy_BudgetsBudgetAction) validatePutDefinitionParameters(value *B
 }
 
 func (b *jsiiProxy_BudgetsBudgetAction) validatePutSubscriberParameters(value interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BudgetsBudgetAction) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_BudgetsBudgetAction) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetAction) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BudgetsBudgetAction) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

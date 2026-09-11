@@ -12,7 +12,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) validateG
 	return nil
 }
 
-func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) validateS
 	return nil
 }
 
-func validateNewBinaryAuthorizationPolicyClusterAdmissionRulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBinaryAuthorizationPolicyClusterAdmissionRulesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

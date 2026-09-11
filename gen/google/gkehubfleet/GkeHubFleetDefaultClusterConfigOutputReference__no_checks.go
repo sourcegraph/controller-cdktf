@@ -40,7 +40,7 @@ func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigOutputReference) validateGetSt
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigOutputReference) validatePutSe
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GkeHubFleetDefaultClusterConfigOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFleetDefaultClusterConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GkeHubFleetDefaultClusterConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGkeHubFleetDefaultClusterConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGkeHubFleetDefaultClusterConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

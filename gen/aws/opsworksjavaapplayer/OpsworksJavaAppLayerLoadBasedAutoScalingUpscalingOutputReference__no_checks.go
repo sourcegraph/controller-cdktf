@@ -40,11 +40,11 @@ func (o *jsiiProxy_OpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputRefere
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_OpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_OpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputRefere
 	return nil
 }
 
-func validateNewOpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOpsworksJavaAppLayerLoadBasedAutoScalingUpscalingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

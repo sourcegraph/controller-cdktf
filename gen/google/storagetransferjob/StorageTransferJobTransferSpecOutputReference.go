@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/storagetransferjob/internal"
 )
 
 type StorageTransferJobTransferSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AwsS3CompatibleDataSource() StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference
 	AwsS3CompatibleDataSourceInput() *StorageTransferJobTransferSpecAwsS3CompatibleDataSource
 	AwsS3DataSource() StorageTransferJobTransferSpecAwsS3DataSourceOutputReference
@@ -60,9 +60,9 @@ type StorageTransferJobTransferSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TransferManifest() StorageTransferJobTransferSpecTransferManifestOutputReference
 	TransferManifestInput() *StorageTransferJobTransferSpecTransferManifest
 	TransferOptions() StorageTransferJobTransferSpecTransferOptionsOutputReference
@@ -72,7 +72,7 @@ type StorageTransferJobTransferSpecOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -88,9 +88,9 @@ type StorageTransferJobTransferSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAwsS3CompatibleDataSource(value *StorageTransferJobTransferSpecAwsS3CompatibleDataSource)
 	PutAwsS3DataSource(value *StorageTransferJobTransferSpecAwsS3DataSource)
 	PutAzureBlobStorageDataSource(value *StorageTransferJobTransferSpecAzureBlobStorageDataSource)
@@ -119,7 +119,7 @@ type StorageTransferJobTransferSpecOutputReference interface {
 	ResetTransferOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -129,7 +129,7 @@ type StorageTransferJobTransferSpecOutputReference interface {
 
 // The jsii proxy struct for StorageTransferJobTransferSpecOutputReference
 type jsiiProxy_StorageTransferJobTransferSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) AwsS3CompatibleDataSource() StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference {
@@ -432,8 +432,8 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -483,7 +483,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) TransferOption
 }
 
 
-func NewStorageTransferJobTransferSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecOutputReference {
+func NewStorageTransferJobTransferSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewStorageTransferJobTransferSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -492,7 +492,7 @@ func NewStorageTransferJobTransferSpecOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_StorageTransferJobTransferSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference",
+		"@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -500,11 +500,11 @@ func NewStorageTransferJobTransferSpecOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewStorageTransferJobTransferSpecOutputReference_Override(s StorageTransferJobTransferSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewStorageTransferJobTransferSpecOutputReference_Override(s StorageTransferJobTransferSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference",
+		"@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -576,7 +576,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,11 +616,11 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -744,8 +744,8 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) GetStringMapAt
 	return returns
 }
 
-func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -757,16 +757,16 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) InterpolationA
 	return returns
 }
 
-func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1017,8 +1017,8 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) ResetTransferO
 	)
 }
 
-func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1026,7 +1026,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

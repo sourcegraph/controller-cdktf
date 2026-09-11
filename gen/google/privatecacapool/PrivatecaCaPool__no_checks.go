@@ -56,6 +56,10 @@ func (p *jsiiProxy_PrivatecaCaPool) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (p *jsiiProxy_PrivatecaCaPool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCaPool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (p *jsiiProxy_PrivatecaCaPool) validatePutPublishingOptionsParameters(value
 }
 
 func (p *jsiiProxy_PrivatecaCaPool) validatePutTimeoutsParameters(value *PrivatecaCaPoolTimeouts) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivatecaCaPool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_PrivatecaCaPool) validateSetLabelsParameters(val *map[string]
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PrivatecaCaPool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

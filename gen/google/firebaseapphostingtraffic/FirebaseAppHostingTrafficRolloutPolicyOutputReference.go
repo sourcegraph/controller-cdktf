@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/firebaseapphostingtraffic/internal"
 )
 
 type FirebaseAppHostingTrafficRolloutPolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CodebaseBranch() *string
 	SetCodebaseBranch(val *string)
 	CodebaseBranchInput() *string
@@ -41,15 +41,15 @@ type FirebaseAppHostingTrafficRolloutPolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,14 +65,14 @@ type FirebaseAppHostingTrafficRolloutPolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCodebaseBranch()
 	ResetDisabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type FirebaseAppHostingTrafficRolloutPolicyOutputReference interface {
 
 // The jsii proxy struct for FirebaseAppHostingTrafficRolloutPolicyOutputReference
 type jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) CodebaseBranch() *string {
@@ -195,8 +195,8 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -206,7 +206,7 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) Terraf
 }
 
 
-func NewFirebaseAppHostingTrafficRolloutPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FirebaseAppHostingTrafficRolloutPolicyOutputReference {
+func NewFirebaseAppHostingTrafficRolloutPolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) FirebaseAppHostingTrafficRolloutPolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewFirebaseAppHostingTrafficRolloutPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -215,7 +215,7 @@ func NewFirebaseAppHostingTrafficRolloutPolicyOutputReference(terraformResource 
 	j := jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficRolloutPolicyOutputReference",
+		"@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficRolloutPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -223,11 +223,11 @@ func NewFirebaseAppHostingTrafficRolloutPolicyOutputReference(terraformResource 
 	return &j
 }
 
-func NewFirebaseAppHostingTrafficRolloutPolicyOutputReference_Override(f FirebaseAppHostingTrafficRolloutPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewFirebaseAppHostingTrafficRolloutPolicyOutputReference_Override(f FirebaseAppHostingTrafficRolloutPolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficRolloutPolicyOutputReference",
+		"@cdktn/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficRolloutPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,11 +339,11 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) GetAny
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -467,8 +467,8 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) GetStr
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (f *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -480,16 +480,16 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) Interp
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+func (f *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -512,8 +512,8 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) ResetD
 	)
 }
 
-func (f *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -521,7 +521,7 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) Resolv
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

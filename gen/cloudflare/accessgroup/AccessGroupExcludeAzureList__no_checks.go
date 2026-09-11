@@ -12,7 +12,7 @@ func (a *jsiiProxy_AccessGroupExcludeAzureList) validateGetParameters(index *flo
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroupExcludeAzureList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessGroupExcludeAzureList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AccessGroupExcludeAzureList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroupExcludeAzureList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccessGroupExcludeAzureList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AccessGroupExcludeAzureList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewAccessGroupExcludeAzureListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAccessGroupExcludeAzureListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

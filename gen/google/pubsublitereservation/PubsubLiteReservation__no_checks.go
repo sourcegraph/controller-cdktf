@@ -56,6 +56,10 @@ func (p *jsiiProxy_PubsubLiteReservation) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (p *jsiiProxy_PubsubLiteReservation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubLiteReservation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (p *jsiiProxy_PubsubLiteReservation) validateOverrideLogicalIdParameters(ne
 }
 
 func (p *jsiiProxy_PubsubLiteReservation) validatePutTimeoutsParameters(value *PubsubLiteReservationTimeouts) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubLiteReservation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_PubsubLiteReservation) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_PubsubLiteReservation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PubsubLiteReservation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

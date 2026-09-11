@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/billingbudget/internal"
 )
 
 type BillingBudgetThresholdRulesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type BillingBudgetThresholdRulesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ThresholdPercent() *float64
 	SetThresholdPercent(val *float64)
 	ThresholdPercentInput() *float64
@@ -48,7 +48,7 @@ type BillingBudgetThresholdRulesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type BillingBudgetThresholdRulesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetSpendBasis()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type BillingBudgetThresholdRulesOutputReference interface {
 
 // The jsii proxy struct for BillingBudgetThresholdRulesOutputReference
 type jsiiProxy_BillingBudgetThresholdRulesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BillingBudgetThresholdRulesOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_BillingBudgetThresholdRulesOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_BillingBudgetThresholdRulesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BillingBudgetThresholdRulesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_BillingBudgetThresholdRulesOutputReference) ThresholdPercentI
 }
 
 
-func NewBillingBudgetThresholdRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BillingBudgetThresholdRulesOutputReference {
+func NewBillingBudgetThresholdRulesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BillingBudgetThresholdRulesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBillingBudgetThresholdRulesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +203,7 @@ func NewBillingBudgetThresholdRulesOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_BillingBudgetThresholdRulesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.billingBudget.BillingBudgetThresholdRulesOutputReference",
+		"@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewBillingBudgetThresholdRulesOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewBillingBudgetThresholdRulesOutputReference_Override(b BillingBudgetThresholdRulesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewBillingBudgetThresholdRulesOutputReference_Override(b BillingBudgetThresholdRulesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.billingBudget.BillingBudgetThresholdRulesOutputReference",
+		"@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_BillingBudgetThresholdRulesOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_BillingBudgetThresholdRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BillingBudgetThresholdRulesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (b *jsiiProxy_BillingBudgetThresholdRulesOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (b *jsiiProxy_BillingBudgetThresholdRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BillingBudgetThresholdRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -455,8 +455,8 @@ func (b *jsiiProxy_BillingBudgetThresholdRulesOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (b *jsiiProxy_BillingBudgetThresholdRulesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BillingBudgetThresholdRulesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -468,16 +468,16 @@ func (b *jsiiProxy_BillingBudgetThresholdRulesOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (b *jsiiProxy_BillingBudgetThresholdRulesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BillingBudgetThresholdRulesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (b *jsiiProxy_BillingBudgetThresholdRulesOutputReference) ResetSpendBasis()
 	)
 }
 
-func (b *jsiiProxy_BillingBudgetThresholdRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BillingBudgetThresholdRulesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (b *jsiiProxy_BillingBudgetThresholdRulesOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

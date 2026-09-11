@@ -12,7 +12,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupServiceAccountsList) validateGetPara
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupServiceAccountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupServiceAccountsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupServiceAccountsList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupServiceAccountsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupServiceAccountsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupServiceAccountsList) validateSetWrap
 	return nil
 }
 
-func validateNewWorkbenchInstanceGceSetupServiceAccountsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWorkbenchInstanceGceSetupServiceAccountsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

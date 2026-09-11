@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateInterpolationForA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateOverrideLogicalId
 }
 
 func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validatePutTimeoutsParameters(value *GoogleComputePublicDelegatedPrefixTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetIsLiveMigratio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (a *jsiiProxy_AppUserSchemaPropertyOneOfList) validateGetParameters(index *
 	return nil
 }
 
-func (a *jsiiProxy_AppUserSchemaPropertyOneOfList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppUserSchemaPropertyOneOfList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AppUserSchemaPropertyOneOfList) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_AppUserSchemaPropertyOneOfList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppUserSchemaPropertyOneOfList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AppUserSchemaPropertyOneOfList) validateSetWrapsSetParameters
 	return nil
 }
 
-func validateNewAppUserSchemaPropertyOneOfListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAppUserSchemaPropertyOneOfListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

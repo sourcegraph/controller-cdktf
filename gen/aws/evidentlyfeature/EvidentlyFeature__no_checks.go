@@ -56,6 +56,10 @@ func (e *jsiiProxy_EvidentlyFeature) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (e *jsiiProxy_EvidentlyFeature) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EvidentlyFeature) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (e *jsiiProxy_EvidentlyFeature) validatePutTimeoutsParameters(value *Eviden
 }
 
 func (e *jsiiProxy_EvidentlyFeature) validatePutVariationsParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EvidentlyFeature) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_EvidentlyFeature) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyFeature) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EvidentlyFeature) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

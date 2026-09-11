@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleModelArmorFloorsettingFilterConfigSdpSettingsOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleModelArmorFloorsettingFilterConfigSdpSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleModelArmorFloorsettingFilterConfigSdpSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleModelArmorFloorsettingFilterConfigSdpSettingsOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleModelArmorFloorsettingFilterConfigSdpSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleModelArmorFloorsettingFilterConfigSdpSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleModelArmorFloorsettingFilterConfigSdpSettingsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingFilterConfigSdpSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleModelArmorFloorsettingFilterConfigSdpSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleModelArmorFloorsettingFilterConfigSdpSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleModelArmorFloorsettingFilterConfigSdpSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

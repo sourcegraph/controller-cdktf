@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsEc2ClientVpnEndpointClientLoginBannerOptionsList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2ClientVpnEndpointClientLoginBannerOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2ClientVpnEndpointClientLoginBannerOptionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsEc2ClientVpnEndpointClientLoginBannerOptionsList) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2ClientVpnEndpointClientLoginBannerOptionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsEc2ClientVpnEndpointClientLoginBannerOptionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsEc2ClientVpnEndpointClientLoginBannerOptionsList) vali
 	return nil
 }
 
-func validateNewDataAwsEc2ClientVpnEndpointClientLoginBannerOptionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsEc2ClientVpnEndpointClientLoginBannerOptionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

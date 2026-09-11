@@ -12,7 +12,7 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesList) validateGetParameters(in
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateNetworkInterfacesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateNetworkInterfacesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateNetworkInterfacesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewLaunchTemplateNetworkInterfacesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLaunchTemplateNetworkInterfacesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

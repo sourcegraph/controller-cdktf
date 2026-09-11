@@ -56,6 +56,10 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateInterpol
 	return nil
 }
 
+func (e *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateOverride
 }
 
 func (e *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validatePutTimeoutsParameters(value *Ec2TransitGatewayMulticastDomainAssociationTimeouts) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateSetIdPar
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

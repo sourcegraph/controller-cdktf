@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) validateGetStringM
 	return nil
 }
 
-func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) validateSetValuesP
 	return nil
 }
 
-func validateNewAppSamlAttributeStatementsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAppSamlAttributeStatementsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

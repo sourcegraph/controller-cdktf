@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsList) validate
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsList) validate
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsList) validate
 	return nil
 }
 
-func validateNewComputeSnapshotSettingsStorageLocationLocationsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeSnapshotSettingsStorageLocationLocationsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

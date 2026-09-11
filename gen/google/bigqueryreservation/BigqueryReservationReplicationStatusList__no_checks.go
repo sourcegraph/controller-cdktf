@@ -12,7 +12,7 @@ func (b *jsiiProxy_BigqueryReservationReplicationStatusList) validateGetParamete
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryReservationReplicationStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryReservationReplicationStatusList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_BigqueryReservationReplicationStatusList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryReservationReplicationStatusList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryReservationReplicationStatusList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_BigqueryReservationReplicationStatusList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewBigqueryReservationReplicationStatusListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBigqueryReservationReplicationStatusListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

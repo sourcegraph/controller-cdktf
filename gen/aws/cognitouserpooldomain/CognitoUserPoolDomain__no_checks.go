@@ -56,6 +56,10 @@ func (c *jsiiProxy_CognitoUserPoolDomain) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_CognitoUserPoolDomain) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoUserPoolDomain) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (c *jsiiProxy_CognitoUserPoolDomain) validateMoveToIdParameters(id *string)
 }
 
 func (c *jsiiProxy_CognitoUserPoolDomain) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoUserPoolDomain) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_CognitoUserPoolDomain) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolDomain) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CognitoUserPoolDomain) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

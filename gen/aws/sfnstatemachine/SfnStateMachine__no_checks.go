@@ -56,6 +56,10 @@ func (s *jsiiProxy_SfnStateMachine) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (s *jsiiProxy_SfnStateMachine) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SfnStateMachine) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (s *jsiiProxy_SfnStateMachine) validatePutLoggingConfigurationParameters(va
 }
 
 func (s *jsiiProxy_SfnStateMachine) validatePutTracingConfigurationParameters(value *SfnStateMachineTracingConfiguration) error {
+	return nil
+}
+
+func (s *jsiiProxy_SfnStateMachine) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_SfnStateMachine) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_SfnStateMachine) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SfnStateMachine) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

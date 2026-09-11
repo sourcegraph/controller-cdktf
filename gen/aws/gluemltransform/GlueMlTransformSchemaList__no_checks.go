@@ -12,7 +12,7 @@ func (g *jsiiProxy_GlueMlTransformSchemaList) validateGetParameters(index *float
 	return nil
 }
 
-func (g *jsiiProxy_GlueMlTransformSchemaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueMlTransformSchemaList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GlueMlTransformSchemaList) validateSetTerraformAttributeParam
 	return nil
 }
 
-func (j *jsiiProxy_GlueMlTransformSchemaList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GlueMlTransformSchemaList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GlueMlTransformSchemaList) validateSetWrapsSetParameters(val 
 	return nil
 }
 
-func validateNewGlueMlTransformSchemaListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGlueMlTransformSchemaListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

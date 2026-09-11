@@ -56,6 +56,10 @@ func (d *jsiiProxy_DmsReplicationInstance) validateInterpolationForAttributePara
 	return nil
 }
 
+func (d *jsiiProxy_DmsReplicationInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DmsReplicationInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DmsReplicationInstance) validateOverrideLogicalIdParameters(n
 }
 
 func (d *jsiiProxy_DmsReplicationInstance) validatePutTimeoutsParameters(value *DmsReplicationInstanceTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DmsReplicationInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_DmsReplicationInstance) validateSetKmsKeyArnParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_DmsReplicationInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DmsReplicationInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

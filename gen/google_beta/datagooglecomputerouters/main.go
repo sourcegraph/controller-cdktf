@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRouters",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRouters",
 		reflect.TypeOf((*DataGoogleComputeRouters)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -40,6 +40,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
@@ -54,31 +55,32 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeRouters{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersConfig",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersConfig",
 		reflect.TypeOf((*DataGoogleComputeRoutersConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRouters",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRouters",
 		reflect.TypeOf((*DataGoogleComputeRoutersRouters)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersBgp",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersBgp",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersBgp)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersBgpAdvertisedIpRanges",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersBgpAdvertisedIpRanges",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersBgpAdvertisedIpRanges)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesList",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesList",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -94,12 +96,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesOutputReference",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -128,12 +130,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersBgpList",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersBgpList",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersBgpList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -149,12 +151,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeRoutersRoutersBgpList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersBgpOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersBgpOutputReference",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersBgpOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "advertisedGroups", GoGetter: "AdvertisedGroups"},
@@ -186,16 +188,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeRoutersRoutersBgpOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersBgpPeers",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersBgpPeers",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersBgpPeers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersBgpPeersList",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersBgpPeersList",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersBgpPeersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -211,12 +213,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeRoutersRoutersBgpPeersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersBgpPeersOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersBgpPeersOutputReference",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersBgpPeersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "advertisedRoutePriority", GoGetter: "AdvertisedRoutePriority"},
@@ -253,16 +255,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeRoutersRoutersBgpPeersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersInterfaces",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersInterfaces",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersInterfaces)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersInterfacesList",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersInterfacesList",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersInterfacesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -278,12 +280,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersInterfacesOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersInterfacesOutputReference",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersInterfacesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -317,12 +319,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersList",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersList",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -338,16 +340,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeRoutersRoutersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersMd5AuthenticationKeys",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersMd5AuthenticationKeys",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersMd5AuthenticationKeys)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersMd5AuthenticationKeysList",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersMd5AuthenticationKeysList",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersMd5AuthenticationKeysList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -363,12 +365,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeRoutersRoutersMd5AuthenticationKeysList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersMd5AuthenticationKeysOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersMd5AuthenticationKeysOutputReference",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersMd5AuthenticationKeysOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -397,16 +399,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeRoutersRoutersMd5AuthenticationKeysOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersNats",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersNats",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersNats)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersNatsList",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersNatsList",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersNatsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -422,12 +424,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeRoutersRoutersNatsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersNatsOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersNatsOutputReference",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersNatsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -464,12 +466,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeRoutersRoutersNatsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersOutputReference",
 		reflect.TypeOf((*DataGoogleComputeRoutersRoutersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bgp", GoGetter: "Bgp"},
@@ -507,7 +509,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeRoutersRoutersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

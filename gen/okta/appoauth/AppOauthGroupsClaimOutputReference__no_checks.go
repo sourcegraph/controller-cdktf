@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) validateSetValueParameter
 	return nil
 }
 
-func validateNewAppOauthGroupsClaimOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppOauthGroupsClaimOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

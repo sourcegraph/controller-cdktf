@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsOutputReference) valida
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleSecurityposturePosturePolicySetsPolicies:
 		value := value.(*[]*GoogleSecurityposturePosturePolicySetsPolicies)
@@ -114,16 +114,16 @@ func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsOutputReference) valida
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleSecurityposturePosturePolicySetsPolicies; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*GoogleSecurityposturePosturePolicySetsPolicies; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -204,7 +204,7 @@ func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsOutputReference) valida
 
 func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *GoogleSecurityposturePosturePolicySets:
 		val := val.(*GoogleSecurityposturePosturePolicySets)
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsOutputReference) valida
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleSecurityposturePosturePolicySets; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *GoogleSecurityposturePosturePolicySets; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -242,7 +242,7 @@ func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsOutputReference) valida
 	return nil
 }
 
-func validateNewGoogleSecurityposturePosturePolicySetsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleSecurityposturePosturePolicySetsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutLis
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutLis
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutLis
 	return nil
 }
 
-func validateNewDataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

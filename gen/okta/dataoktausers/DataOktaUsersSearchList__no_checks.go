@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataOktaUsersSearchList) validateGetParameters(index *float64
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaUsersSearchList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaUsersSearchList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataOktaUsersSearchList) validateSetTerraformAttributeParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaUsersSearchList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataOktaUsersSearchList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataOktaUsersSearchList) validateSetWrapsSetParameters(val *b
 	return nil
 }
 
-func validateNewDataOktaUsersSearchListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataOktaUsersSearchListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

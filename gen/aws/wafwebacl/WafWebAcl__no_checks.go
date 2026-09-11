@@ -56,6 +56,10 @@ func (w *jsiiProxy_WafWebAcl) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (w *jsiiProxy_WafWebAcl) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafWebAcl) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (w *jsiiProxy_WafWebAcl) validatePutLoggingConfigurationParameters(value *W
 }
 
 func (w *jsiiProxy_WafWebAcl) validatePutRulesParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafWebAcl) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_WafWebAcl) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_WafWebAcl) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_WafWebAcl) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

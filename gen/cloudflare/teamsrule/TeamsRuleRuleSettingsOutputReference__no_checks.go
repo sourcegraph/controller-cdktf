@@ -40,7 +40,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutUntrustedCer
 	return nil
 }
 
-func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -128,11 +128,11 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTeamsRuleRuleSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTeamsRuleRuleSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceHaPolicyLeaderOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionBackendServiceHaPolicyLeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceHaPolicyLeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceHaPolicyLeaderOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionBackendServiceHaPolicyLeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceHaPolicyLeaderOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceHaPolicyLeaderOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceHaPolicyLeaderOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceHaPolicyLeaderOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeRegionBackendServiceHaPolicyLeaderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeRegionBackendServiceHaPolicyLeaderOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (o *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsOutput
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -104,7 +104,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsOutput
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -112,7 +112,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsOutput
 	return nil
 }
 
-func validateNewOpsworksMemcachedLayerCloudwatchConfigurationLogStreamsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewOpsworksMemcachedLayerCloudwatchConfigurationLogStreamsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

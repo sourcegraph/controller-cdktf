@@ -40,11 +40,11 @@ func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) validateGetStringMap
 	return nil
 }
 
-func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_VpcAccessConnectorSubnetOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_VpcAccessConnectorSubnetOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VpcAccessConnectorSubnetOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewVpcAccessConnectorSubnetOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVpcAccessConnectorSubnetOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

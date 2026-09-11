@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleFilestoreInstanceEffectiveReplicationList) validateGetP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFilestoreInstanceEffectiveReplicationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFilestoreInstanceEffectiveReplicationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleFilestoreInstanceEffectiveReplicationList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstanceEffectiveReplicationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFilestoreInstanceEffectiveReplicationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleFilestoreInstanceEffectiveReplicationList) validateSetW
 	return nil
 }
 
-func validateNewGoogleFilestoreInstanceEffectiveReplicationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleFilestoreInstanceEffectiveReplicationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

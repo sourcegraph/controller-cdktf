@@ -40,11 +40,11 @@ func (i *jsiiProxy_ImagebuilderImageRecipeSystemsManagerAgentOutputReference) va
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderImageRecipeSystemsManagerAgentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_ImagebuilderImageRecipeSystemsManagerAgentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderImageRecipeSystemsManagerAgentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderImageRecipeSystemsManagerAgentOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeSystemsManagerAgentOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeSystemsManagerAgentOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ImagebuilderImageRecipeSystemsManagerAgentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeSystemsManagerAgentOutputReference) va
 	return nil
 }
 
-func validateNewImagebuilderImageRecipeSystemsManagerAgentOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewImagebuilderImageRecipeSystemsManagerAgentOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

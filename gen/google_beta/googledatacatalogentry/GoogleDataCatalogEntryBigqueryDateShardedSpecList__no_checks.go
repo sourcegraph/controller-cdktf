@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDataCatalogEntryBigqueryDateShardedSpecList) validateGe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataCatalogEntryBigqueryDateShardedSpecList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataCatalogEntryBigqueryDateShardedSpecList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleDataCatalogEntryBigqueryDateShardedSpecList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataCatalogEntryBigqueryDateShardedSpecList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataCatalogEntryBigqueryDateShardedSpecList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleDataCatalogEntryBigqueryDateShardedSpecList) validateSe
 	return nil
 }
 
-func validateNewGoogleDataCatalogEntryBigqueryDateShardedSpecListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDataCatalogEntryBigqueryDateShardedSpecListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

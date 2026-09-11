@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResource) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleTpuV2QueuedResource) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleTpuV2QueuedResource) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResource) validatePutTimeoutsParameters(valu
 }
 
 func (g *jsiiProxy_GoogleTpuV2QueuedResource) validatePutTpuParameters(value *GoogleTpuV2QueuedResourceTpu) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTpuV2QueuedResource) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleTpuV2QueuedResource) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2QueuedResource) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleTpuV2QueuedResource) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

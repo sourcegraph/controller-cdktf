@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleAppEngineServiceSplitTrafficTimeoutsOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineServiceSplitTrafficTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleAppEngineServiceSplitTrafficTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineServiceSplitTrafficTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleAppEngineServiceSplitTrafficTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleAppEngineServiceSplitTrafficTimeoutsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineServiceSplitTrafficTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleAppEngineServiceSplitTrafficTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleAppEngineServiceSplitTrafficTimeoutsOutputReference) va
 	return nil
 }
 
-func validateNewGoogleAppEngineServiceSplitTrafficTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleAppEngineServiceSplitTrafficTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

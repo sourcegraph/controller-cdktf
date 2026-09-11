@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeimage/internal"
 )
 
 type GoogleComputeImageShieldedInstanceInitialStateOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,15 +42,15 @@ type GoogleComputeImageShieldedInstanceInitialStateOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,9 +66,9 @@ type GoogleComputeImageShieldedInstanceInitialStateOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDbs(value interface{})
 	PutDbxs(value interface{})
 	PutKeks(value interface{})
@@ -79,7 +79,7 @@ type GoogleComputeImageShieldedInstanceInitialStateOutputReference interface {
 	ResetPk()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type GoogleComputeImageShieldedInstanceInitialStateOutputReference interface {
 
 // The jsii proxy struct for GoogleComputeImageShieldedInstanceInitialStateOutputReference
 type jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) ComplexObjectIndex() interface{} {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 }
 
 
-func NewGoogleComputeImageShieldedInstanceInitialStateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeImageShieldedInstanceInitialStateOutputReference {
+func NewGoogleComputeImageShieldedInstanceInitialStateOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleComputeImageShieldedInstanceInitialStateOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeImageShieldedInstanceInitialStateOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewGoogleComputeImageShieldedInstanceInitialStateOutputReference(terraformR
 	j := jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageShieldedInstanceInitialStateOutputReference",
+		"@cdktn/provider-google-beta.googleComputeImage.GoogleComputeImageShieldedInstanceInitialStateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewGoogleComputeImageShieldedInstanceInitialStateOutputReference(terraformR
 	return &j
 }
 
-func NewGoogleComputeImageShieldedInstanceInitialStateOutputReference_Override(g GoogleComputeImageShieldedInstanceInitialStateOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleComputeImageShieldedInstanceInitialStateOutputReference_Override(g GoogleComputeImageShieldedInstanceInitialStateOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageShieldedInstanceInitialStateOutputReference",
+		"@cdktn/provider-google-beta.googleComputeImage.GoogleComputeImageShieldedInstanceInitialStateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -314,7 +314,7 @@ func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -354,11 +354,11 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -482,8 +482,8 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -495,16 +495,16 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStateOutputReference
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

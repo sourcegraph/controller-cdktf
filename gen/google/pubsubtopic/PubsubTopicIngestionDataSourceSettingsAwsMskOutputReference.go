@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/pubsubtopic/internal"
 )
 
 type PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AwsRoleArn() *string
 	SetAwsRoleArn(val *string)
 	AwsRoleArnInput() *string
@@ -43,9 +43,9 @@ type PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Topic() *string
 	SetTopic(val *string)
 	TopicInput() *string
@@ -54,7 +54,7 @@ type PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,12 +70,12 @@ type PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference interface {
 
 // The jsii proxy struct for PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference
 type jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) AwsRoleArn() *string {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -239,7 +239,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) 
 }
 
 
-func NewPubsubTopicIngestionDataSourceSettingsAwsMskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference {
+func NewPubsubTopicIngestionDataSourceSettingsAwsMskOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPubsubTopicIngestionDataSourceSettingsAwsMskOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -248,7 +248,7 @@ func NewPubsubTopicIngestionDataSourceSettingsAwsMskOutputReference(terraformRes
 	j := jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -256,11 +256,11 @@ func NewPubsubTopicIngestionDataSourceSettingsAwsMskOutputReference(terraformRes
 	return &j
 }
 
-func NewPubsubTopicIngestionDataSourceSettingsAwsMskOutputReference_Override(p PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPubsubTopicIngestionDataSourceSettingsAwsMskOutputReference_Override(p PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -343,7 +343,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,11 +394,11 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) 
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -522,8 +522,8 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) 
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -535,24 +535,24 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) 
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -560,7 +560,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

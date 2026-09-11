@@ -56,6 +56,10 @@ func (c *jsiiProxy_CodecommitTrigger) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_CodecommitTrigger) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodecommitTrigger) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_CodecommitTrigger) validateOverrideLogicalIdParameters(newLog
 }
 
 func (c *jsiiProxy_CodecommitTrigger) validatePutTriggerParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodecommitTrigger) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_CodecommitTrigger) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_CodecommitTrigger) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CodecommitTrigger) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) validateInterpolationForAttrib
 	return nil
 }
 
+func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) validateMoveToIdParameters(id 
 }
 
 func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -96,7 +104,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetCountParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

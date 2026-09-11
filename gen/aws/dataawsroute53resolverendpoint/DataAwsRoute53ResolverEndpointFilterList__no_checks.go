@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsRoute53ResolverEndpointFilterList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53ResolverEndpointFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsRoute53ResolverEndpointFilterList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataAwsRoute53ResolverEndpointFilterList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverEndpointFilterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsRoute53ResolverEndpointFilterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataAwsRoute53ResolverEndpointFilterList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewDataAwsRoute53ResolverEndpointFilterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsRoute53ResolverEndpointFilterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

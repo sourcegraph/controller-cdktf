@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/poller/internal"
 )
 
 type PollerHttpRuleMatchOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthScheme() *string
 	SetAuthScheme(val *string)
 	AuthSchemeInput() *string
@@ -52,9 +52,9 @@ type PollerHttpRuleMatchOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -66,7 +66,7 @@ type PollerHttpRuleMatchOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -82,9 +82,9 @@ type PollerHttpRuleMatchOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAuthScheme()
 	ResetBody()
 	ResetHeaders()
@@ -95,7 +95,7 @@ type PollerHttpRuleMatchOutputReference interface {
 	ResetUsername()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,7 +105,7 @@ type PollerHttpRuleMatchOutputReference interface {
 
 // The jsii proxy struct for PollerHttpRuleMatchOutputReference
 type jsiiProxy_PollerHttpRuleMatchOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PollerHttpRuleMatchOutputReference) AuthScheme() *string {
@@ -288,8 +288,8 @@ func (j *jsiiProxy_PollerHttpRuleMatchOutputReference) TerraformAttribute() *str
 	return returns
 }
 
-func (j *jsiiProxy_PollerHttpRuleMatchOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PollerHttpRuleMatchOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -339,7 +339,7 @@ func (j *jsiiProxy_PollerHttpRuleMatchOutputReference) UsernameInput() *string {
 }
 
 
-func NewPollerHttpRuleMatchOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PollerHttpRuleMatchOutputReference {
+func NewPollerHttpRuleMatchOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PollerHttpRuleMatchOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPollerHttpRuleMatchOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -348,7 +348,7 @@ func NewPollerHttpRuleMatchOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_PollerHttpRuleMatchOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.poller.PollerHttpRuleMatchOutputReference",
+		"@cdktn/provider-observe.poller.PollerHttpRuleMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -356,11 +356,11 @@ func NewPollerHttpRuleMatchOutputReference(terraformResource cdktf.IInterpolatin
 	return &j
 }
 
-func NewPollerHttpRuleMatchOutputReference_Override(p PollerHttpRuleMatchOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPollerHttpRuleMatchOutputReference_Override(p PollerHttpRuleMatchOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.poller.PollerHttpRuleMatchOutputReference",
+		"@cdktn/provider-observe.poller.PollerHttpRuleMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -476,7 +476,7 @@ func (j *jsiiProxy_PollerHttpRuleMatchOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_PollerHttpRuleMatchOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PollerHttpRuleMatchOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,11 +538,11 @@ func (p *jsiiProxy_PollerHttpRuleMatchOutputReference) GetAnyMapAttribute(terraf
 	return returns
 }
 
-func (p *jsiiProxy_PollerHttpRuleMatchOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PollerHttpRuleMatchOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -666,8 +666,8 @@ func (p *jsiiProxy_PollerHttpRuleMatchOutputReference) GetStringMapAttribute(ter
 	return returns
 }
 
-func (p *jsiiProxy_PollerHttpRuleMatchOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PollerHttpRuleMatchOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -679,16 +679,16 @@ func (p *jsiiProxy_PollerHttpRuleMatchOutputReference) InterpolationAsList() cdk
 	return returns
 }
 
-func (p *jsiiProxy_PollerHttpRuleMatchOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PollerHttpRuleMatchOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -759,8 +759,8 @@ func (p *jsiiProxy_PollerHttpRuleMatchOutputReference) ResetUsername() {
 	)
 }
 
-func (p *jsiiProxy_PollerHttpRuleMatchOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PollerHttpRuleMatchOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -768,7 +768,7 @@ func (p *jsiiProxy_PollerHttpRuleMatchOutputReference) Resolve(_context cdktf.IR
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

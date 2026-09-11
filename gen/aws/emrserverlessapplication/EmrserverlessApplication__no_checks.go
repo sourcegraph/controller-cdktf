@@ -56,6 +56,10 @@ func (e *jsiiProxy_EmrserverlessApplication) validateInterpolationForAttributePa
 	return nil
 }
 
+func (e *jsiiProxy_EmrserverlessApplication) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrserverlessApplication) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (e *jsiiProxy_EmrserverlessApplication) validatePutNetworkConfigurationPara
 	return nil
 }
 
+func (e *jsiiProxy_EmrserverlessApplication) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateEmrserverlessApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -124,7 +132,7 @@ func (j *jsiiProxy_EmrserverlessApplication) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_EmrserverlessApplication) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EmrserverlessApplication) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

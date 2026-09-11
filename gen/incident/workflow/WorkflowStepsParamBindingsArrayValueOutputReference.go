@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/incident/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/incident/workflow/internal"
 )
 
 type WorkflowStepsParamBindingsArrayValueOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type WorkflowStepsParamBindingsArrayValueOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type WorkflowStepsParamBindingsArrayValueOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetLiteral()
 	ResetReference()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type WorkflowStepsParamBindingsArrayValueOutputReference interface {
 
 // The jsii proxy struct for WorkflowStepsParamBindingsArrayValueOutputReference
 type jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference) Terrafor
 }
 
 
-func NewWorkflowStepsParamBindingsArrayValueOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkflowStepsParamBindingsArrayValueOutputReference {
+func NewWorkflowStepsParamBindingsArrayValueOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkflowStepsParamBindingsArrayValueOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewWorkflowStepsParamBindingsArrayValueOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -204,7 +204,7 @@ func NewWorkflowStepsParamBindingsArrayValueOutputReference(terraformResource cd
 	j := jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.workflow.WorkflowStepsParamBindingsArrayValueOutputReference",
+		"@cdktn/provider-incident.workflow.WorkflowStepsParamBindingsArrayValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewWorkflowStepsParamBindingsArrayValueOutputReference(terraformResource cd
 	return &j
 }
 
-func NewWorkflowStepsParamBindingsArrayValueOutputReference_Override(w WorkflowStepsParamBindingsArrayValueOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewWorkflowStepsParamBindingsArrayValueOutputReference_Override(w WorkflowStepsParamBindingsArrayValueOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.workflow.WorkflowStepsParamBindingsArrayValueOutputReference",
+		"@cdktn/provider-incident.workflow.WorkflowStepsParamBindingsArrayValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (w *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference) GetAnyMa
 	return returns
 }
 
-func (w *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -456,8 +456,8 @@ func (w *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference) GetStrin
 	return returns
 }
 
-func (w *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (w *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -469,16 +469,16 @@ func (w *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference) Interpol
 	return returns
 }
 
-func (w *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (w *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference) ResetRef
 	)
 }
 
-func (w *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (w *jsiiProxy_WorkflowStepsParamBindingsArrayValueOutputReference) Resolve(
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

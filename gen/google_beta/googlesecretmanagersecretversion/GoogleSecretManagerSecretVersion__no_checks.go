@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleSecretManagerSecretVersion) validateInterpolationForAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSecretManagerSecretVersion) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecretManagerSecretVersion) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleSecretManagerSecretVersion) validateOverrideLogicalIdPa
 }
 
 func (g *jsiiProxy_GoogleSecretManagerSecretVersion) validatePutTimeoutsParameters(value *GoogleSecretManagerSecretVersionTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecretManagerSecretVersion) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetIsSecretDataBase
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

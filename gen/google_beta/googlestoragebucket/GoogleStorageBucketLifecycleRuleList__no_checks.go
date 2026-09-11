@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleList) validateGetParameters(i
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewGoogleStorageBucketLifecycleRuleListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleStorageBucketLifecycleRuleListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (f *jsiiProxy_FallbackDomain) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (f *jsiiProxy_FallbackDomain) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FallbackDomain) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (f *jsiiProxy_FallbackDomain) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (f *jsiiProxy_FallbackDomain) validatePutDomainsParameters(value interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FallbackDomain) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_FallbackDomain) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_FallbackDomain) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FallbackDomain) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

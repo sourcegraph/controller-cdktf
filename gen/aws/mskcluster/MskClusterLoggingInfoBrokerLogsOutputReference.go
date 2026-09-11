@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/mskcluster/internal"
 )
 
 type MskClusterLoggingInfoBrokerLogsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CloudwatchLogs() MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference
 	CloudwatchLogsInput() *MskClusterLoggingInfoBrokerLogsCloudwatchLogs
 	// the index of the complex object in a list.
@@ -40,15 +40,15 @@ type MskClusterLoggingInfoBrokerLogsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,9 +64,9 @@ type MskClusterLoggingInfoBrokerLogsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCloudwatchLogs(value *MskClusterLoggingInfoBrokerLogsCloudwatchLogs)
 	PutFirehose(value *MskClusterLoggingInfoBrokerLogsFirehose)
 	PutS3(value *MskClusterLoggingInfoBrokerLogsS3)
@@ -75,7 +75,7 @@ type MskClusterLoggingInfoBrokerLogsOutputReference interface {
 	ResetS3()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type MskClusterLoggingInfoBrokerLogsOutputReference interface {
 
 // The jsii proxy struct for MskClusterLoggingInfoBrokerLogsOutputReference
 type jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) CloudwatchLogs() MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) TerraformReso
 }
 
 
-func NewMskClusterLoggingInfoBrokerLogsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MskClusterLoggingInfoBrokerLogsOutputReference {
+func NewMskClusterLoggingInfoBrokerLogsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MskClusterLoggingInfoBrokerLogsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMskClusterLoggingInfoBrokerLogsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewMskClusterLoggingInfoBrokerLogsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsOutputReference",
+		"@cdktn/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewMskClusterLoggingInfoBrokerLogsOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewMskClusterLoggingInfoBrokerLogsOutputReference_Override(m MskClusterLoggingInfoBrokerLogsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMskClusterLoggingInfoBrokerLogsOutputReference_Override(m MskClusterLoggingInfoBrokerLogsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsOutputReference",
+		"@cdktn/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -290,7 +290,7 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -330,11 +330,11 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -458,8 +458,8 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) GetStringMapA
 	return returns
 }
 
-func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -471,16 +471,16 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) Interpolation
 	return returns
 }
 
-func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) ResetS3() {
 	)
 }
 
-func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

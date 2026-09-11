@@ -40,11 +40,11 @@ func (m *jsiiProxy_MonitoringSloRequestBasedSliDistributionCutRangeOutputReferen
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloRequestBasedSliDistributionCutRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringSloRequestBasedSliDistributionCutRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloRequestBasedSliDistributionCutRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringSloRequestBasedSliDistributionCutRangeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_MonitoringSloRequestBasedSliDistributionCutRangeOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringSloRequestBasedSliDistributionCutRangeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitoringSloRequestBasedSliDistributionCutRangeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMonitoringSloRequestBasedSliDistributionCutRangeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitoringSloRequestBasedSliDistributionCutRangeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

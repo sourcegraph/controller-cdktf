@@ -40,7 +40,7 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) validateGetSt
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) validatePutEv
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBatchJobDefinitionRetryStrategyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBatchJobDefinitionRetryStrategyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

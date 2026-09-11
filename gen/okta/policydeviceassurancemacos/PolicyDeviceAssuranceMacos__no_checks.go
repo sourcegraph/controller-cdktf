@@ -56,6 +56,10 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateInterpolationForAttribute
 	return nil
 }
 
+func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateMoveToIdParameters(id *st
 }
 
 func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetDiskEncryptionTypePara
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

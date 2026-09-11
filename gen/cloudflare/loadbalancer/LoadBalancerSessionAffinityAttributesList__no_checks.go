@@ -12,7 +12,7 @@ func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesList) validateGetParamet
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewLoadBalancerSessionAffinityAttributesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLoadBalancerSessionAffinityAttributesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigManagedServiceConfigsList) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigManagedServiceConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApiGatewayApiConfigManagedServiceConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigManagedServiceConfigsList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigManagedServiceConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigManagedServiceConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigManagedServiceConfigsList) validateS
 	return nil
 }
 
-func validateNewGoogleApiGatewayApiConfigManagedServiceConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleApiGatewayApiConfigManagedServiceConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

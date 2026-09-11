@@ -56,6 +56,10 @@ func (b *jsiiProxy_BigqueryTable) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryTable) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryTable) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -113,6 +117,10 @@ func (b *jsiiProxy_BigqueryTable) validatePutTimePartitioningParameters(value *B
 }
 
 func (b *jsiiProxy_BigqueryTable) validatePutViewParameters(value *BigqueryTableView) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryTable) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -180,7 +188,7 @@ func (j *jsiiProxy_BigqueryTable) validateSetLabelsParameters(val *map[string]*s
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTable) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BigqueryTable) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

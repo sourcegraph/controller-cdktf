@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleNetappVolumeBlockDevicesList) validateGetParameters(ind
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetappVolumeBlockDevicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetappVolumeBlockDevicesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleNetappVolumeBlockDevicesList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeBlockDevicesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetappVolumeBlockDevicesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleNetappVolumeBlockDevicesList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewGoogleNetappVolumeBlockDevicesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleNetappVolumeBlockDevicesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

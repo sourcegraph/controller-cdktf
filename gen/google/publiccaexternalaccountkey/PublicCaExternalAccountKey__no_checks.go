@@ -56,6 +56,10 @@ func (p *jsiiProxy_PublicCaExternalAccountKey) validateInterpolationForAttribute
 	return nil
 }
 
+func (p *jsiiProxy_PublicCaExternalAccountKey) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PublicCaExternalAccountKey) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (p *jsiiProxy_PublicCaExternalAccountKey) validateOverrideLogicalIdParamete
 }
 
 func (p *jsiiProxy_PublicCaExternalAccountKey) validatePutTimeoutsParameters(value *PublicCaExternalAccountKeyTimeouts) error {
+	return nil
+}
+
+func (p *jsiiProxy_PublicCaExternalAccountKey) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_PublicCaExternalAccountKey) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_PublicCaExternalAccountKey) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PublicCaExternalAccountKey) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/alblistener/internal"
 )
 
 type AlbListenerDefaultActionAuthenticateOidcOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthenticationRequestExtraParams() *map[string]*string
 	SetAuthenticationRequestExtraParams(val *map[string]*string)
 	AuthenticationRequestExtraParamsInput() *map[string]*string
@@ -61,9 +61,9 @@ type AlbListenerDefaultActionAuthenticateOidcOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TokenEndpoint() *string
 	SetTokenEndpoint(val *string)
 	TokenEndpointInput() *string
@@ -75,7 +75,7 @@ type AlbListenerDefaultActionAuthenticateOidcOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -91,9 +91,9 @@ type AlbListenerDefaultActionAuthenticateOidcOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAuthenticationRequestExtraParams()
 	ResetOnUnauthenticatedRequest()
 	ResetScope()
@@ -101,7 +101,7 @@ type AlbListenerDefaultActionAuthenticateOidcOutputReference interface {
 	ResetSessionTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -111,7 +111,7 @@ type AlbListenerDefaultActionAuthenticateOidcOutputReference interface {
 
 // The jsii proxy struct for AlbListenerDefaultActionAuthenticateOidcOutputReference
 type jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference) AuthenticationRequestExtraParams() *map[string]*string {
@@ -354,8 +354,8 @@ func (j *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -405,7 +405,7 @@ func (j *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference) User
 }
 
 
-func NewAlbListenerDefaultActionAuthenticateOidcOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlbListenerDefaultActionAuthenticateOidcOutputReference {
+func NewAlbListenerDefaultActionAuthenticateOidcOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AlbListenerDefaultActionAuthenticateOidcOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAlbListenerDefaultActionAuthenticateOidcOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -414,7 +414,7 @@ func NewAlbListenerDefaultActionAuthenticateOidcOutputReference(terraformResourc
 	j := jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidcOutputReference",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -422,11 +422,11 @@ func NewAlbListenerDefaultActionAuthenticateOidcOutputReference(terraformResourc
 	return &j
 }
 
-func NewAlbListenerDefaultActionAuthenticateOidcOutputReference_Override(a AlbListenerDefaultActionAuthenticateOidcOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAlbListenerDefaultActionAuthenticateOidcOutputReference_Override(a AlbListenerDefaultActionAuthenticateOidcOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidcOutputReference",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -575,7 +575,7 @@ func (j *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,11 +637,11 @@ func (a *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference) GetA
 	return returns
 }
 
-func (a *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -765,8 +765,8 @@ func (a *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference) GetS
 	return returns
 }
 
-func (a *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -778,16 +778,16 @@ func (a *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference) Inte
 	return returns
 }
 
-func (a *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -834,8 +834,8 @@ func (a *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference) Rese
 	)
 }
 
-func (a *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -843,7 +843,7 @@ func (a *jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference) Reso
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

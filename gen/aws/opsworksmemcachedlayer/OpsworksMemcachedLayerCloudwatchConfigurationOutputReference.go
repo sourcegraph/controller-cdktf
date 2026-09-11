@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/opsworksmemcachedlayer/internal"
 )
 
 type OpsworksMemcachedLayerCloudwatchConfigurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type OpsworksMemcachedLayerCloudwatchConfigurationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,15 +63,15 @@ type OpsworksMemcachedLayerCloudwatchConfigurationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutLogStreams(value interface{})
 	ResetEnabled()
 	ResetLogStreams()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type OpsworksMemcachedLayerCloudwatchConfigurationOutputReference interface {
 
 // The jsii proxy struct for OpsworksMemcachedLayerCloudwatchConfigurationOutputReference
 type jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference)
 }
 
 
-func NewOpsworksMemcachedLayerCloudwatchConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OpsworksMemcachedLayerCloudwatchConfigurationOutputReference {
+func NewOpsworksMemcachedLayerCloudwatchConfigurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) OpsworksMemcachedLayerCloudwatchConfigurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOpsworksMemcachedLayerCloudwatchConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewOpsworksMemcachedLayerCloudwatchConfigurationOutputReference(terraformRe
 	j := jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfigurationOutputReference",
+		"@cdktn/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewOpsworksMemcachedLayerCloudwatchConfigurationOutputReference(terraformRe
 	return &j
 }
 
-func NewOpsworksMemcachedLayerCloudwatchConfigurationOutputReference_Override(o OpsworksMemcachedLayerCloudwatchConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewOpsworksMemcachedLayerCloudwatchConfigurationOutputReference_Override(o OpsworksMemcachedLayerCloudwatchConfigurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfigurationOutputReference",
+		"@cdktn/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -317,11 +317,11 @@ func (o *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference)
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -445,8 +445,8 @@ func (o *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference)
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -458,16 +458,16 @@ func (o *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference)
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (o *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference)
 	)
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayerCloudwatchConfigurationOutputReference)
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

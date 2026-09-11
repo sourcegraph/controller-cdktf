@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeAddress) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeAddress) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeAddress) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleComputeAddress) validateOverrideLogicalIdParameters(new
 }
 
 func (g *jsiiProxy_GoogleComputeAddress) validatePutTimeoutsParameters(value *GoogleComputeAddressTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeAddress) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_GoogleComputeAddress) validateSetLabelsParameters(val *map[st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeAddress) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeAddress) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

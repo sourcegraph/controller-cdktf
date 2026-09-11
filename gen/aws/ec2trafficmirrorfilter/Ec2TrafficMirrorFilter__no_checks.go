@@ -56,6 +56,10 @@ func (e *jsiiProxy_Ec2TrafficMirrorFilter) validateInterpolationForAttributePara
 	return nil
 }
 
+func (e *jsiiProxy_Ec2TrafficMirrorFilter) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TrafficMirrorFilter) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (e *jsiiProxy_Ec2TrafficMirrorFilter) validateMoveToIdParameters(id *string
 }
 
 func (e *jsiiProxy_Ec2TrafficMirrorFilter) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2TrafficMirrorFilter) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_Ec2TrafficMirrorFilter) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TrafficMirrorFilter) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Ec2TrafficMirrorFilter) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

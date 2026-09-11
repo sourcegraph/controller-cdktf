@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleParallelstoreInstance) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleParallelstoreInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleParallelstoreInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleParallelstoreInstance) validateOverrideLogicalIdParamet
 }
 
 func (g *jsiiProxy_GoogleParallelstoreInstance) validatePutTimeoutsParameters(value *GoogleParallelstoreInstanceTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleParallelstoreInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetLabelsParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

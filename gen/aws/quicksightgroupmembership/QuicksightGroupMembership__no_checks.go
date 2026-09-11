@@ -56,6 +56,10 @@ func (q *jsiiProxy_QuicksightGroupMembership) validateInterpolationForAttributeP
 	return nil
 }
 
+func (q *jsiiProxy_QuicksightGroupMembership) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightGroupMembership) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (q *jsiiProxy_QuicksightGroupMembership) validateMoveToIdParameters(id *str
 }
 
 func (q *jsiiProxy_QuicksightGroupMembership) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (q *jsiiProxy_QuicksightGroupMembership) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_QuicksightGroupMembership) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightGroupMembership) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_QuicksightGroupMembership) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

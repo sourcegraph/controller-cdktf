@@ -56,6 +56,10 @@ func (k *jsiiProxy_KinesisStream) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (k *jsiiProxy_KinesisStream) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisStream) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (k *jsiiProxy_KinesisStream) validatePutStreamModeDetailsParameters(value *
 }
 
 func (k *jsiiProxy_KinesisStream) validatePutTimeoutsParameters(value *KinesisStreamTimeouts) error {
+	return nil
+}
+
+func (k *jsiiProxy_KinesisStream) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_KinesisStream) validateSetKmsKeyIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_KinesisStream) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KinesisStream) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

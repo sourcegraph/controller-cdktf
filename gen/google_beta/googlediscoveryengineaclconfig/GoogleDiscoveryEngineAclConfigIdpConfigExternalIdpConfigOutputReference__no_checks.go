@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutpu
 	return nil
 }
 
-func validateNewGoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

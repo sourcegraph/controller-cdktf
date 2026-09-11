@@ -40,7 +40,7 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) valid
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) valid
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewVmwareengineClusterDatastoreMountConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewVmwareengineClusterDatastoreMountConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

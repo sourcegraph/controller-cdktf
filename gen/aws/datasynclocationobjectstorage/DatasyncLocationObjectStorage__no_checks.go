@@ -56,6 +56,10 @@ func (d *jsiiProxy_DatasyncLocationObjectStorage) validateInterpolationForAttrib
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncLocationObjectStorage) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationObjectStorage) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (d *jsiiProxy_DatasyncLocationObjectStorage) validateMoveToIdParameters(id 
 }
 
 func (d *jsiiProxy_DatasyncLocationObjectStorage) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncLocationObjectStorage) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_DatasyncLocationObjectStorage) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncLocationObjectStorage) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DatasyncLocationObjectStorage) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

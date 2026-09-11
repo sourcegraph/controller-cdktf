@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfigFrequencyOptionsEndDateOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageInsightsReportConfigFrequencyOptionsEndDateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleStorageInsightsReportConfigFrequencyOptionsEndDateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageInsightsReportConfigFrequencyOptionsEndDateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleStorageInsightsReportConfigFrequencyOptionsEndDateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfigFrequencyOptionsEndDateOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsReportConfigFrequencyOptionsEndDateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleStorageInsightsReportConfigFrequencyOptionsEndDateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfigFrequencyOptionsEndDateOutpu
 	return nil
 }
 
-func validateNewGoogleStorageInsightsReportConfigFrequencyOptionsEndDateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleStorageInsightsReportConfigFrequencyOptionsEndDateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersTieringPoli
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersTieringPoli
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersTieringPoli
 	return nil
 }
 
-func validateNewNetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

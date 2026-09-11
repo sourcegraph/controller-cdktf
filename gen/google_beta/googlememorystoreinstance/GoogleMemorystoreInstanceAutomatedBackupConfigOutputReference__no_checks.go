@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceAutomatedBackupConfigOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceAutomatedBackupConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMemorystoreInstanceAutomatedBackupConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceAutomatedBackupConfigOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceAutomatedBackupConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMemorystoreInstanceAutomatedBackupConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceAutomatedBackupConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceAutomatedBackupConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMemorystoreInstanceAutomatedBackupConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleMemorystoreInstanceAutomatedBackupConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleMemorystoreInstanceAutomatedBackupConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

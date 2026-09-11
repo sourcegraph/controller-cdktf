@@ -56,6 +56,10 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccount) validateInterpolationForAttr
 	return nil
 }
 
+func (i *jsiiProxy_Inspector2DelegatedAdminAccount) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_Inspector2DelegatedAdminAccount) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccount) validateOverrideLogicalIdPar
 }
 
 func (i *jsiiProxy_Inspector2DelegatedAdminAccount) validatePutTimeoutsParameters(value *Inspector2DelegatedAdminAccountTimeouts) error {
+	return nil
+}
+
+func (i *jsiiProxy_Inspector2DelegatedAdminAccount) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_Inspector2DelegatedAdminAccount) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_Inspector2DelegatedAdminAccount) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Inspector2DelegatedAdminAccount) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

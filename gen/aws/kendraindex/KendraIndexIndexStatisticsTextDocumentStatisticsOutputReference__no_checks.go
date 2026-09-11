@@ -40,11 +40,11 @@ func (k *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsOutputReferen
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewKendraIndexIndexStatisticsTextDocumentStatisticsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewKendraIndexIndexStatisticsTextDocumentStatisticsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

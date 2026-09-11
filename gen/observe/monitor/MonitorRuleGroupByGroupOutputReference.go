@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/monitor/internal"
 )
 
 type MonitorRuleGroupByGroupOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Columns() *[]*string
 	SetColumns(val *[]*string)
 	ColumnsInput() *[]*string
@@ -40,15 +40,15 @@ type MonitorRuleGroupByGroupOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type MonitorRuleGroupByGroupOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetColumns()
 	ResetGroupName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type MonitorRuleGroupByGroupOutputReference interface {
 
 // The jsii proxy struct for MonitorRuleGroupByGroupOutputReference
 type jsiiProxy_MonitorRuleGroupByGroupOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MonitorRuleGroupByGroupOutputReference) Columns() *[]*string {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_MonitorRuleGroupByGroupOutputReference) TerraformAttribute() 
 	return returns
 }
 
-func (j *jsiiProxy_MonitorRuleGroupByGroupOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MonitorRuleGroupByGroupOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_MonitorRuleGroupByGroupOutputReference) TerraformResource() c
 }
 
 
-func NewMonitorRuleGroupByGroupOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MonitorRuleGroupByGroupOutputReference {
+func NewMonitorRuleGroupByGroupOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MonitorRuleGroupByGroupOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMonitorRuleGroupByGroupOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -204,7 +204,7 @@ func NewMonitorRuleGroupByGroupOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_MonitorRuleGroupByGroupOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.monitor.MonitorRuleGroupByGroupOutputReference",
+		"@cdktn/provider-observe.monitor.MonitorRuleGroupByGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewMonitorRuleGroupByGroupOutputReference(terraformResource cdktf.IInterpol
 	return &j
 }
 
-func NewMonitorRuleGroupByGroupOutputReference_Override(m MonitorRuleGroupByGroupOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewMonitorRuleGroupByGroupOutputReference_Override(m MonitorRuleGroupByGroupOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.monitor.MonitorRuleGroupByGroupOutputReference",
+		"@cdktn/provider-observe.monitor.MonitorRuleGroupByGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_MonitorRuleGroupByGroupOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_MonitorRuleGroupByGroupOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorRuleGroupByGroupOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (m *jsiiProxy_MonitorRuleGroupByGroupOutputReference) GetAnyMapAttribute(te
 	return returns
 }
 
-func (m *jsiiProxy_MonitorRuleGroupByGroupOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitorRuleGroupByGroupOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -456,8 +456,8 @@ func (m *jsiiProxy_MonitorRuleGroupByGroupOutputReference) GetStringMapAttribute
 	return returns
 }
 
-func (m *jsiiProxy_MonitorRuleGroupByGroupOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MonitorRuleGroupByGroupOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -469,16 +469,16 @@ func (m *jsiiProxy_MonitorRuleGroupByGroupOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (m *jsiiProxy_MonitorRuleGroupByGroupOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MonitorRuleGroupByGroupOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (m *jsiiProxy_MonitorRuleGroupByGroupOutputReference) ResetGroupName() {
 	)
 }
 
-func (m *jsiiProxy_MonitorRuleGroupByGroupOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MonitorRuleGroupByGroupOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (m *jsiiProxy_MonitorRuleGroupByGroupOutputReference) Resolve(_context cdkt
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

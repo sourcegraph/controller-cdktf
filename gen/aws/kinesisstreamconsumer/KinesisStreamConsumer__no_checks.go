@@ -56,6 +56,10 @@ func (k *jsiiProxy_KinesisStreamConsumer) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (k *jsiiProxy_KinesisStreamConsumer) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisStreamConsumer) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (k *jsiiProxy_KinesisStreamConsumer) validateMoveToIdParameters(id *string)
 }
 
 func (k *jsiiProxy_KinesisStreamConsumer) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KinesisStreamConsumer) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_KinesisStreamConsumer) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_KinesisStreamConsumer) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KinesisStreamConsumer) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

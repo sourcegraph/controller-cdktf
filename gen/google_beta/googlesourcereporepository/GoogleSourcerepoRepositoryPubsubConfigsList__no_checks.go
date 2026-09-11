@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleSourcerepoRepositoryPubsubConfigsList) validateGetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSourcerepoRepositoryPubsubConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSourcerepoRepositoryPubsubConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleSourcerepoRepositoryPubsubConfigsList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSourcerepoRepositoryPubsubConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSourcerepoRepositoryPubsubConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleSourcerepoRepositoryPubsubConfigsList) validateSetWraps
 	return nil
 }
 
-func validateNewGoogleSourcerepoRepositoryPubsubConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleSourcerepoRepositoryPubsubConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

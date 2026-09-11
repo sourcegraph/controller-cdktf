@@ -40,11 +40,11 @@ func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewClouddomainsRegistrationDnsSettingsGlueRecordsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewClouddomainsRegistrationDnsSettingsGlueRecordsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

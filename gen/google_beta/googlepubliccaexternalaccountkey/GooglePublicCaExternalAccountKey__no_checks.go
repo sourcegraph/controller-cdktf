@@ -56,6 +56,10 @@ func (g *jsiiProxy_GooglePublicCaExternalAccountKey) validateInterpolationForAtt
 	return nil
 }
 
+func (g *jsiiProxy_GooglePublicCaExternalAccountKey) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePublicCaExternalAccountKey) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GooglePublicCaExternalAccountKey) validateOverrideLogicalIdPa
 }
 
 func (g *jsiiProxy_GooglePublicCaExternalAccountKey) validatePutTimeoutsParameters(value *GooglePublicCaExternalAccountKeyTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePublicCaExternalAccountKey) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GooglePublicCaExternalAccountKey) validateSetIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GooglePublicCaExternalAccountKey) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GooglePublicCaExternalAccountKey) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

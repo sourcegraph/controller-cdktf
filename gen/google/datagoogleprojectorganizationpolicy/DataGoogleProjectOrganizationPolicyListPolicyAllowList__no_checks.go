@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyAllowList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyAllowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyAllowList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyAllowList) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyAllowList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyAllowList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyAllowList) valid
 	return nil
 }
 
-func validateNewDataGoogleProjectOrganizationPolicyListPolicyAllowListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleProjectOrganizationPolicyListPolicyAllowListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

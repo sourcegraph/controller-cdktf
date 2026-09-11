@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleFirebaseDataConnectService) validateInterpolationForAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseDataConnectService) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseDataConnectService) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleFirebaseDataConnectService) validateOverrideLogicalIdPa
 }
 
 func (g *jsiiProxy_GoogleFirebaseDataConnectService) validatePutTimeoutsParameters(value *GoogleFirebaseDataConnectServiceTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseDataConnectService) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleFirebaseDataConnectService) validateSetLabelsParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseDataConnectService) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleFirebaseDataConnectService) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

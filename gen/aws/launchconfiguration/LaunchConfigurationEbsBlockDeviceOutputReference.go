@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/launchconfiguration/internal"
 )
 
 type LaunchConfigurationEbsBlockDeviceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -52,9 +52,9 @@ type LaunchConfigurationEbsBlockDeviceOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Throughput() *float64
 	SetThroughput(val *float64)
 	ThroughputInput() *float64
@@ -69,7 +69,7 @@ type LaunchConfigurationEbsBlockDeviceOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -85,9 +85,9 @@ type LaunchConfigurationEbsBlockDeviceOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDeleteOnTermination()
 	ResetEncrypted()
 	ResetIops()
@@ -98,7 +98,7 @@ type LaunchConfigurationEbsBlockDeviceOutputReference interface {
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,7 +108,7 @@ type LaunchConfigurationEbsBlockDeviceOutputReference interface {
 
 // The jsii proxy struct for LaunchConfigurationEbsBlockDeviceOutputReference
 type jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) ComplexObjectIndex() interface{} {
@@ -291,8 +291,8 @@ func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -362,7 +362,7 @@ func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) VolumeTypeI
 }
 
 
-func NewLaunchConfigurationEbsBlockDeviceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LaunchConfigurationEbsBlockDeviceOutputReference {
+func NewLaunchConfigurationEbsBlockDeviceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LaunchConfigurationEbsBlockDeviceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLaunchConfigurationEbsBlockDeviceOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -371,7 +371,7 @@ func NewLaunchConfigurationEbsBlockDeviceOutputReference(terraformResource cdktf
 	j := jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference",
+		"@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -379,11 +379,11 @@ func NewLaunchConfigurationEbsBlockDeviceOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewLaunchConfigurationEbsBlockDeviceOutputReference_Override(l LaunchConfigurationEbsBlockDeviceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewLaunchConfigurationEbsBlockDeviceOutputReference_Override(l LaunchConfigurationEbsBlockDeviceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference",
+		"@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
@@ -499,7 +499,7 @@ func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,11 +572,11 @@ func (l *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (l *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -700,8 +700,8 @@ func (l *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) GetStringMa
 	return returns
 }
 
-func (l *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -713,16 +713,16 @@ func (l *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) Interpolati
 	return returns
 }
 
-func (l *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -793,8 +793,8 @@ func (l *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) ResetVolume
 	)
 }
 
-func (l *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -802,7 +802,7 @@ func (l *jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

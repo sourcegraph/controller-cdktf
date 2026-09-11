@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleBiglakeIcebergCatalogIamBinding) validateInterpolationF
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBiglakeIcebergCatalogIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBiglakeIcebergCatalogIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleBiglakeIcebergCatalogIamBinding) validateOverrideLogica
 }
 
 func (g *jsiiProxy_GoogleBiglakeIcebergCatalogIamBinding) validatePutConditionParameters(value *GoogleBiglakeIcebergCatalogIamBindingCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBiglakeIcebergCatalogIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GoogleBiglakeIcebergCatalogIamBinding) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBiglakeIcebergCatalogIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleBiglakeIcebergCatalogIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetworkSecurityInterceptDeploymentGroup) validateInterpolatio
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecurityInterceptDeploymentGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityInterceptDeploymentGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (n *jsiiProxy_NetworkSecurityInterceptDeploymentGroup) validateOverrideLogi
 }
 
 func (n *jsiiProxy_NetworkSecurityInterceptDeploymentGroup) validatePutTimeoutsParameters(value *NetworkSecurityInterceptDeploymentGroupTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityInterceptDeploymentGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_NetworkSecurityInterceptDeploymentGroup) validateSetLabelsPar
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityInterceptDeploymentGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetworkSecurityInterceptDeploymentGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

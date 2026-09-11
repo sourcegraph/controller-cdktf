@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) validateGetStrin
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) validatePutNodeS
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleTpuV2QueuedResourceTpuOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleTpuV2QueuedResourceTpuOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

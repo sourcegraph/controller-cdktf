@@ -40,11 +40,11 @@ func (m *jsiiProxy_MskClusterOpenMonitoringPrometheusJmxExporterOutputReference)
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterOpenMonitoringPrometheusJmxExporterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskClusterOpenMonitoringPrometheusJmxExporterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterOpenMonitoringPrometheusJmxExporterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskClusterOpenMonitoringPrometheusJmxExporterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_MskClusterOpenMonitoringPrometheusJmxExporterOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_MskClusterOpenMonitoringPrometheusJmxExporterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MskClusterOpenMonitoringPrometheusJmxExporterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMskClusterOpenMonitoringPrometheusJmxExporterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMskClusterOpenMonitoringPrometheusJmxExporterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

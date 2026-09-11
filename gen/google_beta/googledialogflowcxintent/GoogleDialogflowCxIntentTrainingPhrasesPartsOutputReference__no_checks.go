@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesPartsOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesPartsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesPartsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesPartsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesPartsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesPartsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesPartsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesPartsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesPartsOutputReference) 
 	return nil
 }
 
-func validateNewGoogleDialogflowCxIntentTrainingPhrasesPartsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDialogflowCxIntentTrainingPhrasesPartsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

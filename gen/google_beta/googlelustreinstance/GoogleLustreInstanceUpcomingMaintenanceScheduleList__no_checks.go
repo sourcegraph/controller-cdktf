@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleLustreInstanceUpcomingMaintenanceScheduleList) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLustreInstanceUpcomingMaintenanceScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleLustreInstanceUpcomingMaintenanceScheduleList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleLustreInstanceUpcomingMaintenanceScheduleList) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLustreInstanceUpcomingMaintenanceScheduleList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleLustreInstanceUpcomingMaintenanceScheduleList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleLustreInstanceUpcomingMaintenanceScheduleList) validate
 	return nil
 }
 
-func validateNewGoogleLustreInstanceUpcomingMaintenanceScheduleListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleLustreInstanceUpcomingMaintenanceScheduleListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

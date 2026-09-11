@@ -12,7 +12,7 @@ func (w *jsiiProxy_WorkspacesIpGroupRulesList) validateGetParameters(index *floa
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesIpGroupRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspacesIpGroupRulesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WorkspacesIpGroupRulesList) validateSetTerraformAttributePara
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesIpGroupRulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkspacesIpGroupRulesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WorkspacesIpGroupRulesList) validateSetWrapsSetParameters(val
 	return nil
 }
 
-func validateNewWorkspacesIpGroupRulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWorkspacesIpGroupRulesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

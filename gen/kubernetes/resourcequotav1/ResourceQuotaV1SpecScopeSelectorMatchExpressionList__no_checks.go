@@ -12,7 +12,7 @@ func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionList) validate
 	return nil
 }
 
-func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionList) validate
 	return nil
 }
 
-func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionList) validate
 	return nil
 }
 
-func validateNewResourceQuotaV1SpecScopeSelectorMatchExpressionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewResourceQuotaV1SpecScopeSelectorMatchExpressionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

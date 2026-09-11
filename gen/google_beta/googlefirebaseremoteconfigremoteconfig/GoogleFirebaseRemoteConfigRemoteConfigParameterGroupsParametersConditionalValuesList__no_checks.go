@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigParameterGroupsParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigParameterGroupsParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigParameterGroupsParamete
 	return nil
 }
 
-func validateNewGoogleFirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleFirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

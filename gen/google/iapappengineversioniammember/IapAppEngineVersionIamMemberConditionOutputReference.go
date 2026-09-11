@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/iapappengineversioniammember/internal"
 )
 
 type IapAppEngineVersionIamMemberConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type IapAppEngineVersionIamMemberConditionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -51,7 +51,7 @@ type IapAppEngineVersionIamMemberConditionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type IapAppEngineVersionIamMemberConditionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type IapAppEngineVersionIamMemberConditionOutputReference interface {
 
 // The jsii proxy struct for IapAppEngineVersionIamMemberConditionOutputReference
 type jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) TitleIn
 }
 
 
-func NewIapAppEngineVersionIamMemberConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IapAppEngineVersionIamMemberConditionOutputReference {
+func NewIapAppEngineVersionIamMemberConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) IapAppEngineVersionIamMemberConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIapAppEngineVersionIamMemberConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewIapAppEngineVersionIamMemberConditionOutputReference(terraformResource c
 	j := jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.iapAppEngineVersionIamMember.IapAppEngineVersionIamMemberConditionOutputReference",
+		"@cdktn/provider-google.iapAppEngineVersionIamMember.IapAppEngineVersionIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewIapAppEngineVersionIamMemberConditionOutputReference(terraformResource c
 	return &j
 }
 
-func NewIapAppEngineVersionIamMemberConditionOutputReference_Override(i IapAppEngineVersionIamMemberConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIapAppEngineVersionIamMemberConditionOutputReference_Override(i IapAppEngineVersionIamMemberConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.iapAppEngineVersionIamMember.IapAppEngineVersionIamMemberConditionOutputReference",
+		"@cdktn/provider-google.iapAppEngineVersionIamMember.IapAppEngineVersionIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) GetAnyM
 	return returns
 }
 
-func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -489,8 +489,8 @@ func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) GetStri
 	return returns
 }
 
-func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -502,16 +502,16 @@ func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) Interpo
 	return returns
 }
 
-func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) ResetDe
 	)
 }
 
-func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) Resolve
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

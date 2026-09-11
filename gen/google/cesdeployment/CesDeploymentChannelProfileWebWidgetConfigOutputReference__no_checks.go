@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesDeploymentChannelProfileWebWidgetConfigOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CesDeploymentChannelProfileWebWidgetConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesDeploymentChannelProfileWebWidgetConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesDeploymentChannelProfileWebWidgetConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesDeploymentChannelProfileWebWidgetConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_CesDeploymentChannelProfileWebWidgetConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CesDeploymentChannelProfileWebWidgetConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesDeploymentChannelProfileWebWidgetConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CesDeploymentChannelProfileWebWidgetConfigOutputReference) va
 	return nil
 }
 
-func validateNewCesDeploymentChannelProfileWebWidgetConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesDeploymentChannelProfileWebWidgetConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

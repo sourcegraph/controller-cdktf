@@ -40,7 +40,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesOutputRefere
 	return nil
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesOutputRefere
 	return nil
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWorkstationsWorkstationConfigEphemeralDirectoriesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWorkstationsWorkstationConfigEphemeralDirectoriesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

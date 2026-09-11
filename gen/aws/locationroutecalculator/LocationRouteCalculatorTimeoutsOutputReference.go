@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/locationroutecalculator/internal"
 )
 
 type LocationRouteCalculatorTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type LocationRouteCalculatorTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type LocationRouteCalculatorTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type LocationRouteCalculatorTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type LocationRouteCalculatorTimeoutsOutputReference interface {
 
 // The jsii proxy struct for LocationRouteCalculatorTimeoutsOutputReference
 type jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) UpdateInput()
 }
 
 
-func NewLocationRouteCalculatorTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LocationRouteCalculatorTimeoutsOutputReference {
+func NewLocationRouteCalculatorTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LocationRouteCalculatorTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLocationRouteCalculatorTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewLocationRouteCalculatorTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeoutsOutputReference",
+		"@cdktn/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewLocationRouteCalculatorTimeoutsOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewLocationRouteCalculatorTimeoutsOutputReference_Override(l LocationRouteCalculatorTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLocationRouteCalculatorTimeoutsOutputReference_Override(l LocationRouteCalculatorTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeoutsOutputReference",
+		"@cdktn/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -491,8 +491,8 @@ func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) GetStringMapA
 	return returns
 }
 
-func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -504,16 +504,16 @@ func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) Interpolation
 	return returns
 }
 
-func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) ResetUpdate()
 	)
 }
 
-func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

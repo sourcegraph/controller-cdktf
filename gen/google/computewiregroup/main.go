@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroup",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroup",
 		reflect.TypeOf((*ComputeWireGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -45,6 +45,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -60,6 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putWireProperties", GoMethod: "PutWireProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdminEnabled", GoMethod: "ResetAdminEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEndpoints", GoMethod: "ResetEndpoints"},
@@ -83,27 +85,28 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wireProperties", GoGetter: "WireProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "wirePropertiesInput", GoGetter: "WirePropertiesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "wires", GoGetter: "Wires"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeWireGroup{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupConfig",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupConfig",
 		reflect.TypeOf((*ComputeWireGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupEndpoints",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpoints",
 		reflect.TypeOf((*ComputeWireGroupEndpoints)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnects",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnects",
 		reflect.TypeOf((*ComputeWireGroupEndpointsInterconnects)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnectsList",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnectsList",
 		reflect.TypeOf((*ComputeWireGroupEndpointsInterconnectsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -120,12 +123,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeWireGroupEndpointsInterconnectsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnectsOutputReference",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnectsOutputReference",
 		reflect.TypeOf((*ComputeWireGroupEndpointsInterconnectsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -160,12 +163,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupEndpointsList",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpointsList",
 		reflect.TypeOf((*ComputeWireGroupEndpointsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -182,12 +185,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeWireGroupEndpointsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupEndpointsOutputReference",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpointsOutputReference",
 		reflect.TypeOf((*ComputeWireGroupEndpointsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -220,16 +223,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeWireGroupEndpointsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupTimeouts",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupTimeouts",
 		reflect.TypeOf((*ComputeWireGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupTimeoutsOutputReference",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeWireGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -265,20 +268,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeWireGroupTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupTopology",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupTopology",
 		reflect.TypeOf((*ComputeWireGroupTopology)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupTopologyEndpoints",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupTopologyEndpoints",
 		reflect.TypeOf((*ComputeWireGroupTopologyEndpoints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupTopologyEndpointsList",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupTopologyEndpointsList",
 		reflect.TypeOf((*ComputeWireGroupTopologyEndpointsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -294,12 +297,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeWireGroupTopologyEndpointsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupTopologyEndpointsOutputReference",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupTopologyEndpointsOutputReference",
 		reflect.TypeOf((*ComputeWireGroupTopologyEndpointsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "city", GoGetter: "City"},
@@ -328,12 +331,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeWireGroupTopologyEndpointsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupTopologyList",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupTopologyList",
 		reflect.TypeOf((*ComputeWireGroupTopologyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -349,12 +352,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeWireGroupTopologyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupTopologyOutputReference",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupTopologyOutputReference",
 		reflect.TypeOf((*ComputeWireGroupTopologyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -382,16 +385,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeWireGroupTopologyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWireProperties",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupWireProperties",
 		reflect.TypeOf((*ComputeWireGroupWireProperties)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWirePropertiesOutputReference",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupWirePropertiesOutputReference",
 		reflect.TypeOf((*ComputeWireGroupWirePropertiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bandwidthAllocation", GoGetter: "BandwidthAllocation"},
@@ -426,20 +429,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeWireGroupWirePropertiesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWires",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupWires",
 		reflect.TypeOf((*ComputeWireGroupWires)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWiresEndpoints",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupWiresEndpoints",
 		reflect.TypeOf((*ComputeWireGroupWiresEndpoints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWiresEndpointsList",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupWiresEndpointsList",
 		reflect.TypeOf((*ComputeWireGroupWiresEndpointsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -455,12 +458,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeWireGroupWiresEndpointsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWiresEndpointsOutputReference",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupWiresEndpointsOutputReference",
 		reflect.TypeOf((*ComputeWireGroupWiresEndpointsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -489,12 +492,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeWireGroupWiresEndpointsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWiresList",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupWiresList",
 		reflect.TypeOf((*ComputeWireGroupWiresList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -510,12 +513,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeWireGroupWiresList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWiresOutputReference",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupWiresOutputReference",
 		reflect.TypeOf((*ComputeWireGroupWiresOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adminEnabled", GoGetter: "AdminEnabled"},
@@ -546,16 +549,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeWireGroupWiresOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWiresWireProperties",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupWiresWireProperties",
 		reflect.TypeOf((*ComputeWireGroupWiresWireProperties)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWiresWirePropertiesList",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupWiresWirePropertiesList",
 		reflect.TypeOf((*ComputeWireGroupWiresWirePropertiesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -571,12 +574,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeWireGroupWiresWirePropertiesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWiresWirePropertiesOutputReference",
+		"@cdktn/provider-google.computeWireGroup.ComputeWireGroupWiresWirePropertiesOutputReference",
 		reflect.TypeOf((*ComputeWireGroupWiresWirePropertiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bandwidthUnmetered", GoGetter: "BandwidthUnmetered"},
@@ -605,7 +608,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeWireGroupWiresWirePropertiesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

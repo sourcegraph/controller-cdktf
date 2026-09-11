@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRecaptchaOptionsConfigList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRecaptchaOptionsConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRecaptchaOptionsConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRecaptchaOptionsConfigList) va
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRecaptchaOptionsConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRecaptchaOptionsConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRecaptchaOptionsConfigList) va
 	return nil
 }
 
-func validateNewDataGoogleComputeSecurityPolicyRecaptchaOptionsConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeSecurityPolicyRecaptchaOptionsConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

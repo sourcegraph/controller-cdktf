@@ -12,7 +12,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigSlackTargetsBindingArrayValueList) val
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigSlackTargetsBindingArrayValueList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertRouteChannelConfigSlackTargetsBindingArrayValueList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigSlackTargetsBindingArrayValueList) val
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigSlackTargetsBindingArrayValueList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertRouteChannelConfigSlackTargetsBindingArrayValueList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigSlackTargetsBindingArrayValueList) val
 	return nil
 }
 
-func validateNewAlertRouteChannelConfigSlackTargetsBindingArrayValueListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAlertRouteChannelConfigSlackTargetsBindingArrayValueListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

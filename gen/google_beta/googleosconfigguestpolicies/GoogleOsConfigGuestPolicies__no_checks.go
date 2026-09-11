@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validatePutRecipesParameters(val
 }
 
 func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validatePutTimeoutsParameters(value *GoogleOsConfigGuestPoliciesTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPolicies) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

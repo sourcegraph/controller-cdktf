@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2Service",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service",
 		reflect.TypeOf((*CloudRunV2Service)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -78,6 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -101,6 +102,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTraffic", GoMethod: "PutTraffic"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "reconciling", GoGetter: "Reconciling"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBinaryAuthorization", GoMethod: "ResetBinaryAuthorization"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBuildConfig", GoMethod: "ResetBuildConfig"},
@@ -146,19 +148,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "urls", GoGetter: "Urls"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2Service{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceBinaryAuthorization",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceBinaryAuthorization",
 		reflect.TypeOf((*CloudRunV2ServiceBinaryAuthorization)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceBinaryAuthorizationOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceBinaryAuthorizationOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceBinaryAuthorizationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "breakglassJustification", GoGetter: "BreakglassJustification"},
@@ -194,16 +197,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceBinaryAuthorizationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceBuildConfig",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceBuildConfig",
 		reflect.TypeOf((*CloudRunV2ServiceBuildConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceBuildConfigOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceBuildConfigOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceBuildConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseImage", GoGetter: "BaseImage"},
@@ -255,16 +258,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceConditions",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConditions",
 		reflect.TypeOf((*CloudRunV2ServiceConditions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceConditionsList",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConditionsList",
 		reflect.TypeOf((*CloudRunV2ServiceConditionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -280,12 +283,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceConditionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceConditionsOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConditionsOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceConditionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -320,20 +323,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceConditionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig",
 		reflect.TypeOf((*CloudRunV2ServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettings",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettings",
 		reflect.TypeOf((*CloudRunV2ServiceMultiRegionSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceMultiRegionSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -364,16 +367,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceMultiRegionSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceScaling",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScaling",
 		reflect.TypeOf((*CloudRunV2ServiceScaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceScalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -412,24 +415,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceScalingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplate",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplate",
 		reflect.TypeOf((*CloudRunV2ServiceTemplate)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainers",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainers",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainers)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersBuildInfo",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersBuildInfo",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersBuildInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersBuildInfoList",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersBuildInfoList",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersBuildInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -445,12 +448,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersBuildInfoList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersBuildInfoOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersBuildInfoOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersBuildInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -479,16 +482,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersBuildInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnv",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnv",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersEnv)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvList",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvList",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersEnvList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -505,12 +508,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersEnvList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersEnvOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -546,16 +549,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersEnvOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvValueSource",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvValueSource",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersEnvValueSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvValueSourceOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvValueSourceOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersEnvValueSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -586,16 +589,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersEnvValueSourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRef",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRef",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -627,12 +630,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersList",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersList",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -649,20 +652,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbe",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbe",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbe)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeGrpc",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeGrpc",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeGrpc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -695,20 +698,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeHttpGet",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeHttpGet",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeaders",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeaders",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeaders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersList",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersList",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -725,12 +728,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -762,12 +765,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -804,12 +807,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -860,16 +863,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -898,12 +901,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
@@ -979,16 +982,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPorts",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPorts",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersPorts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPortsOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPortsOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersPortsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1021,20 +1024,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersReadinessProbe)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpc",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpc",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersReadinessProbeGrpc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1067,16 +1070,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1109,12 +1112,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1161,16 +1164,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersResources",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersResources",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersResourcesOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersResourcesOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1206,20 +1209,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbe",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbe",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbe)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeGrpc",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeGrpc",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeGrpc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1252,20 +1255,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeHttpGet",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeHttpGet",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeaders",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeaders",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeaders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersList",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersList",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1282,12 +1285,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1319,12 +1322,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1361,12 +1364,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1417,16 +1420,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeTcpSocket",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeTcpSocket",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeTcpSocketOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeTcpSocketOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1456,16 +1459,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeTcpSocketOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMounts",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMounts",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersVolumeMounts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsList",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsList",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersVolumeMountsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1482,12 +1485,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersVolumeMountsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1521,16 +1524,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateNodeSelector",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateNodeSelector",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateNodeSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateNodeSelectorOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateNodeSelectorOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateNodeSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accelerator", GoGetter: "Accelerator"},
@@ -1559,12 +1562,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateNodeSelectorOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -1644,16 +1647,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateScaling",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateScaling",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateScaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateScalingOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateScalingOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateScalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1686,20 +1689,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateScalingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumes",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumes",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesCloudSqlInstance",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesCloudSqlInstance",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesCloudSqlInstance)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1729,16 +1732,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesEmptyDir",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesEmptyDir",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesEmptyDir)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesEmptyDirOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesEmptyDirOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesEmptyDirOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1771,16 +1774,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVolumesEmptyDirOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcs",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcs",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesGcs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesGcsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -1815,12 +1818,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVolumesGcsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesList",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesList",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1837,16 +1840,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVolumesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesNfs",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesNfs",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesNfs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesNfsOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesNfsOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesNfsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1880,12 +1883,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVolumesNfsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudSqlInstance", GoGetter: "CloudSqlInstance"},
@@ -1934,20 +1937,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecret",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecret",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesSecret)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecretItems",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecretItems",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesSecretItems)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecretItemsList",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecretItemsList",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesSecretItemsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1964,12 +1967,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2004,12 +2007,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecretOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecretOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesSecretOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2045,20 +2048,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccess",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccess",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVpcAccess)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccessNetworkInterfaces",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccessNetworkInterfaces",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVpcAccessNetworkInterfaces)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2075,12 +2078,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2116,12 +2119,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccessOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccessOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTemplateVpcAccessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2158,16 +2161,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVpcAccessOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTerminalCondition",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTerminalCondition",
 		reflect.TypeOf((*CloudRunV2ServiceTerminalCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTerminalConditionList",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTerminalConditionList",
 		reflect.TypeOf((*CloudRunV2ServiceTerminalConditionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2183,12 +2186,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTerminalConditionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTerminalConditionOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTerminalConditionOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTerminalConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2223,16 +2226,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTerminalConditionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeouts",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeouts",
 		reflect.TypeOf((*CloudRunV2ServiceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeoutsOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeoutsOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2268,16 +2271,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTraffic",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTraffic",
 		reflect.TypeOf((*CloudRunV2ServiceTraffic)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTrafficList",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTrafficList",
 		reflect.TypeOf((*CloudRunV2ServiceTrafficList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2294,12 +2297,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTrafficList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTrafficOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTrafficOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTrafficOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2338,16 +2341,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTrafficOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTrafficStatuses",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTrafficStatuses",
 		reflect.TypeOf((*CloudRunV2ServiceTrafficStatuses)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTrafficStatusesList",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTrafficStatusesList",
 		reflect.TypeOf((*CloudRunV2ServiceTrafficStatusesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2363,12 +2366,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTrafficStatusesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTrafficStatusesOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTrafficStatusesOutputReference",
 		reflect.TypeOf((*CloudRunV2ServiceTrafficStatusesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2400,7 +2403,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudRunV2ServiceTrafficStatusesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

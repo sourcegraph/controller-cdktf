@@ -56,6 +56,10 @@ func (p *jsiiProxy_PolicyProfileEnrollmentApps) validateInterpolationForAttribut
 	return nil
 }
 
+func (p *jsiiProxy_PolicyProfileEnrollmentApps) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyProfileEnrollmentApps) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (p *jsiiProxy_PolicyProfileEnrollmentApps) validateMoveToIdParameters(id *s
 }
 
 func (p *jsiiProxy_PolicyProfileEnrollmentApps) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PolicyProfileEnrollmentApps) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_PolicyProfileEnrollmentApps) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_PolicyProfileEnrollmentApps) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PolicyProfileEnrollmentApps) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

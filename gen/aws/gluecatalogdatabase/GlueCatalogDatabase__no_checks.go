@@ -56,6 +56,10 @@ func (g *jsiiProxy_GlueCatalogDatabase) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GlueCatalogDatabase) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueCatalogDatabase) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GlueCatalogDatabase) validatePutCreateTableDefaultPermissionP
 }
 
 func (g *jsiiProxy_GlueCatalogDatabase) validatePutTargetDatabaseParameters(value *GlueCatalogDatabaseTargetDatabase) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueCatalogDatabase) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GlueCatalogDatabase) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_GlueCatalogDatabase) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GlueCatalogDatabase) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

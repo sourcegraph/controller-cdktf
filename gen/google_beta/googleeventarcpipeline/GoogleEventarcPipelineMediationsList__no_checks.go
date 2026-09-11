@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleEventarcPipelineMediationsList) validateGetParameters(i
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEventarcPipelineMediationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleEventarcPipelineMediationsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleEventarcPipelineMediationsList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcPipelineMediationsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleEventarcPipelineMediationsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleEventarcPipelineMediationsList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewGoogleEventarcPipelineMediationsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleEventarcPipelineMediationsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

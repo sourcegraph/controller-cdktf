@@ -12,7 +12,7 @@ func (e *jsiiProxy_EmailRoutingRuleMatcherList) validateGetParameters(index *flo
 	return nil
 }
 
-func (e *jsiiProxy_EmailRoutingRuleMatcherList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmailRoutingRuleMatcherList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EmailRoutingRuleMatcherList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_EmailRoutingRuleMatcherList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EmailRoutingRuleMatcherList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EmailRoutingRuleMatcherList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewEmailRoutingRuleMatcherListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEmailRoutingRuleMatcherListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

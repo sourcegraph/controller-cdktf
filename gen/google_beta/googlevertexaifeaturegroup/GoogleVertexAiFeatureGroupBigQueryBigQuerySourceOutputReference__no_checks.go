@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleVertexAiFeatureGroupBigQueryBigQuerySourceOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureGroupBigQueryBigQuerySourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleVertexAiFeatureGroupBigQueryBigQuerySourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureGroupBigQueryBigQuerySourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleVertexAiFeatureGroupBigQueryBigQuerySourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleVertexAiFeatureGroupBigQueryBigQuerySourceOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureGroupBigQueryBigQuerySourceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleVertexAiFeatureGroupBigQueryBigQuerySourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleVertexAiFeatureGroupBigQueryBigQuerySourceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleVertexAiFeatureGroupBigQueryBigQuerySourceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

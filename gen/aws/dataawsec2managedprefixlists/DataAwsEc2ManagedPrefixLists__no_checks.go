@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixLists) validatePutFilterParameters(val
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsEc2ManagedPrefixLists) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsEc2ManagedPrefixLists_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

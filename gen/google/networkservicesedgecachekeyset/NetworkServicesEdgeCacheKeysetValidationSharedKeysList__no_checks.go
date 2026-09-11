@@ -12,7 +12,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetValidationSharedKeysList) valid
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetValidationSharedKeysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetValidationSharedKeysList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetValidationSharedKeysList) valid
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetValidationSharedKeysList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetValidationSharedKeysList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetValidationSharedKeysList) valid
 	return nil
 }
 
-func validateNewNetworkServicesEdgeCacheKeysetValidationSharedKeysListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNetworkServicesEdgeCacheKeysetValidationSharedKeysListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

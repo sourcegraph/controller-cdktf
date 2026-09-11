@@ -12,7 +12,7 @@ func (s *jsiiProxy_StatefulSetSpecUpdateStrategyRollingUpdateList) validateGetPa
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecUpdateStrategyRollingUpdateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecUpdateStrategyRollingUpdateList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_StatefulSetSpecUpdateStrategyRollingUpdateList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecUpdateStrategyRollingUpdateList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StatefulSetSpecUpdateStrategyRollingUpdateList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_StatefulSetSpecUpdateStrategyRollingUpdateList) validateSetWr
 	return nil
 }
 
-func validateNewStatefulSetSpecUpdateStrategyRollingUpdateListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewStatefulSetSpecUpdateStrategyRollingUpdateListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

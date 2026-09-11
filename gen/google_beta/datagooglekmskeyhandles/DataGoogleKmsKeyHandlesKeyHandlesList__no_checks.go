@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleKmsKeyHandlesKeyHandlesList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleKmsKeyHandlesKeyHandlesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleKmsKeyHandlesKeyHandlesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleKmsKeyHandlesKeyHandlesList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleKmsKeyHandlesKeyHandlesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleKmsKeyHandlesKeyHandlesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleKmsKeyHandlesKeyHandlesList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewDataGoogleKmsKeyHandlesKeyHandlesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleKmsKeyHandlesKeyHandlesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (e *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validate
 	return nil
 }
 
-func (e *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validate
 	return nil
 }
 
-func validateNewEmrManagedScalingPolicyComputeLimitsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEmrManagedScalingPolicyComputeLimitsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

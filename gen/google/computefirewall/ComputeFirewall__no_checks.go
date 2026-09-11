@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeFirewall) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (c *jsiiProxy_ComputeFirewall) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeFirewall) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (c *jsiiProxy_ComputeFirewall) validatePutParamsParameters(value *ComputeFi
 }
 
 func (c *jsiiProxy_ComputeFirewall) validatePutTimeoutsParameters(value *ComputeFirewallTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeFirewall) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -140,7 +148,7 @@ func (j *jsiiProxy_ComputeFirewall) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewall) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeFirewall) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

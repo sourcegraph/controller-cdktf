@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOut
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOut
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (b *jsiiProxy_BeyondcorpAppConnectionGatewayOutputReference) validateGetStr
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpAppConnectionGatewayOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BeyondcorpAppConnectionGatewayOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpAppConnectionGatewayOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BeyondcorpAppConnectionGatewayOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_BeyondcorpAppConnectionGatewayOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpAppConnectionGatewayOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BeyondcorpAppConnectionGatewayOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_BeyondcorpAppConnectionGatewayOutputReference) validateSetTyp
 	return nil
 }
 
-func validateNewBeyondcorpAppConnectionGatewayOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBeyondcorpAppConnectionGatewayOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

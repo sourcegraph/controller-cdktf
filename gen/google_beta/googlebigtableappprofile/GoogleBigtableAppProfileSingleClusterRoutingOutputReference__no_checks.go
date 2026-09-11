@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBigtableAppProfileSingleClusterRoutingOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableAppProfileSingleClusterRoutingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBigtableAppProfileSingleClusterRoutingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableAppProfileSingleClusterRoutingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigtableAppProfileSingleClusterRoutingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleBigtableAppProfileSingleClusterRoutingOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableAppProfileSingleClusterRoutingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigtableAppProfileSingleClusterRoutingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleBigtableAppProfileSingleClusterRoutingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBigtableAppProfileSingleClusterRoutingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

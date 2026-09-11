@@ -40,11 +40,11 @@ func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsAudioStreamOutputReferenc
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsAudioStreamOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsAudioStreamOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsAudioStreamOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsAudioStreamOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsAudioStreamOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsAudioStreamOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsAudioStreamOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTranscoderJobConfigElementaryStreamsAudioStreamOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTranscoderJobConfigElementaryStreamsAudioStreamOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

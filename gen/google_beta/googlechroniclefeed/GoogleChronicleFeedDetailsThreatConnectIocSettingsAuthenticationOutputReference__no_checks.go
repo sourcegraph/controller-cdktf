@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsThreatConnectIocSettingsAuthenticat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsThreatConnectIocSettingsAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsThreatConnectIocSettingsAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsThreatConnectIocSettingsAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsThreatConnectIocSettingsAuthenticationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsThreatConnectIocSettingsAuthenticat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsThreatConnectIocSettingsAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsThreatConnectIocSettingsAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsThreatConnectIocSettingsAuthenticat
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsThreatConnectIocSettingsAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsThreatConnectIocSettingsAuthenticationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (i *jsiiProxy_IamVirtualMfaDevice) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (i *jsiiProxy_IamVirtualMfaDevice) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamVirtualMfaDevice) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (i *jsiiProxy_IamVirtualMfaDevice) validateMoveToIdParameters(id *string) e
 }
 
 func (i *jsiiProxy_IamVirtualMfaDevice) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamVirtualMfaDevice) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_IamVirtualMfaDevice) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_IamVirtualMfaDevice) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IamVirtualMfaDevice) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

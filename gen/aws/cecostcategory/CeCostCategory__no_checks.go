@@ -56,6 +56,10 @@ func (c *jsiiProxy_CeCostCategory) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (c *jsiiProxy_CeCostCategory) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CeCostCategory) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (c *jsiiProxy_CeCostCategory) validatePutRuleParameters(value interface{}) 
 }
 
 func (c *jsiiProxy_CeCostCategory) validatePutSplitChargeRuleParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CeCostCategory) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_CeCostCategory) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CeCostCategory) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CeCostCategory) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

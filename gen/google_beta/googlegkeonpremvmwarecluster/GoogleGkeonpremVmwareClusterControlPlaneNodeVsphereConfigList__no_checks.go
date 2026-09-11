@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterControlPlaneNodeVsphereConfigList
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareClusterControlPlaneNodeVsphereConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterControlPlaneNodeVsphereConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterControlPlaneNodeVsphereConfigList
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterControlPlaneNodeVsphereConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterControlPlaneNodeVsphereConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterControlPlaneNodeVsphereConfigList
 	return nil
 }
 
-func validateNewGoogleGkeonpremVmwareClusterControlPlaneNodeVsphereConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleGkeonpremVmwareClusterControlPlaneNodeVsphereConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

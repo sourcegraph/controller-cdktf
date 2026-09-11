@@ -56,6 +56,10 @@ func (s *jsiiProxy_SagemakerNotebookInstance) validateInterpolationForAttributeP
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerNotebookInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerNotebookInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_SagemakerNotebookInstance) validateOverrideLogicalIdParameter
 }
 
 func (s *jsiiProxy_SagemakerNotebookInstance) validatePutInstanceMetadataServiceConfigurationParameters(value *SagemakerNotebookInstanceInstanceMetadataServiceConfiguration) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerNotebookInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_SagemakerNotebookInstance) validateSetKmsKeyIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SagemakerNotebookInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

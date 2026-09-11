@@ -12,7 +12,7 @@ func (a *jsiiProxy_AlloydbBackupEncryptionInfoList) validateGetParameters(index 
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbBackupEncryptionInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbBackupEncryptionInfoList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_AlloydbBackupEncryptionInfoList) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbBackupEncryptionInfoList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlloydbBackupEncryptionInfoList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_AlloydbBackupEncryptionInfoList) validateSetWrapsSetParameter
 	return nil
 }
 
-func validateNewAlloydbBackupEncryptionInfoListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAlloydbBackupEncryptionInfoListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

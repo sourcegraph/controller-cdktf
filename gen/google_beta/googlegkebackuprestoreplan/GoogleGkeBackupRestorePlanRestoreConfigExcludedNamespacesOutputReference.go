@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegkebackuprestoreplan/internal"
 )
 
 type GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference in
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference in
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference in
 
 // The jsii proxy struct for GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference
 type jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutp
 }
 
 
-func NewGoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference {
+func NewGoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewGoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference
 	j := jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference",
+		"@cdktn/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewGoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference
 	return &j
 }
 
-func NewGoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference_Override(g GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference_Override(g GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference",
+		"@cdktn/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -420,8 +420,8 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -433,24 +433,24 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutp
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

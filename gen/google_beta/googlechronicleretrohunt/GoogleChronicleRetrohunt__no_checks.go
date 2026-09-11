@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleChronicleRetrohunt) validateInterpolationForAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleChronicleRetrohunt) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleChronicleRetrohunt) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleChronicleRetrohunt) validatePutProcessIntervalParameter
 }
 
 func (g *jsiiProxy_GoogleChronicleRetrohunt) validatePutTimeoutsParameters(value *GoogleChronicleRetrohuntTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleRetrohunt) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleChronicleRetrohunt) validateSetInstanceParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleRetrohunt) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleChronicleRetrohunt) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (a *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataValueList) vali
 	return nil
 }
 
-func (a *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataValueList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataValueList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataValueList) vali
 	return nil
 }
 
-func (j *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataValueList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataValueList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataValueList) vali
 	return nil
 }
 
-func validateNewApphubServiceServicePropertiesExtendedMetadataValueListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewApphubServiceServicePropertiesExtendedMetadataValueListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

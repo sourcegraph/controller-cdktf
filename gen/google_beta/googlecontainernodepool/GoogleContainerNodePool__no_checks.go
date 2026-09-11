@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleContainerNodePool) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (g *jsiiProxy_GoogleContainerNodePool) validatePutUpgradeSettingsParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleContainerNodePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -144,7 +152,7 @@ func (j *jsiiProxy_GoogleContainerNodePool) validateSetInitialNodeCountParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleContainerNodePool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

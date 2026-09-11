@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateGetStri
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validatePutAuto
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetZone
 	return nil
 }
 
-func validateNewGoogleBigtableInstanceClusterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleBigtableInstanceClusterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

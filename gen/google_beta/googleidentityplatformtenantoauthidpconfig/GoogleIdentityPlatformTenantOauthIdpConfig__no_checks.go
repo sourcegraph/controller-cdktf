@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateInterpola
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateOverrideL
 }
 
 func (g *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validatePutTimeoutsParameters(value *GoogleIdentityPlatformTenantOauthIdpConfigTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateSetIssuer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

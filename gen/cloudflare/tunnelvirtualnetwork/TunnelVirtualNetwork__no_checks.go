@@ -56,6 +56,10 @@ func (t *jsiiProxy_TunnelVirtualNetwork) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (t *jsiiProxy_TunnelVirtualNetwork) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TunnelVirtualNetwork) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (t *jsiiProxy_TunnelVirtualNetwork) validateMoveToIdParameters(id *string) 
 }
 
 func (t *jsiiProxy_TunnelVirtualNetwork) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TunnelVirtualNetwork) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_TunnelVirtualNetwork) validateSetIsDefaultNetworkParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_TunnelVirtualNetwork) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_TunnelVirtualNetwork) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

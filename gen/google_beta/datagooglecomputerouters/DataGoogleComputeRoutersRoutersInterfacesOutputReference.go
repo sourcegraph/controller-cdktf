@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomputerouters/internal"
 )
 
 type DataGoogleComputeRoutersRoutersInterfacesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,15 +41,15 @@ type DataGoogleComputeRoutersRoutersInterfacesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,12 +65,12 @@ type DataGoogleComputeRoutersRoutersInterfacesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type DataGoogleComputeRoutersRoutersInterfacesOutputReference interface {
 
 // The jsii proxy struct for DataGoogleComputeRoutersRoutersInterfacesOutputReference
 type jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference) ComplexObjectIndex() interface{} {
@@ -213,8 +213,8 @@ func (j *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -224,7 +224,7 @@ func (j *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference) Ter
 }
 
 
-func NewDataGoogleComputeRoutersRoutersInterfacesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleComputeRoutersRoutersInterfacesOutputReference {
+func NewDataGoogleComputeRoutersRoutersInterfacesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleComputeRoutersRoutersInterfacesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleComputeRoutersRoutersInterfacesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -233,7 +233,7 @@ func NewDataGoogleComputeRoutersRoutersInterfacesOutputReference(terraformResour
 	j := jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersInterfacesOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersInterfacesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -241,11 +241,11 @@ func NewDataGoogleComputeRoutersRoutersInterfacesOutputReference(terraformResour
 	return &j
 }
 
-func NewDataGoogleComputeRoutersRoutersInterfacesOutputReference_Override(d DataGoogleComputeRoutersRoutersInterfacesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleComputeRoutersRoutersInterfacesOutputReference_Override(d DataGoogleComputeRoutersRoutersInterfacesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersInterfacesOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersInterfacesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,11 +335,11 @@ func (d *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -463,8 +463,8 @@ func (d *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -476,24 +476,24 @@ func (d *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference) Int
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (d *jsiiProxy_DataGoogleComputeRoutersRoutersInterfacesOutputReference) Res
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

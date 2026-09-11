@@ -56,6 +56,10 @@ func (m *jsiiProxy_MskCluster) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (m *jsiiProxy_MskCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (m *jsiiProxy_MskCluster) validatePutTimeoutsParameters(value *MskClusterTi
 	return nil
 }
 
+func (m *jsiiProxy_MskCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateMskCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -140,7 +148,7 @@ func (j *jsiiProxy_MskCluster) validateSetKafkaVersionParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_MskCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MskCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (r *jsiiProxy_RbacGroupMember) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (r *jsiiProxy_RbacGroupMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RbacGroupMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (r *jsiiProxy_RbacGroupMember) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (r *jsiiProxy_RbacGroupMember) validatePutMemberParameters(value *RbacGroupMemberMember) error {
+	return nil
+}
+
+func (r *jsiiProxy_RbacGroupMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_RbacGroupMember) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_RbacGroupMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_RbacGroupMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

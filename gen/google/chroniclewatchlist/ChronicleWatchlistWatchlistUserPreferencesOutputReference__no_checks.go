@@ -40,11 +40,11 @@ func (c *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewChronicleWatchlistWatchlistUserPreferencesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewChronicleWatchlistWatchlistUserPreferencesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) validateGetStrin
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) validatePutWebSs
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIamWorkforcePoolProviderOidcOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIamWorkforcePoolProviderOidcOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

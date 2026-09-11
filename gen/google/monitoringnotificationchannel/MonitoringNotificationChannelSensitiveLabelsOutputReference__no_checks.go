@@ -40,11 +40,11 @@ func (m *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) 
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -100,11 +100,11 @@ func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMonitoringNotificationChannelSensitiveLabelsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitoringNotificationChannelSensitiveLabelsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

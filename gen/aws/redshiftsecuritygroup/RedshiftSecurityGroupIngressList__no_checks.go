@@ -12,7 +12,7 @@ func (r *jsiiProxy_RedshiftSecurityGroupIngressList) validateGetParameters(index
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftSecurityGroupIngressList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedshiftSecurityGroupIngressList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_RedshiftSecurityGroupIngressList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftSecurityGroupIngressList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RedshiftSecurityGroupIngressList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_RedshiftSecurityGroupIngressList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewRedshiftSecurityGroupIngressListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewRedshiftSecurityGroupIngressListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

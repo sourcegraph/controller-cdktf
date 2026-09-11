@@ -56,6 +56,10 @@ func (d *jsiiProxy_DialogflowEncryptionSpec) validateInterpolationForAttributePa
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowEncryptionSpec) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowEncryptionSpec) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (d *jsiiProxy_DialogflowEncryptionSpec) validatePutEncryptionSpecParameters
 }
 
 func (d *jsiiProxy_DialogflowEncryptionSpec) validatePutTimeoutsParameters(value *DialogflowEncryptionSpecTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowEncryptionSpec) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_DialogflowEncryptionSpec) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowEncryptionSpec) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DialogflowEncryptionSpec) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

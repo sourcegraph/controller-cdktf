@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/monitorv2/internal"
 )
 
 type MonitorV2NoDataRulesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type MonitorV2NoDataRulesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Threshold() MonitorV2NoDataRulesThresholdOutputReference
 	ThresholdInput() *MonitorV2NoDataRulesThreshold
 	// Experimental.
@@ -47,7 +47,7 @@ type MonitorV2NoDataRulesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,15 +63,15 @@ type MonitorV2NoDataRulesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutThreshold(value *MonitorV2NoDataRulesThreshold)
 	ResetExpiration()
 	ResetThreshold()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type MonitorV2NoDataRulesOutputReference interface {
 
 // The jsii proxy struct for MonitorV2NoDataRulesOutputReference
 type jsiiProxy_MonitorV2NoDataRulesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MonitorV2NoDataRulesOutputReference) ComplexObjectIndex() interface{} {
@@ -164,8 +164,8 @@ func (j *jsiiProxy_MonitorV2NoDataRulesOutputReference) TerraformAttribute() *st
 	return returns
 }
 
-func (j *jsiiProxy_MonitorV2NoDataRulesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MonitorV2NoDataRulesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_MonitorV2NoDataRulesOutputReference) ThresholdInput() *Monito
 }
 
 
-func NewMonitorV2NoDataRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorV2NoDataRulesOutputReference {
+func NewMonitorV2NoDataRulesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MonitorV2NoDataRulesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMonitorV2NoDataRulesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewMonitorV2NoDataRulesOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_MonitorV2NoDataRulesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.monitorV2.MonitorV2NoDataRulesOutputReference",
+		"@cdktn/provider-observe.monitorV2.MonitorV2NoDataRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewMonitorV2NoDataRulesOutputReference(terraformResource cdktf.IInterpolati
 	return &j
 }
 
-func NewMonitorV2NoDataRulesOutputReference_Override(m MonitorV2NoDataRulesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMonitorV2NoDataRulesOutputReference_Override(m MonitorV2NoDataRulesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.monitorV2.MonitorV2NoDataRulesOutputReference",
+		"@cdktn/provider-observe.monitorV2.MonitorV2NoDataRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_MonitorV2NoDataRulesOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_MonitorV2NoDataRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorV2NoDataRulesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -317,11 +317,11 @@ func (m *jsiiProxy_MonitorV2NoDataRulesOutputReference) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2NoDataRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitorV2NoDataRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -445,8 +445,8 @@ func (m *jsiiProxy_MonitorV2NoDataRulesOutputReference) GetStringMapAttribute(te
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2NoDataRulesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MonitorV2NoDataRulesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -458,16 +458,16 @@ func (m *jsiiProxy_MonitorV2NoDataRulesOutputReference) InterpolationAsList() cd
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2NoDataRulesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MonitorV2NoDataRulesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (m *jsiiProxy_MonitorV2NoDataRulesOutputReference) ResetThreshold() {
 	)
 }
 
-func (m *jsiiProxy_MonitorV2NoDataRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MonitorV2NoDataRulesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (m *jsiiProxy_MonitorV2NoDataRulesOutputReference) Resolve(_context cdktf.I
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

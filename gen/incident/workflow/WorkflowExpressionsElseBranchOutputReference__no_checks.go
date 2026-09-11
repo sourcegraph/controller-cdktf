@@ -40,7 +40,7 @@ func (w *jsiiProxy_WorkflowExpressionsElseBranchOutputReference) validateGetStri
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowExpressionsElseBranchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkflowExpressionsElseBranchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (w *jsiiProxy_WorkflowExpressionsElseBranchOutputReference) validatePutResu
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowExpressionsElseBranchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkflowExpressionsElseBranchOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_WorkflowExpressionsElseBranchOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowExpressionsElseBranchOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkflowExpressionsElseBranchOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWorkflowExpressionsElseBranchOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWorkflowExpressionsElseBranchOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

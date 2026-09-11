@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersionTimeoutsOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersionTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleDocumentAiProcessorDefaultVersionTimeoutsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDocumentAiProcessorDefaultVersionTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDocumentAiProcessorDefaultVersionTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDocumentAiProcessorDefaultVersionTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDocumentAiProcessorDefaultVersionTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

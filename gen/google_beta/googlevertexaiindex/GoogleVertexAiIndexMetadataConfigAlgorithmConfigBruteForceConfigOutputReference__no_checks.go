@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceCon
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

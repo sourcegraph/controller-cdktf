@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/incident/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/incident/alertroute/internal"
 )
 
 type AlertRouteChannelConfigSlackTargetsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Binding() AlertRouteChannelConfigSlackTargetsBindingOutputReference
 	BindingInput() interface{}
 	ChannelVisibility() *string
@@ -39,15 +39,15 @@ type AlertRouteChannelConfigSlackTargetsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,13 +63,13 @@ type AlertRouteChannelConfigSlackTargetsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutBinding(value *AlertRouteChannelConfigSlackTargetsBinding)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type AlertRouteChannelConfigSlackTargetsOutputReference interface {
 
 // The jsii proxy struct for AlertRouteChannelConfigSlackTargetsOutputReference
 type jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference) Binding() AlertRouteChannelConfigSlackTargetsBindingOutputReference {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference) Terraform
 }
 
 
-func NewAlertRouteChannelConfigSlackTargetsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlertRouteChannelConfigSlackTargetsOutputReference {
+func NewAlertRouteChannelConfigSlackTargetsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AlertRouteChannelConfigSlackTargetsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAlertRouteChannelConfigSlackTargetsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewAlertRouteChannelConfigSlackTargetsOutputReference(terraformResource cdk
 	j := jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.alertRoute.AlertRouteChannelConfigSlackTargetsOutputReference",
+		"@cdktn/provider-incident.alertRoute.AlertRouteChannelConfigSlackTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewAlertRouteChannelConfigSlackTargetsOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewAlertRouteChannelConfigSlackTargetsOutputReference_Override(a AlertRouteChannelConfigSlackTargetsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAlertRouteChannelConfigSlackTargetsOutputReference_Override(a AlertRouteChannelConfigSlackTargetsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.alertRoute.AlertRouteChannelConfigSlackTargetsOutputReference",
+		"@cdktn/provider-incident.alertRoute.AlertRouteChannelConfigSlackTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,11 +315,11 @@ func (a *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference) GetAnyMap
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -443,8 +443,8 @@ func (a *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference) GetString
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -456,16 +456,16 @@ func (a *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference) Interpola
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -483,8 +483,8 @@ func (a *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference) PutBindin
 	)
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigSlackTargetsOutputReference) Resolve(_
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

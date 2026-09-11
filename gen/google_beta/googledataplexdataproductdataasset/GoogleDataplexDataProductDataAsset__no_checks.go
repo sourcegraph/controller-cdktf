@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDataplexDataProductDataAsset) validateInterpolationForA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataplexDataProductDataAsset) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexDataProductDataAsset) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleDataplexDataProductDataAsset) validatePutAccessGroupCon
 }
 
 func (g *jsiiProxy_GoogleDataplexDataProductDataAsset) validatePutTimeoutsParameters(value *GoogleDataplexDataProductDataAssetTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDataProductDataAsset) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleDataplexDataProductDataAsset) validateSetLabelsParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDataProductDataAsset) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDataplexDataProductDataAsset) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

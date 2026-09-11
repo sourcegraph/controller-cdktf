@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataFusionInstance) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataFusionInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFusionInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (d *jsiiProxy_DataFusionInstance) validatePutNetworkConfigParameters(value 
 }
 
 func (d *jsiiProxy_DataFusionInstance) validatePutTimeoutsParameters(value *DataFusionInstanceTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFusionInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -148,7 +156,7 @@ func (j *jsiiProxy_DataFusionInstance) validateSetLabelsParameters(val *map[stri
 	return nil
 }
 
-func (j *jsiiProxy_DataFusionInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataFusionInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

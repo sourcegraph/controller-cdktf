@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutp
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutp
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamOauthClientCredential) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamOauthClientCredential) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleIamOauthClientCredential) validateOverrideLogicalIdPara
 }
 
 func (g *jsiiProxy_GoogleIamOauthClientCredential) validatePutTimeoutsParameters(value *GoogleIamOauthClientCredentialTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIamOauthClientCredential) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamOauthClientCredential) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleIamOauthClientCredential) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

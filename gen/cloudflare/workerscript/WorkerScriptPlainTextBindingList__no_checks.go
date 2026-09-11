@@ -12,7 +12,7 @@ func (w *jsiiProxy_WorkerScriptPlainTextBindingList) validateGetParameters(index
 	return nil
 }
 
-func (w *jsiiProxy_WorkerScriptPlainTextBindingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerScriptPlainTextBindingList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WorkerScriptPlainTextBindingList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScriptPlainTextBindingList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkerScriptPlainTextBindingList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WorkerScriptPlainTextBindingList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewWorkerScriptPlainTextBindingListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWorkerScriptPlainTextBindingListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

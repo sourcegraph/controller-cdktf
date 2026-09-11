@@ -40,11 +40,11 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputRefere
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

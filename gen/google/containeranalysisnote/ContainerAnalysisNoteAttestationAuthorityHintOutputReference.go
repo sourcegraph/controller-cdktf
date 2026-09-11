@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/containeranalysisnote/internal"
 )
 
 type ContainerAnalysisNoteAttestationAuthorityHintOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type ContainerAnalysisNoteAttestationAuthorityHintOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type ContainerAnalysisNoteAttestationAuthorityHintOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type ContainerAnalysisNoteAttestationAuthorityHintOutputReference interface {
 
 // The jsii proxy struct for ContainerAnalysisNoteAttestationAuthorityHintOutputReference
 type jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference)
 }
 
 
-func NewContainerAnalysisNoteAttestationAuthorityHintOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerAnalysisNoteAttestationAuthorityHintOutputReference {
+func NewContainerAnalysisNoteAttestationAuthorityHintOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ContainerAnalysisNoteAttestationAuthorityHintOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewContainerAnalysisNoteAttestationAuthorityHintOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewContainerAnalysisNoteAttestationAuthorityHintOutputReference(terraformRe
 	j := jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNoteAttestationAuthorityHintOutputReference",
+		"@cdktn/provider-google.containerAnalysisNote.ContainerAnalysisNoteAttestationAuthorityHintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewContainerAnalysisNoteAttestationAuthorityHintOutputReference(terraformRe
 	return &j
 }
 
-func NewContainerAnalysisNoteAttestationAuthorityHintOutputReference_Override(c ContainerAnalysisNoteAttestationAuthorityHintOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContainerAnalysisNoteAttestationAuthorityHintOutputReference_Override(c ContainerAnalysisNoteAttestationAuthorityHintOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNoteAttestationAuthorityHintOutputReference",
+		"@cdktn/provider-google.containerAnalysisNote.ContainerAnalysisNoteAttestationAuthorityHintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference)
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference)
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -420,8 +420,8 @@ func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference)
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -433,24 +433,24 @@ func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference)
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference)
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

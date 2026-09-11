@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDialogflowGeneratorInferenceParameterOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowGeneratorInferenceParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDialogflowGeneratorInferenceParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowGeneratorInferenceParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowGeneratorInferenceParameterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleDialogflowGeneratorInferenceParameterOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowGeneratorInferenceParameterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowGeneratorInferenceParameterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleDialogflowGeneratorInferenceParameterOutputReference) v
 	return nil
 }
 
-func validateNewGoogleDialogflowGeneratorInferenceParameterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDialogflowGeneratorInferenceParameterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

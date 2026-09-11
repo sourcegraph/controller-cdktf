@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeServiceAttachmentConnectedEndpointsList) validateGetPa
 	return nil
 }
 
-func (c *jsiiProxy_ComputeServiceAttachmentConnectedEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeServiceAttachmentConnectedEndpointsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ComputeServiceAttachmentConnectedEndpointsList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeServiceAttachmentConnectedEndpointsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeServiceAttachmentConnectedEndpointsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ComputeServiceAttachmentConnectedEndpointsList) validateSetWr
 	return nil
 }
 
-func validateNewComputeServiceAttachmentConnectedEndpointsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeServiceAttachmentConnectedEndpointsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

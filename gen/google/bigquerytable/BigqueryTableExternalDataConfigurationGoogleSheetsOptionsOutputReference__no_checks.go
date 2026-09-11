@@ -40,11 +40,11 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutp
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutp
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

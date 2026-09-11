@@ -12,7 +12,7 @@ func (o *jsiiProxy_OrganizationsOrganizationalUnitAccountsList) validateGetParam
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationsOrganizationalUnitAccountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrganizationsOrganizationalUnitAccountsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_OrganizationsOrganizationalUnitAccountsList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationsOrganizationalUnitAccountsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OrganizationsOrganizationalUnitAccountsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_OrganizationsOrganizationalUnitAccountsList) validateSetWraps
 	return nil
 }
 
-func validateNewOrganizationsOrganizationalUnitAccountsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewOrganizationsOrganizationalUnitAccountsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

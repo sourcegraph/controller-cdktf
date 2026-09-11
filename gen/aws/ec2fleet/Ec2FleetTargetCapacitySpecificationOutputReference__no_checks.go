@@ -40,11 +40,11 @@ func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) validateG
 	return nil
 }
 
-func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) validateS
 	return nil
 }
 
-func validateNewEc2FleetTargetCapacitySpecificationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEc2FleetTargetCapacitySpecificationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesAppDefaultChannelProfilePersonaPropertyOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppDefaultChannelProfilePersonaPropertyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesAppDefaultChannelProfilePersonaPropertyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppDefaultChannelProfilePersonaPropertyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppDefaultChannelProfilePersonaPropertyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleCesAppDefaultChannelProfilePersonaPropertyOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppDefaultChannelProfilePersonaPropertyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppDefaultChannelProfilePersonaPropertyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCesAppDefaultChannelProfilePersonaPropertyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesAppDefaultChannelProfilePersonaPropertyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

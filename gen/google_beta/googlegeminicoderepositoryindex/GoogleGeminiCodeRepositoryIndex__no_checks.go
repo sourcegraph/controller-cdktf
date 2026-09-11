@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleGeminiCodeRepositoryIndex) validateInterpolationForAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGeminiCodeRepositoryIndex) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGeminiCodeRepositoryIndex) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleGeminiCodeRepositoryIndex) validateOverrideLogicalIdPar
 }
 
 func (g *jsiiProxy_GoogleGeminiCodeRepositoryIndex) validatePutTimeoutsParameters(value *GoogleGeminiCodeRepositoryIndexTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGeminiCodeRepositoryIndex) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleGeminiCodeRepositoryIndex) validateSetLabelsParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiCodeRepositoryIndex) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleGeminiCodeRepositoryIndex) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

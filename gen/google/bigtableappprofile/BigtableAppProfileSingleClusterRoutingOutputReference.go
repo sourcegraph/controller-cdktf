@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigtableappprofile/internal"
 )
 
 type BigtableAppProfileSingleClusterRoutingOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowTransactionalWrites() interface{}
 	SetAllowTransactionalWrites(val interface{})
 	AllowTransactionalWritesInput() interface{}
@@ -40,15 +40,15 @@ type BigtableAppProfileSingleClusterRoutingOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type BigtableAppProfileSingleClusterRoutingOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllowTransactionalWrites()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type BigtableAppProfileSingleClusterRoutingOutputReference interface {
 
 // The jsii proxy struct for BigtableAppProfileSingleClusterRoutingOutputReference
 type jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) AllowTransactionalWrites() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) Terraf
 }
 
 
-func NewBigtableAppProfileSingleClusterRoutingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigtableAppProfileSingleClusterRoutingOutputReference {
+func NewBigtableAppProfileSingleClusterRoutingOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) BigtableAppProfileSingleClusterRoutingOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBigtableAppProfileSingleClusterRoutingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewBigtableAppProfileSingleClusterRoutingOutputReference(terraformResource 
 	j := jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference",
+		"@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewBigtableAppProfileSingleClusterRoutingOutputReference(terraformResource 
 	return &j
 }
 
-func NewBigtableAppProfileSingleClusterRoutingOutputReference_Override(b BigtableAppProfileSingleClusterRoutingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBigtableAppProfileSingleClusterRoutingOutputReference_Override(b BigtableAppProfileSingleClusterRoutingOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference",
+		"@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (b *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) GetAny
 	return returns
 }
 
-func (b *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -455,8 +455,8 @@ func (b *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) GetStr
 	return returns
 }
 
-func (b *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -468,16 +468,16 @@ func (b *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) Interp
 	return returns
 }
 
-func (b *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (b *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) ResetA
 	)
 }
 
-func (b *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (b *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) Resolv
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

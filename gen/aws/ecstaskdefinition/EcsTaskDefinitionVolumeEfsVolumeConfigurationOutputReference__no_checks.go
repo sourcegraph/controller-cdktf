@@ -40,7 +40,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference)
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference)
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference)
 	return nil
 }
 
-func validateNewEcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

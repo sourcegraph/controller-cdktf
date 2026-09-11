@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/hypercomputeclustercluster/internal"
 )
 
 type HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList int
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList int
 
 // The jsii proxy struct for HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList
 type jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageC
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageC
 }
 
 
-func NewHypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList {
+func NewHypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList {
 	_init_.Initialize()
 
 	if err := validateNewHypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewHypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList(
 	j := jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList",
+		"@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewHypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList(
 	return &j
 }
 
-func NewHypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList_Override(h HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewHypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList_Override(h HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList",
+		"@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		h,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageC
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageC
 	)
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := h.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		h,
@@ -228,8 +231,8 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageC
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := h.validateResolveParameters(_context); err != nil {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := h.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageC
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

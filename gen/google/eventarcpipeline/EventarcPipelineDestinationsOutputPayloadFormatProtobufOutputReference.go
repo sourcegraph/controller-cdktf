@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/eventarcpipeline/internal"
 )
 
 type EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference inte
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference inte
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetSchemaDefinition()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference inte
 
 // The jsii proxy struct for EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference
 type jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutput
 	return returns
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutput
 }
 
 
-func NewEventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference {
+func NewEventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewEventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference(t
 	j := jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference",
+		"@cdktn/provider-google.eventarcPipeline.EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewEventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference(t
 	return &j
 }
 
-func NewEventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference_Override(e EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference_Override(e EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference",
+		"@cdktn/provider-google.eventarcPipeline.EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutput
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutput
 	return returns
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -421,8 +421,8 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutput
 	return returns
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -434,16 +434,16 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutput
 	return returns
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutput
 	)
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutput
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

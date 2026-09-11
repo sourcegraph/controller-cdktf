@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderK
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderK
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderK
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

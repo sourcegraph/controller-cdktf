@@ -56,6 +56,10 @@ func (l *jsiiProxy_LexBot) validateInterpolationForAttributeParameters(terraform
 	return nil
 }
 
+func (l *jsiiProxy_LexBot) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LexBot) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (l *jsiiProxy_LexBot) validatePutIntentParameters(value interface{}) error 
 }
 
 func (l *jsiiProxy_LexBot) validatePutTimeoutsParameters(value *LexBotTimeouts) error {
+	return nil
+}
+
+func (l *jsiiProxy_LexBot) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -140,7 +148,7 @@ func (j *jsiiProxy_LexBot) validateSetIdleSessionTtlInSecondsParameters(val *flo
 	return nil
 }
 
-func (j *jsiiProxy_LexBot) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LexBot) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

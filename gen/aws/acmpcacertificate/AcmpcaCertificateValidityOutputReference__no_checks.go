@@ -40,11 +40,11 @@ func (a *jsiiProxy_AcmpcaCertificateValidityOutputReference) validateGetStringMa
 	return nil
 }
 
-func (a *jsiiProxy_AcmpcaCertificateValidityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AcmpcaCertificateValidityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AcmpcaCertificateValidityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AcmpcaCertificateValidityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_AcmpcaCertificateValidityOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_AcmpcaCertificateValidityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AcmpcaCertificateValidityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_AcmpcaCertificateValidityOutputReference) validateSetValuePar
 	return nil
 }
 
-func validateNewAcmpcaCertificateValidityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAcmpcaCertificateValidityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

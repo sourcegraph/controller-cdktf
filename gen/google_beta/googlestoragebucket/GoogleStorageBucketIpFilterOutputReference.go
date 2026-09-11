@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestoragebucket/internal"
 )
 
 type GoogleStorageBucketIpFilterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowAllServiceAgentAccess() interface{}
 	SetAllowAllServiceAgentAccess(val interface{})
 	AllowAllServiceAgentAccessInput() interface{}
@@ -45,9 +45,9 @@ type GoogleStorageBucketIpFilterOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VpcNetworkSources() GoogleStorageBucketIpFilterVpcNetworkSourcesList
 	VpcNetworkSourcesInput() interface{}
 	// Experimental.
@@ -55,7 +55,7 @@ type GoogleStorageBucketIpFilterOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,9 +71,9 @@ type GoogleStorageBucketIpFilterOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutPublicNetworkSource(value *GoogleStorageBucketIpFilterPublicNetworkSource)
 	PutVpcNetworkSources(value interface{})
 	ResetAllowAllServiceAgentAccess()
@@ -82,7 +82,7 @@ type GoogleStorageBucketIpFilterOutputReference interface {
 	ResetVpcNetworkSources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type GoogleStorageBucketIpFilterOutputReference interface {
 
 // The jsii proxy struct for GoogleStorageBucketIpFilterOutputReference
 type jsiiProxy_GoogleStorageBucketIpFilterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) AllowAllServiceAgentAccess() interface{} {
@@ -235,8 +235,8 @@ func (j *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -266,7 +266,7 @@ func (j *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) VpcNetworkSources
 }
 
 
-func NewGoogleStorageBucketIpFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleStorageBucketIpFilterOutputReference {
+func NewGoogleStorageBucketIpFilterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleStorageBucketIpFilterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleStorageBucketIpFilterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -275,7 +275,7 @@ func NewGoogleStorageBucketIpFilterOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleStorageBucketIpFilterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketIpFilterOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketIpFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -283,11 +283,11 @@ func NewGoogleStorageBucketIpFilterOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewGoogleStorageBucketIpFilterOutputReference_Override(g GoogleStorageBucketIpFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleStorageBucketIpFilterOutputReference_Override(g GoogleStorageBucketIpFilterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketIpFilterOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketIpFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -370,7 +370,7 @@ func (j *jsiiProxy_GoogleStorageBucketIpFilterOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketIpFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleStorageBucketIpFilterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,11 +410,11 @@ func (g *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -538,8 +538,8 @@ func (g *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -551,16 +551,16 @@ func (g *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -621,8 +621,8 @@ func (g *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) ResetVpcNetworkSo
 	)
 }
 
-func (g *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -630,7 +630,7 @@ func (g *jsiiProxy_GoogleStorageBucketIpFilterOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

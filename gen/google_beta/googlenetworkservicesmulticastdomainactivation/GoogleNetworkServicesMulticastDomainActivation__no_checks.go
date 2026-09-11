@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleNetworkServicesMulticastDomainActivation) validateInter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesMulticastDomainActivation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesMulticastDomainActivation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleNetworkServicesMulticastDomainActivation) validatePutTi
 }
 
 func (g *jsiiProxy_GoogleNetworkServicesMulticastDomainActivation) validatePutTrafficSpecParameters(value *GoogleNetworkServicesMulticastDomainActivationTrafficSpec) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesMulticastDomainActivation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleNetworkServicesMulticastDomainActivation) validateSetLa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesMulticastDomainActivation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleNetworkServicesMulticastDomainActivation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

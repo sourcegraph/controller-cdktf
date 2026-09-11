@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsWafregionalRateBasedRule) validateOverrideLogicalIdPar
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsWafregionalRateBasedRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsWafregionalRateBasedRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataAwsWafregionalRateBasedRule) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsWafregionalRateBasedRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsWafregionalRateBasedRule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

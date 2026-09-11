@@ -56,6 +56,10 @@ func (s *jsiiProxy_SqlDatabaseInstance) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_SqlDatabaseInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlDatabaseInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (s *jsiiProxy_SqlDatabaseInstance) validatePutSettingsParameters(value *Sql
 }
 
 func (s *jsiiProxy_SqlDatabaseInstance) validatePutTimeoutsParameters(value *SqlDatabaseInstanceTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlDatabaseInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -152,7 +160,7 @@ func (j *jsiiProxy_SqlDatabaseInstance) validateSetInstanceTypeParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SqlDatabaseInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

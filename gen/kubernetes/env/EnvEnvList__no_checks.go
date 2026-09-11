@@ -12,7 +12,7 @@ func (e *jsiiProxy_EnvEnvList) validateGetParameters(index *float64) error {
 	return nil
 }
 
-func (e *jsiiProxy_EnvEnvList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EnvEnvList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EnvEnvList) validateSetTerraformAttributeParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_EnvEnvList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EnvEnvList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EnvEnvList) validateSetWrapsSetParameters(val *bool) error {
 	return nil
 }
 
-func validateNewEnvEnvListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEnvEnvListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

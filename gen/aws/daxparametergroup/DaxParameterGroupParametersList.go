@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/daxparametergroup/internal"
 )
 
 type DaxParameterGroupParametersList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type DaxParameterGroupParametersList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DaxParameterGroupParametersOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type DaxParameterGroupParametersList interface {
 
 // The jsii proxy struct for DaxParameterGroupParametersList
 type jsiiProxy_DaxParameterGroupParametersList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DaxParameterGroupParametersList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_DaxParameterGroupParametersList) TerraformAttribute() *string
 	return returns
 }
 
-func (j *jsiiProxy_DaxParameterGroupParametersList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DaxParameterGroupParametersList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_DaxParameterGroupParametersList) WrapsSet() *bool {
 }
 
 
-func NewDaxParameterGroupParametersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaxParameterGroupParametersList {
+func NewDaxParameterGroupParametersList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaxParameterGroupParametersList {
 	_init_.Initialize()
 
 	if err := validateNewDaxParameterGroupParametersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewDaxParameterGroupParametersList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_DaxParameterGroupParametersList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParametersList",
+		"@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewDaxParameterGroupParametersList(terraformResource cdktf.IInterpolatingPa
 	return &j
 }
 
-func NewDaxParameterGroupParametersList_Override(d DaxParameterGroupParametersList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDaxParameterGroupParametersList_Override(d DaxParameterGroupParametersList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParametersList",
+		"@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_DaxParameterGroupParametersList)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_DaxParameterGroupParametersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DaxParameterGroupParametersList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_DaxParameterGroupParametersList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (d *jsiiProxy_DaxParameterGroupParametersList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DaxParameterGroupParametersList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -228,8 +231,8 @@ func (d *jsiiProxy_DaxParameterGroupParametersList) Get(index *float64) DaxParam
 	return returns
 }
 
-func (d *jsiiProxy_DaxParameterGroupParametersList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DaxParameterGroupParametersList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (d *jsiiProxy_DaxParameterGroupParametersList) Resolve(_context cdktf.IReso
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchDimensionsList) validateG
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchDimensionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchDimensionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchDimensionsList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchDimensionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchDimensionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchDimensionsList) validateS
 	return nil
 }
 
-func validateNewSloObjectiveRawMetricQueryCloudwatchDimensionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSloObjectiveRawMetricQueryCloudwatchDimensionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

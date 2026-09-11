@@ -40,11 +40,11 @@ func (s *jsiiProxy_SsmDocumentAttachmentsSourceOutputReference) validateGetStrin
 	return nil
 }
 
-func (s *jsiiProxy_SsmDocumentAttachmentsSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsmDocumentAttachmentsSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SsmDocumentAttachmentsSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmDocumentAttachmentsSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_SsmDocumentAttachmentsSourceOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_SsmDocumentAttachmentsSourceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SsmDocumentAttachmentsSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_SsmDocumentAttachmentsSourceOutputReference) validateSetValue
 	return nil
 }
 
-func validateNewSsmDocumentAttachmentsSourceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSsmDocumentAttachmentsSourceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

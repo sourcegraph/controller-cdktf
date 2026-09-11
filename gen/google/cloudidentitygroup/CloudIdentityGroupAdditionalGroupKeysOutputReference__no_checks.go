@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudIdentityGroupAdditionalGroupKeysOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CloudIdentityGroupAdditionalGroupKeysOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudIdentityGroupAdditionalGroupKeysOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudIdentityGroupAdditionalGroupKeysOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudIdentityGroupAdditionalGroupKeysOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_CloudIdentityGroupAdditionalGroupKeysOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_CloudIdentityGroupAdditionalGroupKeysOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudIdentityGroupAdditionalGroupKeysOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCloudIdentityGroupAdditionalGroupKeysOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCloudIdentityGroupAdditionalGroupKeysOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

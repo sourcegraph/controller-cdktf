@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.ssmAssociation.SsmAssociation",
+		"@cdktn/provider-aws.ssmAssociation.SsmAssociation",
 		reflect.TypeOf((*SsmAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -50,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "instanceIdInput", GoGetter: "InstanceIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maxConcurrency", GoGetter: "MaxConcurrency"},
 			_jsii_.MemberProperty{JsiiProperty: "maxConcurrencyInput", GoGetter: "MaxConcurrencyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxErrors", GoGetter: "MaxErrors"},
@@ -70,6 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putOutputLocation", GoMethod: "PutOutputLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargets", GoMethod: "PutTargets"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApplyOnlyAtCronInterval", GoMethod: "ResetApplyOnlyAtCronInterval"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAssociationName", GoMethod: "ResetAssociationName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomationTargetParameterName", GoMethod: "ResetAutomationTargetParameterName"},
@@ -100,23 +102,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForSuccessTimeoutSeconds", GoGetter: "WaitForSuccessTimeoutSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForSuccessTimeoutSecondsInput", GoGetter: "WaitForSuccessTimeoutSecondsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SsmAssociation{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig",
+		"@cdktn/provider-aws.ssmAssociation.SsmAssociationConfig",
 		reflect.TypeOf((*SsmAssociationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocation",
+		"@cdktn/provider-aws.ssmAssociation.SsmAssociationOutputLocation",
 		reflect.TypeOf((*SsmAssociationOutputLocation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocationOutputReference",
+		"@cdktn/provider-aws.ssmAssociation.SsmAssociationOutputLocationOutputReference",
 		reflect.TypeOf((*SsmAssociationOutputLocationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -151,16 +154,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SsmAssociationOutputLocationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.ssmAssociation.SsmAssociationTargets",
+		"@cdktn/provider-aws.ssmAssociation.SsmAssociationTargets",
 		reflect.TypeOf((*SsmAssociationTargets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsList",
+		"@cdktn/provider-aws.ssmAssociation.SsmAssociationTargetsList",
 		reflect.TypeOf((*SsmAssociationTargetsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -177,12 +180,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SsmAssociationTargetsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference",
+		"@cdktn/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference",
 		reflect.TypeOf((*SsmAssociationTargetsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -213,7 +216,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SsmAssociationTargetsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

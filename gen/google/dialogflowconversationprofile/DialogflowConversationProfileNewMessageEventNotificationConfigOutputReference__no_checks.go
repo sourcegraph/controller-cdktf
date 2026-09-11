@@ -40,11 +40,11 @@ func (d *jsiiProxy_DialogflowConversationProfileNewMessageEventNotificationConfi
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_DialogflowConversationProfileNewMessageEventNotificationConfi
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DialogflowConversationProfileNewMessageEventNotificationConfi
 	return nil
 }
 
-func validateNewDialogflowConversationProfileNewMessageEventNotificationConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDialogflowConversationProfileNewMessageEventNotificationConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

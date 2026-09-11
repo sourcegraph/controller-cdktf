@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOptionsVolumesList) validateGetPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOptionsVolumesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOptionsVolumesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildOptionsVolumesList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildOptionsVolumesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildOptionsVolumesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildOptionsVolumesList) validateSetWr
 	return nil
 }
 
-func validateNewGoogleCloudbuildTriggerBuildOptionsVolumesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCloudbuildTriggerBuildOptionsVolumesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

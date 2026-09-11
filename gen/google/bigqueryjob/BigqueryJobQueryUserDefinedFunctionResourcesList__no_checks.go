@@ -12,7 +12,7 @@ func (b *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesList) validateGet
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesList) validateSet
 	return nil
 }
 
-func validateNewBigqueryJobQueryUserDefinedFunctionResourcesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBigqueryJobQueryUserDefinedFunctionResourcesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

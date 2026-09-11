@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupReservationAffinityOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupReservationAffinityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupReservationAffinityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupReservationAffinityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupReservationAffinityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupReservationAffinityOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupReservationAffinityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupReservationAffinityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupReservationAffinityOutputRefer
 	return nil
 }
 
-func validateNewGoogleWorkbenchInstanceGceSetupReservationAffinityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleWorkbenchInstanceGceSetupReservationAffinityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

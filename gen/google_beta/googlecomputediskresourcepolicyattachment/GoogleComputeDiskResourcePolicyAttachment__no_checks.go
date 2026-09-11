@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateInterpolat
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateOverrideLo
 }
 
 func (g *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validatePutTimeoutsParameters(value *GoogleComputeDiskResourcePolicyAttachmentTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateSetIdParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

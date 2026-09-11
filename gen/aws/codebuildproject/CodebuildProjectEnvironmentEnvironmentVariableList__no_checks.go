@@ -12,7 +12,7 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableList) validateS
 	return nil
 }
 
-func validateNewCodebuildProjectEnvironmentEnvironmentVariableListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCodebuildProjectEnvironmentEnvironmentVariableListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

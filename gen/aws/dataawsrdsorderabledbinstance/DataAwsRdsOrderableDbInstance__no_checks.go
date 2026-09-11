@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsRdsOrderableDbInstance) validateOverrideLogicalIdParam
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsRdsOrderableDbInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsRdsOrderableDbInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -96,7 +100,7 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetLicenseModelParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

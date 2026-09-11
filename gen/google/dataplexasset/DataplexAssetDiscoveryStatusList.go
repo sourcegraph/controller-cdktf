@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/dataplexasset/internal"
 )
 
 type DataplexAssetDiscoveryStatusList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type DataplexAssetDiscoveryStatusList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DataplexAssetDiscoveryStatusOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type DataplexAssetDiscoveryStatusList interface {
 
 // The jsii proxy struct for DataplexAssetDiscoveryStatusList
 type jsiiProxy_DataplexAssetDiscoveryStatusList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DataplexAssetDiscoveryStatusList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_DataplexAssetDiscoveryStatusList) TerraformAttribute() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoveryStatusList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataplexAssetDiscoveryStatusList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_DataplexAssetDiscoveryStatusList) WrapsSet() *bool {
 }
 
 
-func NewDataplexAssetDiscoveryStatusList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataplexAssetDiscoveryStatusList {
+func NewDataplexAssetDiscoveryStatusList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataplexAssetDiscoveryStatusList {
 	_init_.Initialize()
 
 	if err := validateNewDataplexAssetDiscoveryStatusListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewDataplexAssetDiscoveryStatusList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DataplexAssetDiscoveryStatusList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoveryStatusList",
+		"@cdktn/provider-google.dataplexAsset.DataplexAssetDiscoveryStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewDataplexAssetDiscoveryStatusList(terraformResource cdktf.IInterpolatingP
 	return &j
 }
 
-func NewDataplexAssetDiscoveryStatusList_Override(d DataplexAssetDiscoveryStatusList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataplexAssetDiscoveryStatusList_Override(d DataplexAssetDiscoveryStatusList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoveryStatusList",
+		"@cdktn/provider-google.dataplexAsset.DataplexAssetDiscoveryStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_DataplexAssetDiscoveryStatusList)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoveryStatusList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataplexAssetDiscoveryStatusList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_DataplexAssetDiscoveryStatusList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (d *jsiiProxy_DataplexAssetDiscoveryStatusList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataplexAssetDiscoveryStatusList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -205,8 +208,8 @@ func (d *jsiiProxy_DataplexAssetDiscoveryStatusList) Get(index *float64) Dataple
 	return returns
 }
 
-func (d *jsiiProxy_DataplexAssetDiscoveryStatusList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataplexAssetDiscoveryStatusList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (d *jsiiProxy_DataplexAssetDiscoveryStatusList) Resolve(_context cdktf.IRes
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDatastreamStream) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamStream) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamStream) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (g *jsiiProxy_GoogleDatastreamStream) validatePutSourceConfigParameters(val
 }
 
 func (g *jsiiProxy_GoogleDatastreamStream) validatePutTimeoutsParameters(value *GoogleDatastreamStreamTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStream) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -144,7 +152,7 @@ func (j *jsiiProxy_GoogleDatastreamStream) validateSetLabelsParameters(val *map[
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDatastreamStream) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

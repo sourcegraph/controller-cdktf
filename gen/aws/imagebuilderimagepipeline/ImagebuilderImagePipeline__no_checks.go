@@ -56,6 +56,10 @@ func (i *jsiiProxy_ImagebuilderImagePipeline) validateInterpolationForAttributeP
 	return nil
 }
 
+func (i *jsiiProxy_ImagebuilderImagePipeline) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImagebuilderImagePipeline) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (i *jsiiProxy_ImagebuilderImagePipeline) validatePutImageTestsConfiguration
 }
 
 func (i *jsiiProxy_ImagebuilderImagePipeline) validatePutScheduleParameters(value *ImagebuilderImagePipelineSchedule) error {
+	return nil
+}
+
+func (i *jsiiProxy_ImagebuilderImagePipeline) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetInfrastructureConfigura
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

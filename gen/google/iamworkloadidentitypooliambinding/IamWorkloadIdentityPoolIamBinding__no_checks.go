@@ -56,6 +56,10 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolIamBinding) validateInterpolationForAt
 	return nil
 }
 
+func (i *jsiiProxy_IamWorkloadIdentityPoolIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamWorkloadIdentityPoolIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolIamBinding) validateOverrideLogicalIdP
 }
 
 func (i *jsiiProxy_IamWorkloadIdentityPoolIamBinding) validatePutConditionParameters(value *IamWorkloadIdentityPoolIamBindingCondition) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamWorkloadIdentityPoolIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolIamBinding) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

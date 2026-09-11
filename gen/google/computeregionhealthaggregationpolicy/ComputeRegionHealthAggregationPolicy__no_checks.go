@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateInterpolationFo
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateOverrideLogical
 }
 
 func (c *jsiiProxy_ComputeRegionHealthAggregationPolicy) validatePutTimeoutsParameters(value *ComputeRegionHealthAggregationPolicyTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateSetHealthyPerce
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

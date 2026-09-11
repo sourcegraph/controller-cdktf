@@ -56,6 +56,10 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) validateInterpolationForAttribute
 	return nil
 }
 
+func (n *jsiiProxy_NotificationPolicyWebhooks) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationPolicyWebhooks) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) validateMoveToIdParameters(id *st
 }
 
 func (n *jsiiProxy_NotificationPolicyWebhooks) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationPolicyWebhooks) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooks) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooks) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NotificationPolicyWebhooks) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

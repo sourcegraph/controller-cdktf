@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication",
+		"@cdktn/provider-cloudflare.spectrumApplication.SpectrumApplication",
 		reflect.TypeOf((*SpectrumApplication)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ipFirewall", GoGetter: "IpFirewall"},
 			_jsii_.MemberProperty{JsiiProperty: "ipFirewallInput", GoGetter: "IpFirewallInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -68,6 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putOriginDns", GoMethod: "PutOriginDns"},
 			_jsii_.MemberMethod{JsiiMethod: "putOriginPortRange", GoMethod: "PutOriginPortRange"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetArgoSmartRouting", GoMethod: "ResetArgoSmartRouting"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEdgeIps", GoMethod: "ResetEdgeIps"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -93,25 +95,26 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "trafficType", GoGetter: "TrafficType"},
 			_jsii_.MemberProperty{JsiiProperty: "trafficTypeInput", GoGetter: "TrafficTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SpectrumApplication{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationConfig",
+		"@cdktn/provider-cloudflare.spectrumApplication.SpectrumApplicationConfig",
 		reflect.TypeOf((*SpectrumApplicationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationDns",
+		"@cdktn/provider-cloudflare.spectrumApplication.SpectrumApplicationDns",
 		reflect.TypeOf((*SpectrumApplicationDns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationDnsOutputReference",
+		"@cdktn/provider-cloudflare.spectrumApplication.SpectrumApplicationDnsOutputReference",
 		reflect.TypeOf((*SpectrumApplicationDnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -142,16 +145,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SpectrumApplicationDnsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationEdgeIps",
+		"@cdktn/provider-cloudflare.spectrumApplication.SpectrumApplicationEdgeIps",
 		reflect.TypeOf((*SpectrumApplicationEdgeIps)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationEdgeIpsOutputReference",
+		"@cdktn/provider-cloudflare.spectrumApplication.SpectrumApplicationEdgeIpsOutputReference",
 		reflect.TypeOf((*SpectrumApplicationEdgeIpsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -186,16 +189,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SpectrumApplicationEdgeIpsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginDns",
+		"@cdktn/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginDns",
 		reflect.TypeOf((*SpectrumApplicationOriginDns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginDnsOutputReference",
+		"@cdktn/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginDnsOutputReference",
 		reflect.TypeOf((*SpectrumApplicationOriginDnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -224,16 +227,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SpectrumApplicationOriginDnsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginPortRange",
+		"@cdktn/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginPortRange",
 		reflect.TypeOf((*SpectrumApplicationOriginPortRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginPortRangeOutputReference",
+		"@cdktn/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginPortRangeOutputReference",
 		reflect.TypeOf((*SpectrumApplicationOriginPortRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -264,7 +267,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SpectrumApplicationOriginPortRangeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

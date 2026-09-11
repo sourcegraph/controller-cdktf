@@ -40,7 +40,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientS
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientS
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientS
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

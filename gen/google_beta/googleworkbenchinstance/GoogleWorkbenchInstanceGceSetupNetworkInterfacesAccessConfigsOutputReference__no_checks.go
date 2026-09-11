@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigs
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigs
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

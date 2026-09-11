@@ -12,7 +12,7 @@ func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsList) validateGetParamet
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewNotebooksRuntimeSoftwareConfigKernelsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNotebooksRuntimeSoftwareConfigKernelsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

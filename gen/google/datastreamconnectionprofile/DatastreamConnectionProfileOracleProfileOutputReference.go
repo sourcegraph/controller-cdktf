@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datastreamconnectionprofile/internal"
 )
 
 type DatastreamConnectionProfileOracleProfileOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -52,9 +52,9 @@ type DatastreamConnectionProfileOracleProfileOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -63,7 +63,7 @@ type DatastreamConnectionProfileOracleProfileOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,16 +79,16 @@ type DatastreamConnectionProfileOracleProfileOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetConnectionAttributes()
 	ResetPassword()
 	ResetPort()
 	ResetSecretManagerStoredPassword()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,7 +98,7 @@ type DatastreamConnectionProfileOracleProfileOutputReference interface {
 
 // The jsii proxy struct for DatastreamConnectionProfileOracleProfileOutputReference
 type jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) ComplexObjectIndex() interface{} {
@@ -281,8 +281,8 @@ func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -312,7 +312,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) User
 }
 
 
-func NewDatastreamConnectionProfileOracleProfileOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfileOracleProfileOutputReference {
+func NewDatastreamConnectionProfileOracleProfileOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfileOracleProfileOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDatastreamConnectionProfileOracleProfileOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -321,7 +321,7 @@ func NewDatastreamConnectionProfileOracleProfileOutputReference(terraformResourc
 	j := jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileOracleProfileOutputReference",
+		"@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileOracleProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -329,11 +329,11 @@ func NewDatastreamConnectionProfileOracleProfileOutputReference(terraformResourc
 	return &j
 }
 
-func NewDatastreamConnectionProfileOracleProfileOutputReference_Override(d DatastreamConnectionProfileOracleProfileOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDatastreamConnectionProfileOracleProfileOutputReference_Override(d DatastreamConnectionProfileOracleProfileOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileOracleProfileOutputReference",
+		"@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileOracleProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -449,7 +449,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,11 +500,11 @@ func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) GetA
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -628,8 +628,8 @@ func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) GetS
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -641,16 +641,16 @@ func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) Inte
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -689,8 +689,8 @@ func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) Rese
 	)
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -698,7 +698,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) Reso
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,7 +40,7 @@ func (s *jsiiProxy_SloCompositeOutputReference) validateGetStringMapAttributePar
 	return nil
 }
 
-func (s *jsiiProxy_SloCompositeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SloCompositeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (s *jsiiProxy_SloCompositeOutputReference) validatePutBurnRateConditionPara
 	return nil
 }
 
-func (s *jsiiProxy_SloCompositeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloCompositeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_SloCompositeOutputReference) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_SloCompositeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloCompositeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSloCompositeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSloCompositeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

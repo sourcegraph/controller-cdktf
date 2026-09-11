@@ -8,7 +8,7 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleBetaProvider) validateAddOverrideParameters(path *string, value interface{}) error {
@@ -26,6 +26,14 @@ func (g *jsiiProxy_GoogleBetaProvider) validateAddOverrideParameters(path *strin
 func (g *jsiiProxy_GoogleBetaProvider) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil
@@ -77,11 +85,11 @@ func (j *jsiiProxy_GoogleBetaProvider) validateSetAddTerraformAttributionLabelPa
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -90,7 +98,7 @@ func (j *jsiiProxy_GoogleBetaProvider) validateSetAddTerraformAttributionLabelPa
 
 func (j *jsiiProxy_GoogleBetaProvider) validateSetBatchingParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleBetaProviderBatching:
 		val := val.(*[]*GoogleBetaProviderBatching)
@@ -109,7 +117,7 @@ func (j *jsiiProxy_GoogleBetaProvider) validateSetBatchingParameters(val interfa
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*GoogleBetaProviderBatching; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*GoogleBetaProviderBatching; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -118,7 +126,7 @@ func (j *jsiiProxy_GoogleBetaProvider) validateSetBatchingParameters(val interfa
 
 func (j *jsiiProxy_GoogleBetaProvider) validateSetExternalCredentialsParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleBetaProviderExternalCredentials:
 		val := val.(*[]*GoogleBetaProviderExternalCredentials)
@@ -137,7 +145,7 @@ func (j *jsiiProxy_GoogleBetaProvider) validateSetExternalCredentialsParameters(
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*GoogleBetaProviderExternalCredentials; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*GoogleBetaProviderExternalCredentials; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -150,11 +158,11 @@ func (j *jsiiProxy_GoogleBetaProvider) validateSetPreferGlobalEndpointsParameter
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -167,11 +175,11 @@ func (j *jsiiProxy_GoogleBetaProvider) validateSetPreferRegionalEndpointsParamet
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -184,11 +192,11 @@ func (j *jsiiProxy_GoogleBetaProvider) validateSetUserProjectOverrideParameters(
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 

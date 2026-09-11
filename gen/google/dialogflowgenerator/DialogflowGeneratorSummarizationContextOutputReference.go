@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/dialogflowgenerator/internal"
 )
 
 type DialogflowGeneratorSummarizationContextOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,9 +41,9 @@ type DialogflowGeneratorSummarizationContextOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -52,7 +52,7 @@ type DialogflowGeneratorSummarizationContextOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,9 +68,9 @@ type DialogflowGeneratorSummarizationContextOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutFewShotExamples(value interface{})
 	PutSummarizationSections(value interface{})
 	ResetFewShotExamples()
@@ -79,7 +79,7 @@ type DialogflowGeneratorSummarizationContextOutputReference interface {
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type DialogflowGeneratorSummarizationContextOutputReference interface {
 
 // The jsii proxy struct for DialogflowGeneratorSummarizationContextOutputReference
 type jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) ComplexObjectIndex() interface{} {
@@ -212,8 +212,8 @@ func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) Versi
 }
 
 
-func NewDialogflowGeneratorSummarizationContextOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowGeneratorSummarizationContextOutputReference {
+func NewDialogflowGeneratorSummarizationContextOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DialogflowGeneratorSummarizationContextOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDialogflowGeneratorSummarizationContextOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewDialogflowGeneratorSummarizationContextOutputReference(terraformResource
 	j := jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextOutputReference",
+		"@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewDialogflowGeneratorSummarizationContextOutputReference(terraformResource
 	return &j
 }
 
-func NewDialogflowGeneratorSummarizationContextOutputReference_Override(d DialogflowGeneratorSummarizationContextOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDialogflowGeneratorSummarizationContextOutputReference_Override(d DialogflowGeneratorSummarizationContextOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextOutputReference",
+		"@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -325,7 +325,7 @@ func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -376,11 +376,11 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) GetAn
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -504,8 +504,8 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) GetSt
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -517,16 +517,16 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) Inter
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) Reset
 	)
 }
 
-func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) Resol
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

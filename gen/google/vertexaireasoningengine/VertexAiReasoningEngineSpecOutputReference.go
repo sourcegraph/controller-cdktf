@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/vertexaireasoningengine/internal"
 )
 
 type VertexAiReasoningEngineSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AgentFramework() *string
 	SetAgentFramework(val *string)
 	AgentFrameworkInput() *string
@@ -55,15 +55,15 @@ type VertexAiReasoningEngineSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,9 +79,9 @@ type VertexAiReasoningEngineSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutContainerSpec(value *VertexAiReasoningEngineSpecContainerSpec)
 	PutDeploymentSpec(value *VertexAiReasoningEngineSpecDeploymentSpec)
 	PutPackageSpec(value *VertexAiReasoningEngineSpecPackageSpec)
@@ -96,7 +96,7 @@ type VertexAiReasoningEngineSpecOutputReference interface {
 	ResetSourceCodeSpec()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -106,7 +106,7 @@ type VertexAiReasoningEngineSpecOutputReference interface {
 
 // The jsii proxy struct for VertexAiReasoningEngineSpecOutputReference
 type jsiiProxy_VertexAiReasoningEngineSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) AgentFramework() *string {
@@ -339,8 +339,8 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -350,7 +350,7 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) TerraformResource
 }
 
 
-func NewVertexAiReasoningEngineSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecOutputReference {
+func NewVertexAiReasoningEngineSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewVertexAiReasoningEngineSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -359,7 +359,7 @@ func NewVertexAiReasoningEngineSpecOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_VertexAiReasoningEngineSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecOutputReference",
+		"@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -367,11 +367,11 @@ func NewVertexAiReasoningEngineSpecOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewVertexAiReasoningEngineSpecOutputReference_Override(v VertexAiReasoningEngineSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewVertexAiReasoningEngineSpecOutputReference_Override(v VertexAiReasoningEngineSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecOutputReference",
+		"@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)
@@ -465,7 +465,7 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,11 +505,11 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -633,8 +633,8 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -646,16 +646,16 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -770,8 +770,8 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) ResetSourceCodeSp
 	)
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -779,7 +779,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

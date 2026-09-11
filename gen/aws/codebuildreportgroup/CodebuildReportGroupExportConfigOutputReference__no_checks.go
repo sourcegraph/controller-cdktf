@@ -40,7 +40,7 @@ func (c *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validatePutS
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validateSetT
 	return nil
 }
 
-func validateNewCodebuildReportGroupExportConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCodebuildReportGroupExportConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

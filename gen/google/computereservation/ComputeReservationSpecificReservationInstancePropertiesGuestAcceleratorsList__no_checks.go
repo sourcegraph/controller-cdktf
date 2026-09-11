@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestA
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestA
 	return nil
 }
 
-func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestA
 	return nil
 }
 
-func validateNewComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

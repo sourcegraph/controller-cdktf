@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleActiveDirectoryDomain) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleActiveDirectoryDomain) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) validateOverrideLogicalIdParamet
 }
 
 func (g *jsiiProxy_GoogleActiveDirectoryDomain) validatePutTimeoutsParameters(value *GoogleActiveDirectoryDomainTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleActiveDirectoryDomain) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) validateSetLabelsParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomain) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

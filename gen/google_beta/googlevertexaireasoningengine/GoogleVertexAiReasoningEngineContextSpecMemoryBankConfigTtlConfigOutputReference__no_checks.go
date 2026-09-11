@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigTtlCo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigTtlCo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigTtlCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleVertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleVertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleVertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

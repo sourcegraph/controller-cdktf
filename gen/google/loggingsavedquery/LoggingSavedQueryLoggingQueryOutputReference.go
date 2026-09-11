@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/loggingsavedquery/internal"
 )
 
 type LoggingSavedQueryLoggingQueryOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -45,15 +45,15 @@ type LoggingSavedQueryLoggingQueryOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,16 +69,16 @@ type LoggingSavedQueryLoggingQueryOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutSummaryFields(value interface{})
 	ResetSummaryFieldEnd()
 	ResetSummaryFields()
 	ResetSummaryFieldStart()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type LoggingSavedQueryLoggingQueryOutputReference interface {
 
 // The jsii proxy struct for LoggingSavedQueryLoggingQueryOutputReference
 type jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) ComplexObjectIndex() interface{} {
@@ -231,8 +231,8 @@ func (j *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) TerraformResour
 }
 
 
-func NewLoggingSavedQueryLoggingQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoggingSavedQueryLoggingQueryOutputReference {
+func NewLoggingSavedQueryLoggingQueryOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LoggingSavedQueryLoggingQueryOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLoggingSavedQueryLoggingQueryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -251,7 +251,7 @@ func NewLoggingSavedQueryLoggingQueryOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQueryOutputReference",
+		"@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewLoggingSavedQueryLoggingQueryOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewLoggingSavedQueryLoggingQueryOutputReference_Override(l LoggingSavedQueryLoggingQueryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLoggingSavedQueryLoggingQueryOutputReference_Override(l LoggingSavedQueryLoggingQueryOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQueryOutputReference",
+		"@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -346,7 +346,7 @@ func (j *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,11 +386,11 @@ func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -514,8 +514,8 @@ func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -527,16 +527,16 @@ func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) InterpolationAs
 	return returns
 }
 
-func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -578,8 +578,8 @@ func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) ResetSummaryFie
 	)
 }
 
-func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -587,7 +587,7 @@ func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

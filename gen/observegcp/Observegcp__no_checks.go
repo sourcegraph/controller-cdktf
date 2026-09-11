@@ -24,6 +24,10 @@ func (o *jsiiProxy_Observegcp) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (o *jsiiProxy_Observegcp) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateObservegcp_IsConstructParameters(x interface{}) error {
 	return nil
 }

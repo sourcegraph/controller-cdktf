@@ -56,6 +56,10 @@ func (h *jsiiProxy_Healthcheck) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (h *jsiiProxy_Healthcheck) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (h *jsiiProxy_Healthcheck) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (h *jsiiProxy_Healthcheck) validatePutHeaderParameters(value interface{}) e
 }
 
 func (h *jsiiProxy_Healthcheck) validatePutTimeoutsParameters(value *HealthcheckTimeouts) error {
+	return nil
+}
+
+func (h *jsiiProxy_Healthcheck) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -148,7 +156,7 @@ func (j *jsiiProxy_Healthcheck) validateSetIntervalParameters(val *float64) erro
 	return nil
 }
 
-func (j *jsiiProxy_Healthcheck) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Healthcheck) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

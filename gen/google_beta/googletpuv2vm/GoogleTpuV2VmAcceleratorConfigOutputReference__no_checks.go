@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleTpuV2VmAcceleratorConfigOutputReference) validateGetStr
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTpuV2VmAcceleratorConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleTpuV2VmAcceleratorConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTpuV2VmAcceleratorConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleTpuV2VmAcceleratorConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleTpuV2VmAcceleratorConfigOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmAcceleratorConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleTpuV2VmAcceleratorConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleTpuV2VmAcceleratorConfigOutputReference) validateSetTyp
 	return nil
 }
 
-func validateNewGoogleTpuV2VmAcceleratorConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleTpuV2VmAcceleratorConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

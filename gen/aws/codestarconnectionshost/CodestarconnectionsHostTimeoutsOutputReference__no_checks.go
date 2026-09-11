@@ -40,11 +40,11 @@ func (c *jsiiProxy_CodestarconnectionsHostTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_CodestarconnectionsHostTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodestarconnectionsHostTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodestarconnectionsHostTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodestarconnectionsHostTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_CodestarconnectionsHostTimeoutsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_CodestarconnectionsHostTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodestarconnectionsHostTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CodestarconnectionsHostTimeoutsOutputReference) validateSetUp
 	return nil
 }
 
-func validateNewCodestarconnectionsHostTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCodestarconnectionsHostTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

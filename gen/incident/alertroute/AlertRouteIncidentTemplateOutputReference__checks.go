@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (a *jsiiProxy_AlertRouteIncidentTemplateOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateOutputReference) validateGetStringM
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteIncidentTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_AlertRouteIncidentTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateOutputReference) validatePutCustomF
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AlertRouteIncidentTemplateCustomFields:
 		value := value.(*[]*AlertRouteIncidentTemplateCustomFields)
@@ -114,7 +114,7 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateOutputReference) validatePutCustomF
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AlertRouteIncidentTemplateCustomFields; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AlertRouteIncidentTemplateCustomFields; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -198,9 +198,9 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateOutputReference) validatePutWorkspa
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteIncidentTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AlertRouteIncidentTemplateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -273,7 +273,7 @@ func (j *jsiiProxy_AlertRouteIncidentTemplateOutputReference) validateSetComplex
 
 func (j *jsiiProxy_AlertRouteIncidentTemplateOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *AlertRouteIncidentTemplate:
 		val := val.(*AlertRouteIncidentTemplate)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_AlertRouteIncidentTemplateOutputReference) validateSetInterna
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AlertRouteIncidentTemplate; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *AlertRouteIncidentTemplate; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -303,7 +303,7 @@ func (j *jsiiProxy_AlertRouteIncidentTemplateOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteIncidentTemplateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertRouteIncidentTemplateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -311,7 +311,7 @@ func (j *jsiiProxy_AlertRouteIncidentTemplateOutputReference) validateSetTerrafo
 	return nil
 }
 
-func validateNewAlertRouteIncidentTemplateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAlertRouteIncidentTemplateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

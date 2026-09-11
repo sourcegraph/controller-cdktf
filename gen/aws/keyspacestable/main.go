@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTable",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTable",
 		reflect.TypeOf((*KeyspacesTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "keyspaceName", GoGetter: "KeyspaceName"},
 			_jsii_.MemberProperty{JsiiProperty: "keyspaceNameInput", GoGetter: "KeyspaceNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -64,6 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putTtl", GoMethod: "PutTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCapacitySpecification", GoMethod: "ResetCapacitySpecification"},
 			_jsii_.MemberMethod{JsiiMethod: "resetComment", GoMethod: "ResetComment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultTimeToLive", GoMethod: "ResetDefaultTimeToLive"},
@@ -96,19 +98,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "ttl", GoGetter: "Ttl"},
 			_jsii_.MemberProperty{JsiiProperty: "ttlInput", GoGetter: "TtlInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_KeyspacesTable{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecification",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecification",
 		reflect.TypeOf((*KeyspacesTableCapacitySpecification)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecificationOutputReference",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecificationOutputReference",
 		reflect.TypeOf((*KeyspacesTableCapacitySpecificationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -144,16 +147,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableComment",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableComment",
 		reflect.TypeOf((*KeyspacesTableComment)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableCommentOutputReference",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableCommentOutputReference",
 		reflect.TypeOf((*KeyspacesTableCommentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,20 +186,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KeyspacesTableCommentOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableConfig",
 		reflect.TypeOf((*KeyspacesTableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableEncryptionSpecification",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableEncryptionSpecification",
 		reflect.TypeOf((*KeyspacesTableEncryptionSpecification)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableEncryptionSpecificationOutputReference",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableEncryptionSpecificationOutputReference",
 		reflect.TypeOf((*KeyspacesTableEncryptionSpecificationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -229,16 +232,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KeyspacesTableEncryptionSpecificationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTablePointInTimeRecovery",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTablePointInTimeRecovery",
 		reflect.TypeOf((*KeyspacesTablePointInTimeRecovery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTablePointInTimeRecoveryOutputReference",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTablePointInTimeRecoveryOutputReference",
 		reflect.TypeOf((*KeyspacesTablePointInTimeRecoveryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -268,20 +271,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KeyspacesTablePointInTimeRecoveryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinition",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinition",
 		reflect.TypeOf((*KeyspacesTableSchemaDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionClusteringKey",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionClusteringKey",
 		reflect.TypeOf((*KeyspacesTableSchemaDefinitionClusteringKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionClusteringKeyList",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionClusteringKeyList",
 		reflect.TypeOf((*KeyspacesTableSchemaDefinitionClusteringKeyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -298,12 +301,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionClusteringKeyOutputReference",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionClusteringKeyOutputReference",
 		reflect.TypeOf((*KeyspacesTableSchemaDefinitionClusteringKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -334,16 +337,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumn",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumn",
 		reflect.TypeOf((*KeyspacesTableSchemaDefinitionColumn)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumnList",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumnList",
 		reflect.TypeOf((*KeyspacesTableSchemaDefinitionColumnList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -360,12 +363,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KeyspacesTableSchemaDefinitionColumnList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumnOutputReference",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumnOutputReference",
 		reflect.TypeOf((*KeyspacesTableSchemaDefinitionColumnOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -396,12 +399,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KeyspacesTableSchemaDefinitionColumnOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionOutputReference",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionOutputReference",
 		reflect.TypeOf((*KeyspacesTableSchemaDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusteringKey", GoGetter: "ClusteringKey"},
@@ -442,16 +445,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKey",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKey",
 		reflect.TypeOf((*KeyspacesTableSchemaDefinitionPartitionKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKeyList",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKeyList",
 		reflect.TypeOf((*KeyspacesTableSchemaDefinitionPartitionKeyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -468,12 +471,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKeyOutputReference",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKeyOutputReference",
 		reflect.TypeOf((*KeyspacesTableSchemaDefinitionPartitionKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -502,16 +505,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionStaticColumn",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionStaticColumn",
 		reflect.TypeOf((*KeyspacesTableSchemaDefinitionStaticColumn)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionStaticColumnList",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionStaticColumnList",
 		reflect.TypeOf((*KeyspacesTableSchemaDefinitionStaticColumnList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -528,12 +531,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KeyspacesTableSchemaDefinitionStaticColumnList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionStaticColumnOutputReference",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionStaticColumnOutputReference",
 		reflect.TypeOf((*KeyspacesTableSchemaDefinitionStaticColumnOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -562,16 +565,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KeyspacesTableSchemaDefinitionStaticColumnOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableTimeouts",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableTimeouts",
 		reflect.TypeOf((*KeyspacesTableTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableTimeoutsOutputReference",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableTimeoutsOutputReference",
 		reflect.TypeOf((*KeyspacesTableTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -607,16 +610,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KeyspacesTableTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableTtl",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableTtl",
 		reflect.TypeOf((*KeyspacesTableTtl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableTtlOutputReference",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableTtlOutputReference",
 		reflect.TypeOf((*KeyspacesTableTtlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -645,7 +648,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KeyspacesTableTtlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

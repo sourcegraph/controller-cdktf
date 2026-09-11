@@ -40,11 +40,11 @@ func (u *jsiiProxy_UserSchemaPropertyArrayOneOfOutputReference) validateGetStrin
 	return nil
 }
 
-func (u *jsiiProxy_UserSchemaPropertyArrayOneOfOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (u *jsiiProxy_UserSchemaPropertyArrayOneOfOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (u *jsiiProxy_UserSchemaPropertyArrayOneOfOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UserSchemaPropertyArrayOneOfOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_UserSchemaPropertyArrayOneOfOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_UserSchemaPropertyArrayOneOfOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_UserSchemaPropertyArrayOneOfOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_UserSchemaPropertyArrayOneOfOutputReference) validateSetTitle
 	return nil
 }
 
-func validateNewUserSchemaPropertyArrayOneOfOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewUserSchemaPropertyArrayOneOfOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

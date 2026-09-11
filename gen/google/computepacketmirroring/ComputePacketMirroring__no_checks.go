@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputePacketMirroring) validateInterpolationForAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_ComputePacketMirroring) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputePacketMirroring) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (c *jsiiProxy_ComputePacketMirroring) validatePutNetworkParameters(value *C
 }
 
 func (c *jsiiProxy_ComputePacketMirroring) validatePutTimeoutsParameters(value *ComputePacketMirroringTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputePacketMirroring) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_ComputePacketMirroring) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_ComputePacketMirroring) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputePacketMirroring) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

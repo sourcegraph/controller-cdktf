@@ -40,11 +40,11 @@ func (f *jsiiProxy_FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference
 	return nil
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewFsxDataRepositoryAssociationS3AutoImportPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFsxDataRepositoryAssociationS3AutoImportPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

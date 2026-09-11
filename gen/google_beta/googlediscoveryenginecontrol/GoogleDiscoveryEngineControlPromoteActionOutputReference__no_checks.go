@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineControlPromoteActionOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineControlPromoteActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineControlPromoteActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineControlPromoteActionOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineControlPromoteActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineControlPromoteActionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleDiscoveryEngineControlPromoteActionOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineControlPromoteActionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineControlPromoteActionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDiscoveryEngineControlPromoteActionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDiscoveryEngineControlPromoteActionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

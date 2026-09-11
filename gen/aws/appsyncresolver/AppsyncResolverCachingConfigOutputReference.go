@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/appsyncresolver/internal"
 )
 
 type AppsyncResolverCachingConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CachingKeys() *[]*string
 	SetCachingKeys(val *[]*string)
 	CachingKeysInput() *[]*string
@@ -37,9 +37,9 @@ type AppsyncResolverCachingConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Ttl() *float64
 	SetTtl(val *float64)
 	TtlInput() *float64
@@ -48,7 +48,7 @@ type AppsyncResolverCachingConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type AppsyncResolverCachingConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCachingKeys()
 	ResetTtl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type AppsyncResolverCachingConfigOutputReference interface {
 
 // The jsii proxy struct for AppsyncResolverCachingConfigOutputReference
 type jsiiProxy_AppsyncResolverCachingConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AppsyncResolverCachingConfigOutputReference) CachingKeys() *[]*string {
@@ -164,8 +164,8 @@ func (j *jsiiProxy_AppsyncResolverCachingConfigOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncResolverCachingConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AppsyncResolverCachingConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_AppsyncResolverCachingConfigOutputReference) TtlInput() *floa
 }
 
 
-func NewAppsyncResolverCachingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppsyncResolverCachingConfigOutputReference {
+func NewAppsyncResolverCachingConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AppsyncResolverCachingConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAppsyncResolverCachingConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewAppsyncResolverCachingConfigOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_AppsyncResolverCachingConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverCachingConfigOutputReference",
+		"@cdktn/provider-aws.appsyncResolver.AppsyncResolverCachingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewAppsyncResolverCachingConfigOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewAppsyncResolverCachingConfigOutputReference_Override(a AppsyncResolverCachingConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAppsyncResolverCachingConfigOutputReference_Override(a AppsyncResolverCachingConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverCachingConfigOutputReference",
+		"@cdktn/provider-aws.appsyncResolver.AppsyncResolverCachingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_AppsyncResolverCachingConfigOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_AppsyncResolverCachingConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppsyncResolverCachingConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (a *jsiiProxy_AppsyncResolverCachingConfigOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (a *jsiiProxy_AppsyncResolverCachingConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppsyncResolverCachingConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -456,8 +456,8 @@ func (a *jsiiProxy_AppsyncResolverCachingConfigOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (a *jsiiProxy_AppsyncResolverCachingConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AppsyncResolverCachingConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -469,16 +469,16 @@ func (a *jsiiProxy_AppsyncResolverCachingConfigOutputReference) InterpolationAsL
 	return returns
 }
 
-func (a *jsiiProxy_AppsyncResolverCachingConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AppsyncResolverCachingConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (a *jsiiProxy_AppsyncResolverCachingConfigOutputReference) ResetTtl() {
 	)
 }
 
-func (a *jsiiProxy_AppsyncResolverCachingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AppsyncResolverCachingConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (a *jsiiProxy_AppsyncResolverCachingConfigOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

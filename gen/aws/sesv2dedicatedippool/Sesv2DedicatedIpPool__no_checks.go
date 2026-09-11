@@ -56,6 +56,10 @@ func (s *jsiiProxy_Sesv2DedicatedIpPool) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_Sesv2DedicatedIpPool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2DedicatedIpPool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_Sesv2DedicatedIpPool) validateOverrideLogicalIdParameters(new
 }
 
 func (s *jsiiProxy_Sesv2DedicatedIpPool) validatePutTimeoutsParameters(value *Sesv2DedicatedIpPoolTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_Sesv2DedicatedIpPool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_Sesv2DedicatedIpPool) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2DedicatedIpPool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Sesv2DedicatedIpPool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

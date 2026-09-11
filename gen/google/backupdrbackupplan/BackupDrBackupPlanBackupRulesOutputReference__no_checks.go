@@ -40,7 +40,7 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) validateGetStri
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) validatePutStan
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBackupDrBackupPlanBackupRulesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewBackupDrBackupPlanBackupRulesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

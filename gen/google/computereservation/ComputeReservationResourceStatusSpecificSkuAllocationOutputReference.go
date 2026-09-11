@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computereservation/internal"
 )
 
 type ComputeReservationResourceStatusSpecificSkuAllocationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,16 +35,16 @@ type ComputeReservationResourceStatusSpecificSkuAllocationOutputReference interf
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Utilizations() cdktf.StringMap
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	Utilizations() cdktn.StringMap
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,12 +60,12 @@ type ComputeReservationResourceStatusSpecificSkuAllocationOutputReference interf
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -75,7 +75,7 @@ type ComputeReservationResourceStatusSpecificSkuAllocationOutputReference interf
 
 // The jsii proxy struct for ComputeReservationResourceStatusSpecificSkuAllocationOutputReference
 type jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference) ComplexObjectIndex() interface{} {
@@ -148,8 +148,8 @@ func (j *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference) Utilizations() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference) Utilizations() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"utilizations",
@@ -169,7 +169,7 @@ func (j *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputRe
 }
 
 
-func NewComputeReservationResourceStatusSpecificSkuAllocationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeReservationResourceStatusSpecificSkuAllocationOutputReference {
+func NewComputeReservationResourceStatusSpecificSkuAllocationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeReservationResourceStatusSpecificSkuAllocationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeReservationResourceStatusSpecificSkuAllocationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -178,7 +178,7 @@ func NewComputeReservationResourceStatusSpecificSkuAllocationOutputReference(ter
 	j := jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatusSpecificSkuAllocationOutputReference",
+		"@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusSpecificSkuAllocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -186,11 +186,11 @@ func NewComputeReservationResourceStatusSpecificSkuAllocationOutputReference(ter
 	return &j
 }
 
-func NewComputeReservationResourceStatusSpecificSkuAllocationOutputReference_Override(c ComputeReservationResourceStatusSpecificSkuAllocationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewComputeReservationResourceStatusSpecificSkuAllocationOutputReference_Override(c ComputeReservationResourceStatusSpecificSkuAllocationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatusSpecificSkuAllocationOutputReference",
+		"@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusSpecificSkuAllocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -240,7 +240,7 @@ func (j *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputRe
 	)
 }
 
-func (j *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,11 +280,11 @@ func (c *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputRe
 	return returns
 }
 
-func (c *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -408,8 +408,8 @@ func (c *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputRe
 	return returns
 }
 
-func (c *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -421,24 +421,24 @@ func (c *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputRe
 	return returns
 }
 
-func (c *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -446,7 +446,7 @@ func (c *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputRe
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

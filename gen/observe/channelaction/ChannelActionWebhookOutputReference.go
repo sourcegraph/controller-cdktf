@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/channelaction/internal"
 )
 
 type ChannelActionWebhookOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Body() *string
 	SetBody(val *string)
 	BodyInput() *string
@@ -43,9 +43,9 @@ type ChannelActionWebhookOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -54,7 +54,7 @@ type ChannelActionWebhookOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,14 +70,14 @@ type ChannelActionWebhookOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetHeaders()
 	ResetMethod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type ChannelActionWebhookOutputReference interface {
 
 // The jsii proxy struct for ChannelActionWebhookOutputReference
 type jsiiProxy_ChannelActionWebhookOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ChannelActionWebhookOutputReference) Body() *string {
@@ -210,8 +210,8 @@ func (j *jsiiProxy_ChannelActionWebhookOutputReference) TerraformAttribute() *st
 	return returns
 }
 
-func (j *jsiiProxy_ChannelActionWebhookOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ChannelActionWebhookOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -241,7 +241,7 @@ func (j *jsiiProxy_ChannelActionWebhookOutputReference) UrlInput() *string {
 }
 
 
-func NewChannelActionWebhookOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ChannelActionWebhookOutputReference {
+func NewChannelActionWebhookOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ChannelActionWebhookOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewChannelActionWebhookOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -250,7 +250,7 @@ func NewChannelActionWebhookOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_ChannelActionWebhookOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.channelAction.ChannelActionWebhookOutputReference",
+		"@cdktn/provider-observe.channelAction.ChannelActionWebhookOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -258,11 +258,11 @@ func NewChannelActionWebhookOutputReference(terraformResource cdktf.IInterpolati
 	return &j
 }
 
-func NewChannelActionWebhookOutputReference_Override(c ChannelActionWebhookOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewChannelActionWebhookOutputReference_Override(c ChannelActionWebhookOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.channelAction.ChannelActionWebhookOutputReference",
+		"@cdktn/provider-observe.channelAction.ChannelActionWebhookOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -345,7 +345,7 @@ func (j *jsiiProxy_ChannelActionWebhookOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_ChannelActionWebhookOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ChannelActionWebhookOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,11 +396,11 @@ func (c *jsiiProxy_ChannelActionWebhookOutputReference) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (c *jsiiProxy_ChannelActionWebhookOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ChannelActionWebhookOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -524,8 +524,8 @@ func (c *jsiiProxy_ChannelActionWebhookOutputReference) GetStringMapAttribute(te
 	return returns
 }
 
-func (c *jsiiProxy_ChannelActionWebhookOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ChannelActionWebhookOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -537,16 +537,16 @@ func (c *jsiiProxy_ChannelActionWebhookOutputReference) InterpolationAsList() cd
 	return returns
 }
 
-func (c *jsiiProxy_ChannelActionWebhookOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ChannelActionWebhookOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -569,8 +569,8 @@ func (c *jsiiProxy_ChannelActionWebhookOutputReference) ResetMethod() {
 	)
 }
 
-func (c *jsiiProxy_ChannelActionWebhookOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ChannelActionWebhookOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -578,7 +578,7 @@ func (c *jsiiProxy_ChannelActionWebhookOutputReference) Resolve(_context cdktf.I
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

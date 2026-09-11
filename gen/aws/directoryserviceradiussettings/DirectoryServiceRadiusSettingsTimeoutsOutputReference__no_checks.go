@@ -40,11 +40,11 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettingsTimeoutsOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DirectoryServiceRadiusSettingsTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DirectoryServiceRadiusSettingsTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DirectoryServiceRadiusSettingsTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectoryServiceRadiusSettingsTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettingsTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DirectoryServiceRadiusSettingsTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DirectoryServiceRadiusSettingsTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettingsTimeoutsOutputReference) valida
 	return nil
 }
 
-func validateNewDirectoryServiceRadiusSettingsTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDirectoryServiceRadiusSettingsTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

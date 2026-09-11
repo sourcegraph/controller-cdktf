@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleVmwareengineExternalAccessRuleDestinationIpRangesList) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVmwareengineExternalAccessRuleDestinationIpRangesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleVmwareengineExternalAccessRuleDestinationIpRangesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleVmwareengineExternalAccessRuleDestinationIpRangesList) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineExternalAccessRuleDestinationIpRangesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleVmwareengineExternalAccessRuleDestinationIpRangesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleVmwareengineExternalAccessRuleDestinationIpRangesList) 
 	return nil
 }
 
-func validateNewGoogleVmwareengineExternalAccessRuleDestinationIpRangesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleVmwareengineExternalAccessRuleDestinationIpRangesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

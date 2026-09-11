@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleAlloydbClusterEncryptionInfoList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbClusterEncryptionInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleAlloydbClusterEncryptionInfoList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleAlloydbClusterEncryptionInfoList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbClusterEncryptionInfoList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleAlloydbClusterEncryptionInfoList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleAlloydbClusterEncryptionInfoList) validateSetWrapsS
 	return nil
 }
 
-func validateNewDataGoogleAlloydbClusterEncryptionInfoListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleAlloydbClusterEncryptionInfoListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

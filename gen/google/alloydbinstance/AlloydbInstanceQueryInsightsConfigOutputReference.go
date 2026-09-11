@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/alloydbinstance/internal"
 )
 
 type AlloydbInstanceQueryInsightsConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,15 +46,15 @@ type AlloydbInstanceQueryInsightsConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,16 +70,16 @@ type AlloydbInstanceQueryInsightsConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetQueryPlansPerMinute()
 	ResetQueryStringLength()
 	ResetRecordApplicationTags()
 	ResetRecordClientAddress()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type AlloydbInstanceQueryInsightsConfigOutputReference interface {
 
 // The jsii proxy struct for AlloydbInstanceQueryInsightsConfigOutputReference
 type jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference) TerraformR
 }
 
 
-func NewAlloydbInstanceQueryInsightsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlloydbInstanceQueryInsightsConfigOutputReference {
+func NewAlloydbInstanceQueryInsightsConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AlloydbInstanceQueryInsightsConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAlloydbInstanceQueryInsightsConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewAlloydbInstanceQueryInsightsConfigOutputReference(terraformResource cdkt
 	j := jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewAlloydbInstanceQueryInsightsConfigOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewAlloydbInstanceQueryInsightsConfigOutputReference_Override(a AlloydbInstanceQueryInsightsConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAlloydbInstanceQueryInsightsConfigOutputReference_Override(a AlloydbInstanceQueryInsightsConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -358,7 +358,7 @@ func (j *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,11 +398,11 @@ func (a *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference) GetAnyMapA
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -526,8 +526,8 @@ func (a *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference) GetStringM
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -539,16 +539,16 @@ func (a *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference) Interpolat
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (a *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference) ResetRecor
 	)
 }
 
-func (a *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (a *jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

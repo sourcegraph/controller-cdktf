@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputeregioninstancetemplate/internal"
 )
 
 type DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -25,9 +25,9 @@ type DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReferenc
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableIntegrityMonitoring() cdktf.IResolvable
-	EnableSecureBoot() cdktf.IResolvable
-	EnableVtpm() cdktf.IResolvable
+	EnableIntegrityMonitoring() cdktn.IResolvable
+	EnableSecureBoot() cdktn.IResolvable
+	EnableVtpm() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfig
@@ -37,15 +37,15 @@ type DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReferenc
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReferenc
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReferenc
 
 // The jsii proxy struct for DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference
 type jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -109,8 +109,8 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfig
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) EnableIntegrityMonitoring() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) EnableIntegrityMonitoring() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enableIntegrityMonitoring",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfig
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) EnableSecureBoot() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) EnableSecureBoot() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enableSecureBoot",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfig
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) EnableVtpm() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) EnableVtpm() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enableVtpm",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfig
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -180,7 +180,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfig
 }
 
 
-func NewDataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference {
+func NewDataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -189,7 +189,7 @@ func NewDataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputRefer
 	j := jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference",
+		"@cdktn/provider-google.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -197,11 +197,11 @@ func NewDataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputRefer
 	return &j
 }
 
-func NewDataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference_Override(d DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference_Override(d DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference",
+		"@cdktn/provider-google.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -251,7 +251,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfig
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,11 +291,11 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfig
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -419,8 +419,8 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfig
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -432,24 +432,24 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfig
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -457,7 +457,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateShieldedInstanceConfig
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

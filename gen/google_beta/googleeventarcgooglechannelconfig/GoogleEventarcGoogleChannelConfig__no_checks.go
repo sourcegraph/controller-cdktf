@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validatePutTimeoutsParameters(value *GoogleEventarcGoogleChannelConfigTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

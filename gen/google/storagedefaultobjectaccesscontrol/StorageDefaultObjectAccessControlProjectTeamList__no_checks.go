@@ -12,7 +12,7 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControlProjectTeamList) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_StorageDefaultObjectAccessControlProjectTeamList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageDefaultObjectAccessControlProjectTeamList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControlProjectTeamList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControlProjectTeamList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StorageDefaultObjectAccessControlProjectTeamList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControlProjectTeamList) validateSet
 	return nil
 }
 
-func validateNewStorageDefaultObjectAccessControlProjectTeamListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewStorageDefaultObjectAccessControlProjectTeamListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

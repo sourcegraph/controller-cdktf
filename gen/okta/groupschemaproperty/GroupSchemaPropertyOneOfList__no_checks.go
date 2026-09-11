@@ -12,7 +12,7 @@ func (g *jsiiProxy_GroupSchemaPropertyOneOfList) validateGetParameters(index *fl
 	return nil
 }
 
-func (g *jsiiProxy_GroupSchemaPropertyOneOfList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GroupSchemaPropertyOneOfList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GroupSchemaPropertyOneOfList) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyOneOfList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GroupSchemaPropertyOneOfList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GroupSchemaPropertyOneOfList) validateSetWrapsSetParameters(v
 	return nil
 }
 
-func validateNewGroupSchemaPropertyOneOfListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGroupSchemaPropertyOneOfListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

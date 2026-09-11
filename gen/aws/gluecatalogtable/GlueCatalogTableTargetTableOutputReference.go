@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/gluecatalogtable/internal"
 )
 
 type GlueCatalogTableTargetTableOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CatalogId() *string
 	SetCatalogId(val *string)
 	CatalogIdInput() *string
@@ -43,15 +43,15 @@ type GlueCatalogTableTargetTableOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type GlueCatalogTableTargetTableOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type GlueCatalogTableTargetTableOutputReference interface {
 
 // The jsii proxy struct for GlueCatalogTableTargetTableOutputReference
 type jsiiProxy_GlueCatalogTableTargetTableOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference) CatalogId() *string {
@@ -205,8 +205,8 @@ func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -216,7 +216,7 @@ func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference) TerraformResource
 }
 
 
-func NewGlueCatalogTableTargetTableOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GlueCatalogTableTargetTableOutputReference {
+func NewGlueCatalogTableTargetTableOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GlueCatalogTableTargetTableOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGlueCatalogTableTargetTableOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -225,7 +225,7 @@ func NewGlueCatalogTableTargetTableOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GlueCatalogTableTargetTableOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableTargetTableOutputReference",
+		"@cdktn/provider-aws.glueCatalogTable.GlueCatalogTableTargetTableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -233,11 +233,11 @@ func NewGlueCatalogTableTargetTableOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewGlueCatalogTableTargetTableOutputReference_Override(g GlueCatalogTableTargetTableOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGlueCatalogTableTargetTableOutputReference_Override(g GlueCatalogTableTargetTableOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableTargetTableOutputReference",
+		"@cdktn/provider-aws.glueCatalogTable.GlueCatalogTableTargetTableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -320,7 +320,7 @@ func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,11 +360,11 @@ func (g *jsiiProxy_GlueCatalogTableTargetTableOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (g *jsiiProxy_GlueCatalogTableTargetTableOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GlueCatalogTableTargetTableOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -488,8 +488,8 @@ func (g *jsiiProxy_GlueCatalogTableTargetTableOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (g *jsiiProxy_GlueCatalogTableTargetTableOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GlueCatalogTableTargetTableOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -501,24 +501,24 @@ func (g *jsiiProxy_GlueCatalogTableTargetTableOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (g *jsiiProxy_GlueCatalogTableTargetTableOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GlueCatalogTableTargetTableOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GlueCatalogTableTargetTableOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GlueCatalogTableTargetTableOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -526,7 +526,7 @@ func (g *jsiiProxy_GlueCatalogTableTargetTableOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (w *jsiiProxy_WorkerScriptKvNamespaceBindingList) validateGetParameters(ind
 	return nil
 }
 
-func (w *jsiiProxy_WorkerScriptKvNamespaceBindingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerScriptKvNamespaceBindingList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WorkerScriptKvNamespaceBindingList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScriptKvNamespaceBindingList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkerScriptKvNamespaceBindingList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WorkerScriptKvNamespaceBindingList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewWorkerScriptKvNamespaceBindingListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWorkerScriptKvNamespaceBindingListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

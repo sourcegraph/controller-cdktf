@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleColabNotebookExecutionGcsNotebookSourceOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleColabNotebookExecutionGcsNotebookSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleColabNotebookExecutionGcsNotebookSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleColabNotebookExecutionGcsNotebookSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleColabNotebookExecutionGcsNotebookSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleColabNotebookExecutionGcsNotebookSourceOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabNotebookExecutionGcsNotebookSourceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleColabNotebookExecutionGcsNotebookSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleColabNotebookExecutionGcsNotebookSourceOutputReference)
 	return nil
 }
 
-func validateNewGoogleColabNotebookExecutionGcsNotebookSourceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleColabNotebookExecutionGcsNotebookSourceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

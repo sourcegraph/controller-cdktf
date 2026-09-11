@@ -40,7 +40,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionAllowOutputReference) validateGetStri
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleActionAllowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionAllowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionAllowOutputReference) validatePutCust
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleActionAllowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionAllowOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleActionAllowOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleActionAllowOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Wafv2RuleGroupRuleActionAllowOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWafv2RuleGroupRuleActionAllowOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWafv2RuleGroupRuleActionAllowOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

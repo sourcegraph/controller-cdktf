@@ -56,6 +56,10 @@ func (h *jsiiProxy_HealthcareConsentStore) validateInterpolationForAttributePara
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareConsentStore) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareConsentStore) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (h *jsiiProxy_HealthcareConsentStore) validateOverrideLogicalIdParameters(n
 }
 
 func (h *jsiiProxy_HealthcareConsentStore) validatePutTimeoutsParameters(value *HealthcareConsentStoreTimeouts) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareConsentStore) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_HealthcareConsentStore) validateSetLabelsParameters(val *map[
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareConsentStore) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_HealthcareConsentStore) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

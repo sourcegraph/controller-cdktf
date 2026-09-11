@@ -40,11 +40,11 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputR
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputR
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

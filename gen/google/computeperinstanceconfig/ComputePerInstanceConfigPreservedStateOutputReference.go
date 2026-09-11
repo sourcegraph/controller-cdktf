@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeperinstanceconfig/internal"
 )
 
 type ComputePerInstanceConfigPreservedStateOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type ComputePerInstanceConfigPreservedStateOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,9 +67,9 @@ type ComputePerInstanceConfigPreservedStateOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDisk(value interface{})
 	PutExternalIp(value interface{})
 	PutInternalIp(value interface{})
@@ -79,7 +79,7 @@ type ComputePerInstanceConfigPreservedStateOutputReference interface {
 	ResetMetadata()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type ComputePerInstanceConfigPreservedStateOutputReference interface {
 
 // The jsii proxy struct for ComputePerInstanceConfigPreservedStateOutputReference
 type jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) ComplexObjectIndex() interface{} {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) Terraf
 }
 
 
-func NewComputePerInstanceConfigPreservedStateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputePerInstanceConfigPreservedStateOutputReference {
+func NewComputePerInstanceConfigPreservedStateOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComputePerInstanceConfigPreservedStateOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputePerInstanceConfigPreservedStateOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewComputePerInstanceConfigPreservedStateOutputReference(terraformResource 
 	j := jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateOutputReference",
+		"@cdktn/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewComputePerInstanceConfigPreservedStateOutputReference(terraformResource 
 	return &j
 }
 
-func NewComputePerInstanceConfigPreservedStateOutputReference_Override(c ComputePerInstanceConfigPreservedStateOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComputePerInstanceConfigPreservedStateOutputReference_Override(c ComputePerInstanceConfigPreservedStateOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateOutputReference",
+		"@cdktn/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -325,7 +325,7 @@ func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -365,11 +365,11 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) GetAny
 	return returns
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -493,8 +493,8 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) GetStr
 	return returns
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -506,16 +506,16 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) Interp
 	return returns
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) ResetM
 	)
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) Resolv
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

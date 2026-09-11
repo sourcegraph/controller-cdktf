@@ -40,7 +40,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

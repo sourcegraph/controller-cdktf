@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/loadbalancer/internal"
 )
 
 type LoadBalancerRulesList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type LoadBalancerRulesList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) LoadBalancerRulesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type LoadBalancerRulesList interface {
 
 // The jsii proxy struct for LoadBalancerRulesList
 type jsiiProxy_LoadBalancerRulesList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_LoadBalancerRulesList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_LoadBalancerRulesList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LoadBalancerRulesList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_LoadBalancerRulesList) WrapsSet() *bool {
 }
 
 
-func NewLoadBalancerRulesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesList {
+func NewLoadBalancerRulesList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesList {
 	_init_.Initialize()
 
 	if err := validateNewLoadBalancerRulesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewLoadBalancerRulesList(terraformResource cdktf.IInterpolatingParent, terr
 	j := jsiiProxy_LoadBalancerRulesList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesList",
+		"@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewLoadBalancerRulesList(terraformResource cdktf.IInterpolatingParent, terr
 	return &j
 }
 
-func NewLoadBalancerRulesList_Override(l LoadBalancerRulesList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewLoadBalancerRulesList_Override(l LoadBalancerRulesList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesList",
+		"@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_LoadBalancerRulesList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadBalancerRulesList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_LoadBalancerRulesList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerRulesList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (l *jsiiProxy_LoadBalancerRulesList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := l.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		l,
@@ -228,8 +231,8 @@ func (l *jsiiProxy_LoadBalancerRulesList) Get(index *float64) LoadBalancerRulesO
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerRulesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LoadBalancerRulesList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (l *jsiiProxy_LoadBalancerRulesList) Resolve(_context cdktf.IResolveContext
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

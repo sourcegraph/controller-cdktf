@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeBackendServiceConsistentHashHttpCookieTtlOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendServiceConsistentHashHttpCookieTtlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeBackendServiceConsistentHashHttpCookieTtlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendServiceConsistentHashHttpCookieTtlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeBackendServiceConsistentHashHttpCookieTtlOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleComputeBackendServiceConsistentHashHttpCookieTtlOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceConsistentHashHttpCookieTtlOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceConsistentHashHttpCookieTtlOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeBackendServiceConsistentHashHttpCookieTtlOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeBackendServiceConsistentHashHttpCookieTtlOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

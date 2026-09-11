@@ -56,6 +56,10 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) validateInterpolationForAttributePara
 	return nil
 }
 
+func (w *jsiiProxy_WafregionalGeoMatchSet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalGeoMatchSet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) validateOverrideLogicalIdParameters(n
 }
 
 func (w *jsiiProxy_WafregionalGeoMatchSet) validatePutGeoMatchConstraintParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalGeoMatchSet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_WafregionalGeoMatchSet) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSet) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_WafregionalGeoMatchSet) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

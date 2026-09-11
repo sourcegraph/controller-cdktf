@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDnsResponsePolicyGkeClustersList) validateGetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsResponsePolicyGkeClustersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDnsResponsePolicyGkeClustersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDnsResponsePolicyGkeClustersList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsResponsePolicyGkeClustersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDnsResponsePolicyGkeClustersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDnsResponsePolicyGkeClustersList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewGoogleDnsResponsePolicyGkeClustersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDnsResponsePolicyGkeClustersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolNamespaceOwnerServiceList) validateGet
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolNamespaceOwnerServiceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamWorkloadIdentityPoolNamespaceOwnerServiceList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolNamespaceOwnerServiceList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolNamespaceOwnerServiceList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolNamespaceOwnerServiceList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolNamespaceOwnerServiceList) validateSet
 	return nil
 }
 
-func validateNewIamWorkloadIdentityPoolNamespaceOwnerServiceListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewIamWorkloadIdentityPoolNamespaceOwnerServiceListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

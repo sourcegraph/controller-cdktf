@@ -56,6 +56,10 @@ func (a *jsiiProxy_AppBookmark) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (a *jsiiProxy_AppBookmark) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppBookmark) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (a *jsiiProxy_AppBookmark) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (a *jsiiProxy_AppBookmark) validatePutTimeoutsParameters(value *AppBookmarkTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppBookmark) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -148,7 +156,7 @@ func (j *jsiiProxy_AppBookmark) validateSetLabelParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AppBookmark) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AppBookmark) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsList) validateGetParameters(index
 	return nil
 }
 
-func (p *jsiiProxy_PubsubTopicMessageTransformsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PubsubTopicMessageTransformsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PubsubTopicMessageTransformsList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_PubsubTopicMessageTransformsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PubsubTopicMessageTransformsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PubsubTopicMessageTransformsList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewPubsubTopicMessageTransformsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPubsubTopicMessageTransformsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

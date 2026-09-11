@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePool",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePool",
 		reflect.TypeOf((*ContainerAwsNodePool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -53,6 +53,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "management", GoGetter: "Management"},
 			_jsii_.MemberProperty{JsiiProperty: "managementInput", GoGetter: "ManagementInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maxPodsConstraint", GoGetter: "MaxPodsConstraint"},
 			_jsii_.MemberProperty{JsiiProperty: "maxPodsConstraintInput", GoGetter: "MaxPodsConstraintInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -75,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putUpdateSettings", GoMethod: "PutUpdateSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "reconciling", GoGetter: "Reconciling"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKubeletConfig", GoMethod: "ResetKubeletConfig"},
@@ -103,19 +105,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ContainerAwsNodePool{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolAutoscaling",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolAutoscaling",
 		reflect.TypeOf((*ContainerAwsNodePoolAutoscaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolAutoscalingOutputReference",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolAutoscalingOutputReference",
 		reflect.TypeOf((*ContainerAwsNodePoolAutoscalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -146,20 +149,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContainerAwsNodePoolAutoscalingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfig",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfig",
 		reflect.TypeOf((*ContainerAwsNodePoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigA",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigA",
 		reflect.TypeOf((*ContainerAwsNodePoolConfigA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigAOutputReference",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigAOutputReference",
 		reflect.TypeOf((*ContainerAwsNodePoolConfigAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingMetricsCollection", GoGetter: "AutoscalingMetricsCollection"},
@@ -223,16 +226,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContainerAwsNodePoolConfigAOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigAutoscalingMetricsCollection",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigAutoscalingMetricsCollection",
 		reflect.TypeOf((*ContainerAwsNodePoolConfigAutoscalingMetricsCollection)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference",
 		reflect.TypeOf((*ContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -264,16 +267,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigConfigEncryption",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigConfigEncryption",
 		reflect.TypeOf((*ContainerAwsNodePoolConfigConfigEncryption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigConfigEncryptionOutputReference",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigConfigEncryptionOutputReference",
 		reflect.TypeOf((*ContainerAwsNodePoolConfigConfigEncryptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -302,16 +305,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContainerAwsNodePoolConfigConfigEncryptionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigProxyConfig",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigProxyConfig",
 		reflect.TypeOf((*ContainerAwsNodePoolConfigProxyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigProxyConfigOutputReference",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigProxyConfigOutputReference",
 		reflect.TypeOf((*ContainerAwsNodePoolConfigProxyConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -342,16 +345,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContainerAwsNodePoolConfigProxyConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigRootVolume",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigRootVolume",
 		reflect.TypeOf((*ContainerAwsNodePoolConfigRootVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigRootVolumeOutputReference",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigRootVolumeOutputReference",
 		reflect.TypeOf((*ContainerAwsNodePoolConfigRootVolumeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -393,16 +396,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigSshConfig",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigSshConfig",
 		reflect.TypeOf((*ContainerAwsNodePoolConfigSshConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigSshConfigOutputReference",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigSshConfigOutputReference",
 		reflect.TypeOf((*ContainerAwsNodePoolConfigSshConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -431,16 +434,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContainerAwsNodePoolConfigSshConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigTaints",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigTaints",
 		reflect.TypeOf((*ContainerAwsNodePoolConfigTaints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigTaintsList",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigTaintsList",
 		reflect.TypeOf((*ContainerAwsNodePoolConfigTaintsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -457,12 +460,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContainerAwsNodePoolConfigTaintsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigTaintsOutputReference",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigTaintsOutputReference",
 		reflect.TypeOf((*ContainerAwsNodePoolConfigTaintsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -495,16 +498,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContainerAwsNodePoolConfigTaintsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolKubeletConfig",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolKubeletConfig",
 		reflect.TypeOf((*ContainerAwsNodePoolKubeletConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolKubeletConfigOutputReference",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolKubeletConfigOutputReference",
 		reflect.TypeOf((*ContainerAwsNodePoolKubeletConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -543,16 +546,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolManagement",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolManagement",
 		reflect.TypeOf((*ContainerAwsNodePoolManagement)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolManagementOutputReference",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolManagementOutputReference",
 		reflect.TypeOf((*ContainerAwsNodePoolManagementOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoRepair", GoGetter: "AutoRepair"},
@@ -582,16 +585,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContainerAwsNodePoolManagementOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolMaxPodsConstraint",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolMaxPodsConstraint",
 		reflect.TypeOf((*ContainerAwsNodePoolMaxPodsConstraint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolMaxPodsConstraintOutputReference",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolMaxPodsConstraintOutputReference",
 		reflect.TypeOf((*ContainerAwsNodePoolMaxPodsConstraintOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -620,16 +623,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContainerAwsNodePoolMaxPodsConstraintOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolTimeouts",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolTimeouts",
 		reflect.TypeOf((*ContainerAwsNodePoolTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolTimeoutsOutputReference",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolTimeoutsOutputReference",
 		reflect.TypeOf((*ContainerAwsNodePoolTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -665,16 +668,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContainerAwsNodePoolTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolUpdateSettings",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolUpdateSettings",
 		reflect.TypeOf((*ContainerAwsNodePoolUpdateSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolUpdateSettingsOutputReference",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolUpdateSettingsOutputReference",
 		reflect.TypeOf((*ContainerAwsNodePoolUpdateSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -705,16 +708,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContainerAwsNodePoolUpdateSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolUpdateSettingsSurgeSettings",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolUpdateSettingsSurgeSettings",
 		reflect.TypeOf((*ContainerAwsNodePoolUpdateSettingsSurgeSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference",
 		reflect.TypeOf((*ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -747,7 +750,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

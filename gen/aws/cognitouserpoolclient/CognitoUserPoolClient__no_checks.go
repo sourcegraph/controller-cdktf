@@ -56,6 +56,10 @@ func (c *jsiiProxy_CognitoUserPoolClient) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_CognitoUserPoolClient) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoUserPoolClient) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (c *jsiiProxy_CognitoUserPoolClient) validatePutAnalyticsConfigurationParam
 }
 
 func (c *jsiiProxy_CognitoUserPoolClient) validatePutTokenValidityUnitsParameters(value *CognitoUserPoolClientTokenValidityUnits) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoUserPoolClient) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -156,7 +164,7 @@ func (j *jsiiProxy_CognitoUserPoolClient) validateSetIdTokenValidityParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolClient) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CognitoUserPoolClient) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

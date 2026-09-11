@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksCluster.EksCluster",
+		"@cdktn/provider-aws.eksCluster.EksCluster",
 		reflect.TypeOf((*EksCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kubernetesNetworkConfig", GoGetter: "KubernetesNetworkConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "kubernetesNetworkConfigInput", GoGetter: "KubernetesNetworkConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -66,6 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putVpcConfig", GoMethod: "PutVpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabledClusterLogTypes", GoMethod: "ResetEnabledClusterLogTypes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEncryptionConfig", GoMethod: "ResetEncryptionConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -98,19 +100,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfig", GoGetter: "VpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfigInput", GoGetter: "VpcConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_EksCluster{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthority",
+		"@cdktn/provider-aws.eksCluster.EksClusterCertificateAuthority",
 		reflect.TypeOf((*EksClusterCertificateAuthority)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityList",
+		"@cdktn/provider-aws.eksCluster.EksClusterCertificateAuthorityList",
 		reflect.TypeOf((*EksClusterCertificateAuthorityList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -126,12 +129,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksClusterCertificateAuthorityList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityOutputReference",
+		"@cdktn/provider-aws.eksCluster.EksClusterCertificateAuthorityOutputReference",
 		reflect.TypeOf((*EksClusterCertificateAuthorityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -159,20 +162,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksClusterCertificateAuthorityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksCluster.EksClusterConfig",
+		"@cdktn/provider-aws.eksCluster.EksClusterConfig",
 		reflect.TypeOf((*EksClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfig",
+		"@cdktn/provider-aws.eksCluster.EksClusterEncryptionConfig",
 		reflect.TypeOf((*EksClusterEncryptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfigOutputReference",
+		"@cdktn/provider-aws.eksCluster.EksClusterEncryptionConfigOutputReference",
 		reflect.TypeOf((*EksClusterEncryptionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -204,16 +207,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksClusterEncryptionConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfigProvider",
+		"@cdktn/provider-aws.eksCluster.EksClusterEncryptionConfigProvider",
 		reflect.TypeOf((*EksClusterEncryptionConfigProvider)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfigProviderOutputReference",
+		"@cdktn/provider-aws.eksCluster.EksClusterEncryptionConfigProviderOutputReference",
 		reflect.TypeOf((*EksClusterEncryptionConfigProviderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -242,16 +245,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksClusterEncryptionConfigProviderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksCluster.EksClusterIdentity",
+		"@cdktn/provider-aws.eksCluster.EksClusterIdentity",
 		reflect.TypeOf((*EksClusterIdentity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksCluster.EksClusterIdentityList",
+		"@cdktn/provider-aws.eksCluster.EksClusterIdentityList",
 		reflect.TypeOf((*EksClusterIdentityList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -267,16 +270,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksClusterIdentityList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksCluster.EksClusterIdentityOidc",
+		"@cdktn/provider-aws.eksCluster.EksClusterIdentityOidc",
 		reflect.TypeOf((*EksClusterIdentityOidc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksCluster.EksClusterIdentityOidcList",
+		"@cdktn/provider-aws.eksCluster.EksClusterIdentityOidcList",
 		reflect.TypeOf((*EksClusterIdentityOidcList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -292,12 +295,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksClusterIdentityOidcList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksCluster.EksClusterIdentityOidcOutputReference",
+		"@cdktn/provider-aws.eksCluster.EksClusterIdentityOidcOutputReference",
 		reflect.TypeOf((*EksClusterIdentityOidcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -325,12 +328,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksClusterIdentityOidcOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksCluster.EksClusterIdentityOutputReference",
+		"@cdktn/provider-aws.eksCluster.EksClusterIdentityOutputReference",
 		reflect.TypeOf((*EksClusterIdentityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -358,16 +361,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksClusterIdentityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig",
+		"@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig",
 		reflect.TypeOf((*EksClusterKubernetesNetworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksCluster.EksClusterKubernetesNetworkConfigOutputReference",
+		"@cdktn/provider-aws.eksCluster.EksClusterKubernetesNetworkConfigOutputReference",
 		reflect.TypeOf((*EksClusterKubernetesNetworkConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -401,20 +404,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksCluster.EksClusterOutpostConfig",
+		"@cdktn/provider-aws.eksCluster.EksClusterOutpostConfig",
 		reflect.TypeOf((*EksClusterOutpostConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksCluster.EksClusterOutpostConfigControlPlanePlacement",
+		"@cdktn/provider-aws.eksCluster.EksClusterOutpostConfigControlPlanePlacement",
 		reflect.TypeOf((*EksClusterOutpostConfigControlPlanePlacement)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksCluster.EksClusterOutpostConfigControlPlanePlacementOutputReference",
+		"@cdktn/provider-aws.eksCluster.EksClusterOutpostConfigControlPlanePlacementOutputReference",
 		reflect.TypeOf((*EksClusterOutpostConfigControlPlanePlacementOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -443,12 +446,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksClusterOutpostConfigControlPlanePlacementOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksCluster.EksClusterOutpostConfigOutputReference",
+		"@cdktn/provider-aws.eksCluster.EksClusterOutpostConfigOutputReference",
 		reflect.TypeOf((*EksClusterOutpostConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -483,16 +486,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksClusterOutpostConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksCluster.EksClusterTimeouts",
+		"@cdktn/provider-aws.eksCluster.EksClusterTimeouts",
 		reflect.TypeOf((*EksClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksCluster.EksClusterTimeoutsOutputReference",
+		"@cdktn/provider-aws.eksCluster.EksClusterTimeoutsOutputReference",
 		reflect.TypeOf((*EksClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -528,16 +531,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksClusterTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.eksCluster.EksClusterVpcConfig",
+		"@cdktn/provider-aws.eksCluster.EksClusterVpcConfig",
 		reflect.TypeOf((*EksClusterVpcConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.eksCluster.EksClusterVpcConfigOutputReference",
+		"@cdktn/provider-aws.eksCluster.EksClusterVpcConfigOutputReference",
 		reflect.TypeOf((*EksClusterVpcConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterSecurityGroupId", GoGetter: "ClusterSecurityGroupId"},
@@ -580,7 +583,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksClusterVpcConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -40,7 +40,7 @@ func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointOutpu
 	return nil
 }
 
-func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointOutpu
 	return nil
 }
 
-func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointOutpu
 	return nil
 }
 
-func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLightsailContainerServiceDeploymentVersionPublicEndpointOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLightsailContainerServiceDeploymentVersionPublicEndpointOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledeveloperconnectaccountconnector/internal"
 )
 
 type GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthUri() *string
 	SetAuthUri(val *string)
 	AuthUriInput() *string
@@ -61,9 +61,9 @@ type GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference inte
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TokenUri() *string
 	SetTokenUri(val *string)
 	TokenUriInput() *string
@@ -72,7 +72,7 @@ type GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference inte
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -88,16 +88,16 @@ type GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference inte
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutServiceDirectoryConfig(value *GoogleDeveloperConnectAccountConnectorCustomOauthConfigServiceDirectoryConfig)
 	ResetPkceDisabled()
 	ResetServiceDirectoryConfig()
 	ResetSslCaCertificate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -107,7 +107,7 @@ type GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference inte
 
 // The jsii proxy struct for GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference
 type jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference) AuthUri() *string {
@@ -360,8 +360,8 @@ func (j *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutput
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutput
 }
 
 
-func NewGoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference {
+func NewGoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -400,7 +400,7 @@ func NewGoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference(t
 	j := jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDeveloperConnectAccountConnector.GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference",
+		"@cdktn/provider-google-beta.googleDeveloperConnectAccountConnector.GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -408,11 +408,11 @@ func NewGoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference(t
 	return &j
 }
 
-func NewGoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference_Override(g GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference_Override(g GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDeveloperConnectAccountConnector.GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference",
+		"@cdktn/provider-google-beta.googleDeveloperConnectAccountConnector.GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -550,7 +550,7 @@ func (j *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutput
 	)
 }
 
-func (j *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,11 +601,11 @@ func (g *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -729,8 +729,8 @@ func (g *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -742,16 +742,16 @@ func (g *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -793,8 +793,8 @@ func (g *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutput
 	)
 }
 
-func (g *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -802,7 +802,7 @@ func (g *jsiiProxy_GoogleDeveloperConnectAccountConnectorCustomOauthConfigOutput
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

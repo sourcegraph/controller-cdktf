@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) validateGetS
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) validatePutV
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -108,7 +108,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -124,7 +124,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) validateSetW
 	return nil
 }
 
-func validateNewGoogleCloudbuildTriggerBuildStepOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleCloudbuildTriggerBuildStepOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

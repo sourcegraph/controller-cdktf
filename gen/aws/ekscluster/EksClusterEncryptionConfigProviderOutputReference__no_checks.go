@@ -40,11 +40,11 @@ func (e *jsiiProxy_EksClusterEncryptionConfigProviderOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterEncryptionConfigProviderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksClusterEncryptionConfigProviderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterEncryptionConfigProviderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksClusterEncryptionConfigProviderOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_EksClusterEncryptionConfigProviderOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_EksClusterEncryptionConfigProviderOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EksClusterEncryptionConfigProviderOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEksClusterEncryptionConfigProviderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEksClusterEncryptionConfigProviderOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

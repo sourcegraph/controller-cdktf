@@ -40,11 +40,11 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfigSingleRegionKeysOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineCmekConfigSingleRegionKeysOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DiscoveryEngineCmekConfigSingleRegionKeysOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineCmekConfigSingleRegionKeysOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineCmekConfigSingleRegionKeysOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfigSingleRegionKeysOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfigSingleRegionKeysOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DiscoveryEngineCmekConfigSingleRegionKeysOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDiscoveryEngineCmekConfigSingleRegionKeysOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDiscoveryEngineCmekConfigSingleRegionKeysOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

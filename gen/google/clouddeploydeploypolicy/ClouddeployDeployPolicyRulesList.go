@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/clouddeploydeploypolicy/internal"
 )
 
 type ClouddeployDeployPolicyRulesList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type ClouddeployDeployPolicyRulesList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ClouddeployDeployPolicyRulesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type ClouddeployDeployPolicyRulesList interface {
 
 // The jsii proxy struct for ClouddeployDeployPolicyRulesList
 type jsiiProxy_ClouddeployDeployPolicyRulesList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ClouddeployDeployPolicyRulesList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_ClouddeployDeployPolicyRulesList) TerraformAttribute() *strin
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployDeployPolicyRulesList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ClouddeployDeployPolicyRulesList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_ClouddeployDeployPolicyRulesList) WrapsSet() *bool {
 }
 
 
-func NewClouddeployDeployPolicyRulesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClouddeployDeployPolicyRulesList {
+func NewClouddeployDeployPolicyRulesList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClouddeployDeployPolicyRulesList {
 	_init_.Initialize()
 
 	if err := validateNewClouddeployDeployPolicyRulesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewClouddeployDeployPolicyRulesList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_ClouddeployDeployPolicyRulesList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesList",
+		"@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewClouddeployDeployPolicyRulesList(terraformResource cdktf.IInterpolatingP
 	return &j
 }
 
-func NewClouddeployDeployPolicyRulesList_Override(c ClouddeployDeployPolicyRulesList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewClouddeployDeployPolicyRulesList_Override(c ClouddeployDeployPolicyRulesList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesList",
+		"@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_ClouddeployDeployPolicyRulesList)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_ClouddeployDeployPolicyRulesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClouddeployDeployPolicyRulesList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_ClouddeployDeployPolicyRulesList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (c *jsiiProxy_ClouddeployDeployPolicyRulesList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (c *jsiiProxy_ClouddeployDeployPolicyRulesList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := c.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		c,
@@ -228,8 +231,8 @@ func (c *jsiiProxy_ClouddeployDeployPolicyRulesList) Get(index *float64) Cloudde
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployDeployPolicyRulesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ClouddeployDeployPolicyRulesList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (c *jsiiProxy_ClouddeployDeployPolicyRulesList) Resolve(_context cdktf.IRes
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

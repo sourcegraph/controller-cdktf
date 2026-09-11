@@ -56,6 +56,10 @@ func (c *jsiiProxy_ConnectQuickConnect) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_ConnectQuickConnect) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectQuickConnect) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ConnectQuickConnect) validateOverrideLogicalIdParameters(newL
 }
 
 func (c *jsiiProxy_ConnectQuickConnect) validatePutQuickConnectConfigParameters(value *ConnectQuickConnectQuickConnectConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectQuickConnect) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_ConnectQuickConnect) validateSetInstanceIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ConnectQuickConnect) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ConnectQuickConnect) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

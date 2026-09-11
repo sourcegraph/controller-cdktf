@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleBigtableLogicalView) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigtableLogicalView) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigtableLogicalView) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleBigtableLogicalView) validateOverrideLogicalIdParameter
 }
 
 func (g *jsiiProxy_GoogleBigtableLogicalView) validatePutTimeoutsParameters(value *GoogleBigtableLogicalViewTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigtableLogicalView) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleBigtableLogicalView) validateSetInstanceParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableLogicalView) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleBigtableLogicalView) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

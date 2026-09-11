@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.networkZone.NetworkZone",
+		"@cdktn/provider-okta.networkZone.NetworkZone",
 		reflect.TypeOf((*NetworkZone)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -50,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ipServiceCategoriesInclude", GoGetter: "IpServiceCategoriesInclude"},
 			_jsii_.MemberProperty{JsiiProperty: "ipServiceCategoriesIncludeInput", GoGetter: "IpServiceCategoriesIncludeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -62,6 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "proxies", GoGetter: "Proxies"},
 			_jsii_.MemberProperty{JsiiProperty: "proxiesInput", GoGetter: "ProxiesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAsns", GoMethod: "ResetAsns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDynamicLocations", GoMethod: "ResetDynamicLocations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDynamicLocationsExclude", GoMethod: "ResetDynamicLocationsExclude"},
@@ -89,15 +91,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "usage", GoGetter: "Usage"},
 			_jsii_.MemberProperty{JsiiProperty: "usageInput", GoGetter: "UsageInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkZone{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.networkZone.NetworkZoneConfig",
+		"@cdktn/provider-okta.networkZone.NetworkZoneConfig",
 		reflect.TypeOf((*NetworkZoneConfig)(nil)).Elem(),
 	)
 }

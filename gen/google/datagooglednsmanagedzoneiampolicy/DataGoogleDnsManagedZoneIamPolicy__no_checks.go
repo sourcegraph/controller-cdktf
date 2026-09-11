@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleDnsManagedZoneIamPolicy) validateOverrideLogicalIdP
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleDnsManagedZoneIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleDnsManagedZoneIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleDnsManagedZoneIamPolicy) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZoneIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleDnsManagedZoneIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

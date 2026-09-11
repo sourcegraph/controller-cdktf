@@ -40,11 +40,11 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) vali
 	return nil
 }
 
-func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) vali
 	return nil
 }
 
-func validateNewUserSchemaPropertyMasterOverridePriorityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewUserSchemaPropertyMasterOverridePriorityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

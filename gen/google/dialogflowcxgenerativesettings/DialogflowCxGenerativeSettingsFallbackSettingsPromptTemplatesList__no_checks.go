@@ -12,7 +12,7 @@ func (d *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplates
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplates
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplates
 	return nil
 }
 
-func validateNewDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) validateSetWebUrlPara
 	return nil
 }
 
-func validateNewPinpointAppCampaignHookOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPinpointAppCampaignHookOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

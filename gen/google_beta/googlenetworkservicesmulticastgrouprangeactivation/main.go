@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleNetworkServicesMulticastGroupRangeActivation.GoogleNetworkServicesMulticastGroupRangeActivation",
+		"@cdktn/provider-google-beta.googleNetworkServicesMulticastGroupRangeActivation.GoogleNetworkServicesMulticastGroupRangeActivation",
 		reflect.TypeOf((*GoogleNetworkServicesMulticastGroupRangeActivation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "logConfig", GoGetter: "LogConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "logConfigInput", GoGetter: "LogConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -67,6 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putLogConfig", GoMethod: "PutLogConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
@@ -89,23 +91,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uniqueId", GoGetter: "UniqueId"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleNetworkServicesMulticastGroupRangeActivation{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleNetworkServicesMulticastGroupRangeActivation.GoogleNetworkServicesMulticastGroupRangeActivationConfig",
+		"@cdktn/provider-google-beta.googleNetworkServicesMulticastGroupRangeActivation.GoogleNetworkServicesMulticastGroupRangeActivationConfig",
 		reflect.TypeOf((*GoogleNetworkServicesMulticastGroupRangeActivationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleNetworkServicesMulticastGroupRangeActivation.GoogleNetworkServicesMulticastGroupRangeActivationLogConfig",
+		"@cdktn/provider-google-beta.googleNetworkServicesMulticastGroupRangeActivation.GoogleNetworkServicesMulticastGroupRangeActivationLogConfig",
 		reflect.TypeOf((*GoogleNetworkServicesMulticastGroupRangeActivationLogConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleNetworkServicesMulticastGroupRangeActivation.GoogleNetworkServicesMulticastGroupRangeActivationLogConfigOutputReference",
+		"@cdktn/provider-google-beta.googleNetworkServicesMulticastGroupRangeActivation.GoogleNetworkServicesMulticastGroupRangeActivationLogConfigOutputReference",
 		reflect.TypeOf((*GoogleNetworkServicesMulticastGroupRangeActivationLogConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -135,16 +138,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleNetworkServicesMulticastGroupRangeActivationLogConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleNetworkServicesMulticastGroupRangeActivation.GoogleNetworkServicesMulticastGroupRangeActivationState",
+		"@cdktn/provider-google-beta.googleNetworkServicesMulticastGroupRangeActivation.GoogleNetworkServicesMulticastGroupRangeActivationState",
 		reflect.TypeOf((*GoogleNetworkServicesMulticastGroupRangeActivationState)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleNetworkServicesMulticastGroupRangeActivation.GoogleNetworkServicesMulticastGroupRangeActivationStateList",
+		"@cdktn/provider-google-beta.googleNetworkServicesMulticastGroupRangeActivation.GoogleNetworkServicesMulticastGroupRangeActivationStateList",
 		reflect.TypeOf((*GoogleNetworkServicesMulticastGroupRangeActivationStateList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -160,12 +163,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleNetworkServicesMulticastGroupRangeActivationStateList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleNetworkServicesMulticastGroupRangeActivation.GoogleNetworkServicesMulticastGroupRangeActivationStateOutputReference",
+		"@cdktn/provider-google-beta.googleNetworkServicesMulticastGroupRangeActivation.GoogleNetworkServicesMulticastGroupRangeActivationStateOutputReference",
 		reflect.TypeOf((*GoogleNetworkServicesMulticastGroupRangeActivationStateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -193,16 +196,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleNetworkServicesMulticastGroupRangeActivationStateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleNetworkServicesMulticastGroupRangeActivation.GoogleNetworkServicesMulticastGroupRangeActivationTimeouts",
+		"@cdktn/provider-google-beta.googleNetworkServicesMulticastGroupRangeActivation.GoogleNetworkServicesMulticastGroupRangeActivationTimeouts",
 		reflect.TypeOf((*GoogleNetworkServicesMulticastGroupRangeActivationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleNetworkServicesMulticastGroupRangeActivation.GoogleNetworkServicesMulticastGroupRangeActivationTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleNetworkServicesMulticastGroupRangeActivation.GoogleNetworkServicesMulticastGroupRangeActivationTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleNetworkServicesMulticastGroupRangeActivationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -238,7 +241,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleNetworkServicesMulticastGroupRangeActivationTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

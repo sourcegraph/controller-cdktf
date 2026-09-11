@@ -40,11 +40,11 @@ func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) validateGetStr
 	return nil
 }
 
-func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_QldbStreamKinesisConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewQldbStreamKinesisConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewQldbStreamKinesisConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

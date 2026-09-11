@@ -5,7 +5,7 @@ package servicecatalogprovisionedproduct
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (s *jsiiProxy_ServicecatalogProvisionedProductOutputsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (s *jsiiProxy_ServicecatalogProvisionedProductOutputsList) validateGetParam
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogProvisionedProductOutputsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_ServicecatalogProvisionedProductOutputsList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_ServicecatalogProvisionedProductOutputsList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogProvisionedProductOutputsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ServicecatalogProvisionedProductOutputsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_ServicecatalogProvisionedProductOutputsList) validateSetWraps
 	return nil
 }
 
-func validateNewServicecatalogProvisionedProductOutputsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewServicecatalogProvisionedProductOutputsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

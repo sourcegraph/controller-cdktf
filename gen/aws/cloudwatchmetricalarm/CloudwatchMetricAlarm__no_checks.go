@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudwatchMetricAlarm) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_CloudwatchMetricAlarm) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchMetricAlarm) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_CloudwatchMetricAlarm) validateOverrideLogicalIdParameters(ne
 }
 
 func (c *jsiiProxy_CloudwatchMetricAlarm) validatePutMetricQueryParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -148,7 +156,7 @@ func (j *jsiiProxy_CloudwatchMetricAlarm) validateSetInsufficientDataActionsPara
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchMetricAlarm) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudwatchMetricAlarm) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

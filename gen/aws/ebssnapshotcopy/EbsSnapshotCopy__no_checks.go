@@ -56,6 +56,10 @@ func (e *jsiiProxy_EbsSnapshotCopy) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (e *jsiiProxy_EbsSnapshotCopy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EbsSnapshotCopy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (e *jsiiProxy_EbsSnapshotCopy) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (e *jsiiProxy_EbsSnapshotCopy) validatePutTimeoutsParameters(value *EbsSnapshotCopyTimeouts) error {
+	return nil
+}
+
+func (e *jsiiProxy_EbsSnapshotCopy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_EbsSnapshotCopy) validateSetKmsKeyIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_EbsSnapshotCopy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EbsSnapshotCopy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

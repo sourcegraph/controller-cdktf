@@ -56,6 +56,10 @@ func (e *jsiiProxy_EssentialContactsContact) validateInterpolationForAttributePa
 	return nil
 }
 
+func (e *jsiiProxy_EssentialContactsContact) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EssentialContactsContact) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (e *jsiiProxy_EssentialContactsContact) validateOverrideLogicalIdParameters
 }
 
 func (e *jsiiProxy_EssentialContactsContact) validatePutTimeoutsParameters(value *EssentialContactsContactTimeouts) error {
+	return nil
+}
+
+func (e *jsiiProxy_EssentialContactsContact) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_EssentialContactsContact) validateSetLanguageTagParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_EssentialContactsContact) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EssentialContactsContact) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

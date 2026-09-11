@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleComputeReservationResourceStatusSpecificSkuAllocati
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeReservationResourceStatusSpecificSkuAllocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeReservationResourceStatusSpecificSkuAllocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeReservationResourceStatusSpecificSkuAllocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeReservationResourceStatusSpecificSkuAllocationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleComputeReservationResourceStatusSpecificSkuAllocati
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservationResourceStatusSpecificSkuAllocationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeReservationResourceStatusSpecificSkuAllocationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleComputeReservationResourceStatusSpecificSkuAllocationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleComputeReservationResourceStatusSpecificSkuAllocationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

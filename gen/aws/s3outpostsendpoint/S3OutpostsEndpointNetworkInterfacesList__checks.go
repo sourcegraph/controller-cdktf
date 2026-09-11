@@ -5,7 +5,7 @@ package s3outpostsendpoint
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (s *jsiiProxy_S3OutpostsEndpointNetworkInterfacesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (s *jsiiProxy_S3OutpostsEndpointNetworkInterfacesList) validateGetParameter
 	return nil
 }
 
-func (s *jsiiProxy_S3OutpostsEndpointNetworkInterfacesList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_S3OutpostsEndpointNetworkInterfacesList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_S3OutpostsEndpointNetworkInterfacesList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_S3OutpostsEndpointNetworkInterfacesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_S3OutpostsEndpointNetworkInterfacesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_S3OutpostsEndpointNetworkInterfacesList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewS3OutpostsEndpointNetworkInterfacesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewS3OutpostsEndpointNetworkInterfacesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

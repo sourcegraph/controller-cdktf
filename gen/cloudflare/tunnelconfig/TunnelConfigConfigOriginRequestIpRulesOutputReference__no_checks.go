@@ -40,11 +40,11 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference) valida
 	return nil
 }
 
-func (t *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTunnelConfigConfigOriginRequestIpRulesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewTunnelConfigConfigOriginRequestIpRulesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

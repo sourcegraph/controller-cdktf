@@ -40,11 +40,11 @@ func (p *jsiiProxy_PubsubLiteTopicReservationConfigOutputReference) validateGetS
 	return nil
 }
 
-func (p *jsiiProxy_PubsubLiteTopicReservationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PubsubLiteTopicReservationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PubsubLiteTopicReservationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PubsubLiteTopicReservationConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_PubsubLiteTopicReservationConfigOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_PubsubLiteTopicReservationConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PubsubLiteTopicReservationConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_PubsubLiteTopicReservationConfigOutputReference) validateSetT
 	return nil
 }
 
-func validateNewPubsubLiteTopicReservationConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPubsubLiteTopicReservationConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

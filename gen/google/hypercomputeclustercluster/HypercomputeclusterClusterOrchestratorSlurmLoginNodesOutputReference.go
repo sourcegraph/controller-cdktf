@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/hypercomputeclustercluster/internal"
 )
 
 type HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BootDisk() HypercomputeclusterClusterOrchestratorSlurmLoginNodesBootDiskOutputReference
 	BootDiskInput() *HypercomputeclusterClusterOrchestratorSlurmLoginNodesBootDisk
 	// the index of the complex object in a list.
@@ -57,9 +57,9 @@ type HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference interf
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Zone() *string
 	SetZone(val *string)
 	ZoneInput() *string
@@ -68,7 +68,7 @@ type HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference interf
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -84,9 +84,9 @@ type HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference interf
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutBootDisk(value *HypercomputeclusterClusterOrchestratorSlurmLoginNodesBootDisk)
 	PutStorageConfigs(value interface{})
 	ResetBootDisk()
@@ -97,7 +97,7 @@ type HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference interf
 	ResetStorageConfigs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -107,7 +107,7 @@ type HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference interf
 
 // The jsii proxy struct for HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference
 type jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) BootDisk() HypercomputeclusterClusterOrchestratorSlurmLoginNodesBootDiskOutputReference {
@@ -340,8 +340,8 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -371,7 +371,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 }
 
 
-func NewHypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference {
+func NewHypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewHypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -380,7 +380,7 @@ func NewHypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference(ter
 	j := jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference",
+		"@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -388,11 +388,11 @@ func NewHypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference(ter
 	return &j
 }
 
-func NewHypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference_Override(h HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewHypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference_Override(h HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference",
+		"@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)
@@ -508,7 +508,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,11 +559,11 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := h.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -687,8 +687,8 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -700,16 +700,16 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := h.validateInterpolationForAttributeParameters(property); err != nil {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -786,8 +786,8 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	)
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := h.validateResolveParameters(_context); err != nil {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := h.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -795,7 +795,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

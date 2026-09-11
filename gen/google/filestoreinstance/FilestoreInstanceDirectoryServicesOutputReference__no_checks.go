@@ -40,7 +40,7 @@ func (f *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateGe
 	return nil
 }
 
-func (f *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (f *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validatePu
 	return nil
 }
 
-func (f *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewFilestoreInstanceDirectoryServicesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFilestoreInstanceDirectoryServicesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (e *jsiiProxy_ElasticacheCluster) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (e *jsiiProxy_ElasticacheCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticacheCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (e *jsiiProxy_ElasticacheCluster) validateOverrideLogicalIdParameters(newLo
 }
 
 func (e *jsiiProxy_ElasticacheCluster) validatePutLogDeliveryConfigurationParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticacheCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -140,7 +148,7 @@ func (j *jsiiProxy_ElasticacheCluster) validateSetIpDiscoveryParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ElasticacheCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

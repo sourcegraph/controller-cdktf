@@ -40,11 +40,11 @@ func (t *jsiiProxy_TransferAccessPosixProfileOutputReference) validateGetStringM
 	return nil
 }
 
-func (t *jsiiProxy_TransferAccessPosixProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TransferAccessPosixProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TransferAccessPosixProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferAccessPosixProfileOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_TransferAccessPosixProfileOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_TransferAccessPosixProfileOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TransferAccessPosixProfileOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_TransferAccessPosixProfileOutputReference) validateSetUidPara
 	return nil
 }
 
-func validateNewTransferAccessPosixProfileOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTransferAccessPosixProfileOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (k *jsiiProxy_KmsGrantConstraintsList) validateGetParameters(index *float64
 	return nil
 }
 
-func (k *jsiiProxy_KmsGrantConstraintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsGrantConstraintsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_KmsGrantConstraintsList) validateSetTerraformAttributeParamet
 	return nil
 }
 
-func (j *jsiiProxy_KmsGrantConstraintsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KmsGrantConstraintsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_KmsGrantConstraintsList) validateSetWrapsSetParameters(val *b
 	return nil
 }
 
-func validateNewKmsGrantConstraintsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewKmsGrantConstraintsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

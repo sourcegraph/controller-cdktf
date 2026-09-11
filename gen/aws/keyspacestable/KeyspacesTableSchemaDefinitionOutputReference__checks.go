@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateGetStr
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutClu
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*KeyspacesTableSchemaDefinitionClusteringKey:
 		value := value.(*[]*KeyspacesTableSchemaDefinitionClusteringKey)
@@ -114,7 +114,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutClu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*KeyspacesTableSchemaDefinitionClusteringKey; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*KeyspacesTableSchemaDefinitionClusteringKey; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutCol
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*KeyspacesTableSchemaDefinitionColumn:
 		value := value.(*[]*KeyspacesTableSchemaDefinitionColumn)
@@ -145,7 +145,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutCol
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*KeyspacesTableSchemaDefinitionColumn; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*KeyspacesTableSchemaDefinitionColumn; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -157,7 +157,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutPar
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*KeyspacesTableSchemaDefinitionPartitionKey:
 		value := value.(*[]*KeyspacesTableSchemaDefinitionPartitionKey)
@@ -176,7 +176,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutPar
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*KeyspacesTableSchemaDefinitionPartitionKey; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*KeyspacesTableSchemaDefinitionPartitionKey; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -188,7 +188,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutSta
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*KeyspacesTableSchemaDefinitionStaticColumn:
 		value := value.(*[]*KeyspacesTableSchemaDefinitionStaticColumn)
@@ -207,16 +207,16 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutSta
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*KeyspacesTableSchemaDefinitionStaticColumn; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*KeyspacesTableSchemaDefinitionStaticColumn; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -303,7 +303,7 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -311,7 +311,7 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateSetTer
 	return nil
 }
 
-func validateNewKeyspacesTableSchemaDefinitionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewKeyspacesTableSchemaDefinitionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

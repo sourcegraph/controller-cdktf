@@ -40,11 +40,11 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsO
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsO
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

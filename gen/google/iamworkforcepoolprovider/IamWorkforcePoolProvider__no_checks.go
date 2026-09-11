@@ -56,6 +56,10 @@ func (i *jsiiProxy_IamWorkforcePoolProvider) validateInterpolationForAttributePa
 	return nil
 }
 
+func (i *jsiiProxy_IamWorkforcePoolProvider) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamWorkforcePoolProvider) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (i *jsiiProxy_IamWorkforcePoolProvider) validatePutSamlParameters(value *Ia
 }
 
 func (i *jsiiProxy_IamWorkforcePoolProvider) validatePutTimeoutsParameters(value *IamWorkforcePoolProviderTimeouts) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamWorkforcePoolProvider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -144,7 +152,7 @@ func (j *jsiiProxy_IamWorkforcePoolProvider) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProvider) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IamWorkforcePoolProvider) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

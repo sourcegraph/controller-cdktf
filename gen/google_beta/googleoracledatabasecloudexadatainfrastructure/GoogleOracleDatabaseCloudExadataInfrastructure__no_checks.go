@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateInter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validatePutPr
 }
 
 func (g *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validatePutTimeoutsParameters(value *GoogleOracleDatabaseCloudExadataInfrastructureTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateSetLa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleOracleDatabaseCloudExadataInfrastructure) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

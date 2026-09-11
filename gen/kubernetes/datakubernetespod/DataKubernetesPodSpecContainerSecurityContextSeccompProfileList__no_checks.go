@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileLi
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileLi
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileLi
 	return nil
 }
 
-func validateNewDataKubernetesPodSpecContainerSecurityContextSeccompProfileListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataKubernetesPodSpecContainerSecurityContextSeccompProfileListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

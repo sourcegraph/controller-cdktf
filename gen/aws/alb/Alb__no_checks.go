@@ -56,6 +56,10 @@ func (a *jsiiProxy_Alb) validateInterpolationForAttributeParameters(terraformAtt
 	return nil
 }
 
+func (a *jsiiProxy_Alb) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_Alb) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (a *jsiiProxy_Alb) validatePutSubnetMappingParameters(value interface{}) er
 }
 
 func (a *jsiiProxy_Alb) validatePutTimeoutsParameters(value *AlbTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_Alb) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -152,7 +160,7 @@ func (j *jsiiProxy_Alb) validateSetIpAddressTypeParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Alb) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Alb) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

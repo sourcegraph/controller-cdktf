@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.opsworksApplication.OpsworksApplication",
+		"@cdktn/provider-aws.opsworksApplication.OpsworksApplication",
 		reflect.TypeOf((*OpsworksApplication)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -58,6 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -73,6 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "railsEnv", GoGetter: "RailsEnv"},
 			_jsii_.MemberProperty{JsiiProperty: "railsEnvInput", GoGetter: "RailsEnvInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppSource", GoMethod: "ResetAppSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoBundleOnDeploy", GoMethod: "ResetAutoBundleOnDeploy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsFlowRubySettings", GoMethod: "ResetAwsFlowRubySettings"},
@@ -106,19 +108,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_OpsworksApplication{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationAppSource",
+		"@cdktn/provider-aws.opsworksApplication.OpsworksApplicationAppSource",
 		reflect.TypeOf((*OpsworksApplicationAppSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationAppSourceList",
+		"@cdktn/provider-aws.opsworksApplication.OpsworksApplicationAppSourceList",
 		reflect.TypeOf((*OpsworksApplicationAppSourceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -135,12 +138,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OpsworksApplicationAppSourceList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationAppSourceOutputReference",
+		"@cdktn/provider-aws.opsworksApplication.OpsworksApplicationAppSourceOutputReference",
 		reflect.TypeOf((*OpsworksApplicationAppSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -184,20 +187,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OpsworksApplicationAppSourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationConfig",
+		"@cdktn/provider-aws.opsworksApplication.OpsworksApplicationConfig",
 		reflect.TypeOf((*OpsworksApplicationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationEnvironment",
+		"@cdktn/provider-aws.opsworksApplication.OpsworksApplicationEnvironment",
 		reflect.TypeOf((*OpsworksApplicationEnvironment)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationEnvironmentList",
+		"@cdktn/provider-aws.opsworksApplication.OpsworksApplicationEnvironmentList",
 		reflect.TypeOf((*OpsworksApplicationEnvironmentList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -214,12 +217,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OpsworksApplicationEnvironmentList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationEnvironmentOutputReference",
+		"@cdktn/provider-aws.opsworksApplication.OpsworksApplicationEnvironmentOutputReference",
 		reflect.TypeOf((*OpsworksApplicationEnvironmentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -253,16 +256,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OpsworksApplicationEnvironmentOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationSslConfiguration",
+		"@cdktn/provider-aws.opsworksApplication.OpsworksApplicationSslConfiguration",
 		reflect.TypeOf((*OpsworksApplicationSslConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationSslConfigurationList",
+		"@cdktn/provider-aws.opsworksApplication.OpsworksApplicationSslConfigurationList",
 		reflect.TypeOf((*OpsworksApplicationSslConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -279,12 +282,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OpsworksApplicationSslConfigurationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationSslConfigurationOutputReference",
+		"@cdktn/provider-aws.opsworksApplication.OpsworksApplicationSslConfigurationOutputReference",
 		reflect.TypeOf((*OpsworksApplicationSslConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificate", GoGetter: "Certificate"},
@@ -318,7 +321,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OpsworksApplicationSslConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

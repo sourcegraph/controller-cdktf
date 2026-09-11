@@ -12,7 +12,7 @@ func (m *jsiiProxy_MemorystoreInstancePscAttachmentDetailsList) validateGetParam
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstancePscAttachmentDetailsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstancePscAttachmentDetailsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_MemorystoreInstancePscAttachmentDetailsList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstancePscAttachmentDetailsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MemorystoreInstancePscAttachmentDetailsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_MemorystoreInstancePscAttachmentDetailsList) validateSetWraps
 	return nil
 }
 
-func validateNewMemorystoreInstancePscAttachmentDetailsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMemorystoreInstancePscAttachmentDetailsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

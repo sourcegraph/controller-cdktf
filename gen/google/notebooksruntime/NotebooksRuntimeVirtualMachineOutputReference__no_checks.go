@@ -40,7 +40,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference) validateGetStr
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference) validatePutVir
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewNotebooksRuntimeVirtualMachineOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNotebooksRuntimeVirtualMachineOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

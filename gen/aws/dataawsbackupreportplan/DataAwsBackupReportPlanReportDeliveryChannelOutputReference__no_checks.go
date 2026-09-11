@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsBackupReportPlanReportDeliveryChannelOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBackupReportPlanReportDeliveryChannelOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsBackupReportPlanReportDeliveryChannelOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBackupReportPlanReportDeliveryChannelOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBackupReportPlanReportDeliveryChannelOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsBackupReportPlanReportDeliveryChannelOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsBackupReportPlanReportDeliveryChannelOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsBackupReportPlanReportDeliveryChannelOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsBackupReportPlanReportDeliveryChannelOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsBackupReportPlanReportDeliveryChannelOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

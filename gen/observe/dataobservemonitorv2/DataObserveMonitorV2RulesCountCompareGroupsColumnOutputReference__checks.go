@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnOutputRefere
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataObserveMonitorV2RulesCountCompareGroupsColumnColumnPath:
 		value := value.(*[]*DataObserveMonitorV2RulesCountCompareGroupsColumnColumnPath)
@@ -114,7 +114,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnOutputRefere
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataObserveMonitorV2RulesCountCompareGroupsColumnColumnPath; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataObserveMonitorV2RulesCountCompareGroupsColumnColumnPath; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnOutputRefere
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataObserveMonitorV2RulesCountCompareGroupsColumnLinkColumn:
 		value := value.(*[]*DataObserveMonitorV2RulesCountCompareGroupsColumnLinkColumn)
@@ -145,16 +145,16 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnOutputRefere
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataObserveMonitorV2RulesCountCompareGroupsColumnLinkColumn; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataObserveMonitorV2RulesCountCompareGroupsColumnLinkColumn; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -227,7 +227,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnOutputRefere
 
 func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *DataObserveMonitorV2RulesCountCompareGroupsColumn:
 		val := val.(*DataObserveMonitorV2RulesCountCompareGroupsColumn)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnOutputRefere
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataObserveMonitorV2RulesCountCompareGroupsColumn; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *DataObserveMonitorV2RulesCountCompareGroupsColumn; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -257,7 +257,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -265,7 +265,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnOutputRefere
 	return nil
 }
 
-func validateNewDataObserveMonitorV2RulesCountCompareGroupsColumnOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataObserveMonitorV2RulesCountCompareGroupsColumnOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

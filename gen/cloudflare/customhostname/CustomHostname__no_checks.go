@@ -56,6 +56,10 @@ func (c *jsiiProxy_CustomHostname) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (c *jsiiProxy_CustomHostname) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomHostname) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_CustomHostname) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (c *jsiiProxy_CustomHostname) validatePutSslParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomHostname) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_CustomHostname) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostname) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CustomHostname) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

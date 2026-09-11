@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleFirebaseAiLogicPromptTemplateLockTimeoutsOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseAiLogicPromptTemplateLockTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFirebaseAiLogicPromptTemplateLockTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseAiLogicPromptTemplateLockTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirebaseAiLogicPromptTemplateLockTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleFirebaseAiLogicPromptTemplateLockTimeoutsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAiLogicPromptTemplateLockTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirebaseAiLogicPromptTemplateLockTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleFirebaseAiLogicPromptTemplateLockTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleFirebaseAiLogicPromptTemplateLockTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

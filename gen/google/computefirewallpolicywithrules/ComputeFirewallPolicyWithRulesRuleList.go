@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computefirewallpolicywithrules/internal"
 )
 
 type ComputeFirewallPolicyWithRulesRuleList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type ComputeFirewallPolicyWithRulesRuleList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ComputeFirewallPolicyWithRulesRuleOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type ComputeFirewallPolicyWithRulesRuleList interface {
 
 // The jsii proxy struct for ComputeFirewallPolicyWithRulesRuleList
 type jsiiProxy_ComputeFirewallPolicyWithRulesRuleList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleList) TerraformAttribute() 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleList) WrapsSet() *bool {
 }
 
 
-func NewComputeFirewallPolicyWithRulesRuleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeFirewallPolicyWithRulesRuleList {
+func NewComputeFirewallPolicyWithRulesRuleList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeFirewallPolicyWithRulesRuleList {
 	_init_.Initialize()
 
 	if err := validateNewComputeFirewallPolicyWithRulesRuleListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewComputeFirewallPolicyWithRulesRuleList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_ComputeFirewallPolicyWithRulesRuleList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeFirewallPolicyWithRules.ComputeFirewallPolicyWithRulesRuleList",
+		"@cdktn/provider-google.computeFirewallPolicyWithRules.ComputeFirewallPolicyWithRulesRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewComputeFirewallPolicyWithRulesRuleList(terraformResource cdktf.IInterpol
 	return &j
 }
 
-func NewComputeFirewallPolicyWithRulesRuleList_Override(c ComputeFirewallPolicyWithRulesRuleList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewComputeFirewallPolicyWithRulesRuleList_Override(c ComputeFirewallPolicyWithRulesRuleList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeFirewallPolicyWithRules.ComputeFirewallPolicyWithRulesRuleList",
+		"@cdktn/provider-google.computeFirewallPolicyWithRules.ComputeFirewallPolicyWithRulesRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleList)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleList)SetWrapsSet(val *bool)
 	)
 }
 
-func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := c.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		c,
@@ -228,8 +231,8 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleList) Get(index *float64) C
 	return returns
 }
 
-func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleList) Resolve(_context cdkt
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (a *jsiiProxy_AmiCopy) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (a *jsiiProxy_AmiCopy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AmiCopy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (a *jsiiProxy_AmiCopy) validatePutEphemeralBlockDeviceParameters(value inte
 }
 
 func (a *jsiiProxy_AmiCopy) validatePutTimeoutsParameters(value *AmiCopyTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_AmiCopy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_AmiCopy) validateSetKmsKeyIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AmiCopy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AmiCopy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

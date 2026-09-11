@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalServiceTelemetryList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalServiceTelemetryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalServiceTelemetryList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalServiceTelemetryList) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalServiceTelemetryList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalServiceTelemetryList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalServiceTelemetryList) valid
 	return nil
 }
 
-func validateNewDataGoogleMonitoringIstioCanonicalServiceTelemetryListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleMonitoringIstioCanonicalServiceTelemetryListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

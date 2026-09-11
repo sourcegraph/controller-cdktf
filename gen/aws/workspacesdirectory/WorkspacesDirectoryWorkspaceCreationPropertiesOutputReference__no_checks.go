@@ -40,11 +40,11 @@ func (w *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference
 	return nil
 }
 
-func validateNewWorkspacesDirectoryWorkspaceCreationPropertiesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWorkspacesDirectoryWorkspaceCreationPropertiesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computesecuritypolicyrule/internal"
 )
 
 type ComputeSecurityPolicyRuleMatchAOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type ComputeSecurityPolicyRuleMatchAOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VersionedExpr() *string
 	SetVersionedExpr(val *string)
 	VersionedExprInput() *string
@@ -51,7 +51,7 @@ type ComputeSecurityPolicyRuleMatchAOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,9 +67,9 @@ type ComputeSecurityPolicyRuleMatchAOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutConfig(value *ComputeSecurityPolicyRuleMatchConfigA)
 	PutExpr(value *ComputeSecurityPolicyRuleMatchExprA)
 	PutExprOptions(value *ComputeSecurityPolicyRuleMatchExprOptionsA)
@@ -79,7 +79,7 @@ type ComputeSecurityPolicyRuleMatchAOutputReference interface {
 	ResetVersionedExpr()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type ComputeSecurityPolicyRuleMatchAOutputReference interface {
 
 // The jsii proxy struct for ComputeSecurityPolicyRuleMatchAOutputReference
 type jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) ComplexObjectIndex() interface{} {
@@ -212,8 +212,8 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) VersionedExpr
 }
 
 
-func NewComputeSecurityPolicyRuleMatchAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeSecurityPolicyRuleMatchAOutputReference {
+func NewComputeSecurityPolicyRuleMatchAOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComputeSecurityPolicyRuleMatchAOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeSecurityPolicyRuleMatchAOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewComputeSecurityPolicyRuleMatchAOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchAOutputReference",
+		"@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewComputeSecurityPolicyRuleMatchAOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewComputeSecurityPolicyRuleMatchAOutputReference_Override(c ComputeSecurityPolicyRuleMatchAOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComputeSecurityPolicyRuleMatchAOutputReference_Override(c ComputeSecurityPolicyRuleMatchAOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchAOutputReference",
+		"@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -314,7 +314,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -365,11 +365,11 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -493,8 +493,8 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) GetStringMapA
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -506,16 +506,16 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) Interpolation
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) ResetVersione
 	)
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

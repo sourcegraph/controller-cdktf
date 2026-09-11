@@ -12,7 +12,7 @@ func (c *jsiiProxy_ContactCenterInsightsAutoLabelingRuleConditionsList) validate
 	return nil
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAutoLabelingRuleConditionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContactCenterInsightsAutoLabelingRuleConditionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRuleConditionsList) validate
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRuleConditionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRuleConditionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRuleConditionsList) validate
 	return nil
 }
 
-func validateNewContactCenterInsightsAutoLabelingRuleConditionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewContactCenterInsightsAutoLabelingRuleConditionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

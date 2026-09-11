@@ -40,11 +40,11 @@ func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) validateGet
 	return nil
 }
 
-func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func validateNewResourceManagerCapabilityTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewResourceManagerCapabilityTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

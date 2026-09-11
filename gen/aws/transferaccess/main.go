@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.transferAccess.TransferAccess",
+		"@cdktn/provider-aws.transferAccess.TransferAccess",
 		reflect.TypeOf((*TransferAccess)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -58,6 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putHomeDirectoryMappings", GoMethod: "PutHomeDirectoryMappings"},
 			_jsii_.MemberMethod{JsiiMethod: "putPosixProfile", GoMethod: "PutPosixProfile"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHomeDirectory", GoMethod: "ResetHomeDirectory"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHomeDirectoryMappings", GoMethod: "ResetHomeDirectoryMappings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHomeDirectoryType", GoMethod: "ResetHomeDirectoryType"},
@@ -79,23 +81,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_TransferAccess{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.transferAccess.TransferAccessConfig",
+		"@cdktn/provider-aws.transferAccess.TransferAccessConfig",
 		reflect.TypeOf((*TransferAccessConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappings",
+		"@cdktn/provider-aws.transferAccess.TransferAccessHomeDirectoryMappings",
 		reflect.TypeOf((*TransferAccessHomeDirectoryMappings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsList",
+		"@cdktn/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsList",
 		reflect.TypeOf((*TransferAccessHomeDirectoryMappingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -112,12 +115,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TransferAccessHomeDirectoryMappingsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference",
+		"@cdktn/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference",
 		reflect.TypeOf((*TransferAccessHomeDirectoryMappingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -148,16 +151,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.transferAccess.TransferAccessPosixProfile",
+		"@cdktn/provider-aws.transferAccess.TransferAccessPosixProfile",
 		reflect.TypeOf((*TransferAccessPosixProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.transferAccess.TransferAccessPosixProfileOutputReference",
+		"@cdktn/provider-aws.transferAccess.TransferAccessPosixProfileOutputReference",
 		reflect.TypeOf((*TransferAccessPosixProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -191,7 +194,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TransferAccessPosixProfileOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

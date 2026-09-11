@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContainerClusterWorkloadIdentityConfigOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterWorkloadIdentityConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterWorkloadIdentityConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterWorkloadIdentityConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterWorkloadIdentityConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_ContainerClusterWorkloadIdentityConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterWorkloadIdentityConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterWorkloadIdentityConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ContainerClusterWorkloadIdentityConfigOutputReference) valida
 	return nil
 }
 
-func validateNewContainerClusterWorkloadIdentityConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerClusterWorkloadIdentityConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

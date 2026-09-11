@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleCloudSchedulerJob) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudSchedulerJob) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudSchedulerJob) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (g *jsiiProxy_GoogleCloudSchedulerJob) validatePutRetryConfigParameters(val
 }
 
 func (g *jsiiProxy_GoogleCloudSchedulerJob) validatePutTimeoutsParameters(value *GoogleCloudSchedulerJobTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudSchedulerJob) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleCloudSchedulerJob) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudSchedulerJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleCloudSchedulerJob) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationLogStreamsList) va
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationLogStreamsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationLogStreamsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationLogStreamsList) va
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationLogStreamsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationLogStreamsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationLogStreamsList) va
 	return nil
 }
 
-func validateNewOpsworksGangliaLayerCloudwatchConfigurationLogStreamsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewOpsworksGangliaLayerCloudwatchConfigurationLogStreamsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

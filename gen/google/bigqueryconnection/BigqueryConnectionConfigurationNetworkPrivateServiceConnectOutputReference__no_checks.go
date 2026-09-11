@@ -40,11 +40,11 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOu
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOu
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

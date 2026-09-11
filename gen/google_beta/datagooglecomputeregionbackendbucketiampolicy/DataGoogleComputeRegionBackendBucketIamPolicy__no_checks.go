@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleComputeRegionBackendBucketIamPolicy) validateOverri
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleComputeRegionBackendBucketIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleComputeRegionBackendBucketIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendBucketIamPolicy) validateSetIdP
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionBackendBucketIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleComputeRegionBackendBucketIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

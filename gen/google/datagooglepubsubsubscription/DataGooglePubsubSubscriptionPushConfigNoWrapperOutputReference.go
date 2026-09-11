@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglepubsubsubscription/internal"
 )
 
 type DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,16 +34,16 @@ type DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	WriteMetadata() cdktf.IResolvable
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	WriteMetadata() cdktn.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -59,12 +59,12 @@ type DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -74,7 +74,7 @@ type DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference interface {
 
 // The jsii proxy struct for DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference
 type jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) ComplexObjectIndex() interface{} {
@@ -137,8 +137,8 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) WriteMetadata() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) WriteMetadata() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"writeMetadata",
@@ -158,7 +158,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReferenc
 }
 
 
-func NewDataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference {
+func NewDataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGooglePubsubSubscriptionPushConfigNoWrapperOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -167,7 +167,7 @@ func NewDataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference(terraform
 	j := jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference",
+		"@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -175,11 +175,11 @@ func NewDataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference(terraform
 	return &j
 }
 
-func NewDataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference_Override(d DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference_Override(d DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference",
+		"@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -229,7 +229,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -269,11 +269,11 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -397,8 +397,8 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -410,24 +410,24 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -435,7 +435,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

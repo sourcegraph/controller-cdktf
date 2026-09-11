@@ -40,11 +40,11 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Meta
 	return nil
 }
 
-func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Meta
 	return nil
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewStorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewStorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsConfiguration
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsConfiguration
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

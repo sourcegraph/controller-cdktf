@@ -12,7 +12,7 @@ func (e *jsiiProxy_EksClusterCertificateAuthorityList) validateGetParameters(ind
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterCertificateAuthorityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksClusterCertificateAuthorityList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_EksClusterCertificateAuthorityList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_EksClusterCertificateAuthorityList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EksClusterCertificateAuthorityList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_EksClusterCertificateAuthorityList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewEksClusterCertificateAuthorityListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEksClusterCertificateAuthorityListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

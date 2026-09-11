@@ -40,11 +40,11 @@ func (q *jsiiProxy_QuicksightDataSourceVpcConnectionPropertiesOutputReference) v
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceVpcConnectionPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSourceVpcConnectionPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceVpcConnectionPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSourceVpcConnectionPropertiesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_QuicksightDataSourceVpcConnectionPropertiesOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceVpcConnectionPropertiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_QuicksightDataSourceVpcConnectionPropertiesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_QuicksightDataSourceVpcConnectionPropertiesOutputReference) v
 	return nil
 }
 
-func validateNewQuicksightDataSourceVpcConnectionPropertiesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewQuicksightDataSourceVpcConnectionPropertiesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

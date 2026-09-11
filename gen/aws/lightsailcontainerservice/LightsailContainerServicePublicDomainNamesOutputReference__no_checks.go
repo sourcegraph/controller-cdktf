@@ -40,7 +40,7 @@ func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) va
 	return nil
 }
 
-func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) va
 	return nil
 }
 
-func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLightsailContainerServicePublicDomainNamesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLightsailContainerServicePublicDomainNamesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

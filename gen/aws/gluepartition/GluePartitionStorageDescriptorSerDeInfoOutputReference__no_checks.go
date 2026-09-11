@@ -40,11 +40,11 @@ func (g *jsiiProxy_GluePartitionStorageDescriptorSerDeInfoOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GluePartitionStorageDescriptorSerDeInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GluePartitionStorageDescriptorSerDeInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GluePartitionStorageDescriptorSerDeInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GluePartitionStorageDescriptorSerDeInfoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GluePartitionStorageDescriptorSerDeInfoOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GluePartitionStorageDescriptorSerDeInfoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GluePartitionStorageDescriptorSerDeInfoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGluePartitionStorageDescriptorSerDeInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGluePartitionStorageDescriptorSerDeInfoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateGetStringM
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validatePutVolumes
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -108,7 +108,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -124,7 +124,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetWaitFor
 	return nil
 }
 
-func validateNewCloudbuildTriggerBuildStepOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCloudbuildTriggerBuildStepOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

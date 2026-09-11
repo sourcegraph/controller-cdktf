@@ -56,6 +56,10 @@ func (s *jsiiProxy_SpotFleetRequest) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_SpotFleetRequest) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpotFleetRequest) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (s *jsiiProxy_SpotFleetRequest) validatePutSpotMaintenanceStrategiesParamet
 }
 
 func (s *jsiiProxy_SpotFleetRequest) validatePutTimeoutsParameters(value *SpotFleetRequestTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpotFleetRequest) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -140,7 +148,7 @@ func (j *jsiiProxy_SpotFleetRequest) validateSetInstancePoolsToUseCountParameter
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequest) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SpotFleetRequest) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

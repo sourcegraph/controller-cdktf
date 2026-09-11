@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleNetappHostGroup) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetappHostGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappHostGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleNetappHostGroup) validateOverrideLogicalIdParameters(ne
 }
 
 func (g *jsiiProxy_GoogleNetappHostGroup) validatePutTimeoutsParameters(value *GoogleNetappHostGroupTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappHostGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleNetappHostGroup) validateSetLabelsParameters(val *map[s
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappHostGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleNetappHostGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

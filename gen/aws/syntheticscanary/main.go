@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary",
+		"@cdktn/provider-aws.syntheticsCanary.SyntheticsCanary",
 		reflect.TypeOf((*SyntheticsCanary)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -50,6 +50,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -64,6 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSchedule", GoMethod: "PutSchedule"},
 			_jsii_.MemberMethod{JsiiMethod: "putVpcConfig", GoMethod: "PutVpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetArtifactConfig", GoMethod: "ResetArtifactConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeleteLambda", GoMethod: "ResetDeleteLambda"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFailureRetentionPeriod", GoMethod: "ResetFailureRetentionPeriod"},
@@ -113,21 +115,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfig", GoGetter: "VpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfigInput", GoGetter: "VpcConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zipFile", GoGetter: "ZipFile"},
 			_jsii_.MemberProperty{JsiiProperty: "zipFileInput", GoGetter: "ZipFileInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsCanary{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfig",
+		"@cdktn/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfig",
 		reflect.TypeOf((*SyntheticsCanaryArtifactConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfigOutputReference",
+		"@cdktn/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfigOutputReference",
 		reflect.TypeOf((*SyntheticsCanaryArtifactConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -158,16 +161,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsCanaryArtifactConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfigS3Encryption",
+		"@cdktn/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfigS3Encryption",
 		reflect.TypeOf((*SyntheticsCanaryArtifactConfigS3Encryption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfigS3EncryptionOutputReference",
+		"@cdktn/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfigS3EncryptionOutputReference",
 		reflect.TypeOf((*SyntheticsCanaryArtifactConfigS3EncryptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -200,20 +203,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsCanaryArtifactConfigS3EncryptionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryConfig",
+		"@cdktn/provider-aws.syntheticsCanary.SyntheticsCanaryConfig",
 		reflect.TypeOf((*SyntheticsCanaryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryRunConfig",
+		"@cdktn/provider-aws.syntheticsCanary.SyntheticsCanaryRunConfig",
 		reflect.TypeOf((*SyntheticsCanaryRunConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryRunConfigOutputReference",
+		"@cdktn/provider-aws.syntheticsCanary.SyntheticsCanaryRunConfigOutputReference",
 		reflect.TypeOf((*SyntheticsCanaryRunConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeTracing", GoGetter: "ActiveTracing"},
@@ -252,16 +255,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsCanaryRunConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanarySchedule",
+		"@cdktn/provider-aws.syntheticsCanary.SyntheticsCanarySchedule",
 		reflect.TypeOf((*SyntheticsCanarySchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryScheduleOutputReference",
+		"@cdktn/provider-aws.syntheticsCanary.SyntheticsCanaryScheduleOutputReference",
 		reflect.TypeOf((*SyntheticsCanaryScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -293,16 +296,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsCanaryScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryTimeline",
+		"@cdktn/provider-aws.syntheticsCanary.SyntheticsCanaryTimeline",
 		reflect.TypeOf((*SyntheticsCanaryTimeline)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryTimelineList",
+		"@cdktn/provider-aws.syntheticsCanary.SyntheticsCanaryTimelineList",
 		reflect.TypeOf((*SyntheticsCanaryTimelineList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -318,12 +321,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsCanaryTimelineList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryTimelineOutputReference",
+		"@cdktn/provider-aws.syntheticsCanary.SyntheticsCanaryTimelineOutputReference",
 		reflect.TypeOf((*SyntheticsCanaryTimelineOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -354,16 +357,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsCanaryTimelineOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryVpcConfig",
+		"@cdktn/provider-aws.syntheticsCanary.SyntheticsCanaryVpcConfig",
 		reflect.TypeOf((*SyntheticsCanaryVpcConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryVpcConfigOutputReference",
+		"@cdktn/provider-aws.syntheticsCanary.SyntheticsCanaryVpcConfigOutputReference",
 		reflect.TypeOf((*SyntheticsCanaryVpcConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -397,7 +400,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsCanaryVpcConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GluePartitionStorageDescriptorColumnsList) validateGetParamet
 	return nil
 }
 
-func (g *jsiiProxy_GluePartitionStorageDescriptorColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GluePartitionStorageDescriptorColumnsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GluePartitionStorageDescriptorColumnsList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_GluePartitionStorageDescriptorColumnsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GluePartitionStorageDescriptorColumnsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GluePartitionStorageDescriptorColumnsList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewGluePartitionStorageDescriptorColumnsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGluePartitionStorageDescriptorColumnsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsO
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsO
 	return nil
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewKmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewKmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

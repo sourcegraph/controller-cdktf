@@ -40,7 +40,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) validateGet
 	return nil
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) validatePut
 	return nil
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameOutputReference) validateSet
 	return nil
 }
 
-func validateNewReportSystemHealthReviewTimeFrameOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewReportSystemHealthReviewTimeFrameOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

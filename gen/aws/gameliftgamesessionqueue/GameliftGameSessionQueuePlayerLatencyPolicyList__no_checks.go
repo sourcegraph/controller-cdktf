@@ -12,7 +12,7 @@ func (g *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyList) validateGetP
 	return nil
 }
 
-func (g *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyList) validateSetW
 	return nil
 }
 
-func validateNewGameliftGameSessionQueuePlayerLatencyPolicyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGameliftGameSessionQueuePlayerLatencyPolicyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

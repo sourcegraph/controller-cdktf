@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/managedkafkaconnectcluster/internal"
 )
 
 type ManagedKafkaConnectClusterCapacityConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type ManagedKafkaConnectClusterCapacityConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VcpuCount() *string
 	SetVcpuCount(val *string)
 	VcpuCountInput() *string
@@ -48,7 +48,7 @@ type ManagedKafkaConnectClusterCapacityConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type ManagedKafkaConnectClusterCapacityConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type ManagedKafkaConnectClusterCapacityConfigOutputReference interface {
 
 // The jsii proxy struct for ManagedKafkaConnectClusterCapacityConfigOutputReference
 type jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) Vcpu
 }
 
 
-func NewManagedKafkaConnectClusterCapacityConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ManagedKafkaConnectClusterCapacityConfigOutputReference {
+func NewManagedKafkaConnectClusterCapacityConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ManagedKafkaConnectClusterCapacityConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewManagedKafkaConnectClusterCapacityConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewManagedKafkaConnectClusterCapacityConfigOutputReference(terraformResourc
 	j := jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.managedKafkaConnectCluster.ManagedKafkaConnectClusterCapacityConfigOutputReference",
+		"@cdktn/provider-google.managedKafkaConnectCluster.ManagedKafkaConnectClusterCapacityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewManagedKafkaConnectClusterCapacityConfigOutputReference(terraformResourc
 	return &j
 }
 
-func NewManagedKafkaConnectClusterCapacityConfigOutputReference_Override(m ManagedKafkaConnectClusterCapacityConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewManagedKafkaConnectClusterCapacityConfigOutputReference_Override(m ManagedKafkaConnectClusterCapacityConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.managedKafkaConnectCluster.ManagedKafkaConnectClusterCapacityConfigOutputReference",
+		"@cdktn/provider-google.managedKafkaConnectCluster.ManagedKafkaConnectClusterCapacityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) GetA
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -454,8 +454,8 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) GetS
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -467,24 +467,24 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) Inte
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) Reso
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

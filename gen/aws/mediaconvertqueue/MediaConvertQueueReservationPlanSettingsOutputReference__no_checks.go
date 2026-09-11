@@ -40,11 +40,11 @@ func (m *jsiiProxy_MediaConvertQueueReservationPlanSettingsOutputReference) vali
 	return nil
 }
 
-func (m *jsiiProxy_MediaConvertQueueReservationPlanSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MediaConvertQueueReservationPlanSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MediaConvertQueueReservationPlanSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MediaConvertQueueReservationPlanSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_MediaConvertQueueReservationPlanSettingsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_MediaConvertQueueReservationPlanSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MediaConvertQueueReservationPlanSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMediaConvertQueueReservationPlanSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMediaConvertQueueReservationPlanSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

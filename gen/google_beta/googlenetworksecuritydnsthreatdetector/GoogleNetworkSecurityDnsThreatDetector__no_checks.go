@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleNetworkSecurityDnsThreatDetector) validateInterpolation
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityDnsThreatDetector) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityDnsThreatDetector) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleNetworkSecurityDnsThreatDetector) validateOverrideLogic
 }
 
 func (g *jsiiProxy_GoogleNetworkSecurityDnsThreatDetector) validatePutTimeoutsParameters(value *GoogleNetworkSecurityDnsThreatDetectorTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityDnsThreatDetector) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityDnsThreatDetector) validateSetLabelsPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityDnsThreatDetector) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleNetworkSecurityDnsThreatDetector) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

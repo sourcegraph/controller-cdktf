@@ -40,11 +40,11 @@ func (v *jsiiProxy_VectorSearchCollectionVectorSchemaSparseVectorOutputReference
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchCollectionVectorSchemaSparseVectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VectorSearchCollectionVectorSchemaSparseVectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchCollectionVectorSchemaSparseVectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VectorSearchCollectionVectorSchemaSparseVectorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_VectorSearchCollectionVectorSchemaSparseVectorOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchCollectionVectorSchemaSparseVectorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VectorSearchCollectionVectorSchemaSparseVectorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewVectorSearchCollectionVectorSchemaSparseVectorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVectorSearchCollectionVectorSchemaSparseVectorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

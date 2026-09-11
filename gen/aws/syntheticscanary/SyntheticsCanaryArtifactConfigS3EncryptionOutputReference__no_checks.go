@@ -40,11 +40,11 @@ func (s *jsiiProxy_SyntheticsCanaryArtifactConfigS3EncryptionOutputReference) va
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCanaryArtifactConfigS3EncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsCanaryArtifactConfigS3EncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCanaryArtifactConfigS3EncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsCanaryArtifactConfigS3EncryptionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_SyntheticsCanaryArtifactConfigS3EncryptionOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsCanaryArtifactConfigS3EncryptionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SyntheticsCanaryArtifactConfigS3EncryptionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSyntheticsCanaryArtifactConfigS3EncryptionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSyntheticsCanaryArtifactConfigS3EncryptionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (c *jsiiProxy_ConfigConfigurationRecorder) validateInterpolationForAttribut
 	return nil
 }
 
+func (c *jsiiProxy_ConfigConfigurationRecorder) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigConfigurationRecorder) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ConfigConfigurationRecorder) validateOverrideLogicalIdParamet
 }
 
 func (c *jsiiProxy_ConfigConfigurationRecorder) validatePutRecordingGroupParameters(value *ConfigConfigurationRecorderRecordingGroup) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigConfigurationRecorder) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_ConfigConfigurationRecorder) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorder) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ConfigConfigurationRecorder) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

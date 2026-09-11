@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsWorkspacesDirectorySelfServicePermissionsList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsWorkspacesDirectorySelfServicePermissionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsWorkspacesDirectorySelfServicePermissionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsWorkspacesDirectorySelfServicePermissionsList) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesDirectorySelfServicePermissionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsWorkspacesDirectorySelfServicePermissionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsWorkspacesDirectorySelfServicePermissionsList) validat
 	return nil
 }
 
-func validateNewDataAwsWorkspacesDirectorySelfServicePermissionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsWorkspacesDirectorySelfServicePermissionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

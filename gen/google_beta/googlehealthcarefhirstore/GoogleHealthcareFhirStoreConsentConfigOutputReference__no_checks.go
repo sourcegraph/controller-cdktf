@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigOutputReference) valida
 	return nil
 }
 
-func validateNewGoogleHealthcareFhirStoreConsentConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleHealthcareFhirStoreConsentConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

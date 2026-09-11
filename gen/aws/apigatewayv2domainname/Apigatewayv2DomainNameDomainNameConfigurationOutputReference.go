@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/apigatewayv2domainname/internal"
 )
 
 type Apigatewayv2DomainNameDomainNameConfigurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CertificateArn() *string
 	SetCertificateArn(val *string)
 	CertificateArnInput() *string
@@ -48,15 +48,15 @@ type Apigatewayv2DomainNameDomainNameConfigurationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,13 +72,13 @@ type Apigatewayv2DomainNameDomainNameConfigurationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetOwnershipVerificationCertificateArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type Apigatewayv2DomainNameDomainNameConfigurationOutputReference interface {
 
 // The jsii proxy struct for Apigatewayv2DomainNameDomainNameConfigurationOutputReference
 type jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) CertificateArn() *string {
@@ -251,8 +251,8 @@ func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -262,7 +262,7 @@ func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 }
 
 
-func NewApigatewayv2DomainNameDomainNameConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Apigatewayv2DomainNameDomainNameConfigurationOutputReference {
+func NewApigatewayv2DomainNameDomainNameConfigurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) Apigatewayv2DomainNameDomainNameConfigurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewApigatewayv2DomainNameDomainNameConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -271,7 +271,7 @@ func NewApigatewayv2DomainNameDomainNameConfigurationOutputReference(terraformRe
 	j := jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameDomainNameConfigurationOutputReference",
+		"@cdktn/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameDomainNameConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -279,11 +279,11 @@ func NewApigatewayv2DomainNameDomainNameConfigurationOutputReference(terraformRe
 	return &j
 }
 
-func NewApigatewayv2DomainNameDomainNameConfigurationOutputReference_Override(a Apigatewayv2DomainNameDomainNameConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewApigatewayv2DomainNameDomainNameConfigurationOutputReference_Override(a Apigatewayv2DomainNameDomainNameConfigurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameDomainNameConfigurationOutputReference",
+		"@cdktn/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameDomainNameConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -377,7 +377,7 @@ func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,11 +417,11 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -545,8 +545,8 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -558,16 +558,16 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	return returns
 }
 
-func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -582,8 +582,8 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	)
 }
 
-func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -591,7 +591,7 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

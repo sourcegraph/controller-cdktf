@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataTfeGithubAppInstallation) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (d *jsiiProxy_DataTfeGithubAppInstallation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataTfeGithubAppInstallation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataTfeGithubAppInstallation) validateSetInstallationIdParame
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeGithubAppInstallation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataTfeGithubAppInstallation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleContainerAnalysisOccurrence) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAnalysisOccurrence) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAnalysisOccurrence) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleContainerAnalysisOccurrence) validatePutAttestationPara
 }
 
 func (g *jsiiProxy_GoogleContainerAnalysisOccurrence) validatePutTimeoutsParameters(value *GoogleContainerAnalysisOccurrenceTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAnalysisOccurrence) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisOccurrence) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisOccurrence) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleContainerAnalysisOccurrence) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

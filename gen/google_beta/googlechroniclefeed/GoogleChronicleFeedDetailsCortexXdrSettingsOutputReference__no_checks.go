@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsCortexXdrSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsCortexXdrSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

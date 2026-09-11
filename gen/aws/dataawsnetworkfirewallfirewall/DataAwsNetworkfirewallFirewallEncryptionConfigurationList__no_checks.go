@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewallEncryptionConfigurationList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsNetworkfirewallFirewallEncryptionConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallEncryptionConfigurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewallEncryptionConfigurationList) va
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNetworkfirewallFirewallEncryptionConfigurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallEncryptionConfigurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewallEncryptionConfigurationList) va
 	return nil
 }
 
-func validateNewDataAwsNetworkfirewallFirewallEncryptionConfigurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsNetworkfirewallFirewallEncryptionConfigurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

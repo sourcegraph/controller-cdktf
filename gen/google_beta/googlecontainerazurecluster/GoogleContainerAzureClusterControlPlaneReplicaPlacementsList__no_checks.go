@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleContainerAzureClusterControlPlaneReplicaPlacementsList)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAzureClusterControlPlaneReplicaPlacementsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerAzureClusterControlPlaneReplicaPlacementsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleContainerAzureClusterControlPlaneReplicaPlacementsList)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureClusterControlPlaneReplicaPlacementsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerAzureClusterControlPlaneReplicaPlacementsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleContainerAzureClusterControlPlaneReplicaPlacementsList)
 	return nil
 }
 
-func validateNewGoogleContainerAzureClusterControlPlaneReplicaPlacementsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleContainerAzureClusterControlPlaneReplicaPlacementsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

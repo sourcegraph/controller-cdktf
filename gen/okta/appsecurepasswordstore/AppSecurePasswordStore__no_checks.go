@@ -56,6 +56,10 @@ func (a *jsiiProxy_AppSecurePasswordStore) validateInterpolationForAttributePara
 	return nil
 }
 
+func (a *jsiiProxy_AppSecurePasswordStore) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSecurePasswordStore) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (a *jsiiProxy_AppSecurePasswordStore) validateOverrideLogicalIdParameters(n
 }
 
 func (a *jsiiProxy_AppSecurePasswordStore) validatePutTimeoutsParameters(value *AppSecurePasswordStoreTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppSecurePasswordStore) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -148,7 +156,7 @@ func (j *jsiiProxy_AppSecurePasswordStore) validateSetLabelParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AppSecurePasswordStore) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference) validateG
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference) validateS
 	return nil
 }
 
-func validateNewAppmeshRouteSpecTcpRouteTimeoutIdleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppmeshRouteSpecTcpRouteTimeoutIdleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

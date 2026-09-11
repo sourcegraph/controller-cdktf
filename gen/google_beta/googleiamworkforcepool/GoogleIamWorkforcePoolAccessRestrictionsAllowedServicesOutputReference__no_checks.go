@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutput
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

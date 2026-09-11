@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBigqueryTableTableConstraintsPrimaryKeyOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryTableTableConstraintsPrimaryKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBigqueryTableTableConstraintsPrimaryKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryTableTableConstraintsPrimaryKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigqueryTableTableConstraintsPrimaryKeyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleBigqueryTableTableConstraintsPrimaryKeyOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableTableConstraintsPrimaryKeyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigqueryTableTableConstraintsPrimaryKeyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleBigqueryTableTableConstraintsPrimaryKeyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBigqueryTableTableConstraintsPrimaryKeyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GlueCrawlerS3TargetList) validateGetParameters(index *float64
 	return nil
 }
 
-func (g *jsiiProxy_GlueCrawlerS3TargetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCrawlerS3TargetList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GlueCrawlerS3TargetList) validateSetTerraformAttributeParamet
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerS3TargetList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GlueCrawlerS3TargetList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GlueCrawlerS3TargetList) validateSetWrapsSetParameters(val *b
 	return nil
 }
 
-func validateNewGlueCrawlerS3TargetListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGlueCrawlerS3TargetListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

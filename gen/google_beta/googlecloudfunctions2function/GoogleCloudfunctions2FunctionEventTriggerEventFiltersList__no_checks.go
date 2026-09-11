@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerEventFiltersList) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerEventFiltersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerEventFiltersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerEventFiltersList) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerEventFiltersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerEventFiltersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerEventFiltersList) va
 	return nil
 }
 
-func validateNewGoogleCloudfunctions2FunctionEventTriggerEventFiltersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCloudfunctions2FunctionEventTriggerEventFiltersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

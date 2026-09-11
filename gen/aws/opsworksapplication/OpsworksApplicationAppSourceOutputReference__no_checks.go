@@ -40,11 +40,11 @@ func (o *jsiiProxy_OpsworksApplicationAppSourceOutputReference) validateGetStrin
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksApplicationAppSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpsworksApplicationAppSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksApplicationAppSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksApplicationAppSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_OpsworksApplicationAppSourceOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksApplicationAppSourceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksApplicationAppSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_OpsworksApplicationAppSourceOutputReference) validateSetUsern
 	return nil
 }
 
-func validateNewOpsworksApplicationAppSourceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewOpsworksApplicationAppSourceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

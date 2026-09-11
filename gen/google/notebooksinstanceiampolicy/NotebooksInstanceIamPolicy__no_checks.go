@@ -56,6 +56,10 @@ func (n *jsiiProxy_NotebooksInstanceIamPolicy) validateInterpolationForAttribute
 	return nil
 }
 
+func (n *jsiiProxy_NotebooksInstanceIamPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksInstanceIamPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (n *jsiiProxy_NotebooksInstanceIamPolicy) validateMoveToIdParameters(id *st
 }
 
 func (n *jsiiProxy_NotebooksInstanceIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotebooksInstanceIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_NotebooksInstanceIamPolicy) validateSetInstanceNameParameters
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksInstanceIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NotebooksInstanceIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

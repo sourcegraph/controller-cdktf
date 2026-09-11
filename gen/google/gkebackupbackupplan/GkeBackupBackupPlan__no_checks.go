@@ -56,6 +56,10 @@ func (g *jsiiProxy_GkeBackupBackupPlan) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GkeBackupBackupPlan) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeBackupBackupPlan) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (g *jsiiProxy_GkeBackupBackupPlan) validatePutRetentionPolicyParameters(val
 }
 
 func (g *jsiiProxy_GkeBackupBackupPlan) validatePutTimeoutsParameters(value *GkeBackupBackupPlanTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeBackupBackupPlan) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_GkeBackupBackupPlan) validateSetLabelsParameters(val *map[str
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlan) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GkeBackupBackupPlan) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

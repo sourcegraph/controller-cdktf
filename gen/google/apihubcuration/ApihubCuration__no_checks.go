@@ -56,6 +56,10 @@ func (a *jsiiProxy_ApihubCuration) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_ApihubCuration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApihubCuration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (a *jsiiProxy_ApihubCuration) validatePutEndpointParameters(value *ApihubCu
 }
 
 func (a *jsiiProxy_ApihubCuration) validatePutTimeoutsParameters(value *ApihubCurationTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApihubCuration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_ApihubCuration) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ApihubCuration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ApihubCuration) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

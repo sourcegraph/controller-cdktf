@@ -12,7 +12,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingList) validateGetPar
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingList) validateSetWra
 	return nil
 }
 
-func validateNewImagebuilderImageRecipeBlockDeviceMappingListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewImagebuilderImageRecipeBlockDeviceMappingListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

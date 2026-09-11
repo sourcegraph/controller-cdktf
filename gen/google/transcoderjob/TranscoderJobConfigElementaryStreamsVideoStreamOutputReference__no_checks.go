@@ -40,7 +40,7 @@ func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsVideoStreamOutputReferenc
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsVideoStreamOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsVideoStreamOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsVideoStreamOutputReferenc
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsVideoStreamOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsVideoStreamOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsVideoStreamOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsVideoStreamOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsVideoStreamOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTranscoderJobConfigElementaryStreamsVideoStreamOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTranscoderJobConfigElementaryStreamsVideoStreamOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

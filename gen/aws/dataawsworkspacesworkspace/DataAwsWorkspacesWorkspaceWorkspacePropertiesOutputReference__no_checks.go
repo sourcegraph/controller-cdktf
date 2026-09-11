@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsWorkspacesWorkspaceWorkspacePropertiesOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsWorkspacesWorkspaceWorkspacePropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsWorkspacesWorkspaceWorkspacePropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsWorkspacesWorkspaceWorkspacePropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsWorkspacesWorkspaceWorkspacePropertiesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsWorkspacesWorkspaceWorkspacePropertiesOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesWorkspaceWorkspacePropertiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsWorkspacesWorkspaceWorkspacePropertiesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsWorkspacesWorkspaceWorkspacePropertiesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsWorkspacesWorkspaceWorkspacePropertiesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

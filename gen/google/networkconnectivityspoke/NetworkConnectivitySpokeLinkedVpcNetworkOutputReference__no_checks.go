@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference) vali
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference) vali
 	return nil
 }
 
-func validateNewNetworkConnectivitySpokeLinkedVpcNetworkOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkConnectivitySpokeLinkedVpcNetworkOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

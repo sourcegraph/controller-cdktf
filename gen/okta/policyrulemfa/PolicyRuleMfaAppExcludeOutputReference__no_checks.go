@@ -40,11 +40,11 @@ func (p *jsiiProxy_PolicyRuleMfaAppExcludeOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleMfaAppExcludeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PolicyRuleMfaAppExcludeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleMfaAppExcludeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyRuleMfaAppExcludeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_PolicyRuleMfaAppExcludeOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleMfaAppExcludeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PolicyRuleMfaAppExcludeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_PolicyRuleMfaAppExcludeOutputReference) validateSetTypeParame
 	return nil
 }
 
-func validateNewPolicyRuleMfaAppExcludeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPolicyRuleMfaAppExcludeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

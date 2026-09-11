@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglepubsubsubscription/internal"
 )
 
 type DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,17 +34,17 @@ type DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference int
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UseTopicSchema() cdktf.IResolvable
-	WriteMetadata() cdktf.IResolvable
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UseTopicSchema() cdktn.IResolvable
+	WriteMetadata() cdktn.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,12 +60,12 @@ type DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference int
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -75,7 +75,7 @@ type DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference int
 
 // The jsii proxy struct for DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference
 type jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) UseTopicSchema() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) UseTopicSchema() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"useTopicSchema",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) WriteMetadata() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) WriteMetadata() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"writeMetadata",
@@ -169,7 +169,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutpu
 }
 
 
-func NewDataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference {
+func NewDataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -178,7 +178,7 @@ func NewDataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference(
 	j := jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference",
+		"@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -186,11 +186,11 @@ func NewDataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference(
 	return &j
 }
 
-func NewDataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference_Override(d DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference_Override(d DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference",
+		"@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -240,7 +240,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,11 +280,11 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -408,8 +408,8 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -421,24 +421,24 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -446,7 +446,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutpu
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

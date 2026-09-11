@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontainernodepool/internal"
 )
 
 type GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -52,15 +52,15 @@ type GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputR
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputR
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetImagefsAvailable()
 	ResetImagefsInodesFree()
 	ResetMemoryAvailable()
@@ -87,7 +87,7 @@ type GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputR
 	ResetPidAvailable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputR
 
 // The jsii proxy struct for GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference
 type jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference) ComplexObjectIndex() interface{} {
@@ -280,8 +280,8 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimum
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -291,7 +291,7 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimum
 }
 
 
-func NewGoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference {
+func NewGoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -300,7 +300,7 @@ func NewGoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutp
 	j := jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference",
+		"@cdktn/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -308,11 +308,11 @@ func NewGoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutp
 	return &j
 }
 
-func NewGoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference_Override(g GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference_Override(g GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference",
+		"@cdktn/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -428,7 +428,7 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimum
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,11 +468,11 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimum
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -596,8 +596,8 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimum
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -609,16 +609,16 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimum
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -673,8 +673,8 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimum
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -682,7 +682,7 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigEvictionMinimum
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cesapp/internal"
 )
 
 type CesAppLoggingSettingsAudioRecordingConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type CesAppLoggingSettingsAudioRecordingConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type CesAppLoggingSettingsAudioRecordingConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetGcsBucket()
 	ResetGcsPathPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type CesAppLoggingSettingsAudioRecordingConfigOutputReference interface {
 
 // The jsii proxy struct for CesAppLoggingSettingsAudioRecordingConfigOutputReference
 type jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) Ter
 }
 
 
-func NewCesAppLoggingSettingsAudioRecordingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CesAppLoggingSettingsAudioRecordingConfigOutputReference {
+func NewCesAppLoggingSettingsAudioRecordingConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CesAppLoggingSettingsAudioRecordingConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCesAppLoggingSettingsAudioRecordingConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewCesAppLoggingSettingsAudioRecordingConfigOutputReference(terraformResour
 	j := jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsAudioRecordingConfigOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppLoggingSettingsAudioRecordingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewCesAppLoggingSettingsAudioRecordingConfigOutputReference(terraformResour
 	return &j
 }
 
-func NewCesAppLoggingSettingsAudioRecordingConfigOutputReference_Override(c CesAppLoggingSettingsAudioRecordingConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCesAppLoggingSettingsAudioRecordingConfigOutputReference_Override(c CesAppLoggingSettingsAudioRecordingConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsAudioRecordingConfigOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppLoggingSettingsAudioRecordingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (c *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) Get
 	return returns
 }
 
-func (c *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -456,8 +456,8 @@ func (c *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) Get
 	return returns
 }
 
-func (c *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -469,16 +469,16 @@ func (c *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) Int
 	return returns
 }
 
-func (c *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (c *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) Res
 	)
 }
 
-func (c *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (c *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) Res
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

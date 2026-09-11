@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewDataGoogleDnsKeysZoneSigningKeysListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleDnsKeysZoneSigningKeysListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

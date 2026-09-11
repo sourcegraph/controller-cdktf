@@ -40,7 +40,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateGetString
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -144,7 +144,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutThousa
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -164,11 +164,11 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSloObjectiveCountMetricsBadOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSloObjectiveCountMetricsBadOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

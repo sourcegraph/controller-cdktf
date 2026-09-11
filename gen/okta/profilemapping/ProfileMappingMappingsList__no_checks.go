@@ -12,7 +12,7 @@ func (p *jsiiProxy_ProfileMappingMappingsList) validateGetParameters(index *floa
 	return nil
 }
 
-func (p *jsiiProxy_ProfileMappingMappingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProfileMappingMappingsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ProfileMappingMappingsList) validateSetTerraformAttributePara
 	return nil
 }
 
-func (j *jsiiProxy_ProfileMappingMappingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ProfileMappingMappingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ProfileMappingMappingsList) validateSetWrapsSetParameters(val
 	return nil
 }
 
-func validateNewProfileMappingMappingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewProfileMappingMappingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

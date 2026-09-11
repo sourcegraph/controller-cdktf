@@ -40,11 +40,11 @@ func (m *jsiiProxy_MedialiveMultiplexMultiplexSettingsOutputReference) validateG
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveMultiplexMultiplexSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MedialiveMultiplexMultiplexSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveMultiplexMultiplexSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveMultiplexMultiplexSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_MedialiveMultiplexMultiplexSettingsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveMultiplexMultiplexSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MedialiveMultiplexMultiplexSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_MedialiveMultiplexMultiplexSettingsOutputReference) validateS
 	return nil
 }
 
-func validateNewMedialiveMultiplexMultiplexSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMedialiveMultiplexMultiplexSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

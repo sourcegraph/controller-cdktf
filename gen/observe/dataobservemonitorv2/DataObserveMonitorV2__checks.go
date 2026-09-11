@@ -8,7 +8,7 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DataObserveMonitorV2) validateAddOverrideParameters(path *string, value interface{}) error {
@@ -116,7 +116,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) validatePutActionsParameters(value inte
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataObserveMonitorV2Actions:
 		value := value.(*[]*DataObserveMonitorV2Actions)
@@ -135,7 +135,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) validatePutActionsParameters(value inte
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataObserveMonitorV2Actions; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataObserveMonitorV2Actions; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -147,7 +147,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) validatePutGroupingsParameters(value in
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataObserveMonitorV2Groupings:
 		value := value.(*[]*DataObserveMonitorV2Groupings)
@@ -166,7 +166,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) validatePutGroupingsParameters(value in
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataObserveMonitorV2Groupings; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataObserveMonitorV2Groupings; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -178,7 +178,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) validatePutNoDataRulesParameters(value 
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataObserveMonitorV2NoDataRules:
 		value := value.(*[]*DataObserveMonitorV2NoDataRules)
@@ -197,7 +197,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) validatePutNoDataRulesParameters(value 
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataObserveMonitorV2NoDataRules; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataObserveMonitorV2NoDataRules; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -209,7 +209,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) validatePutRulesParameters(value interf
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataObserveMonitorV2Rules:
 		value := value.(*[]*DataObserveMonitorV2Rules)
@@ -228,7 +228,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) validatePutRulesParameters(value interf
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataObserveMonitorV2Rules; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataObserveMonitorV2Rules; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -240,7 +240,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) validatePutSchedulingParameters(value i
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataObserveMonitorV2Scheduling:
 		value := value.(*[]*DataObserveMonitorV2Scheduling)
@@ -259,7 +259,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) validatePutSchedulingParameters(value i
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataObserveMonitorV2Scheduling; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataObserveMonitorV2Scheduling; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -271,7 +271,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) validatePutStageParameters(value interf
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataObserveMonitorV2Stage:
 		value := value.(*[]*DataObserveMonitorV2Stage)
@@ -290,8 +290,16 @@ func (d *jsiiProxy_DataObserveMonitorV2) validatePutStageParameters(value interf
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataObserveMonitorV2Stage; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataObserveMonitorV2Stage; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataObserveMonitorV2) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil
@@ -383,11 +391,11 @@ func (j *jsiiProxy_DataObserveMonitorV2) validateSetCountParameters(val interfac
 		// ok
 	case uint64:
 		// ok
-	case cdktf.TerraformCount:
+	case cdktn.TerraformCount:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktn.TerraformCount; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -402,7 +410,7 @@ func (j *jsiiProxy_DataObserveMonitorV2) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataObserveMonitorV2) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}

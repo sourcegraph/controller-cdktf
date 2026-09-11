@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/mqbroker/internal"
 )
 
 type MqBrokerLogsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Audit() *string
 	SetAudit(val *string)
 	AuditInput() *string
@@ -40,15 +40,15 @@ type MqBrokerLogsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type MqBrokerLogsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAudit()
 	ResetGeneral()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type MqBrokerLogsOutputReference interface {
 
 // The jsii proxy struct for MqBrokerLogsOutputReference
 type jsiiProxy_MqBrokerLogsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MqBrokerLogsOutputReference) Audit() *string {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_MqBrokerLogsOutputReference) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MqBrokerLogsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MqBrokerLogsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_MqBrokerLogsOutputReference) TerraformResource() cdktf.IInter
 }
 
 
-func NewMqBrokerLogsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MqBrokerLogsOutputReference {
+func NewMqBrokerLogsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MqBrokerLogsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMqBrokerLogsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewMqBrokerLogsOutputReference(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_MqBrokerLogsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.mqBroker.MqBrokerLogsOutputReference",
+		"@cdktn/provider-aws.mqBroker.MqBrokerLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewMqBrokerLogsOutputReference(terraformResource cdktf.IInterpolatingParent
 	return &j
 }
 
-func NewMqBrokerLogsOutputReference_Override(m MqBrokerLogsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMqBrokerLogsOutputReference_Override(m MqBrokerLogsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.mqBroker.MqBrokerLogsOutputReference",
+		"@cdktn/provider-aws.mqBroker.MqBrokerLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_MqBrokerLogsOutputReference)SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_MqBrokerLogsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MqBrokerLogsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (m *jsiiProxy_MqBrokerLogsOutputReference) GetAnyMapAttribute(terraformAttr
 	return returns
 }
 
-func (m *jsiiProxy_MqBrokerLogsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MqBrokerLogsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -456,8 +456,8 @@ func (m *jsiiProxy_MqBrokerLogsOutputReference) GetStringMapAttribute(terraformA
 	return returns
 }
 
-func (m *jsiiProxy_MqBrokerLogsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MqBrokerLogsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -469,16 +469,16 @@ func (m *jsiiProxy_MqBrokerLogsOutputReference) InterpolationAsList() cdktf.IRes
 	return returns
 }
 
-func (m *jsiiProxy_MqBrokerLogsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MqBrokerLogsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (m *jsiiProxy_MqBrokerLogsOutputReference) ResetGeneral() {
 	)
 }
 
-func (m *jsiiProxy_MqBrokerLogsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MqBrokerLogsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (m *jsiiProxy_MqBrokerLogsOutputReference) Resolve(_context cdktf.IResolveC
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

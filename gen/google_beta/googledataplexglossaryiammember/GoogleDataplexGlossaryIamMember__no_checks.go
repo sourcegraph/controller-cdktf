@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDataplexGlossaryIamMember) validateInterpolationForAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataplexGlossaryIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexGlossaryIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleDataplexGlossaryIamMember) validateOverrideLogicalIdPar
 }
 
 func (g *jsiiProxy_GoogleDataplexGlossaryIamMember) validatePutConditionParameters(value *GoogleDataplexGlossaryIamMemberCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexGlossaryIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleDataplexGlossaryIamMember) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexGlossaryIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDataplexGlossaryIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

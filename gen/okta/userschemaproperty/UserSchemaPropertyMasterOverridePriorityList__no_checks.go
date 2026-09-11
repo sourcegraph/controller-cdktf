@@ -12,7 +12,7 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) validateGetPara
 	return nil
 }
 
-func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) validateSetWrap
 	return nil
 }
 
-func validateNewUserSchemaPropertyMasterOverridePriorityListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewUserSchemaPropertyMasterOverridePriorityListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

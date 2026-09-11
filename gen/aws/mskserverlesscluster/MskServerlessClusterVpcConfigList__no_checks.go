@@ -12,7 +12,7 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigList) validateGetParameters(inde
 	return nil
 }
 
-func (m *jsiiProxy_MskServerlessClusterVpcConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskServerlessClusterVpcConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_MskServerlessClusterVpcConfigList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_MskServerlessClusterVpcConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MskServerlessClusterVpcConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_MskServerlessClusterVpcConfigList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewMskServerlessClusterVpcConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMskServerlessClusterVpcConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

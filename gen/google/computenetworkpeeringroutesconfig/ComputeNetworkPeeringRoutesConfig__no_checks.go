@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeNetworkPeeringRoutesConfig) validateInterpolationForAt
 	return nil
 }
 
+func (c *jsiiProxy_ComputeNetworkPeeringRoutesConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeNetworkPeeringRoutesConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ComputeNetworkPeeringRoutesConfig) validateOverrideLogicalIdP
 }
 
 func (c *jsiiProxy_ComputeNetworkPeeringRoutesConfig) validatePutTimeoutsParameters(value *ComputeNetworkPeeringRoutesConfigTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeNetworkPeeringRoutesConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig) validateSetImportSubnetRou
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

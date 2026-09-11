@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/dialogflowcxtoolversion/internal"
 )
 
 type DialogflowCxToolVersionToolOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -47,16 +47,16 @@ type DialogflowCxToolVersionToolOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ToolType() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,9 +72,9 @@ type DialogflowCxToolVersionToolOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDataStoreSpec(value *DialogflowCxToolVersionToolDataStoreSpec)
 	PutFunctionSpec(value *DialogflowCxToolVersionToolFunctionSpec)
 	PutOpenApiSpec(value *DialogflowCxToolVersionToolOpenApiSpec)
@@ -83,7 +83,7 @@ type DialogflowCxToolVersionToolOutputReference interface {
 	ResetOpenApiSpec()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type DialogflowCxToolVersionToolOutputReference interface {
 
 // The jsii proxy struct for DialogflowCxToolVersionToolOutputReference
 type jsiiProxy_DialogflowCxToolVersionToolOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DialogflowCxToolVersionToolOutputReference) ComplexObjectIndex() interface{} {
@@ -266,8 +266,8 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DialogflowCxToolVersionToolOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -287,7 +287,7 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolOutputReference) ToolType() *strin
 }
 
 
-func NewDialogflowCxToolVersionToolOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowCxToolVersionToolOutputReference {
+func NewDialogflowCxToolVersionToolOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DialogflowCxToolVersionToolOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDialogflowCxToolVersionToolOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -296,7 +296,7 @@ func NewDialogflowCxToolVersionToolOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_DialogflowCxToolVersionToolOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOutputReference",
+		"@cdktn/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -304,11 +304,11 @@ func NewDialogflowCxToolVersionToolOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewDialogflowCxToolVersionToolOutputReference_Override(d DialogflowCxToolVersionToolOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDialogflowCxToolVersionToolOutputReference_Override(d DialogflowCxToolVersionToolOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOutputReference",
+		"@cdktn/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -380,7 +380,7 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxToolVersionToolOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,11 +420,11 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -548,8 +548,8 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -561,16 +561,16 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -634,8 +634,8 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) ResetOpenApiSpec(
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -643,7 +643,7 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

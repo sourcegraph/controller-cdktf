@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleVmwareenginePrivateCloud) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVmwareenginePrivateCloud) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareenginePrivateCloud) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleVmwareenginePrivateCloud) validatePutNetworkConfigParam
 }
 
 func (g *jsiiProxy_GoogleVmwareenginePrivateCloud) validatePutTimeoutsParameters(value *GoogleVmwareenginePrivateCloudTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVmwareenginePrivateCloud) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleVmwareenginePrivateCloud) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareenginePrivateCloud) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleVmwareenginePrivateCloud) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

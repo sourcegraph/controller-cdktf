@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleManagedKafkaConnectorTaskRestartPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleManagedKafkaConnectorTaskRestartPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

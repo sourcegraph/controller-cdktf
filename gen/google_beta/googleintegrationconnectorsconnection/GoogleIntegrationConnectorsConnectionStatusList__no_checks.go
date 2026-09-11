@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionStatusList) validateGetP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionStatusList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionStatusList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionStatusList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionStatusList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionStatusList) validateSetW
 	return nil
 }
 
-func validateNewGoogleIntegrationConnectorsConnectionStatusListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleIntegrationConnectorsConnectionStatusListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

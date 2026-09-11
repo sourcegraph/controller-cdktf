@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglednskeys/internal"
 )
 
 type DataGoogleDnsKeysZoneSigningKeysOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Algorithm() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -34,7 +34,7 @@ type DataGoogleDnsKeysZoneSigningKeysOutputReference interface {
 	Id() *string
 	InternalValue() *DataGoogleDnsKeysZoneSigningKeys
 	SetInternalValue(val *DataGoogleDnsKeysZoneSigningKeys)
-	IsActive() cdktf.IResolvable
+	IsActive() cdktn.IResolvable
 	KeyLength() *float64
 	KeyTag() *float64
 	PublicKey() *string
@@ -43,15 +43,15 @@ type DataGoogleDnsKeysZoneSigningKeysOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type DataGoogleDnsKeysZoneSigningKeysOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type DataGoogleDnsKeysZoneSigningKeysOutputReference interface {
 
 // The jsii proxy struct for DataGoogleDnsKeysZoneSigningKeysOutputReference
 type jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) Algorithm() *string {
@@ -185,8 +185,8 @@ func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) InternalValu
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) IsActive() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) IsActive() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isActive",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -246,7 +246,7 @@ func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) TerraformRes
 }
 
 
-func NewDataGoogleDnsKeysZoneSigningKeysOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleDnsKeysZoneSigningKeysOutputReference {
+func NewDataGoogleDnsKeysZoneSigningKeysOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleDnsKeysZoneSigningKeysOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleDnsKeysZoneSigningKeysOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -255,7 +255,7 @@ func NewDataGoogleDnsKeysZoneSigningKeysOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysOutputReference",
+		"@cdktn/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -263,11 +263,11 @@ func NewDataGoogleDnsKeysZoneSigningKeysOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewDataGoogleDnsKeysZoneSigningKeysOutputReference_Override(d DataGoogleDnsKeysZoneSigningKeysOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleDnsKeysZoneSigningKeysOutputReference_Override(d DataGoogleDnsKeysZoneSigningKeysOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysOutputReference",
+		"@cdktn/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,11 +357,11 @@ func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -485,8 +485,8 @@ func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) GetStringMap
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -498,24 +498,24 @@ func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) Interpolatio
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -523,7 +523,7 @@ func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

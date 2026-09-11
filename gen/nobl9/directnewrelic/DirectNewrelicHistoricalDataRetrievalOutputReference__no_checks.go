@@ -40,7 +40,7 @@ func (d *jsiiProxy_DirectNewrelicHistoricalDataRetrievalOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DirectNewrelicHistoricalDataRetrievalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DirectNewrelicHistoricalDataRetrievalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (d *jsiiProxy_DirectNewrelicHistoricalDataRetrievalOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DirectNewrelicHistoricalDataRetrievalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectNewrelicHistoricalDataRetrievalOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_DirectNewrelicHistoricalDataRetrievalOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DirectNewrelicHistoricalDataRetrievalOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DirectNewrelicHistoricalDataRetrievalOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDirectNewrelicHistoricalDataRetrievalOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDirectNewrelicHistoricalDataRetrievalOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

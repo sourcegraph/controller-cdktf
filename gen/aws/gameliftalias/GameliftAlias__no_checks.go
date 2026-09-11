@@ -56,6 +56,10 @@ func (g *jsiiProxy_GameliftAlias) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (g *jsiiProxy_GameliftAlias) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GameliftAlias) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GameliftAlias) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (g *jsiiProxy_GameliftAlias) validatePutRoutingStrategyParameters(value *GameliftAliasRoutingStrategy) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameliftAlias) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GameliftAlias) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GameliftAlias) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GameliftAlias) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

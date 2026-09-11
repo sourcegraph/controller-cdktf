@@ -56,6 +56,10 @@ func (s *jsiiProxy_SignerSigningJob) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_SignerSigningJob) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SignerSigningJob) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (s *jsiiProxy_SignerSigningJob) validatePutDestinationParameters(value *Sig
 }
 
 func (s *jsiiProxy_SignerSigningJob) validatePutSourceParameters(value *SignerSigningJobSource) error {
+	return nil
+}
+
+func (s *jsiiProxy_SignerSigningJob) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_SignerSigningJob) validateSetIgnoreSigningJobFailureParameter
 	return nil
 }
 
-func (j *jsiiProxy_SignerSigningJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SignerSigningJob) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

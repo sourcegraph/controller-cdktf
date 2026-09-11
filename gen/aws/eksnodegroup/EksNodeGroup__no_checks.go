@@ -56,6 +56,10 @@ func (e *jsiiProxy_EksNodeGroup) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (e *jsiiProxy_EksNodeGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksNodeGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (e *jsiiProxy_EksNodeGroup) validatePutTimeoutsParameters(value *EksNodeGro
 }
 
 func (e *jsiiProxy_EksNodeGroup) validatePutUpdateConfigParameters(value *EksNodeGroupUpdateConfig) error {
+	return nil
+}
+
+func (e *jsiiProxy_EksNodeGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -152,7 +160,7 @@ func (j *jsiiProxy_EksNodeGroup) validateSetLabelsParameters(val *map[string]*st
 	return nil
 }
 
-func (j *jsiiProxy_EksNodeGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EksNodeGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

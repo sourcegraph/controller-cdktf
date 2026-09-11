@@ -12,7 +12,7 @@ func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) va
 	return nil
 }
 
-func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) va
 	return nil
 }
 
-func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList) va
 	return nil
 }
 
-func validateNewBatchSchedulingPolicyFairSharePolicyShareDistributionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBatchSchedulingPolicyFairSharePolicyShareDistributionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

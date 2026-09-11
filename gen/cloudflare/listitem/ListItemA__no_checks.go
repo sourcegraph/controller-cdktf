@@ -56,6 +56,10 @@ func (l *jsiiProxy_ListItemA) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (l *jsiiProxy_ListItemA) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_ListItemA) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (l *jsiiProxy_ListItemA) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (l *jsiiProxy_ListItemA) validatePutRedirectParameters(value *ListItemRedirect) error {
+	return nil
+}
+
+func (l *jsiiProxy_ListItemA) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_ListItemA) validateSetIpParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ListItemA) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ListItemA) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

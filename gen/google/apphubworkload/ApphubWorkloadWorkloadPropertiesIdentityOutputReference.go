@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/apphubworkload/internal"
 )
 
 type ApphubWorkloadWorkloadPropertiesIdentityOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,15 +35,15 @@ type ApphubWorkloadWorkloadPropertiesIdentityOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -59,12 +59,12 @@ type ApphubWorkloadWorkloadPropertiesIdentityOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -74,7 +74,7 @@ type ApphubWorkloadWorkloadPropertiesIdentityOutputReference interface {
 
 // The jsii proxy struct for ApphubWorkloadWorkloadPropertiesIdentityOutputReference
 type jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference) ComplexObjectIndex() interface{} {
@@ -147,8 +147,8 @@ func (j *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -158,7 +158,7 @@ func (j *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference) Terr
 }
 
 
-func NewApphubWorkloadWorkloadPropertiesIdentityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApphubWorkloadWorkloadPropertiesIdentityOutputReference {
+func NewApphubWorkloadWorkloadPropertiesIdentityOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApphubWorkloadWorkloadPropertiesIdentityOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewApphubWorkloadWorkloadPropertiesIdentityOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -167,7 +167,7 @@ func NewApphubWorkloadWorkloadPropertiesIdentityOutputReference(terraformResourc
 	j := jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesIdentityOutputReference",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesIdentityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -175,11 +175,11 @@ func NewApphubWorkloadWorkloadPropertiesIdentityOutputReference(terraformResourc
 	return &j
 }
 
-func NewApphubWorkloadWorkloadPropertiesIdentityOutputReference_Override(a ApphubWorkloadWorkloadPropertiesIdentityOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewApphubWorkloadWorkloadPropertiesIdentityOutputReference_Override(a ApphubWorkloadWorkloadPropertiesIdentityOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesIdentityOutputReference",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesIdentityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -229,7 +229,7 @@ func (j *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -269,11 +269,11 @@ func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference) GetA
 	return returns
 }
 
-func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -397,8 +397,8 @@ func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference) GetS
 	return returns
 }
 
-func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -410,24 +410,24 @@ func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference) Inte
 	return returns
 }
 
-func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -435,7 +435,7 @@ func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference) Reso
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

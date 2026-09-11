@@ -12,7 +12,7 @@ func (f *jsiiProxy_FsxOntapFileSystemEndpointsManagementList) validateGetParamet
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapFileSystemEndpointsManagementList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOntapFileSystemEndpointsManagementList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_FsxOntapFileSystemEndpointsManagementList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_FsxOntapFileSystemEndpointsManagementList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FsxOntapFileSystemEndpointsManagementList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_FsxOntapFileSystemEndpointsManagementList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewFsxOntapFileSystemEndpointsManagementListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewFsxOntapFileSystemEndpointsManagementListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

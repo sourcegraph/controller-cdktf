@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroupsNetworkEndpointGroupsOu
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroupsNetworkEndpointGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroupsNetworkEndpointGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroupsNetworkEndpointGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroupsNetworkEndpointGroupsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroupsNetworkEndpointGroupsOu
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroupsNetworkEndpointGroupsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroupsNetworkEndpointGroupsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleComputeNetworkEndpointGroupsNetworkEndpointGroupsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleComputeNetworkEndpointGroupsNetworkEndpointGroupsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

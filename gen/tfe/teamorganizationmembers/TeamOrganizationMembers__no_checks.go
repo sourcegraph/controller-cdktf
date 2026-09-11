@@ -56,6 +56,10 @@ func (t *jsiiProxy_TeamOrganizationMembers) validateInterpolationForAttributePar
 	return nil
 }
 
+func (t *jsiiProxy_TeamOrganizationMembers) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamOrganizationMembers) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (t *jsiiProxy_TeamOrganizationMembers) validateMoveToIdParameters(id *strin
 }
 
 func (t *jsiiProxy_TeamOrganizationMembers) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamOrganizationMembers) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_TeamOrganizationMembers) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_TeamOrganizationMembers) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_TeamOrganizationMembers) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

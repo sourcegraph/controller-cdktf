@@ -56,6 +56,10 @@ func (d *jsiiProxy_DirectCloudwatch) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DirectCloudwatch) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectCloudwatch) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (d *jsiiProxy_DirectCloudwatch) validatePutHistoricalDataRetrievalParameter
 }
 
 func (d *jsiiProxy_DirectCloudwatch) validatePutQueryDelayParameters(value *DirectCloudwatchQueryDelay) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectCloudwatch) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_DirectCloudwatch) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_DirectCloudwatch) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DirectCloudwatch) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

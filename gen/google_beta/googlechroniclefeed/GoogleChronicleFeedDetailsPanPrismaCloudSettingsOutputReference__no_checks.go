@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsPanPrismaCloudSettingsOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsPanPrismaCloudSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsPanPrismaCloudSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsPanPrismaCloudSettingsOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsPanPrismaCloudSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsPanPrismaCloudSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsPanPrismaCloudSettingsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsPanPrismaCloudSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsPanPrismaCloudSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsPanPrismaCloudSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsPanPrismaCloudSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (i *jsiiProxy_IamProjectsPolicyBinding) validateInterpolationForAttributePa
 	return nil
 }
 
+func (i *jsiiProxy_IamProjectsPolicyBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamProjectsPolicyBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (i *jsiiProxy_IamProjectsPolicyBinding) validatePutTargetParameters(value *
 }
 
 func (i *jsiiProxy_IamProjectsPolicyBinding) validatePutTimeoutsParameters(value *IamProjectsPolicyBindingTimeouts) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamProjectsPolicyBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_IamProjectsPolicyBinding) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IamProjectsPolicyBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

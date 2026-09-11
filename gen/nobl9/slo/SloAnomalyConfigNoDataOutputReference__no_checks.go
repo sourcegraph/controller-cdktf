@@ -40,7 +40,7 @@ func (s *jsiiProxy_SloAnomalyConfigNoDataOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (s *jsiiProxy_SloAnomalyConfigNoDataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SloAnomalyConfigNoDataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (s *jsiiProxy_SloAnomalyConfigNoDataOutputReference) validatePutAlertMethod
 	return nil
 }
 
-func (s *jsiiProxy_SloAnomalyConfigNoDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloAnomalyConfigNoDataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_SloAnomalyConfigNoDataOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_SloAnomalyConfigNoDataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloAnomalyConfigNoDataOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSloAnomalyConfigNoDataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSloAnomalyConfigNoDataOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

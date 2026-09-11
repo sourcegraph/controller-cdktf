@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestoragecontrolprojectintelligenceconfig/internal"
 )
 
 type GoogleStorageControlProjectIntelligenceConfigFilterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,15 +42,15 @@ type GoogleStorageControlProjectIntelligenceConfigFilterOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,9 +66,9 @@ type GoogleStorageControlProjectIntelligenceConfigFilterOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutExcludedCloudStorageBuckets(value *GoogleStorageControlProjectIntelligenceConfigFilterExcludedCloudStorageBuckets)
 	PutExcludedCloudStorageLocations(value *GoogleStorageControlProjectIntelligenceConfigFilterExcludedCloudStorageLocations)
 	PutIncludedCloudStorageBuckets(value *GoogleStorageControlProjectIntelligenceConfigFilterIncludedCloudStorageBuckets)
@@ -79,7 +79,7 @@ type GoogleStorageControlProjectIntelligenceConfigFilterOutputReference interfac
 	ResetIncludedCloudStorageLocations()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type GoogleStorageControlProjectIntelligenceConfigFilterOutputReference interfac
 
 // The jsii proxy struct for GoogleStorageControlProjectIntelligenceConfigFilterOutputReference
 type jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputReference) ComplexObjectIndex() interface{} {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputRefe
 }
 
 
-func NewGoogleStorageControlProjectIntelligenceConfigFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleStorageControlProjectIntelligenceConfigFilterOutputReference {
+func NewGoogleStorageControlProjectIntelligenceConfigFilterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleStorageControlProjectIntelligenceConfigFilterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleStorageControlProjectIntelligenceConfigFilterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewGoogleStorageControlProjectIntelligenceConfigFilterOutputReference(terra
 	j := jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleStorageControlProjectIntelligenceConfig.GoogleStorageControlProjectIntelligenceConfigFilterOutputReference",
+		"@cdktn/provider-google-beta.googleStorageControlProjectIntelligenceConfig.GoogleStorageControlProjectIntelligenceConfigFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewGoogleStorageControlProjectIntelligenceConfigFilterOutputReference(terra
 	return &j
 }
 
-func NewGoogleStorageControlProjectIntelligenceConfigFilterOutputReference_Override(g GoogleStorageControlProjectIntelligenceConfigFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleStorageControlProjectIntelligenceConfigFilterOutputReference_Override(g GoogleStorageControlProjectIntelligenceConfigFilterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleStorageControlProjectIntelligenceConfig.GoogleStorageControlProjectIntelligenceConfigFilterOutputReference",
+		"@cdktn/provider-google-beta.googleStorageControlProjectIntelligenceConfig.GoogleStorageControlProjectIntelligenceConfigFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -314,7 +314,7 @@ func (j *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -354,11 +354,11 @@ func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -482,8 +482,8 @@ func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -495,16 +495,16 @@ func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputRefe
 	)
 }
 
-func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigFilterOutputRefe
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/dialogflowgenerator/internal"
 )
 
 type DialogflowGeneratorInferenceParameterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type DialogflowGeneratorInferenceParameterOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TopK() *float64
 	SetTopK(val *float64)
 	TopKInput() *float64
@@ -54,7 +54,7 @@ type DialogflowGeneratorInferenceParameterOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,16 +70,16 @@ type DialogflowGeneratorInferenceParameterOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMaxOutputTokens()
 	ResetTemperature()
 	ResetTopK()
 	ResetTopP()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type DialogflowGeneratorInferenceParameterOutputReference interface {
 
 // The jsii proxy struct for DialogflowGeneratorInferenceParameterOutputReference
 type jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) ComplexObjectIndex() interface{} {
@@ -192,8 +192,8 @@ func (j *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) TopPInp
 }
 
 
-func NewDialogflowGeneratorInferenceParameterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowGeneratorInferenceParameterOutputReference {
+func NewDialogflowGeneratorInferenceParameterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DialogflowGeneratorInferenceParameterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDialogflowGeneratorInferenceParameterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewDialogflowGeneratorInferenceParameterOutputReference(terraformResource c
 	j := jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorInferenceParameterOutputReference",
+		"@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorInferenceParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewDialogflowGeneratorInferenceParameterOutputReference(terraformResource c
 	return &j
 }
 
-func NewDialogflowGeneratorInferenceParameterOutputReference_Override(d DialogflowGeneratorInferenceParameterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDialogflowGeneratorInferenceParameterOutputReference_Override(d DialogflowGeneratorInferenceParameterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorInferenceParameterOutputReference",
+		"@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorInferenceParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -336,7 +336,7 @@ func (j *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,11 +398,11 @@ func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) GetAnyM
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -526,8 +526,8 @@ func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) GetStri
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -539,16 +539,16 @@ func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) Interpo
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) ResetTo
 	)
 }
 
-func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) Resolve
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

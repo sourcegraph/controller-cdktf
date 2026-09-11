@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudwatchEventConnectionAuthParametersBasicOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventConnectionAuthParametersBasicOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudwatchEventConnectionAuthParametersBasicOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventConnectionAuthParametersBasicOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchEventConnectionAuthParametersBasicOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_CloudwatchEventConnectionAuthParametersBasicOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventConnectionAuthParametersBasicOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudwatchEventConnectionAuthParametersBasicOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_CloudwatchEventConnectionAuthParametersBasicOutputReference) 
 	return nil
 }
 
-func validateNewCloudwatchEventConnectionAuthParametersBasicOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudwatchEventConnectionAuthParametersBasicOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

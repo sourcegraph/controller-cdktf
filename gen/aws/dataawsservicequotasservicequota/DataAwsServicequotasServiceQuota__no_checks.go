@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsServicequotasServiceQuota) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsServicequotasServiceQuota) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsServicequotasServiceQuota_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataAwsServicequotasServiceQuota) validateSetIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsServicequotasServiceQuota) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsServicequotasServiceQuota) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

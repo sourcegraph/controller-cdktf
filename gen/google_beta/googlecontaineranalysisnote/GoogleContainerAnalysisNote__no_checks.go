@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleContainerAnalysisNote) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAnalysisNote) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAnalysisNote) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleContainerAnalysisNote) validatePutRelatedUrlParameters(
 }
 
 func (g *jsiiProxy_GoogleContainerAnalysisNote) validatePutTimeoutsParameters(value *GoogleContainerAnalysisNoteTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAnalysisNote) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNote) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNote) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleContainerAnalysisNote) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

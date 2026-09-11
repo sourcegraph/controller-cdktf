@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesAppLoggingSettingsBigqueryExportSettingsOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppLoggingSettingsBigqueryExportSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesAppLoggingSettingsBigqueryExportSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppLoggingSettingsBigqueryExportSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppLoggingSettingsBigqueryExportSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleCesAppLoggingSettingsBigqueryExportSettingsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppLoggingSettingsBigqueryExportSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppLoggingSettingsBigqueryExportSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCesAppLoggingSettingsBigqueryExportSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesAppLoggingSettingsBigqueryExportSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

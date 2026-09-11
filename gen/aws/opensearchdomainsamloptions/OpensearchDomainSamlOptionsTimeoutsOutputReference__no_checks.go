@@ -40,11 +40,11 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainSamlOptionsTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpensearchDomainSamlOptionsTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainSamlOptionsTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchDomainSamlOptionsTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainSamlOptionsTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpensearchDomainSamlOptionsTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_OpensearchDomainSamlOptionsTimeoutsOutputReference) validateS
 	return nil
 }
 
-func validateNewOpensearchDomainSamlOptionsTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOpensearchDomainSamlOptionsTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

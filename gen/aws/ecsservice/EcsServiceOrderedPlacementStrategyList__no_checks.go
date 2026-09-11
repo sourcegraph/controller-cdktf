@@ -12,7 +12,7 @@ func (e *jsiiProxy_EcsServiceOrderedPlacementStrategyList) validateGetParameters
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceOrderedPlacementStrategyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceOrderedPlacementStrategyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EcsServiceOrderedPlacementStrategyList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceOrderedPlacementStrategyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcsServiceOrderedPlacementStrategyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EcsServiceOrderedPlacementStrategyList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewEcsServiceOrderedPlacementStrategyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEcsServiceOrderedPlacementStrategyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

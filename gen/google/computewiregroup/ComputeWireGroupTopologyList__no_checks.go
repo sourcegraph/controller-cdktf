@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeWireGroupTopologyList) validateGetParameters(index *fl
 	return nil
 }
 
-func (c *jsiiProxy_ComputeWireGroupTopologyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeWireGroupTopologyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ComputeWireGroupTopologyList) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeWireGroupTopologyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeWireGroupTopologyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ComputeWireGroupTopologyList) validateSetWrapsSetParameters(v
 	return nil
 }
 
-func validateNewComputeWireGroupTopologyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeWireGroupTopologyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

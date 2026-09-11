@@ -12,7 +12,7 @@ func (w *jsiiProxy_WorkflowStepsParamBindingsList) validateGetParameters(index *
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowStepsParamBindingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkflowStepsParamBindingsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WorkflowStepsParamBindingsList) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowStepsParamBindingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkflowStepsParamBindingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WorkflowStepsParamBindingsList) validateSetWrapsSetParameters
 	return nil
 }
 
-func validateNewWorkflowStepsParamBindingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWorkflowStepsParamBindingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

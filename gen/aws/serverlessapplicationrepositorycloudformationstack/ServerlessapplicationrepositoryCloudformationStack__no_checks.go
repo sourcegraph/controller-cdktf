@@ -56,6 +56,10 @@ func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateI
 	return nil
 }
 
+func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateO
 }
 
 func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validatePutTimeoutsParameters(value *ServerlessapplicationrepositoryCloudformationStackTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

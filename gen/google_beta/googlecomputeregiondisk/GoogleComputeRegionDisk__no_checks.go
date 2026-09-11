@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeRegionDisk) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionDisk) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionDisk) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (g *jsiiProxy_GoogleComputeRegionDisk) validatePutSourceSnapshotEncryptionK
 }
 
 func (g *jsiiProxy_GoogleComputeRegionDisk) validatePutTimeoutsParameters(value *GoogleComputeRegionDiskTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -160,7 +168,7 @@ func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetLicensesParameters(val *[
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

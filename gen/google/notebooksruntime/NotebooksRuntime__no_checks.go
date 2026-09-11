@@ -56,6 +56,10 @@ func (n *jsiiProxy_NotebooksRuntime) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (n *jsiiProxy_NotebooksRuntime) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksRuntime) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (n *jsiiProxy_NotebooksRuntime) validatePutTimeoutsParameters(value *Notebo
 }
 
 func (n *jsiiProxy_NotebooksRuntime) validatePutVirtualMachineParameters(value *NotebooksRuntimeVirtualMachine) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotebooksRuntime) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_NotebooksRuntime) validateSetLabelsParameters(val *map[string
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksRuntime) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NotebooksRuntime) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

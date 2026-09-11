@@ -56,6 +56,10 @@ func (d *jsiiProxy_DeviceDexTest) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (d *jsiiProxy_DeviceDexTest) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DeviceDexTest) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DeviceDexTest) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (d *jsiiProxy_DeviceDexTest) validatePutDataParameters(value *DeviceDexTestData) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeviceDexTest) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_DeviceDexTest) validateSetIntervalParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_DeviceDexTest) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DeviceDexTest) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

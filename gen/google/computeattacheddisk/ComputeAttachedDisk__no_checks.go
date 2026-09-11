@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeAttachedDisk) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_ComputeAttachedDisk) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeAttachedDisk) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ComputeAttachedDisk) validateOverrideLogicalIdParameters(newL
 }
 
 func (c *jsiiProxy_ComputeAttachedDisk) validatePutTimeoutsParameters(value *ComputeAttachedDiskTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeAttachedDisk) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_ComputeAttachedDisk) validateSetInterfaceParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_ComputeAttachedDisk) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeAttachedDisk) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/datakubernetespod/internal"
 )
 
 type DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,21 +30,21 @@ type DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference interf
 	InternalValue() *DataKubernetesPodSpecInitContainerEnvFromConfigMapRef
 	SetInternalValue(val *DataKubernetesPodSpecInitContainerEnvFromConfigMapRef)
 	Name() *string
-	Optional() cdktf.IResolvable
+	Optional() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,12 +60,12 @@ type DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference interf
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -75,7 +75,7 @@ type DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference interf
 
 // The jsii proxy struct for DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference
 type jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference) ComplexObjectIndex() interface{} {
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference) Optional() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference) Optional() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"optional",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -169,7 +169,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputRe
 }
 
 
-func NewDataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference {
+func NewDataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -178,7 +178,7 @@ func NewDataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference(ter
 	j := jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference",
+		"@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -186,11 +186,11 @@ func NewDataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference(ter
 	return &j
 }
 
-func NewDataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference_Override(d DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference_Override(d DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference",
+		"@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -240,7 +240,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputRe
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,11 +280,11 @@ func (d *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputRe
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -408,8 +408,8 @@ func (d *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputRe
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -421,24 +421,24 @@ func (d *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputRe
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -446,7 +446,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecInitContainerEnvFromConfigMapRefOutputRe
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

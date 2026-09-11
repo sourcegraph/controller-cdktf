@@ -40,11 +40,11 @@ func (p *jsiiProxy_PubsubLiteTopicPartitionConfigCapacityOutputReference) valida
 	return nil
 }
 
-func (p *jsiiProxy_PubsubLiteTopicPartitionConfigCapacityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PubsubLiteTopicPartitionConfigCapacityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PubsubLiteTopicPartitionConfigCapacityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PubsubLiteTopicPartitionConfigCapacityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_PubsubLiteTopicPartitionConfigCapacityOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_PubsubLiteTopicPartitionConfigCapacityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PubsubLiteTopicPartitionConfigCapacityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPubsubLiteTopicPartitionConfigCapacityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPubsubLiteTopicPartitionConfigCapacityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

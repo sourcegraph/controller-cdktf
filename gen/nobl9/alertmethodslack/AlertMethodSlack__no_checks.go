@@ -56,6 +56,10 @@ func (a *jsiiProxy_AlertMethodSlack) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (a *jsiiProxy_AlertMethodSlack) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertMethodSlack) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (a *jsiiProxy_AlertMethodSlack) validateMoveToIdParameters(id *string) erro
 }
 
 func (a *jsiiProxy_AlertMethodSlack) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlertMethodSlack) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_AlertMethodSlack) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_AlertMethodSlack) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AlertMethodSlack) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

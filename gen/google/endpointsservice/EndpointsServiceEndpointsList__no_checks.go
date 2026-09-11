@@ -12,7 +12,7 @@ func (e *jsiiProxy_EndpointsServiceEndpointsList) validateGetParameters(index *f
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsServiceEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EndpointsServiceEndpointsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_EndpointsServiceEndpointsList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_EndpointsServiceEndpointsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EndpointsServiceEndpointsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_EndpointsServiceEndpointsList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewEndpointsServiceEndpointsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEndpointsServiceEndpointsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

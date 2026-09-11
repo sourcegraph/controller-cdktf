@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlediscoveryenginedataconnector/internal"
 )
 
 type GoogleDiscoveryEngineDataConnectorActionConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ActionParams() *map[string]*string
 	SetActionParams(val *map[string]*string)
 	ActionParamsInput() *map[string]*string
@@ -35,21 +35,21 @@ type GoogleDiscoveryEngineDataConnectorActionConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleDiscoveryEngineDataConnectorActionConfig
 	SetInternalValue(val *GoogleDiscoveryEngineDataConnectorActionConfig)
-	IsActionConfigured() cdktf.IResolvable
+	IsActionConfigured() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,14 +65,14 @@ type GoogleDiscoveryEngineDataConnectorActionConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetActionParams()
 	ResetCreateBapConnection()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type GoogleDiscoveryEngineDataConnectorActionConfigOutputReference interface {
 
 // The jsii proxy struct for GoogleDiscoveryEngineDataConnectorActionConfigOutputReference
 type jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference) ActionParams() *map[string]*string {
@@ -175,8 +175,8 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference) IsActionConfigured() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference) IsActionConfigured() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isActionConfigured",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -206,7 +206,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference
 }
 
 
-func NewGoogleDiscoveryEngineDataConnectorActionConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDiscoveryEngineDataConnectorActionConfigOutputReference {
+func NewGoogleDiscoveryEngineDataConnectorActionConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDiscoveryEngineDataConnectorActionConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDiscoveryEngineDataConnectorActionConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -215,7 +215,7 @@ func NewGoogleDiscoveryEngineDataConnectorActionConfigOutputReference(terraformR
 	j := jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDiscoveryEngineDataConnector.GoogleDiscoveryEngineDataConnectorActionConfigOutputReference",
+		"@cdktn/provider-google-beta.googleDiscoveryEngineDataConnector.GoogleDiscoveryEngineDataConnectorActionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -223,11 +223,11 @@ func NewGoogleDiscoveryEngineDataConnectorActionConfigOutputReference(terraformR
 	return &j
 }
 
-func NewGoogleDiscoveryEngineDataConnectorActionConfigOutputReference_Override(g GoogleDiscoveryEngineDataConnectorActionConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDiscoveryEngineDataConnectorActionConfigOutputReference_Override(g GoogleDiscoveryEngineDataConnectorActionConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDiscoveryEngineDataConnector.GoogleDiscoveryEngineDataConnectorActionConfigOutputReference",
+		"@cdktn/provider-google-beta.googleDiscoveryEngineDataConnector.GoogleDiscoveryEngineDataConnectorActionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,11 +339,11 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -467,8 +467,8 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -480,16 +480,16 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -512,8 +512,8 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference
 	)
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -521,7 +521,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorActionConfigOutputReference
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

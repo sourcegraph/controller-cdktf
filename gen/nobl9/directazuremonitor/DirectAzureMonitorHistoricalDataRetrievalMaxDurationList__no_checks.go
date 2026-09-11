@@ -12,7 +12,7 @@ func (d *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalMaxDurationList) val
 	return nil
 }
 
-func (d *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalMaxDurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalMaxDurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalMaxDurationList) val
 	return nil
 }
 
-func (j *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalMaxDurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalMaxDurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalMaxDurationList) val
 	return nil
 }
 
-func validateNewDirectAzureMonitorHistoricalDataRetrievalMaxDurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDirectAzureMonitorHistoricalDataRetrievalMaxDurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

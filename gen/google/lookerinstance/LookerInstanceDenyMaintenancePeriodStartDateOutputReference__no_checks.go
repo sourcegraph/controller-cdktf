@@ -40,11 +40,11 @@ func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodStartDateOutputReference) 
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodStartDateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodStartDateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodStartDateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodStartDateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_LookerInstanceDenyMaintenancePeriodStartDateOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstanceDenyMaintenancePeriodStartDateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LookerInstanceDenyMaintenancePeriodStartDateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_LookerInstanceDenyMaintenancePeriodStartDateOutputReference) 
 	return nil
 }
 
-func validateNewLookerInstanceDenyMaintenancePeriodStartDateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLookerInstanceDenyMaintenancePeriodStartDateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

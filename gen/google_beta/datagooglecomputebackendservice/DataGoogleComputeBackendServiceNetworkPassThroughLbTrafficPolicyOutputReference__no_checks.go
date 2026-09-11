@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceNetworkPassThroughLbTrafficPol
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleComputeBackendServiceNetworkPassThroughLbTrafficPol
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

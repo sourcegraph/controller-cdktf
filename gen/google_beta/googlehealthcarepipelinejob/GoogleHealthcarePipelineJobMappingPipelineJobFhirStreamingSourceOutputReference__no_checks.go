@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSou
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSou
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSourceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSourceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleHealthcarePipelineJobMappingPipelineJobFhirStreamingSourceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

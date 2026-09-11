@@ -56,6 +56,10 @@ func (d *jsiiProxy_DmsEventSubscription) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (d *jsiiProxy_DmsEventSubscription) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DmsEventSubscription) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DmsEventSubscription) validateOverrideLogicalIdParameters(new
 }
 
 func (d *jsiiProxy_DmsEventSubscription) validatePutTimeoutsParameters(value *DmsEventSubscriptionTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DmsEventSubscription) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_DmsEventSubscription) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_DmsEventSubscription) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DmsEventSubscription) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

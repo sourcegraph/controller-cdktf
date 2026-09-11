@@ -12,7 +12,7 @@ func (c *jsiiProxy_ClusterRoleRuleList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterRoleRuleList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ClusterRoleRuleList) validateSetTerraformAttributeParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ClusterRoleRuleList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ClusterRoleRuleList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ClusterRoleRuleList) validateSetWrapsSetParameters(val *bool)
 	return nil
 }
 
-func validateNewClusterRoleRuleListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewClusterRoleRuleListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

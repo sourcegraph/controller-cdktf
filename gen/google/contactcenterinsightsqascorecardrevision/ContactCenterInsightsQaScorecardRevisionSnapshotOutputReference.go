@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/contactcenterinsightsqascorecardrevision/internal"
 )
 
 type ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,7 +32,7 @@ type ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference interface {
 	Fqn() *string
 	InternalValue() *ContactCenterInsightsQaScorecardRevisionSnapshot
 	SetInternalValue(val *ContactCenterInsightsQaScorecardRevisionSnapshot)
-	IsDefault() cdktf.IResolvable
+	IsDefault() cdktn.IResolvable
 	Name() *string
 	Source() *string
 	// Experimental.
@@ -40,16 +40,16 @@ type ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UpdateTime() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,12 +65,12 @@ type ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference interface {
 
 // The jsii proxy struct for ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference
 type jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference) IsDefault() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference) IsDefault() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isDefault",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -224,7 +224,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReferen
 }
 
 
-func NewContactCenterInsightsQaScorecardRevisionSnapshotOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference {
+func NewContactCenterInsightsQaScorecardRevisionSnapshotOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewContactCenterInsightsQaScorecardRevisionSnapshotOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -233,7 +233,7 @@ func NewContactCenterInsightsQaScorecardRevisionSnapshotOutputReference(terrafor
 	j := jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference",
+		"@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -241,11 +241,11 @@ func NewContactCenterInsightsQaScorecardRevisionSnapshotOutputReference(terrafor
 	return &j
 }
 
-func NewContactCenterInsightsQaScorecardRevisionSnapshotOutputReference_Override(c ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewContactCenterInsightsQaScorecardRevisionSnapshotOutputReference_Override(c ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference",
+		"@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -295,7 +295,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReferen
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,11 +335,11 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReferen
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -463,8 +463,8 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReferen
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -476,24 +476,24 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReferen
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReferen
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeNodeGroupShareSettingsProjectMapOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewComputeNodeGroupShareSettingsProjectMapOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

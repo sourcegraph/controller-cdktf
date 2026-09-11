@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutput
 	return nil
 }
 
-func (g *jsiiProxy_GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutput
 	return nil
 }
 
-func (g *jsiiProxy_GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

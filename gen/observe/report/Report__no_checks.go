@@ -56,6 +56,10 @@ func (r *jsiiProxy_Report) validateInterpolationForAttributeParameters(terraform
 	return nil
 }
 
+func (r *jsiiProxy_Report) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_Report) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (r *jsiiProxy_Report) validatePutDashboardParameters(value *ReportDashboard
 }
 
 func (r *jsiiProxy_Report) validatePutScheduleParameters(value *ReportSchedule) error {
+	return nil
+}
+
+func (r *jsiiProxy_Report) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_Report) validateSetLabelParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Report) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Report) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (e *jsiiProxy_EscalationPathWorkingHoursList) validateGetParameters(index *
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPathWorkingHoursList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EscalationPathWorkingHoursList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EscalationPathWorkingHoursList) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathWorkingHoursList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EscalationPathWorkingHoursList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EscalationPathWorkingHoursList) validateSetWrapsSetParameters
 	return nil
 }
 
-func validateNewEscalationPathWorkingHoursListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEscalationPathWorkingHoursListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

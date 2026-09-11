@@ -12,7 +12,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsList) validateGetPara
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsList) validateSetWrap
 	return nil
 }
 
-func validateNewIdentityPlatformConfigMfaProviderConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewIdentityPlatformConfigMfaProviderConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

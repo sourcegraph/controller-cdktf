@@ -56,6 +56,10 @@ func (b *jsiiProxy_BackupVaultPolicy) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (b *jsiiProxy_BackupVaultPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupVaultPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (b *jsiiProxy_BackupVaultPolicy) validateMoveToIdParameters(id *string) err
 }
 
 func (b *jsiiProxy_BackupVaultPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BackupVaultPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_BackupVaultPolicy) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_BackupVaultPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BackupVaultPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

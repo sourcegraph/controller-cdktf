@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlespannerbackupschedule/internal"
 )
 
 type GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,15 +34,15 @@ type GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -58,12 +58,12 @@ type GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -73,7 +73,7 @@ type GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference interface {
 
 // The jsii proxy struct for GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference
 type jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference) ComplexObjectIndex() interface{} {
@@ -136,8 +136,8 @@ func (j *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -147,7 +147,7 @@ func (j *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReferen
 }
 
 
-func NewGoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference {
+func NewGoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleSpannerBackupScheduleIncrementalBackupSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -156,7 +156,7 @@ func NewGoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference(terrafor
 	j := jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference",
+		"@cdktn/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -164,11 +164,11 @@ func NewGoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference(terrafor
 	return &j
 }
 
-func NewGoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference_Override(g GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference_Override(g GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference",
+		"@cdktn/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -218,7 +218,7 @@ func (j *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -258,11 +258,11 @@ func (g *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReferen
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -386,8 +386,8 @@ func (g *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReferen
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -399,24 +399,24 @@ func (g *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReferen
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -424,7 +424,7 @@ func (g *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReferen
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

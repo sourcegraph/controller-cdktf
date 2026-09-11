@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigEncryptionsDrmSystemsWidevineOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleTranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleTranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigEncryptionsDrmSystemsWidevineOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleTranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleTranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleTranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

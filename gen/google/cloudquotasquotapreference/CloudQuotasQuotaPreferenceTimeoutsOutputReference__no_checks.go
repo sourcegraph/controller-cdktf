@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudQuotasQuotaPreferenceTimeoutsOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CloudQuotasQuotaPreferenceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudQuotasQuotaPreferenceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudQuotasQuotaPreferenceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudQuotasQuotaPreferenceTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreferenceTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreferenceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudQuotasQuotaPreferenceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreferenceTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func validateNewCloudQuotasQuotaPreferenceTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudQuotasQuotaPreferenceTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

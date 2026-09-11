@@ -56,6 +56,10 @@ func (b *jsiiProxy_BookmarkGroup) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (b *jsiiProxy_BookmarkGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BookmarkGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (b *jsiiProxy_BookmarkGroup) validateMoveToIdParameters(id *string) error {
 }
 
 func (b *jsiiProxy_BookmarkGroup) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BookmarkGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_BookmarkGroup) validateSetIsHomeParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_BookmarkGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BookmarkGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

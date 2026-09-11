@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataLossPreventionJobTrigger) validateInterpolationForAttribu
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTrigger) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTrigger) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (d *jsiiProxy_DataLossPreventionJobTrigger) validatePutTimeoutsParameters(v
 }
 
 func (d *jsiiProxy_DataLossPreventionJobTrigger) validatePutTriggersParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTrigger) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_DataLossPreventionJobTrigger) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTrigger) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataLossPreventionJobTrigger) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataprocbatch/internal"
 )
 
 type GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthenticationConfig() GoogleDataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference
 	AuthenticationConfigInput() *GoogleDataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfig
 	// the index of the complex object in a list.
@@ -54,9 +54,9 @@ type GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Ttl() *string
 	SetTtl(val *string)
 	TtlInput() *string
@@ -65,7 +65,7 @@ type GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference interfac
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,9 +81,9 @@ type GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuthenticationConfig(value *GoogleDataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfig)
 	ResetAuthenticationConfig()
 	ResetKmsKey()
@@ -95,7 +95,7 @@ type GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference interfac
 	ResetTtl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,7 +105,7 @@ type GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference interfac
 
 // The jsii proxy struct for GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference
 type jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) AuthenticationConfig() GoogleDataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference {
@@ -308,8 +308,8 @@ func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -339,7 +339,7 @@ func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputRefe
 }
 
 
-func NewGoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference {
+func NewGoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -348,7 +348,7 @@ func NewGoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference(terra
 	j := jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDataprocBatch.GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference",
+		"@cdktn/provider-google-beta.googleDataprocBatch.GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -356,11 +356,11 @@ func NewGoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference(terra
 	return &j
 }
 
-func NewGoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference_Override(g GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference_Override(g GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDataprocBatch.GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference",
+		"@cdktn/provider-google-beta.googleDataprocBatch.GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -476,7 +476,7 @@ func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -527,11 +527,11 @@ func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -655,8 +655,8 @@ func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -668,16 +668,16 @@ func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -759,8 +759,8 @@ func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputRefe
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -768,7 +768,7 @@ func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

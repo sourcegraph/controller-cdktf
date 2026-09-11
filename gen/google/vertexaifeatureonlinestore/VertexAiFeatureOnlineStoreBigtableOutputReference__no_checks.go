@@ -40,7 +40,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateGe
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validatePu
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateSe
 	return nil
 }
 
-func validateNewVertexAiFeatureOnlineStoreBigtableOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVertexAiFeatureOnlineStoreBigtableOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

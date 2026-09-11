@@ -12,7 +12,7 @@ func (i *jsiiProxy_IotTopicRuleLambdaList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleLambdaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleLambdaList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_IotTopicRuleLambdaList) validateSetTerraformAttributeParamete
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleLambdaList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IotTopicRuleLambdaList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_IotTopicRuleLambdaList) validateSetWrapsSetParameters(val *bo
 	return nil
 }
 
-func validateNewIotTopicRuleLambdaListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewIotTopicRuleLambdaListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

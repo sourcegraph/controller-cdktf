@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsLocationTrackerAssociations) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsLocationTrackerAssociations) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsLocationTrackerAssociations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataAwsLocationTrackerAssociations) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLocationTrackerAssociations) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsLocationTrackerAssociations) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

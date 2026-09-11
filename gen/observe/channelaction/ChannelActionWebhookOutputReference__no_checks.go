@@ -40,11 +40,11 @@ func (c *jsiiProxy_ChannelActionWebhookOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (c *jsiiProxy_ChannelActionWebhookOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChannelActionWebhookOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChannelActionWebhookOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChannelActionWebhookOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ChannelActionWebhookOutputReference) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_ChannelActionWebhookOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ChannelActionWebhookOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_ChannelActionWebhookOutputReference) validateSetUrlParameters
 	return nil
 }
 
-func validateNewChannelActionWebhookOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewChannelActionWebhookOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

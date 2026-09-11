@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimV1) validatePutSpecParamet
 	return nil
 }
 
+func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimV1) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataKubernetesPersistentVolumeClaimV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,7 +88,7 @@ func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimV1) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimV1) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimV1) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

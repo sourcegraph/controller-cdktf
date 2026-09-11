@@ -12,7 +12,7 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyList) valida
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyList) valida
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyList) valida
 	return nil
 }
 
-func validateNewCodepipelineCustomActionTypeConfigurationPropertyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCodepipelineCustomActionTypeConfigurationPropertyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

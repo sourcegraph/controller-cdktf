@@ -40,11 +40,11 @@ func (c *jsiiProxy_ChronicleReferenceListScopeInfoReferenceListScopeOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleReferenceListScopeInfoReferenceListScopeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChronicleReferenceListScopeInfoReferenceListScopeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleReferenceListScopeInfoReferenceListScopeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleReferenceListScopeInfoReferenceListScopeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ChronicleReferenceListScopeInfoReferenceListScopeOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleReferenceListScopeInfoReferenceListScopeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ChronicleReferenceListScopeInfoReferenceListScopeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewChronicleReferenceListScopeInfoReferenceListScopeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewChronicleReferenceListScopeInfoReferenceListScopeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

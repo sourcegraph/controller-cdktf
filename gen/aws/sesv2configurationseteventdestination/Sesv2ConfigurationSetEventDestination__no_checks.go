@@ -56,6 +56,10 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateInterpolationF
 	return nil
 }
 
+func (s *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateOverrideLogica
 }
 
 func (s *jsiiProxy_Sesv2ConfigurationSetEventDestination) validatePutEventDestinationParameters(value *Sesv2ConfigurationSetEventDestinationEventDestination) error {
+	return nil
+}
+
+func (s *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

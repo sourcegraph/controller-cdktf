@@ -12,7 +12,7 @@ func (b *jsiiProxy_BigtableGcPolicyMaxVersionList) validateGetParameters(index *
 	return nil
 }
 
-func (b *jsiiProxy_BigtableGcPolicyMaxVersionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableGcPolicyMaxVersionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_BigtableGcPolicyMaxVersionList) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_BigtableGcPolicyMaxVersionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigtableGcPolicyMaxVersionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_BigtableGcPolicyMaxVersionList) validateSetWrapsSetParameters
 	return nil
 }
 
-func validateNewBigtableGcPolicyMaxVersionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBigtableGcPolicyMaxVersionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

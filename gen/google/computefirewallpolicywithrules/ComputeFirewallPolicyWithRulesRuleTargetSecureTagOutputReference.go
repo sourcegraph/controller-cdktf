@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computefirewallpolicywithrules/internal"
 )
 
 type ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,15 +38,15 @@ type ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,13 +62,13 @@ type ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,7 +78,7 @@ type ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference interface 
 
 // The jsii proxy struct for ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference
 type jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference) ComplexObjectIndex() interface{} {
@@ -171,8 +171,8 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -182,7 +182,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputRefere
 }
 
 
-func NewComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference {
+func NewComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -191,7 +191,7 @@ func NewComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference(terrafo
 	j := jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeFirewallPolicyWithRules.ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference",
+		"@cdktn/provider-google.computeFirewallPolicyWithRules.ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -199,11 +199,11 @@ func NewComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference(terrafo
 	return &j
 }
 
-func NewComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference_Override(c ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference_Override(c ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeFirewallPolicyWithRules.ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference",
+		"@cdktn/provider-google.computeFirewallPolicyWithRules.ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -264,7 +264,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,11 +304,11 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -432,8 +432,8 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -445,16 +445,16 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -469,8 +469,8 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputRefere
 	)
 }
 
-func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -478,7 +478,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputRefere
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

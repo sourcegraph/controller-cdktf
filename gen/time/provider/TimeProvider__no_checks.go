@@ -12,6 +12,10 @@ func (t *jsiiProxy_TimeProvider) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (t *jsiiProxy_TimeProvider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateTimeProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

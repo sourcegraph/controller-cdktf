@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/resourcequota/internal"
 )
 
 type ResourceQuotaSpecScopeSelectorOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,15 +36,15 @@ type ResourceQuotaSpecScopeSelectorOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,14 +60,14 @@ type ResourceQuotaSpecScopeSelectorOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutMatchExpression(value interface{})
 	ResetMatchExpression()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type ResourceQuotaSpecScopeSelectorOutputReference interface {
 
 // The jsii proxy struct for ResourceQuotaSpecScopeSelectorOutputReference
 type jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference) TerraformResou
 }
 
 
-func NewResourceQuotaSpecScopeSelectorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ResourceQuotaSpecScopeSelectorOutputReference {
+func NewResourceQuotaSpecScopeSelectorOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ResourceQuotaSpecScopeSelectorOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewResourceQuotaSpecScopeSelectorOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewResourceQuotaSpecScopeSelectorOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaSpecScopeSelectorOutputReference",
+		"@cdktn/provider-kubernetes.resourceQuota.ResourceQuotaSpecScopeSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewResourceQuotaSpecScopeSelectorOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewResourceQuotaSpecScopeSelectorOutputReference_Override(r ResourceQuotaSpecScopeSelectorOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewResourceQuotaSpecScopeSelectorOutputReference_Override(r ResourceQuotaSpecScopeSelectorOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaSpecScopeSelectorOutputReference",
+		"@cdktn/provider-kubernetes.resourceQuota.ResourceQuotaSpecScopeSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -282,11 +282,11 @@ func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -410,8 +410,8 @@ func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference) GetStringMapAt
 	return returns
 }
 
-func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -423,16 +423,16 @@ func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference) InterpolationA
 	return returns
 }
 
-func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference) ResetMatchExpr
 	)
 }
 
-func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/rolebindingv1/internal"
 )
 
 type RoleBindingV1MetadataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
@@ -48,16 +48,16 @@ type RoleBindingV1MetadataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uid() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +73,16 @@ type RoleBindingV1MetadataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAnnotations()
 	ResetLabels()
 	ResetName()
 	ResetNamespace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type RoleBindingV1MetadataOutputReference interface {
 
 // The jsii proxy struct for RoleBindingV1MetadataOutputReference
 type jsiiProxy_RoleBindingV1MetadataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_RoleBindingV1MetadataOutputReference) Annotations() *map[string]*string {
@@ -255,8 +255,8 @@ func (j *jsiiProxy_RoleBindingV1MetadataOutputReference) TerraformAttribute() *s
 	return returns
 }
 
-func (j *jsiiProxy_RoleBindingV1MetadataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_RoleBindingV1MetadataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -276,7 +276,7 @@ func (j *jsiiProxy_RoleBindingV1MetadataOutputReference) Uid() *string {
 }
 
 
-func NewRoleBindingV1MetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RoleBindingV1MetadataOutputReference {
+func NewRoleBindingV1MetadataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) RoleBindingV1MetadataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewRoleBindingV1MetadataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -285,7 +285,7 @@ func NewRoleBindingV1MetadataOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_RoleBindingV1MetadataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference",
+		"@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -293,11 +293,11 @@ func NewRoleBindingV1MetadataOutputReference(terraformResource cdktf.IInterpolat
 	return &j
 }
 
-func NewRoleBindingV1MetadataOutputReference_Override(r RoleBindingV1MetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRoleBindingV1MetadataOutputReference_Override(r RoleBindingV1MetadataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference",
+		"@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -391,7 +391,7 @@ func (j *jsiiProxy_RoleBindingV1MetadataOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_RoleBindingV1MetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RoleBindingV1MetadataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,11 +431,11 @@ func (r *jsiiProxy_RoleBindingV1MetadataOutputReference) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (r *jsiiProxy_RoleBindingV1MetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RoleBindingV1MetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -559,8 +559,8 @@ func (r *jsiiProxy_RoleBindingV1MetadataOutputReference) GetStringMapAttribute(t
 	return returns
 }
 
-func (r *jsiiProxy_RoleBindingV1MetadataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_RoleBindingV1MetadataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -572,16 +572,16 @@ func (r *jsiiProxy_RoleBindingV1MetadataOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (r *jsiiProxy_RoleBindingV1MetadataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_RoleBindingV1MetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -620,8 +620,8 @@ func (r *jsiiProxy_RoleBindingV1MetadataOutputReference) ResetNamespace() {
 	)
 }
 
-func (r *jsiiProxy_RoleBindingV1MetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_RoleBindingV1MetadataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -629,7 +629,7 @@ func (r *jsiiProxy_RoleBindingV1MetadataOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

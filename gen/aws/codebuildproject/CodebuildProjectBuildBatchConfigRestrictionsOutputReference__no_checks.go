@@ -40,11 +40,11 @@ func (c *jsiiProxy_CodebuildProjectBuildBatchConfigRestrictionsOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectBuildBatchConfigRestrictionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildProjectBuildBatchConfigRestrictionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectBuildBatchConfigRestrictionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectBuildBatchConfigRestrictionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_CodebuildProjectBuildBatchConfigRestrictionsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectBuildBatchConfigRestrictionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodebuildProjectBuildBatchConfigRestrictionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCodebuildProjectBuildBatchConfigRestrictionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCodebuildProjectBuildBatchConfigRestrictionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

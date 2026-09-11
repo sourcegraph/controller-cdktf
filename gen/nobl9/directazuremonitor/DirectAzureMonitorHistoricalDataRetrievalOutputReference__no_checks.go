@@ -40,7 +40,7 @@ func (d *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (d *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDirectAzureMonitorHistoricalDataRetrievalOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDirectAzureMonitorHistoricalDataRetrievalOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

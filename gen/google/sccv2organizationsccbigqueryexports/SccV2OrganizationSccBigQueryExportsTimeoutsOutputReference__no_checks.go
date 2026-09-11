@@ -40,11 +40,11 @@ func (s *jsiiProxy_SccV2OrganizationSccBigQueryExportsTimeoutsOutputReference) v
 	return nil
 }
 
-func (s *jsiiProxy_SccV2OrganizationSccBigQueryExportsTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SccV2OrganizationSccBigQueryExportsTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SccV2OrganizationSccBigQueryExportsTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SccV2OrganizationSccBigQueryExportsTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_SccV2OrganizationSccBigQueryExportsTimeoutsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_SccV2OrganizationSccBigQueryExportsTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SccV2OrganizationSccBigQueryExportsTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_SccV2OrganizationSccBigQueryExportsTimeoutsOutputReference) v
 	return nil
 }
 
-func validateNewSccV2OrganizationSccBigQueryExportsTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSccV2OrganizationSccBigQueryExportsTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-random.password.Password",
+		"@cdktn/provider-random.password.Password",
 		reflect.TypeOf((*Password)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -42,6 +42,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "lower", GoGetter: "Lower"},
 			_jsii_.MemberProperty{JsiiProperty: "lowerInput", GoGetter: "LowerInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "minLower", GoGetter: "MinLower"},
 			_jsii_.MemberProperty{JsiiProperty: "minLowerInput", GoGetter: "MinLowerInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minNumeric", GoGetter: "MinNumeric"},
@@ -64,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeepers", GoMethod: "ResetKeepers"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLower", GoMethod: "ResetLower"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMinLower", GoMethod: "ResetMinLower"},
@@ -90,15 +92,16 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "upper", GoGetter: "Upper"},
 			_jsii_.MemberProperty{JsiiProperty: "upperInput", GoGetter: "UpperInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Password{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-random.password.PasswordConfig",
+		"@cdktn/provider-random.password.PasswordConfig",
 		reflect.TypeOf((*PasswordConfig)(nil)).Elem(),
 	)
 }

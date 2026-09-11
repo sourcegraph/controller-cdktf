@@ -56,6 +56,10 @@ func (a *jsiiProxy_AlloydbCluster) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -128,6 +132,10 @@ func (a *jsiiProxy_AlloydbCluster) validatePutTimeoutsParameters(value *AlloydbC
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateAlloydbCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -192,7 +200,7 @@ func (j *jsiiProxy_AlloydbCluster) validateSetLabelsParameters(val *map[string]*
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AlloydbCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (p *jsiiProxy_ParallelstoreInstance) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (p *jsiiProxy_ParallelstoreInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_ParallelstoreInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (p *jsiiProxy_ParallelstoreInstance) validateOverrideLogicalIdParameters(ne
 }
 
 func (p *jsiiProxy_ParallelstoreInstance) validatePutTimeoutsParameters(value *ParallelstoreInstanceTimeouts) error {
+	return nil
+}
+
+func (p *jsiiProxy_ParallelstoreInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_ParallelstoreInstance) validateSetLabelsParameters(val *map[s
 	return nil
 }
 
-func (j *jsiiProxy_ParallelstoreInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ParallelstoreInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

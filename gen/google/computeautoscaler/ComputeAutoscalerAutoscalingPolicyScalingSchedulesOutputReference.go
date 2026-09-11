@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeautoscaler/internal"
 )
 
 type ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -52,9 +52,9 @@ type ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeZone() *string
 	SetTimeZone(val *string)
 	TimeZoneInput() *string
@@ -63,7 +63,7 @@ type ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference interface
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,15 +79,15 @@ type ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	ResetDisabled()
 	ResetTimeZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference interface
 
 // The jsii proxy struct for ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference
 type jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference) ComplexObjectIndex() interface{} {
@@ -280,8 +280,8 @@ func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -311,7 +311,7 @@ func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputRefer
 }
 
 
-func NewComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference {
+func NewComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -320,7 +320,7 @@ func NewComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference(terraf
 	j := jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference",
+		"@cdktn/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -328,11 +328,11 @@ func NewComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference(terraf
 	return &j
 }
 
-func NewComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference_Override(c ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference_Override(c ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference",
+		"@cdktn/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -448,7 +448,7 @@ func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,11 +499,11 @@ func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -627,8 +627,8 @@ func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -640,16 +640,16 @@ func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -680,8 +680,8 @@ func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputRefer
 	)
 }
 
-func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -689,7 +689,7 @@ func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputRefer
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

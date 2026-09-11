@@ -56,6 +56,10 @@ func (a *jsiiProxy_AuditmanagerAssessment) validateInterpolationForAttributePara
 	return nil
 }
 
+func (a *jsiiProxy_AuditmanagerAssessment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuditmanagerAssessment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (a *jsiiProxy_AuditmanagerAssessment) validatePutRolesParameters(value inte
 }
 
 func (a *jsiiProxy_AuditmanagerAssessment) validatePutScopeParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AuditmanagerAssessment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_AuditmanagerAssessment) validateSetFrameworkIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerAssessment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AuditmanagerAssessment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

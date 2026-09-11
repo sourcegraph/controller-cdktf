@@ -40,7 +40,7 @@ func (s *jsiiProxy_SpannerInstancePartitionAutoscalingConfigOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstancePartitionAutoscalingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpannerInstancePartitionAutoscalingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (s *jsiiProxy_SpannerInstancePartitionAutoscalingConfigOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstancePartitionAutoscalingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpannerInstancePartitionAutoscalingConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_SpannerInstancePartitionAutoscalingConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_SpannerInstancePartitionAutoscalingConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SpannerInstancePartitionAutoscalingConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSpannerInstancePartitionAutoscalingConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSpannerInstancePartitionAutoscalingConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

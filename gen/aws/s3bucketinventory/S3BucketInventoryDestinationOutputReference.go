@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/s3bucketinventory/internal"
 )
 
 type S3BucketInventoryDestinationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Bucket() S3BucketInventoryDestinationBucketOutputReference
 	BucketInput() *S3BucketInventoryDestinationBucket
 	// the index of the complex object in a list.
@@ -36,15 +36,15 @@ type S3BucketInventoryDestinationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,13 +60,13 @@ type S3BucketInventoryDestinationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutBucket(value *S3BucketInventoryDestinationBucket)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type S3BucketInventoryDestinationOutputReference interface {
 
 // The jsii proxy struct for S3BucketInventoryDestinationOutputReference
 type jsiiProxy_S3BucketInventoryDestinationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_S3BucketInventoryDestinationOutputReference) Bucket() S3BucketInventoryDestinationBucketOutputReference {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_S3BucketInventoryDestinationOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketInventoryDestinationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_S3BucketInventoryDestinationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_S3BucketInventoryDestinationOutputReference) TerraformResourc
 }
 
 
-func NewS3BucketInventoryDestinationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) S3BucketInventoryDestinationOutputReference {
+func NewS3BucketInventoryDestinationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) S3BucketInventoryDestinationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewS3BucketInventoryDestinationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewS3BucketInventoryDestinationOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_S3BucketInventoryDestinationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationOutputReference",
+		"@cdktn/provider-aws.s3BucketInventory.S3BucketInventoryDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewS3BucketInventoryDestinationOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewS3BucketInventoryDestinationOutputReference_Override(s S3BucketInventoryDestinationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewS3BucketInventoryDestinationOutputReference_Override(s S3BucketInventoryDestinationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationOutputReference",
+		"@cdktn/provider-aws.s3BucketInventory.S3BucketInventoryDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -241,7 +241,7 @@ func (j *jsiiProxy_S3BucketInventoryDestinationOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_S3BucketInventoryDestinationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketInventoryDestinationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,11 +281,11 @@ func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -409,8 +409,8 @@ func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -422,16 +422,16 @@ func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) InterpolationAsL
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -449,8 +449,8 @@ func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) PutBucket(value 
 	)
 }
 
-func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (e *jsiiProxy_EmrCluster) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (e *jsiiProxy_EmrCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -105,6 +109,10 @@ func (e *jsiiProxy_EmrCluster) validatePutMasterInstanceGroupParameters(value *E
 }
 
 func (e *jsiiProxy_EmrCluster) validatePutStepParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmrCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -168,7 +176,7 @@ func (j *jsiiProxy_EmrCluster) validateSetKeepJobFlowAliveWhenNoStepsParameters(
 	return nil
 }
 
-func (j *jsiiProxy_EmrCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EmrCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

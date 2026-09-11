@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMap) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionUrlMap) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionUrlMap) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMap) validatePutTimeoutsParameters(valu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionUrlMap) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleComputeRegionUrlMap_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -136,7 +144,7 @@ func (j *jsiiProxy_GoogleComputeRegionUrlMap) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionUrlMap) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeRegionUrlMap) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

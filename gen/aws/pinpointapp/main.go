@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.pinpointApp.PinpointApp",
+		"@cdktn/provider-aws.pinpointApp.PinpointApp",
 		reflect.TypeOf((*PinpointApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -42,6 +42,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "limits", GoGetter: "Limits"},
 			_jsii_.MemberProperty{JsiiProperty: "limitsInput", GoGetter: "LimitsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -59,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "quietTime", GoGetter: "QuietTime"},
 			_jsii_.MemberProperty{JsiiProperty: "quietTimeInput", GoGetter: "QuietTimeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCampaignHook", GoMethod: "ResetCampaignHook"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimits", GoMethod: "ResetLimits"},
@@ -81,19 +83,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PinpointApp{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHook",
+		"@cdktn/provider-aws.pinpointApp.PinpointAppCampaignHook",
 		reflect.TypeOf((*PinpointAppCampaignHook)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHookOutputReference",
+		"@cdktn/provider-aws.pinpointApp.PinpointAppCampaignHookOutputReference",
 		reflect.TypeOf((*PinpointAppCampaignHookOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -129,20 +132,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PinpointAppCampaignHookOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.pinpointApp.PinpointAppConfig",
+		"@cdktn/provider-aws.pinpointApp.PinpointAppConfig",
 		reflect.TypeOf((*PinpointAppConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.pinpointApp.PinpointAppLimits",
+		"@cdktn/provider-aws.pinpointApp.PinpointAppLimits",
 		reflect.TypeOf((*PinpointAppLimits)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.pinpointApp.PinpointAppLimitsOutputReference",
+		"@cdktn/provider-aws.pinpointApp.PinpointAppLimitsOutputReference",
 		reflect.TypeOf((*PinpointAppLimitsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -181,16 +184,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PinpointAppLimitsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.pinpointApp.PinpointAppQuietTime",
+		"@cdktn/provider-aws.pinpointApp.PinpointAppQuietTime",
 		reflect.TypeOf((*PinpointAppQuietTime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.pinpointApp.PinpointAppQuietTimeOutputReference",
+		"@cdktn/provider-aws.pinpointApp.PinpointAppQuietTimeOutputReference",
 		reflect.TypeOf((*PinpointAppQuietTimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -223,7 +226,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PinpointAppQuietTimeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

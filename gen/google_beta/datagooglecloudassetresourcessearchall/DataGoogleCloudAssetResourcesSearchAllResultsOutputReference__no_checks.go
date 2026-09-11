@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleCloudAssetResourcesSearchAllResultsOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudAssetResourcesSearchAllResultsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleCloudAssetResourcesSearchAllResultsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudAssetResourcesSearchAllResultsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudAssetResourcesSearchAllResultsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAllResultsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAllResultsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAllResultsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleCloudAssetResourcesSearchAllResultsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleCloudAssetResourcesSearchAllResultsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

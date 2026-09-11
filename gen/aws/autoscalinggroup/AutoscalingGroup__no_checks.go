@@ -56,6 +56,10 @@ func (a *jsiiProxy_AutoscalingGroup) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (a *jsiiProxy_AutoscalingGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (a *jsiiProxy_AutoscalingGroup) validatePutTimeoutsParameters(value *Autosc
 }
 
 func (a *jsiiProxy_AutoscalingGroup) validatePutWarmPoolParameters(value *AutoscalingGroupWarmPool) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutoscalingGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -180,7 +188,7 @@ func (j *jsiiProxy_AutoscalingGroup) validateSetLaunchConfigurationParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AutoscalingGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

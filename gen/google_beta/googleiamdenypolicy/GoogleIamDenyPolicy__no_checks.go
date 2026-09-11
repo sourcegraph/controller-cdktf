@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleIamDenyPolicy) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamDenyPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamDenyPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleIamDenyPolicy) validatePutRulesParameters(value interfa
 }
 
 func (g *jsiiProxy_GoogleIamDenyPolicy) validatePutTimeoutsParameters(value *GoogleIamDenyPolicyTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIamDenyPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleIamDenyPolicy) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamDenyPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleIamDenyPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

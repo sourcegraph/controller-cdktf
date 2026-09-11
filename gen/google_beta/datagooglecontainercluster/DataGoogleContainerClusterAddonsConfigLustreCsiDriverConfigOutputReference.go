@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecontainercluster/internal"
 )
 
 type DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -25,9 +25,9 @@ type DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableMultiNic() cdktf.IResolvable
-	Enabled() cdktf.IResolvable
-	EnableLegacyLustrePort() cdktf.IResolvable
+	DisableMultiNic() cdktn.IResolvable
+	Enabled() cdktn.IResolvable
+	EnableLegacyLustrePort() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfig
@@ -37,15 +37,15 @@ type DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference 
 
 // The jsii proxy struct for DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference
 type jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -109,8 +109,8 @@ func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOu
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) DisableMultiNic() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) DisableMultiNic() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"disableMultiNic",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOu
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOu
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) EnableLegacyLustrePort() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) EnableLegacyLustrePort() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enableLegacyLustrePort",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOu
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -180,7 +180,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOu
 }
 
 
-func NewDataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference {
+func NewDataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -189,7 +189,7 @@ func NewDataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReferen
 	j := jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -197,11 +197,11 @@ func NewDataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReferen
 	return &j
 }
 
-func NewDataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference_Override(d DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference_Override(d DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -251,7 +251,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOu
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,11 +291,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOu
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -419,8 +419,8 @@ func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOu
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -432,24 +432,24 @@ func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOu
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -457,7 +457,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOu
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

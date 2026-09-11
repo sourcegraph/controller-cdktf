@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.Poller",
+		"@cdktn/provider-observe.poller.Poller",
 		reflect.TypeOf((*Poller)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -53,6 +53,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "intervalInput", GoGetter: "IntervalInput"},
 			_jsii_.MemberProperty{JsiiProperty: "kind", GoGetter: "Kind"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "mongodbatlas", GoGetter: "Mongodbatlas"},
 			_jsii_.MemberProperty{JsiiProperty: "mongodbatlasInput", GoGetter: "MongodbatlasInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -75,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMongodbatlas", GoMethod: "PutMongodbatlas"},
 			_jsii_.MemberMethod{JsiiMethod: "putPubsub", GoMethod: "PutPubsub"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsSnapshot", GoMethod: "ResetAwsSnapshot"},
 			_jsii_.MemberMethod{JsiiMethod: "resetChunk", GoMethod: "ResetChunk"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloudwatchMetrics", GoMethod: "ResetCloudwatchMetrics"},
@@ -105,21 +107,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Poller{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.poller.PollerAwsSnapshot",
+		"@cdktn/provider-observe.poller.PollerAwsSnapshot",
 		reflect.TypeOf((*PollerAwsSnapshot)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerAwsSnapshotOutputReference",
+		"@cdktn/provider-observe.poller.PollerAwsSnapshotOutputReference",
 		reflect.TypeOf((*PollerAwsSnapshotOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assumeRoleArn", GoGetter: "AssumeRoleArn"},
@@ -152,16 +155,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerAwsSnapshotOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.poller.PollerChunk",
+		"@cdktn/provider-observe.poller.PollerChunk",
 		reflect.TypeOf((*PollerChunk)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerChunkOutputReference",
+		"@cdktn/provider-observe.poller.PollerChunkOutputReference",
 		reflect.TypeOf((*PollerChunkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -193,16 +196,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerChunkOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.poller.PollerCloudwatchMetrics",
+		"@cdktn/provider-observe.poller.PollerCloudwatchMetrics",
 		reflect.TypeOf((*PollerCloudwatchMetrics)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsOutputReference",
+		"@cdktn/provider-observe.poller.PollerCloudwatchMetricsOutputReference",
 		reflect.TypeOf((*PollerCloudwatchMetricsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assumeRoleArn", GoGetter: "AssumeRoleArn"},
@@ -242,20 +245,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerCloudwatchMetricsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQuery",
+		"@cdktn/provider-observe.poller.PollerCloudwatchMetricsQuery",
 		reflect.TypeOf((*PollerCloudwatchMetricsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryDimension",
+		"@cdktn/provider-observe.poller.PollerCloudwatchMetricsQueryDimension",
 		reflect.TypeOf((*PollerCloudwatchMetricsQueryDimension)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryDimensionList",
+		"@cdktn/provider-observe.poller.PollerCloudwatchMetricsQueryDimensionList",
 		reflect.TypeOf((*PollerCloudwatchMetricsQueryDimensionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -272,12 +275,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerCloudwatchMetricsQueryDimensionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryDimensionOutputReference",
+		"@cdktn/provider-observe.poller.PollerCloudwatchMetricsQueryDimensionOutputReference",
 		reflect.TypeOf((*PollerCloudwatchMetricsQueryDimensionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -309,12 +312,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerCloudwatchMetricsQueryDimensionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryList",
+		"@cdktn/provider-observe.poller.PollerCloudwatchMetricsQueryList",
 		reflect.TypeOf((*PollerCloudwatchMetricsQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -331,12 +334,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerCloudwatchMetricsQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryOutputReference",
+		"@cdktn/provider-observe.poller.PollerCloudwatchMetricsQueryOutputReference",
 		reflect.TypeOf((*PollerCloudwatchMetricsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -376,16 +379,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerCloudwatchMetricsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilter",
+		"@cdktn/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilter",
 		reflect.TypeOf((*PollerCloudwatchMetricsQueryResourceFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterList",
+		"@cdktn/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterList",
 		reflect.TypeOf((*PollerCloudwatchMetricsQueryResourceFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -402,12 +405,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterOutputReference",
+		"@cdktn/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterOutputReference",
 		reflect.TypeOf((*PollerCloudwatchMetricsQueryResourceFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -446,16 +449,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterTagFilter",
+		"@cdktn/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterTagFilter",
 		reflect.TypeOf((*PollerCloudwatchMetricsQueryResourceFilterTagFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterTagFilterList",
+		"@cdktn/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterTagFilterList",
 		reflect.TypeOf((*PollerCloudwatchMetricsQueryResourceFilterTagFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -472,12 +475,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterTagFilterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterTagFilterOutputReference",
+		"@cdktn/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterTagFilterOutputReference",
 		reflect.TypeOf((*PollerCloudwatchMetricsQueryResourceFilterTagFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -509,20 +512,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterTagFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.poller.PollerConfig",
+		"@cdktn/provider-observe.poller.PollerConfig",
 		reflect.TypeOf((*PollerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.poller.PollerGcpMonitoring",
+		"@cdktn/provider-observe.poller.PollerGcpMonitoring",
 		reflect.TypeOf((*PollerGcpMonitoring)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerGcpMonitoringOutputReference",
+		"@cdktn/provider-observe.poller.PollerGcpMonitoringOutputReference",
 		reflect.TypeOf((*PollerGcpMonitoringOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -565,16 +568,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerGcpMonitoringOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.poller.PollerHttp",
+		"@cdktn/provider-observe.poller.PollerHttp",
 		reflect.TypeOf((*PollerHttp)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerHttpOutputReference",
+		"@cdktn/provider-observe.poller.PollerHttpOutputReference",
 		reflect.TypeOf((*PollerHttpOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
@@ -632,16 +635,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerHttpOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.poller.PollerHttpRequest",
+		"@cdktn/provider-observe.poller.PollerHttpRequest",
 		reflect.TypeOf((*PollerHttpRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerHttpRequestList",
+		"@cdktn/provider-observe.poller.PollerHttpRequestList",
 		reflect.TypeOf((*PollerHttpRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -658,12 +661,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerHttpRequestList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerHttpRequestOutputReference",
+		"@cdktn/provider-observe.poller.PollerHttpRequestOutputReference",
 		reflect.TypeOf((*PollerHttpRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authScheme", GoGetter: "AuthScheme"},
@@ -714,20 +717,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerHttpRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.poller.PollerHttpRule",
+		"@cdktn/provider-observe.poller.PollerHttpRule",
 		reflect.TypeOf((*PollerHttpRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.poller.PollerHttpRuleDecoder",
+		"@cdktn/provider-observe.poller.PollerHttpRuleDecoder",
 		reflect.TypeOf((*PollerHttpRuleDecoder)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerHttpRuleDecoderOutputReference",
+		"@cdktn/provider-observe.poller.PollerHttpRuleDecoderOutputReference",
 		reflect.TypeOf((*PollerHttpRuleDecoderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -756,12 +759,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerHttpRuleDecoderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerHttpRuleList",
+		"@cdktn/provider-observe.poller.PollerHttpRuleList",
 		reflect.TypeOf((*PollerHttpRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -778,16 +781,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerHttpRuleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.poller.PollerHttpRuleMatch",
+		"@cdktn/provider-observe.poller.PollerHttpRuleMatch",
 		reflect.TypeOf((*PollerHttpRuleMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerHttpRuleMatchOutputReference",
+		"@cdktn/provider-observe.poller.PollerHttpRuleMatchOutputReference",
 		reflect.TypeOf((*PollerHttpRuleMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authScheme", GoGetter: "AuthScheme"},
@@ -838,12 +841,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerHttpRuleMatchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerHttpRuleOutputReference",
+		"@cdktn/provider-observe.poller.PollerHttpRuleOutputReference",
 		reflect.TypeOf((*PollerHttpRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -880,16 +883,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerHttpRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.poller.PollerHttpTemplate",
+		"@cdktn/provider-observe.poller.PollerHttpTemplate",
 		reflect.TypeOf((*PollerHttpTemplate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerHttpTemplateOutputReference",
+		"@cdktn/provider-observe.poller.PollerHttpTemplateOutputReference",
 		reflect.TypeOf((*PollerHttpTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authScheme", GoGetter: "AuthScheme"},
@@ -940,16 +943,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerHttpTemplateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.poller.PollerHttpTimestamp",
+		"@cdktn/provider-observe.poller.PollerHttpTimestamp",
 		reflect.TypeOf((*PollerHttpTimestamp)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerHttpTimestampList",
+		"@cdktn/provider-observe.poller.PollerHttpTimestampList",
 		reflect.TypeOf((*PollerHttpTimestampList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -966,12 +969,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerHttpTimestampList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerHttpTimestampOutputReference",
+		"@cdktn/provider-observe.poller.PollerHttpTimestampOutputReference",
 		reflect.TypeOf((*PollerHttpTimestampOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1012,16 +1015,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerHttpTimestampOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.poller.PollerMongodbatlas",
+		"@cdktn/provider-observe.poller.PollerMongodbatlas",
 		reflect.TypeOf((*PollerMongodbatlas)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerMongodbatlasOutputReference",
+		"@cdktn/provider-observe.poller.PollerMongodbatlasOutputReference",
 		reflect.TypeOf((*PollerMongodbatlasOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1058,16 +1061,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerMongodbatlasOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.poller.PollerPubsub",
+		"@cdktn/provider-observe.poller.PollerPubsub",
 		reflect.TypeOf((*PollerPubsub)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.poller.PollerPubsubOutputReference",
+		"@cdktn/provider-observe.poller.PollerPubsubOutputReference",
 		reflect.TypeOf((*PollerPubsubOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1100,7 +1103,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PollerPubsubOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

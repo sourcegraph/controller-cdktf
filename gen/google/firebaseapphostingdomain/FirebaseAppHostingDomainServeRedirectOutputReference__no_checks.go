@@ -40,11 +40,11 @@ func (f *jsiiProxy_FirebaseAppHostingDomainServeRedirectOutputReference) validat
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingDomainServeRedirectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirebaseAppHostingDomainServeRedirectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingDomainServeRedirectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaseAppHostingDomainServeRedirectOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_FirebaseAppHostingDomainServeRedirectOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDomainServeRedirectOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FirebaseAppHostingDomainServeRedirectOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_FirebaseAppHostingDomainServeRedirectOutputReference) validat
 	return nil
 }
 
-func validateNewFirebaseAppHostingDomainServeRedirectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFirebaseAppHostingDomainServeRedirectOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

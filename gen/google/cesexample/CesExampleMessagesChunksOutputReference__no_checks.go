@@ -40,7 +40,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) validateGetStringMap
 	return nil
 }
 
-func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) validatePutToolRespo
 	return nil
 }
 
-func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) validateSetUpdatedVa
 	return nil
 }
 
-func validateNewCesExampleMessagesChunksOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCesExampleMessagesChunksOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

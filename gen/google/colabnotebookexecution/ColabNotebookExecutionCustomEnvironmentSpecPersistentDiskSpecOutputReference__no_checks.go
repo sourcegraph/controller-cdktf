@@ -40,11 +40,11 @@ func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpec
 	return nil
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpec
 	return nil
 }
 
-func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

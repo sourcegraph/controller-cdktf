@@ -56,6 +56,10 @@ func (c *jsiiProxy_ConfigConfigurationAggregator) validateInterpolationForAttrib
 	return nil
 }
 
+func (c *jsiiProxy_ConfigConfigurationAggregator) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigConfigurationAggregator) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (c *jsiiProxy_ConfigConfigurationAggregator) validatePutAccountAggregationS
 }
 
 func (c *jsiiProxy_ConfigConfigurationAggregator) validatePutOrganizationAggregationSourceParameters(value *ConfigConfigurationAggregatorOrganizationAggregationSource) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigConfigurationAggregator) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_ConfigConfigurationAggregator) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_ConfigConfigurationAggregator) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ConfigConfigurationAggregator) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleVertexAiFeatureGroup) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiFeatureGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiFeatureGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleVertexAiFeatureGroup) validatePutBigQueryParameters(val
 }
 
 func (g *jsiiProxy_GoogleVertexAiFeatureGroup) validatePutTimeoutsParameters(value *GoogleVertexAiFeatureGroupTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeatureGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureGroup) validateSetLabelsParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleVertexAiFeatureGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

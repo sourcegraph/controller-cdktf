@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/deployment/internal"
 )
 
 type DeploymentSpecTemplateSpecHostAliasesList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type DeploymentSpecTemplateSpecHostAliasesList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DeploymentSpecTemplateSpecHostAliasesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type DeploymentSpecTemplateSpecHostAliasesList interface {
 
 // The jsii proxy struct for DeploymentSpecTemplateSpecHostAliasesList
 type jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList) WrapsSet() *bool {
 }
 
 
-func NewDeploymentSpecTemplateSpecHostAliasesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecHostAliasesList {
+func NewDeploymentSpecTemplateSpecHostAliasesList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecHostAliasesList {
 	_init_.Initialize()
 
 	if err := validateNewDeploymentSpecTemplateSpecHostAliasesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewDeploymentSpecTemplateSpecHostAliasesList(terraformResource cdktf.IInter
 	j := jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecHostAliasesList",
+		"@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecHostAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewDeploymentSpecTemplateSpecHostAliasesList(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewDeploymentSpecTemplateSpecHostAliasesList_Override(d DeploymentSpecTemplateSpecHostAliasesList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDeploymentSpecTemplateSpecHostAliasesList_Override(d DeploymentSpecTemplateSpecHostAliasesList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecHostAliasesList",
+		"@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecHostAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList)SetWrapsSet(val *bo
 	)
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -228,8 +231,8 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList) Get(index *float64
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList) Resolve(_context c
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

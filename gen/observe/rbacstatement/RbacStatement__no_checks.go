@@ -56,6 +56,10 @@ func (r *jsiiProxy_RbacStatement) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (r *jsiiProxy_RbacStatement) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RbacStatement) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (r *jsiiProxy_RbacStatement) validatePutObjectParameters(value *RbacStateme
 }
 
 func (r *jsiiProxy_RbacStatement) validatePutSubjectParameters(value *RbacStatementSubject) error {
+	return nil
+}
+
+func (r *jsiiProxy_RbacStatement) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_RbacStatement) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_RbacStatement) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_RbacStatement) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

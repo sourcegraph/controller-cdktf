@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataTfePolicySetVcsRepoList) validateGetParameters(index *flo
 	return nil
 }
 
-func (d *jsiiProxy_DataTfePolicySetVcsRepoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataTfePolicySetVcsRepoList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataTfePolicySetVcsRepoList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_DataTfePolicySetVcsRepoList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataTfePolicySetVcsRepoList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataTfePolicySetVcsRepoList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewDataTfePolicySetVcsRepoListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataTfePolicySetVcsRepoListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

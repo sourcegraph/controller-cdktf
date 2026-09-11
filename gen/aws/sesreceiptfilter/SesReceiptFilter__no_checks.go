@@ -56,6 +56,10 @@ func (s *jsiiProxy_SesReceiptFilter) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_SesReceiptFilter) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesReceiptFilter) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (s *jsiiProxy_SesReceiptFilter) validateMoveToIdParameters(id *string) erro
 }
 
 func (s *jsiiProxy_SesReceiptFilter) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SesReceiptFilter) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_SesReceiptFilter) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_SesReceiptFilter) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SesReceiptFilter) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

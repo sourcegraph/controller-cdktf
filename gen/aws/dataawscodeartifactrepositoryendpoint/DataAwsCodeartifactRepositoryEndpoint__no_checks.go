@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsCodeartifactRepositoryEndpoint) validateOverrideLogica
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsCodeartifactRepositoryEndpoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsCodeartifactRepositoryEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,7 +92,7 @@ func (j *jsiiProxy_DataAwsCodeartifactRepositoryEndpoint) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCodeartifactRepositoryEndpoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsCodeartifactRepositoryEndpoint) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

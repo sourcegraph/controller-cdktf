@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (g *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationO
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValues:
 		value := value.(*[]*GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValues)
@@ -114,16 +114,16 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationO
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValues; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValues; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -210,7 +210,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,7 +218,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationO
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

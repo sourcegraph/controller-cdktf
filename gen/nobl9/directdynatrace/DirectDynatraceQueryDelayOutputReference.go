@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directdynatrace/internal"
 )
 
 type DirectDynatraceQueryDelayOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type DirectDynatraceQueryDelayOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Unit() *string
 	SetUnit(val *string)
 	UnitInput() *string
@@ -48,7 +48,7 @@ type DirectDynatraceQueryDelayOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type DirectDynatraceQueryDelayOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type DirectDynatraceQueryDelayOutputReference interface {
 
 // The jsii proxy struct for DirectDynatraceQueryDelayOutputReference
 type jsiiProxy_DirectDynatraceQueryDelayOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DirectDynatraceQueryDelayOutputReference) ComplexObjectIndex() interface{} {
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DirectDynatraceQueryDelayOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_DirectDynatraceQueryDelayOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DirectDynatraceQueryDelayOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_DirectDynatraceQueryDelayOutputReference) ValueInput() *float
 }
 
 
-func NewDirectDynatraceQueryDelayOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DirectDynatraceQueryDelayOutputReference {
+func NewDirectDynatraceQueryDelayOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DirectDynatraceQueryDelayOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDirectDynatraceQueryDelayOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewDirectDynatraceQueryDelayOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DirectDynatraceQueryDelayOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.directDynatrace.DirectDynatraceQueryDelayOutputReference",
+		"@cdktn/provider-nobl9.directDynatrace.DirectDynatraceQueryDelayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewDirectDynatraceQueryDelayOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewDirectDynatraceQueryDelayOutputReference_Override(d DirectDynatraceQueryDelayOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDirectDynatraceQueryDelayOutputReference_Override(d DirectDynatraceQueryDelayOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.directDynatrace.DirectDynatraceQueryDelayOutputReference",
+		"@cdktn/provider-nobl9.directDynatrace.DirectDynatraceQueryDelayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -264,7 +264,7 @@ func (j *jsiiProxy_DirectDynatraceQueryDelayOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DirectDynatraceQueryDelayOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DirectDynatraceQueryDelayOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (d *jsiiProxy_DirectDynatraceQueryDelayOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (d *jsiiProxy_DirectDynatraceQueryDelayOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DirectDynatraceQueryDelayOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -454,8 +454,8 @@ func (d *jsiiProxy_DirectDynatraceQueryDelayOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DirectDynatraceQueryDelayOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DirectDynatraceQueryDelayOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -467,24 +467,24 @@ func (d *jsiiProxy_DirectDynatraceQueryDelayOutputReference) InterpolationAsList
 	return returns
 }
 
-func (d *jsiiProxy_DirectDynatraceQueryDelayOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DirectDynatraceQueryDelayOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DirectDynatraceQueryDelayOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DirectDynatraceQueryDelayOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (d *jsiiProxy_DirectDynatraceQueryDelayOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

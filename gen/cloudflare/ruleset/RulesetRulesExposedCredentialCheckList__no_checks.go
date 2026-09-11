@@ -12,7 +12,7 @@ func (r *jsiiProxy_RulesetRulesExposedCredentialCheckList) validateGetParameters
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesExposedCredentialCheckList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesExposedCredentialCheckList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesExposedCredentialCheckList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RulesetRulesExposedCredentialCheckList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewRulesetRulesExposedCredentialCheckListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewRulesetRulesExposedCredentialCheckListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

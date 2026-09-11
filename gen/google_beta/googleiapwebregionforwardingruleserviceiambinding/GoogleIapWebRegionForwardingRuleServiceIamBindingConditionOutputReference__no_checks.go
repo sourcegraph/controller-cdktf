@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleIapWebRegionForwardingRuleServiceIamBindingConditionOut
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapWebRegionForwardingRuleServiceIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIapWebRegionForwardingRuleServiceIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapWebRegionForwardingRuleServiceIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIapWebRegionForwardingRuleServiceIamBindingConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleIapWebRegionForwardingRuleServiceIamBindingConditionOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapWebRegionForwardingRuleServiceIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIapWebRegionForwardingRuleServiceIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleIapWebRegionForwardingRuleServiceIamBindingConditionOut
 	return nil
 }
 
-func validateNewGoogleIapWebRegionForwardingRuleServiceIamBindingConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleIapWebRegionForwardingRuleServiceIamBindingConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

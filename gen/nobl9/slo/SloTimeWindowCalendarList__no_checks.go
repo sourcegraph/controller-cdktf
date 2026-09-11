@@ -12,7 +12,7 @@ func (s *jsiiProxy_SloTimeWindowCalendarList) validateGetParameters(index *float
 	return nil
 }
 
-func (s *jsiiProxy_SloTimeWindowCalendarList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloTimeWindowCalendarList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SloTimeWindowCalendarList) validateSetTerraformAttributeParam
 	return nil
 }
 
-func (j *jsiiProxy_SloTimeWindowCalendarList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloTimeWindowCalendarList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SloTimeWindowCalendarList) validateSetWrapsSetParameters(val 
 	return nil
 }
 
-func validateNewSloTimeWindowCalendarListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSloTimeWindowCalendarListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

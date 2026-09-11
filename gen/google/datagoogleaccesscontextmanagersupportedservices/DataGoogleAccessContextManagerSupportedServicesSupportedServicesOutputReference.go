@@ -4,13 +4,13 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagoogleaccesscontextmanagersupportedservices/internal"
 )
 
 type DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference interface {
-	cdktf.ComplexObject
-	AvailableOnRestrictedVip() cdktf.IResolvable
+	cdktn.ComplexObject
+	AvailableOnRestrictedVip() cdktn.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,7 +30,7 @@ type DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputRefer
 	Fqn() *string
 	InternalValue() *DataGoogleAccessContextManagerSupportedServicesSupportedServices
 	SetInternalValue(val *DataGoogleAccessContextManagerSupportedServicesSupportedServices)
-	KnownLimitations() cdktf.IResolvable
+	KnownLimitations() cdktn.IResolvable
 	Name() *string
 	ServiceSupportStage() *string
 	SupportStage() *string
@@ -39,16 +39,16 @@ type DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputRefer
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputRefer
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,11 +79,11 @@ type DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputRefer
 
 // The jsii proxy struct for DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference
 type jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) AvailableOnRestrictedVip() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) AvailableOnRestrictedVip() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"availableOnRestrictedVip",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServi
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) KnownLimitations() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) KnownLimitations() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"knownLimitations",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServi
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -213,7 +213,7 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServi
 }
 
 
-func NewDataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference {
+func NewDataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -222,7 +222,7 @@ func NewDataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputRe
 	j := jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference",
+		"@cdktn/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -230,11 +230,11 @@ func NewDataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputRe
 	return &j
 }
 
-func NewDataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference_Override(d DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference_Override(d DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference",
+		"@cdktn/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -284,7 +284,7 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServi
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,11 +324,11 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServi
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -452,8 +452,8 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServi
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -465,24 +465,24 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServi
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -490,7 +490,7 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServi
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

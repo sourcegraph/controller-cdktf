@@ -12,7 +12,7 @@ func (d *jsiiProxy_DnsManagedZoneDnssecConfigDefaultKeySpecsList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DnsManagedZoneDnssecConfigDefaultKeySpecsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsManagedZoneDnssecConfigDefaultKeySpecsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DnsManagedZoneDnssecConfigDefaultKeySpecsList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_DnsManagedZoneDnssecConfigDefaultKeySpecsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DnsManagedZoneDnssecConfigDefaultKeySpecsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DnsManagedZoneDnssecConfigDefaultKeySpecsList) validateSetWra
 	return nil
 }
 
-func validateNewDnsManagedZoneDnssecConfigDefaultKeySpecsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDnsManagedZoneDnssecConfigDefaultKeySpecsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

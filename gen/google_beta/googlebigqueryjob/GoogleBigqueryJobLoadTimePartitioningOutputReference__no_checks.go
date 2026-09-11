@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBigqueryJobLoadTimePartitioningOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobLoadTimePartitioningOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBigqueryJobLoadTimePartitioningOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobLoadTimePartitioningOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigqueryJobLoadTimePartitioningOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleBigqueryJobLoadTimePartitioningOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobLoadTimePartitioningOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigqueryJobLoadTimePartitioningOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleBigqueryJobLoadTimePartitioningOutputReference) validat
 	return nil
 }
 
-func validateNewGoogleBigqueryJobLoadTimePartitioningOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBigqueryJobLoadTimePartitioningOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

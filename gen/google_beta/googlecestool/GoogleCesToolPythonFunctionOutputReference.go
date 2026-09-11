@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecestool/internal"
 )
 
 type GoogleCesToolPythonFunctionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,15 +41,15 @@ type GoogleCesToolPythonFunctionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,14 +65,14 @@ type GoogleCesToolPythonFunctionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetName()
 	ResetPythonCode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type GoogleCesToolPythonFunctionOutputReference interface {
 
 // The jsii proxy struct for GoogleCesToolPythonFunctionOutputReference
 type jsiiProxy_GoogleCesToolPythonFunctionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleCesToolPythonFunctionOutputReference) ComplexObjectIndex() interface{} {
@@ -195,8 +195,8 @@ func (j *jsiiProxy_GoogleCesToolPythonFunctionOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCesToolPythonFunctionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleCesToolPythonFunctionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -206,7 +206,7 @@ func (j *jsiiProxy_GoogleCesToolPythonFunctionOutputReference) TerraformResource
 }
 
 
-func NewGoogleCesToolPythonFunctionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCesToolPythonFunctionOutputReference {
+func NewGoogleCesToolPythonFunctionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleCesToolPythonFunctionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleCesToolPythonFunctionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -215,7 +215,7 @@ func NewGoogleCesToolPythonFunctionOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleCesToolPythonFunctionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCesTool.GoogleCesToolPythonFunctionOutputReference",
+		"@cdktn/provider-google-beta.googleCesTool.GoogleCesToolPythonFunctionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -223,11 +223,11 @@ func NewGoogleCesToolPythonFunctionOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewGoogleCesToolPythonFunctionOutputReference_Override(g GoogleCesToolPythonFunctionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleCesToolPythonFunctionOutputReference_Override(g GoogleCesToolPythonFunctionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCesTool.GoogleCesToolPythonFunctionOutputReference",
+		"@cdktn/provider-google-beta.googleCesTool.GoogleCesToolPythonFunctionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleCesToolPythonFunctionOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_GoogleCesToolPythonFunctionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCesToolPythonFunctionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,11 +339,11 @@ func (g *jsiiProxy_GoogleCesToolPythonFunctionOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesToolPythonFunctionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleCesToolPythonFunctionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -467,8 +467,8 @@ func (g *jsiiProxy_GoogleCesToolPythonFunctionOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesToolPythonFunctionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleCesToolPythonFunctionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -480,16 +480,16 @@ func (g *jsiiProxy_GoogleCesToolPythonFunctionOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesToolPythonFunctionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleCesToolPythonFunctionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -512,8 +512,8 @@ func (g *jsiiProxy_GoogleCesToolPythonFunctionOutputReference) ResetPythonCode()
 	)
 }
 
-func (g *jsiiProxy_GoogleCesToolPythonFunctionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleCesToolPythonFunctionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -521,7 +521,7 @@ func (g *jsiiProxy_GoogleCesToolPythonFunctionOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

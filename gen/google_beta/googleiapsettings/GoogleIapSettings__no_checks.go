@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleIapSettings) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIapSettings) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapSettings) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleIapSettings) validatePutApplicationSettingsParameters(v
 }
 
 func (g *jsiiProxy_GoogleIapSettings) validatePutTimeoutsParameters(value *GoogleIapSettingsTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIapSettings) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleIapSettings) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapSettings) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleIapSettings) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

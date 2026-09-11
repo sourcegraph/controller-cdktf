@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudfunctions2function/internal"
 )
 
 type Cloudfunctions2FunctionServiceConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllTrafficOnLatestRevision() interface{}
 	SetAllTrafficOnLatestRevision(val interface{})
 	AllTrafficOnLatestRevisionInput() interface{}
@@ -75,9 +75,9 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeoutSeconds() *float64
 	SetTimeoutSeconds(val *float64)
 	TimeoutSecondsInput() *float64
@@ -93,7 +93,7 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -109,9 +109,9 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDirectVpcNetworkInterface(value interface{})
 	PutSecretEnvironmentVariables(value interface{})
 	PutSecretVolumes(value interface{})
@@ -134,7 +134,7 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	ResetVpcConnectorEgressSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -144,7 +144,7 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 
 // The jsii proxy struct for Cloudfunctions2FunctionServiceConfigOutputReference
 type jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) AllTrafficOnLatestRevision() interface{} {
@@ -507,8 +507,8 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -588,7 +588,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) VpcConne
 }
 
 
-func NewCloudfunctions2FunctionServiceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Cloudfunctions2FunctionServiceConfigOutputReference {
+func NewCloudfunctions2FunctionServiceConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) Cloudfunctions2FunctionServiceConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudfunctions2FunctionServiceConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -597,7 +597,7 @@ func NewCloudfunctions2FunctionServiceConfigOutputReference(terraformResource cd
 	j := jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference",
+		"@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -605,11 +605,11 @@ func NewCloudfunctions2FunctionServiceConfigOutputReference(terraformResource cd
 	return &j
 }
 
-func NewCloudfunctions2FunctionServiceConfigOutputReference_Override(c Cloudfunctions2FunctionServiceConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCloudfunctions2FunctionServiceConfigOutputReference_Override(c Cloudfunctions2FunctionServiceConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference",
+		"@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -780,7 +780,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -853,11 +853,11 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) GetAnyMa
 	return returns
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -981,8 +981,8 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) GetStrin
 	return returns
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -994,16 +994,16 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) Interpol
 	return returns
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1179,8 +1179,8 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ResetVpc
 	)
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1188,7 +1188,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) Resolve(
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

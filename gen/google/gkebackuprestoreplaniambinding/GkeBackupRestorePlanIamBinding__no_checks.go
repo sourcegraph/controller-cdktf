@@ -56,6 +56,10 @@ func (g *jsiiProxy_GkeBackupRestorePlanIamBinding) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GkeBackupRestorePlanIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeBackupRestorePlanIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GkeBackupRestorePlanIamBinding) validateOverrideLogicalIdPara
 }
 
 func (g *jsiiProxy_GkeBackupRestorePlanIamBinding) validatePutConditionParameters(value *GkeBackupRestorePlanIamBindingCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeBackupRestorePlanIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanIamBinding) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GkeBackupRestorePlanIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

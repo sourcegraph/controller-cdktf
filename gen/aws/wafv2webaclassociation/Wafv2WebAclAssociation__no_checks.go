@@ -56,6 +56,10 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) validateInterpolationForAttributePara
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2WebAclAssociation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2WebAclAssociation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) validateMoveToIdParameters(id *string
 }
 
 func (w *jsiiProxy_Wafv2WebAclAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclAssociation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociation) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Wafv2WebAclAssociation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

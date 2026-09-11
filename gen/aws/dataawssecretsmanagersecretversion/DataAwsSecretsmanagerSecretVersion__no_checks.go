@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretVersion) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsSecretsmanagerSecretVersion) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsSecretsmanagerSecretVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretVersion) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretVersion) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretVersion) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

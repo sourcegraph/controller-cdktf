@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/dataawsgluecatalogtable/internal"
 )
 
 type DataAwsGlueCatalogTableStorageDescriptorOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BucketColumns() *[]*string
 	Columns() DataAwsGlueCatalogTableStorageDescriptorColumnsList
 	// the index of the complex object in a list.
@@ -22,7 +22,7 @@ type DataAwsGlueCatalogTableStorageDescriptorOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	Compressed() cdktf.IResolvable
+	Compressed() cdktn.IResolvable
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -36,26 +36,26 @@ type DataAwsGlueCatalogTableStorageDescriptorOutputReference interface {
 	Location() *string
 	NumberOfBuckets() *float64
 	OutputFormat() *string
-	Parameters() cdktf.StringMap
+	Parameters() cdktn.StringMap
 	SchemaReference() DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceList
 	SerDeInfo() DataAwsGlueCatalogTableStorageDescriptorSerDeInfoList
 	SkewedInfo() DataAwsGlueCatalogTableStorageDescriptorSkewedInfoList
 	SortColumns() DataAwsGlueCatalogTableStorageDescriptorSortColumnsList
-	StoredAsSubDirectories() cdktf.IResolvable
+	StoredAsSubDirectories() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,12 +71,12 @@ type DataAwsGlueCatalogTableStorageDescriptorOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type DataAwsGlueCatalogTableStorageDescriptorOutputReference interface {
 
 // The jsii proxy struct for DataAwsGlueCatalogTableStorageDescriptorOutputReference
 type jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) BucketColumns() *[]*string {
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) Comp
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) Compressed() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) Compressed() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"compressed",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) Outp
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) Parameters() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) Parameters() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"parameters",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) Sort
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) StoredAsSubDirectories() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) StoredAsSubDirectories() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"storedAsSubDirectories",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -290,7 +290,7 @@ func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) Terr
 }
 
 
-func NewDataAwsGlueCatalogTableStorageDescriptorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsGlueCatalogTableStorageDescriptorOutputReference {
+func NewDataAwsGlueCatalogTableStorageDescriptorOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsGlueCatalogTableStorageDescriptorOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataAwsGlueCatalogTableStorageDescriptorOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -299,7 +299,7 @@ func NewDataAwsGlueCatalogTableStorageDescriptorOutputReference(terraformResourc
 	j := jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorOutputReference",
+		"@cdktn/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -307,11 +307,11 @@ func NewDataAwsGlueCatalogTableStorageDescriptorOutputReference(terraformResourc
 	return &j
 }
 
-func NewDataAwsGlueCatalogTableStorageDescriptorOutputReference_Override(d DataAwsGlueCatalogTableStorageDescriptorOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataAwsGlueCatalogTableStorageDescriptorOutputReference_Override(d DataAwsGlueCatalogTableStorageDescriptorOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorOutputReference",
+		"@cdktn/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -361,7 +361,7 @@ func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,11 +401,11 @@ func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) GetA
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -529,8 +529,8 @@ func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) GetS
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -542,24 +542,24 @@ func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) Inte
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -567,7 +567,7 @@ func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) Reso
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

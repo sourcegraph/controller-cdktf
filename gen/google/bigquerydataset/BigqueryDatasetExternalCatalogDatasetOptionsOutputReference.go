@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigquerydataset/internal"
 )
 
 type BigqueryDatasetExternalCatalogDatasetOptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type BigqueryDatasetExternalCatalogDatasetOptionsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type BigqueryDatasetExternalCatalogDatasetOptionsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDefaultStorageLocationUri()
 	ResetParameters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type BigqueryDatasetExternalCatalogDatasetOptionsOutputReference interface {
 
 // The jsii proxy struct for BigqueryDatasetExternalCatalogDatasetOptionsOutputReference
 type jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) 
 }
 
 
-func NewBigqueryDatasetExternalCatalogDatasetOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryDatasetExternalCatalogDatasetOptionsOutputReference {
+func NewBigqueryDatasetExternalCatalogDatasetOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) BigqueryDatasetExternalCatalogDatasetOptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBigqueryDatasetExternalCatalogDatasetOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewBigqueryDatasetExternalCatalogDatasetOptionsOutputReference(terraformRes
 	j := jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryDataset.BigqueryDatasetExternalCatalogDatasetOptionsOutputReference",
+		"@cdktn/provider-google.bigqueryDataset.BigqueryDatasetExternalCatalogDatasetOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewBigqueryDatasetExternalCatalogDatasetOptionsOutputReference(terraformRes
 	return &j
 }
 
-func NewBigqueryDatasetExternalCatalogDatasetOptionsOutputReference_Override(b BigqueryDatasetExternalCatalogDatasetOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBigqueryDatasetExternalCatalogDatasetOptionsOutputReference_Override(b BigqueryDatasetExternalCatalogDatasetOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryDataset.BigqueryDatasetExternalCatalogDatasetOptionsOutputReference",
+		"@cdktn/provider-google.bigqueryDataset.BigqueryDatasetExternalCatalogDatasetOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (b *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -456,8 +456,8 @@ func (b *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -469,16 +469,16 @@ func (b *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (b *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) 
 	)
 }
 
-func (b *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (b *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (m *jsiiProxy_MediaPackageChannelHlsIngestOutputReference) validateGetStrin
 	return nil
 }
 
-func (m *jsiiProxy_MediaPackageChannelHlsIngestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MediaPackageChannelHlsIngestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MediaPackageChannelHlsIngestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MediaPackageChannelHlsIngestOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_MediaPackageChannelHlsIngestOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_MediaPackageChannelHlsIngestOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MediaPackageChannelHlsIngestOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMediaPackageChannelHlsIngestOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewMediaPackageChannelHlsIngestOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

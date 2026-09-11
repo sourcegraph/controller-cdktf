@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/emrinstancefleet/internal"
 )
 
 type EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -54,7 +54,7 @@ type EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,14 +70,14 @@ type EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetIops()
 	ResetVolumesPerInstance()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference interface {
 
 // The jsii proxy struct for EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference
 type jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -190,8 +190,8 @@ func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -241,7 +241,7 @@ func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) 
 }
 
 
-func NewEmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference {
+func NewEmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -250,7 +250,7 @@ func NewEmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference(terraformRes
 	j := jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference",
+		"@cdktn/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -258,11 +258,11 @@ func NewEmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference(terraformRes
 	return &j
 }
 
-func NewEmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference_Override(e EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewEmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference_Override(e EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference",
+		"@cdktn/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
@@ -334,7 +334,7 @@ func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,11 +396,11 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) 
 	return returns
 }
 
-func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -524,8 +524,8 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) 
 	return returns
 }
 
-func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -537,16 +537,16 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) 
 	return returns
 }
 
-func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -569,8 +569,8 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) 
 	)
 }
 
-func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -578,7 +578,7 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference) 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

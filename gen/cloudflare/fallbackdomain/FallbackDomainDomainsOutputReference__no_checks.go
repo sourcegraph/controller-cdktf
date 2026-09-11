@@ -40,11 +40,11 @@ func (f *jsiiProxy_FallbackDomainDomainsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (f *jsiiProxy_FallbackDomainDomainsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FallbackDomainDomainsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FallbackDomainDomainsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FallbackDomainDomainsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_FallbackDomainDomainsOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_FallbackDomainDomainsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FallbackDomainDomainsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewFallbackDomainDomainsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewFallbackDomainDomainsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

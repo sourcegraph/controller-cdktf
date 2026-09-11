@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceTimeoutsOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceTimeoutsOutputReference) val
 	return nil
 }
 
-func validateNewGoogleContainerAnalysisOccurrenceTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerAnalysisOccurrenceTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

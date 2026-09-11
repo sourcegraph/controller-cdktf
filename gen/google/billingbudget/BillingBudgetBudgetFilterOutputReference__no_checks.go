@@ -40,7 +40,7 @@ func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateGetStringMa
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validatePutCustomPe
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -100,11 +100,11 @@ func (j *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBillingBudgetBudgetFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBillingBudgetBudgetFilterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (l *jsiiProxy_LookerInstance) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (l *jsiiProxy_LookerInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LookerInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (l *jsiiProxy_LookerInstance) validatePutUserMetadataParameters(value *Look
 	return nil
 }
 
+func (l *jsiiProxy_LookerInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateLookerInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -164,7 +172,7 @@ func (j *jsiiProxy_LookerInstance) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LookerInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

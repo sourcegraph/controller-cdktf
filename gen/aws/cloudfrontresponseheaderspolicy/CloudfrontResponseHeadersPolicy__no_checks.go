@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validateInterpolationForAttr
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validatePutSecurityHeadersCo
 }
 
 func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validatePutServerTimingHeadersConfigParameters(value *CloudfrontResponseHeadersPolicyServerTimingHeadersConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.appstreamFleet.AppstreamFleet",
+		"@cdktn/provider-aws.appstreamFleet.AppstreamFleet",
 		reflect.TypeOf((*AppstreamFleet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -62,6 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "instanceTypeInput", GoGetter: "InstanceTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maxUserDurationInSeconds", GoGetter: "MaxUserDurationInSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "maxUserDurationInSecondsInput", GoGetter: "MaxUserDurationInSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -77,6 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putDomainJoinInfo", GoMethod: "PutDomainJoinInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putVpcConfig", GoMethod: "PutVpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisconnectTimeoutInSeconds", GoMethod: "ResetDisconnectTimeoutInSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
@@ -112,19 +114,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfig", GoGetter: "VpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfigInput", GoGetter: "VpcConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AppstreamFleet{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetComputeCapacity",
+		"@cdktn/provider-aws.appstreamFleet.AppstreamFleetComputeCapacity",
 		reflect.TypeOf((*AppstreamFleetComputeCapacity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetComputeCapacityOutputReference",
+		"@cdktn/provider-aws.appstreamFleet.AppstreamFleetComputeCapacityOutputReference",
 		reflect.TypeOf((*AppstreamFleetComputeCapacityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "available", GoGetter: "Available"},
@@ -156,20 +159,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppstreamFleetComputeCapacityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetConfig",
+		"@cdktn/provider-aws.appstreamFleet.AppstreamFleetConfig",
 		reflect.TypeOf((*AppstreamFleetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetDomainJoinInfo",
+		"@cdktn/provider-aws.appstreamFleet.AppstreamFleetDomainJoinInfo",
 		reflect.TypeOf((*AppstreamFleetDomainJoinInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetDomainJoinInfoOutputReference",
+		"@cdktn/provider-aws.appstreamFleet.AppstreamFleetDomainJoinInfoOutputReference",
 		reflect.TypeOf((*AppstreamFleetDomainJoinInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -202,16 +205,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppstreamFleetDomainJoinInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetVpcConfig",
+		"@cdktn/provider-aws.appstreamFleet.AppstreamFleetVpcConfig",
 		reflect.TypeOf((*AppstreamFleetVpcConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetVpcConfigOutputReference",
+		"@cdktn/provider-aws.appstreamFleet.AppstreamFleetVpcConfigOutputReference",
 		reflect.TypeOf((*AppstreamFleetVpcConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -244,7 +247,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppstreamFleetVpcConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

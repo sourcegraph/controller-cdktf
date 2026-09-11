@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (a *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (a *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateGetSt
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -134,9 +134,9 @@ func (a *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validatePutPa
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -209,7 +209,7 @@ func (j *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateSetCo
 
 func (j *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *AlertRouteExpressionsOperations:
 		val := val.(*AlertRouteExpressionsOperations)
@@ -224,7 +224,7 @@ func (j *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateSetIn
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AlertRouteExpressionsOperations; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *AlertRouteExpressionsOperations; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -247,7 +247,7 @@ func (j *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func (j *jsiiProxy_AlertRouteExpressionsOperationsOutputReference) validateSetTe
 	return nil
 }
 
-func validateNewAlertRouteExpressionsOperationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAlertRouteExpressionsOperationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

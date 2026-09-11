@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleNotebooksInstanceIamBinding) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNotebooksInstanceIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNotebooksInstanceIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleNotebooksInstanceIamBinding) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleNotebooksInstanceIamBinding) validatePutConditionParameters(value *GoogleNotebooksInstanceIamBindingCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNotebooksInstanceIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleNotebooksInstanceIamBinding) validateSetInstanceNamePar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksInstanceIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleNotebooksInstanceIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

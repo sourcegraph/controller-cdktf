@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryVersionsVersionsList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryVersionsVersionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleArtifactRegistryVersionsVersionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryVersionsVersionsList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryVersionsVersionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleArtifactRegistryVersionsVersionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryVersionsVersionsList) validateSetWr
 	return nil
 }
 
-func validateNewDataGoogleArtifactRegistryVersionsVersionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleArtifactRegistryVersionsVersionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotationRotationRulesOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotationRotationRulesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotationRotationRulesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsSecretsmanagerSecretRotationRotationRulesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsSecretsmanagerSecretRotationRotationRulesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

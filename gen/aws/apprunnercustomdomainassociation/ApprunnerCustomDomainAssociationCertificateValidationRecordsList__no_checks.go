@@ -12,7 +12,7 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsL
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsL
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsL
 	return nil
 }
 
-func validateNewApprunnerCustomDomainAssociationCertificateValidationRecordsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewApprunnerCustomDomainAssociationCertificateValidationRecordsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

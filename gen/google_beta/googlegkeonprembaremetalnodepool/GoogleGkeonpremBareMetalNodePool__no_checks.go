@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateInterpolationForAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validatePutNodePoolConfigPa
 }
 
 func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validatePutTimeoutsParameters(value *GoogleGkeonpremBareMetalNodePoolTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateSetIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

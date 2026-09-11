@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixListFilterList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2ManagedPrefixListFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2ManagedPrefixListFilterList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixListFilterList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixListFilterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixListFilterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixListFilterList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewDataAwsEc2ManagedPrefixListFilterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsEc2ManagedPrefixListFilterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

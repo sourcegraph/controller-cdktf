@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleVertexAiIndex) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiIndex) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiIndex) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleVertexAiIndex) validatePutMetadataParameters(value *Goo
 }
 
 func (g *jsiiProxy_GoogleVertexAiIndex) validatePutTimeoutsParameters(value *GoogleVertexAiIndexTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiIndex) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleVertexAiIndex) validateSetLabelsParameters(val *map[str
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiIndex) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleVertexAiIndex) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

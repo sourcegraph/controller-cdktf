@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

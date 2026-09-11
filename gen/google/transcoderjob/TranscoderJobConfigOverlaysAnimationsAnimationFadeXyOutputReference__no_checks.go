@@ -40,11 +40,11 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputRef
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputRef
 	return nil
 }
 
-func validateNewTranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

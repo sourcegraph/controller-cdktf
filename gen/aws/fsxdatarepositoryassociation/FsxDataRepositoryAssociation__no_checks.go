@@ -56,6 +56,10 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) validateInterpolationForAttribu
 	return nil
 }
 
+func (f *jsiiProxy_FsxDataRepositoryAssociation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxDataRepositoryAssociation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) validatePutS3Parameters(value *
 }
 
 func (f *jsiiProxy_FsxDataRepositoryAssociation) validatePutTimeoutsParameters(value *FsxDataRepositoryAssociationTimeouts) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxDataRepositoryAssociation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetImportedFileChunkSiz
 	return nil
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

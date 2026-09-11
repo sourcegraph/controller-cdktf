@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudtrailEventDataStoreTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStoreTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudtrailEventDataStoreTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStoreTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudtrailEventDataStoreTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_CloudtrailEventDataStoreTimeoutsOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudtrailEventDataStoreTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CloudtrailEventDataStoreTimeoutsOutputReference) validateSetU
 	return nil
 }
 
-func validateNewCloudtrailEventDataStoreTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudtrailEventDataStoreTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

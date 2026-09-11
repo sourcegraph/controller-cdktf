@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeResourcePolicyDiskConsistencyGroupPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeResourcePolicyDiskConsistencyGroupPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

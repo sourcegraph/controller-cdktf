@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) validateInterpolationForAttributePa
 	return nil
 }
 
+func (n *jsiiProxy_NetworkConnectivitySpoke) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivitySpoke) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) validatePutLinkedVpnTunnelsParamete
 }
 
 func (n *jsiiProxy_NetworkConnectivitySpoke) validatePutTimeoutsParameters(value *NetworkConnectivitySpokeTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkConnectivitySpoke) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -140,7 +148,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) validateSetLabelsParameters(val *ma
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetworkConnectivitySpoke) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (a *jsiiProxy_AppOauth) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (a *jsiiProxy_AppOauth) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppOauth) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (a *jsiiProxy_AppOauth) validatePutJwksParameters(value interface{}) error 
 }
 
 func (a *jsiiProxy_AppOauth) validatePutTimeoutsParameters(value *AppOauthTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppOauth) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -196,7 +204,7 @@ func (j *jsiiProxy_AppOauth) validateSetLabelParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AppOauth) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AppOauth) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

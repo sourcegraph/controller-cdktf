@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleNetappVolumeReplication) validateInterpolationForAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetappVolumeReplication) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappVolumeReplication) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleNetappVolumeReplication) validatePutDestinationVolumePa
 }
 
 func (g *jsiiProxy_GoogleNetappVolumeReplication) validatePutTimeoutsParameters(value *GoogleNetappVolumeReplicationTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappVolumeReplication) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_GoogleNetappVolumeReplication) validateSetLabelsParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeReplication) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleNetappVolumeReplication) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

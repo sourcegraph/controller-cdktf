@@ -56,6 +56,10 @@ func (i *jsiiProxy_IotTopicRule) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (i *jsiiProxy_IotTopicRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotTopicRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -152,6 +156,10 @@ func (i *jsiiProxy_IotTopicRule) validatePutTimestreamParameters(value interface
 	return nil
 }
 
+func (i *jsiiProxy_IotTopicRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateIotTopicRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -188,7 +196,7 @@ func (j *jsiiProxy_IotTopicRule) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IotTopicRule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

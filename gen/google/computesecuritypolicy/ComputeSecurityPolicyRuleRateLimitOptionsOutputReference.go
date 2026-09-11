@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computesecuritypolicy/internal"
 )
 
 type ComputeSecurityPolicyRuleRateLimitOptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BanDurationSec() *float64
 	SetBanDurationSec(val *float64)
 	BanDurationSecInput() *float64
@@ -57,15 +57,15 @@ type ComputeSecurityPolicyRuleRateLimitOptionsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,9 +81,9 @@ type ComputeSecurityPolicyRuleRateLimitOptionsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutBanThreshold(value *ComputeSecurityPolicyRuleRateLimitOptionsBanThreshold)
 	PutEnforceOnKeyConfigs(value interface{})
 	PutExceedRedirectOptions(value *ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions)
@@ -96,7 +96,7 @@ type ComputeSecurityPolicyRuleRateLimitOptionsOutputReference interface {
 	ResetExceedRedirectOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -106,7 +106,7 @@ type ComputeSecurityPolicyRuleRateLimitOptionsOutputReference interface {
 
 // The jsii proxy struct for ComputeSecurityPolicyRuleRateLimitOptionsOutputReference
 type jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) BanDurationSec() *float64 {
@@ -349,8 +349,8 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -360,7 +360,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) Ter
 }
 
 
-func NewComputeSecurityPolicyRuleRateLimitOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeSecurityPolicyRuleRateLimitOptionsOutputReference {
+func NewComputeSecurityPolicyRuleRateLimitOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComputeSecurityPolicyRuleRateLimitOptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeSecurityPolicyRuleRateLimitOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -369,7 +369,7 @@ func NewComputeSecurityPolicyRuleRateLimitOptionsOutputReference(terraformResour
 	j := jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsOutputReference",
+		"@cdktn/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -377,11 +377,11 @@ func NewComputeSecurityPolicyRuleRateLimitOptionsOutputReference(terraformResour
 	return &j
 }
 
-func NewComputeSecurityPolicyRuleRateLimitOptionsOutputReference_Override(c ComputeSecurityPolicyRuleRateLimitOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComputeSecurityPolicyRuleRateLimitOptionsOutputReference_Override(c ComputeSecurityPolicyRuleRateLimitOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsOutputReference",
+		"@cdktn/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -486,7 +486,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,11 +526,11 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) Get
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -654,8 +654,8 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) Get
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -667,16 +667,16 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) Int
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -775,8 +775,8 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) Res
 	)
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -784,7 +784,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) Res
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/cloudsearchdomain/internal"
 )
 
 type CloudsearchDomainScalingParametersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type CloudsearchDomainScalingParametersOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type CloudsearchDomainScalingParametersOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDesiredInstanceType()
 	ResetDesiredPartitionCount()
 	ResetDesiredReplicationCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type CloudsearchDomainScalingParametersOutputReference interface {
 
 // The jsii proxy struct for CloudsearchDomainScalingParametersOutputReference
 type jsiiProxy_CloudsearchDomainScalingParametersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) ComplexObjectIndex() interface{} {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) TerraformR
 }
 
 
-func NewCloudsearchDomainScalingParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudsearchDomainScalingParametersOutputReference {
+func NewCloudsearchDomainScalingParametersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CloudsearchDomainScalingParametersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudsearchDomainScalingParametersOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewCloudsearchDomainScalingParametersOutputReference(terraformResource cdkt
 	j := jsiiProxy_CloudsearchDomainScalingParametersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParametersOutputReference",
+		"@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewCloudsearchDomainScalingParametersOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewCloudsearchDomainScalingParametersOutputReference_Override(c CloudsearchDomainScalingParametersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCloudsearchDomainScalingParametersOutputReference_Override(c CloudsearchDomainScalingParametersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParametersOutputReference",
+		"@cdktn/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudsearchDomainScalingParametersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) GetAnyMapA
 	return returns
 }
 
-func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -491,8 +491,8 @@ func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) GetStringM
 	return returns
 }
 
-func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -504,16 +504,16 @@ func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) Interpolat
 	return returns
 }
 
-func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) ResetDesir
 	)
 }
 
-func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (c *jsiiProxy_CloudsearchDomainScalingParametersOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

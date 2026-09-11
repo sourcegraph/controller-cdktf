@@ -56,6 +56,10 @@ func (a *jsiiProxy_ApiGatewayMethod) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (a *jsiiProxy_ApiGatewayMethod) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiGatewayMethod) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (a *jsiiProxy_ApiGatewayMethod) validateMoveToIdParameters(id *string) erro
 }
 
 func (a *jsiiProxy_ApiGatewayMethod) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiGatewayMethod) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_ApiGatewayMethod) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayMethod) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ApiGatewayMethod) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

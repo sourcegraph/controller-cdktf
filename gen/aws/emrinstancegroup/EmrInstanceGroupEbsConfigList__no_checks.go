@@ -12,7 +12,7 @@ func (e *jsiiProxy_EmrInstanceGroupEbsConfigList) validateGetParameters(index *f
 	return nil
 }
 
-func (e *jsiiProxy_EmrInstanceGroupEbsConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrInstanceGroupEbsConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EmrInstanceGroupEbsConfigList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_EmrInstanceGroupEbsConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EmrInstanceGroupEbsConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EmrInstanceGroupEbsConfigList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewEmrInstanceGroupEbsConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEmrInstanceGroupEbsConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

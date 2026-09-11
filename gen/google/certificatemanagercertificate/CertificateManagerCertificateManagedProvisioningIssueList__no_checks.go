@@ -12,7 +12,7 @@ func (c *jsiiProxy_CertificateManagerCertificateManagedProvisioningIssueList) va
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerCertificateManagedProvisioningIssueList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CertificateManagerCertificateManagedProvisioningIssueList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_CertificateManagerCertificateManagedProvisioningIssueList) va
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerCertificateManagedProvisioningIssueList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CertificateManagerCertificateManagedProvisioningIssueList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_CertificateManagerCertificateManagedProvisioningIssueList) va
 	return nil
 }
 
-func validateNewCertificateManagerCertificateManagedProvisioningIssueListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCertificateManagerCertificateManagedProvisioningIssueListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

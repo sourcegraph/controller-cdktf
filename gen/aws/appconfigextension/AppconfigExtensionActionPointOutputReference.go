@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/appconfigextension/internal"
 )
 
 type AppconfigExtensionActionPointOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Action() AppconfigExtensionActionPointActionList
 	ActionInput() interface{}
 	// the index of the complex object in a list.
@@ -39,15 +39,15 @@ type AppconfigExtensionActionPointOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,13 +63,13 @@ type AppconfigExtensionActionPointOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAction(value interface{})
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type AppconfigExtensionActionPointOutputReference interface {
 
 // The jsii proxy struct for AppconfigExtensionActionPointOutputReference
 type jsiiProxy_AppconfigExtensionActionPointOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AppconfigExtensionActionPointOutputReference) Action() AppconfigExtensionActionPointActionList {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_AppconfigExtensionActionPointOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_AppconfigExtensionActionPointOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AppconfigExtensionActionPointOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_AppconfigExtensionActionPointOutputReference) TerraformResour
 }
 
 
-func NewAppconfigExtensionActionPointOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppconfigExtensionActionPointOutputReference {
+func NewAppconfigExtensionActionPointOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppconfigExtensionActionPointOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAppconfigExtensionActionPointOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -202,7 +202,7 @@ func NewAppconfigExtensionActionPointOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_AppconfigExtensionActionPointOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointOutputReference",
+		"@cdktn/provider-aws.appconfigExtension.AppconfigExtensionActionPointOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewAppconfigExtensionActionPointOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewAppconfigExtensionActionPointOutputReference_Override(a AppconfigExtensionActionPointOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewAppconfigExtensionActionPointOutputReference_Override(a AppconfigExtensionActionPointOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointOutputReference",
+		"@cdktn/provider-aws.appconfigExtension.AppconfigExtensionActionPointOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_AppconfigExtensionActionPointOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_AppconfigExtensionActionPointOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppconfigExtensionActionPointOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,11 +315,11 @@ func (a *jsiiProxy_AppconfigExtensionActionPointOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (a *jsiiProxy_AppconfigExtensionActionPointOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppconfigExtensionActionPointOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -443,8 +443,8 @@ func (a *jsiiProxy_AppconfigExtensionActionPointOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (a *jsiiProxy_AppconfigExtensionActionPointOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AppconfigExtensionActionPointOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -456,16 +456,16 @@ func (a *jsiiProxy_AppconfigExtensionActionPointOutputReference) InterpolationAs
 	return returns
 }
 
-func (a *jsiiProxy_AppconfigExtensionActionPointOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AppconfigExtensionActionPointOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -483,8 +483,8 @@ func (a *jsiiProxy_AppconfigExtensionActionPointOutputReference) PutAction(value
 	)
 }
 
-func (a *jsiiProxy_AppconfigExtensionActionPointOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AppconfigExtensionActionPointOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (a *jsiiProxy_AppconfigExtensionActionPointOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

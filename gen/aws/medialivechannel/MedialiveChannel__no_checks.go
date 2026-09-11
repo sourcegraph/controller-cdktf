@@ -56,6 +56,10 @@ func (m *jsiiProxy_MedialiveChannel) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (m *jsiiProxy_MedialiveChannel) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveChannel) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (m *jsiiProxy_MedialiveChannel) validatePutVpcParameters(value *MedialiveCh
 	return nil
 }
 
+func (m *jsiiProxy_MedialiveChannel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateMedialiveChannel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -136,7 +144,7 @@ func (j *jsiiProxy_MedialiveChannel) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MedialiveChannel) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

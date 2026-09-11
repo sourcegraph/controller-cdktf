@@ -12,7 +12,7 @@ func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersList) validateGetParamete
 	return nil
 }
 
-func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewManagedHeadersManagedResponseHeadersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewManagedHeadersManagedResponseHeadersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateInterpolationF
 	return nil
 }
 
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateOverrideLogica
 }
 
 func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validatePutSettingParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

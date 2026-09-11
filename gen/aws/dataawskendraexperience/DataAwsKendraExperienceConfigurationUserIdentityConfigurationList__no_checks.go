@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfiguration
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfigurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfiguration
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfigurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfigurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfiguration
 	return nil
 }
 
-func validateNewDataAwsKendraExperienceConfigurationUserIdentityConfigurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsKendraExperienceConfigurationUserIdentityConfigurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateInterpolati
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validatePutEnrolled
 }
 
 func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validatePutTimeoutsParameters(value *GoogleOrganizationAccessApprovalSettingsTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateSetIdParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) validateOver
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleAccessContextManagerSupportedServices_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

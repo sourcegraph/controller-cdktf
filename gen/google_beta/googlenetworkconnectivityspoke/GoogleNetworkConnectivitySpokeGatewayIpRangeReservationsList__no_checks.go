@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayIpRangeReservationsList)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayIpRangeReservationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayIpRangeReservationsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayIpRangeReservationsList)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayIpRangeReservationsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayIpRangeReservationsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeGatewayIpRangeReservationsList)
 	return nil
 }
 
-func validateNewGoogleNetworkConnectivitySpokeGatewayIpRangeReservationsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleNetworkConnectivitySpokeGatewayIpRangeReservationsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

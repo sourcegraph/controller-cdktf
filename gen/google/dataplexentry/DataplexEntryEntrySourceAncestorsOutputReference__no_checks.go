@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataplexEntryEntrySourceAncestorsOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataplexEntryEntrySourceAncestorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexEntryEntrySourceAncestorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataplexEntryEntrySourceAncestorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexEntryEntrySourceAncestorsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_DataplexEntryEntrySourceAncestorsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataplexEntryEntrySourceAncestorsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataplexEntryEntrySourceAncestorsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DataplexEntryEntrySourceAncestorsOutputReference) validateSet
 	return nil
 }
 
-func validateNewDataplexEntryEntrySourceAncestorsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataplexEntryEntrySourceAncestorsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

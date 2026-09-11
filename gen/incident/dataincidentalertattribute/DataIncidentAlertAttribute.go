@@ -5,16 +5,16 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/incident/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/incident/dataincidentalertattribute/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/data-sources/alert_attribute incident_alert_attribute}.
 type DataIncidentAlertAttribute interface {
-	cdktf.TerraformDataSource
-	Array() cdktf.IResolvable
+	cdktn.TerraformDataSource
+	Array() cdktn.IResolvable
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -26,32 +26,32 @@ type DataIncidentAlertAttribute interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	Required() cdktf.IResolvable
+	Required() cdktn.IResolvable
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -62,7 +62,7 @@ type DataIncidentAlertAttribute interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -78,10 +78,23 @@ type DataIncidentAlertAttribute interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -97,15 +110,24 @@ type DataIncidentAlertAttribute interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataIncidentAlertAttribute
 type jsiiProxy_DataIncidentAlertAttribute struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataIncidentAlertAttribute) Array() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataIncidentAlertAttribute) Array() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"array",
@@ -114,8 +136,8 @@ func (j *jsiiProxy_DataIncidentAlertAttribute) Array() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_DataIncidentAlertAttribute) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataIncidentAlertAttribute) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -154,8 +176,8 @@ func (j *jsiiProxy_DataIncidentAlertAttribute) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataIncidentAlertAttribute) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataIncidentAlertAttribute) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -194,8 +216,8 @@ func (j *jsiiProxy_DataIncidentAlertAttribute) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataIncidentAlertAttribute) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataIncidentAlertAttribute) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -234,8 +256,8 @@ func (j *jsiiProxy_DataIncidentAlertAttribute) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataIncidentAlertAttribute) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataIncidentAlertAttribute) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -254,8 +276,8 @@ func (j *jsiiProxy_DataIncidentAlertAttribute) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataIncidentAlertAttribute) Required() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataIncidentAlertAttribute) Required() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"required",
@@ -264,8 +286,8 @@ func (j *jsiiProxy_DataIncidentAlertAttribute) Required() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_DataIncidentAlertAttribute) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataIncidentAlertAttribute) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -315,7 +337,7 @@ func NewDataIncidentAlertAttribute(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataIncidentAlertAttribute{}
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.dataIncidentAlertAttribute.DataIncidentAlertAttribute",
+		"@cdktn/provider-incident.dataIncidentAlertAttribute.DataIncidentAlertAttribute",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -328,7 +350,7 @@ func NewDataIncidentAlertAttribute_Override(d DataIncidentAlertAttribute, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.dataIncidentAlertAttribute.DataIncidentAlertAttribute",
+		"@cdktn/provider-incident.dataIncidentAlertAttribute.DataIncidentAlertAttribute",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -353,7 +375,7 @@ func (j *jsiiProxy_DataIncidentAlertAttribute)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataIncidentAlertAttribute)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataIncidentAlertAttribute)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -361,7 +383,7 @@ func (j *jsiiProxy_DataIncidentAlertAttribute)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataIncidentAlertAttribute)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataIncidentAlertAttribute)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +405,7 @@ func (j *jsiiProxy_DataIncidentAlertAttribute)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIncidentAlertAttribute)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataIncidentAlertAttribute)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -391,17 +413,17 @@ func (j *jsiiProxy_DataIncidentAlertAttribute)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-// Generates CDKTF code for importing a DataIncidentAlertAttribute resource upon running "cdktf plan <stack-name>".
-func DataIncidentAlertAttribute_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataIncidentAlertAttribute resource upon running "cdktn plan <stack-name>".
+func DataIncidentAlertAttribute_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataIncidentAlertAttribute_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-incident.dataIncidentAlertAttribute.DataIncidentAlertAttribute",
+		"@cdktn/provider-incident.dataIncidentAlertAttribute.DataIncidentAlertAttribute",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -436,7 +458,7 @@ func DataIncidentAlertAttribute_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-incident.dataIncidentAlertAttribute.DataIncidentAlertAttribute",
+		"@cdktn/provider-incident.dataIncidentAlertAttribute.DataIncidentAlertAttribute",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -455,7 +477,7 @@ func DataIncidentAlertAttribute_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-incident.dataIncidentAlertAttribute.DataIncidentAlertAttribute",
+		"@cdktn/provider-incident.dataIncidentAlertAttribute.DataIncidentAlertAttribute",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -474,7 +496,7 @@ func DataIncidentAlertAttribute_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-incident.dataIncidentAlertAttribute.DataIncidentAlertAttribute",
+		"@cdktn/provider-incident.dataIncidentAlertAttribute.DataIncidentAlertAttribute",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -487,7 +509,7 @@ func DataIncidentAlertAttribute_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-incident.dataIncidentAlertAttribute.DataIncidentAlertAttribute",
+		"@cdktn/provider-incident.dataIncidentAlertAttribute.DataIncidentAlertAttribute",
 		"tfResourceType",
 		&returns,
 	)
@@ -521,11 +543,11 @@ func (d *jsiiProxy_DataIncidentAlertAttribute) GetAnyMapAttribute(terraformAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataIncidentAlertAttribute) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataIncidentAlertAttribute) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -649,11 +671,11 @@ func (d *jsiiProxy_DataIncidentAlertAttribute) GetStringMapAttribute(terraformAt
 	return returns
 }
 
-func (d *jsiiProxy_DataIncidentAlertAttribute) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataIncidentAlertAttribute) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -673,6 +695,17 @@ func (d *jsiiProxy_DataIncidentAlertAttribute) OverrideLogicalId(newLogicalId *s
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataIncidentAlertAttribute) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -756,6 +789,24 @@ func (d *jsiiProxy_DataIncidentAlertAttribute) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataIncidentAlertAttribute) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

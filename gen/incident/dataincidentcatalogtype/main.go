@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.dataIncidentCatalogType.DataIncidentCatalogType",
+		"@cdktn/provider-incident.dataIncidentCatalogType.DataIncidentCatalogType",
 		reflect.TypeOf((*DataIncidentCatalogType)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -40,6 +40,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCategories", GoMethod: "ResetCategories"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -57,15 +58,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeName", GoGetter: "TypeName"},
 			_jsii_.MemberProperty{JsiiProperty: "typeNameInput", GoGetter: "TypeNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "useNameAsIdentifier", GoGetter: "UseNameAsIdentifier"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataIncidentCatalogType{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.dataIncidentCatalogType.DataIncidentCatalogTypeConfig",
+		"@cdktn/provider-incident.dataIncidentCatalogType.DataIncidentCatalogTypeConfig",
 		reflect.TypeOf((*DataIncidentCatalogTypeConfig)(nil)).Elem(),
 	)
 }

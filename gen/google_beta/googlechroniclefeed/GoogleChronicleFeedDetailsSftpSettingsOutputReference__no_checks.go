@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsSftpSettingsOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsSftpSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsSftpSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsSftpSettingsOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsSftpSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsSftpSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsSftpSettingsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsSftpSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsSftpSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsSftpSettingsOutputReference) valida
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsSftpSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsSftpSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

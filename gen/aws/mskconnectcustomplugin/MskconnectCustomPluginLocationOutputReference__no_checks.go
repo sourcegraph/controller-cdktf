@@ -40,7 +40,7 @@ func (m *jsiiProxy_MskconnectCustomPluginLocationOutputReference) validateGetStr
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectCustomPluginLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskconnectCustomPluginLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (m *jsiiProxy_MskconnectCustomPluginLocationOutputReference) validatePutS3P
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectCustomPluginLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskconnectCustomPluginLocationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_MskconnectCustomPluginLocationOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_MskconnectCustomPluginLocationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MskconnectCustomPluginLocationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMskconnectCustomPluginLocationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMskconnectCustomPluginLocationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

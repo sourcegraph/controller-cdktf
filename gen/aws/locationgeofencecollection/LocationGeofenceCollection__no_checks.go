@@ -56,6 +56,10 @@ func (l *jsiiProxy_LocationGeofenceCollection) validateInterpolationForAttribute
 	return nil
 }
 
+func (l *jsiiProxy_LocationGeofenceCollection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LocationGeofenceCollection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (l *jsiiProxy_LocationGeofenceCollection) validateOverrideLogicalIdParamete
 }
 
 func (l *jsiiProxy_LocationGeofenceCollection) validatePutTimeoutsParameters(value *LocationGeofenceCollectionTimeouts) error {
+	return nil
+}
+
+func (l *jsiiProxy_LocationGeofenceCollection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_LocationGeofenceCollection) validateSetKmsKeyIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_LocationGeofenceCollection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LocationGeofenceCollection) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

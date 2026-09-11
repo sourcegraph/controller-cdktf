@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupPlanAssociations) validateOverrideLog
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleBackupDrBackupPlanAssociations) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleBackupDrBackupPlanAssociations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupPlanAssociations) validateSetIdParame
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrBackupPlanAssociations) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleBackupDrBackupPlanAssociations) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

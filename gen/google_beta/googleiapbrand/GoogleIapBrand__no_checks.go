@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleIapBrand) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIapBrand) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapBrand) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleIapBrand) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (g *jsiiProxy_GoogleIapBrand) validatePutTimeoutsParameters(value *GoogleIapBrandTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIapBrand) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleIapBrand) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapBrand) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleIapBrand) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

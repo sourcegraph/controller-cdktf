@@ -56,6 +56,10 @@ func (s *jsiiProxy_SecretManagerSecretIamMember) validateInterpolationForAttribu
 	return nil
 }
 
+func (s *jsiiProxy_SecretManagerSecretIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretManagerSecretIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_SecretManagerSecretIamMember) validateOverrideLogicalIdParame
 }
 
 func (s *jsiiProxy_SecretManagerSecretIamMember) validatePutConditionParameters(value *SecretManagerSecretIamMemberCondition) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecretManagerSecretIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_SecretManagerSecretIamMember) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerSecretIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SecretManagerSecretIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

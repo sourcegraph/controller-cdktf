@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsTriggersList) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsTriggersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsTriggersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsTriggersList) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsTriggersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsTriggersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsTriggersList) va
 	return nil
 }
 
-func validateNewGoogleIdentityPlatformConfigBlockingFunctionsTriggersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleIdentityPlatformConfigBlockingFunctionsTriggersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

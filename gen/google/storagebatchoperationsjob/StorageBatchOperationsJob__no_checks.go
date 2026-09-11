@@ -56,6 +56,10 @@ func (s *jsiiProxy_StorageBatchOperationsJob) validateInterpolationForAttributeP
 	return nil
 }
 
+func (s *jsiiProxy_StorageBatchOperationsJob) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBatchOperationsJob) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (s *jsiiProxy_StorageBatchOperationsJob) validatePutTimeoutsParameters(valu
 	return nil
 }
 
+func (s *jsiiProxy_StorageBatchOperationsJob) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateStorageBatchOperationsJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -132,7 +140,7 @@ func (j *jsiiProxy_StorageBatchOperationsJob) validateSetJobIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_StorageBatchOperationsJob) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

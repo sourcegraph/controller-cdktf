@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeRegionBackendService) validateInterpolationForAttribut
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionBackendService) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionBackendService) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -136,6 +140,10 @@ func (c *jsiiProxy_ComputeRegionBackendService) validatePutTlsSettingsParameters
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionBackendService) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateComputeRegionBackendService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -188,7 +196,7 @@ func (j *jsiiProxy_ComputeRegionBackendService) validateSetIpAddressSelectionPol
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendService) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeRegionBackendService) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

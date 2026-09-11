@@ -12,7 +12,7 @@ func (e *jsiiProxy_EcsTaskDefinitionPlacementConstraintsList) validateGetParamet
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionPlacementConstraintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsTaskDefinitionPlacementConstraintsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EcsTaskDefinitionPlacementConstraintsList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionPlacementConstraintsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcsTaskDefinitionPlacementConstraintsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EcsTaskDefinitionPlacementConstraintsList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewEcsTaskDefinitionPlacementConstraintsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEcsTaskDefinitionPlacementConstraintsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

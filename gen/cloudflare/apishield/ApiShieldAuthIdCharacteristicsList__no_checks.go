@@ -12,7 +12,7 @@ func (a *jsiiProxy_ApiShieldAuthIdCharacteristicsList) validateGetParameters(ind
 	return nil
 }
 
-func (a *jsiiProxy_ApiShieldAuthIdCharacteristicsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiShieldAuthIdCharacteristicsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ApiShieldAuthIdCharacteristicsList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_ApiShieldAuthIdCharacteristicsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApiShieldAuthIdCharacteristicsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ApiShieldAuthIdCharacteristicsList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewApiShieldAuthIdCharacteristicsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewApiShieldAuthIdCharacteristicsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

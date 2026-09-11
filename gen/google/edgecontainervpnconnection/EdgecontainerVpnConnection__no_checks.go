@@ -56,6 +56,10 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) validateInterpolationForAttribute
 	return nil
 }
 
+func (e *jsiiProxy_EdgecontainerVpnConnection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EdgecontainerVpnConnection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) validatePutTimeoutsParameters(val
 }
 
 func (e *jsiiProxy_EdgecontainerVpnConnection) validatePutVpcProjectParameters(value *EdgecontainerVpnConnectionVpcProject) error {
+	return nil
+}
+
+func (e *jsiiProxy_EdgecontainerVpnConnection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnection) validateSetLabelsParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EdgecontainerVpnConnection) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

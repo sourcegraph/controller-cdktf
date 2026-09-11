@@ -56,6 +56,10 @@ func (o *jsiiProxy_OpensearchDomain) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchDomain) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchDomain) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -120,6 +124,10 @@ func (o *jsiiProxy_OpensearchDomain) validatePutVpcOptionsParameters(value *Open
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchDomain) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateOpensearchDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -164,7 +172,7 @@ func (j *jsiiProxy_OpensearchDomain) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomain) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_OpensearchDomain) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

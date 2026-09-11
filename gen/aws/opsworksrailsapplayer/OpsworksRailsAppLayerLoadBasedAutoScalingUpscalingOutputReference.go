@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/opsworksrailsapplayer/internal"
 )
 
 type OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Alarms() *[]*string
 	SetAlarms(val *[]*string)
 	AlarmsInput() *[]*string
@@ -52,9 +52,9 @@ type OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ThresholdsWaitTime() *float64
 	SetThresholdsWaitTime(val *float64)
 	ThresholdsWaitTimeInput() *float64
@@ -63,7 +63,7 @@ type OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference interface
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,9 +79,9 @@ type OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAlarms()
 	ResetCpuThreshold()
 	ResetIgnoreMetricsTime()
@@ -91,7 +91,7 @@ type OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference interface
 	ResetThresholdsWaitTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,7 +101,7 @@ type OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference interface
 
 // The jsii proxy struct for OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference
 type jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference) Alarms() *[]*string {
@@ -284,8 +284,8 @@ func (j *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputRefer
 }
 
 
-func NewOpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference {
+func NewOpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -324,7 +324,7 @@ func NewOpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference(terraf
 	j := jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference",
+		"@cdktn/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -332,11 +332,11 @@ func NewOpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference(terraf
 	return &j
 }
 
-func NewOpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference_Override(o OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewOpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference_Override(o OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference",
+		"@cdktn/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)
@@ -452,7 +452,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputRefer
 	)
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,11 +503,11 @@ func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputRefer
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -631,8 +631,8 @@ func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputRefer
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -644,16 +644,16 @@ func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputRefer
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -716,8 +716,8 @@ func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputRefer
 	)
 }
 
-func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -725,7 +725,7 @@ func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputRefer
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

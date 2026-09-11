@@ -40,11 +40,11 @@ func (a *jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputRefe
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

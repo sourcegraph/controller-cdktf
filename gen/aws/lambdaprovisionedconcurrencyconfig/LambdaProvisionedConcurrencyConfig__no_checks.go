@@ -56,6 +56,10 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateInterpolationForA
 	return nil
 }
 
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateOverrideLogicalId
 }
 
 func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validatePutTimeoutsParameters(value *LambdaProvisionedConcurrencyConfigTimeouts) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

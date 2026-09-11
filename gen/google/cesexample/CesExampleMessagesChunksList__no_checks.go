@@ -12,7 +12,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksList) validateGetParameters(index *fl
 	return nil
 }
 
-func (c *jsiiProxy_CesExampleMessagesChunksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesExampleMessagesChunksList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CesExampleMessagesChunksList) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesExampleMessagesChunksList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CesExampleMessagesChunksList) validateSetWrapsSetParameters(v
 	return nil
 }
 
-func validateNewCesExampleMessagesChunksListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCesExampleMessagesChunksListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (t *jsiiProxy_TemplateSms) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (t *jsiiProxy_TemplateSms) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TemplateSms) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (t *jsiiProxy_TemplateSms) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (t *jsiiProxy_TemplateSms) validatePutTranslationsParameters(value interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TemplateSms) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_TemplateSms) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_TemplateSms) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_TemplateSms) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

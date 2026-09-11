@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DeploymentSpecTemplateSpecInitContainerEnv:
 		value := value.(*[]*DeploymentSpecTemplateSpecInitContainerEnv)
@@ -114,7 +114,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DeploymentSpecTemplateSpecInitContainerEnv; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DeploymentSpecTemplateSpecInitContainerEnv; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DeploymentSpecTemplateSpecInitContainerEnvFrom:
 		value := value.(*[]*DeploymentSpecTemplateSpecInitContainerEnvFrom)
@@ -145,7 +145,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DeploymentSpecTemplateSpecInitContainerEnvFrom; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DeploymentSpecTemplateSpecInitContainerEnvFrom; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -179,7 +179,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DeploymentSpecTemplateSpecInitContainerPort:
 		value := value.(*[]*DeploymentSpecTemplateSpecInitContainerPort)
@@ -198,7 +198,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DeploymentSpecTemplateSpecInitContainerPort; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DeploymentSpecTemplateSpecInitContainerPort; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -254,7 +254,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DeploymentSpecTemplateSpecInitContainerVolumeMount:
 		value := value.(*[]*DeploymentSpecTemplateSpecInitContainerVolumeMount)
@@ -273,16 +273,16 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DeploymentSpecTemplateSpecInitContainerVolumeMount; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DeploymentSpecTemplateSpecInitContainerVolumeMount; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -387,7 +387,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) valid
 
 func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *DeploymentSpecTemplateSpecInitContainer:
 		val := val.(*DeploymentSpecTemplateSpecInitContainer)
@@ -402,7 +402,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DeploymentSpecTemplateSpecInitContainer; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *DeploymentSpecTemplateSpecInitContainer; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -426,11 +426,11 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) valid
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -446,11 +446,11 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) valid
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -481,7 +481,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -498,11 +498,11 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) valid
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -517,7 +517,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerOutputReference) valid
 	return nil
 }
 
-func validateNewDeploymentSpecTemplateSpecInitContainerOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDeploymentSpecTemplateSpecInitContainerOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

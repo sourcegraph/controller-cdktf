@@ -56,6 +56,10 @@ func (a *jsiiProxy_AppstreamImageBuilder) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (a *jsiiProxy_AppstreamImageBuilder) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamImageBuilder) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (a *jsiiProxy_AppstreamImageBuilder) validatePutDomainJoinInfoParameters(va
 }
 
 func (a *jsiiProxy_AppstreamImageBuilder) validatePutVpcConfigParameters(value *AppstreamImageBuilderVpcConfig) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppstreamImageBuilder) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -144,7 +152,7 @@ func (j *jsiiProxy_AppstreamImageBuilder) validateSetInstanceTypeParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AppstreamImageBuilder) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

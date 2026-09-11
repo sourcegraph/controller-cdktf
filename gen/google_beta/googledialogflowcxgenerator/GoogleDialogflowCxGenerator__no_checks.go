@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDialogflowCxGenerator) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxGenerator) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxGenerator) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (g *jsiiProxy_GoogleDialogflowCxGenerator) validatePutPromptTextParameters(
 }
 
 func (g *jsiiProxy_GoogleDialogflowCxGenerator) validatePutTimeoutsParameters(value *GoogleDialogflowCxGeneratorTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxGenerator) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleDialogflowCxGenerator) validateSetLanguageCodeParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxGenerator) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDialogflowCxGenerator) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

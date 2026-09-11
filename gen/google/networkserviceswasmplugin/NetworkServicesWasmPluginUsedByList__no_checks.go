@@ -12,7 +12,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginUsedByList) validateGetParameters(in
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesWasmPluginUsedByList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesWasmPluginUsedByList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginUsedByList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginUsedByList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkServicesWasmPluginUsedByList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginUsedByList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewNetworkServicesWasmPluginUsedByListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNetworkServicesWasmPluginUsedByListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

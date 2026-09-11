@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirebaseremoteconfigremoteconfig/internal"
 )
 
 type GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -29,16 +29,16 @@ type GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleFirebaseRemoteConfigRemoteConfigVersion
 	SetInternalValue(val *GoogleFirebaseRemoteConfigRemoteConfigVersion)
-	IsLegacy() cdktf.IResolvable
+	IsLegacy() cdktn.IResolvable
 	RollbackSource() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UpdateOrigin() *string
 	UpdateTime() *string
 	UpdateType() *string
@@ -49,7 +49,7 @@ type GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,12 +65,12 @@ type GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference interface {
 
 // The jsii proxy struct for GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference
 type jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) ComplexObjectIndex() interface{} {
@@ -133,8 +133,8 @@ func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) IsLegacy() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) IsLegacy() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isLegacy",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -224,7 +224,7 @@ func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference)
 }
 
 
-func NewGoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference {
+func NewGoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleFirebaseRemoteConfigRemoteConfigVersionOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -233,7 +233,7 @@ func NewGoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference(terraformRe
 	j := jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleFirebaseRemoteConfigRemoteConfig.GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference",
+		"@cdktn/provider-google-beta.googleFirebaseRemoteConfigRemoteConfig.GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -241,11 +241,11 @@ func NewGoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference(terraformRe
 	return &j
 }
 
-func NewGoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference_Override(g GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference_Override(g GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleFirebaseRemoteConfigRemoteConfig.GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference",
+		"@cdktn/provider-google-beta.googleFirebaseRemoteConfigRemoteConfig.GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -295,7 +295,7 @@ func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,11 +335,11 @@ func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference)
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -463,8 +463,8 @@ func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference)
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -476,24 +476,24 @@ func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference)
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigVersionOutputReference)
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

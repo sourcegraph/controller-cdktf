@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/monitoringslo/internal"
 )
 
 type MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMax()
 	ResetMin()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference interface
 
 // The jsii proxy struct for MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference
 type jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputRefer
 }
 
 
-func NewMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference {
+func NewMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference(terraf
 	j := jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference",
+		"@cdktn/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference(terraf
 	return &j
 }
 
-func NewMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference_Override(m MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference_Override(m MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference",
+		"@cdktn/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputRefer
 	)
 }
 
-func (j *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputRefer
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -456,8 +456,8 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputRefer
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -469,16 +469,16 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputRefer
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputRefer
 	)
 }
 
-func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputRefer
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (m *jsiiProxy_ManifestWaitConditionList) validateGetParameters(index *float
 	return nil
 }
 
-func (m *jsiiProxy_ManifestWaitConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManifestWaitConditionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ManifestWaitConditionList) validateSetTerraformAttributeParam
 	return nil
 }
 
-func (j *jsiiProxy_ManifestWaitConditionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ManifestWaitConditionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ManifestWaitConditionList) validateSetWrapsSetParameters(val 
 	return nil
 }
 
-func validateNewManifestWaitConditionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewManifestWaitConditionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomputerouterstatus/internal"
 )
 
 type DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -29,21 +29,21 @@ type DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference inter
 	Fqn() *string
 	InternalValue() *DataGoogleComputeRouterStatusBestRoutesForRouterParams
 	SetInternalValue(val *DataGoogleComputeRouterStatusBestRoutesForRouterParams)
-	ResourceManagerTags() cdktf.StringMap
+	ResourceManagerTags() cdktn.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -59,12 +59,12 @@ type DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -74,7 +74,7 @@ type DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference inter
 
 // The jsii proxy struct for DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference
 type jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference) ComplexObjectIndex() interface{} {
@@ -127,8 +127,8 @@ func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference) ResourceManagerTags() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference) ResourceManagerTags() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"resourceManagerTags",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -158,7 +158,7 @@ func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputR
 }
 
 
-func NewDataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference {
+func NewDataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -167,7 +167,7 @@ func NewDataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference(te
 	j := jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -175,11 +175,11 @@ func NewDataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference(te
 	return &j
 }
 
-func NewDataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference_Override(d DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference_Override(d DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -229,7 +229,7 @@ func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputR
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -269,11 +269,11 @@ func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -397,8 +397,8 @@ func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -410,24 +410,24 @@ func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -435,7 +435,7 @@ func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesForRouterParamsOutputR
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

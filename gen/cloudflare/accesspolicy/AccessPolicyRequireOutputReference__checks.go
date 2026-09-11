@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (a *jsiiProxy_AccessPolicyRequireOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (a *jsiiProxy_AccessPolicyRequireOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_AccessPolicyRequireOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutAzureParameter
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AccessPolicyRequireAzure:
 		value := value.(*[]*AccessPolicyRequireAzure)
@@ -114,7 +114,7 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutAzureParameter
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccessPolicyRequireAzure; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AccessPolicyRequireAzure; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -137,7 +137,7 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutGithubParamete
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AccessPolicyRequireGithub:
 		value := value.(*[]*AccessPolicyRequireGithub)
@@ -156,7 +156,7 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutGithubParamete
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccessPolicyRequireGithub; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AccessPolicyRequireGithub; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -168,7 +168,7 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutGsuiteParamete
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AccessPolicyRequireGsuite:
 		value := value.(*[]*AccessPolicyRequireGsuite)
@@ -187,7 +187,7 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutGsuiteParamete
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccessPolicyRequireGsuite; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AccessPolicyRequireGsuite; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -199,7 +199,7 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutOktaParameters
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AccessPolicyRequireOkta:
 		value := value.(*[]*AccessPolicyRequireOkta)
@@ -218,7 +218,7 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutOktaParameters
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccessPolicyRequireOkta; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AccessPolicyRequireOkta; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -230,7 +230,7 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutSamlParameters
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AccessPolicyRequireSaml:
 		value := value.(*[]*AccessPolicyRequireSaml)
@@ -249,16 +249,16 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutSamlParameters
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccessPolicyRequireSaml; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AccessPolicyRequireSaml; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (a *jsiiProxy_AccessPolicyRequireOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AccessPolicyRequireOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -273,11 +273,11 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetAnyValidServic
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -301,11 +301,11 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetCertificatePar
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -418,11 +418,11 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetEveryoneParame
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -447,7 +447,7 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetGroupParameter
 
 func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *AccessPolicyRequire:
 		val := val.(*AccessPolicyRequire)
@@ -462,7 +462,7 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetInternalValueP
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AccessPolicyRequire; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *AccessPolicyRequire; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -509,7 +509,7 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -517,7 +517,7 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetTerraformResou
 	return nil
 }
 
-func validateNewAccessPolicyRequireOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAccessPolicyRequireOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

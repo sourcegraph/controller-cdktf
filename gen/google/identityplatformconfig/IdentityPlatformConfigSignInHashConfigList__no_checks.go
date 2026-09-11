@@ -12,7 +12,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInHashConfigList) validateGetParame
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigSignInHashConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformConfigSignInHashConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInHashConfigList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInHashConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IdentityPlatformConfigSignInHashConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInHashConfigList) validateSetWrapsS
 	return nil
 }
 
-func validateNewIdentityPlatformConfigSignInHashConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewIdentityPlatformConfigSignInHashConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeSharedVpcServiceProject) validateInterpolationFo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeSharedVpcServiceProject) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSharedVpcServiceProject) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleComputeSharedVpcServiceProject) validateOverrideLogical
 }
 
 func (g *jsiiProxy_GoogleComputeSharedVpcServiceProject) validatePutTimeoutsParameters(value *GoogleComputeSharedVpcServiceProjectTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeSharedVpcServiceProject) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleComputeSharedVpcServiceProject) validateSetIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSharedVpcServiceProject) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeSharedVpcServiceProject) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

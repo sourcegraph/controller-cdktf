@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/netappbackupvault/internal"
 )
 
 type NetappBackupVaultBackupRetentionPolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BackupMinimumEnforcedRetentionDays() *float64
 	SetBackupMinimumEnforcedRetentionDays(val *float64)
 	BackupMinimumEnforcedRetentionDaysInput() *float64
@@ -46,9 +46,9 @@ type NetappBackupVaultBackupRetentionPolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WeeklyBackupImmutable() interface{}
 	SetWeeklyBackupImmutable(val interface{})
 	WeeklyBackupImmutableInput() interface{}
@@ -57,7 +57,7 @@ type NetappBackupVaultBackupRetentionPolicyOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +73,16 @@ type NetappBackupVaultBackupRetentionPolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDailyBackupImmutable()
 	ResetManualBackupImmutable()
 	ResetMonthlyBackupImmutable()
 	ResetWeeklyBackupImmutable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type NetappBackupVaultBackupRetentionPolicyOutputReference interface {
 
 // The jsii proxy struct for NetappBackupVaultBackupRetentionPolicyOutputReference
 type jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) BackupMinimumEnforcedRetentionDays() *float64 {
@@ -235,8 +235,8 @@ func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -266,7 +266,7 @@ func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) Weekly
 }
 
 
-func NewNetappBackupVaultBackupRetentionPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetappBackupVaultBackupRetentionPolicyOutputReference {
+func NewNetappBackupVaultBackupRetentionPolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) NetappBackupVaultBackupRetentionPolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNetappBackupVaultBackupRetentionPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -275,7 +275,7 @@ func NewNetappBackupVaultBackupRetentionPolicyOutputReference(terraformResource 
 	j := jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.netappBackupVault.NetappBackupVaultBackupRetentionPolicyOutputReference",
+		"@cdktn/provider-google.netappBackupVault.NetappBackupVaultBackupRetentionPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -283,11 +283,11 @@ func NewNetappBackupVaultBackupRetentionPolicyOutputReference(terraformResource 
 	return &j
 }
 
-func NewNetappBackupVaultBackupRetentionPolicyOutputReference_Override(n NetappBackupVaultBackupRetentionPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewNetappBackupVaultBackupRetentionPolicyOutputReference_Override(n NetappBackupVaultBackupRetentionPolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.netappBackupVault.NetappBackupVaultBackupRetentionPolicyOutputReference",
+		"@cdktn/provider-google.netappBackupVault.NetappBackupVaultBackupRetentionPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)
@@ -381,7 +381,7 @@ func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,11 +432,11 @@ func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) GetAny
 	return returns
 }
 
-func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -560,8 +560,8 @@ func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) GetStr
 	return returns
 }
 
-func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -573,16 +573,16 @@ func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) Interp
 	return returns
 }
 
-func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -621,8 +621,8 @@ func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) ResetW
 	)
 }
 
-func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -630,7 +630,7 @@ func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) Resolv
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

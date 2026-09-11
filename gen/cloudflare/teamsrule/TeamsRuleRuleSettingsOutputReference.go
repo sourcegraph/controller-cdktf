@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/teamsrule/internal"
 )
 
 type TeamsRuleRuleSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AddHeaders() *map[string]*string
 	SetAddHeaders(val *map[string]*string)
 	AddHeadersInput() *map[string]*string
@@ -73,9 +73,9 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UntrustedCert() TeamsRuleRuleSettingsUntrustedCertOutputReference
 	UntrustedCertInput() *TeamsRuleRuleSettingsUntrustedCert
 	// Experimental.
@@ -83,7 +83,7 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -99,9 +99,9 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuditSsh(value *TeamsRuleRuleSettingsAuditSsh)
 	PutBisoAdminControls(value *TeamsRuleRuleSettingsBisoAdminControls)
 	PutCheckSession(value *TeamsRuleRuleSettingsCheckSession)
@@ -127,7 +127,7 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	ResetUntrustedCert()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -137,7 +137,7 @@ type TeamsRuleRuleSettingsOutputReference interface {
 
 // The jsii proxy struct for TeamsRuleRuleSettingsOutputReference
 type jsiiProxy_TeamsRuleRuleSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) AddHeaders() *map[string]*string {
@@ -500,8 +500,8 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) TerraformAttribute() *s
 	return returns
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -531,7 +531,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) UntrustedCertInput() *T
 }
 
 
-func NewTeamsRuleRuleSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TeamsRuleRuleSettingsOutputReference {
+func NewTeamsRuleRuleSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) TeamsRuleRuleSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewTeamsRuleRuleSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -540,7 +540,7 @@ func NewTeamsRuleRuleSettingsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_TeamsRuleRuleSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsOutputReference",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -548,11 +548,11 @@ func NewTeamsRuleRuleSettingsOutputReference(terraformResource cdktf.IInterpolat
 	return &j
 }
 
-func NewTeamsRuleRuleSettingsOutputReference_Override(t TeamsRuleRuleSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewTeamsRuleRuleSettingsOutputReference_Override(t TeamsRuleRuleSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsOutputReference",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)
@@ -701,7 +701,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,11 +741,11 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -869,8 +869,8 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetStringMapAttribute(t
 	return returns
 }
 
-func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -882,16 +882,16 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1103,8 +1103,8 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetUntrustedCert() {
 	)
 }
 
-func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1112,7 +1112,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

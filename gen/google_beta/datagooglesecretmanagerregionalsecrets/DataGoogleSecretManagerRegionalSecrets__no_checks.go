@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecrets) validateOverrideLogic
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecrets) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleSecretManagerRegionalSecrets_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecrets) validateSetIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecrets) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecrets) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

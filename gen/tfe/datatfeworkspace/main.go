@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspace",
+		"@cdktn/provider-tfe.dataTfeWorkspace.DataTfeWorkspace",
 		reflect.TypeOf((*DataTfeWorkspace)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -52,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "queueAllRuns", GoGetter: "QueueAllRuns"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteStateConsumerIds", GoGetter: "RemoteStateConsumerIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOrganization", GoMethod: "ResetOrganization"},
@@ -80,24 +81,25 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "triggerPatterns", GoGetter: "TriggerPatterns"},
 			_jsii_.MemberProperty{JsiiProperty: "triggerPrefixes", GoGetter: "TriggerPrefixes"},
 			_jsii_.MemberProperty{JsiiProperty: "vcsRepo", GoGetter: "VcsRepo"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workingDirectory", GoGetter: "WorkingDirectory"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataTfeWorkspace{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceConfig",
+		"@cdktn/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceConfig",
 		reflect.TypeOf((*DataTfeWorkspaceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepo",
+		"@cdktn/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepo",
 		reflect.TypeOf((*DataTfeWorkspaceVcsRepo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepoList",
+		"@cdktn/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepoList",
 		reflect.TypeOf((*DataTfeWorkspaceVcsRepoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -113,12 +115,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataTfeWorkspaceVcsRepoList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepoOutputReference",
+		"@cdktn/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepoOutputReference",
 		reflect.TypeOf((*DataTfeWorkspaceVcsRepoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
@@ -151,7 +153,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataTfeWorkspaceVcsRepoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

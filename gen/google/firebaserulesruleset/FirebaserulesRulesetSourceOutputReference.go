@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/firebaserulesruleset/internal"
 )
 
 type FirebaserulesRulesetSourceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type FirebaserulesRulesetSourceOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,14 +63,14 @@ type FirebaserulesRulesetSourceOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutFiles(value interface{})
 	ResetLanguage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type FirebaserulesRulesetSourceOutputReference interface {
 
 // The jsii proxy struct for FirebaserulesRulesetSourceOutputReference
 type jsiiProxy_FirebaserulesRulesetSourceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) TerraformResource(
 }
 
 
-func NewFirebaserulesRulesetSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FirebaserulesRulesetSourceOutputReference {
+func NewFirebaserulesRulesetSourceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) FirebaserulesRulesetSourceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewFirebaserulesRulesetSourceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewFirebaserulesRulesetSourceOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_FirebaserulesRulesetSourceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference",
+		"@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewFirebaserulesRulesetSourceOutputReference(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewFirebaserulesRulesetSourceOutputReference_Override(f FirebaserulesRulesetSourceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewFirebaserulesRulesetSourceOutputReference_Override(f FirebaserulesRulesetSourceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference",
+		"@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) GetAnyMapAttribute
 	return returns
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -444,8 +444,8 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) GetStringMapAttrib
 	return returns
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -457,16 +457,16 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) ResetLanguage() {
 	)
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) Resolve(_context c
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

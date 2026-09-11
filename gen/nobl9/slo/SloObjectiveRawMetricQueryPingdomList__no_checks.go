@@ -12,7 +12,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryPingdomList) validateGetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryPingdomList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryPingdomList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryPingdomList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryPingdomList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryPingdomList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryPingdomList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewSloObjectiveRawMetricQueryPingdomListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSloObjectiveRawMetricQueryPingdomListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

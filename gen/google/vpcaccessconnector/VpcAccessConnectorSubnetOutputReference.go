@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/vpcaccessconnector/internal"
 )
 
 type VpcAccessConnectorSubnetOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type VpcAccessConnectorSubnetOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type VpcAccessConnectorSubnetOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetName()
 	ResetProjectId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type VpcAccessConnectorSubnetOutputReference interface {
 
 // The jsii proxy struct for VpcAccessConnectorSubnetOutputReference
 type jsiiProxy_VpcAccessConnectorSubnetOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_VpcAccessConnectorSubnetOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_VpcAccessConnectorSubnetOutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_VpcAccessConnectorSubnetOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_VpcAccessConnectorSubnetOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_VpcAccessConnectorSubnetOutputReference) TerraformResource() 
 }
 
 
-func NewVpcAccessConnectorSubnetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VpcAccessConnectorSubnetOutputReference {
+func NewVpcAccessConnectorSubnetOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) VpcAccessConnectorSubnetOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewVpcAccessConnectorSubnetOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewVpcAccessConnectorSubnetOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_VpcAccessConnectorSubnetOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnectorSubnetOutputReference",
+		"@cdktn/provider-google.vpcAccessConnector.VpcAccessConnectorSubnetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewVpcAccessConnectorSubnetOutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewVpcAccessConnectorSubnetOutputReference_Override(v VpcAccessConnectorSubnetOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewVpcAccessConnectorSubnetOutputReference_Override(v VpcAccessConnectorSubnetOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnectorSubnetOutputReference",
+		"@cdktn/provider-google.vpcAccessConnector.VpcAccessConnectorSubnetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_VpcAccessConnectorSubnetOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnectorSubnetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VpcAccessConnectorSubnetOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -456,8 +456,8 @@ func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -469,16 +469,16 @@ func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) ResetProjectId() {
 	)
 }
 
-func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) Resolve(_context cdk
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

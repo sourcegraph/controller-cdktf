@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleRedisClusterZoneDistributionConfigList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleRedisClusterZoneDistributionConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleRedisClusterZoneDistributionConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleRedisClusterZoneDistributionConfigList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleRedisClusterZoneDistributionConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleRedisClusterZoneDistributionConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleRedisClusterZoneDistributionConfigList) validateSet
 	return nil
 }
 
-func validateNewDataGoogleRedisClusterZoneDistributionConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleRedisClusterZoneDistributionConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

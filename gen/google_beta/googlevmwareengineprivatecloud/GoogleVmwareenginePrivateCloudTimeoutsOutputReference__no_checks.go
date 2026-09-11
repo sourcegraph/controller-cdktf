@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleVmwareenginePrivateCloudTimeoutsOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVmwareenginePrivateCloudTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleVmwareenginePrivateCloudTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVmwareenginePrivateCloudTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleVmwareenginePrivateCloudTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleVmwareenginePrivateCloudTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareenginePrivateCloudTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleVmwareenginePrivateCloudTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleVmwareenginePrivateCloudTimeoutsOutputReference) valida
 	return nil
 }
 
-func validateNewGoogleVmwareenginePrivateCloudTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleVmwareenginePrivateCloudTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

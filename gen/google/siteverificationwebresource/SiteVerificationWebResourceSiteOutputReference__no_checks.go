@@ -40,11 +40,11 @@ func (s *jsiiProxy_SiteVerificationWebResourceSiteOutputReference) validateGetSt
 	return nil
 }
 
-func (s *jsiiProxy_SiteVerificationWebResourceSiteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SiteVerificationWebResourceSiteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SiteVerificationWebResourceSiteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SiteVerificationWebResourceSiteOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_SiteVerificationWebResourceSiteOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_SiteVerificationWebResourceSiteOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SiteVerificationWebResourceSiteOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_SiteVerificationWebResourceSiteOutputReference) validateSetTy
 	return nil
 }
 
-func validateNewSiteVerificationWebResourceSiteOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSiteVerificationWebResourceSiteOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (p *jsiiProxy_PreviewSigninPageContentSecurityPolicySettingOutputReference)
 	return nil
 }
 
-func (p *jsiiProxy_PreviewSigninPageContentSecurityPolicySettingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PreviewSigninPageContentSecurityPolicySettingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PreviewSigninPageContentSecurityPolicySettingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PreviewSigninPageContentSecurityPolicySettingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_PreviewSigninPageContentSecurityPolicySettingOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_PreviewSigninPageContentSecurityPolicySettingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PreviewSigninPageContentSecurityPolicySettingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPreviewSigninPageContentSecurityPolicySettingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPreviewSigninPageContentSecurityPolicySettingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

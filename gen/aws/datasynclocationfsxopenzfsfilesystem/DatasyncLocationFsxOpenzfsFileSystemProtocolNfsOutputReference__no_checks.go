@@ -40,7 +40,7 @@ func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

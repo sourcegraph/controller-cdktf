@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/healthcarepipelinejob/internal"
 )
 
 type HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference in
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WhistleConfigSource() HealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceOutputReference
 	WhistleConfigSourceInput() *HealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSource
 	// Experimental.
@@ -47,7 +47,7 @@ type HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference in
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,14 +63,14 @@ type HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference in
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutWhistleConfigSource(value *HealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSource)
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference in
 
 // The jsii proxy struct for HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference
 type jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	return returns
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 }
 
 
-func NewHealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference {
+func NewHealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewHealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewHealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference
 	j := jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.healthcarePipelineJob.HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference",
+		"@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewHealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference
 	return &j
 }
 
-func NewHealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference_Override(h HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewHealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference_Override(h HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.healthcarePipelineJob.HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference",
+		"@cdktn/provider-google.healthcarePipelineJob.HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	)
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	return returns
 }
 
-func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := h.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -444,8 +444,8 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	return returns
 }
 
-func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -457,16 +457,16 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	return returns
 }
 
-func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := h.validateInterpolationForAttributeParameters(property); err != nil {
+func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	)
 }
 
-func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := h.validateResolveParameters(_context); err != nil {
+func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := h.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

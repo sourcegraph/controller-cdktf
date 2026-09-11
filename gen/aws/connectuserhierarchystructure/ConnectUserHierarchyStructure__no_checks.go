@@ -56,6 +56,10 @@ func (c *jsiiProxy_ConnectUserHierarchyStructure) validateInterpolationForAttrib
 	return nil
 }
 
+func (c *jsiiProxy_ConnectUserHierarchyStructure) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectUserHierarchyStructure) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ConnectUserHierarchyStructure) validateOverrideLogicalIdParam
 }
 
 func (c *jsiiProxy_ConnectUserHierarchyStructure) validatePutHierarchyStructureParameters(value *ConnectUserHierarchyStructureHierarchyStructure) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectUserHierarchyStructure) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_ConnectUserHierarchyStructure) validateSetInstanceIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_ConnectUserHierarchyStructure) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ConnectUserHierarchyStructure) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

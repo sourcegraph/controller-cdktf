@@ -56,6 +56,10 @@ func (i *jsiiProxy_IamOauthClientCredential) validateInterpolationForAttributePa
 	return nil
 }
 
+func (i *jsiiProxy_IamOauthClientCredential) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamOauthClientCredential) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (i *jsiiProxy_IamOauthClientCredential) validateOverrideLogicalIdParameters
 }
 
 func (i *jsiiProxy_IamOauthClientCredential) validatePutTimeoutsParameters(value *IamOauthClientCredentialTimeouts) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamOauthClientCredential) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_IamOauthClientCredential) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_IamOauthClientCredential) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IamOauthClientCredential) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

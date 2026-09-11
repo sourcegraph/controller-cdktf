@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileCustomInterceptProfileOut
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileCustomInterceptProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileCustomInterceptProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileCustomInterceptProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileCustomInterceptProfileOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileCustomInterceptProfileOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileCustomInterceptProfileOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileCustomInterceptProfileOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkSecuritySecurityProfileCustomInterceptProfileOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkSecuritySecurityProfileCustomInterceptProfileOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

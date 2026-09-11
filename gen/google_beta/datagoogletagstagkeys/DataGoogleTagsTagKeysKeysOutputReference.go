@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogletagstagkeys/internal"
 )
 
 type DataGoogleTagsTagKeysKeysOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowedValuesRegex() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -36,23 +36,23 @@ type DataGoogleTagsTagKeysKeysOutputReference interface {
 	NamespacedName() *string
 	Parent() *string
 	Purpose() *string
-	PurposeData() cdktf.StringMap
+	PurposeData() cdktn.StringMap
 	ShortName() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UpdateTime() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,12 +68,12 @@ type DataGoogleTagsTagKeysKeysOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type DataGoogleTagsTagKeysKeysOutputReference interface {
 
 // The jsii proxy struct for DataGoogleTagsTagKeysKeysOutputReference
 type jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) AllowedValuesRegex() *string {
@@ -206,8 +206,8 @@ func (j *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) Purpose() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) PurposeData() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) PurposeData() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"purposeData",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -257,7 +257,7 @@ func (j *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) UpdateTime() *strin
 }
 
 
-func NewDataGoogleTagsTagKeysKeysOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleTagsTagKeysKeysOutputReference {
+func NewDataGoogleTagsTagKeysKeysOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleTagsTagKeysKeysOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleTagsTagKeysKeysOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -266,7 +266,7 @@ func NewDataGoogleTagsTagKeysKeysOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysKeysOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysKeysOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -274,11 +274,11 @@ func NewDataGoogleTagsTagKeysKeysOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewDataGoogleTagsTagKeysKeysOutputReference_Override(d DataGoogleTagsTagKeysKeysOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleTagsTagKeysKeysOutputReference_Override(d DataGoogleTagsTagKeysKeysOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysKeysOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysKeysOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -368,11 +368,11 @@ func (d *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -496,8 +496,8 @@ func (d *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -509,24 +509,24 @@ func (d *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) InterpolationAsList
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -534,7 +534,7 @@ func (d *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

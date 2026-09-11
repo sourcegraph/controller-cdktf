@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) validatePutTimeoutsParam
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsEc2TransitGatewayRouteTables_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,7 +88,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTables) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

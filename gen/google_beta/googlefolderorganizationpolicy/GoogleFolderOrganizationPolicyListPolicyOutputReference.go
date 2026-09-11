@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefolderorganizationpolicy/internal"
 )
 
 type GoogleFolderOrganizationPolicyListPolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Allow() GoogleFolderOrganizationPolicyListPolicyAllowOutputReference
 	AllowInput() *GoogleFolderOrganizationPolicyListPolicyAllow
 	// the index of the complex object in a list.
@@ -44,15 +44,15 @@ type GoogleFolderOrganizationPolicyListPolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,9 +68,9 @@ type GoogleFolderOrganizationPolicyListPolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAllow(value *GoogleFolderOrganizationPolicyListPolicyAllow)
 	PutDeny(value *GoogleFolderOrganizationPolicyListPolicyDeny)
 	ResetAllow()
@@ -79,7 +79,7 @@ type GoogleFolderOrganizationPolicyListPolicyOutputReference interface {
 	ResetSuggestedValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type GoogleFolderOrganizationPolicyListPolicyOutputReference interface {
 
 // The jsii proxy struct for GoogleFolderOrganizationPolicyListPolicyOutputReference
 type jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference) Allow() GoogleFolderOrganizationPolicyListPolicyAllowOutputReference {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference) Terr
 }
 
 
-func NewGoogleFolderOrganizationPolicyListPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleFolderOrganizationPolicyListPolicyOutputReference {
+func NewGoogleFolderOrganizationPolicyListPolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleFolderOrganizationPolicyListPolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleFolderOrganizationPolicyListPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewGoogleFolderOrganizationPolicyListPolicyOutputReference(terraformResourc
 	j := jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicyOutputReference",
+		"@cdktn/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewGoogleFolderOrganizationPolicyListPolicyOutputReference(terraformResourc
 	return &j
 }
 
-func NewGoogleFolderOrganizationPolicyListPolicyOutputReference_Override(g GoogleFolderOrganizationPolicyListPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleFolderOrganizationPolicyListPolicyOutputReference_Override(g GoogleFolderOrganizationPolicyListPolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicyOutputReference",
+		"@cdktn/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -336,7 +336,7 @@ func (j *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -376,11 +376,11 @@ func (g *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference) GetA
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -504,8 +504,8 @@ func (g *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference) GetS
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -517,16 +517,16 @@ func (g *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference) Inte
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (g *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference) Rese
 	)
 }
 
-func (g *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (g *jsiiProxy_GoogleFolderOrganizationPolicyListPolicyOutputReference) Reso
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

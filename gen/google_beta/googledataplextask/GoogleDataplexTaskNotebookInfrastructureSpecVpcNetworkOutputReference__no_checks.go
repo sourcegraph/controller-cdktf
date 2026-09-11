@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataplexTaskNotebookInfrastructureSpecVpcNetworkOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleDataplexTaskNotebookInfrastructureSpecVpcNetworkOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

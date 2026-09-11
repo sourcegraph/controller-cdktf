@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) validateGetParameters(index
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewOpsworksPhpAppLayerEbsVolumeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewOpsworksPhpAppLayerEbsVolumeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

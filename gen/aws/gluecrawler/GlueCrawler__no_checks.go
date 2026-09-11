@@ -56,6 +56,10 @@ func (g *jsiiProxy_GlueCrawler) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (g *jsiiProxy_GlueCrawler) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueCrawler) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func (g *jsiiProxy_GlueCrawler) validatePutSchemaChangePolicyParameters(value *G
 	return nil
 }
 
+func (g *jsiiProxy_GlueCrawler) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGlueCrawler_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -156,7 +164,7 @@ func (j *jsiiProxy_GlueCrawler) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawler) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GlueCrawler) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

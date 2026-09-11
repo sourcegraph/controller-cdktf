@@ -40,11 +40,11 @@ func (c *jsiiProxy_ChronicleRuleCompilationDiagnosticsPositionOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleRuleCompilationDiagnosticsPositionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChronicleRuleCompilationDiagnosticsPositionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleRuleCompilationDiagnosticsPositionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleRuleCompilationDiagnosticsPositionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_ChronicleRuleCompilationDiagnosticsPositionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleRuleCompilationDiagnosticsPositionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ChronicleRuleCompilationDiagnosticsPositionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewChronicleRuleCompilationDiagnosticsPositionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewChronicleRuleCompilationDiagnosticsPositionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

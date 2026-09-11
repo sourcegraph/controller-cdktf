@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateInte
 	return nil
 }
 
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validatePutS
 }
 
 func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validatePutTimeoutsParameters(value *NetworkConnectivityMulticloudDataTransferConfigTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateSetL
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

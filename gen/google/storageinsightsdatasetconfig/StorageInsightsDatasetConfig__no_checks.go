@@ -56,6 +56,10 @@ func (s *jsiiProxy_StorageInsightsDatasetConfig) validateInterpolationForAttribu
 	return nil
 }
 
+func (s *jsiiProxy_StorageInsightsDatasetConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageInsightsDatasetConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (s *jsiiProxy_StorageInsightsDatasetConfig) validatePutTimeoutsParameters(v
 	return nil
 }
 
+func (s *jsiiProxy_StorageInsightsDatasetConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateStorageInsightsDatasetConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -148,7 +156,7 @@ func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetIncludeNewlyCreatedB
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

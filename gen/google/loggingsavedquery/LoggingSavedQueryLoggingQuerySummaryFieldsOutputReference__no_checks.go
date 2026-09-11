@@ -40,11 +40,11 @@ func (l *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference) va
 	return nil
 }
 
-func (l *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLoggingSavedQueryLoggingQuerySummaryFieldsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoggingSavedQueryLoggingQuerySummaryFieldsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

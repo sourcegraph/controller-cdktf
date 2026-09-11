@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/s3bucket/internal"
 )
 
 type S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDays()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference interface {
 
 // The jsii proxy struct for S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference
 type jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReferen
 }
 
 
-func NewS3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference {
+func NewS3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewS3BucketLifecycleRuleNoncurrentVersionTransitionOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +203,7 @@ func NewS3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference(terrafor
 	j := jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewS3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference(terrafor
 	return &j
 }
 
-func NewS3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference_Override(s S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewS3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference_Override(s S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReferen
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReferen
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -455,8 +455,8 @@ func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReferen
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -468,16 +468,16 @@ func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReferen
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReferen
 	)
 }
 
-func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReferen
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

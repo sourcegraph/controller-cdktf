@@ -40,11 +40,11 @@ func (c *jsiiProxy_ConfigOrganizationConformancePackTimeoutsOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ConfigOrganizationConformancePackTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigOrganizationConformancePackTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConfigOrganizationConformancePackTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigOrganizationConformancePackTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePackTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePackTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ConfigOrganizationConformancePackTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePackTimeoutsOutputReference) val
 	return nil
 }
 
-func validateNewConfigOrganizationConformancePackTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewConfigOrganizationConformancePackTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

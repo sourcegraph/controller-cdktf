@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/iapwebtypecomputeiammember/internal"
 )
 
 type IapWebTypeComputeIamMemberConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type IapWebTypeComputeIamMemberConditionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -51,7 +51,7 @@ type IapWebTypeComputeIamMemberConditionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type IapWebTypeComputeIamMemberConditionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type IapWebTypeComputeIamMemberConditionOutputReference interface {
 
 // The jsii proxy struct for IapWebTypeComputeIamMemberConditionOutputReference
 type jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) TitleInpu
 }
 
 
-func NewIapWebTypeComputeIamMemberConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IapWebTypeComputeIamMemberConditionOutputReference {
+func NewIapWebTypeComputeIamMemberConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) IapWebTypeComputeIamMemberConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIapWebTypeComputeIamMemberConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewIapWebTypeComputeIamMemberConditionOutputReference(terraformResource cdk
 	j := jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConditionOutputReference",
+		"@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewIapWebTypeComputeIamMemberConditionOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewIapWebTypeComputeIamMemberConditionOutputReference_Override(i IapWebTypeComputeIamMemberConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIapWebTypeComputeIamMemberConditionOutputReference_Override(i IapWebTypeComputeIamMemberConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConditionOutputReference",
+		"@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (i *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) GetAnyMap
 	return returns
 }
 
-func (i *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -489,8 +489,8 @@ func (i *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) GetString
 	return returns
 }
 
-func (i *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -502,16 +502,16 @@ func (i *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) Interpola
 	return returns
 }
 
-func (i *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (i *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) ResetDesc
 	)
 }
 
-func (i *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (i *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) Resolve(_
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

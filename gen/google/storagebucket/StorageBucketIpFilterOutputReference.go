@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/storagebucket/internal"
 )
 
 type StorageBucketIpFilterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowAllServiceAgentAccess() interface{}
 	SetAllowAllServiceAgentAccess(val interface{})
 	AllowAllServiceAgentAccessInput() interface{}
@@ -45,9 +45,9 @@ type StorageBucketIpFilterOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VpcNetworkSources() StorageBucketIpFilterVpcNetworkSourcesList
 	VpcNetworkSourcesInput() interface{}
 	// Experimental.
@@ -55,7 +55,7 @@ type StorageBucketIpFilterOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,9 +71,9 @@ type StorageBucketIpFilterOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutPublicNetworkSource(value *StorageBucketIpFilterPublicNetworkSource)
 	PutVpcNetworkSources(value interface{})
 	ResetAllowAllServiceAgentAccess()
@@ -82,7 +82,7 @@ type StorageBucketIpFilterOutputReference interface {
 	ResetVpcNetworkSources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type StorageBucketIpFilterOutputReference interface {
 
 // The jsii proxy struct for StorageBucketIpFilterOutputReference
 type jsiiProxy_StorageBucketIpFilterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_StorageBucketIpFilterOutputReference) AllowAllServiceAgentAccess() interface{} {
@@ -235,8 +235,8 @@ func (j *jsiiProxy_StorageBucketIpFilterOutputReference) TerraformAttribute() *s
 	return returns
 }
 
-func (j *jsiiProxy_StorageBucketIpFilterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_StorageBucketIpFilterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -266,7 +266,7 @@ func (j *jsiiProxy_StorageBucketIpFilterOutputReference) VpcNetworkSourcesInput(
 }
 
 
-func NewStorageBucketIpFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StorageBucketIpFilterOutputReference {
+func NewStorageBucketIpFilterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) StorageBucketIpFilterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewStorageBucketIpFilterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -275,7 +275,7 @@ func NewStorageBucketIpFilterOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_StorageBucketIpFilterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference",
+		"@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -283,11 +283,11 @@ func NewStorageBucketIpFilterOutputReference(terraformResource cdktf.IInterpolat
 	return &j
 }
 
-func NewStorageBucketIpFilterOutputReference_Override(s StorageBucketIpFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewStorageBucketIpFilterOutputReference_Override(s StorageBucketIpFilterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference",
+		"@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -370,7 +370,7 @@ func (j *jsiiProxy_StorageBucketIpFilterOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_StorageBucketIpFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageBucketIpFilterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,11 +410,11 @@ func (s *jsiiProxy_StorageBucketIpFilterOutputReference) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (s *jsiiProxy_StorageBucketIpFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StorageBucketIpFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -538,8 +538,8 @@ func (s *jsiiProxy_StorageBucketIpFilterOutputReference) GetStringMapAttribute(t
 	return returns
 }
 
-func (s *jsiiProxy_StorageBucketIpFilterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_StorageBucketIpFilterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -551,16 +551,16 @@ func (s *jsiiProxy_StorageBucketIpFilterOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (s *jsiiProxy_StorageBucketIpFilterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_StorageBucketIpFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -621,8 +621,8 @@ func (s *jsiiProxy_StorageBucketIpFilterOutputReference) ResetVpcNetworkSources(
 	)
 }
 
-func (s *jsiiProxy_StorageBucketIpFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_StorageBucketIpFilterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -630,7 +630,7 @@ func (s *jsiiProxy_StorageBucketIpFilterOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

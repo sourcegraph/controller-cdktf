@@ -12,7 +12,7 @@ func (m *jsiiProxy_MedialiveInputDestinationsList) validateGetParameters(index *
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveInputDestinationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveInputDestinationsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_MedialiveInputDestinationsList) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveInputDestinationsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MedialiveInputDestinationsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_MedialiveInputDestinationsList) validateSetWrapsSetParameters
 	return nil
 }
 
-func validateNewMedialiveInputDestinationsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMedialiveInputDestinationsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

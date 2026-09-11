@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataPostgresqlSchemas) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func (d *jsiiProxy_DataPostgresqlSchemas) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataPostgresqlSchemas_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,7 +88,7 @@ func (j *jsiiProxy_DataPostgresqlSchemas) validateSetIncludeSystemSchemasParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataPostgresqlSchemas) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataPostgresqlSchemas) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

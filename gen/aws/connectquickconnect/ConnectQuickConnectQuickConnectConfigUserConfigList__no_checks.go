@@ -12,7 +12,7 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigUserConfigList) validate
 	return nil
 }
 
-func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigUserConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigUserConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigUserConfigList) validate
 	return nil
 }
 
-func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigUserConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigUserConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ConnectQuickConnectQuickConnectConfigUserConfigList) validate
 	return nil
 }
 
-func validateNewConnectQuickConnectQuickConnectConfigUserConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewConnectQuickConnectQuickConnectConfigUserConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

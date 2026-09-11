@@ -56,6 +56,10 @@ func (t *jsiiProxy_TranscribeVocabulary) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (t *jsiiProxy_TranscribeVocabulary) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TranscribeVocabulary) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (t *jsiiProxy_TranscribeVocabulary) validateOverrideLogicalIdParameters(new
 }
 
 func (t *jsiiProxy_TranscribeVocabulary) validatePutTimeoutsParameters(value *TranscribeVocabularyTimeouts) error {
+	return nil
+}
+
+func (t *jsiiProxy_TranscribeVocabulary) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_TranscribeVocabulary) validateSetLanguageCodeParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_TranscribeVocabulary) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_TranscribeVocabulary) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

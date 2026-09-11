@@ -56,6 +56,10 @@ func (o *jsiiProxy_OpsworksRailsAppLayer) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksRailsAppLayer) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksRailsAppLayer) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (o *jsiiProxy_OpsworksRailsAppLayer) validatePutEbsVolumeParameters(value i
 }
 
 func (o *jsiiProxy_OpsworksRailsAppLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksRailsAppLayerLoadBasedAutoScaling) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksRailsAppLayer) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -180,7 +188,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetInstanceShutdownTimeoutPara
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateInte
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateOver
 }
 
 func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validatePutTimeoutsParameters(value *GoogleGeminiDataSharingWithGoogleSettingBindingTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateSetL
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

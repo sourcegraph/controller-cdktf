@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotationRulesList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotationRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotationRulesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotationRulesList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotationRulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotationRulesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotationRulesList) validateSetWrap
 	return nil
 }
 
-func validateNewDataAwsSecretsmanagerSecretRotationRulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsSecretsmanagerSecretRotationRulesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

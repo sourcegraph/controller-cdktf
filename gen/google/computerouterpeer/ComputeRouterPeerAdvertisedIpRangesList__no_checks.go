@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesList) validateGetParameter
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewComputeRouterPeerAdvertisedIpRangesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeRouterPeerAdvertisedIpRangesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

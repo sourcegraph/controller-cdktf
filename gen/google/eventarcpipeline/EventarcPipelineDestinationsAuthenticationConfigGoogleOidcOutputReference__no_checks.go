@@ -40,11 +40,11 @@ func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOut
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOut
 	return nil
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEventarcPipelineDestinationsAuthenticationConfigGoogleOidcOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEventarcPipelineDestinationsAuthenticationConfigGoogleOidcOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

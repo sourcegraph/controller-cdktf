@@ -40,11 +40,11 @@ func (b *jsiiProxy_BudgetsBudgetPlannedLimitOutputReference) validateGetStringMa
 	return nil
 }
 
-func (b *jsiiProxy_BudgetsBudgetPlannedLimitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BudgetsBudgetPlannedLimitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BudgetsBudgetPlannedLimitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BudgetsBudgetPlannedLimitOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_BudgetsBudgetPlannedLimitOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetPlannedLimitOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BudgetsBudgetPlannedLimitOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_BudgetsBudgetPlannedLimitOutputReference) validateSetUnitPara
 	return nil
 }
 
-func validateNewBudgetsBudgetPlannedLimitOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewBudgetsBudgetPlannedLimitOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

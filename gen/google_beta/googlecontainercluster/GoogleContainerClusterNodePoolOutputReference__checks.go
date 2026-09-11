@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateGetStr
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -139,7 +139,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validatePutNod
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleContainerClusterNodePoolNodeDrainConfig:
 		value := value.(*[]*GoogleContainerClusterNodePoolNodeDrainConfig)
@@ -158,7 +158,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validatePutNod
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleContainerClusterNodePoolNodeDrainConfig; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*GoogleContainerClusterNodePoolNodeDrainConfig; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -198,9 +198,9 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validatePutUpg
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -281,7 +281,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateSetIni
 
 func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *GoogleContainerClusterNodePool:
 		val := val.(*GoogleContainerClusterNodePool)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateSetInt
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleContainerClusterNodePool; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *GoogleContainerClusterNodePool; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -351,7 +351,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -367,7 +367,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validateSetVer
 	return nil
 }
 
-func validateNewGoogleContainerClusterNodePoolOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleContainerClusterNodePoolOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

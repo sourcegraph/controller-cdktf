@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesPartsList) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesPartsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesPartsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesPartsList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesPartsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesPartsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesPartsList) validateSet
 	return nil
 }
 
-func validateNewGoogleDialogflowCxIntentTrainingPhrasesPartsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDialogflowCxIntentTrainingPhrasesPartsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

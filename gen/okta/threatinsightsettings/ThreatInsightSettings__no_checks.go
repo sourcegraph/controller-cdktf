@@ -56,6 +56,10 @@ func (t *jsiiProxy_ThreatInsightSettings) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (t *jsiiProxy_ThreatInsightSettings) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_ThreatInsightSettings) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (t *jsiiProxy_ThreatInsightSettings) validateMoveToIdParameters(id *string)
 }
 
 func (t *jsiiProxy_ThreatInsightSettings) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_ThreatInsightSettings) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_ThreatInsightSettings) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_ThreatInsightSettings) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ThreatInsightSettings) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

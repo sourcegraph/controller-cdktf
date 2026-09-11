@@ -40,11 +40,11 @@ func (d *jsiiProxy_DialogflowEnvironmentFulfillmentFeaturesOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowEnvironmentFulfillmentFeaturesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowEnvironmentFulfillmentFeaturesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowEnvironmentFulfillmentFeaturesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowEnvironmentFulfillmentFeaturesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_DialogflowEnvironmentFulfillmentFeaturesOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowEnvironmentFulfillmentFeaturesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowEnvironmentFulfillmentFeaturesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_DialogflowEnvironmentFulfillmentFeaturesOutputReference) vali
 	return nil
 }
 
-func validateNewDialogflowEnvironmentFulfillmentFeaturesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDialogflowEnvironmentFulfillmentFeaturesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

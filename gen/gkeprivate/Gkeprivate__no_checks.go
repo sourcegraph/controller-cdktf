@@ -24,6 +24,10 @@ func (g *jsiiProxy_Gkeprivate) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (g *jsiiProxy_Gkeprivate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGkeprivate_IsConstructParameters(x interface{}) error {
 	return nil
 }

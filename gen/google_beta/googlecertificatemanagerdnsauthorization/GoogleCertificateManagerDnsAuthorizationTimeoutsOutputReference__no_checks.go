@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCertificateManagerDnsAuthorizationTimeoutsOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCertificateManagerDnsAuthorizationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCertificateManagerDnsAuthorizationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCertificateManagerDnsAuthorizationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCertificateManagerDnsAuthorizationTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorizationTimeoutsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorizationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorizationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorizationTimeoutsOutputReferen
 	return nil
 }
 
-func validateNewGoogleCertificateManagerDnsAuthorizationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCertificateManagerDnsAuthorizationTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

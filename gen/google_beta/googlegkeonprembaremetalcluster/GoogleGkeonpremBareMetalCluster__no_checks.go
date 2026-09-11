@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateInterpolationForAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -128,6 +132,10 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validatePutUpgradePolicyPara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleGkeonpremBareMetalCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -172,7 +180,7 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

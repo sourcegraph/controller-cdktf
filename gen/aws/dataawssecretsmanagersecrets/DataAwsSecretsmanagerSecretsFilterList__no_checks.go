@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretsFilterList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewDataAwsSecretsmanagerSecretsFilterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsSecretsmanagerSecretsFilterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

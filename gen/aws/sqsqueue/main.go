@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sqsQueue.SqsQueue",
+		"@cdktn/provider-aws.sqsQueue.SqsQueue",
 		reflect.TypeOf((*SqsQueue)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kmsMasterKeyId", GoGetter: "KmsMasterKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "kmsMasterKeyIdInput", GoGetter: "KmsMasterKeyIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maxMessageSize", GoGetter: "MaxMessageSize"},
 			_jsii_.MemberProperty{JsiiProperty: "maxMessageSizeInput", GoGetter: "MaxMessageSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "messageRetentionSeconds", GoGetter: "MessageRetentionSeconds"},
@@ -75,6 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "redriveAllowPolicyInput", GoGetter: "RedriveAllowPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "redrivePolicy", GoGetter: "RedrivePolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "redrivePolicyInput", GoGetter: "RedrivePolicyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContentBasedDeduplication", GoMethod: "ResetContentBasedDeduplication"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeduplicationScope", GoMethod: "ResetDeduplicationScope"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDelaySeconds", GoMethod: "ResetDelaySeconds"},
@@ -114,15 +116,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "visibilityTimeoutSeconds", GoGetter: "VisibilityTimeoutSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "visibilityTimeoutSecondsInput", GoGetter: "VisibilityTimeoutSecondsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SqsQueue{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.sqsQueue.SqsQueueConfig",
+		"@cdktn/provider-aws.sqsQueue.SqsQueueConfig",
 		reflect.TypeOf((*SqsQueueConfig)(nil)).Elem(),
 	)
 }

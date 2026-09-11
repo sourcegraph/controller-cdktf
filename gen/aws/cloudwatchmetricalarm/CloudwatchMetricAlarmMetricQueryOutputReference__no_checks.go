@@ -40,7 +40,7 @@ func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validatePutM
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCloudwatchMetricAlarmMetricQueryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCloudwatchMetricAlarmMetricQueryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

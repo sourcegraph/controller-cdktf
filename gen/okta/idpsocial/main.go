@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.idpSocial.IdpSocial",
+		"@cdktn/provider-okta.idpSocial.IdpSocial",
 		reflect.TypeOf((*IdpSocial)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountLinkAction", GoGetter: "AccountLinkAction"},
@@ -64,6 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "issuerMode", GoGetter: "IssuerMode"},
 			_jsii_.MemberProperty{JsiiProperty: "issuerModeInput", GoGetter: "IssuerModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maxClockSkew", GoGetter: "MaxClockSkew"},
 			_jsii_.MemberProperty{JsiiProperty: "maxClockSkewInput", GoGetter: "MaxClockSkewInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -82,6 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioningAction", GoGetter: "ProvisioningAction"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioningActionInput", GoGetter: "ProvisioningActionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccountLinkAction", GoMethod: "ResetAccountLinkAction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccountLinkGroupInclude", GoMethod: "ResetAccountLinkGroupInclude"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppleKid", GoMethod: "ResetAppleKid"},
@@ -136,15 +138,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameTemplate", GoGetter: "UsernameTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameTemplateInput", GoGetter: "UsernameTemplateInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_IdpSocial{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.idpSocial.IdpSocialConfig",
+		"@cdktn/provider-okta.idpSocial.IdpSocialConfig",
 		reflect.TypeOf((*IdpSocialConfig)(nil)).Elem(),
 	)
 }

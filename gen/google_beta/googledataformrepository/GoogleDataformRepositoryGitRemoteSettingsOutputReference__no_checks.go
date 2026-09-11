@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) val
 	return nil
 }
 
-func validateNewGoogleDataformRepositoryGitRemoteSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataformRepositoryGitRemoteSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

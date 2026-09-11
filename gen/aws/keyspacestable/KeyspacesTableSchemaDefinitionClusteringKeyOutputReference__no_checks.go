@@ -40,11 +40,11 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyOutputReference) v
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewKeyspacesTableSchemaDefinitionClusteringKeyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewKeyspacesTableSchemaDefinitionClusteringKeyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

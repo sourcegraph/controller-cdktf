@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/alblistenerrule/internal"
 )
 
 type AlbListenerRuleActionAuthenticateCognitoOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthenticationRequestExtraParams() *map[string]*string
 	SetAuthenticationRequestExtraParams(val *map[string]*string)
 	AuthenticationRequestExtraParamsInput() *map[string]*string
@@ -49,9 +49,9 @@ type AlbListenerRuleActionAuthenticateCognitoOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UserPoolArn() *string
 	SetUserPoolArn(val *string)
 	UserPoolArnInput() *string
@@ -66,7 +66,7 @@ type AlbListenerRuleActionAuthenticateCognitoOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -82,9 +82,9 @@ type AlbListenerRuleActionAuthenticateCognitoOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAuthenticationRequestExtraParams()
 	ResetOnUnauthenticatedRequest()
 	ResetScope()
@@ -92,7 +92,7 @@ type AlbListenerRuleActionAuthenticateCognitoOutputReference interface {
 	ResetSessionTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -102,7 +102,7 @@ type AlbListenerRuleActionAuthenticateCognitoOutputReference interface {
 
 // The jsii proxy struct for AlbListenerRuleActionAuthenticateCognitoOutputReference
 type jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) AuthenticationRequestExtraParams() *map[string]*string {
@@ -265,8 +265,8 @@ func (j *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -336,7 +336,7 @@ func (j *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) User
 }
 
 
-func NewAlbListenerRuleActionAuthenticateCognitoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlbListenerRuleActionAuthenticateCognitoOutputReference {
+func NewAlbListenerRuleActionAuthenticateCognitoOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AlbListenerRuleActionAuthenticateCognitoOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAlbListenerRuleActionAuthenticateCognitoOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -345,7 +345,7 @@ func NewAlbListenerRuleActionAuthenticateCognitoOutputReference(terraformResourc
 	j := jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognitoOutputReference",
+		"@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognitoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -353,11 +353,11 @@ func NewAlbListenerRuleActionAuthenticateCognitoOutputReference(terraformResourc
 	return &j
 }
 
-func NewAlbListenerRuleActionAuthenticateCognitoOutputReference_Override(a AlbListenerRuleActionAuthenticateCognitoOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAlbListenerRuleActionAuthenticateCognitoOutputReference_Override(a AlbListenerRuleActionAuthenticateCognitoOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognitoOutputReference",
+		"@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognitoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -462,7 +462,7 @@ func (j *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,11 +535,11 @@ func (a *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) GetA
 	return returns
 }
 
-func (a *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -663,8 +663,8 @@ func (a *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) GetS
 	return returns
 }
 
-func (a *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -676,16 +676,16 @@ func (a *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) Inte
 	return returns
 }
 
-func (a *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -732,8 +732,8 @@ func (a *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) Rese
 	)
 }
 
-func (a *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -741,7 +741,7 @@ func (a *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) Reso
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (d *jsiiProxy_DialogflowGenerator) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowGenerator) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowGenerator) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (d *jsiiProxy_DialogflowGenerator) validatePutSummarizationContextParameter
 }
 
 func (d *jsiiProxy_DialogflowGenerator) validatePutTimeoutsParameters(value *DialogflowGeneratorTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowGenerator) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_DialogflowGenerator) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowGenerator) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DialogflowGenerator) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

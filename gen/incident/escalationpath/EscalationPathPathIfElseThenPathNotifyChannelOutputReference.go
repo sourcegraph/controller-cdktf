@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/incident/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/incident/escalationpath/internal"
 )
 
 type EscalationPathPathIfElseThenPathNotifyChannelOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,9 +36,9 @@ type EscalationPathPathIfElseThenPathNotifyChannelOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeToAckIntervalCondition() *string
 	SetTimeToAckIntervalCondition(val *string)
 	TimeToAckIntervalConditionInput() *string
@@ -53,7 +53,7 @@ type EscalationPathPathIfElseThenPathNotifyChannelOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,16 +69,16 @@ type EscalationPathPathIfElseThenPathNotifyChannelOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTargets(value interface{})
 	ResetTimeToAckIntervalCondition()
 	ResetTimeToAckSeconds()
 	ResetTimeToAckWeekdayIntervalConfigId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type EscalationPathPathIfElseThenPathNotifyChannelOutputReference interface {
 
 // The jsii proxy struct for EscalationPathPathIfElseThenPathNotifyChannelOutputReference
 type jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference) ComplexObjectIndex() interface{} {
@@ -171,8 +171,8 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference)
 }
 
 
-func NewEscalationPathPathIfElseThenPathNotifyChannelOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EscalationPathPathIfElseThenPathNotifyChannelOutputReference {
+func NewEscalationPathPathIfElseThenPathNotifyChannelOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EscalationPathPathIfElseThenPathNotifyChannelOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEscalationPathPathIfElseThenPathNotifyChannelOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -251,7 +251,7 @@ func NewEscalationPathPathIfElseThenPathNotifyChannelOutputReference(terraformRe
 	j := jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannelOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewEscalationPathPathIfElseThenPathNotifyChannelOutputReference(terraformRe
 	return &j
 }
 
-func NewEscalationPathPathIfElseThenPathNotifyChannelOutputReference_Override(e EscalationPathPathIfElseThenPathNotifyChannelOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEscalationPathPathIfElseThenPathNotifyChannelOutputReference_Override(e EscalationPathPathIfElseThenPathNotifyChannelOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannelOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -313,7 +313,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference)
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,11 +386,11 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference)
 	return returns
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -514,8 +514,8 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference)
 	return returns
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -527,16 +527,16 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference)
 	return returns
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -578,8 +578,8 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference)
 	)
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -587,7 +587,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference)
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

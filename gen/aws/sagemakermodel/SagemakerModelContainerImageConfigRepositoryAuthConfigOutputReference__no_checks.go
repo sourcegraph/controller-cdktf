@@ -40,11 +40,11 @@ func (s *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputR
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSagemakerModelContainerImageConfigRepositoryAuthConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSagemakerModelContainerImageConfigRepositoryAuthConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

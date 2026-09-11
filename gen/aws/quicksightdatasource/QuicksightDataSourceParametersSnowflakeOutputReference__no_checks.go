@@ -40,11 +40,11 @@ func (q *jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference) valid
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference) valid
 	return nil
 }
 
-func validateNewQuicksightDataSourceParametersSnowflakeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewQuicksightDataSourceParametersSnowflakeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

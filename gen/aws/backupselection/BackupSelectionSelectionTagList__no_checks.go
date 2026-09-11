@@ -12,7 +12,7 @@ func (b *jsiiProxy_BackupSelectionSelectionTagList) validateGetParameters(index 
 	return nil
 }
 
-func (b *jsiiProxy_BackupSelectionSelectionTagList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupSelectionSelectionTagList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_BackupSelectionSelectionTagList) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_BackupSelectionSelectionTagList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BackupSelectionSelectionTagList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_BackupSelectionSelectionTagList) validateSetWrapsSetParameter
 	return nil
 }
 
-func validateNewBackupSelectionSelectionTagListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBackupSelectionSelectionTagListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

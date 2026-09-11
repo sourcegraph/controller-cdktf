@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComposerUserWorkloadsSecret) validateInterpolationForAttribut
 	return nil
 }
 
+func (c *jsiiProxy_ComposerUserWorkloadsSecret) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComposerUserWorkloadsSecret) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ComposerUserWorkloadsSecret) validateOverrideLogicalIdParamet
 }
 
 func (c *jsiiProxy_ComposerUserWorkloadsSecret) validatePutTimeoutsParameters(value *ComposerUserWorkloadsSecretTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComposerUserWorkloadsSecret) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_ComposerUserWorkloadsSecret) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ComposerUserWorkloadsSecret) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComposerUserWorkloadsSecret) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

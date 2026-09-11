@@ -12,7 +12,7 @@ func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersList) validateS
 	return nil
 }
 
-func validateNewClouddeployTargetAssociatedEntitiesGkeClustersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewClouddeployTargetAssociatedEntitiesGkeClustersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

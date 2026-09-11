@@ -56,6 +56,10 @@ func (e *jsiiProxy_EbsVolume) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (e *jsiiProxy_EbsVolume) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EbsVolume) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (e *jsiiProxy_EbsVolume) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (e *jsiiProxy_EbsVolume) validatePutTimeoutsParameters(value *EbsVolumeTimeouts) error {
+	return nil
+}
+
+func (e *jsiiProxy_EbsVolume) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_EbsVolume) validateSetKmsKeyIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_EbsVolume) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EbsVolume) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

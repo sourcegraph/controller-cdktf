@@ -40,11 +40,11 @@ func (d *jsiiProxy_DirectInfluxdbQueryDelayOutputReference) validateGetStringMap
 	return nil
 }
 
-func (d *jsiiProxy_DirectInfluxdbQueryDelayOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DirectInfluxdbQueryDelayOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DirectInfluxdbQueryDelayOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectInfluxdbQueryDelayOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_DirectInfluxdbQueryDelayOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_DirectInfluxdbQueryDelayOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DirectInfluxdbQueryDelayOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DirectInfluxdbQueryDelayOutputReference) validateSetValuePara
 	return nil
 }
 
-func validateNewDirectInfluxdbQueryDelayOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDirectInfluxdbQueryDelayOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (l *jsiiProxy_LakeformationPermissionsLfTagPolicyExpressionList) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LakeformationPermissionsLfTagPolicyExpressionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LakeformationPermissionsLfTagPolicyExpressionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LakeformationPermissionsLfTagPolicyExpressionList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_LakeformationPermissionsLfTagPolicyExpressionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LakeformationPermissionsLfTagPolicyExpressionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LakeformationPermissionsLfTagPolicyExpressionList) validateSe
 	return nil
 }
 
-func validateNewLakeformationPermissionsLfTagPolicyExpressionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLakeformationPermissionsLfTagPolicyExpressionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

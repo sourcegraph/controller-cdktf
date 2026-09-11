@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/monitoringnotificationchannel/internal"
 )
 
 type MonitoringNotificationChannelSensitiveLabelsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthToken() *string
 	SetAuthToken(val *string)
 	AuthTokenInput() *string
@@ -61,15 +61,15 @@ type MonitoringNotificationChannelSensitiveLabelsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -85,9 +85,9 @@ type MonitoringNotificationChannelSensitiveLabelsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAuthToken()
 	ResetAuthTokenWo()
 	ResetAuthTokenWoVersion()
@@ -99,7 +99,7 @@ type MonitoringNotificationChannelSensitiveLabelsOutputReference interface {
 	ResetServiceKeyWoVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -109,7 +109,7 @@ type MonitoringNotificationChannelSensitiveLabelsOutputReference interface {
 
 // The jsii proxy struct for MonitoringNotificationChannelSensitiveLabelsOutputReference
 type jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) AuthToken() *string {
@@ -352,8 +352,8 @@ func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -363,7 +363,7 @@ func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) 
 }
 
 
-func NewMonitoringNotificationChannelSensitiveLabelsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitoringNotificationChannelSensitiveLabelsOutputReference {
+func NewMonitoringNotificationChannelSensitiveLabelsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MonitoringNotificationChannelSensitiveLabelsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMonitoringNotificationChannelSensitiveLabelsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -372,7 +372,7 @@ func NewMonitoringNotificationChannelSensitiveLabelsOutputReference(terraformRes
 	j := jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference",
+		"@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -380,11 +380,11 @@ func NewMonitoringNotificationChannelSensitiveLabelsOutputReference(terraformRes
 	return &j
 }
 
-func NewMonitoringNotificationChannelSensitiveLabelsOutputReference_Override(m MonitoringNotificationChannelSensitiveLabelsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMonitoringNotificationChannelSensitiveLabelsOutputReference_Override(m MonitoringNotificationChannelSensitiveLabelsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference",
+		"@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -533,7 +533,7 @@ func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,11 +573,11 @@ func (m *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) 
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -701,8 +701,8 @@ func (m *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) 
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -714,16 +714,16 @@ func (m *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) 
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -802,8 +802,8 @@ func (m *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) 
 	)
 }
 
-func (m *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -811,7 +811,7 @@ func (m *jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference) 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

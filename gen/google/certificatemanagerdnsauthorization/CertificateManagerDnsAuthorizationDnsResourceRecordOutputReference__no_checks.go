@@ -40,11 +40,11 @@ func (c *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputRefe
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCertificateManagerDnsAuthorizationDnsResourceRecordOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCertificateManagerDnsAuthorizationDnsResourceRecordOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

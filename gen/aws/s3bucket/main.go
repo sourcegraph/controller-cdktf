@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3Bucket",
+		"@cdktn/provider-aws.s3Bucket.S3Bucket",
 		reflect.TypeOf((*S3Bucket)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accelerationStatus", GoGetter: "AccelerationStatus"},
@@ -58,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycleRuleInput", GoGetter: "LifecycleRuleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "logging", GoGetter: "Logging"},
 			_jsii_.MemberProperty{JsiiProperty: "loggingInput", GoGetter: "LoggingInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -83,6 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putWebsite", GoMethod: "PutWebsite"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "replicationConfiguration", GoGetter: "ReplicationConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "replicationConfigurationInput", GoGetter: "ReplicationConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requestPayer", GoGetter: "RequestPayer"},
@@ -132,23 +134,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "websiteDomain", GoGetter: "WebsiteDomain"},
 			_jsii_.MemberProperty{JsiiProperty: "websiteEndpoint", GoGetter: "WebsiteEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "websiteInput", GoGetter: "WebsiteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_S3Bucket{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketConfig",
+		"@cdktn/provider-aws.s3Bucket.S3BucketConfig",
 		reflect.TypeOf((*S3BucketConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketCorsRule",
+		"@cdktn/provider-aws.s3Bucket.S3BucketCorsRule",
 		reflect.TypeOf((*S3BucketCorsRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketCorsRuleList",
+		"@cdktn/provider-aws.s3Bucket.S3BucketCorsRuleList",
 		reflect.TypeOf((*S3BucketCorsRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -165,12 +168,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketCorsRuleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketCorsRuleOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketCorsRuleOutputReference",
 		reflect.TypeOf((*S3BucketCorsRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedHeaders", GoGetter: "AllowedHeaders"},
@@ -210,16 +213,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketCorsRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketGrant",
+		"@cdktn/provider-aws.s3Bucket.S3BucketGrant",
 		reflect.TypeOf((*S3BucketGrant)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketGrantList",
+		"@cdktn/provider-aws.s3Bucket.S3BucketGrantList",
 		reflect.TypeOf((*S3BucketGrantList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -236,12 +239,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketGrantList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketGrantOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketGrantOutputReference",
 		reflect.TypeOf((*S3BucketGrantOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -278,20 +281,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketGrantOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRule",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRule",
 		reflect.TypeOf((*S3BucketLifecycleRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleExpiration",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleExpiration",
 		reflect.TypeOf((*S3BucketLifecycleRuleExpiration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleExpirationOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleExpirationOutputReference",
 		reflect.TypeOf((*S3BucketLifecycleRuleExpirationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -327,12 +330,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketLifecycleRuleExpirationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleList",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleList",
 		reflect.TypeOf((*S3BucketLifecycleRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -349,16 +352,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketLifecycleRuleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionExpiration",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionExpiration",
 		reflect.TypeOf((*S3BucketLifecycleRuleNoncurrentVersionExpiration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionExpirationOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionExpirationOutputReference",
 		reflect.TypeOf((*S3BucketLifecycleRuleNoncurrentVersionExpirationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -388,16 +391,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionExpirationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransition",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransition",
 		reflect.TypeOf((*S3BucketLifecycleRuleNoncurrentVersionTransition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionList",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionList",
 		reflect.TypeOf((*S3BucketLifecycleRuleNoncurrentVersionTransitionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -414,12 +417,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference",
 		reflect.TypeOf((*S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -451,12 +454,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleOutputReference",
 		reflect.TypeOf((*S3BucketLifecycleRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abortIncompleteMultipartUploadDays", GoGetter: "AbortIncompleteMultipartUploadDays"},
@@ -513,16 +516,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketLifecycleRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleTransition",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleTransition",
 		reflect.TypeOf((*S3BucketLifecycleRuleTransition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleTransitionList",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleTransitionList",
 		reflect.TypeOf((*S3BucketLifecycleRuleTransitionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -539,12 +542,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketLifecycleRuleTransitionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleTransitionOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleTransitionOutputReference",
 		reflect.TypeOf((*S3BucketLifecycleRuleTransitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -579,16 +582,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketLifecycleRuleTransitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLogging",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLogging",
 		reflect.TypeOf((*S3BucketLogging)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLoggingOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLoggingOutputReference",
 		reflect.TypeOf((*S3BucketLoggingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -620,16 +623,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketLoggingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketObjectLockConfiguration",
+		"@cdktn/provider-aws.s3Bucket.S3BucketObjectLockConfiguration",
 		reflect.TypeOf((*S3BucketObjectLockConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketObjectLockConfigurationOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketObjectLockConfigurationOutputReference",
 		reflect.TypeOf((*S3BucketObjectLockConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -663,20 +666,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketObjectLockConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRule",
+		"@cdktn/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRule",
 		reflect.TypeOf((*S3BucketObjectLockConfigurationRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRuleDefaultRetention",
+		"@cdktn/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRuleDefaultRetention",
 		reflect.TypeOf((*S3BucketObjectLockConfigurationRuleDefaultRetention)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference",
 		reflect.TypeOf((*S3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -711,12 +714,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRuleOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRuleOutputReference",
 		reflect.TypeOf((*S3BucketObjectLockConfigurationRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -746,16 +749,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketObjectLockConfigurationRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfiguration",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfiguration",
 		reflect.TypeOf((*S3BucketReplicationConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationOutputReference",
 		reflect.TypeOf((*S3BucketReplicationConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -787,24 +790,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketReplicationConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules",
 		reflect.TypeOf((*S3BucketReplicationConfigurationRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestination",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestination",
 		reflect.TypeOf((*S3BucketReplicationConfigurationRulesDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationAccessControlTranslation",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationAccessControlTranslation",
 		reflect.TypeOf((*S3BucketReplicationConfigurationRulesDestinationAccessControlTranslation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationAccessControlTranslationOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationAccessControlTranslationOutputReference",
 		reflect.TypeOf((*S3BucketReplicationConfigurationRulesDestinationAccessControlTranslationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -833,16 +836,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketReplicationConfigurationRulesDestinationAccessControlTranslationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationMetrics",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationMetrics",
 		reflect.TypeOf((*S3BucketReplicationConfigurationRulesDestinationMetrics)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationMetricsOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationMetricsOutputReference",
 		reflect.TypeOf((*S3BucketReplicationConfigurationRulesDestinationMetricsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -875,12 +878,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketReplicationConfigurationRulesDestinationMetricsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationOutputReference",
 		reflect.TypeOf((*S3BucketReplicationConfigurationRulesDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessControlTranslation", GoGetter: "AccessControlTranslation"},
@@ -930,16 +933,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketReplicationConfigurationRulesDestinationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationReplicationTime",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationReplicationTime",
 		reflect.TypeOf((*S3BucketReplicationConfigurationRulesDestinationReplicationTime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationReplicationTimeOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationReplicationTimeOutputReference",
 		reflect.TypeOf((*S3BucketReplicationConfigurationRulesDestinationReplicationTimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -972,16 +975,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketReplicationConfigurationRulesDestinationReplicationTimeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesFilter",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesFilter",
 		reflect.TypeOf((*S3BucketReplicationConfigurationRulesFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesFilterOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesFilterOutputReference",
 		reflect.TypeOf((*S3BucketReplicationConfigurationRulesFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1014,12 +1017,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketReplicationConfigurationRulesFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesList",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesList",
 		reflect.TypeOf((*S3BucketReplicationConfigurationRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1036,12 +1039,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketReplicationConfigurationRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesOutputReference",
 		reflect.TypeOf((*S3BucketReplicationConfigurationRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1093,16 +1096,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketReplicationConfigurationRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesSourceSelectionCriteria",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesSourceSelectionCriteria",
 		reflect.TypeOf((*S3BucketReplicationConfigurationRulesSourceSelectionCriteria)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesSourceSelectionCriteriaOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesSourceSelectionCriteriaOutputReference",
 		reflect.TypeOf((*S3BucketReplicationConfigurationRulesSourceSelectionCriteriaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1133,16 +1136,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketReplicationConfigurationRulesSourceSelectionCriteriaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjects",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjects",
 		reflect.TypeOf((*S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjects)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference",
 		reflect.TypeOf((*S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1171,16 +1174,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfiguration",
+		"@cdktn/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfiguration",
 		reflect.TypeOf((*S3BucketServerSideEncryptionConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationOutputReference",
 		reflect.TypeOf((*S3BucketServerSideEncryptionConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1210,20 +1213,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketServerSideEncryptionConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRule",
+		"@cdktn/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRule",
 		reflect.TypeOf((*S3BucketServerSideEncryptionConfigurationRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault",
+		"@cdktn/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault",
 		reflect.TypeOf((*S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultOutputReference",
 		reflect.TypeOf((*S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1255,12 +1258,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRuleOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRuleOutputReference",
 		reflect.TypeOf((*S3BucketServerSideEncryptionConfigurationRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applyServerSideEncryptionByDefault", GoGetter: "ApplyServerSideEncryptionByDefault"},
@@ -1293,16 +1296,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketTimeouts",
+		"@cdktn/provider-aws.s3Bucket.S3BucketTimeouts",
 		reflect.TypeOf((*S3BucketTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketTimeoutsOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketTimeoutsOutputReference",
 		reflect.TypeOf((*S3BucketTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1341,16 +1344,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketVersioning",
+		"@cdktn/provider-aws.s3Bucket.S3BucketVersioning",
 		reflect.TypeOf((*S3BucketVersioning)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketVersioningOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketVersioningOutputReference",
 		reflect.TypeOf((*S3BucketVersioningOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1383,16 +1386,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketVersioningOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3Bucket.S3BucketWebsite",
+		"@cdktn/provider-aws.s3Bucket.S3BucketWebsite",
 		reflect.TypeOf((*S3BucketWebsite)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3Bucket.S3BucketWebsiteOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketWebsiteOutputReference",
 		reflect.TypeOf((*S3BucketWebsiteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1431,7 +1434,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3BucketWebsiteOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleRedisClusterPersistenceConfigAofConfigList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleRedisClusterPersistenceConfigAofConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleRedisClusterPersistenceConfigAofConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleRedisClusterPersistenceConfigAofConfigList) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleRedisClusterPersistenceConfigAofConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleRedisClusterPersistenceConfigAofConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleRedisClusterPersistenceConfigAofConfigList) validat
 	return nil
 }
 
-func validateNewDataGoogleRedisClusterPersistenceConfigAofConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleRedisClusterPersistenceConfigAofConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

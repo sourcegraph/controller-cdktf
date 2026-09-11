@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateInterpolation
 	return nil
 }
 
+func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateOverrideLogic
 }
 
 func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validatePutTimeoutsParameters(value *GoogleServiceNetworkingPeeredDnsDomainTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateSetIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

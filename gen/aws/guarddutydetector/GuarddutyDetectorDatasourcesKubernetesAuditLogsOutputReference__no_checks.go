@@ -40,11 +40,11 @@ func (g *jsiiProxy_GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

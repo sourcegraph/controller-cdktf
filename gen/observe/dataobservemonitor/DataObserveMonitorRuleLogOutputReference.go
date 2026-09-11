@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/dataobservemonitor/internal"
 )
 
 type DataObserveMonitorRuleLogOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CompareFunction() *string
 	CompareValues() *[]*float64
 	SetCompareValues(val *[]*float64)
@@ -48,15 +48,15 @@ type DataObserveMonitorRuleLogOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,16 +72,16 @@ type DataObserveMonitorRuleLogOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCompareValues()
 	ResetExpressionSummary()
 	ResetLogStageId()
 	ResetSourceLogDataset()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,7 +91,7 @@ type DataObserveMonitorRuleLogOutputReference interface {
 
 // The jsii proxy struct for DataObserveMonitorRuleLogOutputReference
 type jsiiProxy_DataObserveMonitorRuleLogOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataObserveMonitorRuleLogOutputReference) CompareFunction() *string {
@@ -254,8 +254,8 @@ func (j *jsiiProxy_DataObserveMonitorRuleLogOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorRuleLogOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataObserveMonitorRuleLogOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -265,7 +265,7 @@ func (j *jsiiProxy_DataObserveMonitorRuleLogOutputReference) TerraformResource()
 }
 
 
-func NewDataObserveMonitorRuleLogOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataObserveMonitorRuleLogOutputReference {
+func NewDataObserveMonitorRuleLogOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataObserveMonitorRuleLogOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataObserveMonitorRuleLogOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -274,7 +274,7 @@ func NewDataObserveMonitorRuleLogOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataObserveMonitorRuleLogOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleLogOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleLogOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -282,11 +282,11 @@ func NewDataObserveMonitorRuleLogOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewDataObserveMonitorRuleLogOutputReference_Override(d DataObserveMonitorRuleLogOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataObserveMonitorRuleLogOutputReference_Override(d DataObserveMonitorRuleLogOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleLogOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleLogOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -380,7 +380,7 @@ func (j *jsiiProxy_DataObserveMonitorRuleLogOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorRuleLogOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataObserveMonitorRuleLogOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,11 +420,11 @@ func (d *jsiiProxy_DataObserveMonitorRuleLogOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorRuleLogOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataObserveMonitorRuleLogOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -548,8 +548,8 @@ func (d *jsiiProxy_DataObserveMonitorRuleLogOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorRuleLogOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataObserveMonitorRuleLogOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -561,16 +561,16 @@ func (d *jsiiProxy_DataObserveMonitorRuleLogOutputReference) InterpolationAsList
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorRuleLogOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataObserveMonitorRuleLogOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -609,8 +609,8 @@ func (d *jsiiProxy_DataObserveMonitorRuleLogOutputReference) ResetSourceLogDatas
 	)
 }
 
-func (d *jsiiProxy_DataObserveMonitorRuleLogOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataObserveMonitorRuleLogOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -618,7 +618,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleLogOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

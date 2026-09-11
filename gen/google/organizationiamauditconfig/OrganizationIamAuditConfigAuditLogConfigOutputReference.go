@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/organizationiamauditconfig/internal"
 )
 
 type OrganizationIamAuditConfigAuditLogConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type OrganizationIamAuditConfigAuditLogConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type OrganizationIamAuditConfigAuditLogConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetExemptedMembers()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type OrganizationIamAuditConfigAuditLogConfigOutputReference interface {
 
 // The jsii proxy struct for OrganizationIamAuditConfigAuditLogConfigOutputReference
 type jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) Terr
 }
 
 
-func NewOrganizationIamAuditConfigAuditLogConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OrganizationIamAuditConfigAuditLogConfigOutputReference {
+func NewOrganizationIamAuditConfigAuditLogConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OrganizationIamAuditConfigAuditLogConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOrganizationIamAuditConfigAuditLogConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +203,7 @@ func NewOrganizationIamAuditConfigAuditLogConfigOutputReference(terraformResourc
 	j := jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference",
+		"@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewOrganizationIamAuditConfigAuditLogConfigOutputReference(terraformResourc
 	return &j
 }
 
-func NewOrganizationIamAuditConfigAuditLogConfigOutputReference_Override(o OrganizationIamAuditConfigAuditLogConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewOrganizationIamAuditConfigAuditLogConfigOutputReference_Override(o OrganizationIamAuditConfigAuditLogConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference",
+		"@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) GetA
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -455,8 +455,8 @@ func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) GetS
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -468,16 +468,16 @@ func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) Inte
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) Rese
 	)
 }
 
-func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) Reso
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

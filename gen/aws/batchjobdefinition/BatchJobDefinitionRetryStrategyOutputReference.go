@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/batchjobdefinition/internal"
 )
 
 type BatchJobDefinitionRetryStrategyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Attempts() *float64
 	SetAttempts(val *float64)
 	AttemptsInput() *float64
@@ -39,15 +39,15 @@ type BatchJobDefinitionRetryStrategyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,15 +63,15 @@ type BatchJobDefinitionRetryStrategyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEvaluateOnExit(value interface{})
 	ResetAttempts()
 	ResetEvaluateOnExit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type BatchJobDefinitionRetryStrategyOutputReference interface {
 
 // The jsii proxy struct for BatchJobDefinitionRetryStrategyOutputReference
 type jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) Attempts() *float64 {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) TerraformReso
 }
 
 
-func NewBatchJobDefinitionRetryStrategyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BatchJobDefinitionRetryStrategyOutputReference {
+func NewBatchJobDefinitionRetryStrategyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) BatchJobDefinitionRetryStrategyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBatchJobDefinitionRetryStrategyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewBatchJobDefinitionRetryStrategyOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyOutputReference",
+		"@cdktn/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewBatchJobDefinitionRetryStrategyOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewBatchJobDefinitionRetryStrategyOutputReference_Override(b BatchJobDefinitionRetryStrategyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBatchJobDefinitionRetryStrategyOutputReference_Override(b BatchJobDefinitionRetryStrategyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyOutputReference",
+		"@cdktn/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -317,11 +317,11 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -445,8 +445,8 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) GetStringMapA
 	return returns
 }
 
-func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -458,16 +458,16 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) Interpolation
 	return returns
 }
 
-func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) ResetEvaluate
 	)
 }
 
-func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

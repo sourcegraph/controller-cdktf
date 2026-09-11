@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

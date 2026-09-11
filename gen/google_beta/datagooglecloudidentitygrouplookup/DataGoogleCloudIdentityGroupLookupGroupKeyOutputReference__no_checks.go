@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleCloudIdentityGroupLookupGroupKeyOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudIdentityGroupLookupGroupKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleCloudIdentityGroupLookupGroupKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudIdentityGroupLookupGroupKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudIdentityGroupLookupGroupKeyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_DataGoogleCloudIdentityGroupLookupGroupKeyOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudIdentityGroupLookupGroupKeyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleCloudIdentityGroupLookupGroupKeyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleCloudIdentityGroupLookupGroupKeyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataGoogleCloudIdentityGroupLookupGroupKeyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

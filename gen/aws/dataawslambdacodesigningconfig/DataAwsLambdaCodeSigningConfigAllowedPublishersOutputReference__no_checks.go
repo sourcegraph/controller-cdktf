@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsLambdaCodeSigningConfigAllowedPublishersOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLambdaCodeSigningConfigAllowedPublishersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLambdaCodeSigningConfigAllowedPublishersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLambdaCodeSigningConfigAllowedPublishersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLambdaCodeSigningConfigAllowedPublishersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsLambdaCodeSigningConfigAllowedPublishersOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLambdaCodeSigningConfigAllowedPublishersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsLambdaCodeSigningConfigAllowedPublishersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsLambdaCodeSigningConfigAllowedPublishersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsLambdaCodeSigningConfigAllowedPublishersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

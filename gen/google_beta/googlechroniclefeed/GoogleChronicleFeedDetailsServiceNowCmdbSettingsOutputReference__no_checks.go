@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsServiceNowCmdbSettingsOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsServiceNowCmdbSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsServiceNowCmdbSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsServiceNowCmdbSettingsOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsServiceNowCmdbSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsServiceNowCmdbSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsServiceNowCmdbSettingsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsServiceNowCmdbSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsServiceNowCmdbSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsServiceNowCmdbSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsServiceNowCmdbSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

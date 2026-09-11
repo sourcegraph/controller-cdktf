@@ -56,6 +56,10 @@ func (m *jsiiProxy_MonitorV2) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (m *jsiiProxy_MonitorV2) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorV2) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (m *jsiiProxy_MonitorV2) validatePutSchedulingParameters(value *MonitorV2Sc
 }
 
 func (m *jsiiProxy_MonitorV2) validatePutStageParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorV2) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -148,7 +156,7 @@ func (j *jsiiProxy_MonitorV2) validateSetInputsParameters(val *map[string]*strin
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MonitorV2) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

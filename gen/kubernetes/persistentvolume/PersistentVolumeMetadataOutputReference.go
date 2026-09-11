@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/persistentvolume/internal"
 )
 
 type PersistentVolumeMetadataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
@@ -45,16 +45,16 @@ type PersistentVolumeMetadataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uid() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type PersistentVolumeMetadataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAnnotations()
 	ResetLabels()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type PersistentVolumeMetadataOutputReference interface {
 
 // The jsii proxy struct for PersistentVolumeMetadataOutputReference
 type jsiiProxy_PersistentVolumeMetadataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PersistentVolumeMetadataOutputReference) Annotations() *map[string]*string {
@@ -231,8 +231,8 @@ func (j *jsiiProxy_PersistentVolumeMetadataOutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_PersistentVolumeMetadataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PersistentVolumeMetadataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -252,7 +252,7 @@ func (j *jsiiProxy_PersistentVolumeMetadataOutputReference) Uid() *string {
 }
 
 
-func NewPersistentVolumeMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PersistentVolumeMetadataOutputReference {
+func NewPersistentVolumeMetadataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PersistentVolumeMetadataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPersistentVolumeMetadataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -261,7 +261,7 @@ func NewPersistentVolumeMetadataOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_PersistentVolumeMetadataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeMetadataOutputReference",
+		"@cdktn/provider-kubernetes.persistentVolume.PersistentVolumeMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -269,11 +269,11 @@ func NewPersistentVolumeMetadataOutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewPersistentVolumeMetadataOutputReference_Override(p PersistentVolumeMetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPersistentVolumeMetadataOutputReference_Override(p PersistentVolumeMetadataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeMetadataOutputReference",
+		"@cdktn/provider-kubernetes.persistentVolume.PersistentVolumeMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -356,7 +356,7 @@ func (j *jsiiProxy_PersistentVolumeMetadataOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_PersistentVolumeMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PersistentVolumeMetadataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,11 +396,11 @@ func (p *jsiiProxy_PersistentVolumeMetadataOutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (p *jsiiProxy_PersistentVolumeMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PersistentVolumeMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -524,8 +524,8 @@ func (p *jsiiProxy_PersistentVolumeMetadataOutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (p *jsiiProxy_PersistentVolumeMetadataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PersistentVolumeMetadataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -537,16 +537,16 @@ func (p *jsiiProxy_PersistentVolumeMetadataOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (p *jsiiProxy_PersistentVolumeMetadataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PersistentVolumeMetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -577,8 +577,8 @@ func (p *jsiiProxy_PersistentVolumeMetadataOutputReference) ResetName() {
 	)
 }
 
-func (p *jsiiProxy_PersistentVolumeMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PersistentVolumeMetadataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -586,7 +586,7 @@ func (p *jsiiProxy_PersistentVolumeMetadataOutputReference) Resolve(_context cdk
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

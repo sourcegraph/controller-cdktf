@@ -40,11 +40,11 @@ func (t *jsiiProxy_TranscribeMedicalVocabularyTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (t *jsiiProxy_TranscribeMedicalVocabularyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TranscribeMedicalVocabularyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TranscribeMedicalVocabularyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscribeMedicalVocabularyTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabularyTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_TranscribeMedicalVocabularyTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TranscribeMedicalVocabularyTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabularyTimeoutsOutputReference) validateS
 	return nil
 }
 
-func validateNewTranscribeMedicalVocabularyTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTranscribeMedicalVocabularyTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

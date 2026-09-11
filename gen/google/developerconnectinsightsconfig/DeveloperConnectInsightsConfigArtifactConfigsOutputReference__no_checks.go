@@ -40,7 +40,7 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference)
 	return nil
 }
 
-func validateNewDeveloperConnectInsightsConfigArtifactConfigsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDeveloperConnectInsightsConfigArtifactConfigsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

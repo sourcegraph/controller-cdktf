@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateInterpolat
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateOverrideLo
 }
 
 func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validatePutTimeoutsParameters(value *ComputeRegionDiskResourcePolicyAttachmentTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateSetIdParam
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

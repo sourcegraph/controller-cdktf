@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleIapWebRegionForwardingRuleServiceIamBinding) validateIn
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIapWebRegionForwardingRuleServiceIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapWebRegionForwardingRuleServiceIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleIapWebRegionForwardingRuleServiceIamBinding) validateOv
 }
 
 func (g *jsiiProxy_GoogleIapWebRegionForwardingRuleServiceIamBinding) validatePutConditionParameters(value *GoogleIapWebRegionForwardingRuleServiceIamBindingCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIapWebRegionForwardingRuleServiceIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleIapWebRegionForwardingRuleServiceIamBinding) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapWebRegionForwardingRuleServiceIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleIapWebRegionForwardingRuleServiceIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

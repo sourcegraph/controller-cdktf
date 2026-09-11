@@ -56,6 +56,10 @@ func (d *jsiiProxy_DirectInstana) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (d *jsiiProxy_DirectInstana) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectInstana) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DirectInstana) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (d *jsiiProxy_DirectInstana) validatePutQueryDelayParameters(value *DirectInstanaQueryDelay) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectInstana) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_DirectInstana) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DirectInstana) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DirectInstana) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

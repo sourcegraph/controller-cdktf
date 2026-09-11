@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.endpoints.Endpoints",
+		"@cdktn/provider-kubernetes.endpoints.Endpoints",
 		reflect.TypeOf((*Endpoints)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -36,6 +36,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "metadata", GoGetter: "Metadata"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataInput", GoGetter: "MetadataInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -48,6 +49,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMetadata", GoMethod: "PutMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "putSubset", GoMethod: "PutSubset"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubset", GoMethod: "ResetSubset"},
@@ -62,23 +64,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Endpoints{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-kubernetes.endpoints.EndpointsConfig",
+		"@cdktn/provider-kubernetes.endpoints.EndpointsConfig",
 		reflect.TypeOf((*EndpointsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-kubernetes.endpoints.EndpointsMetadata",
+		"@cdktn/provider-kubernetes.endpoints.EndpointsMetadata",
 		reflect.TypeOf((*EndpointsMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.endpoints.EndpointsMetadataOutputReference",
+		"@cdktn/provider-kubernetes.endpoints.EndpointsMetadataOutputReference",
 		reflect.TypeOf((*EndpointsMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -123,20 +126,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EndpointsMetadataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-kubernetes.endpoints.EndpointsSubset",
+		"@cdktn/provider-kubernetes.endpoints.EndpointsSubset",
 		reflect.TypeOf((*EndpointsSubset)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-kubernetes.endpoints.EndpointsSubsetAddress",
+		"@cdktn/provider-kubernetes.endpoints.EndpointsSubsetAddress",
 		reflect.TypeOf((*EndpointsSubsetAddress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.endpoints.EndpointsSubsetAddressList",
+		"@cdktn/provider-kubernetes.endpoints.EndpointsSubsetAddressList",
 		reflect.TypeOf((*EndpointsSubsetAddressList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -153,12 +156,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EndpointsSubsetAddressList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.endpoints.EndpointsSubsetAddressOutputReference",
+		"@cdktn/provider-kubernetes.endpoints.EndpointsSubsetAddressOutputReference",
 		reflect.TypeOf((*EndpointsSubsetAddressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -193,12 +196,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EndpointsSubsetAddressOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.endpoints.EndpointsSubsetList",
+		"@cdktn/provider-kubernetes.endpoints.EndpointsSubsetList",
 		reflect.TypeOf((*EndpointsSubsetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -215,16 +218,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EndpointsSubsetList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-kubernetes.endpoints.EndpointsSubsetNotReadyAddress",
+		"@cdktn/provider-kubernetes.endpoints.EndpointsSubsetNotReadyAddress",
 		reflect.TypeOf((*EndpointsSubsetNotReadyAddress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.endpoints.EndpointsSubsetNotReadyAddressList",
+		"@cdktn/provider-kubernetes.endpoints.EndpointsSubsetNotReadyAddressList",
 		reflect.TypeOf((*EndpointsSubsetNotReadyAddressList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -241,12 +244,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EndpointsSubsetNotReadyAddressList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.endpoints.EndpointsSubsetNotReadyAddressOutputReference",
+		"@cdktn/provider-kubernetes.endpoints.EndpointsSubsetNotReadyAddressOutputReference",
 		reflect.TypeOf((*EndpointsSubsetNotReadyAddressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -281,12 +284,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EndpointsSubsetNotReadyAddressOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.endpoints.EndpointsSubsetOutputReference",
+		"@cdktn/provider-kubernetes.endpoints.EndpointsSubsetOutputReference",
 		reflect.TypeOf((*EndpointsSubsetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -325,16 +328,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EndpointsSubsetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-kubernetes.endpoints.EndpointsSubsetPort",
+		"@cdktn/provider-kubernetes.endpoints.EndpointsSubsetPort",
 		reflect.TypeOf((*EndpointsSubsetPort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.endpoints.EndpointsSubsetPortList",
+		"@cdktn/provider-kubernetes.endpoints.EndpointsSubsetPortList",
 		reflect.TypeOf((*EndpointsSubsetPortList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -351,12 +354,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EndpointsSubsetPortList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.endpoints.EndpointsSubsetPortOutputReference",
+		"@cdktn/provider-kubernetes.endpoints.EndpointsSubsetPortOutputReference",
 		reflect.TypeOf((*EndpointsSubsetPortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -391,7 +394,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EndpointsSubsetPortOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

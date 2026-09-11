@@ -56,6 +56,10 @@ func (t *jsiiProxy_TransferUser) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (t *jsiiProxy_TransferUser) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferUser) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (t *jsiiProxy_TransferUser) validatePutHomeDirectoryMappingsParameters(valu
 }
 
 func (t *jsiiProxy_TransferUser) validatePutPosixProfileParameters(value *TransferUserPosixProfile) error {
+	return nil
+}
+
+func (t *jsiiProxy_TransferUser) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_TransferUser) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_TransferUser) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_TransferUser) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

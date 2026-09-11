@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGooglePrivatecaCertificateAuthority) validateOverrideLogi
 	return nil
 }
 
+func (d *jsiiProxy_DataGooglePrivatecaCertificateAuthority) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGooglePrivatecaCertificateAuthority_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGooglePrivatecaCertificateAuthority) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePrivatecaCertificateAuthority) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGooglePrivatecaCertificateAuthority) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCrede
 	return nil
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCrede
 	return nil
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCrede
 	return nil
 }
 
-func validateNewCloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

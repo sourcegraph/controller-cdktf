@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsApigatewayv2Export) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsApigatewayv2Export) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsApigatewayv2Export_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,7 +92,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export) validateSetIncludeExtensionsParame
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Export) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsApigatewayv2Export) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

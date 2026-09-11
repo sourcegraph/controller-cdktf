@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/databasemigrationserviceconnectionprofile/internal"
 )
 
 type DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CaCertificate() *string
 	SetCaCertificate(val *string)
 	CaCertificateInput() *string
@@ -43,9 +43,9 @@ type DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -54,7 +54,7 @@ type DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference interface 
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,16 +70,16 @@ type DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCaCertificate()
 	ResetClientCertificate()
 	ResetClientKey()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference interface 
 
 // The jsii proxy struct for DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference
 type jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) CaCertificate() *string {
@@ -212,8 +212,8 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputRefere
 }
 
 
-func NewDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference {
+func NewDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDatabaseMigrationServiceConnectionProfileMysqlSslOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference(terrafo
 	j := jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference",
+		"@cdktn/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference(terrafo
 	return &j
 }
 
-func NewDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference_Override(d DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference_Override(d DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference",
+		"@cdktn/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputRefere
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,11 +398,11 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -526,8 +526,8 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -539,16 +539,16 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputRefere
 	)
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputRefere
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerDeviceLocationList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerDeviceLocationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsNetworkmanagerDeviceLocationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerDeviceLocationList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerDeviceLocationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsNetworkmanagerDeviceLocationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerDeviceLocationList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewDataAwsNetworkmanagerDeviceLocationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsNetworkmanagerDeviceLocationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

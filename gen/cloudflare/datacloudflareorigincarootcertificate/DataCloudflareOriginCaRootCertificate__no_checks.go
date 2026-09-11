@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataCloudflareOriginCaRootCertificate) validateOverrideLogica
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareOriginCaRootCertificate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareOriginCaRootCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataCloudflareOriginCaRootCertificate) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareOriginCaRootCertificate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataCloudflareOriginCaRootCertificate) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsDocdbOrderableDbInstance) validateOverrideLogicalIdPar
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsDocdbOrderableDbInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsDocdbOrderableDbInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -92,7 +96,7 @@ func (j *jsiiProxy_DataAwsDocdbOrderableDbInstance) validateSetLicenseModelParam
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDocdbOrderableDbInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsDocdbOrderableDbInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

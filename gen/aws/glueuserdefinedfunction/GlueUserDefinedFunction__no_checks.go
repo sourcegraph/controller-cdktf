@@ -56,6 +56,10 @@ func (g *jsiiProxy_GlueUserDefinedFunction) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GlueUserDefinedFunction) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueUserDefinedFunction) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GlueUserDefinedFunction) validateOverrideLogicalIdParameters(
 }
 
 func (g *jsiiProxy_GlueUserDefinedFunction) validatePutResourceUrisParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueUserDefinedFunction) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GlueUserDefinedFunction) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_GlueUserDefinedFunction) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GlueUserDefinedFunction) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

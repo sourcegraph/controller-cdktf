@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateInterpolationFo
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validatePutContentTypeP
 }
 
 func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validatePutQueryArgProfileConfigParameters(value *CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateSetIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

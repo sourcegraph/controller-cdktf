@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileOutputReferenc
 	return nil
 }
 
-func validateNewGoogleDatastreamConnectionProfileMongodbProfileOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDatastreamConnectionProfileMongodbProfileOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

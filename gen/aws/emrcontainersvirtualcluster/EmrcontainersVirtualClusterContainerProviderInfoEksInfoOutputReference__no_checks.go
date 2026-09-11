@@ -40,11 +40,11 @@ func (e *jsiiProxy_EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutput
 	return nil
 }
 
-func (e *jsiiProxy_EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutput
 	return nil
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

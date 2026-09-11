@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (a *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateGetParame
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateResolvePa
 
 func (j *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AuditmanagerAssessmentScopeAwsAccounts:
 		val := val.(*[]*AuditmanagerAssessmentScopeAwsAccounts)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateSetIntern
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*AuditmanagerAssessmentScopeAwsAccounts; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*AuditmanagerAssessmentScopeAwsAccounts; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateSetWrapsS
 	return nil
 }
 
-func validateNewAuditmanagerAssessmentScopeAwsAccountsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAuditmanagerAssessmentScopeAwsAccountsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

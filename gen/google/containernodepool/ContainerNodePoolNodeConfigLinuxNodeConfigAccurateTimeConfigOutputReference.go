@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/containernodepool/internal"
 )
 
 type ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEnablePtpKvmTimeSync()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference
 
 // The jsii proxy struct for ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference
 type jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigO
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigO
 }
 
 
-func NewContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference {
+func NewContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputRefere
 	j := jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference",
+		"@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputRefere
 	return &j
 }
 
-func NewContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference_Override(c ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference_Override(c ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference",
+		"@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigO
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigO
 	return returns
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -421,8 +421,8 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigO
 	return returns
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -434,16 +434,16 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigO
 	return returns
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigO
 	)
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigO
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

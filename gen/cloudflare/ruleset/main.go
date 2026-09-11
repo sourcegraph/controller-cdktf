@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.Ruleset",
+		"@cdktn/provider-cloudflare.ruleset.Ruleset",
 		reflect.TypeOf((*Ruleset)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -41,6 +41,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kind", GoGetter: "Kind"},
 			_jsii_.MemberProperty{JsiiProperty: "kindInput", GoGetter: "KindInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -54,6 +55,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putRules", GoMethod: "PutRules"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -73,33 +75,34 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Ruleset{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetConfig",
+		"@cdktn/provider-cloudflare.ruleset.RulesetConfig",
 		reflect.TypeOf((*RulesetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRules",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRules",
 		reflect.TypeOf((*RulesetRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParameters",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters",
 		reflect.TypeOf((*RulesetRulesActionParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify",
 		reflect.TypeOf((*RulesetRulesActionParametersAutominify)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyList",
 		reflect.TypeOf((*RulesetRulesActionParametersAutominifyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -116,12 +119,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersAutominifyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersAutominifyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -157,16 +160,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtl",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtl",
 		reflect.TypeOf((*RulesetRulesActionParametersBrowserTtl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlList",
 		reflect.TypeOf((*RulesetRulesActionParametersBrowserTtlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -183,12 +186,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersBrowserTtlList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersBrowserTtlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -221,24 +224,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKey",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKey",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyCustomKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookie",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookie",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyCustomKeyCookie)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookieList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookieList",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyCustomKeyCookieList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -255,12 +258,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyCookieList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkPresence", GoGetter: "CheckPresence"},
@@ -293,16 +296,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeader",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyCustomKeyHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderList",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyCustomKeyHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -319,12 +322,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkPresence", GoGetter: "CheckPresence"},
@@ -360,16 +363,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHost",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHost",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyCustomKeyHost)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostList",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyCustomKeyHostList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -386,12 +389,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHostList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -421,12 +424,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyList",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyCustomKeyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -443,12 +446,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -495,16 +498,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryString",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryString",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyCustomKeyQueryString)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringList",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyCustomKeyQueryStringList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -521,12 +524,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -559,16 +562,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUser",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyCustomKeyUser)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserList",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyCustomKeyUserList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -585,12 +588,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -626,12 +629,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyList",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -648,12 +651,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersCacheKeyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersCacheKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cacheByDeviceType", GoGetter: "CacheByDeviceType"},
@@ -693,16 +696,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl",
 		reflect.TypeOf((*RulesetRulesActionParametersEdgeTtl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlList",
 		reflect.TypeOf((*RulesetRulesActionParametersEdgeTtlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -719,12 +722,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersEdgeTtlList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersEdgeTtlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -761,16 +764,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtl",
 		reflect.TypeOf((*RulesetRulesActionParametersEdgeTtlStatusCodeTtl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlList",
 		reflect.TypeOf((*RulesetRulesActionParametersEdgeTtlStatusCodeTtlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -787,12 +790,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -829,16 +832,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange",
 		reflect.TypeOf((*RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeList",
 		reflect.TypeOf((*RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -855,12 +858,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -893,16 +896,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct",
 		reflect.TypeOf((*RulesetRulesActionParametersFromListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList",
 		reflect.TypeOf((*RulesetRulesActionParametersFromListStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -919,12 +922,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersFromListStructList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersFromListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -957,16 +960,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue",
 		reflect.TypeOf((*RulesetRulesActionParametersFromValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueList",
 		reflect.TypeOf((*RulesetRulesActionParametersFromValueList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -983,12 +986,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersFromValueList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersFromValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1025,16 +1028,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersFromValueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrl",
 		reflect.TypeOf((*RulesetRulesActionParametersFromValueTargetUrl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrlList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrlList",
 		reflect.TypeOf((*RulesetRulesActionParametersFromValueTargetUrlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1051,12 +1054,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersFromValueTargetUrlList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrlOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueTargetUrlOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersFromValueTargetUrlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1089,16 +1092,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersFromValueTargetUrlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersHeaders",
 		reflect.TypeOf((*RulesetRulesActionParametersHeaders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersList",
 		reflect.TypeOf((*RulesetRulesActionParametersHeadersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1115,12 +1118,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersHeadersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersHeadersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1159,12 +1162,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersHeadersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersList",
 		reflect.TypeOf((*RulesetRulesActionParametersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1181,16 +1184,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedData",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedData",
 		reflect.TypeOf((*RulesetRulesActionParametersMatchedData)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedDataList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedDataList",
 		reflect.TypeOf((*RulesetRulesActionParametersMatchedDataList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1207,12 +1210,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersMatchedDataList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedDataOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedDataOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersMatchedDataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1242,16 +1245,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersMatchedDataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin",
 		reflect.TypeOf((*RulesetRulesActionParametersOrigin)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginList",
 		reflect.TypeOf((*RulesetRulesActionParametersOriginList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1268,12 +1271,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersOriginList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersOriginOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1306,12 +1309,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersOriginOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automaticHttpsRewrites", GoGetter: "AutomaticHttpsRewrites"},
@@ -1493,20 +1496,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides",
 		reflect.TypeOf((*RulesetRulesActionParametersOverrides)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategories",
 		reflect.TypeOf((*RulesetRulesActionParametersOverridesCategories)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesList",
 		reflect.TypeOf((*RulesetRulesActionParametersOverridesCategoriesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1523,12 +1526,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersOverridesCategoriesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -1564,12 +1567,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesList",
 		reflect.TypeOf((*RulesetRulesActionParametersOverridesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1586,12 +1589,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersOverridesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersOverridesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -1635,16 +1638,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersOverridesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules",
 		reflect.TypeOf((*RulesetRulesActionParametersOverridesRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesList",
 		reflect.TypeOf((*RulesetRulesActionParametersOverridesRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1661,12 +1664,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersOverridesRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersOverridesRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -1708,16 +1711,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponse",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersResponse",
 		reflect.TypeOf((*RulesetRulesActionParametersResponse)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseList",
 		reflect.TypeOf((*RulesetRulesActionParametersResponseList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1734,12 +1737,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersResponseList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersResponseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1775,16 +1778,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersResponseOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale",
 		reflect.TypeOf((*RulesetRulesActionParametersServeStale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleList",
 		reflect.TypeOf((*RulesetRulesActionParametersServeStaleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1801,12 +1804,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersServeStaleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersServeStaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1836,16 +1839,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersServeStaleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSni",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSni",
 		reflect.TypeOf((*RulesetRulesActionParametersSni)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSniList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSniList",
 		reflect.TypeOf((*RulesetRulesActionParametersSniList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1862,12 +1865,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersSniList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersSniOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSniOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersSniOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1897,16 +1900,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersSniOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUri",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersUri",
 		reflect.TypeOf((*RulesetRulesActionParametersUri)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersUriList",
 		reflect.TypeOf((*RulesetRulesActionParametersUriList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1923,12 +1926,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersUriList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersUriOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1966,16 +1969,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersUriOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPath",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPath",
 		reflect.TypeOf((*RulesetRulesActionParametersUriPath)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPathList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPathList",
 		reflect.TypeOf((*RulesetRulesActionParametersUriPathList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1992,12 +1995,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersUriPathList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPathOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPathOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersUriPathOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2030,16 +2033,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersUriPathOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQuery",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQuery",
 		reflect.TypeOf((*RulesetRulesActionParametersUriQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQueryList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQueryList",
 		reflect.TypeOf((*RulesetRulesActionParametersUriQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2056,12 +2059,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersUriQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQueryOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersUriQueryOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersUriQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2094,16 +2097,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersUriQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheck",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheck",
 		reflect.TypeOf((*RulesetRulesExposedCredentialCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheckList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheckList",
 		reflect.TypeOf((*RulesetRulesExposedCredentialCheckList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2120,12 +2123,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesExposedCredentialCheckList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheckOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheckOutputReference",
 		reflect.TypeOf((*RulesetRulesExposedCredentialCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2158,12 +2161,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesList",
 		reflect.TypeOf((*RulesetRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2180,16 +2183,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesLogging",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesLogging",
 		reflect.TypeOf((*RulesetRulesLogging)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesLoggingList",
 		reflect.TypeOf((*RulesetRulesLoggingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2206,12 +2209,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesLoggingList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference",
 		reflect.TypeOf((*RulesetRulesLoggingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2241,12 +2244,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesLoggingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference",
 		reflect.TypeOf((*RulesetRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -2312,16 +2315,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimit",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesRatelimit",
 		reflect.TypeOf((*RulesetRulesRatelimit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitList",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesRatelimitList",
 		reflect.TypeOf((*RulesetRulesRatelimitList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2338,12 +2341,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesRatelimitList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference",
 		reflect.TypeOf((*RulesetRulesRatelimitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "characteristics", GoGetter: "Characteristics"},
@@ -2394,7 +2397,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesRatelimitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

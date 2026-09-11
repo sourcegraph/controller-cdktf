@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/dbinstance/internal"
 )
 
 type DbInstanceRestoreToPointInTimeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,9 +46,9 @@ type DbInstanceRestoreToPointInTimeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UseLatestRestorableTime() interface{}
 	SetUseLatestRestorableTime(val interface{})
 	UseLatestRestorableTimeInput() interface{}
@@ -57,7 +57,7 @@ type DbInstanceRestoreToPointInTimeOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,9 +73,9 @@ type DbInstanceRestoreToPointInTimeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetRestoreTime()
 	ResetSourceDbInstanceAutomatedBackupsArn()
 	ResetSourceDbInstanceIdentifier()
@@ -83,7 +83,7 @@ type DbInstanceRestoreToPointInTimeOutputReference interface {
 	ResetUseLatestRestorableTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type DbInstanceRestoreToPointInTimeOutputReference interface {
 
 // The jsii proxy struct for DbInstanceRestoreToPointInTimeOutputReference
 type jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) ComplexObjectIndex() interface{} {
@@ -236,8 +236,8 @@ func (j *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -267,7 +267,7 @@ func (j *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) UseLatestResto
 }
 
 
-func NewDbInstanceRestoreToPointInTimeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DbInstanceRestoreToPointInTimeOutputReference {
+func NewDbInstanceRestoreToPointInTimeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DbInstanceRestoreToPointInTimeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDbInstanceRestoreToPointInTimeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -276,7 +276,7 @@ func NewDbInstanceRestoreToPointInTimeOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference",
+		"@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,11 +284,11 @@ func NewDbInstanceRestoreToPointInTimeOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewDbInstanceRestoreToPointInTimeOutputReference_Override(d DbInstanceRestoreToPointInTimeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDbInstanceRestoreToPointInTimeOutputReference_Override(d DbInstanceRestoreToPointInTimeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference",
+		"@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -382,7 +382,7 @@ func (j *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,11 +433,11 @@ func (d *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (d *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -561,8 +561,8 @@ func (d *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) GetStringMapAt
 	return returns
 }
 
-func (d *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -574,16 +574,16 @@ func (d *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) InterpolationA
 	return returns
 }
 
-func (d *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -630,8 +630,8 @@ func (d *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) ResetUseLatest
 	)
 }
 
-func (d *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -639,7 +639,7 @@ func (d *jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

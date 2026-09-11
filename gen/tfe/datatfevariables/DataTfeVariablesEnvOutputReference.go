@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/tfe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/tfe/datatfevariables/internal"
 )
 
 type DataTfeVariablesEnvOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Category() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -28,27 +28,27 @@ type DataTfeVariablesEnvOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	Hcl() cdktf.IResolvable
+	Hcl() cdktn.IResolvable
 	Id() *string
 	InternalValue() *DataTfeVariablesEnv
 	SetInternalValue(val *DataTfeVariablesEnv)
 	Name() *string
-	Sensitive() cdktf.IResolvable
+	Sensitive() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type DataTfeVariablesEnvOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type DataTfeVariablesEnvOutputReference interface {
 
 // The jsii proxy struct for DataTfeVariablesEnvOutputReference
 type jsiiProxy_DataTfeVariablesEnvOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataTfeVariablesEnvOutputReference) Category() *string {
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataTfeVariablesEnvOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeVariablesEnvOutputReference) Hcl() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataTfeVariablesEnvOutputReference) Hcl() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"hcl",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_DataTfeVariablesEnvOutputReference) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeVariablesEnvOutputReference) Sensitive() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataTfeVariablesEnvOutputReference) Sensitive() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"sensitive",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_DataTfeVariablesEnvOutputReference) TerraformAttribute() *str
 	return returns
 }
 
-func (j *jsiiProxy_DataTfeVariablesEnvOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataTfeVariablesEnvOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -213,7 +213,7 @@ func (j *jsiiProxy_DataTfeVariablesEnvOutputReference) Value() *string {
 }
 
 
-func NewDataTfeVariablesEnvOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataTfeVariablesEnvOutputReference {
+func NewDataTfeVariablesEnvOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataTfeVariablesEnvOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataTfeVariablesEnvOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -222,7 +222,7 @@ func NewDataTfeVariablesEnvOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataTfeVariablesEnvOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesEnvOutputReference",
+		"@cdktn/provider-tfe.dataTfeVariables.DataTfeVariablesEnvOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -230,11 +230,11 @@ func NewDataTfeVariablesEnvOutputReference(terraformResource cdktf.IInterpolatin
 	return &j
 }
 
-func NewDataTfeVariablesEnvOutputReference_Override(d DataTfeVariablesEnvOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataTfeVariablesEnvOutputReference_Override(d DataTfeVariablesEnvOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesEnvOutputReference",
+		"@cdktn/provider-tfe.dataTfeVariables.DataTfeVariablesEnvOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -284,7 +284,7 @@ func (j *jsiiProxy_DataTfeVariablesEnvOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_DataTfeVariablesEnvOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataTfeVariablesEnvOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,11 +324,11 @@ func (d *jsiiProxy_DataTfeVariablesEnvOutputReference) GetAnyMapAttribute(terraf
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeVariablesEnvOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataTfeVariablesEnvOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -452,8 +452,8 @@ func (d *jsiiProxy_DataTfeVariablesEnvOutputReference) GetStringMapAttribute(ter
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeVariablesEnvOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataTfeVariablesEnvOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -465,24 +465,24 @@ func (d *jsiiProxy_DataTfeVariablesEnvOutputReference) InterpolationAsList() cdk
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeVariablesEnvOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataTfeVariablesEnvOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataTfeVariablesEnvOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataTfeVariablesEnvOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -490,7 +490,7 @@ func (d *jsiiProxy_DataTfeVariablesEnvOutputReference) Resolve(_context cdktf.IR
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

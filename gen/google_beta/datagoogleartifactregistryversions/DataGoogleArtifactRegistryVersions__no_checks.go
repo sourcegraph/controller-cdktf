@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryVersions) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleArtifactRegistryVersions) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleArtifactRegistryVersions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryVersions) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryVersions) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleArtifactRegistryVersions) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleBigqueryTableRangePartitioningRangeList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryTableRangePartitioningRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryTableRangePartitioningRangeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleBigqueryTableRangePartitioningRangeList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBigqueryTableRangePartitioningRangeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleBigqueryTableRangePartitioningRangeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleBigqueryTableRangePartitioningRangeList) validateSe
 	return nil
 }
 
-func validateNewDataGoogleBigqueryTableRangePartitioningRangeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleBigqueryTableRangePartitioningRangeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

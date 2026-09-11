@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsNetworkfirewallFirewall_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

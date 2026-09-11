@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterSecretManagerConfigRotationConfigLi
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterSecretManagerConfigRotationConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterSecretManagerConfigRotationConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterSecretManagerConfigRotationConfigLi
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterSecretManagerConfigRotationConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleContainerClusterSecretManagerConfigRotationConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterSecretManagerConfigRotationConfigLi
 	return nil
 }
 
-func validateNewDataGoogleContainerClusterSecretManagerConfigRotationConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleContainerClusterSecretManagerConfigRotationConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

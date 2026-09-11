@@ -56,6 +56,10 @@ func (i *jsiiProxy_IapTunnelDestGroup) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (i *jsiiProxy_IapTunnelDestGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapTunnelDestGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (i *jsiiProxy_IapTunnelDestGroup) validateOverrideLogicalIdParameters(newLo
 }
 
 func (i *jsiiProxy_IapTunnelDestGroup) validatePutTimeoutsParameters(value *IapTunnelDestGroupTimeouts) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapTunnelDestGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_IapTunnelDestGroup) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_IapTunnelDestGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IapTunnelDestGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

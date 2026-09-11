@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppDefaultChannelProfileWebWidgetC
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppDefaultChannelProfileWebWidgetC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppDefaultChannelProfileWebWidgetC
 	return nil
 }
 
-func validateNewGoogleCesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

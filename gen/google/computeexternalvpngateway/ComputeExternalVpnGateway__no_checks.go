@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) validateInterpolationForAttributeP
 	return nil
 }
 
+func (c *jsiiProxy_ComputeExternalVpnGateway) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeExternalVpnGateway) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) validatePutParamsParameters(value 
 }
 
 func (c *jsiiProxy_ComputeExternalVpnGateway) validatePutTimeoutsParameters(value *ComputeExternalVpnGatewayTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeExternalVpnGateway) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_ComputeExternalVpnGateway) validateSetLabelsParameters(val *m
 	return nil
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeExternalVpnGateway) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (p *jsiiProxy_PollerCloudwatchMetricsQueryDimensionOutputReference) validat
 	return nil
 }
 
-func (p *jsiiProxy_PollerCloudwatchMetricsQueryDimensionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PollerCloudwatchMetricsQueryDimensionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PollerCloudwatchMetricsQueryDimensionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PollerCloudwatchMetricsQueryDimensionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_PollerCloudwatchMetricsQueryDimensionOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_PollerCloudwatchMetricsQueryDimensionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PollerCloudwatchMetricsQueryDimensionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_PollerCloudwatchMetricsQueryDimensionOutputReference) validat
 	return nil
 }
 
-func validateNewPollerCloudwatchMetricsQueryDimensionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPollerCloudwatchMetricsQueryDimensionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

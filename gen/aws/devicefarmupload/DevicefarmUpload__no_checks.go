@@ -56,6 +56,10 @@ func (d *jsiiProxy_DevicefarmUpload) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DevicefarmUpload) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevicefarmUpload) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (d *jsiiProxy_DevicefarmUpload) validateMoveToIdParameters(id *string) erro
 }
 
 func (d *jsiiProxy_DevicefarmUpload) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DevicefarmUpload) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_DevicefarmUpload) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_DevicefarmUpload) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DevicefarmUpload) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

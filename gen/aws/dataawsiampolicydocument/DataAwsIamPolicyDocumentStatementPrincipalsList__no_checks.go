@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementPrincipalsList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementPrincipalsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementPrincipalsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementPrincipalsList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementPrincipalsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementPrincipalsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementPrincipalsList) validateSetW
 	return nil
 }
 
-func validateNewDataAwsIamPolicyDocumentStatementPrincipalsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsIamPolicyDocumentStatementPrincipalsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

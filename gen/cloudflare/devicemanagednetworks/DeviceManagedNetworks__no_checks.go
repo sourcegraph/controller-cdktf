@@ -56,6 +56,10 @@ func (d *jsiiProxy_DeviceManagedNetworks) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (d *jsiiProxy_DeviceManagedNetworks) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DeviceManagedNetworks) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DeviceManagedNetworks) validateOverrideLogicalIdParameters(ne
 }
 
 func (d *jsiiProxy_DeviceManagedNetworks) validatePutConfigParameters(value *DeviceManagedNetworksConfigA) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeviceManagedNetworks) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_DeviceManagedNetworks) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_DeviceManagedNetworks) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DeviceManagedNetworks) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

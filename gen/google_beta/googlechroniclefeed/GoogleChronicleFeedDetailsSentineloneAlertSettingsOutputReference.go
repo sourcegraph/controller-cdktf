@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlechroniclefeed/internal"
 )
 
 type GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Authentication() GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationOutputReference
 	AuthenticationInput() *GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthentication
 	// the index of the complex object in a list.
@@ -45,15 +45,15 @@ type GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,9 +69,9 @@ type GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuthentication(value *GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthentication)
 	ResetAuthentication()
 	ResetHostname()
@@ -79,7 +79,7 @@ type GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference interface
 	ResetIsAlertApiSubscribed()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference interface
 
 // The jsii proxy struct for GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference
 type jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference) Authentication() GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationOutputReference {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputRefer
 }
 
 
-func NewGoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference {
+func NewGoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewGoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference(terraf
 	j := jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewGoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference(terraf
 	return &j
 }
 
-func NewGoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference_Override(g GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference_Override(g GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -347,7 +347,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -387,11 +387,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -515,8 +515,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -528,16 +528,16 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputRefer
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputRefer
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

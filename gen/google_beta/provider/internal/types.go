@@ -1,5 +1,5 @@
 package internal
 import (
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
-type Type__cdktfTerraformProvider = cdktf.TerraformProvider
+type Type__cdktnTerraformProvider = cdktn.TerraformProvider

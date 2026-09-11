@@ -12,7 +12,7 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAList) validateGetParameters(inde
 	return nil
 }
 
-func (a *jsiiProxy_AccessIdentityProviderConfigAList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessIdentityProviderConfigAList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccessIdentityProviderConfigAList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewAccessIdentityProviderConfigAListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAccessIdentityProviderConfigAListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

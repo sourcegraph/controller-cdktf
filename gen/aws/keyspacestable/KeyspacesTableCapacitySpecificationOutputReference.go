@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/keyspacestable/internal"
 )
 
 type KeyspacesTableCapacitySpecificationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type KeyspacesTableCapacitySpecificationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ThroughputMode() *string
 	SetThroughputMode(val *string)
 	ThroughputModeInput() *string
@@ -51,7 +51,7 @@ type KeyspacesTableCapacitySpecificationOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type KeyspacesTableCapacitySpecificationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetReadCapacityUnits()
 	ResetThroughputMode()
 	ResetWriteCapacityUnits()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type KeyspacesTableCapacitySpecificationOutputReference interface {
 
 // The jsii proxy struct for KeyspacesTableCapacitySpecificationOutputReference
 type jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) ComplexObjectIndex() interface{} {
@@ -168,8 +168,8 @@ func (j *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) WriteCapa
 }
 
 
-func NewKeyspacesTableCapacitySpecificationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KeyspacesTableCapacitySpecificationOutputReference {
+func NewKeyspacesTableCapacitySpecificationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) KeyspacesTableCapacitySpecificationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewKeyspacesTableCapacitySpecificationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewKeyspacesTableCapacitySpecificationOutputReference(terraformResource cdk
 	j := jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecificationOutputReference",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewKeyspacesTableCapacitySpecificationOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewKeyspacesTableCapacitySpecificationOutputReference_Override(k KeyspacesTableCapacitySpecificationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewKeyspacesTableCapacitySpecificationOutputReference_Override(k KeyspacesTableCapacitySpecificationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecificationOutputReference",
+		"@cdktn/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)
@@ -301,7 +301,7 @@ func (j *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) GetAnyMap
 	return returns
 }
 
-func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
@@ -491,8 +491,8 @@ func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) GetString
 	return returns
 }
 
-func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
@@ -504,16 +504,16 @@ func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) Interpola
 	return returns
 }
 
-func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := k.validateInterpolationForAttributeParameters(property); err != nil {
+func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) ResetWrit
 	)
 }
 
-func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := k.validateResolveParameters(_context); err != nil {
+func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) Resolve(_
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleEndpointsServiceApisMethodsList) validateGetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEndpointsServiceApisMethodsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleEndpointsServiceApisMethodsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceApisMethodsList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceApisMethodsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleEndpointsServiceApisMethodsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceApisMethodsList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewGoogleEndpointsServiceApisMethodsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleEndpointsServiceApisMethodsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

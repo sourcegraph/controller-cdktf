@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudrunservice/internal"
 )
 
 type CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference int
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,15 +63,15 @@ type CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference int
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutLocalObjectReference(value *CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReference)
 	ResetLocalObjectReference()
 	ResetOptional()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference int
 
 // The jsii proxy struct for CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference
 type jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutpu
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutpu
 }
 
 
-func NewCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference {
+func NewCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference(
 	j := jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference",
+		"@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference(
 	return &j
 }
 
-func NewCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference_Override(c CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference_Override(c CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference",
+		"@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutpu
 	)
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -317,11 +317,11 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutpu
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -445,8 +445,8 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutpu
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -458,16 +458,16 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutpu
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutpu
 	)
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutpu
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

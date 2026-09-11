@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlediscoveryenginewidgetconfig/internal"
 )
 
 type GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -64,15 +64,15 @@ type GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputRefe
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -88,9 +88,9 @@ type GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputRefe
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDisableRelatedQuestions()
 	ResetIgnoreAdversarialQuery()
 	ResetIgnoreLowRelevantContent()
@@ -103,7 +103,7 @@ type GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputRefe
 	ResetResultCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,7 +113,7 @@ type GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputRefe
 
 // The jsii proxy struct for GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference
 type jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -376,8 +376,8 @@ func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerCo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -387,7 +387,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerCo
 }
 
 
-func NewGoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference {
+func NewGoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -396,7 +396,7 @@ func NewGoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputR
 	j := jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDiscoveryEngineWidgetConfig.GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference",
+		"@cdktn/provider-google-beta.googleDiscoveryEngineWidgetConfig.GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -404,11 +404,11 @@ func NewGoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputR
 	return &j
 }
 
-func NewGoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference_Override(g GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference_Override(g GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDiscoveryEngineWidgetConfig.GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference",
+		"@cdktn/provider-google-beta.googleDiscoveryEngineWidgetConfig.GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -568,7 +568,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerCo
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,11 +608,11 @@ func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerCo
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -736,8 +736,8 @@ func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerCo
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -749,16 +749,16 @@ func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerCo
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -845,8 +845,8 @@ func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerCo
 	)
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -854,7 +854,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerCo
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

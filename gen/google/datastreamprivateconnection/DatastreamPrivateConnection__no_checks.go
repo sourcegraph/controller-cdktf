@@ -56,6 +56,10 @@ func (d *jsiiProxy_DatastreamPrivateConnection) validateInterpolationForAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamPrivateConnection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamPrivateConnection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (d *jsiiProxy_DatastreamPrivateConnection) validatePutTimeoutsParameters(va
 }
 
 func (d *jsiiProxy_DatastreamPrivateConnection) validatePutVpcPeeringConfigParameters(value *DatastreamPrivateConnectionVpcPeeringConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatastreamPrivateConnection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_DatastreamPrivateConnection) validateSetLabelsParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamPrivateConnection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DatastreamPrivateConnection) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

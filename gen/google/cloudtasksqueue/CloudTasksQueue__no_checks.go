@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudTasksQueue) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (c *jsiiProxy_CloudTasksQueue) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudTasksQueue) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (c *jsiiProxy_CloudTasksQueue) validatePutTimeoutsParameters(value *CloudTa
 	return nil
 }
 
+func (c *jsiiProxy_CloudTasksQueue) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateCloudTasksQueue_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -128,7 +136,7 @@ func (j *jsiiProxy_CloudTasksQueue) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CloudTasksQueue) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudTasksQueue) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

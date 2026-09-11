@@ -12,7 +12,7 @@ func (w *jsiiProxy_WorkspaceDefaultGrantsGroupList) validateGetParameters(index 
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceDefaultGrantsGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceDefaultGrantsGroupList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WorkspaceDefaultGrantsGroupList) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_WorkspaceDefaultGrantsGroupList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkspaceDefaultGrantsGroupList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WorkspaceDefaultGrantsGroupList) validateSetWrapsSetParameter
 	return nil
 }
 
-func validateNewWorkspaceDefaultGrantsGroupListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWorkspaceDefaultGrantsGroupListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

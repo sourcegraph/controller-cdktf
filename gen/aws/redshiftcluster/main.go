@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.redshiftCluster.RedshiftCluster",
+		"@cdktn/provider-aws.redshiftCluster.RedshiftCluster",
 		reflect.TypeOf((*RedshiftCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -91,6 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceTrackNameInput", GoGetter: "MaintenanceTrackNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "manualSnapshotRetentionPeriod", GoGetter: "ManualSnapshotRetentionPeriod"},
 			_jsii_.MemberProperty{JsiiProperty: "manualSnapshotRetentionPeriodInput", GoGetter: "ManualSnapshotRetentionPeriodInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "masterPassword", GoGetter: "MasterPassword"},
 			_jsii_.MemberProperty{JsiiProperty: "masterPasswordInput", GoGetter: "MasterPasswordInput"},
 			_jsii_.MemberProperty{JsiiProperty: "masterUsername", GoGetter: "MasterUsername"},
@@ -118,6 +119,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSnapshotCopy", GoMethod: "PutSnapshotCopy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowVersionUpgrade", GoMethod: "ResetAllowVersionUpgrade"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApplyImmediately", GoMethod: "ResetApplyImmediately"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAquaConfigurationStatus", GoMethod: "ResetAquaConfigurationStatus"},
@@ -185,19 +187,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIds", GoGetter: "VpcSecurityGroupIds"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIdsInput", GoGetter: "VpcSecurityGroupIdsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_RedshiftCluster{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterClusterNodes",
+		"@cdktn/provider-aws.redshiftCluster.RedshiftClusterClusterNodes",
 		reflect.TypeOf((*RedshiftClusterClusterNodes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterClusterNodesList",
+		"@cdktn/provider-aws.redshiftCluster.RedshiftClusterClusterNodesList",
 		reflect.TypeOf((*RedshiftClusterClusterNodesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -213,12 +216,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RedshiftClusterClusterNodesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterClusterNodesOutputReference",
+		"@cdktn/provider-aws.redshiftCluster.RedshiftClusterClusterNodesOutputReference",
 		reflect.TypeOf((*RedshiftClusterClusterNodesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -248,20 +251,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RedshiftClusterClusterNodesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterConfig",
+		"@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig",
 		reflect.TypeOf((*RedshiftClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterLogging",
+		"@cdktn/provider-aws.redshiftCluster.RedshiftClusterLogging",
 		reflect.TypeOf((*RedshiftClusterLogging)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterLoggingOutputReference",
+		"@cdktn/provider-aws.redshiftCluster.RedshiftClusterLoggingOutputReference",
 		reflect.TypeOf((*RedshiftClusterLoggingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -302,16 +305,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RedshiftClusterLoggingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterSnapshotCopy",
+		"@cdktn/provider-aws.redshiftCluster.RedshiftClusterSnapshotCopy",
 		reflect.TypeOf((*RedshiftClusterSnapshotCopy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterSnapshotCopyOutputReference",
+		"@cdktn/provider-aws.redshiftCluster.RedshiftClusterSnapshotCopyOutputReference",
 		reflect.TypeOf((*RedshiftClusterSnapshotCopyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -346,16 +349,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RedshiftClusterSnapshotCopyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterTimeouts",
+		"@cdktn/provider-aws.redshiftCluster.RedshiftClusterTimeouts",
 		reflect.TypeOf((*RedshiftClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterTimeoutsOutputReference",
+		"@cdktn/provider-aws.redshiftCluster.RedshiftClusterTimeoutsOutputReference",
 		reflect.TypeOf((*RedshiftClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -391,7 +394,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RedshiftClusterTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

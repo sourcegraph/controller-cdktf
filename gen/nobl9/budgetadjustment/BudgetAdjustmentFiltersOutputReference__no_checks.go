@@ -40,7 +40,7 @@ func (b *jsiiProxy_BudgetAdjustmentFiltersOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (b *jsiiProxy_BudgetAdjustmentFiltersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BudgetAdjustmentFiltersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (b *jsiiProxy_BudgetAdjustmentFiltersOutputReference) validatePutSlosParame
 	return nil
 }
 
-func (b *jsiiProxy_BudgetAdjustmentFiltersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BudgetAdjustmentFiltersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_BudgetAdjustmentFiltersOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_BudgetAdjustmentFiltersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BudgetAdjustmentFiltersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBudgetAdjustmentFiltersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewBudgetAdjustmentFiltersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

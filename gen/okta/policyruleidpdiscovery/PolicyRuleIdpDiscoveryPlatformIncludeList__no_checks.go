@@ -12,7 +12,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList) validateGetParamet
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewPolicyRuleIdpDiscoveryPlatformIncludeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPolicyRuleIdpDiscoveryPlatformIncludeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

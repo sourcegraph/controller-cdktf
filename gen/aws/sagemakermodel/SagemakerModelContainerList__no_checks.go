@@ -12,7 +12,7 @@ func (s *jsiiProxy_SagemakerModelContainerList) validateGetParameters(index *flo
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerModelContainerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerModelContainerList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SagemakerModelContainerList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerModelContainerList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SagemakerModelContainerList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SagemakerModelContainerList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewSagemakerModelContainerListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSagemakerModelContainerListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

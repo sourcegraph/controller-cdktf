@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyMfa.PolicyMfa",
+		"@cdktn/provider-okta.policyMfa.PolicyMfa",
 		reflect.TypeOf((*PolicyMfa)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -56,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "isOie", GoGetter: "IsOie"},
 			_jsii_.MemberProperty{JsiiProperty: "isOieInput", GoGetter: "IsOieInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -88,6 +89,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDuo", GoMethod: "ResetDuo"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExternalIdp", GoMethod: "ResetExternalIdp"},
@@ -136,17 +138,18 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "webauthn", GoGetter: "Webauthn"},
 			_jsii_.MemberProperty{JsiiProperty: "webauthnInput", GoGetter: "WebauthnInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "yubikeyToken", GoGetter: "YubikeyToken"},
 			_jsii_.MemberProperty{JsiiProperty: "yubikeyTokenInput", GoGetter: "YubikeyTokenInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyMfa{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.policyMfa.PolicyMfaConfig",
+		"@cdktn/provider-okta.policyMfa.PolicyMfaConfig",
 		reflect.TypeOf((*PolicyMfaConfig)(nil)).Elem(),
 	)
 }

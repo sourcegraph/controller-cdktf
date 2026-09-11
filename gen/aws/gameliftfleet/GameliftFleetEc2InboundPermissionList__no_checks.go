@@ -12,7 +12,7 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionList) validateGetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GameliftFleetEc2InboundPermissionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GameliftFleetEc2InboundPermissionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GameliftFleetEc2InboundPermissionList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_GameliftFleetEc2InboundPermissionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GameliftFleetEc2InboundPermissionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GameliftFleetEc2InboundPermissionList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewGameliftFleetEc2InboundPermissionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGameliftFleetEc2InboundPermissionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

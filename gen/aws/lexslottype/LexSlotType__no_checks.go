@@ -56,6 +56,10 @@ func (l *jsiiProxy_LexSlotType) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (l *jsiiProxy_LexSlotType) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LexSlotType) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (l *jsiiProxy_LexSlotType) validatePutEnumerationValueParameters(value inte
 }
 
 func (l *jsiiProxy_LexSlotType) validatePutTimeoutsParameters(value *LexSlotTypeTimeouts) error {
+	return nil
+}
+
+func (l *jsiiProxy_LexSlotType) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_LexSlotType) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_LexSlotType) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LexSlotType) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

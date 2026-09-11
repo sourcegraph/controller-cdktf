@@ -40,11 +40,11 @@ func (e *jsiiProxy_ElasticacheReplicationGroupClusterModeOutputReference) valida
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroupClusterModeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticacheReplicationGroupClusterModeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroupClusterModeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticacheReplicationGroupClusterModeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ElasticacheReplicationGroupClusterModeOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroupClusterModeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ElasticacheReplicationGroupClusterModeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewElasticacheReplicationGroupClusterModeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewElasticacheReplicationGroupClusterModeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (e *jsiiProxy_EnvEnvOutputReference) validateGetStringMapAttributeParameter
 	return nil
 }
 
-func (e *jsiiProxy_EnvEnvOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EnvEnvOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (e *jsiiProxy_EnvEnvOutputReference) validatePutValueFromParameters(value *
 	return nil
 }
 
-func (e *jsiiProxy_EnvEnvOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EnvEnvOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_EnvEnvOutputReference) validateSetTerraformAttributeParameter
 	return nil
 }
 
-func (j *jsiiProxy_EnvEnvOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EnvEnvOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_EnvEnvOutputReference) validateSetValueParameters(val *string
 	return nil
 }
 
-func validateNewEnvEnvOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEnvEnvOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

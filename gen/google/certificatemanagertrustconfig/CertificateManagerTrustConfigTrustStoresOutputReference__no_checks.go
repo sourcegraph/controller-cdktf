@@ -40,7 +40,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCertificateManagerTrustConfigTrustStoresOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCertificateManagerTrustConfigTrustStoresOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewS3BucketIntelligentTieringConfigurationTieringOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewS3BucketIntelligentTieringConfigurationTieringOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

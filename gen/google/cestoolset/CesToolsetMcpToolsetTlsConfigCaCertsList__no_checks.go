@@ -12,7 +12,7 @@ func (c *jsiiProxy_CesToolsetMcpToolsetTlsConfigCaCertsList) validateGetParamete
 	return nil
 }
 
-func (c *jsiiProxy_CesToolsetMcpToolsetTlsConfigCaCertsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesToolsetMcpToolsetTlsConfigCaCertsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CesToolsetMcpToolsetTlsConfigCaCertsList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_CesToolsetMcpToolsetTlsConfigCaCertsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesToolsetMcpToolsetTlsConfigCaCertsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CesToolsetMcpToolsetTlsConfigCaCertsList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewCesToolsetMcpToolsetTlsConfigCaCertsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCesToolsetMcpToolsetTlsConfigCaCertsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (c *jsiiProxy_ContainerAwsCluster) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAwsCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAwsCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (c *jsiiProxy_ContainerAwsCluster) validatePutNetworkingParameters(value *C
 }
 
 func (c *jsiiProxy_ContainerAwsCluster) validatePutTimeoutsParameters(value *ContainerAwsClusterTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAwsCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -136,7 +144,7 @@ func (j *jsiiProxy_ContainerAwsCluster) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ContainerAwsCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

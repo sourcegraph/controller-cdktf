@@ -12,7 +12,7 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) validateGetParame
 	return nil
 }
 
-func (t *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList) validateSetWrapsS
 	return nil
 }
 
-func validateNewTunnelConfigConfigOriginRequestIpRulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewTunnelConfigConfigOriginRequestIpRulesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

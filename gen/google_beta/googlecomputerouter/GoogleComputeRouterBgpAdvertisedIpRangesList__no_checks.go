@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeRouterBgpAdvertisedIpRangesList) validateGetPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRouterBgpAdvertisedIpRangesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRouterBgpAdvertisedIpRangesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleComputeRouterBgpAdvertisedIpRangesList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterBgpAdvertisedIpRangesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRouterBgpAdvertisedIpRangesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleComputeRouterBgpAdvertisedIpRangesList) validateSetWrap
 	return nil
 }
 
-func validateNewGoogleComputeRouterBgpAdvertisedIpRangesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeRouterBgpAdvertisedIpRangesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

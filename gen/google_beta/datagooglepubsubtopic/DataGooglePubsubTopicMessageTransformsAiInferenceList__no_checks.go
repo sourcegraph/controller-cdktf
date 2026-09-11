@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceList) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceList) valida
 	return nil
 }
 
-func validateNewDataGooglePubsubTopicMessageTransformsAiInferenceListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGooglePubsubTopicMessageTransformsAiInferenceListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

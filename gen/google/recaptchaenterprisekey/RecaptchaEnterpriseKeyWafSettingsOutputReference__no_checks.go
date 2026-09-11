@@ -40,11 +40,11 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyWafSettingsOutputReference) validateGet
 	return nil
 }
 
-func (r *jsiiProxy_RecaptchaEnterpriseKeyWafSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RecaptchaEnterpriseKeyWafSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RecaptchaEnterpriseKeyWafSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RecaptchaEnterpriseKeyWafSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWafSettingsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWafSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWafSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWafSettingsOutputReference) validateSet
 	return nil
 }
 
-func validateNewRecaptchaEnterpriseKeyWafSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRecaptchaEnterpriseKeyWafSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

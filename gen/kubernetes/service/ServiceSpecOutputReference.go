@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/service/internal"
 )
 
 type ServiceSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllocateLoadBalancerNodePorts() interface{}
 	SetAllocateLoadBalancerNodePorts(val interface{})
 	AllocateLoadBalancerNodePortsInput() interface{}
@@ -86,9 +86,9 @@ type ServiceSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -97,7 +97,7 @@ type ServiceSpecOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -113,9 +113,9 @@ type ServiceSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutPort(value interface{})
 	PutSessionAffinityConfig(value *ServiceSpecSessionAffinityConfig)
 	ResetAllocateLoadBalancerNodePorts()
@@ -139,7 +139,7 @@ type ServiceSpecOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -149,7 +149,7 @@ type ServiceSpecOutputReference interface {
 
 // The jsii proxy struct for ServiceSpecOutputReference
 type jsiiProxy_ServiceSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ServiceSpecOutputReference) AllocateLoadBalancerNodePorts() interface{} {
@@ -572,8 +572,8 @@ func (j *jsiiProxy_ServiceSpecOutputReference) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ServiceSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -603,7 +603,7 @@ func (j *jsiiProxy_ServiceSpecOutputReference) TypeInput() *string {
 }
 
 
-func NewServiceSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServiceSpecOutputReference {
+func NewServiceSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ServiceSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewServiceSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -612,7 +612,7 @@ func NewServiceSpecOutputReference(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_ServiceSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.service.ServiceSpecOutputReference",
+		"@cdktn/provider-kubernetes.service.ServiceSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -620,11 +620,11 @@ func NewServiceSpecOutputReference(terraformResource cdktf.IInterpolatingParent,
 	return &j
 }
 
-func NewServiceSpecOutputReference_Override(s ServiceSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewServiceSpecOutputReference_Override(s ServiceSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.service.ServiceSpecOutputReference",
+		"@cdktn/provider-kubernetes.service.ServiceSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -850,7 +850,7 @@ func (j *jsiiProxy_ServiceSpecOutputReference)SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_ServiceSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -901,11 +901,11 @@ func (s *jsiiProxy_ServiceSpecOutputReference) GetAnyMapAttribute(terraformAttri
 	return returns
 }
 
-func (s *jsiiProxy_ServiceSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1029,8 +1029,8 @@ func (s *jsiiProxy_ServiceSpecOutputReference) GetStringMapAttribute(terraformAt
 	return returns
 }
 
-func (s *jsiiProxy_ServiceSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_ServiceSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1042,16 +1042,16 @@ func (s *jsiiProxy_ServiceSpecOutputReference) InterpolationAsList() cdktf.IReso
 	return returns
 }
 
-func (s *jsiiProxy_ServiceSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_ServiceSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1232,8 +1232,8 @@ func (s *jsiiProxy_ServiceSpecOutputReference) ResetType() {
 	)
 }
 
-func (s *jsiiProxy_ServiceSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_ServiceSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1241,7 +1241,7 @@ func (s *jsiiProxy_ServiceSpecOutputReference) Resolve(_context cdktf.IResolveCo
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

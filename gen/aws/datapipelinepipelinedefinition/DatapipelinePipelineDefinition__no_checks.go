@@ -56,6 +56,10 @@ func (d *jsiiProxy_DatapipelinePipelineDefinition) validateInterpolationForAttri
 	return nil
 }
 
+func (d *jsiiProxy_DatapipelinePipelineDefinition) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatapipelinePipelineDefinition) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (d *jsiiProxy_DatapipelinePipelineDefinition) validatePutParameterValuePara
 }
 
 func (d *jsiiProxy_DatapipelinePipelineDefinition) validatePutPipelineObjectParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatapipelinePipelineDefinition) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_DatapipelinePipelineDefinition) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DatapipelinePipelineDefinition) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DatapipelinePipelineDefinition) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

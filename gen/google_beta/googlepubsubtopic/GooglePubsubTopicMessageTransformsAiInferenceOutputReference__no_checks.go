@@ -40,7 +40,7 @@ func (g *jsiiProxy_GooglePubsubTopicMessageTransformsAiInferenceOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubTopicMessageTransformsAiInferenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GooglePubsubTopicMessageTransformsAiInferenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GooglePubsubTopicMessageTransformsAiInferenceOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubTopicMessageTransformsAiInferenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GooglePubsubTopicMessageTransformsAiInferenceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GooglePubsubTopicMessageTransformsAiInferenceOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubTopicMessageTransformsAiInferenceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GooglePubsubTopicMessageTransformsAiInferenceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGooglePubsubTopicMessageTransformsAiInferenceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGooglePubsubTopicMessageTransformsAiInferenceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

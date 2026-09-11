@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscription",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscription",
 		reflect.TypeOf((*PubsubSubscription)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ackDeadlineSeconds", GoGetter: "AckDeadlineSeconds"},
@@ -55,6 +55,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "messageRetentionDuration", GoGetter: "MessageRetentionDuration"},
 			_jsii_.MemberProperty{JsiiProperty: "messageRetentionDurationInput", GoGetter: "MessageRetentionDurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "messageTransforms", GoGetter: "MessageTransforms"},
@@ -81,6 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putRetryPolicy", GoMethod: "PutRetryPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAckDeadlineSeconds", GoMethod: "ResetAckDeadlineSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBigqueryConfig", GoMethod: "ResetBigqueryConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloudStorageConfig", GoMethod: "ResetCloudStorageConfig"},
@@ -120,19 +122,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubSubscription{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfig",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfig",
 		reflect.TypeOf((*PubsubSubscriptionBigqueryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference",
 		reflect.TypeOf((*PubsubSubscriptionBigqueryConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -176,20 +179,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfig",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfig",
 		reflect.TypeOf((*PubsubSubscriptionCloudStorageConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfig",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfig",
 		reflect.TypeOf((*PubsubSubscriptionCloudStorageConfigAvroConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference",
 		reflect.TypeOf((*PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -222,12 +225,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigOutputReference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigOutputReference",
 		reflect.TypeOf((*PubsubSubscriptionCloudStorageConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "avroConfig", GoGetter: "AvroConfig"},
@@ -286,16 +289,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigTextConfig",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigTextConfig",
 		reflect.TypeOf((*PubsubSubscriptionCloudStorageConfigTextConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigTextConfigOutputReference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigTextConfigOutputReference",
 		reflect.TypeOf((*PubsubSubscriptionCloudStorageConfigTextConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -323,20 +326,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubSubscriptionCloudStorageConfigTextConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionConfig",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig",
 		reflect.TypeOf((*PubsubSubscriptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionDeadLetterPolicy",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionDeadLetterPolicy",
 		reflect.TypeOf((*PubsubSubscriptionDeadLetterPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionDeadLetterPolicyOutputReference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionDeadLetterPolicyOutputReference",
 		reflect.TypeOf((*PubsubSubscriptionDeadLetterPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -369,16 +372,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubSubscriptionDeadLetterPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionExpirationPolicy",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionExpirationPolicy",
 		reflect.TypeOf((*PubsubSubscriptionExpirationPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionExpirationPolicyOutputReference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionExpirationPolicyOutputReference",
 		reflect.TypeOf((*PubsubSubscriptionExpirationPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -407,20 +410,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms",
 		reflect.TypeOf((*PubsubSubscriptionMessageTransforms)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsAiInference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsAiInference",
 		reflect.TypeOf((*PubsubSubscriptionMessageTransformsAiInference)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsAiInferenceOutputReference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsAiInferenceOutputReference",
 		reflect.TypeOf((*PubsubSubscriptionMessageTransformsAiInferenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -456,16 +459,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubSubscriptionMessageTransformsAiInferenceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsAiInferenceUnstructuredInference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsAiInferenceUnstructuredInference",
 		reflect.TypeOf((*PubsubSubscriptionMessageTransformsAiInferenceUnstructuredInference)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference",
 		reflect.TypeOf((*PubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -495,16 +498,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsJavascriptUdf",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsJavascriptUdf",
 		reflect.TypeOf((*PubsubSubscriptionMessageTransformsJavascriptUdf)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference",
 		reflect.TypeOf((*PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
@@ -535,12 +538,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsList",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsList",
 		reflect.TypeOf((*PubsubSubscriptionMessageTransformsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -557,12 +560,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubSubscriptionMessageTransformsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference",
 		reflect.TypeOf((*PubsubSubscriptionMessageTransformsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aiInference", GoGetter: "AiInference"},
@@ -600,20 +603,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionPushConfig",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfig",
 		reflect.TypeOf((*PubsubSubscriptionPushConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapper",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapper",
 		reflect.TypeOf((*PubsubSubscriptionPushConfigNoWrapper)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapperOutputReference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapperOutputReference",
 		reflect.TypeOf((*PubsubSubscriptionPushConfigNoWrapperOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -642,16 +645,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubSubscriptionPushConfigNoWrapperOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOidcToken",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOidcToken",
 		reflect.TypeOf((*PubsubSubscriptionPushConfigOidcToken)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOidcTokenOutputReference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOidcTokenOutputReference",
 		reflect.TypeOf((*PubsubSubscriptionPushConfigOidcTokenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
@@ -683,12 +686,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubSubscriptionPushConfigOidcTokenOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOutputReference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOutputReference",
 		reflect.TypeOf((*PubsubSubscriptionPushConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributes", GoGetter: "Attributes"},
@@ -728,16 +731,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubSubscriptionPushConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionRetryPolicy",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionRetryPolicy",
 		reflect.TypeOf((*PubsubSubscriptionRetryPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionRetryPolicyOutputReference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionRetryPolicyOutputReference",
 		reflect.TypeOf((*PubsubSubscriptionRetryPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -770,16 +773,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubSubscriptionRetryPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionTimeouts",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeouts",
 		reflect.TypeOf((*PubsubSubscriptionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionTimeoutsOutputReference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeoutsOutputReference",
 		reflect.TypeOf((*PubsubSubscriptionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -815,7 +818,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubSubscriptionTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

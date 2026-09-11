@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelSt
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelSt
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelSt
 	return nil
 }
 
-func validateNewGoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

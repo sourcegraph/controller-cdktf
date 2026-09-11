@@ -40,11 +40,11 @@ func (t *jsiiProxy_TemplateSmsTranslationsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (t *jsiiProxy_TemplateSmsTranslationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TemplateSmsTranslationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TemplateSmsTranslationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TemplateSmsTranslationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_TemplateSmsTranslationsOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_TemplateSmsTranslationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TemplateSmsTranslationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTemplateSmsTranslationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewTemplateSmsTranslationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

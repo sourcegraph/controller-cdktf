@@ -5,7 +5,7 @@ package kmscryptokeyversion
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (k *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList) validateGetPara
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (k *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList) validateSetWrap
 	return nil
 }
 
-func validateNewKmsCryptoKeyVersionAttestationCertChainsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewKmsCryptoKeyVersionAttestationCertChainsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

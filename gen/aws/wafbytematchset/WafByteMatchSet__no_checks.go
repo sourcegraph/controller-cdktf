@@ -56,6 +56,10 @@ func (w *jsiiProxy_WafByteMatchSet) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (w *jsiiProxy_WafByteMatchSet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafByteMatchSet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (w *jsiiProxy_WafByteMatchSet) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (w *jsiiProxy_WafByteMatchSet) validatePutByteMatchTuplesParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafByteMatchSet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_WafByteMatchSet) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_WafByteMatchSet) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_WafByteMatchSet) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

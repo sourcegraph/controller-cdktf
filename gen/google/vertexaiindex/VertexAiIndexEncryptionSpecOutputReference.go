@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/vertexaiindex/internal"
 )
 
 type VertexAiIndexEncryptionSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type VertexAiIndexEncryptionSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type VertexAiIndexEncryptionSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type VertexAiIndexEncryptionSpecOutputReference interface {
 
 // The jsii proxy struct for VertexAiIndexEncryptionSpecOutputReference
 type jsiiProxy_VertexAiIndexEncryptionSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference) TerraformResource
 }
 
 
-func NewVertexAiIndexEncryptionSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VertexAiIndexEncryptionSpecOutputReference {
+func NewVertexAiIndexEncryptionSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) VertexAiIndexEncryptionSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewVertexAiIndexEncryptionSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewVertexAiIndexEncryptionSpecOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_VertexAiIndexEncryptionSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference",
+		"@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewVertexAiIndexEncryptionSpecOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewVertexAiIndexEncryptionSpecOutputReference_Override(v VertexAiIndexEncryptionSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewVertexAiIndexEncryptionSpecOutputReference_Override(v VertexAiIndexEncryptionSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference",
+		"@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (v *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -420,8 +420,8 @@ func (v *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (v *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -433,24 +433,24 @@ func (v *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (v *jsiiProxy_VertexAiIndexEncryptionSpecOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesAdvanceRolloutRuleOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployAutomationRulesAdvanceRolloutRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleClouddeployAutomationRulesAdvanceRolloutRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployAutomationRulesAdvanceRolloutRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleClouddeployAutomationRulesAdvanceRolloutRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesAdvanceRolloutRuleOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomationRulesAdvanceRolloutRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesAdvanceRolloutRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesAdvanceRolloutRuleOutputRefer
 	return nil
 }
 
-func validateNewGoogleClouddeployAutomationRulesAdvanceRolloutRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleClouddeployAutomationRulesAdvanceRolloutRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

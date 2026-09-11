@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyList) validateGe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyList) validateSe
 	return nil
 }
 
-func validateNewGoogleNetworkServicesEdgeCacheKeysetPublicKeyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleNetworkServicesEdgeCacheKeysetPublicKeyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

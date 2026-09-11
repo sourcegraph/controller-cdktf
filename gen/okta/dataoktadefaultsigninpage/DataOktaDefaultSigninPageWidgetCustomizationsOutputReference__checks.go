@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DataOktaDefaultSigninPageWidgetCustomizationsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,17 +82,17 @@ func (d *jsiiProxy_DataOktaDefaultSigninPageWidgetCustomizationsOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaDefaultSigninPageWidgetCustomizationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataOktaDefaultSigninPageWidgetCustomizationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaDefaultSigninPageWidgetCustomizationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataOktaDefaultSigninPageWidgetCustomizationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -165,7 +165,7 @@ func (j *jsiiProxy_DataOktaDefaultSigninPageWidgetCustomizationsOutputReference)
 
 func (j *jsiiProxy_DataOktaDefaultSigninPageWidgetCustomizationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *DataOktaDefaultSigninPageWidgetCustomizations:
 		val := val.(*DataOktaDefaultSigninPageWidgetCustomizations)
@@ -180,7 +180,7 @@ func (j *jsiiProxy_DataOktaDefaultSigninPageWidgetCustomizationsOutputReference)
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataOktaDefaultSigninPageWidgetCustomizations; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *DataOktaDefaultSigninPageWidgetCustomizations; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -195,7 +195,7 @@ func (j *jsiiProxy_DataOktaDefaultSigninPageWidgetCustomizationsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaDefaultSigninPageWidgetCustomizationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataOktaDefaultSigninPageWidgetCustomizationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_DataOktaDefaultSigninPageWidgetCustomizationsOutputReference)
 	return nil
 }
 
-func validateNewDataOktaDefaultSigninPageWidgetCustomizationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataOktaDefaultSigninPageWidgetCustomizationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

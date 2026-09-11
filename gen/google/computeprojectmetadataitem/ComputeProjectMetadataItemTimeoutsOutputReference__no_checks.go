@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeProjectMetadataItemTimeoutsOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeProjectMetadataItemTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeProjectMetadataItemTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeProjectMetadataItemTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeProjectMetadataItemTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ComputeProjectMetadataItemTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItemTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeProjectMetadataItemTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ComputeProjectMetadataItemTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func validateNewComputeProjectMetadataItemTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeProjectMetadataItemTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

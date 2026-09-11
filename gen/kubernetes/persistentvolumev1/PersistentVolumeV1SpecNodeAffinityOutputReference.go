@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/persistentvolumev1/internal"
 )
 
 type PersistentVolumeV1SpecNodeAffinityOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,15 +36,15 @@ type PersistentVolumeV1SpecNodeAffinityOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,14 +60,14 @@ type PersistentVolumeV1SpecNodeAffinityOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutRequired(value *PersistentVolumeV1SpecNodeAffinityRequired)
 	ResetRequired()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type PersistentVolumeV1SpecNodeAffinityOutputReference interface {
 
 // The jsii proxy struct for PersistentVolumeV1SpecNodeAffinityOutputReference
 type jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) TerraformR
 }
 
 
-func NewPersistentVolumeV1SpecNodeAffinityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PersistentVolumeV1SpecNodeAffinityOutputReference {
+func NewPersistentVolumeV1SpecNodeAffinityOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PersistentVolumeV1SpecNodeAffinityOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPersistentVolumeV1SpecNodeAffinityOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewPersistentVolumeV1SpecNodeAffinityOutputReference(terraformResource cdkt
 	j := jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1SpecNodeAffinityOutputReference",
+		"@cdktn/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1SpecNodeAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewPersistentVolumeV1SpecNodeAffinityOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewPersistentVolumeV1SpecNodeAffinityOutputReference_Override(p PersistentVolumeV1SpecNodeAffinityOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPersistentVolumeV1SpecNodeAffinityOutputReference_Override(p PersistentVolumeV1SpecNodeAffinityOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1SpecNodeAffinityOutputReference",
+		"@cdktn/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1SpecNodeAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -282,11 +282,11 @@ func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) GetAnyMapA
 	return returns
 }
 
-func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -410,8 +410,8 @@ func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) GetStringM
 	return returns
 }
 
-func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -423,16 +423,16 @@ func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) Interpolat
 	return returns
 }
 
-func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) ResetRequi
 	)
 }
 
-func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

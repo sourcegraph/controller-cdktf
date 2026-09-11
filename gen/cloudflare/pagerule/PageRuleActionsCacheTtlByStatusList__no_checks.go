@@ -12,7 +12,7 @@ func (p *jsiiProxy_PageRuleActionsCacheTtlByStatusList) validateGetParameters(in
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsCacheTtlByStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PageRuleActionsCacheTtlByStatusList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PageRuleActionsCacheTtlByStatusList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheTtlByStatusList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PageRuleActionsCacheTtlByStatusList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PageRuleActionsCacheTtlByStatusList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewPageRuleActionsCacheTtlByStatusListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPageRuleActionsCacheTtlByStatusListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

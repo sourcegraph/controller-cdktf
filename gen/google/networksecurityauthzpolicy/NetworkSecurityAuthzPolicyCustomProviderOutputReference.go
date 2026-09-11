@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/networksecurityauthzpolicy/internal"
 )
 
 type NetworkSecurityAuthzPolicyCustomProviderOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthzExtension() NetworkSecurityAuthzPolicyCustomProviderAuthzExtensionOutputReference
 	AuthzExtensionInput() *NetworkSecurityAuthzPolicyCustomProviderAuthzExtension
 	CloudIap() NetworkSecurityAuthzPolicyCustomProviderCloudIapOutputReference
@@ -38,15 +38,15 @@ type NetworkSecurityAuthzPolicyCustomProviderOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,16 +62,16 @@ type NetworkSecurityAuthzPolicyCustomProviderOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuthzExtension(value *NetworkSecurityAuthzPolicyCustomProviderAuthzExtension)
 	PutCloudIap(value *NetworkSecurityAuthzPolicyCustomProviderCloudIap)
 	ResetAuthzExtension()
 	ResetCloudIap()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type NetworkSecurityAuthzPolicyCustomProviderOutputReference interface {
 
 // The jsii proxy struct for NetworkSecurityAuthzPolicyCustomProviderOutputReference
 type jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) AuthzExtension() NetworkSecurityAuthzPolicyCustomProviderAuthzExtensionOutputReference {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) Terr
 }
 
 
-func NewNetworkSecurityAuthzPolicyCustomProviderOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkSecurityAuthzPolicyCustomProviderOutputReference {
+func NewNetworkSecurityAuthzPolicyCustomProviderOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) NetworkSecurityAuthzPolicyCustomProviderOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNetworkSecurityAuthzPolicyCustomProviderOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewNetworkSecurityAuthzPolicyCustomProviderOutputReference(terraformResourc
 	j := jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyCustomProviderOutputReference",
+		"@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyCustomProviderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewNetworkSecurityAuthzPolicyCustomProviderOutputReference(terraformResourc
 	return &j
 }
 
-func NewNetworkSecurityAuthzPolicyCustomProviderOutputReference_Override(n NetworkSecurityAuthzPolicyCustomProviderOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewNetworkSecurityAuthzPolicyCustomProviderOutputReference_Override(n NetworkSecurityAuthzPolicyCustomProviderOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyCustomProviderOutputReference",
+		"@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyCustomProviderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)
@@ -266,7 +266,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,11 +306,11 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) GetA
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -434,8 +434,8 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) GetS
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -447,16 +447,16 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) Inte
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) Rese
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) Reso
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

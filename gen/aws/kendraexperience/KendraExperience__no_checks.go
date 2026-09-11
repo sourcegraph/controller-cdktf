@@ -56,6 +56,10 @@ func (k *jsiiProxy_KendraExperience) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (k *jsiiProxy_KendraExperience) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KendraExperience) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (k *jsiiProxy_KendraExperience) validatePutConfigurationParameters(value *K
 }
 
 func (k *jsiiProxy_KendraExperience) validatePutTimeoutsParameters(value *KendraExperienceTimeouts) error {
+	return nil
+}
+
+func (k *jsiiProxy_KendraExperience) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_KendraExperience) validateSetIndexIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_KendraExperience) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KendraExperience) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

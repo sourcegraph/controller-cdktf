@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.dataIncidentCatalogEntry.DataIncidentCatalogEntry",
+		"@cdktn/provider-incident.dataIncidentCatalogEntry.DataIncidentCatalogEntry",
 		reflect.TypeOf((*DataIncidentCatalogEntry)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rank", GoGetter: "Rank"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
@@ -54,19 +55,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataIncidentCatalogEntry{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.dataIncidentCatalogEntry.DataIncidentCatalogEntryAttributeValues",
+		"@cdktn/provider-incident.dataIncidentCatalogEntry.DataIncidentCatalogEntryAttributeValues",
 		reflect.TypeOf((*DataIncidentCatalogEntryAttributeValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.dataIncidentCatalogEntry.DataIncidentCatalogEntryAttributeValuesList",
+		"@cdktn/provider-incident.dataIncidentCatalogEntry.DataIncidentCatalogEntryAttributeValuesList",
 		reflect.TypeOf((*DataIncidentCatalogEntryAttributeValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -82,12 +84,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataIncidentCatalogEntryAttributeValuesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.dataIncidentCatalogEntry.DataIncidentCatalogEntryAttributeValuesOutputReference",
+		"@cdktn/provider-incident.dataIncidentCatalogEntry.DataIncidentCatalogEntryAttributeValuesOutputReference",
 		reflect.TypeOf((*DataIncidentCatalogEntryAttributeValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arrayValue", GoGetter: "ArrayValue"},
@@ -117,12 +119,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataIncidentCatalogEntryAttributeValuesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.dataIncidentCatalogEntry.DataIncidentCatalogEntryConfig",
+		"@cdktn/provider-incident.dataIncidentCatalogEntry.DataIncidentCatalogEntryConfig",
 		reflect.TypeOf((*DataIncidentCatalogEntryConfig)(nil)).Elem(),
 	)
 }

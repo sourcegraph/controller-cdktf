@@ -12,7 +12,7 @@ func (p *jsiiProxy_PollerHttpRequestList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (p *jsiiProxy_PollerHttpRequestList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PollerHttpRequestList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PollerHttpRequestList) validateSetTerraformAttributeParameter
 	return nil
 }
 
-func (j *jsiiProxy_PollerHttpRequestList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PollerHttpRequestList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PollerHttpRequestList) validateSetWrapsSetParameters(val *boo
 	return nil
 }
 
-func validateNewPollerHttpRequestListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPollerHttpRequestListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

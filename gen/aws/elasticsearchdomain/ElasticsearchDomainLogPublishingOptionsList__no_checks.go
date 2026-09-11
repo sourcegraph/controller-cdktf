@@ -12,7 +12,7 @@ func (e *jsiiProxy_ElasticsearchDomainLogPublishingOptionsList) validateGetParam
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainLogPublishingOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticsearchDomainLogPublishingOptionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ElasticsearchDomainLogPublishingOptionsList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainLogPublishingOptionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ElasticsearchDomainLogPublishingOptionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ElasticsearchDomainLogPublishingOptionsList) validateSetWraps
 	return nil
 }
 
-func validateNewElasticsearchDomainLogPublishingOptionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewElasticsearchDomainLogPublishingOptionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleKmsOrganizationKajPolicyConfigTimeoutsOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsOrganizationKajPolicyConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleKmsOrganizationKajPolicyConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsOrganizationKajPolicyConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleKmsOrganizationKajPolicyConfigTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleKmsOrganizationKajPolicyConfigTimeoutsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsOrganizationKajPolicyConfigTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleKmsOrganizationKajPolicyConfigTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleKmsOrganizationKajPolicyConfigTimeoutsOutputReference) 
 	return nil
 }
 
-func validateNewGoogleKmsOrganizationKajPolicyConfigTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleKmsOrganizationKajPolicyConfigTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

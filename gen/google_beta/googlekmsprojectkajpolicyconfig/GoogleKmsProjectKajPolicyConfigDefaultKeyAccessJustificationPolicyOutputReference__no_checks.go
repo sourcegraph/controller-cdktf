@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

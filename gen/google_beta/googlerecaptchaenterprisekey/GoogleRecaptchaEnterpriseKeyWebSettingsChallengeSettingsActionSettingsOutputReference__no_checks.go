@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsChallengeSettingsActio
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsChallengeSettingsActionSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsChallengeSettingsActionSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsChallengeSettingsActionSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsChallengeSettingsActionSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsChallengeSettingsActio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsChallengeSettingsActionSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKeyWebSettingsChallengeSettingsActionSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleRecaptchaEnterpriseKeyWebSettingsChallengeSettingsActionSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleRecaptchaEnterpriseKeyWebSettingsChallengeSettingsActionSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

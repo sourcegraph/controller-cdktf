@@ -40,11 +40,11 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsProcessingConfigurationLambd
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsProcessingConfigurationLambd
 	return nil
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewKinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewKinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

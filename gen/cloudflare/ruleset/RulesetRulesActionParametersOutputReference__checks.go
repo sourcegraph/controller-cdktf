@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validateGetStrin
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutAutom
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*RulesetRulesActionParametersAutominify:
 		value := value.(*[]*RulesetRulesActionParametersAutominify)
@@ -114,7 +114,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutAutom
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersAutominify; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*RulesetRulesActionParametersAutominify; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutBrows
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*RulesetRulesActionParametersBrowserTtl:
 		value := value.(*[]*RulesetRulesActionParametersBrowserTtl)
@@ -145,7 +145,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutBrows
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersBrowserTtl; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*RulesetRulesActionParametersBrowserTtl; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -157,7 +157,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutCache
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*RulesetRulesActionParametersCacheKey:
 		value := value.(*[]*RulesetRulesActionParametersCacheKey)
@@ -176,7 +176,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutCache
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersCacheKey; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*RulesetRulesActionParametersCacheKey; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -188,7 +188,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutEdgeT
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*RulesetRulesActionParametersEdgeTtl:
 		value := value.(*[]*RulesetRulesActionParametersEdgeTtl)
@@ -207,7 +207,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutEdgeT
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersEdgeTtl; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*RulesetRulesActionParametersEdgeTtl; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -219,7 +219,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutFromL
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*RulesetRulesActionParametersFromListStruct:
 		value := value.(*[]*RulesetRulesActionParametersFromListStruct)
@@ -238,7 +238,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutFromL
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersFromListStruct; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*RulesetRulesActionParametersFromListStruct; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -250,7 +250,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutFromV
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*RulesetRulesActionParametersFromValue:
 		value := value.(*[]*RulesetRulesActionParametersFromValue)
@@ -269,7 +269,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutFromV
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersFromValue; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*RulesetRulesActionParametersFromValue; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -281,7 +281,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutHeade
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*RulesetRulesActionParametersHeaders:
 		value := value.(*[]*RulesetRulesActionParametersHeaders)
@@ -300,7 +300,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutHeade
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersHeaders; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*RulesetRulesActionParametersHeaders; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -312,7 +312,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutMatch
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*RulesetRulesActionParametersMatchedData:
 		value := value.(*[]*RulesetRulesActionParametersMatchedData)
@@ -331,7 +331,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutMatch
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersMatchedData; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*RulesetRulesActionParametersMatchedData; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -343,7 +343,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutOrigi
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*RulesetRulesActionParametersOrigin:
 		value := value.(*[]*RulesetRulesActionParametersOrigin)
@@ -362,7 +362,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutOrigi
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersOrigin; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*RulesetRulesActionParametersOrigin; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -374,7 +374,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutOverr
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*RulesetRulesActionParametersOverrides:
 		value := value.(*[]*RulesetRulesActionParametersOverrides)
@@ -393,7 +393,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutOverr
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersOverrides; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*RulesetRulesActionParametersOverrides; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -405,7 +405,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutRespo
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*RulesetRulesActionParametersResponse:
 		value := value.(*[]*RulesetRulesActionParametersResponse)
@@ -424,7 +424,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutRespo
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersResponse; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*RulesetRulesActionParametersResponse; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -436,7 +436,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutServe
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*RulesetRulesActionParametersServeStale:
 		value := value.(*[]*RulesetRulesActionParametersServeStale)
@@ -455,7 +455,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutServe
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersServeStale; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*RulesetRulesActionParametersServeStale; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -467,7 +467,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutSniPa
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*RulesetRulesActionParametersSni:
 		value := value.(*[]*RulesetRulesActionParametersSni)
@@ -486,7 +486,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutSniPa
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersSni; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*RulesetRulesActionParametersSni; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -498,7 +498,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutUriPa
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*RulesetRulesActionParametersUri:
 		value := value.(*[]*RulesetRulesActionParametersUri)
@@ -517,16 +517,16 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutUriPa
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RulesetRulesActionParametersUri; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*RulesetRulesActionParametersUri; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -541,11 +541,11 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetAutom
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -561,11 +561,11 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetBicPa
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -581,11 +581,11 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetCache
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -690,11 +690,11 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetDisab
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -710,11 +710,11 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetDisab
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -730,11 +730,11 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetDisab
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -750,11 +750,11 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetEmail
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -778,11 +778,11 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetHotli
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -807,7 +807,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetIncre
 
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *RulesetRulesActionParameters:
 		val := val.(*RulesetRulesActionParameters)
@@ -822,7 +822,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetInter
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *RulesetRulesActionParameters; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *RulesetRulesActionParameters; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -838,11 +838,11 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetMirag
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -858,11 +858,11 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetOppor
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -878,11 +878,11 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetOrigi
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -930,11 +930,11 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetRespe
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -958,11 +958,11 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetRocke
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -1010,11 +1010,11 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetServe
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -1046,11 +1046,11 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetSxgPa
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -1065,7 +1065,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -1081,7 +1081,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetVersi
 	return nil
 }
 
-func validateNewRulesetRulesActionParametersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRulesetRulesActionParametersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

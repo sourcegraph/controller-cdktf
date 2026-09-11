@@ -56,6 +56,10 @@ func (e *jsiiProxy_EbsEncryptionByDefault) validateInterpolationForAttributePara
 	return nil
 }
 
+func (e *jsiiProxy_EbsEncryptionByDefault) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EbsEncryptionByDefault) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (e *jsiiProxy_EbsEncryptionByDefault) validateMoveToIdParameters(id *string
 }
 
 func (e *jsiiProxy_EbsEncryptionByDefault) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EbsEncryptionByDefault) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_EbsEncryptionByDefault) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_EbsEncryptionByDefault) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EbsEncryptionByDefault) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

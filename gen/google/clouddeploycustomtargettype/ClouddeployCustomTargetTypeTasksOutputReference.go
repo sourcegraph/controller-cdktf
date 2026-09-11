@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/clouddeploycustomtargettype/internal"
 )
 
 type ClouddeployCustomTargetTypeTasksOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,15 +38,15 @@ type ClouddeployCustomTargetTypeTasksOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,15 +62,15 @@ type ClouddeployCustomTargetTypeTasksOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDeploy(value *ClouddeployCustomTargetTypeTasksDeploy)
 	PutRender(value *ClouddeployCustomTargetTypeTasksRender)
 	ResetRender()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type ClouddeployCustomTargetTypeTasksOutputReference interface {
 
 // The jsii proxy struct for ClouddeployCustomTargetTypeTasksOutputReference
 type jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) TerraformRes
 }
 
 
-func NewClouddeployCustomTargetTypeTasksOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ClouddeployCustomTargetTypeTasksOutputReference {
+func NewClouddeployCustomTargetTypeTasksOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ClouddeployCustomTargetTypeTasksOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewClouddeployCustomTargetTypeTasksOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewClouddeployCustomTargetTypeTasksOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksOutputReference",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewClouddeployCustomTargetTypeTasksOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewClouddeployCustomTargetTypeTasksOutputReference_Override(c ClouddeployCustomTargetTypeTasksOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewClouddeployCustomTargetTypeTasksOutputReference_Override(c ClouddeployCustomTargetTypeTasksOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksOutputReference",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -265,7 +265,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,11 +305,11 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -433,8 +433,8 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) GetStringMap
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -446,16 +446,16 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) Interpolatio
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) ResetRender(
 	)
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

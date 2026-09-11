@@ -56,6 +56,10 @@ func (s *jsiiProxy_ServiceDiscoveryService) validateInterpolationForAttributePar
 	return nil
 }
 
+func (s *jsiiProxy_ServiceDiscoveryService) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceDiscoveryService) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (s *jsiiProxy_ServiceDiscoveryService) validatePutHealthCheckConfigParamete
 }
 
 func (s *jsiiProxy_ServiceDiscoveryService) validatePutHealthCheckCustomConfigParameters(value *ServiceDiscoveryServiceHealthCheckCustomConfig) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceDiscoveryService) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_ServiceDiscoveryService) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_ServiceDiscoveryService) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ServiceDiscoveryService) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

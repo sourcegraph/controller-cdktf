@@ -40,11 +40,11 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	return nil
 }
 
-func validateNewVertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

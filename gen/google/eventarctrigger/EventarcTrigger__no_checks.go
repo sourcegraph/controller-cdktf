@@ -56,6 +56,10 @@ func (e *jsiiProxy_EventarcTrigger) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (e *jsiiProxy_EventarcTrigger) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventarcTrigger) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (e *jsiiProxy_EventarcTrigger) validatePutTimeoutsParameters(value *Eventar
 }
 
 func (e *jsiiProxy_EventarcTrigger) validatePutTransportParameters(value *EventarcTriggerTransport) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventarcTrigger) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_EventarcTrigger) validateSetLabelsParameters(val *map[string]
 	return nil
 }
 
-func (j *jsiiProxy_EventarcTrigger) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EventarcTrigger) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

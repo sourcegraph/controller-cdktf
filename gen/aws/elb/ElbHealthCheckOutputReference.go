@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/elb/internal"
 )
 
 type ElbHealthCheckOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type ElbHealthCheckOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Timeout() *float64
 	SetTimeout(val *float64)
 	TimeoutInput() *float64
@@ -57,7 +57,7 @@ type ElbHealthCheckOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,12 +73,12 @@ type ElbHealthCheckOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type ElbHealthCheckOutputReference interface {
 
 // The jsii proxy struct for ElbHealthCheckOutputReference
 type jsiiProxy_ElbHealthCheckOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ElbHealthCheckOutputReference) ComplexObjectIndex() interface{} {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_ElbHealthCheckOutputReference) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ElbHealthCheckOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ElbHealthCheckOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -262,7 +262,7 @@ func (j *jsiiProxy_ElbHealthCheckOutputReference) UnhealthyThresholdInput() *flo
 }
 
 
-func NewElbHealthCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElbHealthCheckOutputReference {
+func NewElbHealthCheckOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ElbHealthCheckOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewElbHealthCheckOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -271,7 +271,7 @@ func NewElbHealthCheckOutputReference(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_ElbHealthCheckOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.elb.ElbHealthCheckOutputReference",
+		"@cdktn/provider-aws.elb.ElbHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -279,11 +279,11 @@ func NewElbHealthCheckOutputReference(terraformResource cdktf.IInterpolatingPare
 	return &j
 }
 
-func NewElbHealthCheckOutputReference_Override(e ElbHealthCheckOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewElbHealthCheckOutputReference_Override(e ElbHealthCheckOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.elb.ElbHealthCheckOutputReference",
+		"@cdktn/provider-aws.elb.ElbHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -366,7 +366,7 @@ func (j *jsiiProxy_ElbHealthCheckOutputReference)SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_ElbHealthCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElbHealthCheckOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,11 +428,11 @@ func (e *jsiiProxy_ElbHealthCheckOutputReference) GetAnyMapAttribute(terraformAt
 	return returns
 }
 
-func (e *jsiiProxy_ElbHealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ElbHealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -556,8 +556,8 @@ func (e *jsiiProxy_ElbHealthCheckOutputReference) GetStringMapAttribute(terrafor
 	return returns
 }
 
-func (e *jsiiProxy_ElbHealthCheckOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_ElbHealthCheckOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -569,24 +569,24 @@ func (e *jsiiProxy_ElbHealthCheckOutputReference) InterpolationAsList() cdktf.IR
 	return returns
 }
 
-func (e *jsiiProxy_ElbHealthCheckOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_ElbHealthCheckOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_ElbHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_ElbHealthCheckOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -594,7 +594,7 @@ func (e *jsiiProxy_ElbHealthCheckOutputReference) Resolve(_context cdktf.IResolv
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

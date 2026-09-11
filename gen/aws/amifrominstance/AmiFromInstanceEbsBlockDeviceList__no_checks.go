@@ -12,7 +12,7 @@ func (a *jsiiProxy_AmiFromInstanceEbsBlockDeviceList) validateGetParameters(inde
 	return nil
 }
 
-func (a *jsiiProxy_AmiFromInstanceEbsBlockDeviceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AmiFromInstanceEbsBlockDeviceList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AmiFromInstanceEbsBlockDeviceList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_AmiFromInstanceEbsBlockDeviceList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AmiFromInstanceEbsBlockDeviceList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AmiFromInstanceEbsBlockDeviceList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewAmiFromInstanceEbsBlockDeviceListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAmiFromInstanceEbsBlockDeviceListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

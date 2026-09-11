@@ -40,7 +40,7 @@ func (a *jsiiProxy_AppsyncDatasourceRelationalDatabaseConfigOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncDatasourceRelationalDatabaseConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncDatasourceRelationalDatabaseConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (a *jsiiProxy_AppsyncDatasourceRelationalDatabaseConfigOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncDatasourceRelationalDatabaseConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncDatasourceRelationalDatabaseConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AppsyncDatasourceRelationalDatabaseConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncDatasourceRelationalDatabaseConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppsyncDatasourceRelationalDatabaseConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppsyncDatasourceRelationalDatabaseConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppsyncDatasourceRelationalDatabaseConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

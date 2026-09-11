@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsOriginsList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsOriginsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsOriginsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsOriginsList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsOriginsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsOriginsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsOriginsList) validateSetW
 	return nil
 }
 
-func validateNewDataCloudflareLoadBalancerPoolsPoolsOriginsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataCloudflareLoadBalancerPoolsPoolsOriginsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

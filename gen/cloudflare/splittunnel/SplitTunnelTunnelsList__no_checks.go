@@ -12,7 +12,7 @@ func (s *jsiiProxy_SplitTunnelTunnelsList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (s *jsiiProxy_SplitTunnelTunnelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SplitTunnelTunnelsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SplitTunnelTunnelsList) validateSetTerraformAttributeParamete
 	return nil
 }
 
-func (j *jsiiProxy_SplitTunnelTunnelsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SplitTunnelTunnelsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SplitTunnelTunnelsList) validateSetWrapsSetParameters(val *bo
 	return nil
 }
 
-func validateNewSplitTunnelTunnelsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSplitTunnelTunnelsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

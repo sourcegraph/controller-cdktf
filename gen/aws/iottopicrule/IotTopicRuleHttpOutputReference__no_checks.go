@@ -40,7 +40,7 @@ func (i *jsiiProxy_IotTopicRuleHttpOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleHttpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotTopicRuleHttpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (i *jsiiProxy_IotTopicRuleHttpOutputReference) validatePutHttpHeaderParamet
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleHttpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleHttpOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_IotTopicRuleHttpOutputReference) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleHttpOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IotTopicRuleHttpOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_IotTopicRuleHttpOutputReference) validateSetUrlParameters(val
 	return nil
 }
 
-func validateNewIotTopicRuleHttpOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewIotTopicRuleHttpOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

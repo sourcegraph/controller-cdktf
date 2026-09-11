@@ -12,7 +12,7 @@ func (m *jsiiProxy_MemorydbClusterShardsNodesList) validateGetParameters(index *
 	return nil
 }
 
-func (m *jsiiProxy_MemorydbClusterShardsNodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorydbClusterShardsNodesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_MemorydbClusterShardsNodesList) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbClusterShardsNodesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MemorydbClusterShardsNodesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_MemorydbClusterShardsNodesList) validateSetWrapsSetParameters
 	return nil
 }
 
-func validateNewMemorydbClusterShardsNodesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMemorydbClusterShardsNodesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

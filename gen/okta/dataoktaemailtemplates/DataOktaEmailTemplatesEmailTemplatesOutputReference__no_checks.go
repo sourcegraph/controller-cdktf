@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataOktaEmailTemplatesEmailTemplatesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataOktaEmailTemplatesEmailTemplatesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (a *jsiiProxy_ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutpu
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

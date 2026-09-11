@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) validateGetParameters(i
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleBigtableGcPolicyMaxVersionList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewGoogleBigtableGcPolicyMaxVersionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleBigtableGcPolicyMaxVersionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

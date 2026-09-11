@@ -40,7 +40,7 @@ func (p *jsiiProxy_PodDisruptionBudgetSpecSelectorOutputReference) validateGetSt
 	return nil
 }
 
-func (p *jsiiProxy_PodDisruptionBudgetSpecSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodDisruptionBudgetSpecSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (p *jsiiProxy_PodDisruptionBudgetSpecSelectorOutputReference) validatePutMa
 	return nil
 }
 
-func (p *jsiiProxy_PodDisruptionBudgetSpecSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodDisruptionBudgetSpecSelectorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_PodDisruptionBudgetSpecSelectorOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetSpecSelectorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodDisruptionBudgetSpecSelectorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPodDisruptionBudgetSpecSelectorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPodDisruptionBudgetSpecSelectorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

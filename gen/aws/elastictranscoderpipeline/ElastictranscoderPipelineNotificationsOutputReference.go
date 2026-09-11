@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/elastictranscoderpipeline/internal"
 )
 
 type ElastictranscoderPipelineNotificationsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Completed() *string
 	SetCompleted(val *string)
 	CompletedInput() *string
@@ -43,9 +43,9 @@ type ElastictranscoderPipelineNotificationsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Warning() *string
 	SetWarning(val *string)
 	WarningInput() *string
@@ -54,7 +54,7 @@ type ElastictranscoderPipelineNotificationsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,16 +70,16 @@ type ElastictranscoderPipelineNotificationsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCompleted()
 	ResetError()
 	ResetProgressing()
 	ResetWarning()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type ElastictranscoderPipelineNotificationsOutputReference interface {
 
 // The jsii proxy struct for ElastictranscoderPipelineNotificationsOutputReference
 type jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) Completed() *string {
@@ -212,8 +212,8 @@ func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) Warnin
 }
 
 
-func NewElastictranscoderPipelineNotificationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElastictranscoderPipelineNotificationsOutputReference {
+func NewElastictranscoderPipelineNotificationsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ElastictranscoderPipelineNotificationsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewElastictranscoderPipelineNotificationsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewElastictranscoderPipelineNotificationsOutputReference(terraformResource 
 	j := jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotificationsOutputReference",
+		"@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotificationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewElastictranscoderPipelineNotificationsOutputReference(terraformResource 
 	return &j
 }
 
-func NewElastictranscoderPipelineNotificationsOutputReference_Override(e ElastictranscoderPipelineNotificationsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewElastictranscoderPipelineNotificationsOutputReference_Override(e ElastictranscoderPipelineNotificationsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotificationsOutputReference",
+		"@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotificationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -347,7 +347,7 @@ func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,11 +398,11 @@ func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) GetAny
 	return returns
 }
 
-func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -526,8 +526,8 @@ func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) GetStr
 	return returns
 }
 
-func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -539,16 +539,16 @@ func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) Interp
 	return returns
 }
 
-func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) ResetW
 	)
 }
 
-func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) Resolv
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

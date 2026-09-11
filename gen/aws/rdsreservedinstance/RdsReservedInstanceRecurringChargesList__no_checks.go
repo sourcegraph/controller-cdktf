@@ -12,7 +12,7 @@ func (r *jsiiProxy_RdsReservedInstanceRecurringChargesList) validateGetParameter
 	return nil
 }
 
-func (r *jsiiProxy_RdsReservedInstanceRecurringChargesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RdsReservedInstanceRecurringChargesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_RdsReservedInstanceRecurringChargesList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_RdsReservedInstanceRecurringChargesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RdsReservedInstanceRecurringChargesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_RdsReservedInstanceRecurringChargesList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewRdsReservedInstanceRecurringChargesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewRdsReservedInstanceRecurringChargesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

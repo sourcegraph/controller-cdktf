@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterSystemAddonsConfigIngressOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerClusterSystemAddonsConfigIngressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleEdgecontainerClusterSystemAddonsConfigIngressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerClusterSystemAddonsConfigIngressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleEdgecontainerClusterSystemAddonsConfigIngressOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleEdgecontainerClusterSystemAddonsConfigIngressOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterSystemAddonsConfigIngressOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleEdgecontainerClusterSystemAddonsConfigIngressOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleEdgecontainerClusterSystemAddonsConfigIngressOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleEdgecontainerClusterSystemAddonsConfigIngressOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

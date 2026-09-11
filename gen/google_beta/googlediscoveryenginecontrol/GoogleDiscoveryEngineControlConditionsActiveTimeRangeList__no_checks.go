@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineControlConditionsActiveTimeRangeList) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineControlConditionsActiveTimeRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineControlConditionsActiveTimeRangeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineControlConditionsActiveTimeRangeList) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineControlConditionsActiveTimeRangeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineControlConditionsActiveTimeRangeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineControlConditionsActiveTimeRangeList) va
 	return nil
 }
 
-func validateNewGoogleDiscoveryEngineControlConditionsActiveTimeRangeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDiscoveryEngineControlConditionsActiveTimeRangeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHead
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHead
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHead
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

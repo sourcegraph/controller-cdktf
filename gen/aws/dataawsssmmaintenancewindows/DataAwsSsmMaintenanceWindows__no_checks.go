@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataAwsSsmMaintenanceWindows) validatePutFilterParameters(val
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsSsmMaintenanceWindows) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsSsmMaintenanceWindows_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsSsmMaintenanceWindows) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSsmMaintenanceWindows) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsSsmMaintenanceWindows) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

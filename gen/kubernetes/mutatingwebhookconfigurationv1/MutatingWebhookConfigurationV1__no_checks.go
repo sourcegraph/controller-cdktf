@@ -56,6 +56,10 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1) validateInterpolationForAttri
 	return nil
 }
 
+func (m *jsiiProxy_MutatingWebhookConfigurationV1) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MutatingWebhookConfigurationV1) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1) validatePutMetadataParameters
 }
 
 func (m *jsiiProxy_MutatingWebhookConfigurationV1) validatePutWebhookParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MutatingWebhookConfigurationV1) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationV1) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MutatingWebhookConfigurationV1) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

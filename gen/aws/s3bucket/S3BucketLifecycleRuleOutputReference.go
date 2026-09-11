@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/s3bucket/internal"
 )
 
 type S3BucketLifecycleRuleOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AbortIncompleteMultipartUploadDays() *float64
 	SetAbortIncompleteMultipartUploadDays(val *float64)
 	AbortIncompleteMultipartUploadDaysInput() *float64
@@ -55,9 +55,9 @@ type S3BucketLifecycleRuleOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Transition() S3BucketLifecycleRuleTransitionList
 	TransitionInput() interface{}
 	// Experimental.
@@ -65,7 +65,7 @@ type S3BucketLifecycleRuleOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,9 +81,9 @@ type S3BucketLifecycleRuleOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutExpiration(value *S3BucketLifecycleRuleExpiration)
 	PutNoncurrentVersionExpiration(value *S3BucketLifecycleRuleNoncurrentVersionExpiration)
 	PutNoncurrentVersionTransition(value interface{})
@@ -98,7 +98,7 @@ type S3BucketLifecycleRuleOutputReference interface {
 	ResetTransition()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,7 +108,7 @@ type S3BucketLifecycleRuleOutputReference interface {
 
 // The jsii proxy struct for S3BucketLifecycleRuleOutputReference
 type jsiiProxy_S3BucketLifecycleRuleOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) AbortIncompleteMultipartUploadDays() *float64 {
@@ -331,8 +331,8 @@ func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) TerraformAttribute() *s
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -362,7 +362,7 @@ func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) TransitionInput() inter
 }
 
 
-func NewS3BucketLifecycleRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) S3BucketLifecycleRuleOutputReference {
+func NewS3BucketLifecycleRuleOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) S3BucketLifecycleRuleOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewS3BucketLifecycleRuleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -371,7 +371,7 @@ func NewS3BucketLifecycleRuleOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_S3BucketLifecycleRuleOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -379,11 +379,11 @@ func NewS3BucketLifecycleRuleOutputReference(terraformResource cdktf.IInterpolat
 	return &j
 }
 
-func NewS3BucketLifecycleRuleOutputReference_Override(s S3BucketLifecycleRuleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewS3BucketLifecycleRuleOutputReference_Override(s S3BucketLifecycleRuleOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleOutputReference",
+		"@cdktn/provider-aws.s3Bucket.S3BucketLifecycleRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -488,7 +488,7 @@ func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -528,11 +528,11 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -656,8 +656,8 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) GetStringMapAttribute(t
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -669,16 +669,16 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -793,8 +793,8 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) ResetTransition() {
 	)
 }
 
-func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -802,7 +802,7 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

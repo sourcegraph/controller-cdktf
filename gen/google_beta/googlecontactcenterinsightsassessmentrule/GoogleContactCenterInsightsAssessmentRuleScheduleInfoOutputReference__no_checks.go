@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleScheduleInfoOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleScheduleInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleScheduleInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleScheduleInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleScheduleInfoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleScheduleInfoOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleScheduleInfoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleScheduleInfoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleScheduleInfoOutputRe
 	return nil
 }
 
-func validateNewGoogleContactCenterInsightsAssessmentRuleScheduleInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContactCenterInsightsAssessmentRuleScheduleInfoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

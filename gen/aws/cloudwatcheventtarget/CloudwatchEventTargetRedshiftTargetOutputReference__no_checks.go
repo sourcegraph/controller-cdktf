@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) validateS
 	return nil
 }
 
-func validateNewCloudwatchEventTargetRedshiftTargetOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudwatchEventTargetRedshiftTargetOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

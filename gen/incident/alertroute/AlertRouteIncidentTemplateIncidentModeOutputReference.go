@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/incident/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/incident/alertroute/internal"
 )
 
 type AlertRouteIncidentTemplateIncidentModeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ArrayValue() AlertRouteIncidentTemplateIncidentModeArrayValueList
 	ArrayValueInput() interface{}
 	// the index of the complex object in a list.
@@ -36,9 +36,9 @@ type AlertRouteIncidentTemplateIncidentModeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() AlertRouteIncidentTemplateIncidentModeValueOutputReference
 	ValueInput() interface{}
 	// Experimental.
@@ -46,7 +46,7 @@ type AlertRouteIncidentTemplateIncidentModeOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,16 +62,16 @@ type AlertRouteIncidentTemplateIncidentModeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutArrayValue(value interface{})
 	PutValue(value *AlertRouteIncidentTemplateIncidentModeValue)
 	ResetArrayValue()
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type AlertRouteIncidentTemplateIncidentModeOutputReference interface {
 
 // The jsii proxy struct for AlertRouteIncidentTemplateIncidentModeOutputReference
 type jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference) ArrayValue() AlertRouteIncidentTemplateIncidentModeArrayValueList {
@@ -164,8 +164,8 @@ func (j *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference) ValueI
 }
 
 
-func NewAlertRouteIncidentTemplateIncidentModeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlertRouteIncidentTemplateIncidentModeOutputReference {
+func NewAlertRouteIncidentTemplateIncidentModeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AlertRouteIncidentTemplateIncidentModeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAlertRouteIncidentTemplateIncidentModeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewAlertRouteIncidentTemplateIncidentModeOutputReference(terraformResource 
 	j := jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.alertRoute.AlertRouteIncidentTemplateIncidentModeOutputReference",
+		"@cdktn/provider-incident.alertRoute.AlertRouteIncidentTemplateIncidentModeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewAlertRouteIncidentTemplateIncidentModeOutputReference(terraformResource 
 	return &j
 }
 
-func NewAlertRouteIncidentTemplateIncidentModeOutputReference_Override(a AlertRouteIncidentTemplateIncidentModeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAlertRouteIncidentTemplateIncidentModeOutputReference_Override(a AlertRouteIncidentTemplateIncidentModeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.alertRoute.AlertRouteIncidentTemplateIncidentModeOutputReference",
+		"@cdktn/provider-incident.alertRoute.AlertRouteIncidentTemplateIncidentModeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -266,7 +266,7 @@ func (j *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,11 +306,11 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference) GetAny
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -434,8 +434,8 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference) GetStr
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -447,16 +447,16 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference) Interp
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference) ResetV
 	)
 }
 
-func (a *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateIncidentModeOutputReference) Resolv
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

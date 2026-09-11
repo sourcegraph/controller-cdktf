@@ -12,7 +12,7 @@ func (e *jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsList) validateGetPa
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsList) validateSetWr
 	return nil
 }
 
-func validateNewEscalationPathWorkingHoursWeekdayIntervalsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEscalationPathWorkingHoursWeekdayIntervalsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

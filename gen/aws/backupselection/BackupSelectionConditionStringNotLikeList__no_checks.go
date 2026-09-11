@@ -12,7 +12,7 @@ func (b *jsiiProxy_BackupSelectionConditionStringNotLikeList) validateGetParamet
 	return nil
 }
 
-func (b *jsiiProxy_BackupSelectionConditionStringNotLikeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupSelectionConditionStringNotLikeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_BackupSelectionConditionStringNotLikeList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_BackupSelectionConditionStringNotLikeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BackupSelectionConditionStringNotLikeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_BackupSelectionConditionStringNotLikeList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewBackupSelectionConditionStringNotLikeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBackupSelectionConditionStringNotLikeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

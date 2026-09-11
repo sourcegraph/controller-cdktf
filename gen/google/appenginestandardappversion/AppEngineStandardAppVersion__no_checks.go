@@ -56,6 +56,10 @@ func (a *jsiiProxy_AppEngineStandardAppVersion) validateInterpolationForAttribut
 	return nil
 }
 
+func (a *jsiiProxy_AppEngineStandardAppVersion) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppEngineStandardAppVersion) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (a *jsiiProxy_AppEngineStandardAppVersion) validatePutVpcAccessConnectorPar
 	return nil
 }
 
+func (a *jsiiProxy_AppEngineStandardAppVersion) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateAppEngineStandardAppVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -156,7 +164,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetInstanceClassParamete
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

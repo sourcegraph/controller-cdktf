@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/contactcenterinsightsqaquestion/internal"
 )
 
 type ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference inte
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -45,7 +45,7 @@ type ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference inte
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference inte
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference inte
 
 // The jsii proxy struct for ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference
 type jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -140,8 +140,8 @@ func (j *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutput
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutput
 }
 
 
-func NewContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference {
+func NewContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference(t
 	j := jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference",
+		"@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference(t
 	return &j
 }
 
-func NewContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference_Override(c ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference_Override(c ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference",
+		"@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutput
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (c *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutput
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -421,8 +421,8 @@ func (c *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutput
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -434,16 +434,16 @@ func (c *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutput
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (c *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutput
 	)
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutput
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

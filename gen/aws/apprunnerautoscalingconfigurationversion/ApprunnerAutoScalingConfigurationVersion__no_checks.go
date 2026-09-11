@@ -56,6 +56,10 @@ func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateInterpolati
 	return nil
 }
 
+func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateMoveToIdPar
 }
 
 func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateSetIdParame
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/record/internal"
 )
 
 type RecordDataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Algorithm() *float64
 	SetAlgorithm(val *float64)
 	AlgorithmInput() *float64
@@ -139,9 +139,9 @@ type RecordDataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *float64
 	SetType(val *float64)
 	TypeInput() *float64
@@ -159,7 +159,7 @@ type RecordDataOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -175,9 +175,9 @@ type RecordDataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAlgorithm()
 	ResetAltitude()
 	ResetCertificate()
@@ -219,7 +219,7 @@ type RecordDataOutputReference interface {
 	ResetWeight()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -229,7 +229,7 @@ type RecordDataOutputReference interface {
 
 // The jsii proxy struct for RecordDataOutputReference
 type jsiiProxy_RecordDataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_RecordDataOutputReference) Algorithm() *float64 {
@@ -992,8 +992,8 @@ func (j *jsiiProxy_RecordDataOutputReference) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_RecordDataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -1083,7 +1083,7 @@ func (j *jsiiProxy_RecordDataOutputReference) WeightInput() *float64 {
 }
 
 
-func NewRecordDataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RecordDataOutputReference {
+func NewRecordDataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) RecordDataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewRecordDataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -1092,7 +1092,7 @@ func NewRecordDataOutputReference(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_RecordDataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.record.RecordDataOutputReference",
+		"@cdktn/provider-cloudflare.record.RecordDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -1100,11 +1100,11 @@ func NewRecordDataOutputReference(terraformResource cdktf.IInterpolatingParent, 
 	return &j
 }
 
-func NewRecordDataOutputReference_Override(r RecordDataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRecordDataOutputReference_Override(r RecordDataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.record.RecordDataOutputReference",
+		"@cdktn/provider-cloudflare.record.RecordDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -1539,7 +1539,7 @@ func (j *jsiiProxy_RecordDataOutputReference)SetTerraformAttribute(val *string) 
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RecordDataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1623,11 +1623,11 @@ func (r *jsiiProxy_RecordDataOutputReference) GetAnyMapAttribute(terraformAttrib
 	return returns
 }
 
-func (r *jsiiProxy_RecordDataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RecordDataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -1751,8 +1751,8 @@ func (r *jsiiProxy_RecordDataOutputReference) GetStringMapAttribute(terraformAtt
 	return returns
 }
 
-func (r *jsiiProxy_RecordDataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_RecordDataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -1764,16 +1764,16 @@ func (r *jsiiProxy_RecordDataOutputReference) InterpolationAsList() cdktf.IResol
 	return returns
 }
 
-func (r *jsiiProxy_RecordDataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_RecordDataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -2092,8 +2092,8 @@ func (r *jsiiProxy_RecordDataOutputReference) ResetWeight() {
 	)
 }
 
-func (r *jsiiProxy_RecordDataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_RecordDataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -2101,7 +2101,7 @@ func (r *jsiiProxy_RecordDataOutputReference) Resolve(_context cdktf.IResolveCon
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

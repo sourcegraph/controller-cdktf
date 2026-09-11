@@ -40,11 +40,11 @@ func (c *jsiiProxy_CodebuildProjectCacheOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectCacheOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildProjectCacheOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectCacheOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectCacheOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_CodebuildProjectCacheOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectCacheOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodebuildProjectCacheOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CodebuildProjectCacheOutputReference) validateSetTypeParamete
 	return nil
 }
 
-func validateNewCodebuildProjectCacheOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCodebuildProjectCacheOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

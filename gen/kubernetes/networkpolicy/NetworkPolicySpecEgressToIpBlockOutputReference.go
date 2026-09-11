@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/networkpolicy/internal"
 )
 
 type NetworkPolicySpecEgressToIpBlockOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Cidr() *string
 	SetCidr(val *string)
 	CidrInput() *string
@@ -40,15 +40,15 @@ type NetworkPolicySpecEgressToIpBlockOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type NetworkPolicySpecEgressToIpBlockOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCidr()
 	ResetExcept()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type NetworkPolicySpecEgressToIpBlockOutputReference interface {
 
 // The jsii proxy struct for NetworkPolicySpecEgressToIpBlockOutputReference
 type jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference) Cidr() *string {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference) TerraformRes
 }
 
 
-func NewNetworkPolicySpecEgressToIpBlockOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkPolicySpecEgressToIpBlockOutputReference {
+func NewNetworkPolicySpecEgressToIpBlockOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) NetworkPolicySpecEgressToIpBlockOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNetworkPolicySpecEgressToIpBlockOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewNetworkPolicySpecEgressToIpBlockOutputReference(terraformResource cdktf.
 	j := jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToIpBlockOutputReference",
+		"@cdktn/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToIpBlockOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewNetworkPolicySpecEgressToIpBlockOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewNetworkPolicySpecEgressToIpBlockOutputReference_Override(n NetworkPolicySpecEgressToIpBlockOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewNetworkPolicySpecEgressToIpBlockOutputReference_Override(n NetworkPolicySpecEgressToIpBlockOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToIpBlockOutputReference",
+		"@cdktn/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToIpBlockOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (n *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (n *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -456,8 +456,8 @@ func (n *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference) GetStringMap
 	return returns
 }
 
-func (n *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -469,16 +469,16 @@ func (n *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference) Interpolatio
 	return returns
 }
 
-func (n *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (n *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference) ResetExcept(
 	)
 }
 
-func (n *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (n *jsiiProxy_NetworkPolicySpecEgressToIpBlockOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

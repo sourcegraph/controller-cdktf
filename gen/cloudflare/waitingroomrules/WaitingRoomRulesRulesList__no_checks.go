@@ -12,7 +12,7 @@ func (w *jsiiProxy_WaitingRoomRulesRulesList) validateGetParameters(index *float
 	return nil
 }
 
-func (w *jsiiProxy_WaitingRoomRulesRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WaitingRoomRulesRulesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WaitingRoomRulesRulesList) validateSetTerraformAttributeParam
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoomRulesRulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WaitingRoomRulesRulesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WaitingRoomRulesRulesList) validateSetWrapsSetParameters(val 
 	return nil
 }
 
-func validateNewWaitingRoomRulesRulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWaitingRoomRulesRulesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

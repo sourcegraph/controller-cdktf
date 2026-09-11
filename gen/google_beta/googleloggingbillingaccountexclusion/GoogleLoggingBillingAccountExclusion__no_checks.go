@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateInterpolationFo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateMoveToIdParamet
 }
 
 func (g *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

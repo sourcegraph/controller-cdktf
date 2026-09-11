@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDialogflowConversationProfileNewMessageEventNotificatio
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowConversationProfileNewMessageEventNotificationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDialogflowConversationProfileNewMessageEventNotificationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowConversationProfileNewMessageEventNotificationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowConversationProfileNewMessageEventNotificationConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleDialogflowConversationProfileNewMessageEventNotificatio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowConversationProfileNewMessageEventNotificationConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowConversationProfileNewMessageEventNotificationConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleDialogflowConversationProfileNewMessageEventNotificatio
 	return nil
 }
 
-func validateNewGoogleDialogflowConversationProfileNewMessageEventNotificationConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDialogflowConversationProfileNewMessageEventNotificationConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

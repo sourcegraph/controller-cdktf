@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariables",
+		"@cdktn/provider-tfe.dataTfeVariables.DataTfeVariables",
 		reflect.TypeOf((*DataTfeVariables)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -37,6 +37,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVariableSetId", GoMethod: "ResetVariableSetId"},
@@ -54,25 +55,26 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "variables", GoGetter: "Variables"},
 			_jsii_.MemberProperty{JsiiProperty: "variableSetId", GoGetter: "VariableSetId"},
 			_jsii_.MemberProperty{JsiiProperty: "variableSetIdInput", GoGetter: "VariableSetIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataTfeVariables{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesConfig",
+		"@cdktn/provider-tfe.dataTfeVariables.DataTfeVariablesConfig",
 		reflect.TypeOf((*DataTfeVariablesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesEnv",
+		"@cdktn/provider-tfe.dataTfeVariables.DataTfeVariablesEnv",
 		reflect.TypeOf((*DataTfeVariablesEnv)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesEnvList",
+		"@cdktn/provider-tfe.dataTfeVariables.DataTfeVariablesEnvList",
 		reflect.TypeOf((*DataTfeVariablesEnvList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -88,12 +90,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataTfeVariablesEnvList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesEnvOutputReference",
+		"@cdktn/provider-tfe.dataTfeVariables.DataTfeVariablesEnvOutputReference",
 		reflect.TypeOf((*DataTfeVariablesEnvOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "category", GoGetter: "Category"},
@@ -126,16 +128,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataTfeVariablesEnvOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesTerraform",
+		"@cdktn/provider-tfe.dataTfeVariables.DataTfeVariablesTerraform",
 		reflect.TypeOf((*DataTfeVariablesTerraform)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesTerraformList",
+		"@cdktn/provider-tfe.dataTfeVariables.DataTfeVariablesTerraformList",
 		reflect.TypeOf((*DataTfeVariablesTerraformList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -151,12 +153,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataTfeVariablesTerraformList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesTerraformOutputReference",
+		"@cdktn/provider-tfe.dataTfeVariables.DataTfeVariablesTerraformOutputReference",
 		reflect.TypeOf((*DataTfeVariablesTerraformOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "category", GoGetter: "Category"},
@@ -189,16 +191,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataTfeVariablesTerraformOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesVariables",
+		"@cdktn/provider-tfe.dataTfeVariables.DataTfeVariablesVariables",
 		reflect.TypeOf((*DataTfeVariablesVariables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesVariablesList",
+		"@cdktn/provider-tfe.dataTfeVariables.DataTfeVariablesVariablesList",
 		reflect.TypeOf((*DataTfeVariablesVariablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -214,12 +216,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataTfeVariablesVariablesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesVariablesOutputReference",
+		"@cdktn/provider-tfe.dataTfeVariables.DataTfeVariablesVariablesOutputReference",
 		reflect.TypeOf((*DataTfeVariablesVariablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "category", GoGetter: "Category"},
@@ -252,7 +254,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataTfeVariablesVariablesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

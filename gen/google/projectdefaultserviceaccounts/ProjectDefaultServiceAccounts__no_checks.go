@@ -56,6 +56,10 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateInterpolationForAttrib
 	return nil
 }
 
+func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateOverrideLogicalIdParam
 }
 
 func (p *jsiiProxy_ProjectDefaultServiceAccounts) validatePutTimeoutsParameters(value *ProjectDefaultServiceAccountsTimeouts) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

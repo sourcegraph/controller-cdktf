@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/fsxontapstoragevirtualmachine/internal"
 )
 
 type FsxOntapStorageVirtualMachineEndpointsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type FsxOntapStorageVirtualMachineEndpointsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) FsxOntapStorageVirtualMachineEndpointsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type FsxOntapStorageVirtualMachineEndpointsList interface {
 
 // The jsii proxy struct for FsxOntapStorageVirtualMachineEndpointsList
 type jsiiProxy_FsxOntapStorageVirtualMachineEndpointsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsList) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsList) WrapsSet() *bool 
 }
 
 
-func NewFsxOntapStorageVirtualMachineEndpointsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxOntapStorageVirtualMachineEndpointsList {
+func NewFsxOntapStorageVirtualMachineEndpointsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxOntapStorageVirtualMachineEndpointsList {
 	_init_.Initialize()
 
 	if err := validateNewFsxOntapStorageVirtualMachineEndpointsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewFsxOntapStorageVirtualMachineEndpointsList(terraformResource cdktf.IInte
 	j := jsiiProxy_FsxOntapStorageVirtualMachineEndpointsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsList",
+		"@cdktn/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewFsxOntapStorageVirtualMachineEndpointsList(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewFsxOntapStorageVirtualMachineEndpointsList_Override(f FsxOntapStorageVirtualMachineEndpointsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewFsxOntapStorageVirtualMachineEndpointsList_Override(f FsxOntapStorageVirtualMachineEndpointsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsList",
+		"@cdktn/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsList)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsList)SetWrapsSet(val *b
 	)
 }
 
-func (f *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (f *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := f.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		f,
@@ -205,8 +208,8 @@ func (f *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsList) Get(index *float6
 	return returns
 }
 
-func (f *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (f *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsList) Resolve(_context 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (t *jsiiProxy_TeamsLocationNetworksList) validateGetParameters(index *float
 	return nil
 }
 
-func (t *jsiiProxy_TeamsLocationNetworksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TeamsLocationNetworksList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_TeamsLocationNetworksList) validateSetTerraformAttributeParam
 	return nil
 }
 
-func (j *jsiiProxy_TeamsLocationNetworksList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TeamsLocationNetworksList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_TeamsLocationNetworksList) validateSetWrapsSetParameters(val 
 	return nil
 }
 
-func validateNewTeamsLocationNetworksListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewTeamsLocationNetworksListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

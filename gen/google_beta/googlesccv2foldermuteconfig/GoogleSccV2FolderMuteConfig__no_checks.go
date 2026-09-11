@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleSccV2FolderMuteConfig) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSccV2FolderMuteConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSccV2FolderMuteConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleSccV2FolderMuteConfig) validateOverrideLogicalIdParamet
 }
 
 func (g *jsiiProxy_GoogleSccV2FolderMuteConfig) validatePutTimeoutsParameters(value *GoogleSccV2FolderMuteConfigTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSccV2FolderMuteConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleSccV2FolderMuteConfig) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccV2FolderMuteConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleSccV2FolderMuteConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (a *jsiiProxy_Agent) validateInterpolationForAttributeParameters(terraformA
 	return nil
 }
 
+func (a *jsiiProxy_Agent) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_Agent) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -180,6 +184,10 @@ func (a *jsiiProxy_Agent) validatePutThousandeyesConfigParameters(value *AgentTh
 	return nil
 }
 
+func (a *jsiiProxy_Agent) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateAgent_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -220,7 +228,7 @@ func (j *jsiiProxy_Agent) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Agent) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Agent) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/deviceposturerule/internal"
 )
 
 type DevicePostureRuleInputOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CheckDisks() *[]*string
 	SetCheckDisks(val *[]*string)
 	CheckDisksInput() *[]*string
@@ -85,9 +85,9 @@ type DevicePostureRuleInputOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Thumbprint() *string
 	SetThumbprint(val *string)
 	ThumbprintInput() *string
@@ -102,7 +102,7 @@ type DevicePostureRuleInputOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -118,9 +118,9 @@ type DevicePostureRuleInputOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCheckDisks()
 	ResetComplianceStatus()
 	ResetConnectionId()
@@ -143,7 +143,7 @@ type DevicePostureRuleInputOutputReference interface {
 	ResetVersionOperator()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -153,7 +153,7 @@ type DevicePostureRuleInputOutputReference interface {
 
 // The jsii proxy struct for DevicePostureRuleInputOutputReference
 type jsiiProxy_DevicePostureRuleInputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) CheckDisks() *[]*string {
@@ -556,8 +556,8 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -627,7 +627,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) VersionOperatorInput()
 }
 
 
-func NewDevicePostureRuleInputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DevicePostureRuleInputOutputReference {
+func NewDevicePostureRuleInputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DevicePostureRuleInputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDevicePostureRuleInputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -636,7 +636,7 @@ func NewDevicePostureRuleInputOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DevicePostureRuleInputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference",
+		"@cdktn/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -644,11 +644,11 @@ func NewDevicePostureRuleInputOutputReference(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewDevicePostureRuleInputOutputReference_Override(d DevicePostureRuleInputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDevicePostureRuleInputOutputReference_Override(d DevicePostureRuleInputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference",
+		"@cdktn/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -885,7 +885,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -958,11 +958,11 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1086,8 +1086,8 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetStringMapAttribute(
 	return returns
 }
 
-func (d *jsiiProxy_DevicePostureRuleInputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1099,16 +1099,16 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (d *jsiiProxy_DevicePostureRuleInputOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1275,8 +1275,8 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetVersionOperator()
 	)
 }
 
-func (d *jsiiProxy_DevicePostureRuleInputOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1284,7 +1284,7 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) Resolve(_context cdktf
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

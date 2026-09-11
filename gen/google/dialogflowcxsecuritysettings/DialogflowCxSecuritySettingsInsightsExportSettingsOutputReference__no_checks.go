@@ -40,11 +40,11 @@ func (d *jsiiProxy_DialogflowCxSecuritySettingsInsightsExportSettingsOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DialogflowCxSecuritySettingsInsightsExportSettingsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDialogflowCxSecuritySettingsInsightsExportSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDialogflowCxSecuritySettingsInsightsExportSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

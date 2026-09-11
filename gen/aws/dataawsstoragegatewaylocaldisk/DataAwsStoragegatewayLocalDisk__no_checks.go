@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsStoragegatewayLocalDisk) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsStoragegatewayLocalDisk) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsStoragegatewayLocalDisk_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,7 +92,7 @@ func (j *jsiiProxy_DataAwsStoragegatewayLocalDisk) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsStoragegatewayLocalDisk) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsStoragegatewayLocalDisk) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

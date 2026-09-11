@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleGeminiLoggingSetting) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGeminiLoggingSetting) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGeminiLoggingSetting) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleGeminiLoggingSetting) validateOverrideLogicalIdParamete
 }
 
 func (g *jsiiProxy_GoogleGeminiLoggingSetting) validatePutTimeoutsParameters(value *GoogleGeminiLoggingSettingTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGeminiLoggingSetting) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleGeminiLoggingSetting) validateSetLabelsParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiLoggingSetting) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleGeminiLoggingSetting) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

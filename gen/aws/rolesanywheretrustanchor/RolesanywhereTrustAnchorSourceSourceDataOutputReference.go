@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/rolesanywheretrustanchor/internal"
 )
 
 type RolesanywhereTrustAnchorSourceSourceDataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AcmPcaArn() *string
 	SetAcmPcaArn(val *string)
 	AcmPcaArnInput() *string
@@ -37,9 +37,9 @@ type RolesanywhereTrustAnchorSourceSourceDataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	X509CertificateData() *string
 	SetX509CertificateData(val *string)
 	X509CertificateDataInput() *string
@@ -48,7 +48,7 @@ type RolesanywhereTrustAnchorSourceSourceDataOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type RolesanywhereTrustAnchorSourceSourceDataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAcmPcaArn()
 	ResetX509CertificateData()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type RolesanywhereTrustAnchorSourceSourceDataOutputReference interface {
 
 // The jsii proxy struct for RolesanywhereTrustAnchorSourceSourceDataOutputReference
 type jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) AcmPcaArn() *string {
@@ -164,8 +164,8 @@ func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) X509
 }
 
 
-func NewRolesanywhereTrustAnchorSourceSourceDataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RolesanywhereTrustAnchorSourceSourceDataOutputReference {
+func NewRolesanywhereTrustAnchorSourceSourceDataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) RolesanywhereTrustAnchorSourceSourceDataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewRolesanywhereTrustAnchorSourceSourceDataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewRolesanywhereTrustAnchorSourceSourceDataOutputReference(terraformResourc
 	j := jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceDataOutputReference",
+		"@cdktn/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewRolesanywhereTrustAnchorSourceSourceDataOutputReference(terraformResourc
 	return &j
 }
 
-func NewRolesanywhereTrustAnchorSourceSourceDataOutputReference_Override(r RolesanywhereTrustAnchorSourceSourceDataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRolesanywhereTrustAnchorSourceSourceDataOutputReference_Override(r RolesanywhereTrustAnchorSourceSourceDataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceDataOutputReference",
+		"@cdktn/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) GetA
 	return returns
 }
 
-func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -456,8 +456,8 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) GetS
 	return returns
 }
 
-func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -469,16 +469,16 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) Inte
 	return returns
 }
 
-func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) Rese
 	)
 }
 
-func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceSourceDataOutputReference) Reso
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

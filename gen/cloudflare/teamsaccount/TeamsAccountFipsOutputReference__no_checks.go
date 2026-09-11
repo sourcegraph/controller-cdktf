@@ -40,11 +40,11 @@ func (t *jsiiProxy_TeamsAccountFipsOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (t *jsiiProxy_TeamsAccountFipsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TeamsAccountFipsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TeamsAccountFipsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TeamsAccountFipsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_TeamsAccountFipsOutputReference) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountFipsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TeamsAccountFipsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_TeamsAccountFipsOutputReference) validateSetTlsParameters(val
 	return nil
 }
 
-func validateNewTeamsAccountFipsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTeamsAccountFipsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

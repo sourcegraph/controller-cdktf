@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheck",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheck",
 		reflect.TypeOf((*ComputeHealthCheck)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -55,6 +55,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "logConfig", GoGetter: "LogConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "logConfigInput", GoGetter: "LogConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -76,6 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTcpHealthCheck", GoMethod: "PutTcpHealthCheck"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCheckIntervalSec", GoMethod: "ResetCheckIntervalSec"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGrpcHealthCheck", GoMethod: "ResetGrpcHealthCheck"},
@@ -117,23 +119,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "unhealthyThreshold", GoGetter: "UnhealthyThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "unhealthyThresholdInput", GoGetter: "UnhealthyThresholdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeHealthCheck{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckConfig",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckConfig",
 		reflect.TypeOf((*ComputeHealthCheckConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckGrpcHealthCheck",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckGrpcHealthCheck",
 		reflect.TypeOf((*ComputeHealthCheckGrpcHealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckGrpcHealthCheckOutputReference",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckGrpcHealthCheckOutputReference",
 		reflect.TypeOf((*ComputeHealthCheckGrpcHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -172,16 +175,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeHealthCheckGrpcHealthCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckGrpcTlsHealthCheck",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckGrpcTlsHealthCheck",
 		reflect.TypeOf((*ComputeHealthCheckGrpcTlsHealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckGrpcTlsHealthCheckOutputReference",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckGrpcTlsHealthCheckOutputReference",
 		reflect.TypeOf((*ComputeHealthCheckGrpcTlsHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -217,16 +220,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeHealthCheckGrpcTlsHealthCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckHttp2HealthCheck",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckHttp2HealthCheck",
 		reflect.TypeOf((*ComputeHealthCheckHttp2HealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckHttp2HealthCheckOutputReference",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckHttp2HealthCheckOutputReference",
 		reflect.TypeOf((*ComputeHealthCheckHttp2HealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -274,16 +277,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeHealthCheckHttp2HealthCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckHttpHealthCheck",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckHttpHealthCheck",
 		reflect.TypeOf((*ComputeHealthCheckHttpHealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckHttpHealthCheckOutputReference",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckHttpHealthCheckOutputReference",
 		reflect.TypeOf((*ComputeHealthCheckHttpHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -331,16 +334,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeHealthCheckHttpHealthCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckHttpsHealthCheck",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckHttpsHealthCheck",
 		reflect.TypeOf((*ComputeHealthCheckHttpsHealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckHttpsHealthCheckOutputReference",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckHttpsHealthCheckOutputReference",
 		reflect.TypeOf((*ComputeHealthCheckHttpsHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -388,16 +391,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeHealthCheckHttpsHealthCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckLogConfig",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckLogConfig",
 		reflect.TypeOf((*ComputeHealthCheckLogConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckLogConfigOutputReference",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckLogConfigOutputReference",
 		reflect.TypeOf((*ComputeHealthCheckLogConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -427,16 +430,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeHealthCheckLogConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckSslHealthCheck",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckSslHealthCheck",
 		reflect.TypeOf((*ComputeHealthCheckSslHealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckSslHealthCheckOutputReference",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckSslHealthCheckOutputReference",
 		reflect.TypeOf((*ComputeHealthCheckSslHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -481,16 +484,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeHealthCheckSslHealthCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckTcpHealthCheck",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckTcpHealthCheck",
 		reflect.TypeOf((*ComputeHealthCheckTcpHealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckTcpHealthCheckOutputReference",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckTcpHealthCheckOutputReference",
 		reflect.TypeOf((*ComputeHealthCheckTcpHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -535,16 +538,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeHealthCheckTcpHealthCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckTimeouts",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckTimeouts",
 		reflect.TypeOf((*ComputeHealthCheckTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckTimeoutsOutputReference",
+		"@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeHealthCheckTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -580,7 +583,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeHealthCheckTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

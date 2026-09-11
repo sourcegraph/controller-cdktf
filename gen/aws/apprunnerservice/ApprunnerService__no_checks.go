@@ -56,6 +56,10 @@ func (a *jsiiProxy_ApprunnerService) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (a *jsiiProxy_ApprunnerService) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApprunnerService) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (a *jsiiProxy_ApprunnerService) validatePutSourceConfigurationParameters(va
 	return nil
 }
 
+func (a *jsiiProxy_ApprunnerService) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateApprunnerService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -128,7 +136,7 @@ func (j *jsiiProxy_ApprunnerService) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerService) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ApprunnerService) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

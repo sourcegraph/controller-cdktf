@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkSecuritySacAttachmentSymantecOptionsOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecuritySacAttachmentSymantecOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkSecuritySacAttachmentSymantecOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecuritySacAttachmentSymantecOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkSecuritySacAttachmentSymantecOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleNetworkSecuritySacAttachmentSymantecOptionsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecuritySacAttachmentSymantecOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkSecuritySacAttachmentSymantecOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkSecuritySacAttachmentSymantecOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkSecuritySacAttachmentSymantecOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

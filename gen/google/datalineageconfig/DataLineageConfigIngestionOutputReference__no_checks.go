@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataLineageConfigIngestionOutputReference) validateGetStringM
 	return nil
 }
 
-func (d *jsiiProxy_DataLineageConfigIngestionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataLineageConfigIngestionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DataLineageConfigIngestionOutputReference) validatePutRulePar
 	return nil
 }
 
-func (d *jsiiProxy_DataLineageConfigIngestionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLineageConfigIngestionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DataLineageConfigIngestionOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_DataLineageConfigIngestionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataLineageConfigIngestionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataLineageConfigIngestionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataLineageConfigIngestionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

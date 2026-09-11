@@ -40,11 +40,11 @@ func (g *jsiiProxy_GooglePubsubLiteTopicPartitionConfigCapacityOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubLiteTopicPartitionConfigCapacityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GooglePubsubLiteTopicPartitionConfigCapacityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubLiteTopicPartitionConfigCapacityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GooglePubsubLiteTopicPartitionConfigCapacityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GooglePubsubLiteTopicPartitionConfigCapacityOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopicPartitionConfigCapacityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GooglePubsubLiteTopicPartitionConfigCapacityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGooglePubsubLiteTopicPartitionConfigCapacityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGooglePubsubLiteTopicPartitionConfigCapacityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

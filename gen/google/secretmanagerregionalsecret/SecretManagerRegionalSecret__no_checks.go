@@ -56,6 +56,10 @@ func (s *jsiiProxy_SecretManagerRegionalSecret) validateInterpolationForAttribut
 	return nil
 }
 
+func (s *jsiiProxy_SecretManagerRegionalSecret) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretManagerRegionalSecret) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (s *jsiiProxy_SecretManagerRegionalSecret) validatePutTimeoutsParameters(va
 }
 
 func (s *jsiiProxy_SecretManagerRegionalSecret) validatePutTopicsParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecretManagerRegionalSecret) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecret) validateSetLabelsParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecret) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SecretManagerRegionalSecret) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

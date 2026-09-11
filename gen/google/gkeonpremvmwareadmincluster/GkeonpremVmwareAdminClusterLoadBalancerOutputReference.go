@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/gkeonpremvmwareadmincluster/internal"
 )
 
 type GkeonpremVmwareAdminClusterLoadBalancerOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type GkeonpremVmwareAdminClusterLoadBalancerOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VipConfig() GkeonpremVmwareAdminClusterLoadBalancerVipConfigOutputReference
 	VipConfigInput() *GkeonpremVmwareAdminClusterLoadBalancerVipConfig
 	// Experimental.
@@ -50,7 +50,7 @@ type GkeonpremVmwareAdminClusterLoadBalancerOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,9 +66,9 @@ type GkeonpremVmwareAdminClusterLoadBalancerOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutF5Config(value *GkeonpremVmwareAdminClusterLoadBalancerF5Config)
 	PutManualLbConfig(value *GkeonpremVmwareAdminClusterLoadBalancerManualLbConfig)
 	PutMetalLbConfig(value *GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfig)
@@ -78,7 +78,7 @@ type GkeonpremVmwareAdminClusterLoadBalancerOutputReference interface {
 	ResetMetalLbConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type GkeonpremVmwareAdminClusterLoadBalancerOutputReference interface {
 
 // The jsii proxy struct for GkeonpremVmwareAdminClusterLoadBalancerOutputReference
 type jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference) ComplexObjectIndex() interface{} {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference) VipCo
 }
 
 
-func NewGkeonpremVmwareAdminClusterLoadBalancerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterLoadBalancerOutputReference {
+func NewGkeonpremVmwareAdminClusterLoadBalancerOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterLoadBalancerOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGkeonpremVmwareAdminClusterLoadBalancerOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -251,7 +251,7 @@ func NewGkeonpremVmwareAdminClusterLoadBalancerOutputReference(terraformResource
 	j := jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerOutputReference",
+		"@cdktn/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewGkeonpremVmwareAdminClusterLoadBalancerOutputReference(terraformResource
 	return &j
 }
 
-func NewGkeonpremVmwareAdminClusterLoadBalancerOutputReference_Override(g GkeonpremVmwareAdminClusterLoadBalancerOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGkeonpremVmwareAdminClusterLoadBalancerOutputReference_Override(g GkeonpremVmwareAdminClusterLoadBalancerOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerOutputReference",
+		"@cdktn/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -313,7 +313,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,11 +353,11 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference) GetAn
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -481,8 +481,8 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference) GetSt
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -494,16 +494,16 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference) Inter
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -578,8 +578,8 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference) Reset
 	)
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -587,7 +587,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference) Resol
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

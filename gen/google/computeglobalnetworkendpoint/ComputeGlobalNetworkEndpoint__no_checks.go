@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeGlobalNetworkEndpoint) validateInterpolationForAttribu
 	return nil
 }
 
+func (c *jsiiProxy_ComputeGlobalNetworkEndpoint) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeGlobalNetworkEndpoint) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ComputeGlobalNetworkEndpoint) validateOverrideLogicalIdParame
 }
 
 func (c *jsiiProxy_ComputeGlobalNetworkEndpoint) validatePutTimeoutsParameters(value *ComputeGlobalNetworkEndpointTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeGlobalNetworkEndpoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_ComputeGlobalNetworkEndpoint) validateSetIpAddressParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ComputeGlobalNetworkEndpoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeGlobalNetworkEndpoint) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

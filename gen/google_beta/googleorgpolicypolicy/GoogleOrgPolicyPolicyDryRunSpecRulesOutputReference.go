@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleorgpolicypolicy/internal"
 )
 
 type GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowAll() *string
 	SetAllowAll(val *string)
 	AllowAllInput() *string
@@ -48,9 +48,9 @@ type GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Values() GoogleOrgPolicyPolicyDryRunSpecRulesValuesOutputReference
 	ValuesInput() *GoogleOrgPolicyPolicyDryRunSpecRulesValues
 	// Experimental.
@@ -58,7 +58,7 @@ type GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -74,9 +74,9 @@ type GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCondition(value *GoogleOrgPolicyPolicyDryRunSpecRulesCondition)
 	PutValues(value *GoogleOrgPolicyPolicyDryRunSpecRulesValues)
 	ResetAllowAll()
@@ -87,7 +87,7 @@ type GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference interface {
 	ResetValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference interface {
 
 // The jsii proxy struct for GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference
 type jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) AllowAll() *string {
@@ -260,8 +260,8 @@ func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -291,7 +291,7 @@ func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) ValuesIn
 }
 
 
-func NewGoogleOrgPolicyPolicyDryRunSpecRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference {
+func NewGoogleOrgPolicyPolicyDryRunSpecRulesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleOrgPolicyPolicyDryRunSpecRulesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -300,7 +300,7 @@ func NewGoogleOrgPolicyPolicyDryRunSpecRulesOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference",
+		"@cdktn/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -308,11 +308,11 @@ func NewGoogleOrgPolicyPolicyDryRunSpecRulesOutputReference(terraformResource cd
 	return &j
 }
 
-func NewGoogleOrgPolicyPolicyDryRunSpecRulesOutputReference_Override(g GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleOrgPolicyPolicyDryRunSpecRulesOutputReference_Override(g GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference",
+		"@cdktn/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -406,7 +406,7 @@ func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -446,11 +446,11 @@ func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) GetAnyMa
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -574,8 +574,8 @@ func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) GetStrin
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -587,16 +587,16 @@ func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) Interpol
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -673,8 +673,8 @@ func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) ResetVal
 	)
 }
 
-func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -682,7 +682,7 @@ func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) Resolve(
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

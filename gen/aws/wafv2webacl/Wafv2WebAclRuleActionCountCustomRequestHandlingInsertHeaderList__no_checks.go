@@ -12,7 +12,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderLi
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderLi
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderLi
 	return nil
 }
 
-func validateNewWafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

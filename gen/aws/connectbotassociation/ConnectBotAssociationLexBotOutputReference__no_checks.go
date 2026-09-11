@@ -40,11 +40,11 @@ func (c *jsiiProxy_ConnectBotAssociationLexBotOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_ConnectBotAssociationLexBotOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConnectBotAssociationLexBotOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConnectBotAssociationLexBotOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectBotAssociationLexBotOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ConnectBotAssociationLexBotOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_ConnectBotAssociationLexBotOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ConnectBotAssociationLexBotOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewConnectBotAssociationLexBotOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewConnectBotAssociationLexBotOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

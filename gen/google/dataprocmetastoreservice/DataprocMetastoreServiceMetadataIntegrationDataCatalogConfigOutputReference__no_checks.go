@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationDataCatalogConfigO
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationDataCatalogConfigO
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

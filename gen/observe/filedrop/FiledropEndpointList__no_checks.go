@@ -12,7 +12,7 @@ func (f *jsiiProxy_FiledropEndpointList) validateGetParameters(index *float64) e
 	return nil
 }
 
-func (f *jsiiProxy_FiledropEndpointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FiledropEndpointList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_FiledropEndpointList) validateSetTerraformAttributeParameters
 	return nil
 }
 
-func (j *jsiiProxy_FiledropEndpointList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FiledropEndpointList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_FiledropEndpointList) validateSetWrapsSetParameters(val *bool
 	return nil
 }
 
-func validateNewFiledropEndpointListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewFiledropEndpointListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

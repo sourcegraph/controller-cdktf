@@ -12,7 +12,7 @@ func (w *jsiiProxy_WorkerScriptR2BucketBindingList) validateGetParameters(index 
 	return nil
 }
 
-func (w *jsiiProxy_WorkerScriptR2BucketBindingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerScriptR2BucketBindingList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WorkerScriptR2BucketBindingList) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScriptR2BucketBindingList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkerScriptR2BucketBindingList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WorkerScriptR2BucketBindingList) validateSetWrapsSetParameter
 	return nil
 }
 
-func validateNewWorkerScriptR2BucketBindingListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWorkerScriptR2BucketBindingListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

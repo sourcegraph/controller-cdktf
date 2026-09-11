@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlediscoveryengineaclconfig/internal"
 )
 
 type GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference int
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WorkforcePoolName() *string
 	SetWorkforcePoolName(val *string)
 	WorkforcePoolNameInput() *string
@@ -45,7 +45,7 @@ type GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference int
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference int
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetWorkforcePoolName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference int
 
 // The jsii proxy struct for GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference
 type jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -140,8 +140,8 @@ func (j *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutpu
 }
 
 
-func NewGoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference {
+func NewGoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewGoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference(
 	j := jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDiscoveryEngineAclConfig.GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference",
+		"@cdktn/provider-google-beta.googleDiscoveryEngineAclConfig.GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewGoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference(
 	return &j
 }
 
-func NewGoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference_Override(g GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference_Override(g GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDiscoveryEngineAclConfig.GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference",
+		"@cdktn/provider-google-beta.googleDiscoveryEngineAclConfig.GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (g *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -421,8 +421,8 @@ func (g *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -434,16 +434,16 @@ func (g *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (g *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutpu
 	)
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutpu
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (e *jsiiProxy_Ec2SerialConsoleAccess) validateInterpolationForAttributePara
 	return nil
 }
 
+func (e *jsiiProxy_Ec2SerialConsoleAccess) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2SerialConsoleAccess) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (e *jsiiProxy_Ec2SerialConsoleAccess) validateMoveToIdParameters(id *string
 }
 
 func (e *jsiiProxy_Ec2SerialConsoleAccess) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2SerialConsoleAccess) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_Ec2SerialConsoleAccess) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_Ec2SerialConsoleAccess) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Ec2SerialConsoleAccess) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

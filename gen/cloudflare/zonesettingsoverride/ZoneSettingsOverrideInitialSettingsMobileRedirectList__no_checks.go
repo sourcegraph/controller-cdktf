@@ -12,7 +12,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) valida
 	return nil
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) valida
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) valida
 	return nil
 }
 
-func validateNewZoneSettingsOverrideInitialSettingsMobileRedirectListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewZoneSettingsOverrideInitialSettingsMobileRedirectListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

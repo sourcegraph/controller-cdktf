@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryDockerImage) validateOverrideLogica
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleArtifactRegistryDockerImage) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleArtifactRegistryDockerImage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryDockerImage) validateSetImageNamePa
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryDockerImage) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleArtifactRegistryDockerImage) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

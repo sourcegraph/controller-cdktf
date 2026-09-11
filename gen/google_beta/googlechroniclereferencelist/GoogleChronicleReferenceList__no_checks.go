@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) validateInterpolationForAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleChronicleReferenceList) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleChronicleReferenceList) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleChronicleReferenceList) validatePutScopeInfoParameters(
 }
 
 func (g *jsiiProxy_GoogleChronicleReferenceList) validatePutTimeoutsParameters(value *GoogleChronicleReferenceListTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleChronicleReferenceList) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleChronicleReferenceList) validateSetInstanceParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceList) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleChronicleReferenceList) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) validateInterpolationFo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) validateOverrideLogical
 }
 
 func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) validatePutTimeoutsParameters(value *GoogleComposerUserWorkloadsConfigMapTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) validateSetIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (w *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintList) validateGetPara
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintList) validateSetWrap
 	return nil
 }
 
-func validateNewWafregionalGeoMatchSetGeoMatchConstraintListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWafregionalGeoMatchSetGeoMatchConstraintListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

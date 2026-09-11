@@ -56,6 +56,10 @@ func (o *jsiiProxy_OpsworksMysqlLayer) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksMysqlLayer) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksMysqlLayer) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (o *jsiiProxy_OpsworksMysqlLayer) validatePutEbsVolumeParameters(value inte
 }
 
 func (o *jsiiProxy_OpsworksMysqlLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksMysqlLayerLoadBasedAutoScaling) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksMysqlLayer) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -172,7 +180,7 @@ func (j *jsiiProxy_OpsworksMysqlLayer) validateSetInstanceShutdownTimeoutParamet
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayer) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_OpsworksMysqlLayer) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

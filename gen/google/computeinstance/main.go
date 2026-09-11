@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstance",
+		"@cdktn/provider-google.computeInstance.ComputeInstance",
 		reflect.TypeOf((*ComputeInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -74,6 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "machineType", GoGetter: "MachineType"},
 			_jsii_.MemberProperty{JsiiProperty: "machineTypeInput", GoGetter: "MachineTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "metadata", GoGetter: "Metadata"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataFingerprint", GoGetter: "MetadataFingerprint"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataInput", GoGetter: "MetadataInput"},
@@ -114,6 +115,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putShieldedInstanceConfig", GoMethod: "PutShieldedInstanceConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "reservationAffinity", GoGetter: "ReservationAffinity"},
 			_jsii_.MemberProperty{JsiiProperty: "reservationAffinityInput", GoGetter: "ReservationAffinityInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdvancedMachineFeatures", GoMethod: "ResetAdvancedMachineFeatures"},
@@ -173,21 +175,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstance{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceAdvancedMachineFeatures",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceAdvancedMachineFeatures",
 		reflect.TypeOf((*ComputeInstanceAdvancedMachineFeatures)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceAdvancedMachineFeaturesOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceAdvancedMachineFeaturesOutputReference",
 		reflect.TypeOf((*ComputeInstanceAdvancedMachineFeaturesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -232,16 +235,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceAttachedDisk",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceAttachedDisk",
 		reflect.TypeOf((*ComputeInstanceAttachedDisk)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceAttachedDiskList",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceAttachedDiskList",
 		reflect.TypeOf((*ComputeInstanceAttachedDiskList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -258,12 +261,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceAttachedDiskList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceAttachedDiskOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceAttachedDiskOutputReference",
 		reflect.TypeOf((*ComputeInstanceAttachedDiskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -314,20 +317,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceAttachedDiskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceBootDisk",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceBootDisk",
 		reflect.TypeOf((*ComputeInstanceBootDisk)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceBootDiskInitializeParams",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceBootDiskInitializeParams",
 		reflect.TypeOf((*ComputeInstanceBootDiskInitializeParams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceBootDiskInitializeParamsOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceBootDiskInitializeParamsOutputReference",
 		reflect.TypeOf((*ComputeInstanceBootDiskInitializeParamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "architecture", GoGetter: "Architecture"},
@@ -401,16 +404,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceBootDiskInitializeParamsSourceImageEncryptionKey",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceBootDiskInitializeParamsSourceImageEncryptionKey",
 		reflect.TypeOf((*ComputeInstanceBootDiskInitializeParamsSourceImageEncryptionKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceBootDiskInitializeParamsSourceImageEncryptionKeyOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceBootDiskInitializeParamsSourceImageEncryptionKeyOutputReference",
 		reflect.TypeOf((*ComputeInstanceBootDiskInitializeParamsSourceImageEncryptionKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -450,16 +453,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceBootDiskInitializeParamsSourceImageEncryptionKeyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceBootDiskInitializeParamsSourceSnapshotEncryptionKey",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceBootDiskInitializeParamsSourceSnapshotEncryptionKey",
 		reflect.TypeOf((*ComputeInstanceBootDiskInitializeParamsSourceSnapshotEncryptionKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceBootDiskInitializeParamsSourceSnapshotEncryptionKeyOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceBootDiskInitializeParamsSourceSnapshotEncryptionKeyOutputReference",
 		reflect.TypeOf((*ComputeInstanceBootDiskInitializeParamsSourceSnapshotEncryptionKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -499,12 +502,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceBootDiskInitializeParamsSourceSnapshotEncryptionKeyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceBootDiskOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceBootDiskOutputReference",
 		reflect.TypeOf((*ComputeInstanceBootDiskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoDelete", GoGetter: "AutoDelete"},
@@ -569,16 +572,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceBootDiskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceConfidentialInstanceConfig",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceConfidentialInstanceConfig",
 		reflect.TypeOf((*ComputeInstanceConfidentialInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceConfidentialInstanceConfigOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceConfidentialInstanceConfigOutputReference",
 		reflect.TypeOf((*ComputeInstanceConfidentialInstanceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -611,20 +614,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceConfig",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceConfig",
 		reflect.TypeOf((*ComputeInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceGuestAccelerator",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceGuestAccelerator",
 		reflect.TypeOf((*ComputeInstanceGuestAccelerator)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceGuestAcceleratorList",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceGuestAcceleratorList",
 		reflect.TypeOf((*ComputeInstanceGuestAcceleratorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -641,12 +644,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceGuestAcceleratorList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceGuestAcceleratorOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceGuestAcceleratorOutputReference",
 		reflect.TypeOf((*ComputeInstanceGuestAcceleratorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -677,16 +680,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceGuestAcceleratorOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceInstanceEncryptionKey",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceInstanceEncryptionKey",
 		reflect.TypeOf((*ComputeInstanceInstanceEncryptionKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceInstanceEncryptionKeyOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceInstanceEncryptionKeyOutputReference",
 		reflect.TypeOf((*ComputeInstanceInstanceEncryptionKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -720,20 +723,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkInterface",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceNetworkInterface",
 		reflect.TypeOf((*ComputeInstanceNetworkInterface)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkInterfaceAccessConfig",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceNetworkInterfaceAccessConfig",
 		reflect.TypeOf((*ComputeInstanceNetworkInterfaceAccessConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkInterfaceAccessConfigList",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceNetworkInterfaceAccessConfigList",
 		reflect.TypeOf((*ComputeInstanceNetworkInterfaceAccessConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -750,12 +753,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceNetworkInterfaceAccessConfigList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkInterfaceAccessConfigOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceNetworkInterfaceAccessConfigOutputReference",
 		reflect.TypeOf((*ComputeInstanceNetworkInterfaceAccessConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -791,16 +794,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceNetworkInterfaceAccessConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkInterfaceAliasIpRange",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceNetworkInterfaceAliasIpRange",
 		reflect.TypeOf((*ComputeInstanceNetworkInterfaceAliasIpRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkInterfaceAliasIpRangeList",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceNetworkInterfaceAliasIpRangeList",
 		reflect.TypeOf((*ComputeInstanceNetworkInterfaceAliasIpRangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -817,12 +820,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceNetworkInterfaceAliasIpRangeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkInterfaceAliasIpRangeOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceNetworkInterfaceAliasIpRangeOutputReference",
 		reflect.TypeOf((*ComputeInstanceNetworkInterfaceAliasIpRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -854,16 +857,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceNetworkInterfaceAliasIpRangeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkInterfaceIpv6AccessConfig",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceNetworkInterfaceIpv6AccessConfig",
 		reflect.TypeOf((*ComputeInstanceNetworkInterfaceIpv6AccessConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkInterfaceIpv6AccessConfigList",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceNetworkInterfaceIpv6AccessConfigList",
 		reflect.TypeOf((*ComputeInstanceNetworkInterfaceIpv6AccessConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -880,12 +883,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceNetworkInterfaceIpv6AccessConfigList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference",
 		reflect.TypeOf((*ComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -926,12 +929,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkInterfaceList",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceNetworkInterfaceList",
 		reflect.TypeOf((*ComputeInstanceNetworkInterfaceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -948,12 +951,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceNetworkInterfaceList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkInterfaceOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceNetworkInterfaceOutputReference",
 		reflect.TypeOf((*ComputeInstanceNetworkInterfaceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessConfig", GoGetter: "AccessConfig"},
@@ -1031,16 +1034,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkPerformanceConfig",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceNetworkPerformanceConfig",
 		reflect.TypeOf((*ComputeInstanceNetworkPerformanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkPerformanceConfigOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceNetworkPerformanceConfigOutputReference",
 		reflect.TypeOf((*ComputeInstanceNetworkPerformanceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1069,16 +1072,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceNetworkPerformanceConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceParams",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceParams",
 		reflect.TypeOf((*ComputeInstanceParams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceParamsOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceParamsOutputReference",
 		reflect.TypeOf((*ComputeInstanceParamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1108,16 +1111,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceParamsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceReservationAffinity",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceReservationAffinity",
 		reflect.TypeOf((*ComputeInstanceReservationAffinity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceReservationAffinityOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceReservationAffinityOutputReference",
 		reflect.TypeOf((*ComputeInstanceReservationAffinityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1150,16 +1153,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceReservationAffinityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceReservationAffinitySpecificReservation",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceReservationAffinitySpecificReservation",
 		reflect.TypeOf((*ComputeInstanceReservationAffinitySpecificReservation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceReservationAffinitySpecificReservationOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceReservationAffinitySpecificReservationOutputReference",
 		reflect.TypeOf((*ComputeInstanceReservationAffinitySpecificReservationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1190,20 +1193,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceReservationAffinitySpecificReservationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceScheduling",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceScheduling",
 		reflect.TypeOf((*ComputeInstanceScheduling)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceSchedulingLocalSsdRecoveryTimeout",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceSchedulingLocalSsdRecoveryTimeout",
 		reflect.TypeOf((*ComputeInstanceSchedulingLocalSsdRecoveryTimeout)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceSchedulingLocalSsdRecoveryTimeoutOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceSchedulingLocalSsdRecoveryTimeoutOutputReference",
 		reflect.TypeOf((*ComputeInstanceSchedulingLocalSsdRecoveryTimeoutOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1235,16 +1238,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceSchedulingLocalSsdRecoveryTimeoutOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceSchedulingMaxRunDuration",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceSchedulingMaxRunDuration",
 		reflect.TypeOf((*ComputeInstanceSchedulingMaxRunDuration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceSchedulingMaxRunDurationOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceSchedulingMaxRunDurationOutputReference",
 		reflect.TypeOf((*ComputeInstanceSchedulingMaxRunDurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1276,16 +1279,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceSchedulingMaxRunDurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceSchedulingNodeAffinities",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceSchedulingNodeAffinities",
 		reflect.TypeOf((*ComputeInstanceSchedulingNodeAffinities)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceSchedulingNodeAffinitiesList",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceSchedulingNodeAffinitiesList",
 		reflect.TypeOf((*ComputeInstanceSchedulingNodeAffinitiesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1302,12 +1305,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceSchedulingNodeAffinitiesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceSchedulingNodeAffinitiesOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceSchedulingNodeAffinitiesOutputReference",
 		reflect.TypeOf((*ComputeInstanceSchedulingNodeAffinitiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1340,16 +1343,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceSchedulingNodeAffinitiesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceSchedulingOnInstanceStopAction",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceSchedulingOnInstanceStopAction",
 		reflect.TypeOf((*ComputeInstanceSchedulingOnInstanceStopAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceSchedulingOnInstanceStopActionOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceSchedulingOnInstanceStopActionOutputReference",
 		reflect.TypeOf((*ComputeInstanceSchedulingOnInstanceStopActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1379,12 +1382,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceSchedulingOnInstanceStopActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceSchedulingOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceSchedulingOutputReference",
 		reflect.TypeOf((*ComputeInstanceSchedulingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automaticRestart", GoGetter: "AutomaticRestart"},
@@ -1451,16 +1454,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceSchedulingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceScratchDisk",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceScratchDisk",
 		reflect.TypeOf((*ComputeInstanceScratchDisk)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceScratchDiskList",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceScratchDiskList",
 		reflect.TypeOf((*ComputeInstanceScratchDiskList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1477,12 +1480,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceScratchDiskList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceScratchDiskOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceScratchDiskOutputReference",
 		reflect.TypeOf((*ComputeInstanceScratchDiskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1517,16 +1520,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceScratchDiskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceServiceAccount",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceServiceAccount",
 		reflect.TypeOf((*ComputeInstanceServiceAccount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceServiceAccountOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceServiceAccountOutputReference",
 		reflect.TypeOf((*ComputeInstanceServiceAccountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1558,16 +1561,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceServiceAccountOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceShieldedInstanceConfig",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceShieldedInstanceConfig",
 		reflect.TypeOf((*ComputeInstanceShieldedInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceShieldedInstanceConfigOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceShieldedInstanceConfigOutputReference",
 		reflect.TypeOf((*ComputeInstanceShieldedInstanceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1603,16 +1606,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceTimeouts",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceTimeouts",
 		reflect.TypeOf((*ComputeInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceTimeoutsOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1648,7 +1651,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeInstanceTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

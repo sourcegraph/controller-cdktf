@@ -12,7 +12,7 @@ func (c *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsLis
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsLis
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsLis
 	return nil
 }
 
-func validateNewContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

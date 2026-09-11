@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCesToolsetMcpToolsetTlsConfigCaCertsList) validateGetPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesToolsetMcpToolsetTlsConfigCaCertsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesToolsetMcpToolsetTlsConfigCaCertsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleCesToolsetMcpToolsetTlsConfigCaCertsList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesToolsetMcpToolsetTlsConfigCaCertsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesToolsetMcpToolsetTlsConfigCaCertsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleCesToolsetMcpToolsetTlsConfigCaCertsList) validateSetWr
 	return nil
 }
 
-func validateNewGoogleCesToolsetMcpToolsetTlsConfigCaCertsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCesToolsetMcpToolsetTlsConfigCaCertsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

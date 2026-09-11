@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleVectorSearchCollectionVectorSchemaDenseVectorOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVectorSearchCollectionVectorSchemaDenseVectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleVectorSearchCollectionVectorSchemaDenseVectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleVectorSearchCollectionVectorSchemaDenseVectorOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVectorSearchCollectionVectorSchemaDenseVectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleVectorSearchCollectionVectorSchemaDenseVectorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleVectorSearchCollectionVectorSchemaDenseVectorOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVectorSearchCollectionVectorSchemaDenseVectorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleVectorSearchCollectionVectorSchemaDenseVectorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleVectorSearchCollectionVectorSchemaDenseVectorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleVectorSearchCollectionVectorSchemaDenseVectorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

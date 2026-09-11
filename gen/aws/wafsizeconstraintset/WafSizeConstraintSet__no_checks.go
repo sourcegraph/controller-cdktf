@@ -56,6 +56,10 @@ func (w *jsiiProxy_WafSizeConstraintSet) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (w *jsiiProxy_WafSizeConstraintSet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafSizeConstraintSet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (w *jsiiProxy_WafSizeConstraintSet) validateOverrideLogicalIdParameters(new
 }
 
 func (w *jsiiProxy_WafSizeConstraintSet) validatePutSizeConstraintsParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafSizeConstraintSet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_WafSizeConstraintSet) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_WafSizeConstraintSet) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_WafSizeConstraintSet) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointMailSettingsOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointMailSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointMailSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointMailSettingsOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointMailSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointMailSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsProofpointMailSettingsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsProofpointMailSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsProofpointMailSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsProofpointMailSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsProofpointMailSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

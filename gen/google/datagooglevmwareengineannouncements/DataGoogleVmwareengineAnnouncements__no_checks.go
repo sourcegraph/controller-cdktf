@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleVmwareengineAnnouncements) validateOverrideLogicalI
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleVmwareengineAnnouncements) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleVmwareengineAnnouncements_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineAnnouncements) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineAnnouncements) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleVmwareengineAnnouncements) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

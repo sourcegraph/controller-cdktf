@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/biglakeicebergtable/internal"
 )
 
 type BiglakeIcebergTableSchemaFieldsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type BiglakeIcebergTableSchemaFieldsList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) BiglakeIcebergTableSchemaFieldsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type BiglakeIcebergTableSchemaFieldsList interface {
 
 // The jsii proxy struct for BiglakeIcebergTableSchemaFieldsList
 type jsiiProxy_BiglakeIcebergTableSchemaFieldsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) TerraformAttribute() *st
 	return returns
 }
 
-func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) WrapsSet() *bool {
 }
 
 
-func NewBiglakeIcebergTableSchemaFieldsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BiglakeIcebergTableSchemaFieldsList {
+func NewBiglakeIcebergTableSchemaFieldsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BiglakeIcebergTableSchemaFieldsList {
 	_init_.Initialize()
 
 	if err := validateNewBiglakeIcebergTableSchemaFieldsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewBiglakeIcebergTableSchemaFieldsList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_BiglakeIcebergTableSchemaFieldsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaFieldsList",
+		"@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaFieldsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewBiglakeIcebergTableSchemaFieldsList(terraformResource cdktf.IInterpolati
 	return &j
 }
 
-func NewBiglakeIcebergTableSchemaFieldsList_Override(b BiglakeIcebergTableSchemaFieldsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewBiglakeIcebergTableSchemaFieldsList_Override(b BiglakeIcebergTableSchemaFieldsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaFieldsList",
+		"@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaFieldsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsList)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (b *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (b *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := b.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		b,
@@ -228,8 +231,8 @@ func (b *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) Get(index *float64) Bigl
 	return returns
 }
 
-func (b *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (b *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) Resolve(_context cdktf.I
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

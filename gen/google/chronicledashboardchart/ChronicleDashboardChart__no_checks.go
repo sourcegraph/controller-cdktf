@@ -56,6 +56,10 @@ func (c *jsiiProxy_ChronicleDashboardChart) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ChronicleDashboardChart) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChronicleDashboardChart) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (c *jsiiProxy_ChronicleDashboardChart) validatePutDashboardQueryParameters(
 }
 
 func (c *jsiiProxy_ChronicleDashboardChart) validatePutTimeoutsParameters(value *ChronicleDashboardChartTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ChronicleDashboardChart) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_ChronicleDashboardChart) validateSetInstanceParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChart) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ChronicleDashboardChart) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

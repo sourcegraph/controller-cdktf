@@ -56,6 +56,10 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) validateInterpolationForAttri
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) validatePutMonitoringConfigPa
 }
 
 func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) validatePutTimeoutsParameters(value *VertexAiFeaturestoreEntitytypeTimeouts) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytype) validateSetLabelsParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytype) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytype) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

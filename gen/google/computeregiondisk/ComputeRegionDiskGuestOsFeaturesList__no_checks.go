@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeRegionDiskGuestOsFeaturesList) validateGetParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionDiskGuestOsFeaturesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionDiskGuestOsFeaturesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeRegionDiskGuestOsFeaturesList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionDiskGuestOsFeaturesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionDiskGuestOsFeaturesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeRegionDiskGuestOsFeaturesList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewComputeRegionDiskGuestOsFeaturesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeRegionDiskGuestOsFeaturesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

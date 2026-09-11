@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/lexintent/internal"
 )
 
 type LexIntentFollowUpPromptPromptOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,15 +42,15 @@ type LexIntentFollowUpPromptPromptOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,14 +66,14 @@ type LexIntentFollowUpPromptPromptOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutMessage(value interface{})
 	ResetResponseCard()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type LexIntentFollowUpPromptPromptOutputReference interface {
 
 // The jsii proxy struct for LexIntentFollowUpPromptPromptOutputReference
 type jsiiProxy_LexIntentFollowUpPromptPromptOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) ComplexObjectIndex() interface{} {
@@ -206,8 +206,8 @@ func (j *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) TerraformResour
 }
 
 
-func NewLexIntentFollowUpPromptPromptOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LexIntentFollowUpPromptPromptOutputReference {
+func NewLexIntentFollowUpPromptPromptOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LexIntentFollowUpPromptPromptOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLexIntentFollowUpPromptPromptOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewLexIntentFollowUpPromptPromptOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_LexIntentFollowUpPromptPromptOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference",
+		"@cdktn/provider-aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewLexIntentFollowUpPromptPromptOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewLexIntentFollowUpPromptPromptOutputReference_Override(l LexIntentFollowUpPromptPromptOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLexIntentFollowUpPromptPromptOutputReference_Override(l LexIntentFollowUpPromptPromptOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference",
+		"@cdktn/provider-aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,11 +350,11 @@ func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -478,8 +478,8 @@ func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -491,16 +491,16 @@ func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) InterpolationAs
 	return returns
 }
 
-func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) ResetResponseCa
 	)
 }
 
-func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

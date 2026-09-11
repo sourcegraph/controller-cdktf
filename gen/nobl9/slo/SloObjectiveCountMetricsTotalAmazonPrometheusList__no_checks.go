@@ -12,7 +12,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalAmazonPrometheusList) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsTotalAmazonPrometheusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalAmazonPrometheusList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalAmazonPrometheusList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalAmazonPrometheusList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalAmazonPrometheusList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalAmazonPrometheusList) validateSe
 	return nil
 }
 
-func validateNewSloObjectiveCountMetricsTotalAmazonPrometheusListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSloObjectiveCountMetricsTotalAmazonPrometheusListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

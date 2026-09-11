@@ -56,6 +56,10 @@ func (g *jsiiProxy_GlacierVaultLock) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GlacierVaultLock) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlacierVaultLock) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (g *jsiiProxy_GlacierVaultLock) validateMoveToIdParameters(id *string) erro
 }
 
 func (g *jsiiProxy_GlacierVaultLock) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlacierVaultLock) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GlacierVaultLock) validateSetIgnoreDeletionErrorParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GlacierVaultLock) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GlacierVaultLock) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

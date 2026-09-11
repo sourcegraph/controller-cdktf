@@ -56,6 +56,10 @@ func (e *jsiiProxy_EfsAccessPoint) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (e *jsiiProxy_EfsAccessPoint) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EfsAccessPoint) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (e *jsiiProxy_EfsAccessPoint) validatePutPosixUserParameters(value *EfsAcce
 }
 
 func (e *jsiiProxy_EfsAccessPoint) validatePutRootDirectoryParameters(value *EfsAccessPointRootDirectory) error {
+	return nil
+}
+
+func (e *jsiiProxy_EfsAccessPoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_EfsAccessPoint) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_EfsAccessPoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EfsAccessPoint) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

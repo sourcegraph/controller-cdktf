@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/containerawsnodepool/internal"
 )
 
 type ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMaxSurge()
 	ResetMaxUnavailable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference interface {
 
 // The jsii proxy struct for ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference
 type jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReferenc
 }
 
 
-func NewContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference {
+func NewContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference(terraform
 	j := jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference(terraform
 	return &j
 }
 
-func NewContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference_Override(c ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference_Override(c ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference",
+		"@cdktn/provider-google.containerAwsNodePool.ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReferenc
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -456,8 +456,8 @@ func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReferenc
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -469,16 +469,16 @@ func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReferenc
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReferenc
 	)
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReferenc
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

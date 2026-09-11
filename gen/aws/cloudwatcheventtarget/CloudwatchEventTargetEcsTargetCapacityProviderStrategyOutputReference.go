@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/cloudwatcheventtarget/internal"
 )
 
 type CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Base() *float64
 	SetBase(val *float64)
 	BaseInput() *float64
@@ -40,9 +40,9 @@ type CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference inter
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Weight() *float64
 	SetWeight(val *float64)
 	WeightInput() *float64
@@ -51,7 +51,7 @@ type CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference inter
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetBase()
 	ResetWeight()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference inter
 
 // The jsii proxy struct for CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference
 type jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) Base() *float64 {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputR
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputR
 }
 
 
-func NewCloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference {
+func NewCloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -227,7 +227,7 @@ func NewCloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference(te
 	j := jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference",
+		"@cdktn/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewCloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference(te
 	return &j
 }
 
-func NewCloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference_Override(c CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewCloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference_Override(c CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference",
+		"@cdktn/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -311,7 +311,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputR
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputR
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -490,8 +490,8 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputR
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -503,16 +503,16 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputR
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputR
 	)
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputR
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

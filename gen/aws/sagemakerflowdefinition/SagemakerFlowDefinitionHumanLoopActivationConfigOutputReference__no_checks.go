@@ -40,7 +40,7 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigOutputReferen
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigOutputReferen
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSagemakerFlowDefinitionHumanLoopActivationConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSagemakerFlowDefinitionHumanLoopActivationConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

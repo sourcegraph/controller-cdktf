@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapList) validateGetParam
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapList) validateSetWraps
 	return nil
 }
 
-func validateNewComputeNodeGroupShareSettingsProjectMapListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeNodeGroupShareSettingsProjectMapListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

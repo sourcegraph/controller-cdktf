@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleLoggingOrganizationSettings) validateOverrideLogica
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleLoggingOrganizationSettings) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleLoggingOrganizationSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleLoggingOrganizationSettings) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleLoggingOrganizationSettings) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleLoggingOrganizationSettings) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

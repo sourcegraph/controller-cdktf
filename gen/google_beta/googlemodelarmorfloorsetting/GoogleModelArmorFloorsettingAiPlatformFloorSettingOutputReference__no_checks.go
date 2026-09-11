@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesList) validateGetParameters(index
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewApiGatewayUsagePlanApiStagesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewApiGatewayUsagePlanApiStagesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

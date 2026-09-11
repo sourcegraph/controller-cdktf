@@ -40,11 +40,11 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassO
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassO
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

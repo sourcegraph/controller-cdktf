@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlechroniclenativedashboard/internal"
 )
 
 type GoogleChronicleNativeDashboardFiltersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ChartIds() *[]*string
 	SetChartIds(val *[]*string)
 	ChartIdsInput() *[]*string
@@ -60,15 +60,15 @@ type GoogleChronicleNativeDashboardFiltersOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -84,9 +84,9 @@ type GoogleChronicleNativeDashboardFiltersOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutFilterOperatorAndFieldValues(value interface{})
 	ResetChartIds()
 	ResetDataSource()
@@ -99,7 +99,7 @@ type GoogleChronicleNativeDashboardFiltersOutputReference interface {
 	ResetIsStandardTimeRangeFilterEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -109,7 +109,7 @@ type GoogleChronicleNativeDashboardFiltersOutputReference interface {
 
 // The jsii proxy struct for GoogleChronicleNativeDashboardFiltersOutputReference
 type jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference) ChartIds() *[]*string {
@@ -352,8 +352,8 @@ func (j *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -363,7 +363,7 @@ func (j *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference) Terrafo
 }
 
 
-func NewGoogleChronicleNativeDashboardFiltersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleChronicleNativeDashboardFiltersOutputReference {
+func NewGoogleChronicleNativeDashboardFiltersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleChronicleNativeDashboardFiltersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleChronicleNativeDashboardFiltersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -372,7 +372,7 @@ func NewGoogleChronicleNativeDashboardFiltersOutputReference(terraformResource c
 	j := jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleNativeDashboard.GoogleChronicleNativeDashboardFiltersOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleNativeDashboard.GoogleChronicleNativeDashboardFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -380,11 +380,11 @@ func NewGoogleChronicleNativeDashboardFiltersOutputReference(terraformResource c
 	return &j
 }
 
-func NewGoogleChronicleNativeDashboardFiltersOutputReference_Override(g GoogleChronicleNativeDashboardFiltersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleChronicleNativeDashboardFiltersOutputReference_Override(g GoogleChronicleNativeDashboardFiltersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleNativeDashboard.GoogleChronicleNativeDashboardFiltersOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleNativeDashboard.GoogleChronicleNativeDashboardFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -522,7 +522,7 @@ func (j *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -562,11 +562,11 @@ func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference) GetAnyM
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -690,8 +690,8 @@ func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference) GetStri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -703,16 +703,16 @@ func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference) Interpo
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -802,8 +802,8 @@ func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference) ResetIs
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -811,7 +811,7 @@ func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersOutputReference) Resolve
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

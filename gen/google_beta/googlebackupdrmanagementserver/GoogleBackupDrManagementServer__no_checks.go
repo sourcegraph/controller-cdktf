@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleBackupDrManagementServer) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBackupDrManagementServer) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBackupDrManagementServer) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleBackupDrManagementServer) validatePutNetworksParameters
 }
 
 func (g *jsiiProxy_GoogleBackupDrManagementServer) validatePutTimeoutsParameters(value *GoogleBackupDrManagementServerTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBackupDrManagementServer) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleBackupDrManagementServer) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBackupDrManagementServer) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleBackupDrManagementServer) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

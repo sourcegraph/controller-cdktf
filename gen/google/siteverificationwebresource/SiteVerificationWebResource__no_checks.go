@@ -56,6 +56,10 @@ func (s *jsiiProxy_SiteVerificationWebResource) validateInterpolationForAttribut
 	return nil
 }
 
+func (s *jsiiProxy_SiteVerificationWebResource) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SiteVerificationWebResource) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (s *jsiiProxy_SiteVerificationWebResource) validatePutSiteParameters(value 
 }
 
 func (s *jsiiProxy_SiteVerificationWebResource) validatePutTimeoutsParameters(value *SiteVerificationWebResourceTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SiteVerificationWebResource) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_SiteVerificationWebResource) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_SiteVerificationWebResource) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SiteVerificationWebResource) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

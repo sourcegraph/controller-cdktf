@@ -4,24 +4,24 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatastreamconnectionprofile/internal"
 )
 
 type GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CaCertificate() *string
 	SetCaCertificate(val *string)
 	CaCertificateInput() *string
-	CaCertificateSet() cdktf.IResolvable
+	CaCertificateSet() cdktn.IResolvable
 	ClientCertificate() *string
 	SetClientCertificate(val *string)
 	ClientCertificateInput() *string
-	ClientCertificateSet() cdktf.IResolvable
+	ClientCertificateSet() cdktn.IResolvable
 	ClientKey() *string
 	SetClientKey(val *string)
 	ClientKeyInput() *string
-	ClientKeySet() cdktf.IResolvable
+	ClientKeySet() cdktn.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -49,15 +49,15 @@ type GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference int
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +73,16 @@ type GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference int
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCaCertificate()
 	ResetClientCertificate()
 	ResetClientKey()
 	ResetSecretManagerStoredClientKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference int
 
 // The jsii proxy struct for GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference
 type jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference) CaCertificate() *string {
@@ -115,8 +115,8 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference) CaCertificateSet() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference) CaCertificateSet() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"caCertificateSet",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference) ClientCertificateSet() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference) ClientCertificateSet() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"clientCertificateSet",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference) ClientKeySet() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference) ClientKeySet() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"clientKeySet",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -276,7 +276,7 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutpu
 }
 
 
-func NewGoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference {
+func NewGoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -285,7 +285,7 @@ func NewGoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference(
 	j := jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference",
+		"@cdktn/provider-google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -293,11 +293,11 @@ func NewGoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference(
 	return &j
 }
 
-func NewGoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference_Override(g GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference_Override(g GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference",
+		"@cdktn/provider-google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -391,7 +391,7 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,11 +431,11 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -559,8 +559,8 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -572,16 +572,16 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -620,8 +620,8 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutpu
 	)
 }
 
-func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -629,7 +629,7 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileSslConfigOutpu
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

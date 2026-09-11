@@ -12,7 +12,7 @@ func (p *jsiiProxy_PolicyRuleMfaAppExcludeList) validateGetParameters(index *flo
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleMfaAppExcludeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyRuleMfaAppExcludeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PolicyRuleMfaAppExcludeList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleMfaAppExcludeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PolicyRuleMfaAppExcludeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PolicyRuleMfaAppExcludeList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewPolicyRuleMfaAppExcludeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPolicyRuleMfaAppExcludeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) validatePutInfrastruc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,11 +96,11 @@ func (j *jsiiProxy_GoogleDataplexTaskSparkOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskSparkOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataplexTaskSparkOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataplexTaskSparkOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataplexTaskSparkOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

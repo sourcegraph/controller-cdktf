@@ -12,7 +12,7 @@ func (e *jsiiProxy_EvidentlyLaunchExecutionList) validateGetParameters(index *fl
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunchExecutionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyLaunchExecutionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_EvidentlyLaunchExecutionList) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunchExecutionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EvidentlyLaunchExecutionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_EvidentlyLaunchExecutionList) validateSetWrapsSetParameters(v
 	return nil
 }
 
-func validateNewEvidentlyLaunchExecutionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEvidentlyLaunchExecutionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

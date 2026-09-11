@@ -56,6 +56,10 @@ func (d *jsiiProxy_DocumentAiProcessorDefaultVersion) validateInterpolationForAt
 	return nil
 }
 
+func (d *jsiiProxy_DocumentAiProcessorDefaultVersion) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocumentAiProcessorDefaultVersion) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DocumentAiProcessorDefaultVersion) validateOverrideLogicalIdP
 }
 
 func (d *jsiiProxy_DocumentAiProcessorDefaultVersion) validatePutTimeoutsParameters(value *DocumentAiProcessorDefaultVersionTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DocumentAiProcessorDefaultVersion) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_DocumentAiProcessorDefaultVersion) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DocumentAiProcessorDefaultVersion) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DocumentAiProcessorDefaultVersion) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

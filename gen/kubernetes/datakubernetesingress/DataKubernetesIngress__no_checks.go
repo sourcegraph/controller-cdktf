@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataKubernetesIngress) validatePutMetadataParameters(value *D
 	return nil
 }
 
+func (d *jsiiProxy_DataKubernetesIngress) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataKubernetesIngress_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataKubernetesIngress) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesIngress) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataKubernetesIngress) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

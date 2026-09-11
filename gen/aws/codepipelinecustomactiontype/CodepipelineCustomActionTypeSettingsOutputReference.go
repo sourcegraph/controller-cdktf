@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/codepipelinecustomactiontype/internal"
 )
 
 type CodepipelineCustomActionTypeSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type CodepipelineCustomActionTypeSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ThirdPartyConfigurationUrl() *string
 	SetThirdPartyConfigurationUrl(val *string)
 	ThirdPartyConfigurationUrlInput() *string
@@ -54,7 +54,7 @@ type CodepipelineCustomActionTypeSettingsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,16 +70,16 @@ type CodepipelineCustomActionTypeSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEntityUrlTemplate()
 	ResetExecutionUrlTemplate()
 	ResetRevisionUrlTemplate()
 	ResetThirdPartyConfigurationUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type CodepipelineCustomActionTypeSettingsOutputReference interface {
 
 // The jsii proxy struct for CodepipelineCustomActionTypeSettingsOutputReference
 type jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) ComplexObjectIndex() interface{} {
@@ -212,8 +212,8 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) ThirdPar
 }
 
 
-func NewCodepipelineCustomActionTypeSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CodepipelineCustomActionTypeSettingsOutputReference {
+func NewCodepipelineCustomActionTypeSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CodepipelineCustomActionTypeSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCodepipelineCustomActionTypeSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewCodepipelineCustomActionTypeSettingsOutputReference(terraformResource cd
 	j := jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeSettingsOutputReference",
+		"@cdktn/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewCodepipelineCustomActionTypeSettingsOutputReference(terraformResource cd
 	return &j
 }
 
-func NewCodepipelineCustomActionTypeSettingsOutputReference_Override(c CodepipelineCustomActionTypeSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCodepipelineCustomActionTypeSettingsOutputReference_Override(c CodepipelineCustomActionTypeSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeSettingsOutputReference",
+		"@cdktn/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -347,7 +347,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,11 +398,11 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) GetAnyMa
 	return returns
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -526,8 +526,8 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) GetStrin
 	return returns
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -539,16 +539,16 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) Interpol
 	return returns
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) ResetThi
 	)
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference) Resolve(
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

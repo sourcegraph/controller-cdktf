@@ -12,7 +12,7 @@ func (t *jsiiProxy_TeamAccessPermissionsList) validateGetParameters(index *float
 	return nil
 }
 
-func (t *jsiiProxy_TeamAccessPermissionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TeamAccessPermissionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_TeamAccessPermissionsList) validateSetTerraformAttributeParam
 	return nil
 }
 
-func (j *jsiiProxy_TeamAccessPermissionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TeamAccessPermissionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_TeamAccessPermissionsList) validateSetWrapsSetParameters(val 
 	return nil
 }
 
-func validateNewTeamAccessPermissionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewTeamAccessPermissionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

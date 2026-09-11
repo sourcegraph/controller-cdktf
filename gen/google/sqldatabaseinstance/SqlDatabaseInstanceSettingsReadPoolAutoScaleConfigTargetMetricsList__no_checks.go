@@ -12,7 +12,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetri
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetri
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetri
 	return nil
 }
 
-func validateNewSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

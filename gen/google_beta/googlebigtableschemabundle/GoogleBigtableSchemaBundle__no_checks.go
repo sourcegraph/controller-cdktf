@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleBigtableSchemaBundle) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigtableSchemaBundle) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigtableSchemaBundle) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleBigtableSchemaBundle) validatePutProtoSchemaParameters(
 }
 
 func (g *jsiiProxy_GoogleBigtableSchemaBundle) validatePutTimeoutsParameters(value *GoogleBigtableSchemaBundleTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigtableSchemaBundle) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleBigtableSchemaBundle) validateSetInstanceParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableSchemaBundle) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleBigtableSchemaBundle) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

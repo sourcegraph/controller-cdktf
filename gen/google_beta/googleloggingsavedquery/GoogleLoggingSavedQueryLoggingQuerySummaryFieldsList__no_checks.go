@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleLoggingSavedQueryLoggingQuerySummaryFieldsList) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingSavedQueryLoggingQuerySummaryFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleLoggingSavedQueryLoggingQuerySummaryFieldsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleLoggingSavedQueryLoggingQuerySummaryFieldsList) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingSavedQueryLoggingQuerySummaryFieldsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleLoggingSavedQueryLoggingQuerySummaryFieldsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleLoggingSavedQueryLoggingQuerySummaryFieldsList) validat
 	return nil
 }
 
-func validateNewGoogleLoggingSavedQueryLoggingQuerySummaryFieldsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleLoggingSavedQueryLoggingQuerySummaryFieldsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

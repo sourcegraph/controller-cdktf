@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleBillingBudgetAmountOutputReference) validateGetStringMa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBillingBudgetAmountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBillingBudgetAmountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleBillingBudgetAmountOutputReference) validatePutSpecifie
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBillingBudgetAmountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBillingBudgetAmountOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleBillingBudgetAmountOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAmountOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBillingBudgetAmountOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleBillingBudgetAmountOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBillingBudgetAmountOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

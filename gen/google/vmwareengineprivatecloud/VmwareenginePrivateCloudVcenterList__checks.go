@@ -5,7 +5,7 @@ package vmwareengineprivatecloud
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (v *jsiiProxy_VmwareenginePrivateCloudVcenterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (v *jsiiProxy_VmwareenginePrivateCloudVcenterList) validateGetParameters(in
 	return nil
 }
 
-func (v *jsiiProxy_VmwareenginePrivateCloudVcenterList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (v *jsiiProxy_VmwareenginePrivateCloudVcenterList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_VmwareenginePrivateCloudVcenterList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_VmwareenginePrivateCloudVcenterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VmwareenginePrivateCloudVcenterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_VmwareenginePrivateCloudVcenterList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewVmwareenginePrivateCloudVcenterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewVmwareenginePrivateCloudVcenterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

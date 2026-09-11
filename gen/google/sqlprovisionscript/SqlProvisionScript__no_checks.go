@@ -56,6 +56,10 @@ func (s *jsiiProxy_SqlProvisionScript) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (s *jsiiProxy_SqlProvisionScript) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlProvisionScript) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (s *jsiiProxy_SqlProvisionScript) validateMoveToIdParameters(id *string) er
 }
 
 func (s *jsiiProxy_SqlProvisionScript) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlProvisionScript) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_SqlProvisionScript) validateSetInstanceParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_SqlProvisionScript) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SqlProvisionScript) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

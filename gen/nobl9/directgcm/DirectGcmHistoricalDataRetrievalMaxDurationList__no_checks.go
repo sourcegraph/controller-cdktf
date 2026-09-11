@@ -12,7 +12,7 @@ func (d *jsiiProxy_DirectGcmHistoricalDataRetrievalMaxDurationList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DirectGcmHistoricalDataRetrievalMaxDurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectGcmHistoricalDataRetrievalMaxDurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DirectGcmHistoricalDataRetrievalMaxDurationList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DirectGcmHistoricalDataRetrievalMaxDurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DirectGcmHistoricalDataRetrievalMaxDurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DirectGcmHistoricalDataRetrievalMaxDurationList) validateSetW
 	return nil
 }
 
-func validateNewDirectGcmHistoricalDataRetrievalMaxDurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDirectGcmHistoricalDataRetrievalMaxDurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

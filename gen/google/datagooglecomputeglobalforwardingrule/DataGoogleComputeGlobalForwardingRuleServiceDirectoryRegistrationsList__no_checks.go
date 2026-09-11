@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistra
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistrationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistrationsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistra
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistrationsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistrationsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistra
 	return nil
 }
 
-func validateNewDataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistrationsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeGlobalForwardingRuleServiceDirectoryRegistrationsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

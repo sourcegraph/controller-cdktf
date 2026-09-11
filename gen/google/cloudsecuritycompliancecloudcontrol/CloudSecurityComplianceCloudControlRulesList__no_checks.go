@@ -12,7 +12,7 @@ func (c *jsiiProxy_CloudSecurityComplianceCloudControlRulesList) validateGetPara
 	return nil
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceCloudControlRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudSecurityComplianceCloudControlRulesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CloudSecurityComplianceCloudControlRulesList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceCloudControlRulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudSecurityComplianceCloudControlRulesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CloudSecurityComplianceCloudControlRulesList) validateSetWrap
 	return nil
 }
 
-func validateNewCloudSecurityComplianceCloudControlRulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCloudSecurityComplianceCloudControlRulesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

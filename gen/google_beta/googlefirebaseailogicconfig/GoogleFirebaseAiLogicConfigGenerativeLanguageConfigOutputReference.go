@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirebaseailogicconfig/internal"
 )
 
 type GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ApiKey() *string
 	SetApiKey(val *string)
 	ApiKeyInput() *string
@@ -43,15 +43,15 @@ type GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetApiKey()
 	ResetApiKeyWo()
 	ResetApiKeyWoVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference interfac
 
 // The jsii proxy struct for GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference
 type jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference) ApiKey() *string {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputRefe
 }
 
 
-func NewGoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference {
+func NewGoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewGoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference(terra
 	j := jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleFirebaseAiLogicConfig.GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference",
+		"@cdktn/provider-google-beta.googleFirebaseAiLogicConfig.GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewGoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference(terra
 	return &j
 }
 
-func NewGoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference_Override(g GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference_Override(g GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleFirebaseAiLogicConfig.GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference",
+		"@cdktn/provider-google-beta.googleFirebaseAiLogicConfig.GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (g *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -491,8 +491,8 @@ func (g *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -504,16 +504,16 @@ func (g *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (g *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputRefe
 	)
 }
 
-func (g *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (g *jsiiProxy_GoogleFirebaseAiLogicConfigGenerativeLanguageConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

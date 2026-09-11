@@ -5,18 +5,18 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecloudassetresourcessearchall/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_cloud_asset_resources_search_all google_cloud_asset_resources_search_all}.
 type DataGoogleCloudAssetResourcesSearchAll interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AssetTypes() *[]*string
 	SetAssetTypes(val *[]*string)
 	AssetTypesInput() *[]*string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -28,9 +28,9 @@ type DataGoogleCloudAssetResourcesSearchAll interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -39,15 +39,15 @@ type DataGoogleCloudAssetResourcesSearchAll interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	Query() *string
 	SetQuery(val *string)
 	QueryInput() *string
@@ -58,7 +58,7 @@ type DataGoogleCloudAssetResourcesSearchAll interface {
 	SetScope(val *string)
 	ScopeInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -68,7 +68,7 @@ type DataGoogleCloudAssetResourcesSearchAll interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -84,10 +84,23 @@ type DataGoogleCloudAssetResourcesSearchAll interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAssetTypes()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -106,11 +119,20 @@ type DataGoogleCloudAssetResourcesSearchAll interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataGoogleCloudAssetResourcesSearchAll
 type jsiiProxy_DataGoogleCloudAssetResourcesSearchAll struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) AssetTypes() *[]*string {
@@ -133,8 +155,8 @@ func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) AssetTypesInput() *[]
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -173,8 +195,8 @@ func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) DependsOn() *[]*strin
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -223,8 +245,8 @@ func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -243,8 +265,8 @@ func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) Node() constructs.Nod
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -313,8 +335,8 @@ func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) ScopeInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -354,7 +376,7 @@ func NewDataGoogleCloudAssetResourcesSearchAll(scope constructs.Construct, id *s
 	j := jsiiProxy_DataGoogleCloudAssetResourcesSearchAll{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
+		"@cdktn/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +389,7 @@ func NewDataGoogleCloudAssetResourcesSearchAll_Override(d DataGoogleCloudAssetRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
+		"@cdktn/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -403,7 +425,7 @@ func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll)SetDependsOn(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -422,7 +444,7 @@ func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +455,7 @@ func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll)SetLifecycle(val *cdkt
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -463,17 +485,17 @@ func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll)SetScope(val *string) 
 	)
 }
 
-// Generates CDKTF code for importing a DataGoogleCloudAssetResourcesSearchAll resource upon running "cdktf plan <stack-name>".
-func DataGoogleCloudAssetResourcesSearchAll_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataGoogleCloudAssetResourcesSearchAll resource upon running "cdktn plan <stack-name>".
+func DataGoogleCloudAssetResourcesSearchAll_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCloudAssetResourcesSearchAll_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
+		"@cdktn/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -508,7 +530,7 @@ func DataGoogleCloudAssetResourcesSearchAll_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
+		"@cdktn/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +549,7 @@ func DataGoogleCloudAssetResourcesSearchAll_IsTerraformDataSource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
+		"@cdktn/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -546,7 +568,7 @@ func DataGoogleCloudAssetResourcesSearchAll_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
+		"@cdktn/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -559,7 +581,7 @@ func DataGoogleCloudAssetResourcesSearchAll_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
+		"@cdktn/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
 		"tfResourceType",
 		&returns,
 	)
@@ -593,11 +615,11 @@ func (d *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) GetAnyMapAttribute(te
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -721,11 +743,11 @@ func (d *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) GetStringMapAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -745,6 +767,17 @@ func (d *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) OverrideLogicalId(new
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -852,6 +885,24 @@ func (d *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) ToTerraform() interfa
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

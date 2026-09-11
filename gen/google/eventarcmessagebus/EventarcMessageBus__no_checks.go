@@ -56,6 +56,10 @@ func (e *jsiiProxy_EventarcMessageBus) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (e *jsiiProxy_EventarcMessageBus) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventarcMessageBus) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (e *jsiiProxy_EventarcMessageBus) validatePutLoggingConfigParameters(value 
 }
 
 func (e *jsiiProxy_EventarcMessageBus) validatePutTimeoutsParameters(value *EventarcMessageBusTimeouts) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventarcMessageBus) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_EventarcMessageBus) validateSetLabelsParameters(val *map[stri
 	return nil
 }
 
-func (j *jsiiProxy_EventarcMessageBus) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EventarcMessageBus) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

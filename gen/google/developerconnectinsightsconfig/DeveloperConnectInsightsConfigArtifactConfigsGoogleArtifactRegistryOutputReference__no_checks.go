@@ -40,11 +40,11 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRe
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRe
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

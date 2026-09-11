@@ -56,6 +56,10 @@ func (s *jsiiProxy_SqlSslCert) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (s *jsiiProxy_SqlSslCert) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlSslCert) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_SqlSslCert) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (s *jsiiProxy_SqlSslCert) validatePutTimeoutsParameters(value *SqlSslCertTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlSslCert) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_SqlSslCert) validateSetInstanceParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_SqlSslCert) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SqlSslCert) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

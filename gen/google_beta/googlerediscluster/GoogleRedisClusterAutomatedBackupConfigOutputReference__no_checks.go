@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleRedisClusterAutomatedBackupConfigOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRedisClusterAutomatedBackupConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleRedisClusterAutomatedBackupConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleRedisClusterAutomatedBackupConfigOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRedisClusterAutomatedBackupConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleRedisClusterAutomatedBackupConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleRedisClusterAutomatedBackupConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisClusterAutomatedBackupConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleRedisClusterAutomatedBackupConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleRedisClusterAutomatedBackupConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleRedisClusterAutomatedBackupConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.opsworksStack.OpsworksStack",
+		"@cdktn/provider-aws.opsworksStack.OpsworksStack",
 		reflect.TypeOf((*OpsworksStack)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -67,6 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "manageBerkshelf", GoGetter: "ManageBerkshelf"},
 			_jsii_.MemberProperty{JsiiProperty: "manageBerkshelfInput", GoGetter: "ManageBerkshelfInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -81,6 +82,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAgentVersion", GoMethod: "ResetAgentVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBerkshelfVersion", GoMethod: "ResetBerkshelfVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetColor", GoMethod: "ResetColor"},
@@ -127,23 +129,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useOpsworksSecurityGroupsInput", GoGetter: "UseOpsworksSecurityGroupsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_OpsworksStack{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.opsworksStack.OpsworksStackConfig",
+		"@cdktn/provider-aws.opsworksStack.OpsworksStackConfig",
 		reflect.TypeOf((*OpsworksStackConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.opsworksStack.OpsworksStackCustomCookbooksSource",
+		"@cdktn/provider-aws.opsworksStack.OpsworksStackCustomCookbooksSource",
 		reflect.TypeOf((*OpsworksStackCustomCookbooksSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.opsworksStack.OpsworksStackCustomCookbooksSourceOutputReference",
+		"@cdktn/provider-aws.opsworksStack.OpsworksStackCustomCookbooksSourceOutputReference",
 		reflect.TypeOf((*OpsworksStackCustomCookbooksSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -186,16 +189,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.opsworksStack.OpsworksStackTimeouts",
+		"@cdktn/provider-aws.opsworksStack.OpsworksStackTimeouts",
 		reflect.TypeOf((*OpsworksStackTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.opsworksStack.OpsworksStackTimeoutsOutputReference",
+		"@cdktn/provider-aws.opsworksStack.OpsworksStackTimeoutsOutputReference",
 		reflect.TypeOf((*OpsworksStackTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -225,7 +228,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OpsworksStackTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

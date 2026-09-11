@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeSharedVpcHostProject) validateInterpolationForAttribut
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSharedVpcHostProject) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSharedVpcHostProject) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ComputeSharedVpcHostProject) validateOverrideLogicalIdParamet
 }
 
 func (c *jsiiProxy_ComputeSharedVpcHostProject) validatePutTimeoutsParameters(value *ComputeSharedVpcHostProjectTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSharedVpcHostProject) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_ComputeSharedVpcHostProject) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSharedVpcHostProject) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeSharedVpcHostProject) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

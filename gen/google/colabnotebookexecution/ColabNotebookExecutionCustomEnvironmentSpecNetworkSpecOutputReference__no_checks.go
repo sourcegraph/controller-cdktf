@@ -40,11 +40,11 @@ func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputR
 	return nil
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

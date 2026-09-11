@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageEventHandlersList) validateGetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxPageEventHandlersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxPageEventHandlersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageEventHandlersList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageEventHandlersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageEventHandlersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageEventHandlersList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewGoogleDialogflowCxPageEventHandlersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDialogflowCxPageEventHandlersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

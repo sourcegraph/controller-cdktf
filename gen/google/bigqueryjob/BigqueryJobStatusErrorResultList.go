@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigqueryjob/internal"
 )
 
 type BigqueryJobStatusErrorResultList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type BigqueryJobStatusErrorResultList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) BigqueryJobStatusErrorResultOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type BigqueryJobStatusErrorResultList interface {
 
 // The jsii proxy struct for BigqueryJobStatusErrorResultList
 type jsiiProxy_BigqueryJobStatusErrorResultList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_BigqueryJobStatusErrorResultList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_BigqueryJobStatusErrorResultList) TerraformAttribute() *strin
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryJobStatusErrorResultList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BigqueryJobStatusErrorResultList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_BigqueryJobStatusErrorResultList) WrapsSet() *bool {
 }
 
 
-func NewBigqueryJobStatusErrorResultList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BigqueryJobStatusErrorResultList {
+func NewBigqueryJobStatusErrorResultList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BigqueryJobStatusErrorResultList {
 	_init_.Initialize()
 
 	if err := validateNewBigqueryJobStatusErrorResultListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewBigqueryJobStatusErrorResultList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_BigqueryJobStatusErrorResultList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusErrorResultList",
+		"@cdktn/provider-google.bigqueryJob.BigqueryJobStatusErrorResultList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewBigqueryJobStatusErrorResultList(terraformResource cdktf.IInterpolatingP
 	return &j
 }
 
-func NewBigqueryJobStatusErrorResultList_Override(b BigqueryJobStatusErrorResultList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewBigqueryJobStatusErrorResultList_Override(b BigqueryJobStatusErrorResultList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusErrorResultList",
+		"@cdktn/provider-google.bigqueryJob.BigqueryJobStatusErrorResultList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_BigqueryJobStatusErrorResultList)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobStatusErrorResultList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryJobStatusErrorResultList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_BigqueryJobStatusErrorResultList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (b *jsiiProxy_BigqueryJobStatusErrorResultList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (b *jsiiProxy_BigqueryJobStatusErrorResultList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := b.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		b,
@@ -205,8 +208,8 @@ func (b *jsiiProxy_BigqueryJobStatusErrorResultList) Get(index *float64) Bigquer
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryJobStatusErrorResultList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BigqueryJobStatusErrorResultList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (b *jsiiProxy_BigqueryJobStatusErrorResultList) Resolve(_context cdktf.IRes
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

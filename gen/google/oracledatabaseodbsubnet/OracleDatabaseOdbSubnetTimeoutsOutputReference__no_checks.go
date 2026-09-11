@@ -40,11 +40,11 @@ func (o *jsiiProxy_OracleDatabaseOdbSubnetTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseOdbSubnetTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OracleDatabaseOdbSubnetTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseOdbSubnetTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OracleDatabaseOdbSubnetTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_OracleDatabaseOdbSubnetTimeoutsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbSubnetTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OracleDatabaseOdbSubnetTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_OracleDatabaseOdbSubnetTimeoutsOutputReference) validateSetUp
 	return nil
 }
 
-func validateNewOracleDatabaseOdbSubnetTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOracleDatabaseOdbSubnetTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigAmbientSoundConfigOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_CesAppAudioProcessingConfigAmbientSoundConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAppAudioProcessingConfigAmbientSoundConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesAppAudioProcessingConfigAmbientSoundConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppAudioProcessingConfigAmbientSoundConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_CesAppAudioProcessingConfigAmbientSoundConfigOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_CesAppAudioProcessingConfigAmbientSoundConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppAudioProcessingConfigAmbientSoundConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CesAppAudioProcessingConfigAmbientSoundConfigOutputReference)
 	return nil
 }
 
-func validateNewCesAppAudioProcessingConfigAmbientSoundConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesAppAudioProcessingConfigAmbientSoundConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

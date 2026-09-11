@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/ekscluster/internal"
 )
 
 type EksClusterVpcConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ClusterSecurityGroupId() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -50,16 +50,16 @@ type EksClusterVpcConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VpcId() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -75,16 +75,16 @@ type EksClusterVpcConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEndpointPrivateAccess()
 	ResetEndpointPublicAccess()
 	ResetPublicAccessCidrs()
 	ResetSecurityGroupIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,7 +94,7 @@ type EksClusterVpcConfigOutputReference interface {
 
 // The jsii proxy struct for EksClusterVpcConfigOutputReference
 type jsiiProxy_EksClusterVpcConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EksClusterVpcConfigOutputReference) ClusterSecurityGroupId() *string {
@@ -267,8 +267,8 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference) TerraformAttribute() *str
 	return returns
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -288,7 +288,7 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference) VpcId() *string {
 }
 
 
-func NewEksClusterVpcConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EksClusterVpcConfigOutputReference {
+func NewEksClusterVpcConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EksClusterVpcConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEksClusterVpcConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -297,7 +297,7 @@ func NewEksClusterVpcConfigOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_EksClusterVpcConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.eksCluster.EksClusterVpcConfigOutputReference",
+		"@cdktn/provider-aws.eksCluster.EksClusterVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -305,11 +305,11 @@ func NewEksClusterVpcConfigOutputReference(terraformResource cdktf.IInterpolatin
 	return &j
 }
 
-func NewEksClusterVpcConfigOutputReference_Override(e EksClusterVpcConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEksClusterVpcConfigOutputReference_Override(e EksClusterVpcConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.eksCluster.EksClusterVpcConfigOutputReference",
+		"@cdktn/provider-aws.eksCluster.EksClusterVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -414,7 +414,7 @@ func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EksClusterVpcConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,11 +454,11 @@ func (e *jsiiProxy_EksClusterVpcConfigOutputReference) GetAnyMapAttribute(terraf
 	return returns
 }
 
-func (e *jsiiProxy_EksClusterVpcConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EksClusterVpcConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -582,8 +582,8 @@ func (e *jsiiProxy_EksClusterVpcConfigOutputReference) GetStringMapAttribute(ter
 	return returns
 }
 
-func (e *jsiiProxy_EksClusterVpcConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EksClusterVpcConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -595,16 +595,16 @@ func (e *jsiiProxy_EksClusterVpcConfigOutputReference) InterpolationAsList() cdk
 	return returns
 }
 
-func (e *jsiiProxy_EksClusterVpcConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EksClusterVpcConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -643,8 +643,8 @@ func (e *jsiiProxy_EksClusterVpcConfigOutputReference) ResetSecurityGroupIds() {
 	)
 }
 
-func (e *jsiiProxy_EksClusterVpcConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EksClusterVpcConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -652,7 +652,7 @@ func (e *jsiiProxy_EksClusterVpcConfigOutputReference) Resolve(_context cdktf.IR
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

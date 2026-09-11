@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) validateInterpolationForAt
 	return nil
 }
 
+func (d *jsiiProxy_DataprocGdcApplicationEnvironment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocGdcApplicationEnvironment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) validatePutSparkApplicatio
 }
 
 func (d *jsiiProxy_DataprocGdcApplicationEnvironment) validatePutTimeoutsParameters(value *DataprocGdcApplicationEnvironmentTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocGdcApplicationEnvironment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment) validateSetLabelsParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

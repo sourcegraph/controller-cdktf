@@ -12,7 +12,7 @@ func (a *jsiiProxy_AlloydbClusterMigrationSourceList) validateGetParameters(inde
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterMigrationSourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbClusterMigrationSourceList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_AlloydbClusterMigrationSourceList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbClusterMigrationSourceList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlloydbClusterMigrationSourceList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_AlloydbClusterMigrationSourceList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewAlloydbClusterMigrationSourceListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAlloydbClusterMigrationSourceListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

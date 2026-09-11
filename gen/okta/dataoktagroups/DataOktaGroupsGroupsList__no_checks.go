@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataOktaGroupsGroupsList) validateGetParameters(index *float6
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaGroupsGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaGroupsGroupsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataOktaGroupsGroupsList) validateSetTerraformAttributeParame
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaGroupsGroupsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataOktaGroupsGroupsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataOktaGroupsGroupsList) validateSetWrapsSetParameters(val *
 	return nil
 }
 
-func validateNewDataOktaGroupsGroupsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataOktaGroupsGroupsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

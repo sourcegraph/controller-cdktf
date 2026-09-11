@@ -12,7 +12,7 @@ func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) validat
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) validat
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) validat
 	return nil
 }
 
-func validateNewS3BucketLifecycleRuleNoncurrentVersionTransitionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewS3BucketLifecycleRuleNoncurrentVersionTransitionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

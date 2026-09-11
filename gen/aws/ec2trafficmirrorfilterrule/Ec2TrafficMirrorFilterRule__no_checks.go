@@ -56,6 +56,10 @@ func (e *jsiiProxy_Ec2TrafficMirrorFilterRule) validateInterpolationForAttribute
 	return nil
 }
 
+func (e *jsiiProxy_Ec2TrafficMirrorFilterRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TrafficMirrorFilterRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (e *jsiiProxy_Ec2TrafficMirrorFilterRule) validatePutDestinationPortRangePa
 }
 
 func (e *jsiiProxy_Ec2TrafficMirrorFilterRule) validatePutSourcePortRangeParameters(value *Ec2TrafficMirrorFilterRuleSourcePortRange) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2TrafficMirrorFilterRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_Ec2TrafficMirrorFilterRule) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TrafficMirrorFilterRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Ec2TrafficMirrorFilterRule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

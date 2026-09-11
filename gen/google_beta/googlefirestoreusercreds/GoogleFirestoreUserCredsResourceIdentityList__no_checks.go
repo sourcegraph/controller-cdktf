@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleFirestoreUserCredsResourceIdentityList) validateGetPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirestoreUserCredsResourceIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirestoreUserCredsResourceIdentityList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleFirestoreUserCredsResourceIdentityList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirestoreUserCredsResourceIdentityList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirestoreUserCredsResourceIdentityList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleFirestoreUserCredsResourceIdentityList) validateSetWrap
 	return nil
 }
 
-func validateNewGoogleFirestoreUserCredsResourceIdentityListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleFirestoreUserCredsResourceIdentityListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (o *jsiiProxy_OpsworksGangliaLayer) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksGangliaLayer) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksGangliaLayer) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (o *jsiiProxy_OpsworksGangliaLayer) validatePutEbsVolumeParameters(value in
 }
 
 func (o *jsiiProxy_OpsworksGangliaLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksGangliaLayerLoadBasedAutoScaling) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksGangliaLayer) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -172,7 +180,7 @@ func (j *jsiiProxy_OpsworksGangliaLayer) validateSetInstanceShutdownTimeoutParam
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayer) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_OpsworksGangliaLayer) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

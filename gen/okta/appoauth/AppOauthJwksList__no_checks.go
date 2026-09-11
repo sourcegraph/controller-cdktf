@@ -12,7 +12,7 @@ func (a *jsiiProxy_AppOauthJwksList) validateGetParameters(index *float64) error
 	return nil
 }
 
-func (a *jsiiProxy_AppOauthJwksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppOauthJwksList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AppOauthJwksList) validateSetTerraformAttributeParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_AppOauthJwksList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppOauthJwksList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AppOauthJwksList) validateSetWrapsSetParameters(val *bool) er
 	return nil
 }
 
-func validateNewAppOauthJwksListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAppOauthJwksListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

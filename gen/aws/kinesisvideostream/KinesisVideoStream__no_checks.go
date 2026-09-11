@@ -56,6 +56,10 @@ func (k *jsiiProxy_KinesisVideoStream) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (k *jsiiProxy_KinesisVideoStream) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisVideoStream) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (k *jsiiProxy_KinesisVideoStream) validateOverrideLogicalIdParameters(newLo
 }
 
 func (k *jsiiProxy_KinesisVideoStream) validatePutTimeoutsParameters(value *KinesisVideoStreamTimeouts) error {
+	return nil
+}
+
+func (k *jsiiProxy_KinesisVideoStream) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_KinesisVideoStream) validateSetKmsKeyIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_KinesisVideoStream) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KinesisVideoStream) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

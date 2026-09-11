@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/memorystoreinstance/internal"
 )
 
 type MemorystoreInstanceCrossInstanceReplicationConfigMembershipList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type MemorystoreInstanceCrossInstanceReplicationConfigMembershipList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) MemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type MemorystoreInstanceCrossInstanceReplicationConfigMembershipList interface {
 
 // The jsii proxy struct for MemorystoreInstanceCrossInstanceReplicationConfigMembershipList
 type jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipLi
 	return returns
 }
 
-func (j *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipLi
 }
 
 
-func NewMemorystoreInstanceCrossInstanceReplicationConfigMembershipList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MemorystoreInstanceCrossInstanceReplicationConfigMembershipList {
+func NewMemorystoreInstanceCrossInstanceReplicationConfigMembershipList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MemorystoreInstanceCrossInstanceReplicationConfigMembershipList {
 	_init_.Initialize()
 
 	if err := validateNewMemorystoreInstanceCrossInstanceReplicationConfigMembershipListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewMemorystoreInstanceCrossInstanceReplicationConfigMembershipList(terrafor
 	j := jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigMembershipList",
+		"@cdktn/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigMembershipList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewMemorystoreInstanceCrossInstanceReplicationConfigMembershipList(terrafor
 	return &j
 }
 
-func NewMemorystoreInstanceCrossInstanceReplicationConfigMembershipList_Override(m MemorystoreInstanceCrossInstanceReplicationConfigMembershipList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewMemorystoreInstanceCrossInstanceReplicationConfigMembershipList_Override(m MemorystoreInstanceCrossInstanceReplicationConfigMembershipList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigMembershipList",
+		"@cdktn/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigMembershipList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipLi
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipLi
 	)
 }
 
-func (m *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (m *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := m.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		m,
@@ -205,8 +208,8 @@ func (m *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipLi
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (m *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipLi
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

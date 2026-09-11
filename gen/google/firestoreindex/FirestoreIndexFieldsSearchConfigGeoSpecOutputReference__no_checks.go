@@ -40,11 +40,11 @@ func (f *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) valid
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewFirestoreIndexFieldsSearchConfigGeoSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFirestoreIndexFieldsSearchConfigGeoSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

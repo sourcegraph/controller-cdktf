@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesToolsetOpenApiToolsetApiAuthenticationOauthConfigOut
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesToolsetOpenApiToolsetApiAuthenticationOauthConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesToolsetOpenApiToolsetApiAuthenticationOauthConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesToolsetOpenApiToolsetApiAuthenticationOauthConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesToolsetOpenApiToolsetApiAuthenticationOauthConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleCesToolsetOpenApiToolsetApiAuthenticationOauthConfigOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesToolsetOpenApiToolsetApiAuthenticationOauthConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesToolsetOpenApiToolsetApiAuthenticationOauthConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_GoogleCesToolsetOpenApiToolsetApiAuthenticationOauthConfigOut
 	return nil
 }
 
-func validateNewGoogleCesToolsetOpenApiToolsetApiAuthenticationOauthConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesToolsetOpenApiToolsetApiAuthenticationOauthConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

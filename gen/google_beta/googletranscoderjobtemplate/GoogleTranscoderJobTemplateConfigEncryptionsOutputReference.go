@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googletranscoderjobtemplate/internal"
 )
 
 type GoogleTranscoderJobTemplateConfigEncryptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Aes128() GoogleTranscoderJobTemplateConfigEncryptionsAes128OutputReference
 	Aes128Input() *GoogleTranscoderJobTemplateConfigEncryptionsAes128
 	// the index of the complex object in a list.
@@ -47,15 +47,15 @@ type GoogleTranscoderJobTemplateConfigEncryptionsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,9 +71,9 @@ type GoogleTranscoderJobTemplateConfigEncryptionsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAes128(value *GoogleTranscoderJobTemplateConfigEncryptionsAes128)
 	PutDrmSystems(value *GoogleTranscoderJobTemplateConfigEncryptionsDrmSystems)
 	PutMpegCenc(value *GoogleTranscoderJobTemplateConfigEncryptionsMpegCenc)
@@ -86,7 +86,7 @@ type GoogleTranscoderJobTemplateConfigEncryptionsOutputReference interface {
 	ResetSecretManagerKeySource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type GoogleTranscoderJobTemplateConfigEncryptionsOutputReference interface {
 
 // The jsii proxy struct for GoogleTranscoderJobTemplateConfigEncryptionsOutputReference
 type jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) Aes128() GoogleTranscoderJobTemplateConfigEncryptionsAes128OutputReference {
@@ -279,8 +279,8 @@ func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -290,7 +290,7 @@ func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) 
 }
 
 
-func NewGoogleTranscoderJobTemplateConfigEncryptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleTranscoderJobTemplateConfigEncryptionsOutputReference {
+func NewGoogleTranscoderJobTemplateConfigEncryptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleTranscoderJobTemplateConfigEncryptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleTranscoderJobTemplateConfigEncryptionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -299,7 +299,7 @@ func NewGoogleTranscoderJobTemplateConfigEncryptionsOutputReference(terraformRes
 	j := jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsOutputReference",
+		"@cdktn/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -307,11 +307,11 @@ func NewGoogleTranscoderJobTemplateConfigEncryptionsOutputReference(terraformRes
 	return &j
 }
 
-func NewGoogleTranscoderJobTemplateConfigEncryptionsOutputReference_Override(g GoogleTranscoderJobTemplateConfigEncryptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleTranscoderJobTemplateConfigEncryptionsOutputReference_Override(g GoogleTranscoderJobTemplateConfigEncryptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsOutputReference",
+		"@cdktn/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -372,7 +372,7 @@ func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,11 +412,11 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -540,8 +540,8 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -553,16 +553,16 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -664,8 +664,8 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) 
 	)
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -673,7 +673,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppDataStoreSettingsEnginesList) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppDataStoreSettingsEnginesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppDataStoreSettingsEnginesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppDataStoreSettingsEnginesList) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppDataStoreSettingsEnginesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppDataStoreSettingsEnginesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppDataStoreSettingsEnginesList) v
 	return nil
 }
 
-func validateNewGoogleCesAppVersionSnapshotAppDataStoreSettingsEnginesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCesAppVersionSnapshotAppDataStoreSettingsEnginesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

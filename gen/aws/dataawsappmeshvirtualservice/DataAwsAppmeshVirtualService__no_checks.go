@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsAppmeshVirtualService) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsAppmeshVirtualService) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsAppmeshVirtualService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataAwsAppmeshVirtualService) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAppmeshVirtualService) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsAppmeshVirtualService) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

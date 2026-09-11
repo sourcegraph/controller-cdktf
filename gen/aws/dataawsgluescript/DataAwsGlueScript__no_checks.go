@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataAwsGlueScript) validatePutDagNodeParameters(value interfa
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsGlueScript) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsGlueScript_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,7 +92,7 @@ func (j *jsiiProxy_DataAwsGlueScript) validateSetLanguageParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlueScript) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsGlueScript) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

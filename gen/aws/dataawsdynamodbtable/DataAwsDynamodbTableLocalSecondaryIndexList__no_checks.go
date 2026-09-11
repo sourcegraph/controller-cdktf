@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsDynamodbTableLocalSecondaryIndexList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDynamodbTableLocalSecondaryIndexList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDynamodbTableLocalSecondaryIndexList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsDynamodbTableLocalSecondaryIndexList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDynamodbTableLocalSecondaryIndexList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsDynamodbTableLocalSecondaryIndexList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsDynamodbTableLocalSecondaryIndexList) validateSetWraps
 	return nil
 }
 
-func validateNewDataAwsDynamodbTableLocalSecondaryIndexListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsDynamodbTableLocalSecondaryIndexListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

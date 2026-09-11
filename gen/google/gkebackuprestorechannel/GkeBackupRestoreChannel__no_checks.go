@@ -56,6 +56,10 @@ func (g *jsiiProxy_GkeBackupRestoreChannel) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GkeBackupRestoreChannel) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeBackupRestoreChannel) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GkeBackupRestoreChannel) validateOverrideLogicalIdParameters(
 }
 
 func (g *jsiiProxy_GkeBackupRestoreChannel) validatePutTimeoutsParameters(value *GkeBackupRestoreChannelTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeBackupRestoreChannel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GkeBackupRestoreChannel) validateSetLabelsParameters(val *map
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestoreChannel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GkeBackupRestoreChannel) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -1,12 +1,12 @@
 # controller-cdktf
 
-This repo contains the generated code for [cdktf](https://github.com/hashicorp/terraform-cdk) in Go. The implementation is being developed in [sourcegraph/controller].
+This repo contains the generated Go code for [CDK-Terrain](https://github.com/open-constructs/cdk-terrain), the open source successor to CDK for Terraform (CDKTF). The implementation is being developed in [sourcegraph/controller]. The repository name and generated Go module paths retain `cdktf` for compatibility with existing consumers.
 
 This package is only used internally at Sourcegraph - the generated code is public for ease of use and avoid performance issue with large amount of generated content being tracked in a Git repository.
 
 ## Usage
 
-### Adding a new provider or module to CDKTF
+### Adding a new provider or module to CDK-Terrain
 
 Follow https://github.com/sourcegraph/cdktf-provider-gen#usage
 
@@ -14,16 +14,16 @@ Follow https://github.com/sourcegraph/cdktf-provider-gen#usage
 make <target>
 ```
 
-### Upgrading CDKTF
+### Upgrading CDK-Terrain
 
-Review the [changelog](https://developer.hashicorp.com/terraform/cdktf/release#upgrade-guides) of the target release.
+Review the [CDK-Terrain changelog](https://github.com/open-constructs/cdk-terrain/blob/main/CHANGELOG.md) of the target release.
 Watch out for breaking changes and adjust the upgrade plan if neccessary.
 
-Bumpd `CDKTF_VERSION` in `Makefile`:
+Bump `CDKTN_VERSION` in `Makefile`:
 
 ```diff
--CDKTF_VERSION=0.16.3
-+CDKTF_VERSION=0.19.2
+-CDKTN_VERSION=0.24.0
++CDKTN_VERSION=0.25.0
 ```
 
 Re-generate all providers and modules:

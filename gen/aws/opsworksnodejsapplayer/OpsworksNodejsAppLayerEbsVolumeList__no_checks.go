@@ -12,7 +12,7 @@ func (o *jsiiProxy_OpsworksNodejsAppLayerEbsVolumeList) validateGetParameters(in
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksNodejsAppLayerEbsVolumeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksNodejsAppLayerEbsVolumeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_OpsworksNodejsAppLayerEbsVolumeList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksNodejsAppLayerEbsVolumeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksNodejsAppLayerEbsVolumeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_OpsworksNodejsAppLayerEbsVolumeList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewOpsworksNodejsAppLayerEbsVolumeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewOpsworksNodejsAppLayerEbsVolumeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.provider.GoogleProvider",
+		"@cdktn/provider-google.provider.GoogleProvider",
 		reflect.TypeOf((*GoogleProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessApprovalCustomEndpoint", GoGetter: "AccessApprovalCustomEndpoint"},
@@ -332,6 +332,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "redisCustomEndpointInput", GoGetter: "RedisCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "requestReason", GoGetter: "RequestReason"},
 			_jsii_.MemberProperty{JsiiProperty: "requestReasonInput", GoGetter: "RequestReasonInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requestTimeout", GoGetter: "RequestTimeout"},
@@ -611,6 +612,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vmwareengineCustomEndpointInput", GoGetter: "VmwareengineCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcAccessCustomEndpoint", GoGetter: "VpcAccessCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcAccessCustomEndpointInput", GoGetter: "VpcAccessCustomEndpointInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workbenchCustomEndpoint", GoGetter: "WorkbenchCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "workbenchCustomEndpointInput", GoGetter: "WorkbenchCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workflowsCustomEndpoint", GoGetter: "WorkflowsCustomEndpoint"},
@@ -624,20 +626,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleProvider{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformProvider)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.provider.GoogleProviderBatching",
+		"@cdktn/provider-google.provider.GoogleProviderBatching",
 		reflect.TypeOf((*GoogleProviderBatching)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.provider.GoogleProviderConfig",
+		"@cdktn/provider-google.provider.GoogleProviderConfig",
 		reflect.TypeOf((*GoogleProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.provider.GoogleProviderExternalCredentials",
+		"@cdktn/provider-google.provider.GoogleProviderExternalCredentials",
 		reflect.TypeOf((*GoogleProviderExternalCredentials)(nil)).Elem(),
 	)
 }

@@ -40,11 +40,11 @@ func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterTagFilterOutputRefe
 	return nil
 }
 
-func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterTagFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterTagFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterTagFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterTagFilterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterTagFilterOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterTagFilterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterTagFilterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterTagFilterOutputRefe
 	return nil
 }
 
-func validateNewPollerCloudwatchMetricsQueryResourceFilterTagFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPollerCloudwatchMetricsQueryResourceFilterTagFilterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

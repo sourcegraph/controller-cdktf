@@ -40,11 +40,11 @@ func (t *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) validateGetStri
 	return nil
 }
 
-func (t *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTunnelConfigConfigIngressRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewTunnelConfigConfigIngressRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

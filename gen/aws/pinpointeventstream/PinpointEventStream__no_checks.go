@@ -56,6 +56,10 @@ func (p *jsiiProxy_PinpointEventStream) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (p *jsiiProxy_PinpointEventStream) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PinpointEventStream) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (p *jsiiProxy_PinpointEventStream) validateMoveToIdParameters(id *string) e
 }
 
 func (p *jsiiProxy_PinpointEventStream) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PinpointEventStream) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_PinpointEventStream) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_PinpointEventStream) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PinpointEventStream) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

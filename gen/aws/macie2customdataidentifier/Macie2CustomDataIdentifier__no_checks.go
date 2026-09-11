@@ -56,6 +56,10 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) validateInterpolationForAttribute
 	return nil
 }
 
+func (m *jsiiProxy_Macie2CustomDataIdentifier) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2CustomDataIdentifier) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) validateMoveToIdParameters(id *st
 }
 
 func (m *jsiiProxy_Macie2CustomDataIdentifier) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2CustomDataIdentifier) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier) validateSetKeywordsParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_Macie2CustomDataIdentifier) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Macie2CustomDataIdentifier) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

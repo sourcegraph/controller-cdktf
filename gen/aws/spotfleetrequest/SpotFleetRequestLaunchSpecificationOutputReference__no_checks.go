@@ -40,7 +40,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) validateG
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) validateP
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -132,7 +132,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -148,7 +148,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) validateS
 	return nil
 }
 
-func validateNewSpotFleetRequestLaunchSpecificationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSpotFleetRequestLaunchSpecificationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

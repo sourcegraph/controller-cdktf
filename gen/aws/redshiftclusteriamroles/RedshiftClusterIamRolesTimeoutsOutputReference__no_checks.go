@@ -40,11 +40,11 @@ func (r *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateSetUp
 	return nil
 }
 
-func validateNewRedshiftClusterIamRolesTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRedshiftClusterIamRolesTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

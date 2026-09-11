@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfigSecretsOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfigSecretsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfigSecretsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfigSecretsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfigSecretsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleCloudbuildBitbucketServerConfigSecretsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildBitbucketServerConfigSecretsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudbuildBitbucketServerConfigSecretsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleCloudbuildBitbucketServerConfigSecretsOutputReference) 
 	return nil
 }
 
-func validateNewGoogleCloudbuildBitbucketServerConfigSecretsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCloudbuildBitbucketServerConfigSecretsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

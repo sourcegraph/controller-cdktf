@@ -40,11 +40,11 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) validateGe
 	return nil
 }
 
-func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) validateSe
 	return nil
 }
 
-func validateNewUserAgentBlockingRuleConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewUserAgentBlockingRuleConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

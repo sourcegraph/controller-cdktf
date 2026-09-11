@@ -40,11 +40,11 @@ func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) validateSetTypeParamet
 	return nil
 }
 
-func validateNewSpectrumApplicationDnsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSpectrumApplicationDnsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (a *jsiiProxy_AlbTargetGroupTargetFailoverList) validateGetParameters(index
 	return nil
 }
 
-func (a *jsiiProxy_AlbTargetGroupTargetFailoverList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbTargetGroupTargetFailoverList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AlbTargetGroupTargetFailoverList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_AlbTargetGroupTargetFailoverList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlbTargetGroupTargetFailoverList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AlbTargetGroupTargetFailoverList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewAlbTargetGroupTargetFailoverListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAlbTargetGroupTargetFailoverListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

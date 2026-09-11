@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/daemonset/internal"
 )
 
 type DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ClaimName() *string
 	SetClaimName(val *string)
 	ClaimNameInput() *string
@@ -40,15 +40,15 @@ type DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetClaimName()
 	ResetReadOnly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference interfa
 
 // The jsii proxy struct for DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference
 type jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference) ClaimName() *string {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputRef
 }
 
 
-func NewDaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference {
+func NewDaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewDaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference(terr
 	j := jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
+		"@cdktn/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewDaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference(terr
 	return &j
 }
 
-func NewDaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference_Override(d DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference_Override(d DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
+		"@cdktn/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputRef
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -456,8 +456,8 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -469,16 +469,16 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputRef
 	)
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumePersistentVolumeClaimOutputRef
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

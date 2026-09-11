@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/iotthinggroup/internal"
 )
 
 type IotThingGroupPropertiesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AttributePayload() IotThingGroupPropertiesAttributePayloadOutputReference
 	AttributePayloadInput() *IotThingGroupPropertiesAttributePayload
 	// the index of the complex object in a list.
@@ -39,15 +39,15 @@ type IotThingGroupPropertiesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,15 +63,15 @@ type IotThingGroupPropertiesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAttributePayload(value *IotThingGroupPropertiesAttributePayload)
 	ResetAttributePayload()
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type IotThingGroupPropertiesOutputReference interface {
 
 // The jsii proxy struct for IotThingGroupPropertiesOutputReference
 type jsiiProxy_IotThingGroupPropertiesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IotThingGroupPropertiesOutputReference) AttributePayload() IotThingGroupPropertiesAttributePayloadOutputReference {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_IotThingGroupPropertiesOutputReference) TerraformAttribute() 
 	return returns
 }
 
-func (j *jsiiProxy_IotThingGroupPropertiesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IotThingGroupPropertiesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_IotThingGroupPropertiesOutputReference) TerraformResource() c
 }
 
 
-func NewIotThingGroupPropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IotThingGroupPropertiesOutputReference {
+func NewIotThingGroupPropertiesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) IotThingGroupPropertiesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIotThingGroupPropertiesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewIotThingGroupPropertiesOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_IotThingGroupPropertiesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.iotThingGroup.IotThingGroupPropertiesOutputReference",
+		"@cdktn/provider-aws.iotThingGroup.IotThingGroupPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewIotThingGroupPropertiesOutputReference(terraformResource cdktf.IInterpol
 	return &j
 }
 
-func NewIotThingGroupPropertiesOutputReference_Override(i IotThingGroupPropertiesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIotThingGroupPropertiesOutputReference_Override(i IotThingGroupPropertiesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.iotThingGroup.IotThingGroupPropertiesOutputReference",
+		"@cdktn/provider-aws.iotThingGroup.IotThingGroupPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_IotThingGroupPropertiesOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_IotThingGroupPropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IotThingGroupPropertiesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -317,11 +317,11 @@ func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) GetAnyMapAttribute(te
 	return returns
 }
 
-func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -445,8 +445,8 @@ func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) GetStringMapAttribute
 	return returns
 }
 
-func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -458,16 +458,16 @@ func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) ResetDescription() {
 	)
 }
 
-func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) Resolve(_context cdkt
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

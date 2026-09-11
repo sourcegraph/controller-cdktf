@@ -40,7 +40,7 @@ func (b *jsiiProxy_BiglakeTableHiveOptionsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (b *jsiiProxy_BiglakeTableHiveOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BiglakeTableHiveOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (b *jsiiProxy_BiglakeTableHiveOptionsOutputReference) validatePutStorageDes
 	return nil
 }
 
-func (b *jsiiProxy_BiglakeTableHiveOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BiglakeTableHiveOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_BiglakeTableHiveOptionsOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeTableHiveOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BiglakeTableHiveOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBiglakeTableHiveOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBiglakeTableHiveOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

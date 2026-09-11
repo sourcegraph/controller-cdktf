@@ -12,7 +12,7 @@ func (s *jsiiProxy_ServiceV1SpecPortList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (s *jsiiProxy_ServiceV1SpecPortList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceV1SpecPortList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ServiceV1SpecPortList) validateSetTerraformAttributeParameter
 	return nil
 }
 
-func (j *jsiiProxy_ServiceV1SpecPortList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ServiceV1SpecPortList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ServiceV1SpecPortList) validateSetWrapsSetParameters(val *boo
 	return nil
 }
 
-func validateNewServiceV1SpecPortListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewServiceV1SpecPortListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

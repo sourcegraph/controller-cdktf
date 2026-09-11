@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeInstanceTemplate) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceTemplate) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceTemplate) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (c *jsiiProxy_ComputeInstanceTemplate) validatePutTimeoutsParameters(value 
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceTemplate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateComputeInstanceTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -164,7 +172,7 @@ func (j *jsiiProxy_ComputeInstanceTemplate) validateSetLabelsParameters(val *map
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeInstanceTemplate) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

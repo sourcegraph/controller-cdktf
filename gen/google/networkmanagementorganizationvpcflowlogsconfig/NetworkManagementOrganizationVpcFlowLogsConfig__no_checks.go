@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateInter
 	return nil
 }
 
+func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateOverr
 }
 
 func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validatePutTimeoutsParameters(value *NetworkManagementOrganizationVpcFlowLogsConfigTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateSetLa
 	return nil
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

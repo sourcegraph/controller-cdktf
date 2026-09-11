@@ -40,7 +40,7 @@ func (c *jsiiProxy_CesToolDataStoreToolModalityConfigsRewriterConfigOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_CesToolDataStoreToolModalityConfigsRewriterConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesToolDataStoreToolModalityConfigsRewriterConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CesToolDataStoreToolModalityConfigsRewriterConfigOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_CesToolDataStoreToolModalityConfigsRewriterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesToolDataStoreToolModalityConfigsRewriterConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_CesToolDataStoreToolModalityConfigsRewriterConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolModalityConfigsRewriterConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesToolDataStoreToolModalityConfigsRewriterConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesToolDataStoreToolModalityConfigsRewriterConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesToolDataStoreToolModalityConfigsRewriterConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

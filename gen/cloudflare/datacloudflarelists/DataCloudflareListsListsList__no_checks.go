@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataCloudflareListsListsList) validateGetParameters(index *fl
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareListsListsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareListsListsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataCloudflareListsListsList) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareListsListsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataCloudflareListsListsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataCloudflareListsListsList) validateSetWrapsSetParameters(v
 	return nil
 }
 
-func validateNewDataCloudflareListsListsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataCloudflareListsListsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

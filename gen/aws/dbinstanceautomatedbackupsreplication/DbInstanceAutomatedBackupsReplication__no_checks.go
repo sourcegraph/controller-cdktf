@@ -56,6 +56,10 @@ func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateInterpolationF
 	return nil
 }
 
+func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateOverrideLogica
 }
 
 func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validatePutTimeoutsParameters(value *DbInstanceAutomatedBackupsReplicationTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateSetKmsKeyIdPar
 	return nil
 }
 
-func (j *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

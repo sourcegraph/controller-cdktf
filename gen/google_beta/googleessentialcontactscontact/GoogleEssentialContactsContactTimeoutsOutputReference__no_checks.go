@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleEssentialContactsContactTimeoutsOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEssentialContactsContactTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleEssentialContactsContactTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEssentialContactsContactTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleEssentialContactsContactTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleEssentialContactsContactTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEssentialContactsContactTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleEssentialContactsContactTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleEssentialContactsContactTimeoutsOutputReference) valida
 	return nil
 }
 
-func validateNewGoogleEssentialContactsContactTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleEssentialContactsContactTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

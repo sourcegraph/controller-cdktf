@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleVertexAiIndexIndexStatsList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVertexAiIndexIndexStatsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVertexAiIndexIndexStatsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleVertexAiIndexIndexStatsList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVertexAiIndexIndexStatsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleVertexAiIndexIndexStatsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleVertexAiIndexIndexStatsList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewDataGoogleVertexAiIndexIndexStatsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleVertexAiIndexIndexStatsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

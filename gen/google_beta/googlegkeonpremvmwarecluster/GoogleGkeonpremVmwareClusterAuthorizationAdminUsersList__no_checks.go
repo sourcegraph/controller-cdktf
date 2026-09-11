@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersList) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersList) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersList) vali
 	return nil
 }
 
-func validateNewGoogleGkeonpremVmwareClusterAuthorizationAdminUsersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleGkeonpremVmwareClusterAuthorizationAdminUsersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewDataAwsOpensearchDomainClusterConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsOpensearchDomainClusterConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

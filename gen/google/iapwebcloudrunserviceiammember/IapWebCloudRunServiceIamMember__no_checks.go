@@ -56,6 +56,10 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) validateInterpolationForAttri
 	return nil
 }
 
+func (i *jsiiProxy_IapWebCloudRunServiceIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapWebCloudRunServiceIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) validateOverrideLogicalIdPara
 }
 
 func (i *jsiiProxy_IapWebCloudRunServiceIamMember) validatePutConditionParameters(value *IapWebCloudRunServiceIamMemberCondition) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapWebCloudRunServiceIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

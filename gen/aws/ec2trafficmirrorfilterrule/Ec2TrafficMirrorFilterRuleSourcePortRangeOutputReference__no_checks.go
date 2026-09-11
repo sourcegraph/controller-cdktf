@@ -40,11 +40,11 @@ func (e *jsiiProxy_Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference) val
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference) val
 	return nil
 }
 
-func validateNewEc2TrafficMirrorFilterRuleSourcePortRangeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEc2TrafficMirrorFilterRuleSourcePortRangeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

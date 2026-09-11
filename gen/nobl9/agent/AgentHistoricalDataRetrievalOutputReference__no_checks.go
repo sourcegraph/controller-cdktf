@@ -40,7 +40,7 @@ func (a *jsiiProxy_AgentHistoricalDataRetrievalOutputReference) validateGetStrin
 	return nil
 }
 
-func (a *jsiiProxy_AgentHistoricalDataRetrievalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AgentHistoricalDataRetrievalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (a *jsiiProxy_AgentHistoricalDataRetrievalOutputReference) validatePutMaxDu
 	return nil
 }
 
-func (a *jsiiProxy_AgentHistoricalDataRetrievalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AgentHistoricalDataRetrievalOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AgentHistoricalDataRetrievalOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_AgentHistoricalDataRetrievalOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AgentHistoricalDataRetrievalOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAgentHistoricalDataRetrievalOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAgentHistoricalDataRetrievalOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

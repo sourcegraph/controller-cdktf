@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleosconfigpatchdeployment/internal"
 )
 
 type GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Categories() *[]*string
 	SetCategories(val *[]*string)
 	CategoriesInput() *[]*string
@@ -46,9 +46,9 @@ type GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WithOptional() interface{}
 	SetWithOptional(val interface{})
 	WithOptionalInput() interface{}
@@ -60,7 +60,7 @@ type GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCategories()
 	ResetExcludes()
 	ResetExclusivePatches()
@@ -87,7 +87,7 @@ type GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference interface {
 	ResetWithUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference interface {
 
 // The jsii proxy struct for GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference
 type jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference) Categories() *[]*string {
@@ -240,8 +240,8 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -291,7 +291,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference
 }
 
 
-func NewGoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference {
+func NewGoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleOsConfigPatchDeploymentPatchConfigZypperOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -300,7 +300,7 @@ func NewGoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference(terraformR
 	j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference",
+		"@cdktn/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -308,11 +308,11 @@ func NewGoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference(terraformR
 	return &j
 }
 
-func NewGoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference_Override(g GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference_Override(g GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference",
+		"@cdktn/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -406,7 +406,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,11 +468,11 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -596,8 +596,8 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -609,16 +609,16 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -673,8 +673,8 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference
 	)
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -682,7 +682,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

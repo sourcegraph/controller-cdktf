@@ -12,7 +12,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersSloList) validateGetParameters
 	return nil
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewFiltersSloList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ReportSystemHealthReviewFiltersSloList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewFiltersSloList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewFiltersSloList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ReportSystemHealthReviewFiltersSloList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewFiltersSloList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewReportSystemHealthReviewFiltersSloListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewReportSystemHealthReviewFiltersSloListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

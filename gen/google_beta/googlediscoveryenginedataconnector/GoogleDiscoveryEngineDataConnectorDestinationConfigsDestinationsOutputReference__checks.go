@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,17 +82,17 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorDestinationConfigsDestinati
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleDiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -173,7 +173,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataConnectorDestinationConfigsDestinati
 
 func (j *jsiiProxy_GoogleDiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *GoogleDiscoveryEngineDataConnectorDestinationConfigsDestinations:
 		val := val.(*GoogleDiscoveryEngineDataConnectorDestinationConfigsDestinations)
@@ -188,7 +188,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataConnectorDestinationConfigsDestinati
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleDiscoveryEngineDataConnectorDestinationConfigsDestinations; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *GoogleDiscoveryEngineDataConnectorDestinationConfigsDestinations; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -211,7 +211,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataConnectorDestinationConfigsDestinati
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataConnectorDestinationConfigsDestinati
 	return nil
 }
 
-func validateNewGoogleDiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

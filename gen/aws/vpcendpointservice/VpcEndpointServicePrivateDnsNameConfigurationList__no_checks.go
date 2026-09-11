@@ -12,7 +12,7 @@ func (v *jsiiProxy_VpcEndpointServicePrivateDnsNameConfigurationList) validateGe
 	return nil
 }
 
-func (v *jsiiProxy_VpcEndpointServicePrivateDnsNameConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcEndpointServicePrivateDnsNameConfigurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_VpcEndpointServicePrivateDnsNameConfigurationList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_VpcEndpointServicePrivateDnsNameConfigurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VpcEndpointServicePrivateDnsNameConfigurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_VpcEndpointServicePrivateDnsNameConfigurationList) validateSe
 	return nil
 }
 
-func validateNewVpcEndpointServicePrivateDnsNameConfigurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewVpcEndpointServicePrivateDnsNameConfigurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

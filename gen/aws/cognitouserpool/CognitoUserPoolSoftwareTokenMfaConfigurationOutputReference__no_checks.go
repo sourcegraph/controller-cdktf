@@ -40,11 +40,11 @@ func (c *jsiiProxy_CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCognitoUserPoolSoftwareTokenMfaConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCognitoUserPoolSoftwareTokenMfaConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

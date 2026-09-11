@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkserviceshttproute/internal"
 )
 
 type GoogleNetworkServicesHttpRouteRulesActionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -50,9 +50,9 @@ type GoogleNetworkServicesHttpRouteRulesActionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Timeout() *string
 	SetTimeout(val *string)
 	TimeoutInput() *string
@@ -63,7 +63,7 @@ type GoogleNetworkServicesHttpRouteRulesActionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,9 +79,9 @@ type GoogleNetworkServicesHttpRouteRulesActionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCorsPolicy(value *GoogleNetworkServicesHttpRouteRulesActionCorsPolicy)
 	PutDestinations(value interface{})
 	PutFaultInjectionPolicy(value *GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicy)
@@ -103,7 +103,7 @@ type GoogleNetworkServicesHttpRouteRulesActionOutputReference interface {
 	ResetUrlRewrite()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,7 +113,7 @@ type GoogleNetworkServicesHttpRouteRulesActionOutputReference interface {
 
 // The jsii proxy struct for GoogleNetworkServicesHttpRouteRulesActionOutputReference
 type jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference) ComplexObjectIndex() interface{} {
@@ -336,8 +336,8 @@ func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -387,7 +387,7 @@ func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference) Url
 }
 
 
-func NewGoogleNetworkServicesHttpRouteRulesActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesHttpRouteRulesActionOutputReference {
+func NewGoogleNetworkServicesHttpRouteRulesActionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesHttpRouteRulesActionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleNetworkServicesHttpRouteRulesActionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -396,7 +396,7 @@ func NewGoogleNetworkServicesHttpRouteRulesActionOutputReference(terraformResour
 	j := jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionOutputReference",
+		"@cdktn/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -404,11 +404,11 @@ func NewGoogleNetworkServicesHttpRouteRulesActionOutputReference(terraformResour
 	return &j
 }
 
-func NewGoogleNetworkServicesHttpRouteRulesActionOutputReference_Override(g GoogleNetworkServicesHttpRouteRulesActionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleNetworkServicesHttpRouteRulesActionOutputReference_Override(g GoogleNetworkServicesHttpRouteRulesActionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionOutputReference",
+		"@cdktn/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -458,7 +458,7 @@ func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,11 +509,11 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference) Get
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -637,8 +637,8 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference) Get
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -650,16 +650,16 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference) Int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -845,8 +845,8 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference) Res
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -854,7 +854,7 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionOutputReference) Res
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

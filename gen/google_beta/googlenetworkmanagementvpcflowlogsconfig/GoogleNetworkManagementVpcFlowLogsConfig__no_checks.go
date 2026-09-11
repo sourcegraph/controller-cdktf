@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateInterpolati
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateOverrideLog
 }
 
 func (g *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validatePutTimeoutsParameters(value *GoogleNetworkManagementVpcFlowLogsConfigTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetLabelsPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

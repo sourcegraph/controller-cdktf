@@ -12,7 +12,7 @@ func (t *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsTagsList) valid
 	return nil
 }
 
-func (t *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsTagsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsTagsList) valid
 	return nil
 }
 
-func (j *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsTagsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsTagsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsTagsList) valid
 	return nil
 }
 
-func validateNewTransferWorkflowOnExceptionStepsTagStepDetailsTagsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewTransferWorkflowOnExceptionStepsTagStepDetailsTagsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

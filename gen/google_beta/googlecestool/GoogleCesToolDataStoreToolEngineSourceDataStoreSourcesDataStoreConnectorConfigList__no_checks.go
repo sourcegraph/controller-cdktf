@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCesToolDataStoreToolEngineSourceDataStoreSourcesDataSto
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleCesToolDataStoreToolEngineSourceDataStoreSourcesDataSto
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleCesToolDataStoreToolEngineSourceDataStoreSourcesDataSto
 	return nil
 }
 
-func validateNewGoogleCesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

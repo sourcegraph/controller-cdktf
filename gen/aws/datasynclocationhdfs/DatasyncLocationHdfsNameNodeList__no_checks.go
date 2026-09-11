@@ -12,7 +12,7 @@ func (d *jsiiProxy_DatasyncLocationHdfsNameNodeList) validateGetParameters(index
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncLocationHdfsNameNodeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatasyncLocationHdfsNameNodeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DatasyncLocationHdfsNameNodeList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncLocationHdfsNameNodeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatasyncLocationHdfsNameNodeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DatasyncLocationHdfsNameNodeList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewDatasyncLocationHdfsNameNodeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDatasyncLocationHdfsNameNodeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (i *jsiiProxy_IngressClassV1SpecParametersList) validateGetParameters(index
 	return nil
 }
 
-func (i *jsiiProxy_IngressClassV1SpecParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IngressClassV1SpecParametersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_IngressClassV1SpecParametersList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_IngressClassV1SpecParametersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IngressClassV1SpecParametersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_IngressClassV1SpecParametersList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewIngressClassV1SpecParametersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewIngressClassV1SpecParametersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

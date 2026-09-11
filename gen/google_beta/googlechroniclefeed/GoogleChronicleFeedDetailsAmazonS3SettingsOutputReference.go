@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlechroniclefeed/internal"
 )
 
 type GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Authentication() GoogleChronicleFeedDetailsAmazonS3SettingsAuthenticationOutputReference
 	AuthenticationInput() *GoogleChronicleFeedDetailsAmazonS3SettingsAuthentication
 	// the index of the complex object in a list.
@@ -45,15 +45,15 @@ type GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,14 +69,14 @@ type GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuthentication(value *GoogleChronicleFeedDetailsAmazonS3SettingsAuthentication)
 	ResetAuthentication()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference interface {
 
 // The jsii proxy struct for GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference
 type jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) Authentication() GoogleChronicleFeedDetailsAmazonS3SettingsAuthenticationOutputReference {
@@ -229,8 +229,8 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -240,7 +240,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) Te
 }
 
 
-func NewGoogleChronicleFeedDetailsAmazonS3SettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference {
+func NewGoogleChronicleFeedDetailsAmazonS3SettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleChronicleFeedDetailsAmazonS3SettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -249,7 +249,7 @@ func NewGoogleChronicleFeedDetailsAmazonS3SettingsOutputReference(terraformResou
 	j := jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -257,11 +257,11 @@ func NewGoogleChronicleFeedDetailsAmazonS3SettingsOutputReference(terraformResou
 	return &j
 }
 
-func NewGoogleChronicleFeedDetailsAmazonS3SettingsOutputReference_Override(g GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleChronicleFeedDetailsAmazonS3SettingsOutputReference_Override(g GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -344,7 +344,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,11 +384,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) Ge
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -512,8 +512,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) Ge
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -525,16 +525,16 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) In
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -560,8 +560,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) Re
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -569,7 +569,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) Re
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

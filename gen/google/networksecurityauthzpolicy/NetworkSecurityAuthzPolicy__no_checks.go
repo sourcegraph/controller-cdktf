@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicy) validateInterpolationForAttribute
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecurityAuthzPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityAuthzPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicy) validatePutTargetParameters(value
 }
 
 func (n *jsiiProxy_NetworkSecurityAuthzPolicy) validatePutTimeoutsParameters(value *NetworkSecurityAuthzPolicyTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityAuthzPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicy) validateSetLabelsParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

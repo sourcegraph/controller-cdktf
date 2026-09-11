@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleEventarcTrigger) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEventarcTrigger) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEventarcTrigger) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (g *jsiiProxy_GoogleEventarcTrigger) validatePutTimeoutsParameters(value *G
 }
 
 func (g *jsiiProxy_GoogleEventarcTrigger) validatePutTransportParameters(value *GoogleEventarcTriggerTransport) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEventarcTrigger) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_GoogleEventarcTrigger) validateSetLabelsParameters(val *map[s
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleEventarcTrigger) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

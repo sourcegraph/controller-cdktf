@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldVa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldVa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

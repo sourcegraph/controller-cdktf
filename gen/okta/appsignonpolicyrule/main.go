@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule",
+		"@cdktn/provider-okta.appSignonPolicyRule.AppSignonPolicyRule",
 		reflect.TypeOf((*AppSignonPolicyRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
@@ -56,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "inactivityPeriodInput", GoGetter: "InactivityPeriodInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -81,6 +82,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "reAuthenticationFrequency", GoGetter: "ReAuthenticationFrequency"},
 			_jsii_.MemberProperty{JsiiProperty: "reAuthenticationFrequencyInput", GoGetter: "ReAuthenticationFrequencyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccess", GoMethod: "ResetAccess"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConstraints", GoMethod: "ResetConstraints"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomExpression", GoMethod: "ResetCustomExpression"},
@@ -130,23 +132,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userTypesExcludedInput", GoGetter: "UserTypesExcludedInput"},
 			_jsii_.MemberProperty{JsiiProperty: "userTypesIncluded", GoGetter: "UserTypesIncluded"},
 			_jsii_.MemberProperty{JsiiProperty: "userTypesIncludedInput", GoGetter: "UserTypesIncludedInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AppSignonPolicyRule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig",
+		"@cdktn/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig",
 		reflect.TypeOf((*AppSignonPolicyRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformInclude",
+		"@cdktn/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformInclude",
 		reflect.TypeOf((*AppSignonPolicyRulePlatformInclude)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeList",
+		"@cdktn/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeList",
 		reflect.TypeOf((*AppSignonPolicyRulePlatformIncludeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -163,12 +166,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppSignonPolicyRulePlatformIncludeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeOutputReference",
+		"@cdktn/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeOutputReference",
 		reflect.TypeOf((*AppSignonPolicyRulePlatformIncludeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -204,7 +207,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

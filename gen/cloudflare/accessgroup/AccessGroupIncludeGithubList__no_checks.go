@@ -12,7 +12,7 @@ func (a *jsiiProxy_AccessGroupIncludeGithubList) validateGetParameters(index *fl
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroupIncludeGithubList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessGroupIncludeGithubList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AccessGroupIncludeGithubList) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroupIncludeGithubList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccessGroupIncludeGithubList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AccessGroupIncludeGithubList) validateSetWrapsSetParameters(v
 	return nil
 }
 
-func validateNewAccessGroupIncludeGithubListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAccessGroupIncludeGithubListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

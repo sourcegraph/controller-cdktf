@@ -12,7 +12,7 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsL
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsL
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsL
 	return nil
 }
 
-func validateNewDialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

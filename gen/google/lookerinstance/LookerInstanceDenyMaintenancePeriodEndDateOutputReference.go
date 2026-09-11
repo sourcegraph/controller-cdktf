@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/lookerinstance/internal"
 )
 
 type LookerInstanceDenyMaintenancePeriodEndDateOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type LookerInstanceDenyMaintenancePeriodEndDateOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Year() *float64
 	SetYear(val *float64)
 	YearInput() *float64
@@ -51,7 +51,7 @@ type LookerInstanceDenyMaintenancePeriodEndDateOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type LookerInstanceDenyMaintenancePeriodEndDateOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDay()
 	ResetMonth()
 	ResetYear()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type LookerInstanceDenyMaintenancePeriodEndDateOutputReference interface {
 
 // The jsii proxy struct for LookerInstanceDenyMaintenancePeriodEndDateOutputReference
 type jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) Ye
 }
 
 
-func NewLookerInstanceDenyMaintenancePeriodEndDateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LookerInstanceDenyMaintenancePeriodEndDateOutputReference {
+func NewLookerInstanceDenyMaintenancePeriodEndDateOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LookerInstanceDenyMaintenancePeriodEndDateOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLookerInstanceDenyMaintenancePeriodEndDateOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewLookerInstanceDenyMaintenancePeriodEndDateOutputReference(terraformResou
 	j := jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodEndDateOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodEndDateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewLookerInstanceDenyMaintenancePeriodEndDateOutputReference(terraformResou
 	return &j
 }
 
-func NewLookerInstanceDenyMaintenancePeriodEndDateOutputReference_Override(l LookerInstanceDenyMaintenancePeriodEndDateOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLookerInstanceDenyMaintenancePeriodEndDateOutputReference_Override(l LookerInstanceDenyMaintenancePeriodEndDateOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodEndDateOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodEndDateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) Ge
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -491,8 +491,8 @@ func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) Ge
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -504,16 +504,16 @@ func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) In
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) Re
 	)
 }
 
-func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) Re
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeregionurlmap/internal"
 )
 
 type ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowCredentials() interface{}
 	SetAllowCredentials(val interface{})
 	AllowCredentialsInput() interface{}
@@ -58,15 +58,15 @@ type ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -82,9 +82,9 @@ type ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllowCredentials()
 	ResetAllowHeaders()
 	ResetAllowMethods()
@@ -95,7 +95,7 @@ type ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference interface {
 	ResetMaxAge()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,7 +105,7 @@ type ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference interface {
 
 // The jsii proxy struct for ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference
 type jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) AllowCredentials() interface{} {
@@ -328,8 +328,8 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -339,7 +339,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 }
 
 
-func NewComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference {
+func NewComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -348,7 +348,7 @@ func NewComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference(terraform
 	j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference",
+		"@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -356,11 +356,11 @@ func NewComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference(terraform
 	return &j
 }
 
-func NewComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference_Override(c ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference_Override(c ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference",
+		"@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -498,7 +498,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,11 +538,11 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -666,8 +666,8 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -679,16 +679,16 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -759,8 +759,8 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -768,7 +768,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

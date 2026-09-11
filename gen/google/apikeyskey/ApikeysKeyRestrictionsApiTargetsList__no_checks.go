@@ -12,7 +12,7 @@ func (a *jsiiProxy_ApikeysKeyRestrictionsApiTargetsList) validateGetParameters(i
 	return nil
 }
 
-func (a *jsiiProxy_ApikeysKeyRestrictionsApiTargetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApikeysKeyRestrictionsApiTargetsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ApikeysKeyRestrictionsApiTargetsList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_ApikeysKeyRestrictionsApiTargetsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApikeysKeyRestrictionsApiTargetsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ApikeysKeyRestrictionsApiTargetsList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewApikeysKeyRestrictionsApiTargetsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewApikeysKeyRestrictionsApiTargetsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

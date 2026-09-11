@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -112,7 +112,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -128,7 +128,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) validateSetU
 	return nil
 }
 
-func validateNewCesAppVariableDeclarationsSchemaOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesAppVariableDeclarationsSchemaOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

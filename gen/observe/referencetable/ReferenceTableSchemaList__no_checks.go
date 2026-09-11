@@ -12,7 +12,7 @@ func (r *jsiiProxy_ReferenceTableSchemaList) validateGetParameters(index *float6
 	return nil
 }
 
-func (r *jsiiProxy_ReferenceTableSchemaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ReferenceTableSchemaList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ReferenceTableSchemaList) validateSetTerraformAttributeParame
 	return nil
 }
 
-func (j *jsiiProxy_ReferenceTableSchemaList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ReferenceTableSchemaList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ReferenceTableSchemaList) validateSetWrapsSetParameters(val *
 	return nil
 }
 
-func validateNewReferenceTableSchemaListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewReferenceTableSchemaListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

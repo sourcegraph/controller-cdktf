@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsKinesisFirehoseDeliveryStream) validateOverrideLogical
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsKinesisFirehoseDeliveryStream) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsKinesisFirehoseDeliveryStream_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataAwsKinesisFirehoseDeliveryStream) validateSetIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKinesisFirehoseDeliveryStream) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsKinesisFirehoseDeliveryStream) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

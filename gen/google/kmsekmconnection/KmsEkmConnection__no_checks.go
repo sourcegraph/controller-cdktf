@@ -56,6 +56,10 @@ func (k *jsiiProxy_KmsEkmConnection) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (k *jsiiProxy_KmsEkmConnection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsEkmConnection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (k *jsiiProxy_KmsEkmConnection) validatePutServiceResolversParameters(value
 }
 
 func (k *jsiiProxy_KmsEkmConnection) validatePutTimeoutsParameters(value *KmsEkmConnectionTimeouts) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsEkmConnection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_KmsEkmConnection) validateSetKeyManagementModeParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_KmsEkmConnection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KmsEkmConnection) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

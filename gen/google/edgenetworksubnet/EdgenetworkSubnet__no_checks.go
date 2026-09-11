@@ -56,6 +56,10 @@ func (e *jsiiProxy_EdgenetworkSubnet) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (e *jsiiProxy_EdgenetworkSubnet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EdgenetworkSubnet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (e *jsiiProxy_EdgenetworkSubnet) validateOverrideLogicalIdParameters(newLog
 }
 
 func (e *jsiiProxy_EdgenetworkSubnet) validatePutTimeoutsParameters(value *EdgenetworkSubnetTimeouts) error {
+	return nil
+}
+
+func (e *jsiiProxy_EdgenetworkSubnet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_EdgenetworkSubnet) validateSetLabelsParameters(val *map[strin
 	return nil
 }
 
-func (j *jsiiProxy_EdgenetworkSubnet) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EdgenetworkSubnet) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

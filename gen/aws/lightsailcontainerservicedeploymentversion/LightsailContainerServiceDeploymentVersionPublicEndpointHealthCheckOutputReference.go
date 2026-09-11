@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/lightsailcontainerservicedeploymentversion/internal"
 )
 
 type LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,9 +46,9 @@ type LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputRe
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeoutSeconds() *float64
 	SetTimeoutSeconds(val *float64)
 	TimeoutSecondsInput() *float64
@@ -60,7 +60,7 @@ type LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputRe
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputRe
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetHealthyThreshold()
 	ResetIntervalSeconds()
 	ResetPath()
@@ -87,7 +87,7 @@ type LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputRe
 	ResetUnhealthyThreshold()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputRe
 
 // The jsii proxy struct for LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference
 type jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference) ComplexObjectIndex() interface{} {
@@ -240,8 +240,8 @@ func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealt
 	return returns
 }
 
-func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -291,7 +291,7 @@ func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealt
 }
 
 
-func NewLightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference {
+func NewLightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -300,7 +300,7 @@ func NewLightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutpu
 	j := jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference",
+		"@cdktn/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -308,11 +308,11 @@ func NewLightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutpu
 	return &j
 }
 
-func NewLightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference_Override(l LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference_Override(l LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference",
+		"@cdktn/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -406,7 +406,7 @@ func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealt
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,11 +468,11 @@ func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealt
 	return returns
 }
 
-func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -596,8 +596,8 @@ func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealt
 	return returns
 }
 
-func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -609,16 +609,16 @@ func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealt
 	return returns
 }
 
-func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -673,8 +673,8 @@ func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealt
 	)
 }
 
-func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -682,7 +682,7 @@ func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealt
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

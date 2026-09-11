@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsLocationMapConfigurationList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLocationMapConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLocationMapConfigurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsLocationMapConfigurationList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLocationMapConfigurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsLocationMapConfigurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsLocationMapConfigurationList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewDataAwsLocationMapConfigurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsLocationMapConfigurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

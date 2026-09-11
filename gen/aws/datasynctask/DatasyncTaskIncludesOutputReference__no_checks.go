@@ -40,11 +40,11 @@ func (d *jsiiProxy_DatasyncTaskIncludesOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncTaskIncludesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatasyncTaskIncludesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncTaskIncludesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatasyncTaskIncludesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_DatasyncTaskIncludesOutputReference) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncTaskIncludesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatasyncTaskIncludesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DatasyncTaskIncludesOutputReference) validateSetValueParamete
 	return nil
 }
 
-func validateNewDatasyncTaskIncludesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDatasyncTaskIncludesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

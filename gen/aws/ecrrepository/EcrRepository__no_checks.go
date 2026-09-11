@@ -56,6 +56,10 @@ func (e *jsiiProxy_EcrRepository) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (e *jsiiProxy_EcrRepository) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcrRepository) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (e *jsiiProxy_EcrRepository) validatePutImageScanningConfigurationParameter
 }
 
 func (e *jsiiProxy_EcrRepository) validatePutTimeoutsParameters(value *EcrRepositoryTimeouts) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcrRepository) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_EcrRepository) validateSetImageTagMutabilityParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_EcrRepository) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EcrRepository) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

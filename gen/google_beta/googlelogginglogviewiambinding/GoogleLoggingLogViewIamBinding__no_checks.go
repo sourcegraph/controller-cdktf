@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleLoggingLogViewIamBinding) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingLogViewIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingLogViewIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleLoggingLogViewIamBinding) validateOverrideLogicalIdPara
 }
 
 func (g *jsiiProxy_GoogleLoggingLogViewIamBinding) validatePutConditionParameters(value *GoogleLoggingLogViewIamBindingCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingLogViewIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleLoggingLogViewIamBinding) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingLogViewIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleLoggingLogViewIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

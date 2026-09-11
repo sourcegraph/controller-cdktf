@@ -56,6 +56,10 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) validateInterpolationForAttributePara
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksMemcachedLayer) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksMemcachedLayer) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) validatePutEbsVolumeParameters(value 
 }
 
 func (o *jsiiProxy_OpsworksMemcachedLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksMemcachedLayerLoadBasedAutoScaling) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksMemcachedLayer) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -176,7 +184,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetInstanceShutdownTimeoutPar
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

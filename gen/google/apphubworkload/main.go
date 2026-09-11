@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkload",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkload",
 		reflect.TypeOf((*ApphubWorkload)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -49,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -62,6 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAttributes", GoMethod: "PutAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAttributes", GoMethod: "ResetAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
@@ -83,6 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadId", GoGetter: "WorkloadId"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadIdInput", GoGetter: "WorkloadIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadProperties", GoGetter: "WorkloadProperties"},
@@ -90,20 +93,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkload{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributes",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributes",
 		reflect.TypeOf((*ApphubWorkloadAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributesBusinessOwners",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesBusinessOwners",
 		reflect.TypeOf((*ApphubWorkloadAttributesBusinessOwners)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributesBusinessOwnersList",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesBusinessOwnersList",
 		reflect.TypeOf((*ApphubWorkloadAttributesBusinessOwnersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -120,12 +123,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadAttributesBusinessOwnersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributesBusinessOwnersOutputReference",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesBusinessOwnersOutputReference",
 		reflect.TypeOf((*ApphubWorkloadAttributesBusinessOwnersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -157,16 +160,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadAttributesBusinessOwnersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributesCriticality",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesCriticality",
 		reflect.TypeOf((*ApphubWorkloadAttributesCriticality)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributesCriticalityOutputReference",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesCriticalityOutputReference",
 		reflect.TypeOf((*ApphubWorkloadAttributesCriticalityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -195,16 +198,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadAttributesCriticalityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributesDeveloperOwners",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesDeveloperOwners",
 		reflect.TypeOf((*ApphubWorkloadAttributesDeveloperOwners)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributesDeveloperOwnersList",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesDeveloperOwnersList",
 		reflect.TypeOf((*ApphubWorkloadAttributesDeveloperOwnersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -221,12 +224,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadAttributesDeveloperOwnersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributesDeveloperOwnersOutputReference",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesDeveloperOwnersOutputReference",
 		reflect.TypeOf((*ApphubWorkloadAttributesDeveloperOwnersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -258,16 +261,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadAttributesDeveloperOwnersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributesEnvironment",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesEnvironment",
 		reflect.TypeOf((*ApphubWorkloadAttributesEnvironment)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributesEnvironmentOutputReference",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesEnvironmentOutputReference",
 		reflect.TypeOf((*ApphubWorkloadAttributesEnvironmentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -296,16 +299,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributesOperatorOwners",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesOperatorOwners",
 		reflect.TypeOf((*ApphubWorkloadAttributesOperatorOwners)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributesOperatorOwnersList",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesOperatorOwnersList",
 		reflect.TypeOf((*ApphubWorkloadAttributesOperatorOwnersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -322,12 +325,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributesOperatorOwnersOutputReference",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesOperatorOwnersOutputReference",
 		reflect.TypeOf((*ApphubWorkloadAttributesOperatorOwnersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -359,12 +362,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadAttributesOperatorOwnersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributesOutputReference",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesOutputReference",
 		reflect.TypeOf((*ApphubWorkloadAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "businessOwners", GoGetter: "BusinessOwners"},
@@ -411,20 +414,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadConfig",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadConfig",
 		reflect.TypeOf((*ApphubWorkloadConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadTimeouts",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadTimeouts",
 		reflect.TypeOf((*ApphubWorkloadTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadTimeoutsOutputReference",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadTimeoutsOutputReference",
 		reflect.TypeOf((*ApphubWorkloadTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -460,20 +463,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadProperties",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadProperties",
 		reflect.TypeOf((*ApphubWorkloadWorkloadProperties)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesExtendedMetadata",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesExtendedMetadata",
 		reflect.TypeOf((*ApphubWorkloadWorkloadPropertiesExtendedMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesExtendedMetadataList",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesExtendedMetadataList",
 		reflect.TypeOf((*ApphubWorkloadWorkloadPropertiesExtendedMetadataList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -489,12 +492,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadWorkloadPropertiesExtendedMetadataList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesExtendedMetadataOutputReference",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesExtendedMetadataOutputReference",
 		reflect.TypeOf((*ApphubWorkloadWorkloadPropertiesExtendedMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -523,16 +526,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadWorkloadPropertiesExtendedMetadataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesExtendedMetadataValue",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesExtendedMetadataValue",
 		reflect.TypeOf((*ApphubWorkloadWorkloadPropertiesExtendedMetadataValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesExtendedMetadataValueList",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesExtendedMetadataValueList",
 		reflect.TypeOf((*ApphubWorkloadWorkloadPropertiesExtendedMetadataValueList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -548,12 +551,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadWorkloadPropertiesExtendedMetadataValueList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesExtendedMetadataValueOutputReference",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesExtendedMetadataValueOutputReference",
 		reflect.TypeOf((*ApphubWorkloadWorkloadPropertiesExtendedMetadataValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -582,16 +585,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadWorkloadPropertiesExtendedMetadataValueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesFunctionalType",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesFunctionalType",
 		reflect.TypeOf((*ApphubWorkloadWorkloadPropertiesFunctionalType)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesFunctionalTypeList",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesFunctionalTypeList",
 		reflect.TypeOf((*ApphubWorkloadWorkloadPropertiesFunctionalTypeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -607,12 +610,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadWorkloadPropertiesFunctionalTypeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesFunctionalTypeOutputReference",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesFunctionalTypeOutputReference",
 		reflect.TypeOf((*ApphubWorkloadWorkloadPropertiesFunctionalTypeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -640,16 +643,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadWorkloadPropertiesFunctionalTypeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesIdentity",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesIdentity",
 		reflect.TypeOf((*ApphubWorkloadWorkloadPropertiesIdentity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesIdentityList",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesIdentityList",
 		reflect.TypeOf((*ApphubWorkloadWorkloadPropertiesIdentityList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -665,12 +668,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesIdentityOutputReference",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesIdentityOutputReference",
 		reflect.TypeOf((*ApphubWorkloadWorkloadPropertiesIdentityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -698,12 +701,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadWorkloadPropertiesIdentityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesList",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesList",
 		reflect.TypeOf((*ApphubWorkloadWorkloadPropertiesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -719,12 +722,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadWorkloadPropertiesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesOutputReference",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesOutputReference",
 		reflect.TypeOf((*ApphubWorkloadWorkloadPropertiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -757,16 +760,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadWorkloadPropertiesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadReference",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadReference",
 		reflect.TypeOf((*ApphubWorkloadWorkloadReference)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadReferenceList",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadReferenceList",
 		reflect.TypeOf((*ApphubWorkloadWorkloadReferenceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -782,12 +785,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadWorkloadReferenceList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadWorkloadReferenceOutputReference",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadReferenceOutputReference",
 		reflect.TypeOf((*ApphubWorkloadWorkloadReferenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -815,7 +818,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApphubWorkloadWorkloadReferenceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

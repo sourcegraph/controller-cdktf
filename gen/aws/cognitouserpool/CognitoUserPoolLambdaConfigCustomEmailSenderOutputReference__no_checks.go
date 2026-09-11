@@ -40,11 +40,11 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCognitoUserPoolLambdaConfigCustomEmailSenderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCognitoUserPoolLambdaConfigCustomEmailSenderOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

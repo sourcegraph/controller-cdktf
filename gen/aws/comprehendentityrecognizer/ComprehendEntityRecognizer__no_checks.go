@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) validateInterpolationForAttribute
 	return nil
 }
 
+func (c *jsiiProxy_ComprehendEntityRecognizer) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComprehendEntityRecognizer) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) validatePutTimeoutsParameters(val
 }
 
 func (c *jsiiProxy_ComprehendEntityRecognizer) validatePutVpcConfigParameters(value *ComprehendEntityRecognizerVpcConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComprehendEntityRecognizer) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer) validateSetLanguageCodeParameters
 	return nil
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizer) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComprehendEntityRecognizer) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

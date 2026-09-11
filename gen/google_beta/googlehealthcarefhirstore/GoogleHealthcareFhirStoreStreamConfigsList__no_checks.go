@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsList) validateGetParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsList) validateSetWrapsS
 	return nil
 }
 
-func validateNewGoogleHealthcareFhirStoreStreamConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleHealthcareFhirStoreStreamConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

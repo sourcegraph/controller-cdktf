@@ -12,7 +12,7 @@ func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorList) validateGetParamet
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EcsTaskDefinitionInferenceAcceleratorList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewEcsTaskDefinitionInferenceAcceleratorListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEcsTaskDefinitionInferenceAcceleratorListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

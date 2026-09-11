@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cesguardrail/internal"
 )
 
 type CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	ResetDisabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference interface {
 
 // The jsii proxy struct for CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference
 type jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) ComplexObjectIndex() interface{} {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) T
 }
 
 
-func NewCesGuardrailCodeCallbackBeforeAgentCallbackOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference {
+func NewCesGuardrailCodeCallbackBeforeAgentCallbackOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCesGuardrailCodeCallbackBeforeAgentCallbackOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -227,7 +227,7 @@ func NewCesGuardrailCodeCallbackBeforeAgentCallbackOutputReference(terraformReso
 	j := jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference",
+		"@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewCesGuardrailCodeCallbackBeforeAgentCallbackOutputReference(terraformReso
 	return &j
 }
 
-func NewCesGuardrailCodeCallbackBeforeAgentCallbackOutputReference_Override(c CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCesGuardrailCodeCallbackBeforeAgentCallbackOutputReference_Override(c CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference",
+		"@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -322,7 +322,7 @@ func (j *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (c *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) G
 	return returns
 }
 
-func (c *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -490,8 +490,8 @@ func (c *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) G
 	return returns
 }
 
-func (c *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -503,16 +503,16 @@ func (c *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) I
 	return returns
 }
 
-func (c *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (c *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) R
 	)
 }
 
-func (c *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (c *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) R
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

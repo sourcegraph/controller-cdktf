@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleHealthcarePipelineJob) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcarePipelineJob) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJob) validatePutReconciliationPipelin
 }
 
 func (g *jsiiProxy_GoogleHealthcarePipelineJob) validatePutTimeoutsParameters(value *GoogleHealthcarePipelineJobTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcarePipelineJob) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJob) validateSetLabelsParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleHealthcarePipelineJob) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

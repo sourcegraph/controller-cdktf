@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsApiGatewayDomainNameEndpointConfigurationList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsApiGatewayDomainNameEndpointConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsApiGatewayDomainNameEndpointConfigurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsApiGatewayDomainNameEndpointConfigurationList) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsApiGatewayDomainNameEndpointConfigurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsApiGatewayDomainNameEndpointConfigurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsApiGatewayDomainNameEndpointConfigurationList) validat
 	return nil
 }
 
-func validateNewDataAwsApiGatewayDomainNameEndpointConfigurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsApiGatewayDomainNameEndpointConfigurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

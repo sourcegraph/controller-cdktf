@@ -12,7 +12,7 @@ func (k *jsiiProxy_KendraExperienceEndpointsList) validateGetParameters(index *f
 	return nil
 }
 
-func (k *jsiiProxy_KendraExperienceEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraExperienceEndpointsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_KendraExperienceEndpointsList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_KendraExperienceEndpointsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KendraExperienceEndpointsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_KendraExperienceEndpointsList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewKendraExperienceEndpointsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewKendraExperienceEndpointsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

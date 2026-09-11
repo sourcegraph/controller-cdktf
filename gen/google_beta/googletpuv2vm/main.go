@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2Vm",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2Vm",
 		reflect.TypeOf((*GoogleTpuV2Vm)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorConfig", GoGetter: "AcceleratorConfig"},
@@ -52,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "metadata", GoGetter: "Metadata"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataInput", GoGetter: "MetadataInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -81,6 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "queuedResource", GoGetter: "QueuedResource"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAcceleratorConfig", GoMethod: "ResetAcceleratorConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAcceleratorType", GoMethod: "ResetAcceleratorType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCidrBlock", GoMethod: "ResetCidrBlock"},
@@ -123,21 +125,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleTpuV2Vm{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmAcceleratorConfig",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmAcceleratorConfig",
 		reflect.TypeOf((*GoogleTpuV2VmAcceleratorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmAcceleratorConfigOutputReference",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmAcceleratorConfigOutputReference",
 		reflect.TypeOf((*GoogleTpuV2VmAcceleratorConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -168,20 +171,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleTpuV2VmAcceleratorConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmConfig",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmConfig",
 		reflect.TypeOf((*GoogleTpuV2VmConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmDataDisks",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmDataDisks",
 		reflect.TypeOf((*GoogleTpuV2VmDataDisks)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmDataDisksList",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmDataDisksList",
 		reflect.TypeOf((*GoogleTpuV2VmDataDisksList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -198,12 +201,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleTpuV2VmDataDisksList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmDataDisksOutputReference",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmDataDisksOutputReference",
 		reflect.TypeOf((*GoogleTpuV2VmDataDisksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -235,16 +238,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleTpuV2VmDataDisksOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfig",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfig",
 		reflect.TypeOf((*GoogleTpuV2VmNetworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfigOutputReference",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfigOutputReference",
 		reflect.TypeOf((*GoogleTpuV2VmNetworkConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canIpForward", GoGetter: "CanIpForward"},
@@ -286,16 +289,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleTpuV2VmNetworkConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfigs",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfigs",
 		reflect.TypeOf((*GoogleTpuV2VmNetworkConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfigsList",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfigsList",
 		reflect.TypeOf((*GoogleTpuV2VmNetworkConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -312,12 +315,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleTpuV2VmNetworkConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfigsOutputReference",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfigsOutputReference",
 		reflect.TypeOf((*GoogleTpuV2VmNetworkConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canIpForward", GoGetter: "CanIpForward"},
@@ -359,20 +362,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpoints",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpoints",
 		reflect.TypeOf((*GoogleTpuV2VmNetworkEndpoints)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsAccessConfig",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsAccessConfig",
 		reflect.TypeOf((*GoogleTpuV2VmNetworkEndpointsAccessConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsAccessConfigList",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsAccessConfigList",
 		reflect.TypeOf((*GoogleTpuV2VmNetworkEndpointsAccessConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -388,12 +391,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleTpuV2VmNetworkEndpointsAccessConfigList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsAccessConfigOutputReference",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsAccessConfigOutputReference",
 		reflect.TypeOf((*GoogleTpuV2VmNetworkEndpointsAccessConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -421,12 +424,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleTpuV2VmNetworkEndpointsAccessConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsList",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsList",
 		reflect.TypeOf((*GoogleTpuV2VmNetworkEndpointsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -442,12 +445,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleTpuV2VmNetworkEndpointsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsOutputReference",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsOutputReference",
 		reflect.TypeOf((*GoogleTpuV2VmNetworkEndpointsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessConfig", GoGetter: "AccessConfig"},
@@ -477,16 +480,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleTpuV2VmNetworkEndpointsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSchedulingConfig",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSchedulingConfig",
 		reflect.TypeOf((*GoogleTpuV2VmSchedulingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSchedulingConfigOutputReference",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSchedulingConfigOutputReference",
 		reflect.TypeOf((*GoogleTpuV2VmSchedulingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -522,16 +525,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmServiceAccount",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmServiceAccount",
 		reflect.TypeOf((*GoogleTpuV2VmServiceAccount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmServiceAccountOutputReference",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmServiceAccountOutputReference",
 		reflect.TypeOf((*GoogleTpuV2VmServiceAccountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -564,16 +567,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleTpuV2VmServiceAccountOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmShieldedInstanceConfig",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmShieldedInstanceConfig",
 		reflect.TypeOf((*GoogleTpuV2VmShieldedInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmShieldedInstanceConfigOutputReference",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmShieldedInstanceConfigOutputReference",
 		reflect.TypeOf((*GoogleTpuV2VmShieldedInstanceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -602,16 +605,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleTpuV2VmShieldedInstanceConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSymptoms",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSymptoms",
 		reflect.TypeOf((*GoogleTpuV2VmSymptoms)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSymptomsList",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSymptomsList",
 		reflect.TypeOf((*GoogleTpuV2VmSymptomsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -627,12 +630,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleTpuV2VmSymptomsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSymptomsOutputReference",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSymptomsOutputReference",
 		reflect.TypeOf((*GoogleTpuV2VmSymptomsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -663,16 +666,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleTpuV2VmSymptomsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmTimeouts",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmTimeouts",
 		reflect.TypeOf((*GoogleTpuV2VmTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleTpuV2VmTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -708,7 +711,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleTpuV2VmTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

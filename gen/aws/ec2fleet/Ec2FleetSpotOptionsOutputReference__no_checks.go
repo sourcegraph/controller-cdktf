@@ -40,7 +40,7 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) validatePutMaintenanceStr
 	return nil
 }
 
-func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Ec2FleetSpotOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEc2FleetSpotOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEc2FleetSpotOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

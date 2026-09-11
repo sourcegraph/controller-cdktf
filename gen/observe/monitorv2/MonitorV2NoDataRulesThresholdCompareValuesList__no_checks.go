@@ -12,7 +12,7 @@ func (m *jsiiProxy_MonitorV2NoDataRulesThresholdCompareValuesList) validateGetPa
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2NoDataRulesThresholdCompareValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorV2NoDataRulesThresholdCompareValuesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareValuesList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareValuesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareValuesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_MonitorV2NoDataRulesThresholdCompareValuesList) validateSetWr
 	return nil
 }
 
-func validateNewMonitorV2NoDataRulesThresholdCompareValuesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMonitorV2NoDataRulesThresholdCompareValuesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

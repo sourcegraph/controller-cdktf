@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (w *jsiiProxy_WorkflowExpressionsElseBranchResultOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (w *jsiiProxy_WorkflowExpressionsElseBranchResultOutputReference) validateG
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowExpressionsElseBranchResultOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (w *jsiiProxy_WorkflowExpressionsElseBranchResultOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (w *jsiiProxy_WorkflowExpressionsElseBranchResultOutputReference) validateP
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*WorkflowExpressionsElseBranchResultArrayValue:
 		value := value.(*[]*WorkflowExpressionsElseBranchResultArrayValue)
@@ -114,7 +114,7 @@ func (w *jsiiProxy_WorkflowExpressionsElseBranchResultOutputReference) validateP
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WorkflowExpressionsElseBranchResultArrayValue; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*WorkflowExpressionsElseBranchResultArrayValue; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -132,9 +132,9 @@ func (w *jsiiProxy_WorkflowExpressionsElseBranchResultOutputReference) validateP
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowExpressionsElseBranchResultOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (w *jsiiProxy_WorkflowExpressionsElseBranchResultOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -207,7 +207,7 @@ func (j *jsiiProxy_WorkflowExpressionsElseBranchResultOutputReference) validateS
 
 func (j *jsiiProxy_WorkflowExpressionsElseBranchResultOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *WorkflowExpressionsElseBranchResult:
 		val := val.(*WorkflowExpressionsElseBranchResult)
@@ -222,7 +222,7 @@ func (j *jsiiProxy_WorkflowExpressionsElseBranchResultOutputReference) validateS
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *WorkflowExpressionsElseBranchResult; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *WorkflowExpressionsElseBranchResult; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -237,7 +237,7 @@ func (j *jsiiProxy_WorkflowExpressionsElseBranchResultOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowExpressionsElseBranchResultOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkflowExpressionsElseBranchResultOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -245,7 +245,7 @@ func (j *jsiiProxy_WorkflowExpressionsElseBranchResultOutputReference) validateS
 	return nil
 }
 
-func validateNewWorkflowExpressionsElseBranchResultOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWorkflowExpressionsElseBranchResultOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

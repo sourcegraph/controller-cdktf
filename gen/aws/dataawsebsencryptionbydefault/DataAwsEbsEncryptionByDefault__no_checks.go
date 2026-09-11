@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataAwsEbsEncryptionByDefault) validatePutTimeoutsParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsEbsEncryptionByDefault) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsEbsEncryptionByDefault_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsEbsEncryptionByDefault) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEbsEncryptionByDefault) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsEbsEncryptionByDefault) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

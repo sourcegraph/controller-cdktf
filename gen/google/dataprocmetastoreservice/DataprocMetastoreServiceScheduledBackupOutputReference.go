@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/dataprocmetastoreservice/internal"
 )
 
 type DataprocMetastoreServiceScheduledBackupOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BackupLocation() *string
 	SetBackupLocation(val *string)
 	BackupLocationInput() *string
@@ -43,9 +43,9 @@ type DataprocMetastoreServiceScheduledBackupOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeZone() *string
 	SetTimeZone(val *string)
 	TimeZoneInput() *string
@@ -54,7 +54,7 @@ type DataprocMetastoreServiceScheduledBackupOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type DataprocMetastoreServiceScheduledBackupOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCronSchedule()
 	ResetEnabled()
 	ResetTimeZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type DataprocMetastoreServiceScheduledBackupOutputReference interface {
 
 // The jsii proxy struct for DataprocMetastoreServiceScheduledBackupOutputReference
 type jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) BackupLocation() *string {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) TimeZ
 }
 
 
-func NewDataprocMetastoreServiceScheduledBackupOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataprocMetastoreServiceScheduledBackupOutputReference {
+func NewDataprocMetastoreServiceScheduledBackupOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataprocMetastoreServiceScheduledBackupOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataprocMetastoreServiceScheduledBackupOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -251,7 +251,7 @@ func NewDataprocMetastoreServiceScheduledBackupOutputReference(terraformResource
 	j := jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceScheduledBackupOutputReference",
+		"@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceScheduledBackupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewDataprocMetastoreServiceScheduledBackupOutputReference(terraformResource
 	return &j
 }
 
-func NewDataprocMetastoreServiceScheduledBackupOutputReference_Override(d DataprocMetastoreServiceScheduledBackupOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataprocMetastoreServiceScheduledBackupOutputReference_Override(d DataprocMetastoreServiceScheduledBackupOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceScheduledBackupOutputReference",
+		"@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceScheduledBackupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,11 +397,11 @@ func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) GetAn
 	return returns
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -525,8 +525,8 @@ func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) GetSt
 	return returns
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -538,16 +538,16 @@ func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) Inter
 	return returns
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -578,8 +578,8 @@ func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) Reset
 	)
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -587,7 +587,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) Resol
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

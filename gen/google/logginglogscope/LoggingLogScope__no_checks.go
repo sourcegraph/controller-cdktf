@@ -56,6 +56,10 @@ func (l *jsiiProxy_LoggingLogScope) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (l *jsiiProxy_LoggingLogScope) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingLogScope) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (l *jsiiProxy_LoggingLogScope) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (l *jsiiProxy_LoggingLogScope) validatePutTimeoutsParameters(value *LoggingLogScopeTimeouts) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingLogScope) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_LoggingLogScope) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_LoggingLogScope) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LoggingLogScope) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

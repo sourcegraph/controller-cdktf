@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataOktaDefaultSigninPageContentSecurityPolicySettingOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaDefaultSigninPageContentSecurityPolicySettingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOktaDefaultSigninPageContentSecurityPolicySettingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaDefaultSigninPageContentSecurityPolicySettingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaDefaultSigninPageContentSecurityPolicySettingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataOktaDefaultSigninPageContentSecurityPolicySettingOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaDefaultSigninPageContentSecurityPolicySettingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataOktaDefaultSigninPageContentSecurityPolicySettingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataOktaDefaultSigninPageContentSecurityPolicySettingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataOktaDefaultSigninPageContentSecurityPolicySettingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

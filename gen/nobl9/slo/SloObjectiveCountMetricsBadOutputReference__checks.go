@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateGetString
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutAmazon
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadAmazonPrometheus:
 		value := value.(*[]*SloObjectiveCountMetricsBadAmazonPrometheus)
@@ -114,7 +114,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutAmazon
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadAmazonPrometheus; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadAmazonPrometheus; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutAppdyn
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadAppdynamics:
 		value := value.(*[]*SloObjectiveCountMetricsBadAppdynamics)
@@ -145,7 +145,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutAppdyn
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadAppdynamics; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadAppdynamics; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -157,7 +157,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutAzureM
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadAzureMonitor:
 		value := value.(*[]*SloObjectiveCountMetricsBadAzureMonitor)
@@ -176,7 +176,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutAzureM
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadAzureMonitor; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadAzureMonitor; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -188,7 +188,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutBigque
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadBigquery:
 		value := value.(*[]*SloObjectiveCountMetricsBadBigquery)
@@ -207,7 +207,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutBigque
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadBigquery; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadBigquery; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -219,7 +219,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutCloudw
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadCloudwatch:
 		value := value.(*[]*SloObjectiveCountMetricsBadCloudwatch)
@@ -238,7 +238,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutCloudw
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadCloudwatch; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadCloudwatch; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -250,7 +250,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutDatado
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadDatadog:
 		value := value.(*[]*SloObjectiveCountMetricsBadDatadog)
@@ -269,7 +269,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutDatado
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadDatadog; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadDatadog; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -281,7 +281,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutDynatr
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadDynatrace:
 		value := value.(*[]*SloObjectiveCountMetricsBadDynatrace)
@@ -300,7 +300,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutDynatr
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadDynatrace; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadDynatrace; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -312,7 +312,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutElasti
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadElasticsearch:
 		value := value.(*[]*SloObjectiveCountMetricsBadElasticsearch)
@@ -331,7 +331,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutElasti
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadElasticsearch; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadElasticsearch; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -343,7 +343,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutGcmPar
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadGcm:
 		value := value.(*[]*SloObjectiveCountMetricsBadGcm)
@@ -362,7 +362,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutGcmPar
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadGcm; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadGcm; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -374,7 +374,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutGrafan
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadGrafanaLoki:
 		value := value.(*[]*SloObjectiveCountMetricsBadGrafanaLoki)
@@ -393,7 +393,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutGrafan
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadGrafanaLoki; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadGrafanaLoki; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -405,7 +405,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutGraphi
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadGraphite:
 		value := value.(*[]*SloObjectiveCountMetricsBadGraphite)
@@ -424,7 +424,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutGraphi
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadGraphite; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadGraphite; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -436,7 +436,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutHoneyc
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadHoneycomb:
 		value := value.(*[]*SloObjectiveCountMetricsBadHoneycomb)
@@ -455,7 +455,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutHoneyc
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadHoneycomb; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadHoneycomb; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -467,7 +467,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutInflux
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadInfluxdb:
 		value := value.(*[]*SloObjectiveCountMetricsBadInfluxdb)
@@ -486,7 +486,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutInflux
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadInfluxdb; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadInfluxdb; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -498,7 +498,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutInstan
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadInstana:
 		value := value.(*[]*SloObjectiveCountMetricsBadInstana)
@@ -517,7 +517,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutInstan
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadInstana; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadInstana; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -529,7 +529,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutLights
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadLightstep:
 		value := value.(*[]*SloObjectiveCountMetricsBadLightstep)
@@ -548,7 +548,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutLights
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadLightstep; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadLightstep; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -560,7 +560,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutLogicM
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadLogicMonitor:
 		value := value.(*[]*SloObjectiveCountMetricsBadLogicMonitor)
@@ -579,7 +579,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutLogicM
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadLogicMonitor; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadLogicMonitor; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -591,7 +591,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutNewrel
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadNewrelic:
 		value := value.(*[]*SloObjectiveCountMetricsBadNewrelic)
@@ -610,7 +610,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutNewrel
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadNewrelic; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadNewrelic; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -622,7 +622,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutOpents
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadOpentsdb:
 		value := value.(*[]*SloObjectiveCountMetricsBadOpentsdb)
@@ -641,7 +641,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutOpents
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadOpentsdb; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadOpentsdb; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -653,7 +653,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutPingdo
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadPingdom:
 		value := value.(*[]*SloObjectiveCountMetricsBadPingdom)
@@ -672,7 +672,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutPingdo
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadPingdom; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadPingdom; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -684,7 +684,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutPromet
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadPrometheus:
 		value := value.(*[]*SloObjectiveCountMetricsBadPrometheus)
@@ -703,7 +703,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutPromet
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadPrometheus; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadPrometheus; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -715,7 +715,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutRedshi
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadRedshift:
 		value := value.(*[]*SloObjectiveCountMetricsBadRedshift)
@@ -734,7 +734,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutRedshi
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadRedshift; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadRedshift; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -746,7 +746,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutSplunk
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadSplunk:
 		value := value.(*[]*SloObjectiveCountMetricsBadSplunk)
@@ -765,7 +765,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutSplunk
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadSplunk; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadSplunk; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -777,7 +777,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutSplunk
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadSplunkObservability:
 		value := value.(*[]*SloObjectiveCountMetricsBadSplunkObservability)
@@ -796,7 +796,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutSplunk
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadSplunkObservability; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadSplunkObservability; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -808,7 +808,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutSumolo
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadSumologic:
 		value := value.(*[]*SloObjectiveCountMetricsBadSumologic)
@@ -827,7 +827,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutSumolo
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadSumologic; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadSumologic; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -839,7 +839,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutThousa
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsBadThousandeyes:
 		value := value.(*[]*SloObjectiveCountMetricsBadThousandeyes)
@@ -858,16 +858,16 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validatePutThousa
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsBadThousandeyes; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsBadThousandeyes; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -940,7 +940,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateSetComple
 
 func (j *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *SloObjectiveCountMetricsBad:
 		val := val.(*SloObjectiveCountMetricsBad)
@@ -955,7 +955,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateSetIntern
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SloObjectiveCountMetricsBad; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *SloObjectiveCountMetricsBad; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -970,7 +970,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -978,7 +978,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadOutputReference) validateSetTerraf
 	return nil
 }
 
-func validateNewSloObjectiveCountMetricsBadOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSloObjectiveCountMetricsBadOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

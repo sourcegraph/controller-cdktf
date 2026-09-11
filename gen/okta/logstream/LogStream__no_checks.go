@@ -56,6 +56,10 @@ func (l *jsiiProxy_LogStream) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (l *jsiiProxy_LogStream) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogStream) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (l *jsiiProxy_LogStream) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (l *jsiiProxy_LogStream) validatePutSettingsParameters(value *LogStreamSettings) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogStream) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_LogStream) validateSetCountParameters(val interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_LogStream) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LogStream) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDiscoveryEngineAssistantCustomerPolicyModelArmorConfigO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineAssistantCustomerPolicyModelArmorConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineAssistantCustomerPolicyModelArmorConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineAssistantCustomerPolicyModelArmorConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineAssistantCustomerPolicyModelArmorConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineAssistantCustomerPolicyModelArmorConfigO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineAssistantCustomerPolicyModelArmorConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineAssistantCustomerPolicyModelArmorConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineAssistantCustomerPolicyModelArmorConfigO
 	return nil
 }
 
-func validateNewGoogleDiscoveryEngineAssistantCustomerPolicyModelArmorConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDiscoveryEngineAssistantCustomerPolicyModelArmorConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

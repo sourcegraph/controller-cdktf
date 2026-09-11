@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleNetappBackupPolicy) validateInterpolationForAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetappBackupPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappBackupPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleNetappBackupPolicy) validateOverrideLogicalIdParameters
 }
 
 func (g *jsiiProxy_GoogleNetappBackupPolicy) validatePutTimeoutsParameters(value *GoogleNetappBackupPolicyTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappBackupPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleNetappBackupPolicy) validateSetLabelsParameters(val *ma
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappBackupPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleNetappBackupPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionConnectorVersionInfraCon
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionConnectorVersionInfraConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionConnectorVersionInfraConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionConnectorVersionInfraCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionConnectorVersionInfraConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionConnectorVersionInfraConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionConnectorVersionInfraCon
 	return nil
 }
 
-func validateNewGoogleIntegrationConnectorsConnectionConnectorVersionInfraConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleIntegrationConnectorsConnectionConnectorVersionInfraConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

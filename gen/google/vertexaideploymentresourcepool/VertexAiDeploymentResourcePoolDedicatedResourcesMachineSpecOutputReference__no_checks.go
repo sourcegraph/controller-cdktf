@@ -40,11 +40,11 @@ func (v *jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecOu
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecOu
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewVertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

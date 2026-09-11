@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validatePutRe
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*ComputeRegionUrlMapHeaderActionRequestHeadersToAdd:
 		value := value.(*[]*ComputeRegionUrlMapHeaderActionRequestHeadersToAdd)
@@ -114,7 +114,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validatePutRe
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ComputeRegionUrlMapHeaderActionRequestHeadersToAdd; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ComputeRegionUrlMapHeaderActionRequestHeadersToAdd; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validatePutRe
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*ComputeRegionUrlMapHeaderActionResponseHeadersToAdd:
 		value := value.(*[]*ComputeRegionUrlMapHeaderActionResponseHeadersToAdd)
@@ -145,16 +145,16 @@ func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validatePutRe
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ComputeRegionUrlMapHeaderActionResponseHeadersToAdd; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ComputeRegionUrlMapHeaderActionResponseHeadersToAdd; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -257,7 +257,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -265,7 +265,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validateSetTe
 	return nil
 }
 
-func validateNewComputeRegionUrlMapHeaderActionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeRegionUrlMapHeaderActionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

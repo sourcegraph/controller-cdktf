@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleprivilegedaccessmanagerentitlement/internal"
 )
 
 type GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdminEmailRecipients() *[]*string
 	SetAdminEmailRecipients(val *[]*string)
 	AdminEmailRecipientsInput() *[]*string
@@ -40,15 +40,15 @@ type GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutput
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutput
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAdminEmailRecipients()
 	ResetRequesterEmailRecipients()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutput
 
 // The jsii proxy struct for GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference
 type jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) AdminEmailRecipients() *[]*string {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificatio
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificatio
 }
 
 
-func NewGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference {
+func NewGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOut
 	j := jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference",
+		"@cdktn/provider-google-beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOut
 	return &j
 }
 
-func NewGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference_Override(g GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference_Override(g GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference",
+		"@cdktn/provider-google-beta.googlePrivilegedAccessManagerEntitlement.GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificatio
 	)
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificatio
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -456,8 +456,8 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificatio
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -469,16 +469,16 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificatio
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificatio
 	)
 }
 
-func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementAdditionalNotificatio
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

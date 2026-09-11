@@ -12,7 +12,7 @@ func (b *jsiiProxy_BackupPlanAdvancedBackupSettingList) validateGetParameters(in
 	return nil
 }
 
-func (b *jsiiProxy_BackupPlanAdvancedBackupSettingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupPlanAdvancedBackupSettingList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_BackupPlanAdvancedBackupSettingList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewBackupPlanAdvancedBackupSettingListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBackupPlanAdvancedBackupSettingListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

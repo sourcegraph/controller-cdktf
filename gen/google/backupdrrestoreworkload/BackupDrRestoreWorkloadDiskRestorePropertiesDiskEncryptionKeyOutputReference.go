@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/backupdrrestoreworkload/internal"
 )
 
 type BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,15 +46,15 @@ type BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReferenc
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,16 +70,16 @@ type BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReferenc
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetKmsKeyName()
 	ResetKmsKeyServiceAccount()
 	ResetRawKey()
 	ResetRsaEncryptedKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReferenc
 
 // The jsii proxy struct for BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference
 type jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) ComplexObjectIndex() interface{} {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey
 }
 
 
-func NewBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference {
+func NewBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputRefer
 	j := jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference",
+		"@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputRefer
 	return &j
 }
 
-func NewBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference_Override(b BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference_Override(b BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference",
+		"@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)
@@ -358,7 +358,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,11 +398,11 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey
 	return returns
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -526,8 +526,8 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey
 	return returns
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -539,16 +539,16 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey
 	return returns
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey
 	)
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

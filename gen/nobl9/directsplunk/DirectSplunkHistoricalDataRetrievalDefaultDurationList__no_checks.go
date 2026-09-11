@@ -12,7 +12,7 @@ func (d *jsiiProxy_DirectSplunkHistoricalDataRetrievalDefaultDurationList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DirectSplunkHistoricalDataRetrievalDefaultDurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectSplunkHistoricalDataRetrievalDefaultDurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DirectSplunkHistoricalDataRetrievalDefaultDurationList) valid
 	return nil
 }
 
-func (j *jsiiProxy_DirectSplunkHistoricalDataRetrievalDefaultDurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DirectSplunkHistoricalDataRetrievalDefaultDurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DirectSplunkHistoricalDataRetrievalDefaultDurationList) valid
 	return nil
 }
 
-func validateNewDirectSplunkHistoricalDataRetrievalDefaultDurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDirectSplunkHistoricalDataRetrievalDefaultDurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

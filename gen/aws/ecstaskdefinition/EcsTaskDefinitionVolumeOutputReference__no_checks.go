@@ -40,7 +40,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validatePutFsxWindows
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEcsTaskDefinitionVolumeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEcsTaskDefinitionVolumeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

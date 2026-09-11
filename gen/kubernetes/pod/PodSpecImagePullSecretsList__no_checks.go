@@ -12,7 +12,7 @@ func (p *jsiiProxy_PodSpecImagePullSecretsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecImagePullSecretsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecImagePullSecretsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PodSpecImagePullSecretsList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecImagePullSecretsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSpecImagePullSecretsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PodSpecImagePullSecretsList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewPodSpecImagePullSecretsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPodSpecImagePullSecretsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

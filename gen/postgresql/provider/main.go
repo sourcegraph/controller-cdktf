@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
+		"@cdktn/provider-postgresql.provider.PostgresqlProvider",
 		reflect.TypeOf((*PostgresqlProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -54,6 +54,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
 			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsRdsIamAuth", GoMethod: "ResetAwsRdsIamAuth"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsRdsIamProfile", GoMethod: "ResetAwsRdsIamProfile"},
@@ -99,19 +100,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PostgresqlProvider{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformProvider)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert",
+		"@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert",
 		reflect.TypeOf((*PostgresqlProviderClientcert)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-postgresql.provider.PostgresqlProviderConfig",
+		"@cdktn/provider-postgresql.provider.PostgresqlProviderConfig",
 		reflect.TypeOf((*PostgresqlProviderConfig)(nil)).Elem(),
 	)
 }

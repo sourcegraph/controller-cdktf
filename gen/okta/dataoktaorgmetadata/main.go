@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadata",
+		"@cdktn/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadata",
 		reflect.TypeOf((*DataOktaOrgMetadata)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -37,6 +37,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pipeline", GoGetter: "Pipeline"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "settings", GoGetter: "Settings"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -48,23 +49,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaOrgMetadata{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataConfig",
+		"@cdktn/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataConfig",
 		reflect.TypeOf((*DataOktaOrgMetadataConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataDomains",
+		"@cdktn/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataDomains",
 		reflect.TypeOf((*DataOktaOrgMetadataDomains)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataDomainsOutputReference",
+		"@cdktn/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataDomainsOutputReference",
 		reflect.TypeOf((*DataOktaOrgMetadataDomainsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alternate", GoGetter: "Alternate"},
@@ -93,16 +95,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaOrgMetadataDomainsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataSettings",
+		"@cdktn/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataSettings",
 		reflect.TypeOf((*DataOktaOrgMetadataSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataSettingsOutputReference",
+		"@cdktn/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataSettingsOutputReference",
 		reflect.TypeOf((*DataOktaOrgMetadataSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "analyticsCollectionEnabled", GoGetter: "AnalyticsCollectionEnabled"},
@@ -132,7 +134,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaOrgMetadataSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

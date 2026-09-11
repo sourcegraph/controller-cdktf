@@ -56,6 +56,10 @@ func (o *jsiiProxy_OrganizationIamCustomRole) validateInterpolationForAttributeP
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationIamCustomRole) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationIamCustomRole) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (o *jsiiProxy_OrganizationIamCustomRole) validateMoveToIdParameters(id *str
 }
 
 func (o *jsiiProxy_OrganizationIamCustomRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationIamCustomRole) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_OrganizationIamCustomRole) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationIamCustomRole) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_OrganizationIamCustomRole) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

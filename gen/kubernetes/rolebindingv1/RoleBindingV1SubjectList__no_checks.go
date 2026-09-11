@@ -12,7 +12,7 @@ func (r *jsiiProxy_RoleBindingV1SubjectList) validateGetParameters(index *float6
 	return nil
 }
 
-func (r *jsiiProxy_RoleBindingV1SubjectList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RoleBindingV1SubjectList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_RoleBindingV1SubjectList) validateSetTerraformAttributeParame
 	return nil
 }
 
-func (j *jsiiProxy_RoleBindingV1SubjectList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RoleBindingV1SubjectList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_RoleBindingV1SubjectList) validateSetWrapsSetParameters(val *
 	return nil
 }
 
-func validateNewRoleBindingV1SubjectListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewRoleBindingV1SubjectListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (a *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigOutputReferen
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (a *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigOutputReferen
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigOutputReferen
 	return nil
 }
 
-func validateNewApihubPluginInstanceAuthConfigUserPasswordConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApihubPluginInstanceAuthConfigUserPasswordConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

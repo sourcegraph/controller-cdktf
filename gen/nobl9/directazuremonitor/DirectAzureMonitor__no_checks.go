@@ -56,6 +56,10 @@ func (d *jsiiProxy_DirectAzureMonitor) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (d *jsiiProxy_DirectAzureMonitor) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectAzureMonitor) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (d *jsiiProxy_DirectAzureMonitor) validatePutHistoricalDataRetrievalParamet
 }
 
 func (d *jsiiProxy_DirectAzureMonitor) validatePutQueryDelayParameters(value *DirectAzureMonitorQueryDelay) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectAzureMonitor) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_DirectAzureMonitor) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_DirectAzureMonitor) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DirectAzureMonitor) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

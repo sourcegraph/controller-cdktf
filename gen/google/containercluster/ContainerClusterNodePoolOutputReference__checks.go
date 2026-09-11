@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) validateGetStringMap
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -139,7 +139,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) validatePutNodeDrain
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*ContainerClusterNodePoolNodeDrainConfig:
 		value := value.(*[]*ContainerClusterNodePoolNodeDrainConfig)
@@ -158,7 +158,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) validatePutNodeDrain
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ContainerClusterNodePoolNodeDrainConfig; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ContainerClusterNodePoolNodeDrainConfig; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -198,9 +198,9 @@ func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) validatePutUpgradeSe
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -281,7 +281,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) validateSetInitialNo
 
 func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *ContainerClusterNodePool:
 		val := val.(*ContainerClusterNodePool)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) validateSetInternalV
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ContainerClusterNodePool; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *ContainerClusterNodePool; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -351,7 +351,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -367,7 +367,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) validateSetVersionPa
 	return nil
 }
 
-func validateNewContainerClusterNodePoolOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewContainerClusterNodePoolOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

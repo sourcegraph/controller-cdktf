@@ -40,11 +40,11 @@ func (r *jsiiProxy_RecordDataOutputReference) validateGetStringMapAttributeParam
 	return nil
 }
 
-func (r *jsiiProxy_RecordDataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RecordDataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RecordDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RecordDataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -204,7 +204,7 @@ func (j *jsiiProxy_RecordDataOutputReference) validateSetTerraformAttributeParam
 	return nil
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RecordDataOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -224,7 +224,7 @@ func (j *jsiiProxy_RecordDataOutputReference) validateSetWeightParameters(val *f
 	return nil
 }
 
-func validateNewRecordDataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRecordDataOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

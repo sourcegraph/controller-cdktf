@@ -56,6 +56,10 @@ func (s *jsiiProxy_StorageHmacKey) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_StorageHmacKey) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageHmacKey) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_StorageHmacKey) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (s *jsiiProxy_StorageHmacKey) validatePutTimeoutsParameters(value *StorageHmacKeyTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageHmacKey) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_StorageHmacKey) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_StorageHmacKey) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_StorageHmacKey) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

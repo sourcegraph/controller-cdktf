@@ -56,6 +56,10 @@ func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamBinding) validateInterpolation
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamBinding) validateOverrideLogic
 }
 
 func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamBinding) validatePutConditionParameters(value *BigqueryDatapolicyDataPolicyIamBindingCondition) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamBinding) validateSetIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

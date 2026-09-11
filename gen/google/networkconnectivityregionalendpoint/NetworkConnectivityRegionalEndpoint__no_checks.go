@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetworkConnectivityRegionalEndpoint) validateInterpolationFor
 	return nil
 }
 
+func (n *jsiiProxy_NetworkConnectivityRegionalEndpoint) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivityRegionalEndpoint) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (n *jsiiProxy_NetworkConnectivityRegionalEndpoint) validateOverrideLogicalI
 }
 
 func (n *jsiiProxy_NetworkConnectivityRegionalEndpoint) validatePutTimeoutsParameters(value *NetworkConnectivityRegionalEndpointTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkConnectivityRegionalEndpoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_NetworkConnectivityRegionalEndpoint) validateSetLabelsParamet
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityRegionalEndpoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetworkConnectivityRegionalEndpoint) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

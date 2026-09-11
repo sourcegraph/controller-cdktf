@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleSaasRuntimeTenant) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSaasRuntimeTenant) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSaasRuntimeTenant) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleSaasRuntimeTenant) validateOverrideLogicalIdParameters(
 }
 
 func (g *jsiiProxy_GoogleSaasRuntimeTenant) validatePutTimeoutsParameters(value *GoogleSaasRuntimeTenantTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSaasRuntimeTenant) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleSaasRuntimeTenant) validateSetLabelsParameters(val *map
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSaasRuntimeTenant) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleSaasRuntimeTenant) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

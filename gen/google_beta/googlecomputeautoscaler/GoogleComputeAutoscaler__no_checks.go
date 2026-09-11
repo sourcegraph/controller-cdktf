@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeAutoscaler) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeAutoscaler) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeAutoscaler) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleComputeAutoscaler) validatePutAutoscalingPolicyParamete
 }
 
 func (g *jsiiProxy_GoogleComputeAutoscaler) validatePutTimeoutsParameters(value *GoogleComputeAutoscalerTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeAutoscaler) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleComputeAutoscaler) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeAutoscaler) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeAutoscaler) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

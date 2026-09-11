@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsBatchSchedulingPolicyFairSharePolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsBatchSchedulingPolicyFairSharePolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

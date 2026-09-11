@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cestool/internal"
 )
 
 type CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,16 +41,16 @@ type CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference in
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference in
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference in
 
 // The jsii proxy struct for CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference
 type jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference) ComplexObjectIndex() interface{} {
@@ -204,8 +204,8 @@ func (j *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutp
 	return returns
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -225,7 +225,7 @@ func (j *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutp
 }
 
 
-func NewCesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference {
+func NewCesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -234,7 +234,7 @@ func NewCesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference
 	j := jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesTool.CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference",
+		"@cdktn/provider-google.cesTool.CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -242,11 +242,11 @@ func NewCesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference
 	return &j
 }
 
-func NewCesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference_Override(c CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference_Override(c CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesTool.CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference",
+		"@cdktn/provider-google.cesTool.CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutp
 	)
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,11 +347,11 @@ func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutp
 	return returns
 }
 
-func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -475,8 +475,8 @@ func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutp
 	return returns
 }
 
-func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -488,24 +488,24 @@ func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutp
 	return returns
 }
 
-func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutp
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

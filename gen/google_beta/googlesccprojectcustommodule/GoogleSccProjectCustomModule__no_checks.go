@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleSccProjectCustomModule) validateInterpolationForAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSccProjectCustomModule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSccProjectCustomModule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleSccProjectCustomModule) validatePutCustomConfigParamete
 }
 
 func (g *jsiiProxy_GoogleSccProjectCustomModule) validatePutTimeoutsParameters(value *GoogleSccProjectCustomModuleTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSccProjectCustomModule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleSccProjectCustomModule) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccProjectCustomModule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleSccProjectCustomModule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

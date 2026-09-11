@@ -56,6 +56,10 @@ func (m *jsiiProxy_MskconnectConnector) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_MskconnectConnector) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskconnectConnector) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (m *jsiiProxy_MskconnectConnector) validatePutWorkerConfigurationParameters
 	return nil
 }
 
+func (m *jsiiProxy_MskconnectConnector) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateMskconnectConnector_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -144,7 +152,7 @@ func (j *jsiiProxy_MskconnectConnector) validateSetKafkaconnectVersionParameters
 	return nil
 }
 
-func (j *jsiiProxy_MskconnectConnector) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MskconnectConnector) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

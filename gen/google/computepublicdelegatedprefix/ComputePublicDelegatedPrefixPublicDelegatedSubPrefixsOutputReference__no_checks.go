@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputRe
 	return nil
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

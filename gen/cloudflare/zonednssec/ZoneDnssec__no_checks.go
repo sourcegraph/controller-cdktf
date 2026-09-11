@@ -56,6 +56,10 @@ func (z *jsiiProxy_ZoneDnssec) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (z *jsiiProxy_ZoneDnssec) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneDnssec) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (z *jsiiProxy_ZoneDnssec) validateMoveToIdParameters(id *string) error {
 }
 
 func (z *jsiiProxy_ZoneDnssec) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZoneDnssec) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_ZoneDnssec) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ZoneDnssec) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ZoneDnssec) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

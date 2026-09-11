@@ -56,6 +56,10 @@ func (l *jsiiProxy_LoggingBillingAccountSink) validateInterpolationForAttributeP
 	return nil
 }
 
+func (l *jsiiProxy_LoggingBillingAccountSink) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingBillingAccountSink) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (l *jsiiProxy_LoggingBillingAccountSink) validatePutBigqueryOptionsParamete
 }
 
 func (l *jsiiProxy_LoggingBillingAccountSink) validatePutExclusionsParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingBillingAccountSink) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_LoggingBillingAccountSink) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountSink) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LoggingBillingAccountSink) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

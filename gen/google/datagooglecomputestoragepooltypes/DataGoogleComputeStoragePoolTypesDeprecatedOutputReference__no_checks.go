@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleComputeStoragePoolTypesDeprecatedOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeStoragePoolTypesDeprecatedOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeStoragePoolTypesDeprecatedOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeStoragePoolTypesDeprecatedOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeStoragePoolTypesDeprecatedOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleComputeStoragePoolTypesDeprecatedOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeStoragePoolTypesDeprecatedOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeStoragePoolTypesDeprecatedOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleComputeStoragePoolTypesDeprecatedOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleComputeStoragePoolTypesDeprecatedOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

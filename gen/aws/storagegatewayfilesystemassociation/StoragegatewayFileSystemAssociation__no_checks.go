@@ -56,6 +56,10 @@ func (s *jsiiProxy_StoragegatewayFileSystemAssociation) validateInterpolationFor
 	return nil
 }
 
+func (s *jsiiProxy_StoragegatewayFileSystemAssociation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StoragegatewayFileSystemAssociation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_StoragegatewayFileSystemAssociation) validateOverrideLogicalI
 }
 
 func (s *jsiiProxy_StoragegatewayFileSystemAssociation) validatePutCacheAttributesParameters(value *StoragegatewayFileSystemAssociationCacheAttributes) error {
+	return nil
+}
+
+func (s *jsiiProxy_StoragegatewayFileSystemAssociation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_StoragegatewayFileSystemAssociation) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayFileSystemAssociation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_StoragegatewayFileSystemAssociation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

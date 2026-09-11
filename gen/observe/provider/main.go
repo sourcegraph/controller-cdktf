@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.provider.ObserveProvider",
+		"@cdktn/provider-observe.provider.ObserveProvider",
 		reflect.TypeOf((*ObserveProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -40,6 +40,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApiToken", GoMethod: "ResetApiToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultRematerializationMode", GoMethod: "ResetDefaultRematerializationMode"},
@@ -80,15 +81,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userEmailInput", GoGetter: "UserEmailInput"},
 			_jsii_.MemberProperty{JsiiProperty: "userPassword", GoGetter: "UserPassword"},
 			_jsii_.MemberProperty{JsiiProperty: "userPasswordInput", GoGetter: "UserPasswordInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ObserveProvider{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformProvider)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.provider.ObserveProviderConfig",
+		"@cdktn/provider-observe.provider.ObserveProviderConfig",
 		reflect.TypeOf((*ObserveProviderConfig)(nil)).Elem(),
 	)
 }

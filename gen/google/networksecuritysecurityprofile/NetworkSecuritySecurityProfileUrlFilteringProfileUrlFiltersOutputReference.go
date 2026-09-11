@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/networksecuritysecurityprofile/internal"
 )
 
 type NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Urls() *[]*string
 	SetUrls(val *[]*string)
 	UrlsInput() *[]*string
@@ -51,7 +51,7 @@ type NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference 
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetUrls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference 
 
 // The jsii proxy struct for NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference
 type jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOu
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOu
 }
 
 
-func NewNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference {
+func NewNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -226,7 +226,7 @@ func NewNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReferen
 	j := jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference",
+		"@cdktn/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReferen
 	return &j
 }
 
-func NewNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference_Override(n NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference_Override(n NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference",
+		"@cdktn/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOu
 	)
 }
 
-func (j *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOu
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -489,8 +489,8 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOu
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -502,16 +502,16 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOu
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOu
 	)
 }
 
-func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOu
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

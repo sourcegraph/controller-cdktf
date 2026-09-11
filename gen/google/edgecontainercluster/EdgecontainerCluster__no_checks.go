@@ -56,6 +56,10 @@ func (e *jsiiProxy_EdgecontainerCluster) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (e *jsiiProxy_EdgecontainerCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EdgecontainerCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (e *jsiiProxy_EdgecontainerCluster) validatePutTimeoutsParameters(value *Ed
 	return nil
 }
 
+func (e *jsiiProxy_EdgecontainerCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateEdgecontainerCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -144,7 +152,7 @@ func (j *jsiiProxy_EdgecontainerCluster) validateSetLabelsParameters(val *map[st
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EdgecontainerCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

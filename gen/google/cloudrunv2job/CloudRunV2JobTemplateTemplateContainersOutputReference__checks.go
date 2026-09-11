@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*CloudRunV2JobTemplateTemplateContainersEnv:
 		value := value.(*[]*CloudRunV2JobTemplateTemplateContainersEnv)
@@ -114,7 +114,7 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CloudRunV2JobTemplateTemplateContainersEnv; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*CloudRunV2JobTemplateTemplateContainersEnv; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*CloudRunV2JobTemplateTemplateContainersPorts:
 		value := value.(*[]*CloudRunV2JobTemplateTemplateContainersPorts)
@@ -145,7 +145,7 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CloudRunV2JobTemplateTemplateContainersPorts; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*CloudRunV2JobTemplateTemplateContainersPorts; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -179,7 +179,7 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*CloudRunV2JobTemplateTemplateContainersVolumeMounts:
 		value := value.(*[]*CloudRunV2JobTemplateTemplateContainersVolumeMounts)
@@ -198,16 +198,16 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CloudRunV2JobTemplateTemplateContainersVolumeMounts; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*CloudRunV2JobTemplateTemplateContainersVolumeMounts; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -312,7 +312,7 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) valid
 
 func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *CloudRunV2JobTemplateTemplateContainers:
 		val := val.(*CloudRunV2JobTemplateTemplateContainers)
@@ -327,7 +327,7 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CloudRunV2JobTemplateTemplateContainers; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *CloudRunV2JobTemplateTemplateContainers; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -350,7 +350,7 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -366,7 +366,7 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) valid
 	return nil
 }
 
-func validateNewCloudRunV2JobTemplateTemplateContainersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCloudRunV2JobTemplateTemplateContainersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

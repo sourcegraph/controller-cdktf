@@ -4,15 +4,15 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputeinstancetemplate/internal"
 )
 
 type DataGoogleComputeInstanceTemplateDiskOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Architecture() *string
-	AutoDelete() cdktf.IResolvable
-	Boot() cdktf.IResolvable
+	AutoDelete() cdktn.IResolvable
+	Boot() cdktn.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,11 +39,11 @@ type DataGoogleComputeInstanceTemplateDiskOutputReference interface {
 	Interface() *string
 	InternalValue() *DataGoogleComputeInstanceTemplateDisk
 	SetInternalValue(val *DataGoogleComputeInstanceTemplateDisk)
-	Labels() cdktf.StringMap
+	Labels() cdktn.StringMap
 	Mode() *string
 	ProvisionedIops() *float64
 	ProvisionedThroughput() *float64
-	ResourceManagerTags() cdktf.StringMap
+	ResourceManagerTags() cdktn.StringMap
 	ResourcePolicies() *[]*string
 	Source() *string
 	SourceImage() *string
@@ -56,16 +56,16 @@ type DataGoogleComputeInstanceTemplateDiskOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,12 +81,12 @@ type DataGoogleComputeInstanceTemplateDiskOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type DataGoogleComputeInstanceTemplateDiskOutputReference interface {
 
 // The jsii proxy struct for DataGoogleComputeInstanceTemplateDiskOutputReference
 type jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) Architecture() *string {
@@ -109,8 +109,8 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) Archite
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) AutoDelete() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) AutoDelete() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"autoDelete",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) AutoDel
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) Boot() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) Boot() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"boot",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) Interna
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) Labels() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) Labels() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"labels",
@@ -289,8 +289,8 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) Provisi
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) ResourceManagerTags() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) ResourceManagerTags() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"resourceManagerTags",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -400,7 +400,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) Type() 
 }
 
 
-func NewDataGoogleComputeInstanceTemplateDiskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceTemplateDiskOutputReference {
+func NewDataGoogleComputeInstanceTemplateDiskOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceTemplateDiskOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleComputeInstanceTemplateDiskOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -409,7 +409,7 @@ func NewDataGoogleComputeInstanceTemplateDiskOutputReference(terraformResource c
 	j := jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateDiskOutputReference",
+		"@cdktn/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -417,11 +417,11 @@ func NewDataGoogleComputeInstanceTemplateDiskOutputReference(terraformResource c
 	return &j
 }
 
-func NewDataGoogleComputeInstanceTemplateDiskOutputReference_Override(d DataGoogleComputeInstanceTemplateDiskOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleComputeInstanceTemplateDiskOutputReference_Override(d DataGoogleComputeInstanceTemplateDiskOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateDiskOutputReference",
+		"@cdktn/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -471,7 +471,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,11 +511,11 @@ func (d *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) GetAnyM
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -639,8 +639,8 @@ func (d *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) GetStri
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -652,24 +652,24 @@ func (d *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) Interpo
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -677,7 +677,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) Resolve
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

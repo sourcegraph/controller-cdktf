@@ -56,6 +56,10 @@ func (s *jsiiProxy_StorageManagedFolder) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_StorageManagedFolder) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageManagedFolder) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_StorageManagedFolder) validateOverrideLogicalIdParameters(new
 }
 
 func (s *jsiiProxy_StorageManagedFolder) validatePutTimeoutsParameters(value *StorageManagedFolderTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageManagedFolder) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_StorageManagedFolder) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_StorageManagedFolder) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_StorageManagedFolder) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

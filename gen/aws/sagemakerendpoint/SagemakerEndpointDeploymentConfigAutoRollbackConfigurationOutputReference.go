@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/sagemakerendpoint/internal"
 )
 
 type SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Alarms() SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList
 	AlarmsInput() interface{}
 	// the index of the complex object in a list.
@@ -36,15 +36,15 @@ type SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference i
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,14 +60,14 @@ type SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference i
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAlarms(value interface{})
 	ResetAlarms()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference i
 
 // The jsii proxy struct for SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference
 type jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference) Alarms() SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOut
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOut
 }
 
 
-func NewSagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference {
+func NewSagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewSagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReferenc
 	j := jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference",
+		"@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewSagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReferenc
 	return &j
 }
 
-func NewSagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference_Override(s SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference_Override(s SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference",
+		"@cdktn/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOut
 	)
 }
 
-func (j *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -282,11 +282,11 @@ func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOut
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -410,8 +410,8 @@ func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOut
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -423,16 +423,16 @@ func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOut
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOut
 	)
 }
 
-func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOut
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

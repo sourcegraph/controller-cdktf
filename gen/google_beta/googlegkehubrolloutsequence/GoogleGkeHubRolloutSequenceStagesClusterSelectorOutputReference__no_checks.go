@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleGkeHubRolloutSequenceStagesClusterSelectorOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubRolloutSequenceStagesClusterSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleGkeHubRolloutSequenceStagesClusterSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubRolloutSequenceStagesClusterSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeHubRolloutSequenceStagesClusterSelectorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleGkeHubRolloutSequenceStagesClusterSelectorOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubRolloutSequenceStagesClusterSelectorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeHubRolloutSequenceStagesClusterSelectorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleGkeHubRolloutSequenceStagesClusterSelectorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleGkeHubRolloutSequenceStagesClusterSelectorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

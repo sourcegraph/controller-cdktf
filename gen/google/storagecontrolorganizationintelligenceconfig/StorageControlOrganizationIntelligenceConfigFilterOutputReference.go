@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/storagecontrolorganizationintelligenceconfig/internal"
 )
 
 type StorageControlOrganizationIntelligenceConfigFilterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,15 +42,15 @@ type StorageControlOrganizationIntelligenceConfigFilterOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,9 +66,9 @@ type StorageControlOrganizationIntelligenceConfigFilterOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutExcludedCloudStorageBuckets(value *StorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBuckets)
 	PutExcludedCloudStorageLocations(value *StorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocations)
 	PutIncludedCloudStorageBuckets(value *StorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBuckets)
@@ -79,7 +79,7 @@ type StorageControlOrganizationIntelligenceConfigFilterOutputReference interface
 	ResetIncludedCloudStorageLocations()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type StorageControlOrganizationIntelligenceConfigFilterOutputReference interface
 
 // The jsii proxy struct for StorageControlOrganizationIntelligenceConfigFilterOutputReference
 type jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputReference) ComplexObjectIndex() interface{} {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputRefer
 }
 
 
-func NewStorageControlOrganizationIntelligenceConfigFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StorageControlOrganizationIntelligenceConfigFilterOutputReference {
+func NewStorageControlOrganizationIntelligenceConfigFilterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) StorageControlOrganizationIntelligenceConfigFilterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewStorageControlOrganizationIntelligenceConfigFilterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewStorageControlOrganizationIntelligenceConfigFilterOutputReference(terraf
 	j := jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterOutputReference",
+		"@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewStorageControlOrganizationIntelligenceConfigFilterOutputReference(terraf
 	return &j
 }
 
-func NewStorageControlOrganizationIntelligenceConfigFilterOutputReference_Override(s StorageControlOrganizationIntelligenceConfigFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewStorageControlOrganizationIntelligenceConfigFilterOutputReference_Override(s StorageControlOrganizationIntelligenceConfigFilterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterOutputReference",
+		"@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -314,7 +314,7 @@ func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputRefer
 	)
 }
 
-func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -354,11 +354,11 @@ func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputRefer
 	return returns
 }
 
-func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -482,8 +482,8 @@ func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputRefer
 	return returns
 }
 
-func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -495,16 +495,16 @@ func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputRefer
 	return returns
 }
 
-func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputRefer
 	)
 }
 
-func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterOutputRefer
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

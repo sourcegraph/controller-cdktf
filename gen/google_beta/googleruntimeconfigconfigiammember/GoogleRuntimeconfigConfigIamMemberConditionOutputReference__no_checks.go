@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleRuntimeconfigConfigIamMemberConditionOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRuntimeconfigConfigIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleRuntimeconfigConfigIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRuntimeconfigConfigIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleRuntimeconfigConfigIamMemberConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleRuntimeconfigConfigIamMemberConditionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRuntimeconfigConfigIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleRuntimeconfigConfigIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleRuntimeconfigConfigIamMemberConditionOutputReference) v
 	return nil
 }
 
-func validateNewGoogleRuntimeconfigConfigIamMemberConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleRuntimeconfigConfigIamMemberConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

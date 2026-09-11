@@ -12,7 +12,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsChallengeSettingsActionSetti
 	return nil
 }
 
-func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsChallengeSettingsActionSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsChallengeSettingsActionSettingsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsChallengeSettingsActionSetti
 	return nil
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsChallengeSettingsActionSettingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsChallengeSettingsActionSettingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsChallengeSettingsActionSetti
 	return nil
 }
 
-func validateNewRecaptchaEnterpriseKeyWebSettingsChallengeSettingsActionSettingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewRecaptchaEnterpriseKeyWebSettingsChallengeSettingsActionSettingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigqueryanalyticshublisting/internal"
 )
 
 type BigqueryAnalyticsHubListingCommercialInfoOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CloudMarketplace() BigqueryAnalyticsHubListingCommercialInfoCloudMarketplaceList
 	// the index of the complex object in a list.
 	// Experimental.
@@ -35,15 +35,15 @@ type BigqueryAnalyticsHubListingCommercialInfoOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -59,12 +59,12 @@ type BigqueryAnalyticsHubListingCommercialInfoOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -74,7 +74,7 @@ type BigqueryAnalyticsHubListingCommercialInfoOutputReference interface {
 
 // The jsii proxy struct for BigqueryAnalyticsHubListingCommercialInfoOutputReference
 type jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference) CloudMarketplace() BigqueryAnalyticsHubListingCommercialInfoCloudMarketplaceList {
@@ -147,8 +147,8 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -158,7 +158,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference) Ter
 }
 
 
-func NewBigqueryAnalyticsHubListingCommercialInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BigqueryAnalyticsHubListingCommercialInfoOutputReference {
+func NewBigqueryAnalyticsHubListingCommercialInfoOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BigqueryAnalyticsHubListingCommercialInfoOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBigqueryAnalyticsHubListingCommercialInfoOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -167,7 +167,7 @@ func NewBigqueryAnalyticsHubListingCommercialInfoOutputReference(terraformResour
 	j := jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingCommercialInfoOutputReference",
+		"@cdktn/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingCommercialInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -175,11 +175,11 @@ func NewBigqueryAnalyticsHubListingCommercialInfoOutputReference(terraformResour
 	return &j
 }
 
-func NewBigqueryAnalyticsHubListingCommercialInfoOutputReference_Override(b BigqueryAnalyticsHubListingCommercialInfoOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewBigqueryAnalyticsHubListingCommercialInfoOutputReference_Override(b BigqueryAnalyticsHubListingCommercialInfoOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingCommercialInfoOutputReference",
+		"@cdktn/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingCommercialInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
@@ -229,7 +229,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -269,11 +269,11 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference) Get
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -397,8 +397,8 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference) Get
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -410,24 +410,24 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference) Int
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -435,7 +435,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoOutputReference) Res
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

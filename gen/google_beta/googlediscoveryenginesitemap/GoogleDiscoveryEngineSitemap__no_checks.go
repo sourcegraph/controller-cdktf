@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) validateInterpolationForAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) validateOverrideLogicalIdParame
 }
 
 func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) validatePutTimeoutsParameters(value *GoogleDiscoveryEngineSitemapTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

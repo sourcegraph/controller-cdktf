@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlemodelarmortemplate/internal"
 )
 
 type GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdvancedConfig() GoogleModelArmorTemplateFilterConfigSdpSettingsAdvancedConfigOutputReference
 	AdvancedConfigInput() *GoogleModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig
 	BasicConfig() GoogleModelArmorTemplateFilterConfigSdpSettingsBasicConfigOutputReference
@@ -38,15 +38,15 @@ type GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,16 +62,16 @@ type GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAdvancedConfig(value *GoogleModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig)
 	PutBasicConfig(value *GoogleModelArmorTemplateFilterConfigSdpSettingsBasicConfig)
 	ResetAdvancedConfig()
 	ResetBasicConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference interface {
 
 // The jsii proxy struct for GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference
 type jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference) AdvancedConfig() GoogleModelArmorTemplateFilterConfigSdpSettingsAdvancedConfigOutputReference {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReferenc
 }
 
 
-func NewGoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference {
+func NewGoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleModelArmorTemplateFilterConfigSdpSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewGoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference(terraform
 	j := jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference(terraform
 	return &j
 }
 
-func NewGoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference_Override(g GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference_Override(g GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -266,7 +266,7 @@ func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,11 +306,11 @@ func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReferenc
 	return returns
 }
 
-func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -434,8 +434,8 @@ func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReferenc
 	return returns
 }
 
-func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -447,16 +447,16 @@ func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReferenc
 	return returns
 }
 
-func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReferenc
 	)
 }
 
-func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

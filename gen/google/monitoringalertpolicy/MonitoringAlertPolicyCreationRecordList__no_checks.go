@@ -12,7 +12,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyCreationRecordList) validateGetParameter
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyCreationRecordList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringAlertPolicyCreationRecordList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyCreationRecordList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyCreationRecordList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitoringAlertPolicyCreationRecordList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyCreationRecordList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewMonitoringAlertPolicyCreationRecordListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMonitoringAlertPolicyCreationRecordListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

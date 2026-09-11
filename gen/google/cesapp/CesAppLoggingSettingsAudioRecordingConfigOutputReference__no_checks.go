@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesAppLoggingSettingsAudioRecordingConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesAppLoggingSettingsAudioRecordingConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

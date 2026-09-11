@@ -40,11 +40,11 @@ func (c *jsiiProxy_CognitoUserPoolSchemaNumberAttributeConstraintsOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_CognitoUserPoolSchemaNumberAttributeConstraintsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCognitoUserPoolSchemaNumberAttributeConstraintsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCognitoUserPoolSchemaNumberAttributeConstraintsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

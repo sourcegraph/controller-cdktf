@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplateRuntimeConfigOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocSessionTemplateRuntimeConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataprocSessionTemplateRuntimeConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocSessionTemplateRuntimeConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataprocSessionTemplateRuntimeConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplateRuntimeConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocSessionTemplateRuntimeConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataprocSessionTemplateRuntimeConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplateRuntimeConfigOutputReference) va
 	return nil
 }
 
-func validateNewGoogleDataprocSessionTemplateRuntimeConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataprocSessionTemplateRuntimeConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) validateInterpolationForAttribut
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontRealtimeLogConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontRealtimeLogConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) validateOverrideLogicalIdParamet
 }
 
 func (c *jsiiProxy_CloudfrontRealtimeLogConfig) validatePutEndpointParameters(value *CloudfrontRealtimeLogConfigEndpoint) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontRealtimeLogConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

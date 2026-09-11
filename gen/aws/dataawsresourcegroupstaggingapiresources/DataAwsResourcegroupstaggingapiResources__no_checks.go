@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validatePutTagFilte
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsResourcegroupstaggingapiResources_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,7 +92,7 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateSetIncludeC
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

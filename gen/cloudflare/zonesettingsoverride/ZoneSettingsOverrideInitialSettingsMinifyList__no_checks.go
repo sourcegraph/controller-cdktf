@@ -12,7 +12,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) validateGetPar
 	return nil
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) validateSetWra
 	return nil
 }
 
-func validateNewZoneSettingsOverrideInitialSettingsMinifyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewZoneSettingsOverrideInitialSettingsMinifyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

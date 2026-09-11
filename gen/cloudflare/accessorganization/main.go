@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganization",
+		"@cdktn/provider-cloudflare.accessOrganization.AccessOrganization",
 		reflect.TypeOf((*AccessOrganization)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "loginDesign", GoGetter: "LoginDesign"},
 			_jsii_.MemberProperty{JsiiProperty: "loginDesignInput", GoGetter: "LoginDesignInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -55,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putLoginDesign", GoMethod: "PutLoginDesign"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsUiReadOnly", GoMethod: "ResetIsUiReadOnly"},
@@ -77,25 +79,26 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uiReadOnlyToggleReasonInput", GoGetter: "UiReadOnlyToggleReasonInput"},
 			_jsii_.MemberProperty{JsiiProperty: "userSeatExpirationInactiveTime", GoGetter: "UserSeatExpirationInactiveTime"},
 			_jsii_.MemberProperty{JsiiProperty: "userSeatExpirationInactiveTimeInput", GoGetter: "UserSeatExpirationInactiveTimeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessOrganization{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig",
+		"@cdktn/provider-cloudflare.accessOrganization.AccessOrganizationConfig",
 		reflect.TypeOf((*AccessOrganizationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesign",
+		"@cdktn/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesign",
 		reflect.TypeOf((*AccessOrganizationLoginDesign)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignList",
+		"@cdktn/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignList",
 		reflect.TypeOf((*AccessOrganizationLoginDesignList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -112,12 +115,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessOrganizationLoginDesignList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignOutputReference",
+		"@cdktn/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignOutputReference",
 		reflect.TypeOf((*AccessOrganizationLoginDesignOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backgroundColor", GoGetter: "BackgroundColor"},
@@ -159,7 +162,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessOrganizationLoginDesignOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

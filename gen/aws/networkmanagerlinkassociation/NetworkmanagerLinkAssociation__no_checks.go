@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetworkmanagerLinkAssociation) validateInterpolationForAttrib
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerLinkAssociation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerLinkAssociation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (n *jsiiProxy_NetworkmanagerLinkAssociation) validateOverrideLogicalIdParam
 }
 
 func (n *jsiiProxy_NetworkmanagerLinkAssociation) validatePutTimeoutsParameters(value *NetworkmanagerLinkAssociationTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerLinkAssociation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_NetworkmanagerLinkAssociation) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerLinkAssociation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetworkmanagerLinkAssociation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

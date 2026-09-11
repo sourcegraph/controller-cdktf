@@ -56,6 +56,10 @@ func (n *jsiiProxy_NotificationConfiguration) validateInterpolationForAttributeP
 	return nil
 }
 
+func (n *jsiiProxy_NotificationConfiguration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationConfiguration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (n *jsiiProxy_NotificationConfiguration) validateMoveToIdParameters(id *str
 }
 
 func (n *jsiiProxy_NotificationConfiguration) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationConfiguration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_NotificationConfiguration) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_NotificationConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NotificationConfiguration) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

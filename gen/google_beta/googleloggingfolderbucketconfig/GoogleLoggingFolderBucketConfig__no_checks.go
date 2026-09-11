@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateInterpolationForAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validatePutCmekSettingsParam
 }
 
 func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validatePutIndexConfigsParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

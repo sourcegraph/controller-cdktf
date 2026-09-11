@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeautoscaler/internal"
 )
 
 type GoogleComputeAutoscalerAutoscalingPolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -58,15 +58,15 @@ type GoogleComputeAutoscalerAutoscalingPolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -82,9 +82,9 @@ type GoogleComputeAutoscalerAutoscalingPolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCpuUtilization(value *GoogleComputeAutoscalerAutoscalingPolicyCpuUtilization)
 	PutLoadBalancingUtilization(value *GoogleComputeAutoscalerAutoscalingPolicyLoadBalancingUtilization)
 	PutMetric(value interface{})
@@ -101,7 +101,7 @@ type GoogleComputeAutoscalerAutoscalingPolicyOutputReference interface {
 	ResetScalingSchedules()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -111,7 +111,7 @@ type GoogleComputeAutoscalerAutoscalingPolicyOutputReference interface {
 
 // The jsii proxy struct for GoogleComputeAutoscalerAutoscalingPolicyOutputReference
 type jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) ComplexObjectIndex() interface{} {
@@ -374,8 +374,8 @@ func (j *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) Terr
 }
 
 
-func NewGoogleComputeAutoscalerAutoscalingPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeAutoscalerAutoscalingPolicyOutputReference {
+func NewGoogleComputeAutoscalerAutoscalingPolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleComputeAutoscalerAutoscalingPolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeAutoscalerAutoscalingPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -394,7 +394,7 @@ func NewGoogleComputeAutoscalerAutoscalingPolicyOutputReference(terraformResourc
 	j := jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyOutputReference",
+		"@cdktn/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -402,11 +402,11 @@ func NewGoogleComputeAutoscalerAutoscalingPolicyOutputReference(terraformResourc
 	return &j
 }
 
-func NewGoogleComputeAutoscalerAutoscalingPolicyOutputReference_Override(g GoogleComputeAutoscalerAutoscalingPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleComputeAutoscalerAutoscalingPolicyOutputReference_Override(g GoogleComputeAutoscalerAutoscalingPolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyOutputReference",
+		"@cdktn/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -500,7 +500,7 @@ func (j *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -540,11 +540,11 @@ func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) GetA
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -668,8 +668,8 @@ func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) GetS
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -681,16 +681,16 @@ func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) Inte
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -827,8 +827,8 @@ func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) Rese
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -836,7 +836,7 @@ func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyOutputReference) Reso
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

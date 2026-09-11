@@ -12,7 +12,7 @@ func (d *jsiiProxy_DlpProfileEntryList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (d *jsiiProxy_DlpProfileEntryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DlpProfileEntryList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DlpProfileEntryList) validateSetTerraformAttributeParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DlpProfileEntryList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DlpProfileEntryList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DlpProfileEntryList) validateSetWrapsSetParameters(val *bool)
 	return nil
 }
 
-func validateNewDlpProfileEntryListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDlpProfileEntryListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

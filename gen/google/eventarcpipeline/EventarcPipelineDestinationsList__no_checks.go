@@ -12,7 +12,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsList) validateGetParameters(index
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcPipelineDestinationsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EventarcPipelineDestinationsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewEventarcPipelineDestinationsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEventarcPipelineDestinationsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

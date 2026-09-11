@@ -12,7 +12,7 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchLogsList) validateGetParameters(index *
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleCloudwatchLogsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleCloudwatchLogsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchLogsList) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleCloudwatchLogsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IotTopicRuleCloudwatchLogsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchLogsList) validateSetWrapsSetParameters
 	return nil
 }
 
-func validateNewIotTopicRuleCloudwatchLogsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewIotTopicRuleCloudwatchLogsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

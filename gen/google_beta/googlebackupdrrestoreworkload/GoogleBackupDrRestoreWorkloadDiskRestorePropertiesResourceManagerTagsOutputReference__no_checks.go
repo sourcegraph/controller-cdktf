@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBackupDrRestoreWorkloadDiskRestorePropertiesResourceMan
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleBackupDrRestoreWorkloadDiskRestorePropertiesResourceMan
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleBackupDrRestoreWorkloadDiskRestorePropertiesResourceMan
 	return nil
 }
 
-func validateNewGoogleBackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleBackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

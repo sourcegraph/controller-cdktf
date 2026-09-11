@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsVpcCidrBlockAssociationsList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcCidrBlockAssociationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpcCidrBlockAssociationsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsVpcCidrBlockAssociationsList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcCidrBlockAssociationsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsVpcCidrBlockAssociationsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsVpcCidrBlockAssociationsList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewDataAwsVpcCidrBlockAssociationsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsVpcCidrBlockAssociationsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

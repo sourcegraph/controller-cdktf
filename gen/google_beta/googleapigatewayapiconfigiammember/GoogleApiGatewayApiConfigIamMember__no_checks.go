@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validateInterpolationForA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validateOverrideLogicalId
 }
 
 func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validatePutConditionParameters(value *GoogleApiGatewayApiConfigIamMemberCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

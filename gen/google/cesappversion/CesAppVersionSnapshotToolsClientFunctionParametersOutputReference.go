@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cesappversion/internal"
 )
 
 type CesAppVersionSnapshotToolsClientFunctionParametersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdditionalProperties() *string
 	AnyOf() *string
 	// the index of the complex object in a list.
@@ -36,7 +36,7 @@ type CesAppVersionSnapshotToolsClientFunctionParametersOutputReference interface
 	InternalValue() *CesAppVersionSnapshotToolsClientFunctionParameters
 	SetInternalValue(val *CesAppVersionSnapshotToolsClientFunctionParameters)
 	Items() *string
-	Nullable() cdktf.IResolvable
+	Nullable() cdktn.IResolvable
 	PrefixItems() *string
 	Properties() *string
 	Ref() *string
@@ -46,17 +46,17 @@ type CesAppVersionSnapshotToolsClientFunctionParametersOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
-	UniqueItems() cdktf.IResolvable
+	UniqueItems() cdktn.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,12 +72,12 @@ type CesAppVersionSnapshotToolsClientFunctionParametersOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type CesAppVersionSnapshotToolsClientFunctionParametersOutputReference interface
 
 // The jsii proxy struct for CesAppVersionSnapshotToolsClientFunctionParametersOutputReference
 type jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference) AdditionalProperties() *string {
@@ -210,8 +210,8 @@ func (j *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference) Nullable() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference) Nullable() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"nullable",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference) UniqueItems() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference) UniqueItems() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"uniqueItems",
@@ -301,7 +301,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputRefer
 }
 
 
-func NewCesAppVersionSnapshotToolsClientFunctionParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CesAppVersionSnapshotToolsClientFunctionParametersOutputReference {
+func NewCesAppVersionSnapshotToolsClientFunctionParametersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CesAppVersionSnapshotToolsClientFunctionParametersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCesAppVersionSnapshotToolsClientFunctionParametersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -310,7 +310,7 @@ func NewCesAppVersionSnapshotToolsClientFunctionParametersOutputReference(terraf
 	j := jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsClientFunctionParametersOutputReference",
+		"@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotToolsClientFunctionParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -318,11 +318,11 @@ func NewCesAppVersionSnapshotToolsClientFunctionParametersOutputReference(terraf
 	return &j
 }
 
-func NewCesAppVersionSnapshotToolsClientFunctionParametersOutputReference_Override(c CesAppVersionSnapshotToolsClientFunctionParametersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewCesAppVersionSnapshotToolsClientFunctionParametersOutputReference_Override(c CesAppVersionSnapshotToolsClientFunctionParametersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsClientFunctionParametersOutputReference",
+		"@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotToolsClientFunctionParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -372,7 +372,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputRefer
 	)
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,11 +412,11 @@ func (c *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -540,8 +540,8 @@ func (c *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -553,24 +553,24 @@ func (c *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -578,7 +578,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputRefer
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

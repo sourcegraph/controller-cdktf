@@ -56,6 +56,10 @@ func (g *jsiiProxy_GlueJob) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (g *jsiiProxy_GlueJob) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueJob) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GlueJob) validatePutExecutionPropertyParameters(value *GlueJo
 }
 
 func (g *jsiiProxy_GlueJob) validatePutNotificationPropertyParameters(value *GlueJobNotificationProperty) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueJob) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_GlueJob) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GlueJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GlueJob) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

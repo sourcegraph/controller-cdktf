@@ -40,7 +40,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationWebhookClientConfigOutputReferenc
 	return nil
 }
 
-func (m *jsiiProxy_MutatingWebhookConfigurationWebhookClientConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MutatingWebhookConfigurationWebhookClientConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationWebhookClientConfigOutputReferenc
 	return nil
 }
 
-func (m *jsiiProxy_MutatingWebhookConfigurationWebhookClientConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MutatingWebhookConfigurationWebhookClientConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationWebhookClientConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationWebhookClientConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MutatingWebhookConfigurationWebhookClientConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationWebhookClientConfigOutputReferenc
 	return nil
 }
 
-func validateNewMutatingWebhookConfigurationWebhookClientConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMutatingWebhookConfigurationWebhookClientConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

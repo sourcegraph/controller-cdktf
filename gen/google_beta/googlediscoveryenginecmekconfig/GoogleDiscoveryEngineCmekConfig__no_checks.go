@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDiscoveryEngineCmekConfig) validateInterpolationForAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDiscoveryEngineCmekConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineCmekConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleDiscoveryEngineCmekConfig) validatePutSingleRegionKeysP
 }
 
 func (g *jsiiProxy_GoogleDiscoveryEngineCmekConfig) validatePutTimeoutsParameters(value *GoogleDiscoveryEngineCmekConfigTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineCmekConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineCmekConfig) validateSetKmsKeyParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineCmekConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineCmekConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

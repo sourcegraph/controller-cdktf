@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataplexEntryEntrySourceOutputReference) validateGetStringMap
 	return nil
 }
 
-func (d *jsiiProxy_DataplexEntryEntrySourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexEntryEntrySourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DataplexEntryEntrySourceOutputReference) validatePutAncestors
 	return nil
 }
 
-func (d *jsiiProxy_DataplexEntryEntrySourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexEntryEntrySourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_DataplexEntryEntrySourceOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_DataplexEntryEntrySourceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataplexEntryEntrySourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -104,7 +104,7 @@ func (j *jsiiProxy_DataplexEntryEntrySourceOutputReference) validateSetUpdateTim
 	return nil
 }
 
-func validateNewDataplexEntryEntrySourceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataplexEntryEntrySourceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

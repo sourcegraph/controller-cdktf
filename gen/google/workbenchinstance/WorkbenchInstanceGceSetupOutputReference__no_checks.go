@@ -40,7 +40,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateGetStringMa
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutVmImageP
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -124,11 +124,11 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWorkbenchInstanceGceSetupOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWorkbenchInstanceGceSetupOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

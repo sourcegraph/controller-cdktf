@@ -40,11 +40,11 @@ func (e *jsiiProxy_EventHookHeadersOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (e *jsiiProxy_EventHookHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventHookHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventHookHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventHookHeadersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_EventHookHeadersOutputReference) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_EventHookHeadersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EventHookHeadersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_EventHookHeadersOutputReference) validateSetValueParameters(v
 	return nil
 }
 
-func validateNewEventHookHeadersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEventHookHeadersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

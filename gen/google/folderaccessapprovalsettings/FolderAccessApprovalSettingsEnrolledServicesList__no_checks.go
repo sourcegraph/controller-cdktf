@@ -12,7 +12,7 @@ func (f *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesList) validateGet
 	return nil
 }
 
-func (f *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesList) validateSet
 	return nil
 }
 
-func validateNewFolderAccessApprovalSettingsEnrolledServicesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewFolderAccessApprovalSettingsEnrolledServicesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

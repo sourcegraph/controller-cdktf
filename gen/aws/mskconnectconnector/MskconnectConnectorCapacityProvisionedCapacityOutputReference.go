@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/mskconnectconnector/internal"
 )
 
 type MskconnectConnectorCapacityProvisionedCapacityOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type MskconnectConnectorCapacityProvisionedCapacityOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WorkerCount() *float64
 	SetWorkerCount(val *float64)
 	WorkerCountInput() *float64
@@ -48,7 +48,7 @@ type MskconnectConnectorCapacityProvisionedCapacityOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type MskconnectConnectorCapacityProvisionedCapacityOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMcuCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type MskconnectConnectorCapacityProvisionedCapacityOutputReference interface {
 
 // The jsii proxy struct for MskconnectConnectorCapacityProvisionedCapacityOutputReference
 type jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference
 }
 
 
-func NewMskconnectConnectorCapacityProvisionedCapacityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MskconnectConnectorCapacityProvisionedCapacityOutputReference {
+func NewMskconnectConnectorCapacityProvisionedCapacityOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MskconnectConnectorCapacityProvisionedCapacityOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMskconnectConnectorCapacityProvisionedCapacityOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewMskconnectConnectorCapacityProvisionedCapacityOutputReference(terraformR
 	j := jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityProvisionedCapacityOutputReference",
+		"@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityProvisionedCapacityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewMskconnectConnectorCapacityProvisionedCapacityOutputReference(terraformR
 	return &j
 }
 
-func NewMskconnectConnectorCapacityProvisionedCapacityOutputReference_Override(m MskconnectConnectorCapacityProvisionedCapacityOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMskconnectConnectorCapacityProvisionedCapacityOutputReference_Override(m MskconnectConnectorCapacityProvisionedCapacityOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityProvisionedCapacityOutputReference",
+		"@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorCapacityProvisionedCapacityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference
 	)
 }
 
-func (j *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference
 	return returns
 }
 
-func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -455,8 +455,8 @@ func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference
 	return returns
 }
 
-func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -468,16 +468,16 @@ func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference
 	return returns
 }
 
-func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference
 	)
 }
 
-func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

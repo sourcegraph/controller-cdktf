@@ -40,11 +40,11 @@ func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigSecondaryClustersOut
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigSecondaryClustersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigSecondaryClustersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigSecondaryClustersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigSecondaryClustersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_RedisClusterCrossClusterReplicationConfigSecondaryClustersOut
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterCrossClusterReplicationConfigSecondaryClustersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RedisClusterCrossClusterReplicationConfigSecondaryClustersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewRedisClusterCrossClusterReplicationConfigSecondaryClustersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRedisClusterCrossClusterReplicationConfigSecondaryClustersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

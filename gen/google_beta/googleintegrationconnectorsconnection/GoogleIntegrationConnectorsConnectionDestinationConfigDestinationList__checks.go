@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionDestinationConfigDestinationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionDestinationConfigDestina
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionDestinationConfigDestinationList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionDestinationConfigDestinationList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionDestinationConfigDestina
 
 func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionDestinationConfigDestinationList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleIntegrationConnectorsConnectionDestinationConfigDestination:
 		val := val.(*[]*GoogleIntegrationConnectorsConnectionDestinationConfigDestination)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionDestinationConfigDestina
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*GoogleIntegrationConnectorsConnectionDestinationConfigDestination; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*GoogleIntegrationConnectorsConnectionDestinationConfigDestination; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionDestinationConfigDestina
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionDestinationConfigDestinationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionDestinationConfigDestinationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionDestinationConfigDestina
 	return nil
 }
 
-func validateNewGoogleIntegrationConnectorsConnectionDestinationConfigDestinationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleIntegrationConnectorsConnectionDestinationConfigDestinationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

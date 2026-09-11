@@ -56,6 +56,10 @@ func (g *jsiiProxy_GooglePubsubSubscriptionIamBinding) validateInterpolationForA
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubSubscriptionIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubSubscriptionIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GooglePubsubSubscriptionIamBinding) validateOverrideLogicalId
 }
 
 func (g *jsiiProxy_GooglePubsubSubscriptionIamBinding) validatePutConditionParameters(value *GooglePubsubSubscriptionIamBindingCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubSubscriptionIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GooglePubsubSubscriptionIamBinding) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GooglePubsubSubscriptionIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

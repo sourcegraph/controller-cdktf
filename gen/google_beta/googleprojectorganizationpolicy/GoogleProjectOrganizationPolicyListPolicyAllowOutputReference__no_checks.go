@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleProjectOrganizationPolicyListPolicyAllowOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleProjectOrganizationPolicyListPolicyAllowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleProjectOrganizationPolicyListPolicyAllowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleProjectOrganizationPolicyListPolicyAllowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleProjectOrganizationPolicyListPolicyAllowOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleProjectOrganizationPolicyListPolicyAllowOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectOrganizationPolicyListPolicyAllowOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleProjectOrganizationPolicyListPolicyAllowOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleProjectOrganizationPolicyListPolicyAllowOutputReference
 	return nil
 }
 
-func validateNewGoogleProjectOrganizationPolicyListPolicyAllowOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleProjectOrganizationPolicyListPolicyAllowOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

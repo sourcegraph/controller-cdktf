@@ -12,7 +12,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) validateGetParam
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) validateSetWraps
 	return nil
 }
 
-func validateNewIamWorkloadIdentityPoolAttestationRulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewIamWorkloadIdentityPoolAttestationRulesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

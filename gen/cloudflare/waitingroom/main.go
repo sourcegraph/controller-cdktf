@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoom",
+		"@cdktn/provider-cloudflare.waitingRoom.WaitingRoom",
 		reflect.TypeOf((*WaitingRoom)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "jsonResponseEnabled", GoGetter: "JsonResponseEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "jsonResponseEnabledInput", GoGetter: "JsonResponseEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -67,6 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "queueingMethod", GoGetter: "QueueingMethod"},
 			_jsii_.MemberProperty{JsiiProperty: "queueingMethodInput", GoGetter: "QueueingMethodInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomPageHtml", GoMethod: "ResetCustomPageHtml"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultTemplateLanguage", GoMethod: "ResetDefaultTemplateLanguage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -97,25 +99,26 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "totalActiveUsers", GoGetter: "TotalActiveUsers"},
 			_jsii_.MemberProperty{JsiiProperty: "totalActiveUsersInput", GoGetter: "TotalActiveUsersInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_WaitingRoom{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig",
+		"@cdktn/provider-cloudflare.waitingRoom.WaitingRoomConfig",
 		reflect.TypeOf((*WaitingRoomConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomTimeouts",
+		"@cdktn/provider-cloudflare.waitingRoom.WaitingRoomTimeouts",
 		reflect.TypeOf((*WaitingRoomTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomTimeoutsOutputReference",
+		"@cdktn/provider-cloudflare.waitingRoom.WaitingRoomTimeoutsOutputReference",
 		reflect.TypeOf((*WaitingRoomTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -148,7 +151,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WaitingRoomTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

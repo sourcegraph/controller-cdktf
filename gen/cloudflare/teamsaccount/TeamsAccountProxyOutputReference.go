@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/teamsaccount/internal"
 )
 
 type TeamsAccountProxyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type TeamsAccountProxyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Udp() interface{}
 	SetUdp(val interface{})
 	UdpInput() interface{}
@@ -48,7 +48,7 @@ type TeamsAccountProxyOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type TeamsAccountProxyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type TeamsAccountProxyOutputReference interface {
 
 // The jsii proxy struct for TeamsAccountProxyOutputReference
 type jsiiProxy_TeamsAccountProxyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_TeamsAccountProxyOutputReference) ComplexObjectIndex() interface{} {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) TerraformAttribute() *strin
 	return returns
 }
 
-func (j *jsiiProxy_TeamsAccountProxyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_TeamsAccountProxyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) UdpInput() interface{} {
 }
 
 
-func NewTeamsAccountProxyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TeamsAccountProxyOutputReference {
+func NewTeamsAccountProxyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) TeamsAccountProxyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewTeamsAccountProxyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewTeamsAccountProxyOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_TeamsAccountProxyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountProxyOutputReference",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountProxyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewTeamsAccountProxyOutputReference(terraformResource cdktf.IInterpolatingP
 	return &j
 }
 
-func NewTeamsAccountProxyOutputReference_Override(t TeamsAccountProxyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewTeamsAccountProxyOutputReference_Override(t TeamsAccountProxyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountProxyOutputReference",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountProxyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountProxyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamsAccountProxyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetAnyMapAttribute(terrafor
 	return returns
 }
 
-func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -454,8 +454,8 @@ func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetStringMapAttribute(terra
 	return returns
 }
 
-func (t *jsiiProxy_TeamsAccountProxyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (t *jsiiProxy_TeamsAccountProxyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -467,24 +467,24 @@ func (t *jsiiProxy_TeamsAccountProxyOutputReference) InterpolationAsList() cdktf
 	return returns
 }
 
-func (t *jsiiProxy_TeamsAccountProxyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+func (t *jsiiProxy_TeamsAccountProxyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TeamsAccountProxyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TeamsAccountProxyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (t *jsiiProxy_TeamsAccountProxyOutputReference) Resolve(_context cdktf.IRes
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

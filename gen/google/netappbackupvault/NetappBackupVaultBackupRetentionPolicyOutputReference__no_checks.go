@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) valida
 	return nil
 }
 
-func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) valida
 	return nil
 }
 
-func validateNewNetappBackupVaultBackupRetentionPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetappBackupVaultBackupRetentionPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

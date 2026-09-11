@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstance",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstance",
 		reflect.TypeOf((*AlloydbInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activationPolicy", GoGetter: "ActivationPolicy"},
@@ -66,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "machineConfig", GoGetter: "MachineConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "machineConfigInput", GoGetter: "MachineConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -94,6 +95,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "readPoolConfig", GoGetter: "ReadPoolConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "readPoolConfigInput", GoGetter: "ReadPoolConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "reconciling", GoGetter: "Reconciling"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetActivationPolicy", GoMethod: "ResetActivationPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAvailabilityType", GoMethod: "ResetAvailabilityType"},
@@ -126,19 +128,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbInstance{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfig",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfig",
 		reflect.TypeOf((*AlloydbInstanceClientConnectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference",
 		reflect.TypeOf((*AlloydbInstanceClientConnectionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -172,16 +175,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfig",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfig",
 		reflect.TypeOf((*AlloydbInstanceClientConnectionConfigSslConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfigOutputReference",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfigOutputReference",
 		reflect.TypeOf((*AlloydbInstanceClientConnectionConfigSslConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -211,20 +214,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbInstanceClientConnectionConfigSslConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceConfig",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig",
 		reflect.TypeOf((*AlloydbInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig",
 		reflect.TypeOf((*AlloydbInstanceConnectionPoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference",
 		reflect.TypeOf((*AlloydbInstanceConnectionPoolConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -257,16 +260,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbInstanceConnectionPoolConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceMachineConfig",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceMachineConfig",
 		reflect.TypeOf((*AlloydbInstanceMachineConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceMachineConfigOutputReference",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceMachineConfigOutputReference",
 		reflect.TypeOf((*AlloydbInstanceMachineConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -299,20 +302,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbInstanceMachineConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceNetworkConfig",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfig",
 		reflect.TypeOf((*AlloydbInstanceNetworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks",
 		reflect.TypeOf((*AlloydbInstanceNetworkConfigAuthorizedExternalNetworks)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList",
 		reflect.TypeOf((*AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -329,12 +332,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference",
 		reflect.TypeOf((*AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrRange", GoGetter: "CidrRange"},
@@ -364,12 +367,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference",
 		reflect.TypeOf((*AlloydbInstanceNetworkConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocatedIpRangeOverride", GoGetter: "AllocatedIpRangeOverride"},
@@ -409,16 +412,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbInstanceNetworkConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfig",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfig",
 		reflect.TypeOf((*AlloydbInstancePscInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference",
 		reflect.TypeOf((*AlloydbInstancePscInstanceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedConsumerProjects", GoGetter: "AllowedConsumerProjects"},
@@ -458,16 +461,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections",
 		reflect.TypeOf((*AlloydbInstancePscInstanceConfigPscAutoConnections)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsList",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsList",
 		reflect.TypeOf((*AlloydbInstancePscInstanceConfigPscAutoConnectionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -484,12 +487,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference",
 		reflect.TypeOf((*AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -525,16 +528,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs",
 		reflect.TypeOf((*AlloydbInstancePscInstanceConfigPscInterfaceConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsList",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsList",
 		reflect.TypeOf((*AlloydbInstancePscInstanceConfigPscInterfaceConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -551,12 +554,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference",
 		reflect.TypeOf((*AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -586,16 +589,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfig",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfig",
 		reflect.TypeOf((*AlloydbInstanceQueryInsightsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference",
 		reflect.TypeOf((*AlloydbInstanceQueryInsightsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -634,16 +637,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfig",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfig",
 		reflect.TypeOf((*AlloydbInstanceReadPoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfigOutputReference",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfigOutputReference",
 		reflect.TypeOf((*AlloydbInstanceReadPoolConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -673,16 +676,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbInstanceReadPoolConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceTimeouts",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts",
 		reflect.TypeOf((*AlloydbInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference",
+		"@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*AlloydbInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -718,7 +721,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbInstanceTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

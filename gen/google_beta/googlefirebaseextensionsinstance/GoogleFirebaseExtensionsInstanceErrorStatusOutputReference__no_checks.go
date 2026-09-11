@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleFirebaseExtensionsInstanceErrorStatusOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseExtensionsInstanceErrorStatusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFirebaseExtensionsInstanceErrorStatusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseExtensionsInstanceErrorStatusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirebaseExtensionsInstanceErrorStatusOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleFirebaseExtensionsInstanceErrorStatusOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseExtensionsInstanceErrorStatusOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirebaseExtensionsInstanceErrorStatusOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleFirebaseExtensionsInstanceErrorStatusOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleFirebaseExtensionsInstanceErrorStatusOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

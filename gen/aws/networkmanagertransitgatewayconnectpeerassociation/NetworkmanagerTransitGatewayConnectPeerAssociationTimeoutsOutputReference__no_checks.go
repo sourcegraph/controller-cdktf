@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOut
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOut
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewNetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

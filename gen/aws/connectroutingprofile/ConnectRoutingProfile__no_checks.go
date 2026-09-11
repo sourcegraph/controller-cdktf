@@ -56,6 +56,10 @@ func (c *jsiiProxy_ConnectRoutingProfile) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_ConnectRoutingProfile) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectRoutingProfile) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (c *jsiiProxy_ConnectRoutingProfile) validatePutMediaConcurrenciesParameter
 }
 
 func (c *jsiiProxy_ConnectRoutingProfile) validatePutQueueConfigsParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectRoutingProfile) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_ConnectRoutingProfile) validateSetInstanceIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ConnectRoutingProfile) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateInterpolationFor
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateOverrideLogicalI
 }
 
 func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validatePutTimeoutsParameters(value *NetworkmanagerTransitGatewayPeeringTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

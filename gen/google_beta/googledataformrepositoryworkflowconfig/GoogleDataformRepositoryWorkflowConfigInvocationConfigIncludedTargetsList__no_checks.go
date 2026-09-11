@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigInclude
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigInclude
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkflowConfigInvocationConfigInclude
 	return nil
 }
 
-func validateNewGoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

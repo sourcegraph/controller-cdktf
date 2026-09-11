@@ -12,7 +12,7 @@ func (b *jsiiProxy_BudgetsBudgetPlannedLimitList) validateGetParameters(index *f
 	return nil
 }
 
-func (b *jsiiProxy_BudgetsBudgetPlannedLimitList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BudgetsBudgetPlannedLimitList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_BudgetsBudgetPlannedLimitList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetPlannedLimitList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BudgetsBudgetPlannedLimitList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_BudgetsBudgetPlannedLimitList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewBudgetsBudgetPlannedLimitListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBudgetsBudgetPlannedLimitListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

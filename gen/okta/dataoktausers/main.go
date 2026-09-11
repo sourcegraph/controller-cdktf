@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsers",
+		"@cdktn/provider-okta.dataOktaUsers.DataOktaUsers",
 		reflect.TypeOf((*DataOktaUsers)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberMethod{JsiiMethod: "putSearch", GoMethod: "PutSearch"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCompoundSearchOperator", GoMethod: "ResetCompoundSearchOperator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDelayReadSeconds", GoMethod: "ResetDelayReadSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGroupId", GoMethod: "ResetGroupId"},
@@ -67,23 +68,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "users", GoGetter: "Users"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaUsers{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig",
+		"@cdktn/provider-okta.dataOktaUsers.DataOktaUsersConfig",
 		reflect.TypeOf((*DataOktaUsersConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearch",
+		"@cdktn/provider-okta.dataOktaUsers.DataOktaUsersSearch",
 		reflect.TypeOf((*DataOktaUsersSearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearchList",
+		"@cdktn/provider-okta.dataOktaUsers.DataOktaUsersSearchList",
 		reflect.TypeOf((*DataOktaUsersSearchList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -100,12 +102,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaUsersSearchList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearchOutputReference",
+		"@cdktn/provider-okta.dataOktaUsers.DataOktaUsersSearchOutputReference",
 		reflect.TypeOf((*DataOktaUsersSearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
@@ -144,16 +146,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaUsersSearchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsers",
+		"@cdktn/provider-okta.dataOktaUsers.DataOktaUsersUsers",
 		reflect.TypeOf((*DataOktaUsersUsers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsersList",
+		"@cdktn/provider-okta.dataOktaUsers.DataOktaUsersUsersList",
 		reflect.TypeOf((*DataOktaUsersUsersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -169,12 +171,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaUsersUsersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsersOutputReference",
+		"@cdktn/provider-okta.dataOktaUsers.DataOktaUsersUsersOutputReference",
 		reflect.TypeOf((*DataOktaUsersUsersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adminRoles", GoGetter: "AdminRoles"},
@@ -238,7 +240,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaUsersUsersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

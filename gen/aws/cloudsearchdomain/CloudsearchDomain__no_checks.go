@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudsearchDomain) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_CloudsearchDomain) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudsearchDomain) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (c *jsiiProxy_CloudsearchDomain) validatePutTimeoutsParameters(value *Cloud
 	return nil
 }
 
+func (c *jsiiProxy_CloudsearchDomain) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateCloudsearchDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -116,7 +124,7 @@ func (j *jsiiProxy_CloudsearchDomain) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_CloudsearchDomain) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudsearchDomain) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

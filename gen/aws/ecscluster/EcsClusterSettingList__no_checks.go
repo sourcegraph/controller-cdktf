@@ -12,7 +12,7 @@ func (e *jsiiProxy_EcsClusterSettingList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (e *jsiiProxy_EcsClusterSettingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsClusterSettingList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EcsClusterSettingList) validateSetTerraformAttributeParameter
 	return nil
 }
 
-func (j *jsiiProxy_EcsClusterSettingList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcsClusterSettingList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EcsClusterSettingList) validateSetWrapsSetParameters(val *boo
 	return nil
 }
 
-func validateNewEcsClusterSettingListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEcsClusterSettingListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

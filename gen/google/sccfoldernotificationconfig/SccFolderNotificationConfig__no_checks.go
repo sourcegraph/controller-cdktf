@@ -56,6 +56,10 @@ func (s *jsiiProxy_SccFolderNotificationConfig) validateInterpolationForAttribut
 	return nil
 }
 
+func (s *jsiiProxy_SccFolderNotificationConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccFolderNotificationConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (s *jsiiProxy_SccFolderNotificationConfig) validatePutStreamingConfigParame
 }
 
 func (s *jsiiProxy_SccFolderNotificationConfig) validatePutTimeoutsParameters(value *SccFolderNotificationConfigTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccFolderNotificationConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_SccFolderNotificationConfig) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_SccFolderNotificationConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SccFolderNotificationConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (s *jsiiProxy_StoragegatewayTapePool) validateInterpolationForAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_StoragegatewayTapePool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StoragegatewayTapePool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (s *jsiiProxy_StoragegatewayTapePool) validateMoveToIdParameters(id *string
 }
 
 func (s *jsiiProxy_StoragegatewayTapePool) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StoragegatewayTapePool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_StoragegatewayTapePool) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayTapePool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_StoragegatewayTapePool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

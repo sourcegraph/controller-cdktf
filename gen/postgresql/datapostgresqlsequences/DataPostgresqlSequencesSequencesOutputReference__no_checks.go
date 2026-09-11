@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataPostgresqlSequencesSequencesOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DataPostgresqlSequencesSequencesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataPostgresqlSequencesSequencesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataPostgresqlSequencesSequencesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataPostgresqlSequencesSequencesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataPostgresqlSequencesSequencesOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DataPostgresqlSequencesSequencesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataPostgresqlSequencesSequencesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataPostgresqlSequencesSequencesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataPostgresqlSequencesSequencesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

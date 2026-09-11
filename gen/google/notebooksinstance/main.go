@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.notebooksInstance.NotebooksInstance",
+		"@cdktn/provider-google.notebooksInstance.NotebooksInstance",
 		reflect.TypeOf((*NotebooksInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorConfig", GoGetter: "AcceleratorConfig"},
@@ -69,6 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "machineType", GoGetter: "MachineType"},
 			_jsii_.MemberProperty{JsiiProperty: "machineTypeInput", GoGetter: "MachineTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "metadata", GoGetter: "Metadata"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataInput", GoGetter: "MetadataInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -102,6 +103,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putVmImage", GoMethod: "PutVmImage"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "reservationAffinity", GoGetter: "ReservationAffinity"},
 			_jsii_.MemberProperty{JsiiProperty: "reservationAffinityInput", GoGetter: "ReservationAffinityInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAcceleratorConfig", GoMethod: "ResetAcceleratorConfig"},
@@ -164,19 +166,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTimeInput", GoGetter: "UpdateTimeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vmImage", GoGetter: "VmImage"},
 			_jsii_.MemberProperty{JsiiProperty: "vmImageInput", GoGetter: "VmImageInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_NotebooksInstance{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceAcceleratorConfig",
+		"@cdktn/provider-google.notebooksInstance.NotebooksInstanceAcceleratorConfig",
 		reflect.TypeOf((*NotebooksInstanceAcceleratorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceAcceleratorConfigOutputReference",
+		"@cdktn/provider-google.notebooksInstance.NotebooksInstanceAcceleratorConfigOutputReference",
 		reflect.TypeOf((*NotebooksInstanceAcceleratorConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -207,20 +210,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NotebooksInstanceAcceleratorConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceConfig",
+		"@cdktn/provider-google.notebooksInstance.NotebooksInstanceConfig",
 		reflect.TypeOf((*NotebooksInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceContainerImage",
+		"@cdktn/provider-google.notebooksInstance.NotebooksInstanceContainerImage",
 		reflect.TypeOf((*NotebooksInstanceContainerImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceContainerImageOutputReference",
+		"@cdktn/provider-google.notebooksInstance.NotebooksInstanceContainerImageOutputReference",
 		reflect.TypeOf((*NotebooksInstanceContainerImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -252,16 +255,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NotebooksInstanceContainerImageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceReservationAffinity",
+		"@cdktn/provider-google.notebooksInstance.NotebooksInstanceReservationAffinity",
 		reflect.TypeOf((*NotebooksInstanceReservationAffinity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceReservationAffinityOutputReference",
+		"@cdktn/provider-google.notebooksInstance.NotebooksInstanceReservationAffinityOutputReference",
 		reflect.TypeOf((*NotebooksInstanceReservationAffinityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -296,16 +299,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NotebooksInstanceReservationAffinityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceShieldedInstanceConfig",
+		"@cdktn/provider-google.notebooksInstance.NotebooksInstanceShieldedInstanceConfig",
 		reflect.TypeOf((*NotebooksInstanceShieldedInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceShieldedInstanceConfigOutputReference",
+		"@cdktn/provider-google.notebooksInstance.NotebooksInstanceShieldedInstanceConfigOutputReference",
 		reflect.TypeOf((*NotebooksInstanceShieldedInstanceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -341,16 +344,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceTimeouts",
+		"@cdktn/provider-google.notebooksInstance.NotebooksInstanceTimeouts",
 		reflect.TypeOf((*NotebooksInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceTimeoutsOutputReference",
+		"@cdktn/provider-google.notebooksInstance.NotebooksInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*NotebooksInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -386,16 +389,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NotebooksInstanceTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceVmImage",
+		"@cdktn/provider-google.notebooksInstance.NotebooksInstanceVmImage",
 		reflect.TypeOf((*NotebooksInstanceVmImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceVmImageOutputReference",
+		"@cdktn/provider-google.notebooksInstance.NotebooksInstanceVmImageOutputReference",
 		reflect.TypeOf((*NotebooksInstanceVmImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -430,7 +433,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NotebooksInstanceVmImageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

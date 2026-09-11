@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCloudQuotasQuotaPreferenceTimeoutsOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudQuotasQuotaPreferenceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudQuotasQuotaPreferenceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudQuotasQuotaPreferenceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudQuotasQuotaPreferenceTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleCloudQuotasQuotaPreferenceTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudQuotasQuotaPreferenceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudQuotasQuotaPreferenceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleCloudQuotasQuotaPreferenceTimeoutsOutputReference) vali
 	return nil
 }
 
-func validateNewGoogleCloudQuotasQuotaPreferenceTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCloudQuotasQuotaPreferenceTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

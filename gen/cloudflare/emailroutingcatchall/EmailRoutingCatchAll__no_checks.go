@@ -56,6 +56,10 @@ func (e *jsiiProxy_EmailRoutingCatchAll) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (e *jsiiProxy_EmailRoutingCatchAll) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailRoutingCatchAll) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (e *jsiiProxy_EmailRoutingCatchAll) validatePutActionParameters(value inter
 }
 
 func (e *jsiiProxy_EmailRoutingCatchAll) validatePutMatcherParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmailRoutingCatchAll) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_EmailRoutingCatchAll) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAll) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EmailRoutingCatchAll) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

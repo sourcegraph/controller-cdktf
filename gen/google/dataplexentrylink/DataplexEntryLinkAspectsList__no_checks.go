@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataplexEntryLinkAspectsList) validateGetParameters(index *fl
 	return nil
 }
 
-func (d *jsiiProxy_DataplexEntryLinkAspectsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexEntryLinkAspectsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataplexEntryLinkAspectsList) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_DataplexEntryLinkAspectsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataplexEntryLinkAspectsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataplexEntryLinkAspectsList) validateSetWrapsSetParameters(v
 	return nil
 }
 
-func validateNewDataplexEntryLinkAspectsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataplexEntryLinkAspectsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartS
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartS
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

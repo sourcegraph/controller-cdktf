@@ -56,6 +56,10 @@ func (m *jsiiProxy_MedialiveMultiplexProgram) validateInterpolationForAttributeP
 	return nil
 }
 
+func (m *jsiiProxy_MedialiveMultiplexProgram) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveMultiplexProgram) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (m *jsiiProxy_MedialiveMultiplexProgram) validateOverrideLogicalIdParameter
 }
 
 func (m *jsiiProxy_MedialiveMultiplexProgram) validatePutMultiplexProgramSettingsParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveMultiplexProgram) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_MedialiveMultiplexProgram) validateSetCountParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgram) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MedialiveMultiplexProgram) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

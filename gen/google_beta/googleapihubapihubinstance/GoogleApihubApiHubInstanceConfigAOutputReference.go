@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapihubapihubinstance/internal"
 )
 
 type GoogleApihubApiHubInstanceConfigAOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CmekKeyName() *string
 	SetCmekKeyName(val *string)
 	CmekKeyNameInput() *string
@@ -43,9 +43,9 @@ type GoogleApihubApiHubInstanceConfigAOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VertexLocation() *string
 	SetVertexLocation(val *string)
 	VertexLocationInput() *string
@@ -54,7 +54,7 @@ type GoogleApihubApiHubInstanceConfigAOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,16 +70,16 @@ type GoogleApihubApiHubInstanceConfigAOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCmekKeyName()
 	ResetDisableSearch()
 	ResetEncryptionType()
 	ResetVertexLocation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type GoogleApihubApiHubInstanceConfigAOutputReference interface {
 
 // The jsii proxy struct for GoogleApihubApiHubInstanceConfigAOutputReference
 type jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference) CmekKeyName() *string {
@@ -212,8 +212,8 @@ func (j *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference) VertexLocat
 }
 
 
-func NewGoogleApihubApiHubInstanceConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleApihubApiHubInstanceConfigAOutputReference {
+func NewGoogleApihubApiHubInstanceConfigAOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleApihubApiHubInstanceConfigAOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleApihubApiHubInstanceConfigAOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewGoogleApihubApiHubInstanceConfigAOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleApihubApiHubInstance.GoogleApihubApiHubInstanceConfigAOutputReference",
+		"@cdktn/provider-google-beta.googleApihubApiHubInstance.GoogleApihubApiHubInstanceConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewGoogleApihubApiHubInstanceConfigAOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewGoogleApihubApiHubInstanceConfigAOutputReference_Override(g GoogleApihubApiHubInstanceConfigAOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleApihubApiHubInstanceConfigAOutputReference_Override(g GoogleApihubApiHubInstanceConfigAOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleApihubApiHubInstance.GoogleApihubApiHubInstanceConfigAOutputReference",
+		"@cdktn/provider-google-beta.googleApihubApiHubInstance.GoogleApihubApiHubInstanceConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -347,7 +347,7 @@ func (j *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,11 +398,11 @@ func (g *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -526,8 +526,8 @@ func (g *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference) GetStringMa
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -539,16 +539,16 @@ func (g *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference) Interpolati
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (g *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference) ResetVertex
 	)
 }
 
-func (g *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (g *jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (c *jsiiProxy_ContainerAzureNodePool) validateInterpolationForAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAzureNodePool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAzureNodePool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (c *jsiiProxy_ContainerAzureNodePool) validatePutMaxPodsConstraintParameter
 }
 
 func (c *jsiiProxy_ContainerAzureNodePool) validatePutTimeoutsParameters(value *ContainerAzureNodePoolTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAzureNodePool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_ContainerAzureNodePool) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureNodePool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ContainerAzureNodePool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

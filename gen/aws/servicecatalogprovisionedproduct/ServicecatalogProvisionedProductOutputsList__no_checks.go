@@ -12,7 +12,7 @@ func (s *jsiiProxy_ServicecatalogProvisionedProductOutputsList) validateGetParam
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogProvisionedProductOutputsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServicecatalogProvisionedProductOutputsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ServicecatalogProvisionedProductOutputsList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogProvisionedProductOutputsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ServicecatalogProvisionedProductOutputsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ServicecatalogProvisionedProductOutputsList) validateSetWraps
 	return nil
 }
 
-func validateNewServicecatalogProvisionedProductOutputsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewServicecatalogProvisionedProductOutputsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

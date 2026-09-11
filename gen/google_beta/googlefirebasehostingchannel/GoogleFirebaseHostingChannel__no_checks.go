@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) validateInterpolationForAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseHostingChannel) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseHostingChannel) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) validateOverrideLogicalIdParame
 }
 
 func (g *jsiiProxy_GoogleFirebaseHostingChannel) validatePutTimeoutsParameters(value *GoogleFirebaseHostingChannelTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseHostingChannel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel) validateSetLabelsParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

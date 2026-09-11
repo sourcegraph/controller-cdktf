@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudbuildTriggerPubsubConfigOutputReference) validateGetStri
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerPubsubConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudbuildTriggerPubsubConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerPubsubConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildTriggerPubsubConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_CloudbuildTriggerPubsubConfigOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerPubsubConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudbuildTriggerPubsubConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_CloudbuildTriggerPubsubConfigOutputReference) validateSetTopi
 	return nil
 }
 
-func validateNewCloudbuildTriggerPubsubConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudbuildTriggerPubsubConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

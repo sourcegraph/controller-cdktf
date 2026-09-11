@@ -56,6 +56,10 @@ func (s *jsiiProxy_SelfSignedCert) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_SelfSignedCert) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SelfSignedCert) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_SelfSignedCert) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (s *jsiiProxy_SelfSignedCert) validatePutSubjectParameters(value *SelfSignedCertSubject) error {
+	return nil
+}
+
+func (s *jsiiProxy_SelfSignedCert) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_SelfSignedCert) validateSetIsCaCertificateParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_SelfSignedCert) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SelfSignedCert) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

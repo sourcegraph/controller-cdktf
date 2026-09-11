@@ -40,11 +40,11 @@ func (d *jsiiProxy_DialogflowCxGeneratorModelParameterOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxGeneratorModelParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxGeneratorModelParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxGeneratorModelParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxGeneratorModelParameterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_DialogflowCxGeneratorModelParameterOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxGeneratorModelParameterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxGeneratorModelParameterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_DialogflowCxGeneratorModelParameterOutputReference) validateS
 	return nil
 }
 
-func validateNewDialogflowCxGeneratorModelParameterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDialogflowCxGeneratorModelParameterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

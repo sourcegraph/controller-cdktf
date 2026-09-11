@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputePublicDelegatedPrefixPublicDelegatedSubPrefixsLi
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputePublicDelegatedPrefixPublicDelegatedSubPrefixsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputePublicDelegatedPrefixPublicDelegatedSubPrefixsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleComputePublicDelegatedPrefixPublicDelegatedSubPrefixsLi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePublicDelegatedPrefixPublicDelegatedSubPrefixsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputePublicDelegatedPrefixPublicDelegatedSubPrefixsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleComputePublicDelegatedPrefixPublicDelegatedSubPrefixsLi
 	return nil
 }
 
-func validateNewGoogleComputePublicDelegatedPrefixPublicDelegatedSubPrefixsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputePublicDelegatedPrefixPublicDelegatedSubPrefixsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (a *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) validateSetV
 	return nil
 }
 
-func validateNewAlbListenerRuleConditionSourceIpOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAlbListenerRuleConditionSourceIpOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

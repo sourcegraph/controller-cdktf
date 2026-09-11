@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControl",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControl",
 		reflect.TypeOf((*DiscoveryEngineControl)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -52,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -74,6 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "redirectAction", GoGetter: "RedirectAction"},
 			_jsii_.MemberProperty{JsiiProperty: "redirectActionInput", GoGetter: "RedirectActionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBoostAction", GoMethod: "ResetBoostAction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCollectionId", GoMethod: "ResetCollectionId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConditions", GoMethod: "ResetConditions"},
@@ -103,27 +105,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "useCases", GoGetter: "UseCases"},
 			_jsii_.MemberProperty{JsiiProperty: "useCasesInput", GoGetter: "UseCasesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineControl{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostAction",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostAction",
 		reflect.TypeOf((*DiscoveryEngineControlBoostAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionInterpolationBoostSpec",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionInterpolationBoostSpec",
 		reflect.TypeOf((*DiscoveryEngineControlBoostActionInterpolationBoostSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionInterpolationBoostSpecControlPoint",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionInterpolationBoostSpecControlPoint",
 		reflect.TypeOf((*DiscoveryEngineControlBoostActionInterpolationBoostSpecControlPoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionInterpolationBoostSpecControlPointOutputReference",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionInterpolationBoostSpecControlPointOutputReference",
 		reflect.TypeOf((*DiscoveryEngineControlBoostActionInterpolationBoostSpecControlPointOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeValue", GoGetter: "AttributeValue"},
@@ -156,12 +159,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineControlBoostActionInterpolationBoostSpecControlPointOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionInterpolationBoostSpecOutputReference",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionInterpolationBoostSpecOutputReference",
 		reflect.TypeOf((*DiscoveryEngineControlBoostActionInterpolationBoostSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeType", GoGetter: "AttributeType"},
@@ -201,12 +204,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineControlBoostActionInterpolationBoostSpecOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionOutputReference",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionOutputReference",
 		reflect.TypeOf((*DiscoveryEngineControlBoostActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -244,20 +247,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineControlBoostActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlConditions",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConditions",
 		reflect.TypeOf((*DiscoveryEngineControlConditions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsActiveTimeRange",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsActiveTimeRange",
 		reflect.TypeOf((*DiscoveryEngineControlConditionsActiveTimeRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsActiveTimeRangeList",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsActiveTimeRangeList",
 		reflect.TypeOf((*DiscoveryEngineControlConditionsActiveTimeRangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -274,12 +277,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineControlConditionsActiveTimeRangeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsActiveTimeRangeOutputReference",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsActiveTimeRangeOutputReference",
 		reflect.TypeOf((*DiscoveryEngineControlConditionsActiveTimeRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -312,12 +315,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineControlConditionsActiveTimeRangeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsList",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsList",
 		reflect.TypeOf((*DiscoveryEngineControlConditionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -334,12 +337,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineControlConditionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsOutputReference",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsOutputReference",
 		reflect.TypeOf((*DiscoveryEngineControlConditionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeTimeRange", GoGetter: "ActiveTimeRange"},
@@ -377,16 +380,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineControlConditionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsQueryTerms",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsQueryTerms",
 		reflect.TypeOf((*DiscoveryEngineControlConditionsQueryTerms)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsQueryTermsList",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsQueryTermsList",
 		reflect.TypeOf((*DiscoveryEngineControlConditionsQueryTermsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -403,12 +406,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineControlConditionsQueryTermsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsQueryTermsOutputReference",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsQueryTermsOutputReference",
 		reflect.TypeOf((*DiscoveryEngineControlConditionsQueryTermsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -441,20 +444,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineControlConditionsQueryTermsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlConfig",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConfig",
 		reflect.TypeOf((*DiscoveryEngineControlConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlFilterAction",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlFilterAction",
 		reflect.TypeOf((*DiscoveryEngineControlFilterAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlFilterActionOutputReference",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlFilterActionOutputReference",
 		reflect.TypeOf((*DiscoveryEngineControlFilterActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -485,16 +488,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineControlFilterActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlPromoteAction",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlPromoteAction",
 		reflect.TypeOf((*DiscoveryEngineControlPromoteAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlPromoteActionOutputReference",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlPromoteActionOutputReference",
 		reflect.TypeOf((*DiscoveryEngineControlPromoteActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -526,16 +529,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineControlPromoteActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlPromoteActionSearchLinkPromotion",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlPromoteActionSearchLinkPromotion",
 		reflect.TypeOf((*DiscoveryEngineControlPromoteActionSearchLinkPromotion)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference",
 		reflect.TypeOf((*DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -579,16 +582,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlRedirectAction",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlRedirectAction",
 		reflect.TypeOf((*DiscoveryEngineControlRedirectAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlRedirectActionOutputReference",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlRedirectActionOutputReference",
 		reflect.TypeOf((*DiscoveryEngineControlRedirectActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -617,16 +620,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineControlRedirectActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlSynonymsAction",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlSynonymsAction",
 		reflect.TypeOf((*DiscoveryEngineControlSynonymsAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlSynonymsActionOutputReference",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlSynonymsActionOutputReference",
 		reflect.TypeOf((*DiscoveryEngineControlSynonymsActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -656,16 +659,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineControlSynonymsActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlTimeouts",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlTimeouts",
 		reflect.TypeOf((*DiscoveryEngineControlTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlTimeoutsOutputReference",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlTimeoutsOutputReference",
 		reflect.TypeOf((*DiscoveryEngineControlTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -701,7 +704,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineControlTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

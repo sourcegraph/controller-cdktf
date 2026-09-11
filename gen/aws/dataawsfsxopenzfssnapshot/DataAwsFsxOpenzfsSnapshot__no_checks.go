@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validatePutFilterParameters(value 
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsFsxOpenzfsSnapshot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

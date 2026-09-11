@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/budgetsbudget/internal"
 )
 
 type BudgetsBudgetCostTypesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -61,9 +61,9 @@ type BudgetsBudgetCostTypesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UseAmortized() interface{}
 	SetUseAmortized(val interface{})
 	UseAmortizedInput() interface{}
@@ -75,7 +75,7 @@ type BudgetsBudgetCostTypesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -91,9 +91,9 @@ type BudgetsBudgetCostTypesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetIncludeCredit()
 	ResetIncludeDiscount()
 	ResetIncludeOtherSubscription()
@@ -107,7 +107,7 @@ type BudgetsBudgetCostTypesOutputReference interface {
 	ResetUseBlended()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -117,7 +117,7 @@ type BudgetsBudgetCostTypesOutputReference interface {
 
 // The jsii proxy struct for BudgetsBudgetCostTypesOutputReference
 type jsiiProxy_BudgetsBudgetCostTypesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) ComplexObjectIndex() interface{} {
@@ -360,8 +360,8 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -411,7 +411,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) UseBlendedInput() inte
 }
 
 
-func NewBudgetsBudgetCostTypesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BudgetsBudgetCostTypesOutputReference {
+func NewBudgetsBudgetCostTypesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) BudgetsBudgetCostTypesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBudgetsBudgetCostTypesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -420,7 +420,7 @@ func NewBudgetsBudgetCostTypesOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_BudgetsBudgetCostTypesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostTypesOutputReference",
+		"@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -428,11 +428,11 @@ func NewBudgetsBudgetCostTypesOutputReference(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewBudgetsBudgetCostTypesOutputReference_Override(b BudgetsBudgetCostTypesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBudgetsBudgetCostTypesOutputReference_Override(b BudgetsBudgetCostTypesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostTypesOutputReference",
+		"@cdktn/provider-aws.budgetsBudget.BudgetsBudgetCostTypesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)
@@ -581,7 +581,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,11 +643,11 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -771,8 +771,8 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) GetStringMapAttribute(
 	return returns
 }
 
-func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -784,16 +784,16 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -888,8 +888,8 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) ResetUseBlended() {
 	)
 }
 
-func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -897,7 +897,7 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) Resolve(_context cdktf
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

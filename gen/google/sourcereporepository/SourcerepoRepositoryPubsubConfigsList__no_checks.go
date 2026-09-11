@@ -12,7 +12,7 @@ func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsList) validateGetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewSourcerepoRepositoryPubsubConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSourcerepoRepositoryPubsubConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

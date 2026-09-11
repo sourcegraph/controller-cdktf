@@ -12,7 +12,7 @@ func (d *jsiiProxy_DialogflowCxVersionNluSettingsList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxVersionNluSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxVersionNluSettingsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DialogflowCxVersionNluSettingsList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxVersionNluSettingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxVersionNluSettingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DialogflowCxVersionNluSettingsList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewDialogflowCxVersionNluSettingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDialogflowCxVersionNluSettingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

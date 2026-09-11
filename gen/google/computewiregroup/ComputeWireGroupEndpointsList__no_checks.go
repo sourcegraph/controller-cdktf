@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeWireGroupEndpointsList) validateGetParameters(index *f
 	return nil
 }
 
-func (c *jsiiProxy_ComputeWireGroupEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeWireGroupEndpointsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeWireGroupEndpointsList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_ComputeWireGroupEndpointsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeWireGroupEndpointsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeWireGroupEndpointsList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewComputeWireGroupEndpointsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeWireGroupEndpointsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

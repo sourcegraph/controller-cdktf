@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesExpiryDetailOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesExpiryDetailOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesExpiryDetailOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesExpiryDetailOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesExpiryDetailOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesExpiryDetailOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesExpiryDetailOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesExpiryDetailOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCloudIdentityGroupMembershipRolesExpiryDetailOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCloudIdentityGroupMembershipRolesExpiryDetailOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

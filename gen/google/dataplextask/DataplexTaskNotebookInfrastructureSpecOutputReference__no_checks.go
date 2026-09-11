@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_DataplexTaskNotebookInfrastructureSpecOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataplexTaskNotebookInfrastructureSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataplexTaskNotebookInfrastructureSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataplexTaskNotebookInfrastructureSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataplexTaskNotebookInfrastructureSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

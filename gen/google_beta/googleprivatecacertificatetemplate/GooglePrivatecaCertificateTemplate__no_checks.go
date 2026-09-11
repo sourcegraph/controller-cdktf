@@ -56,6 +56,10 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplate) validateInterpolationForA
 	return nil
 }
 
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplate) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCertificateTemplate) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplate) validatePutPredefinedValu
 }
 
 func (g *jsiiProxy_GooglePrivatecaCertificateTemplate) validatePutTimeoutsParameters(value *GooglePrivatecaCertificateTemplateTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplate) validateSetLabelsParamete
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplate) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

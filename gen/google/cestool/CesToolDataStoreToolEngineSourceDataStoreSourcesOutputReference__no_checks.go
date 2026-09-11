@@ -40,7 +40,7 @@ func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesToolDataStoreToolEngineSourceDataStoreSourcesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCesToolDataStoreToolEngineSourceDataStoreSourcesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleBeyondcorpAppConnection) validateInterpolationForAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBeyondcorpAppConnection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBeyondcorpAppConnection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleBeyondcorpAppConnection) validatePutGatewayParameters(v
 }
 
 func (g *jsiiProxy_GoogleBeyondcorpAppConnection) validatePutTimeoutsParameters(value *GoogleBeyondcorpAppConnectionTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBeyondcorpAppConnection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_GoogleBeyondcorpAppConnection) validateSetLabelsParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpAppConnection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleBeyondcorpAppConnection) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (a *jsiiProxy_AccessContextManagerServicePerimeterSpecOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterSpecOutputReference) vali
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_AccessContextManagerServicePerimeterSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterSpecOutputReference) vali
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AccessContextManagerServicePerimeterSpecEgressPolicies:
 		value := value.(*[]*AccessContextManagerServicePerimeterSpecEgressPolicies)
@@ -114,7 +114,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterSpecOutputReference) vali
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccessContextManagerServicePerimeterSpecEgressPolicies; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AccessContextManagerServicePerimeterSpecEgressPolicies; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterSpecOutputReference) vali
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AccessContextManagerServicePerimeterSpecIngressPolicies:
 		value := value.(*[]*AccessContextManagerServicePerimeterSpecIngressPolicies)
@@ -145,7 +145,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterSpecOutputReference) vali
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccessContextManagerServicePerimeterSpecIngressPolicies; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AccessContextManagerServicePerimeterSpecIngressPolicies; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -163,9 +163,9 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterSpecOutputReference) vali
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AccessContextManagerServicePerimeterSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -276,7 +276,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterSpecOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterSpecOutputReference) vali
 	return nil
 }
 
-func validateNewAccessContextManagerServicePerimeterSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAccessContextManagerServicePerimeterSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

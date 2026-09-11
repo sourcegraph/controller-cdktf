@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/kmscryptokeyiambinding/internal"
 )
 
 type KmsCryptoKeyIamBindingConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type KmsCryptoKeyIamBindingConditionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -51,7 +51,7 @@ type KmsCryptoKeyIamBindingConditionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type KmsCryptoKeyIamBindingConditionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type KmsCryptoKeyIamBindingConditionOutputReference interface {
 
 // The jsii proxy struct for KmsCryptoKeyIamBindingConditionOutputReference
 type jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) TitleInput() 
 }
 
 
-func NewKmsCryptoKeyIamBindingConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KmsCryptoKeyIamBindingConditionOutputReference {
+func NewKmsCryptoKeyIamBindingConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) KmsCryptoKeyIamBindingConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewKmsCryptoKeyIamBindingConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewKmsCryptoKeyIamBindingConditionOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.kmsCryptoKeyIamBinding.KmsCryptoKeyIamBindingConditionOutputReference",
+		"@cdktn/provider-google.kmsCryptoKeyIamBinding.KmsCryptoKeyIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewKmsCryptoKeyIamBindingConditionOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewKmsCryptoKeyIamBindingConditionOutputReference_Override(k KmsCryptoKeyIamBindingConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewKmsCryptoKeyIamBindingConditionOutputReference_Override(k KmsCryptoKeyIamBindingConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.kmsCryptoKeyIamBinding.KmsCryptoKeyIamBindingConditionOutputReference",
+		"@cdktn/provider-google.kmsCryptoKeyIamBinding.KmsCryptoKeyIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (k *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (k *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
@@ -489,8 +489,8 @@ func (k *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) GetStringMapA
 	return returns
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (k *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
@@ -502,16 +502,16 @@ func (k *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) Interpolation
 	return returns
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := k.validateInterpolationForAttributeParameters(property); err != nil {
+func (k *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (k *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) ResetDescript
 	)
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := k.validateResolveParameters(_context); err != nil {
+func (k *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (k *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

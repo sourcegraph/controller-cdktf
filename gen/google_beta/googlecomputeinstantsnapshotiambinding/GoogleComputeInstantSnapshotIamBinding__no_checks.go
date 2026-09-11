@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeInstantSnapshotIamBinding) validateInterpolation
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstantSnapshotIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstantSnapshotIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleComputeInstantSnapshotIamBinding) validateOverrideLogic
 }
 
 func (g *jsiiProxy_GoogleComputeInstantSnapshotIamBinding) validatePutConditionParameters(value *GoogleComputeInstantSnapshotIamBindingCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstantSnapshotIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GoogleComputeInstantSnapshotIamBinding) validateSetIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstantSnapshotIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeInstantSnapshotIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

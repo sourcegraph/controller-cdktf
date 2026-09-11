@@ -56,6 +56,10 @@ func (o *jsiiProxy_OpsworksInstance) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (o *jsiiProxy_OpsworksInstance) validatePutRootBlockDeviceParameters(value 
 }
 
 func (o *jsiiProxy_OpsworksInstance) validatePutTimeoutsParameters(value *OpsworksInstanceTimeouts) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -184,7 +192,7 @@ func (j *jsiiProxy_OpsworksInstance) validateSetLayerIdsParameters(val *[]*strin
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_OpsworksInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

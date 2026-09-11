@@ -40,11 +40,11 @@ func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) validateGetStr
 	return nil
 }
 
-func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KinesisStreamStreamModeDetailsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewKinesisStreamStreamModeDetailsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewKinesisStreamStreamModeDetailsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

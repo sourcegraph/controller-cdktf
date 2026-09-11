@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataOktaDefaultSigninPage) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (d *jsiiProxy_DataOktaDefaultSigninPage) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataOktaDefaultSigninPage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataOktaDefaultSigninPage) validateSetCountParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaDefaultSigninPage) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataOktaDefaultSigninPage) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

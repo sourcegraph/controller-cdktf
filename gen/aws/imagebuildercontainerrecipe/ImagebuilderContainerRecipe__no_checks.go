@@ -56,6 +56,10 @@ func (i *jsiiProxy_ImagebuilderContainerRecipe) validateInterpolationForAttribut
 	return nil
 }
 
+func (i *jsiiProxy_ImagebuilderContainerRecipe) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImagebuilderContainerRecipe) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (i *jsiiProxy_ImagebuilderContainerRecipe) validatePutInstanceConfiguration
 }
 
 func (i *jsiiProxy_ImagebuilderContainerRecipe) validatePutTargetRepositoryParameters(value *ImagebuilderContainerRecipeTargetRepository) error {
+	return nil
+}
+
+func (i *jsiiProxy_ImagebuilderContainerRecipe) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_ImagebuilderContainerRecipe) validateSetKmsKeyIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderContainerRecipe) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ImagebuilderContainerRecipe) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

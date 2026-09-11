@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataAwsAutoscalingGroups) validatePutFilterParameters(value i
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsAutoscalingGroups) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsAutoscalingGroups_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsAutoscalingGroups) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAutoscalingGroups) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsAutoscalingGroups) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

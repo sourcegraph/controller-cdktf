@@ -40,11 +40,11 @@ func (k *jsiiProxy_KendraIndexUserGroupResolutionConfigurationOutputReference) v
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexUserGroupResolutionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KendraIndexUserGroupResolutionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexUserGroupResolutionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraIndexUserGroupResolutionConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_KendraIndexUserGroupResolutionConfigurationOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_KendraIndexUserGroupResolutionConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KendraIndexUserGroupResolutionConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_KendraIndexUserGroupResolutionConfigurationOutputReference) v
 	return nil
 }
 
-func validateNewKendraIndexUserGroupResolutionConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewKendraIndexUserGroupResolutionConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

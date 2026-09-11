@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference)
 	return nil
 }
 
-func validateNewGoogleLoggingMetricBucketOptionsLinearBucketsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleLoggingMetricBucketOptionsLinearBucketsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

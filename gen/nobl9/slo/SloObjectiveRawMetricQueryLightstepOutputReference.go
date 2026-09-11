@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/slo/internal"
 )
 
 type SloObjectiveRawMetricQueryLightstepOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type SloObjectiveRawMetricQueryLightstepOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TypeOfData() *string
 	SetTypeOfData(val *string)
 	TypeOfDataInput() *string
@@ -54,7 +54,7 @@ type SloObjectiveRawMetricQueryLightstepOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type SloObjectiveRawMetricQueryLightstepOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetPercentile()
 	ResetStreamId()
 	ResetUql()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type SloObjectiveRawMetricQueryLightstepOutputReference interface {
 
 // The jsii proxy struct for SloObjectiveRawMetricQueryLightstepOutputReference
 type jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) ComplexObjectIndex() interface{} {
@@ -191,8 +191,8 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) UqlInput(
 }
 
 
-func NewSloObjectiveRawMetricQueryLightstepOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveRawMetricQueryLightstepOutputReference {
+func NewSloObjectiveRawMetricQueryLightstepOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveRawMetricQueryLightstepOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSloObjectiveRawMetricQueryLightstepOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -251,7 +251,7 @@ func NewSloObjectiveRawMetricQueryLightstepOutputReference(terraformResource cdk
 	j := jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryLightstepOutputReference",
+		"@cdktn/provider-nobl9.slo.SloObjectiveRawMetricQueryLightstepOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewSloObjectiveRawMetricQueryLightstepOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewSloObjectiveRawMetricQueryLightstepOutputReference_Override(s SloObjectiveRawMetricQueryLightstepOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSloObjectiveRawMetricQueryLightstepOutputReference_Override(s SloObjectiveRawMetricQueryLightstepOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryLightstepOutputReference",
+		"@cdktn/provider-nobl9.slo.SloObjectiveRawMetricQueryLightstepOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -335,7 +335,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,11 +397,11 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) GetAnyMap
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -525,8 +525,8 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) GetString
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -538,16 +538,16 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) Interpola
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -578,8 +578,8 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) ResetUql(
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -587,7 +587,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) Resolve(_
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

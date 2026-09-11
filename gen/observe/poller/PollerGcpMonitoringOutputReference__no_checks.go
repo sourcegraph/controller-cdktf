@@ -40,11 +40,11 @@ func (p *jsiiProxy_PollerGcpMonitoringOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (p *jsiiProxy_PollerGcpMonitoringOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PollerGcpMonitoringOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PollerGcpMonitoringOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PollerGcpMonitoringOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_PollerGcpMonitoringOutputReference) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_PollerGcpMonitoringOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PollerGcpMonitoringOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_PollerGcpMonitoringOutputReference) validateSetTotalLimitPara
 	return nil
 }
 
-func validateNewPollerGcpMonitoringOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPollerGcpMonitoringOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

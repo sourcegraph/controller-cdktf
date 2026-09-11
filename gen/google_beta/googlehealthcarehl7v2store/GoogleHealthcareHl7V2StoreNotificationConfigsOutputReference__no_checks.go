@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreNotificationConfigsOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareHl7V2StoreNotificationConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleHealthcareHl7V2StoreNotificationConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareHl7V2StoreNotificationConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleHealthcareHl7V2StoreNotificationConfigsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2StoreNotificationConfigsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreNotificationConfigsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreNotificationConfigsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleHealthcareHl7V2StoreNotificationConfigsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleHealthcareHl7V2StoreNotificationConfigsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

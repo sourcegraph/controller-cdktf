@@ -12,7 +12,7 @@ func (l *jsiiProxy_LoadBalancerPoolLoadSheddingList) validateGetParameters(index
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPoolLoadSheddingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerPoolLoadSheddingList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LoadBalancerPoolLoadSheddingList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerPoolLoadSheddingList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoadBalancerPoolLoadSheddingList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LoadBalancerPoolLoadSheddingList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewLoadBalancerPoolLoadSheddingListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLoadBalancerPoolLoadSheddingListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

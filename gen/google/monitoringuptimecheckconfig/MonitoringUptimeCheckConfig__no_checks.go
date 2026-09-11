@@ -56,6 +56,10 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) validateInterpolationForAttribut
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringUptimeCheckConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) validatePutTimeoutsParameters(va
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateMonitoringUptimeCheckConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -136,7 +144,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

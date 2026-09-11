@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServiceSupportedMethod
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServiceSupportedMethodsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServiceSupportedMethodsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServiceSupportedMethod
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServiceSupportedMethodsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServiceSupportedMethodsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServiceSupportedMethod
 	return nil
 }
 
-func validateNewDataGoogleAccessContextManagerSupportedServiceSupportedMethodsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleAccessContextManagerSupportedServiceSupportedMethodsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

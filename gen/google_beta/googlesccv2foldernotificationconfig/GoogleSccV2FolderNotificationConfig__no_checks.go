@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleSccV2FolderNotificationConfig) validateInterpolationFor
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSccV2FolderNotificationConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSccV2FolderNotificationConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleSccV2FolderNotificationConfig) validatePutStreamingConf
 }
 
 func (g *jsiiProxy_GoogleSccV2FolderNotificationConfig) validatePutTimeoutsParameters(value *GoogleSccV2FolderNotificationConfigTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSccV2FolderNotificationConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleSccV2FolderNotificationConfig) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccV2FolderNotificationConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleSccV2FolderNotificationConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

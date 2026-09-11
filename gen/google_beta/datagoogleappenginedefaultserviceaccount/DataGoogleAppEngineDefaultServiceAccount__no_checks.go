@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) validateOverrideLog
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleAppEngineDefaultServiceAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) validateSetIdParame
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

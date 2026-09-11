@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyO
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyO
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

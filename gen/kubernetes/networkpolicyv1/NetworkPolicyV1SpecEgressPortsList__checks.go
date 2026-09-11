@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (n *jsiiProxy_NetworkPolicyV1SpecEgressPortsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressPortsList) validateGetParameters(ind
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecEgressPortsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (n *jsiiProxy_NetworkPolicyV1SpecEgressPortsList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressPortsList) validateResolveParameters
 
 func (j *jsiiProxy_NetworkPolicyV1SpecEgressPortsList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*NetworkPolicyV1SpecEgressPorts:
 		val := val.(*[]*NetworkPolicyV1SpecEgressPorts)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_NetworkPolicyV1SpecEgressPortsList) validateSetInternalValueP
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*NetworkPolicyV1SpecEgressPorts; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*NetworkPolicyV1SpecEgressPorts; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_NetworkPolicyV1SpecEgressPortsList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecEgressPortsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkPolicyV1SpecEgressPortsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_NetworkPolicyV1SpecEgressPortsList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewNetworkPolicyV1SpecEgressPortsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNetworkPolicyV1SpecEgressPortsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

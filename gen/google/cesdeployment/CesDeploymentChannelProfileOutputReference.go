@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cesdeployment/internal"
 )
 
 type CesDeploymentChannelProfileOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ChannelType() *string
 	SetChannelType(val *string)
 	ChannelTypeInput() *string
@@ -48,9 +48,9 @@ type CesDeploymentChannelProfileOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WebWidgetConfig() CesDeploymentChannelProfileWebWidgetConfigOutputReference
 	WebWidgetConfigInput() *CesDeploymentChannelProfileWebWidgetConfig
 	// Experimental.
@@ -58,7 +58,7 @@ type CesDeploymentChannelProfileOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -74,9 +74,9 @@ type CesDeploymentChannelProfileOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutPersonaProperty(value *CesDeploymentChannelProfilePersonaProperty)
 	PutWebWidgetConfig(value *CesDeploymentChannelProfileWebWidgetConfig)
 	ResetChannelType()
@@ -87,7 +87,7 @@ type CesDeploymentChannelProfileOutputReference interface {
 	ResetWebWidgetConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type CesDeploymentChannelProfileOutputReference interface {
 
 // The jsii proxy struct for CesDeploymentChannelProfileOutputReference
 type jsiiProxy_CesDeploymentChannelProfileOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CesDeploymentChannelProfileOutputReference) ChannelType() *string {
@@ -260,8 +260,8 @@ func (j *jsiiProxy_CesDeploymentChannelProfileOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_CesDeploymentChannelProfileOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CesDeploymentChannelProfileOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -291,7 +291,7 @@ func (j *jsiiProxy_CesDeploymentChannelProfileOutputReference) WebWidgetConfigIn
 }
 
 
-func NewCesDeploymentChannelProfileOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CesDeploymentChannelProfileOutputReference {
+func NewCesDeploymentChannelProfileOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CesDeploymentChannelProfileOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCesDeploymentChannelProfileOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -300,7 +300,7 @@ func NewCesDeploymentChannelProfileOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_CesDeploymentChannelProfileOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference",
+		"@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -308,11 +308,11 @@ func NewCesDeploymentChannelProfileOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewCesDeploymentChannelProfileOutputReference_Override(c CesDeploymentChannelProfileOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCesDeploymentChannelProfileOutputReference_Override(c CesDeploymentChannelProfileOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference",
+		"@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -406,7 +406,7 @@ func (j *jsiiProxy_CesDeploymentChannelProfileOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_CesDeploymentChannelProfileOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesDeploymentChannelProfileOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -446,11 +446,11 @@ func (c *jsiiProxy_CesDeploymentChannelProfileOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (c *jsiiProxy_CesDeploymentChannelProfileOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CesDeploymentChannelProfileOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -574,8 +574,8 @@ func (c *jsiiProxy_CesDeploymentChannelProfileOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (c *jsiiProxy_CesDeploymentChannelProfileOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CesDeploymentChannelProfileOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -587,16 +587,16 @@ func (c *jsiiProxy_CesDeploymentChannelProfileOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (c *jsiiProxy_CesDeploymentChannelProfileOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CesDeploymentChannelProfileOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -673,8 +673,8 @@ func (c *jsiiProxy_CesDeploymentChannelProfileOutputReference) ResetWebWidgetCon
 	)
 }
 
-func (c *jsiiProxy_CesDeploymentChannelProfileOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CesDeploymentChannelProfileOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -682,7 +682,7 @@ func (c *jsiiProxy_CesDeploymentChannelProfileOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

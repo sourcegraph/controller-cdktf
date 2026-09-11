@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecVolumePersistentVolumeClaimList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecVolumePersistentVolumeClaimList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecVolumePersistentVolumeClaimList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecVolumePersistentVolumeClaimList) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecVolumePersistentVolumeClaimList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesPodSpecVolumePersistentVolumeClaimList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecVolumePersistentVolumeClaimList) validat
 	return nil
 }
 
-func validateNewDataKubernetesPodSpecVolumePersistentVolumeClaimListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataKubernetesPodSpecVolumePersistentVolumeClaimListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

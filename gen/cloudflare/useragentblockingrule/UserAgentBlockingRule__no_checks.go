@@ -56,6 +56,10 @@ func (u *jsiiProxy_UserAgentBlockingRule) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (u *jsiiProxy_UserAgentBlockingRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserAgentBlockingRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (u *jsiiProxy_UserAgentBlockingRule) validateOverrideLogicalIdParameters(ne
 }
 
 func (u *jsiiProxy_UserAgentBlockingRule) validatePutConfigurationParameters(value *UserAgentBlockingRuleConfiguration) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserAgentBlockingRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_UserAgentBlockingRule) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_UserAgentBlockingRule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

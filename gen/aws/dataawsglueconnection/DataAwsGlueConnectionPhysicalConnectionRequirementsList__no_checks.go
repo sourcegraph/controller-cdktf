@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsList) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsList) vali
 	return nil
 }
 
-func validateNewDataAwsGlueConnectionPhysicalConnectionRequirementsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsGlueConnectionPhysicalConnectionRequirementsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

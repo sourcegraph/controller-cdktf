@@ -40,11 +40,11 @@ func (s *jsiiProxy_S3BucketWebsiteConfigurationErrorDocumentOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketWebsiteConfigurationErrorDocumentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketWebsiteConfigurationErrorDocumentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketWebsiteConfigurationErrorDocumentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketWebsiteConfigurationErrorDocumentOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_S3BucketWebsiteConfigurationErrorDocumentOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketWebsiteConfigurationErrorDocumentOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_S3BucketWebsiteConfigurationErrorDocumentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewS3BucketWebsiteConfigurationErrorDocumentOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewS3BucketWebsiteConfigurationErrorDocumentOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

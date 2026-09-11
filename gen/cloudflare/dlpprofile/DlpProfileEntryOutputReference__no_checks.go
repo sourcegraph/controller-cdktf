@@ -40,7 +40,7 @@ func (d *jsiiProxy_DlpProfileEntryOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (d *jsiiProxy_DlpProfileEntryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DlpProfileEntryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DlpProfileEntryOutputReference) validatePutPatternParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DlpProfileEntryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DlpProfileEntryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_DlpProfileEntryOutputReference) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_DlpProfileEntryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DlpProfileEntryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDlpProfileEntryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDlpProfileEntryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

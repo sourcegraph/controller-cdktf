@@ -56,6 +56,10 @@ func (d *jsiiProxy_DynamodbContributorInsights) validateInterpolationForAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DynamodbContributorInsights) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DynamodbContributorInsights) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DynamodbContributorInsights) validateOverrideLogicalIdParamet
 }
 
 func (d *jsiiProxy_DynamodbContributorInsights) validatePutTimeoutsParameters(value *DynamodbContributorInsightsTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DynamodbContributorInsights) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_DynamodbContributorInsights) validateSetIndexNameParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbContributorInsights) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DynamodbContributorInsights) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

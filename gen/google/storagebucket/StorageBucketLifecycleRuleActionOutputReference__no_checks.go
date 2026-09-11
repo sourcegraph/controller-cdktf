@@ -40,11 +40,11 @@ func (s *jsiiProxy_StorageBucketLifecycleRuleActionOutputReference) validateGetS
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketLifecycleRuleActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageBucketLifecycleRuleActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketLifecycleRuleActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageBucketLifecycleRuleActionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleActionOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketLifecycleRuleActionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StorageBucketLifecycleRuleActionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleActionOutputReference) validateSetT
 	return nil
 }
 
-func validateNewStorageBucketLifecycleRuleActionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewStorageBucketLifecycleRuleActionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

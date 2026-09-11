@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleModelArmorTemplateFilterConfigRaiSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleModelArmorTemplateFilterConfigRaiSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

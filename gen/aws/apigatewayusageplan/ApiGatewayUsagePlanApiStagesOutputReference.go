@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/apigatewayusageplan/internal"
 )
 
 type ApiGatewayUsagePlanApiStagesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ApiId() *string
 	SetApiId(val *string)
 	ApiIdInput() *string
@@ -40,9 +40,9 @@ type ApiGatewayUsagePlanApiStagesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Throttle() ApiGatewayUsagePlanApiStagesThrottleList
 	ThrottleInput() interface{}
 	// Experimental.
@@ -50,7 +50,7 @@ type ApiGatewayUsagePlanApiStagesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,14 +66,14 @@ type ApiGatewayUsagePlanApiStagesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutThrottle(value interface{})
 	ResetThrottle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type ApiGatewayUsagePlanApiStagesOutputReference interface {
 
 // The jsii proxy struct for ApiGatewayUsagePlanApiStagesOutputReference
 type jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) ApiId() *string {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) ThrottleInput() 
 }
 
 
-func NewApiGatewayUsagePlanApiStagesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApiGatewayUsagePlanApiStagesOutputReference {
+func NewApiGatewayUsagePlanApiStagesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApiGatewayUsagePlanApiStagesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewApiGatewayUsagePlanApiStagesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -226,7 +226,7 @@ func NewApiGatewayUsagePlanApiStagesOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesOutputReference",
+		"@cdktn/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewApiGatewayUsagePlanApiStagesOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewApiGatewayUsagePlanApiStagesOutputReference_Override(a ApiGatewayUsagePlanApiStagesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewApiGatewayUsagePlanApiStagesOutputReference_Override(a ApiGatewayUsagePlanApiStagesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesOutputReference",
+		"@cdktn/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,11 +350,11 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -478,8 +478,8 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -491,16 +491,16 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) InterpolationAsL
 	return returns
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) ResetThrottle() 
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

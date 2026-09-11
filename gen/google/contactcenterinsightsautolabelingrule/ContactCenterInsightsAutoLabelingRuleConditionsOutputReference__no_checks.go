@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContactCenterInsightsAutoLabelingRuleConditionsOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAutoLabelingRuleConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContactCenterInsightsAutoLabelingRuleConditionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAutoLabelingRuleConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContactCenterInsightsAutoLabelingRuleConditionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRuleConditionsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRuleConditionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRuleConditionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRuleConditionsOutputReferenc
 	return nil
 }
 
-func validateNewContactCenterInsightsAutoLabelingRuleConditionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewContactCenterInsightsAutoLabelingRuleConditionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

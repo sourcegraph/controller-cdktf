@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleNetappVolumeMountOptionsList) validateGetParameters(ind
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetappVolumeMountOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetappVolumeMountOptionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleNetappVolumeMountOptionsList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeMountOptionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetappVolumeMountOptionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleNetappVolumeMountOptionsList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewGoogleNetappVolumeMountOptionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleNetappVolumeMountOptionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

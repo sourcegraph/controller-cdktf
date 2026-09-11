@@ -1,0 +1,4755 @@
+package googlecontainercluster
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
+	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontainercluster/internal"
+)
+
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_container_cluster google_container_cluster}.
+type GoogleContainerCluster interface {
+	cdktn.TerraformResource
+	AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference
+	AddonsConfigInput() *GoogleContainerClusterAddonsConfig
+	AllowNetAdmin() interface{}
+	SetAllowNetAdmin(val interface{})
+	AllowNetAdminInput() interface{}
+	AnonymousAuthenticationConfig() GoogleContainerClusterAnonymousAuthenticationConfigOutputReference
+	AnonymousAuthenticationConfigInput() *GoogleContainerClusterAnonymousAuthenticationConfig
+	AuthenticatorGroupsConfig() GoogleContainerClusterAuthenticatorGroupsConfigOutputReference
+	AuthenticatorGroupsConfigInput() *GoogleContainerClusterAuthenticatorGroupsConfig
+	AutopilotClusterPolicyConfig() GoogleContainerClusterAutopilotClusterPolicyConfigOutputReference
+	AutopilotClusterPolicyConfigInput() *GoogleContainerClusterAutopilotClusterPolicyConfig
+	AutopilotPrivilegedAdmission() *[]*string
+	SetAutopilotPrivilegedAdmission(val *[]*string)
+	AutopilotPrivilegedAdmissionInput() *[]*string
+	BinaryAuthorization() GoogleContainerClusterBinaryAuthorizationOutputReference
+	BinaryAuthorizationInput() *GoogleContainerClusterBinaryAuthorization
+	// Experimental.
+	CdktfStack() cdktn.TerraformStack
+	ClusterAutoscaling() GoogleContainerClusterClusterAutoscalingOutputReference
+	ClusterAutoscalingInput() *GoogleContainerClusterClusterAutoscaling
+	ClusterIpv4Cidr() *string
+	SetClusterIpv4Cidr(val *string)
+	ClusterIpv4CidrInput() *string
+	ClusterTelemetry() GoogleContainerClusterClusterTelemetryOutputReference
+	ClusterTelemetryInput() *GoogleContainerClusterClusterTelemetry
+	ConfidentialNodes() GoogleContainerClusterConfidentialNodesOutputReference
+	ConfidentialNodesInput() *GoogleContainerClusterConfidentialNodes
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	ControlPlaneEndpointsConfig() GoogleContainerClusterControlPlaneEndpointsConfigOutputReference
+	ControlPlaneEndpointsConfigInput() *GoogleContainerClusterControlPlaneEndpointsConfig
+	CostManagementConfig() GoogleContainerClusterCostManagementConfigOutputReference
+	CostManagementConfigInput() *GoogleContainerClusterCostManagementConfig
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	DatabaseEncryption() GoogleContainerClusterDatabaseEncryptionOutputReference
+	DatabaseEncryptionInput() *GoogleContainerClusterDatabaseEncryption
+	DatapathProvider() *string
+	SetDatapathProvider(val *string)
+	DatapathProviderInput() *string
+	DefaultMaxPodsPerNode() *float64
+	SetDefaultMaxPodsPerNode(val *float64)
+	DefaultMaxPodsPerNodeInput() *float64
+	DefaultSnatStatus() GoogleContainerClusterDefaultSnatStatusOutputReference
+	DefaultSnatStatusInput() *GoogleContainerClusterDefaultSnatStatus
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	DisableL4LbFirewallReconciliation() interface{}
+	SetDisableL4LbFirewallReconciliation(val interface{})
+	DisableL4LbFirewallReconciliationInput() interface{}
+	DnsConfig() GoogleContainerClusterDnsConfigOutputReference
+	DnsConfigInput() *GoogleContainerClusterDnsConfig
+	EffectiveLabels() cdktn.StringMap
+	EnableAutopilot() interface{}
+	SetEnableAutopilot(val interface{})
+	EnableAutopilotInput() interface{}
+	EnableCiliumClusterwideNetworkPolicy() interface{}
+	SetEnableCiliumClusterwideNetworkPolicy(val interface{})
+	EnableCiliumClusterwideNetworkPolicyInput() interface{}
+	EnableFqdnNetworkPolicy() interface{}
+	SetEnableFqdnNetworkPolicy(val interface{})
+	EnableFqdnNetworkPolicyInput() interface{}
+	EnableIntranodeVisibility() interface{}
+	SetEnableIntranodeVisibility(val interface{})
+	EnableIntranodeVisibilityInput() interface{}
+	EnableK8SBetaApis() GoogleContainerClusterEnableK8SBetaApisOutputReference
+	EnableK8SBetaApisInput() *GoogleContainerClusterEnableK8SBetaApis
+	EnableKubernetesAlpha() interface{}
+	SetEnableKubernetesAlpha(val interface{})
+	EnableKubernetesAlphaInput() interface{}
+	EnableL4IlbSubsetting() interface{}
+	SetEnableL4IlbSubsetting(val interface{})
+	EnableL4IlbSubsettingInput() interface{}
+	EnableLegacyAbac() interface{}
+	SetEnableLegacyAbac(val interface{})
+	EnableLegacyAbacInput() interface{}
+	EnableMultiNetworking() interface{}
+	SetEnableMultiNetworking(val interface{})
+	EnableMultiNetworkingInput() interface{}
+	EnableShieldedNodes() interface{}
+	SetEnableShieldedNodes(val interface{})
+	EnableShieldedNodesInput() interface{}
+	EnableTpu() interface{}
+	SetEnableTpu(val interface{})
+	EnableTpuInput() interface{}
+	Endpoint() *string
+	EnterpriseConfig() GoogleContainerClusterEnterpriseConfigOutputReference
+	EnterpriseConfigInput() *GoogleContainerClusterEnterpriseConfig
+	Fleet() GoogleContainerClusterFleetOutputReference
+	FleetInput() *GoogleContainerClusterFleet
+	// Experimental.
+	ForEach() cdktn.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktn.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	GatewayApiConfig() GoogleContainerClusterGatewayApiConfigOutputReference
+	GatewayApiConfigInput() *GoogleContainerClusterGatewayApiConfig
+	GkeAutoUpgradeConfig() GoogleContainerClusterGkeAutoUpgradeConfigOutputReference
+	GkeAutoUpgradeConfigInput() *GoogleContainerClusterGkeAutoUpgradeConfig
+	Id() *string
+	SetId(val *string)
+	IdentityServiceConfig() GoogleContainerClusterIdentityServiceConfigOutputReference
+	IdentityServiceConfigInput() *GoogleContainerClusterIdentityServiceConfig
+	IdInput() *string
+	InitialNodeCount() *float64
+	SetInitialNodeCount(val *float64)
+	InitialNodeCountInput() *float64
+	InTransitEncryptionConfig() *string
+	SetInTransitEncryptionConfig(val *string)
+	InTransitEncryptionConfigInput() *string
+	IpAllocationPolicy() GoogleContainerClusterIpAllocationPolicyOutputReference
+	IpAllocationPolicyInput() *GoogleContainerClusterIpAllocationPolicy
+	LabelFingerprint() *string
+	// Experimental.
+	Lifecycle() *cdktn.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
+	LoggingConfig() GoogleContainerClusterLoggingConfigOutputReference
+	LoggingConfigInput() *GoogleContainerClusterLoggingConfig
+	LoggingService() *string
+	SetLoggingService(val *string)
+	LoggingServiceInput() *string
+	MaintenancePolicy() GoogleContainerClusterMaintenancePolicyOutputReference
+	MaintenancePolicyInput() *GoogleContainerClusterMaintenancePolicy
+	ManagedMachineLearningDiagnosticsConfig() GoogleContainerClusterManagedMachineLearningDiagnosticsConfigOutputReference
+	ManagedMachineLearningDiagnosticsConfigInput() *GoogleContainerClusterManagedMachineLearningDiagnosticsConfig
+	ManagedOpentelemetryConfig() GoogleContainerClusterManagedOpentelemetryConfigOutputReference
+	ManagedOpentelemetryConfigInput() *GoogleContainerClusterManagedOpentelemetryConfig
+	MasterAuth() GoogleContainerClusterMasterAuthOutputReference
+	MasterAuthInput() *GoogleContainerClusterMasterAuth
+	MasterAuthorizedNetworksConfig() GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference
+	MasterAuthorizedNetworksConfigInput() *GoogleContainerClusterMasterAuthorizedNetworksConfig
+	MasterVersion() *string
+	MeshCertificates() GoogleContainerClusterMeshCertificatesOutputReference
+	MeshCertificatesInput() *GoogleContainerClusterMeshCertificates
+	MinMasterVersion() *string
+	SetMinMasterVersion(val *string)
+	MinMasterVersionInput() *string
+	MonitoringConfig() GoogleContainerClusterMonitoringConfigOutputReference
+	MonitoringConfigInput() *GoogleContainerClusterMonitoringConfig
+	MonitoringService() *string
+	SetMonitoringService(val *string)
+	MonitoringServiceInput() *string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	Network() *string
+	SetNetwork(val *string)
+	NetworkingMode() *string
+	SetNetworkingMode(val *string)
+	NetworkingModeInput() *string
+	NetworkInput() *string
+	NetworkPerformanceConfig() GoogleContainerClusterNetworkPerformanceConfigOutputReference
+	NetworkPerformanceConfigInput() *GoogleContainerClusterNetworkPerformanceConfig
+	NetworkPolicy() GoogleContainerClusterNetworkPolicyOutputReference
+	NetworkPolicyInput() *GoogleContainerClusterNetworkPolicy
+	// The tree node.
+	Node() constructs.Node
+	NodeConfig() GoogleContainerClusterNodeConfigOutputReference
+	NodeConfigInput() *GoogleContainerClusterNodeConfig
+	NodeLocations() *[]*string
+	SetNodeLocations(val *[]*string)
+	NodeLocationsInput() *[]*string
+	NodePool() GoogleContainerClusterNodePoolList
+	NodePoolAutoConfig() GoogleContainerClusterNodePoolAutoConfigOutputReference
+	NodePoolAutoConfigInput() *GoogleContainerClusterNodePoolAutoConfig
+	NodePoolDefaults() GoogleContainerClusterNodePoolDefaultsOutputReference
+	NodePoolDefaultsInput() *GoogleContainerClusterNodePoolDefaults
+	NodePoolInput() interface{}
+	NodeVersion() *string
+	SetNodeVersion(val *string)
+	NodeVersionInput() *string
+	NotificationConfig() GoogleContainerClusterNotificationConfigOutputReference
+	NotificationConfigInput() *GoogleContainerClusterNotificationConfig
+	Operation() *string
+	PodAutoscaling() GoogleContainerClusterPodAutoscalingOutputReference
+	PodAutoscalingInput() *GoogleContainerClusterPodAutoscaling
+	PodSecurityPolicyConfig() GoogleContainerClusterPodSecurityPolicyConfigOutputReference
+	PodSecurityPolicyConfigInput() *GoogleContainerClusterPodSecurityPolicyConfig
+	PrivateClusterConfig() GoogleContainerClusterPrivateClusterConfigOutputReference
+	PrivateClusterConfigInput() *GoogleContainerClusterPrivateClusterConfig
+	PrivateIpv6GoogleAccess() *string
+	SetPrivateIpv6GoogleAccess(val *string)
+	PrivateIpv6GoogleAccessInput() *string
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	ProtectConfig() GoogleContainerClusterProtectConfigOutputReference
+	ProtectConfigInput() *GoogleContainerClusterProtectConfig
+	// Experimental.
+	Provider() cdktn.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktn.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	RbacBindingConfig() GoogleContainerClusterRbacBindingConfigOutputReference
+	RbacBindingConfigInput() *GoogleContainerClusterRbacBindingConfig
+	ReleaseChannel() GoogleContainerClusterReleaseChannelOutputReference
+	ReleaseChannelInput() *GoogleContainerClusterReleaseChannel
+	RemoveDefaultNodePool() interface{}
+	SetRemoveDefaultNodePool(val interface{})
+	RemoveDefaultNodePoolInput() interface{}
+	ResourceLabels() *map[string]*string
+	SetResourceLabels(val *map[string]*string)
+	ResourceLabelsInput() *map[string]*string
+	ResourceUsageExportConfig() GoogleContainerClusterResourceUsageExportConfigOutputReference
+	ResourceUsageExportConfigInput() *GoogleContainerClusterResourceUsageExportConfig
+	SecretManagerConfig() GoogleContainerClusterSecretManagerConfigOutputReference
+	SecretManagerConfigInput() *GoogleContainerClusterSecretManagerConfig
+	SecretSyncConfig() GoogleContainerClusterSecretSyncConfigOutputReference
+	SecretSyncConfigInput() *GoogleContainerClusterSecretSyncConfig
+	SecurityPostureConfig() GoogleContainerClusterSecurityPostureConfigOutputReference
+	SecurityPostureConfigInput() *GoogleContainerClusterSecurityPostureConfig
+	SelfLink() *string
+	ServiceExternalIpsConfig() GoogleContainerClusterServiceExternalIpsConfigOutputReference
+	ServiceExternalIpsConfigInput() *GoogleContainerClusterServiceExternalIpsConfig
+	ServicesIpv4Cidr() *string
+	Subnetwork() *string
+	SetSubnetwork(val *string)
+	SubnetworkInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktn.StringMap
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() GoogleContainerClusterTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	TpuConfig() GoogleContainerClusterTpuConfigOutputReference
+	TpuConfigInput() *GoogleContainerClusterTpuConfig
+	TpuIpv4CidrBlock() *string
+	UserManagedKeysConfig() GoogleContainerClusterUserManagedKeysConfigOutputReference
+	UserManagedKeysConfigInput() *GoogleContainerClusterUserManagedKeysConfig
+	VerticalPodAutoscaling() GoogleContainerClusterVerticalPodAutoscalingOutputReference
+	VerticalPodAutoscalingInput() *GoogleContainerClusterVerticalPodAutoscaling
+	WorkloadAltsConfig() GoogleContainerClusterWorkloadAltsConfigOutputReference
+	WorkloadAltsConfigInput() *GoogleContainerClusterWorkloadAltsConfig
+	WorkloadIdentityConfig() GoogleContainerClusterWorkloadIdentityConfigOutputReference
+	WorkloadIdentityConfigInput() *GoogleContainerClusterWorkloadIdentityConfig
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	// Wraps a write-only attribute's already-mapped value so that `ProviderFeature.WRITE_ONLY_ATTRIBUTES` usage is registered at *resolve* time instead of at mutation time (setter/constructor). Called by generated bindings from `synthesizeAttributes()` and `synthesizeHclAttributes()`, e.g. `secret_key_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._secretKeyWo))`; not intended to be called directly.
+	//
+	// `undefined` passes through completely unchanged, so the existing
+	// undefined-filtering that omits unset attributes from synthesized
+	// output (see `resolve()` in `tokens/private/resolve.ts`, and the
+	// `value.value !== undefined` filter in generated
+	// `synthesizeHclAttributes()`) keeps working untouched. `null` is also
+	// passed through unchanged: it already renders as an explicit
+	// null-out and must not arm the validation either.
+	//
+	// Any other value - including one that will itself resolve to nothing
+	// (e.g. a `Lazy`/`IResolvable` producer with no value to contribute) -
+	// is wrapped in a token whose `resolve()` defers to the real resolver
+	// first and registers usage only if what comes back is not
+	// `null`/`undefined`; the resolved value is then returned unchanged,
+	// so what actually renders is untouched by this wrapper. A producer
+	// that resolves to `undefined` therefore neither registers usage nor
+	// leaves anything behind in the synthesized attribute - the omission
+	// behaves exactly as if the attribute had never been set.
+	//
+	// Registration goes through `_registerResolveDiscoveredProviderFeatureUsage`
+	// rather than `registerProviderFeatureUsage`: usage here is only known at
+	// resolve time, and a given element can be resolved across many
+	// synthesis passes over its lifetime (repeated `app.synth()` calls,
+	// tests reusing a construct tree), so it must represent only the CURRENT
+	// pass rather than accumulate forever. Every validation-enabled entry
+	// point (`App.synth`; `Testing.synth`/`synthHcl` with validations;
+	// `StackSynthesizer.synthesize`) runs a prepare step that deactivates any
+	// stale registration and then resolves every element's `toTerraform()`
+	// before that same entry point's validations run - see
+	// `TerraformStack._runPreparingResolve` - so whatever this closure
+	// (re-)registers during that prepare step is always visible to the
+	// validation that reads it afterwards, and nothing left over from an
+	// earlier pass leaks into the current one.
+	// Experimental.
+	MarkWriteOnlyAttribute(value interface{}) interface{}
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using its instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAddonsConfig(value *GoogleContainerClusterAddonsConfig)
+	PutAnonymousAuthenticationConfig(value *GoogleContainerClusterAnonymousAuthenticationConfig)
+	PutAuthenticatorGroupsConfig(value *GoogleContainerClusterAuthenticatorGroupsConfig)
+	PutAutopilotClusterPolicyConfig(value *GoogleContainerClusterAutopilotClusterPolicyConfig)
+	PutBinaryAuthorization(value *GoogleContainerClusterBinaryAuthorization)
+	PutClusterAutoscaling(value *GoogleContainerClusterClusterAutoscaling)
+	PutClusterTelemetry(value *GoogleContainerClusterClusterTelemetry)
+	PutConfidentialNodes(value *GoogleContainerClusterConfidentialNodes)
+	PutControlPlaneEndpointsConfig(value *GoogleContainerClusterControlPlaneEndpointsConfig)
+	PutCostManagementConfig(value *GoogleContainerClusterCostManagementConfig)
+	PutDatabaseEncryption(value *GoogleContainerClusterDatabaseEncryption)
+	PutDefaultSnatStatus(value *GoogleContainerClusterDefaultSnatStatus)
+	PutDnsConfig(value *GoogleContainerClusterDnsConfig)
+	PutEnableK8SBetaApis(value *GoogleContainerClusterEnableK8SBetaApis)
+	PutEnterpriseConfig(value *GoogleContainerClusterEnterpriseConfig)
+	PutFleet(value *GoogleContainerClusterFleet)
+	PutGatewayApiConfig(value *GoogleContainerClusterGatewayApiConfig)
+	PutGkeAutoUpgradeConfig(value *GoogleContainerClusterGkeAutoUpgradeConfig)
+	PutIdentityServiceConfig(value *GoogleContainerClusterIdentityServiceConfig)
+	PutIpAllocationPolicy(value *GoogleContainerClusterIpAllocationPolicy)
+	PutLoggingConfig(value *GoogleContainerClusterLoggingConfig)
+	PutMaintenancePolicy(value *GoogleContainerClusterMaintenancePolicy)
+	PutManagedMachineLearningDiagnosticsConfig(value *GoogleContainerClusterManagedMachineLearningDiagnosticsConfig)
+	PutManagedOpentelemetryConfig(value *GoogleContainerClusterManagedOpentelemetryConfig)
+	PutMasterAuth(value *GoogleContainerClusterMasterAuth)
+	PutMasterAuthorizedNetworksConfig(value *GoogleContainerClusterMasterAuthorizedNetworksConfig)
+	PutMeshCertificates(value *GoogleContainerClusterMeshCertificates)
+	PutMonitoringConfig(value *GoogleContainerClusterMonitoringConfig)
+	PutNetworkPerformanceConfig(value *GoogleContainerClusterNetworkPerformanceConfig)
+	PutNetworkPolicy(value *GoogleContainerClusterNetworkPolicy)
+	PutNodeConfig(value *GoogleContainerClusterNodeConfig)
+	PutNodePool(value interface{})
+	PutNodePoolAutoConfig(value *GoogleContainerClusterNodePoolAutoConfig)
+	PutNodePoolDefaults(value *GoogleContainerClusterNodePoolDefaults)
+	PutNotificationConfig(value *GoogleContainerClusterNotificationConfig)
+	PutPodAutoscaling(value *GoogleContainerClusterPodAutoscaling)
+	PutPodSecurityPolicyConfig(value *GoogleContainerClusterPodSecurityPolicyConfig)
+	PutPrivateClusterConfig(value *GoogleContainerClusterPrivateClusterConfig)
+	PutProtectConfig(value *GoogleContainerClusterProtectConfig)
+	PutRbacBindingConfig(value *GoogleContainerClusterRbacBindingConfig)
+	PutReleaseChannel(value *GoogleContainerClusterReleaseChannel)
+	PutResourceUsageExportConfig(value *GoogleContainerClusterResourceUsageExportConfig)
+	PutSecretManagerConfig(value *GoogleContainerClusterSecretManagerConfig)
+	PutSecretSyncConfig(value *GoogleContainerClusterSecretSyncConfig)
+	PutSecurityPostureConfig(value *GoogleContainerClusterSecurityPostureConfig)
+	PutServiceExternalIpsConfig(value *GoogleContainerClusterServiceExternalIpsConfig)
+	PutTimeouts(value *GoogleContainerClusterTimeouts)
+	PutTpuConfig(value *GoogleContainerClusterTpuConfig)
+	PutUserManagedKeysConfig(value *GoogleContainerClusterUserManagedKeysConfig)
+	PutVerticalPodAutoscaling(value *GoogleContainerClusterVerticalPodAutoscaling)
+	PutWorkloadAltsConfig(value *GoogleContainerClusterWorkloadAltsConfig)
+	PutWorkloadIdentityConfig(value *GoogleContainerClusterWorkloadIdentityConfig)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetAddonsConfig()
+	ResetAllowNetAdmin()
+	ResetAnonymousAuthenticationConfig()
+	ResetAuthenticatorGroupsConfig()
+	ResetAutopilotClusterPolicyConfig()
+	ResetAutopilotPrivilegedAdmission()
+	ResetBinaryAuthorization()
+	ResetClusterAutoscaling()
+	ResetClusterIpv4Cidr()
+	ResetClusterTelemetry()
+	ResetConfidentialNodes()
+	ResetControlPlaneEndpointsConfig()
+	ResetCostManagementConfig()
+	ResetDatabaseEncryption()
+	ResetDatapathProvider()
+	ResetDefaultMaxPodsPerNode()
+	ResetDefaultSnatStatus()
+	ResetDeletionProtection()
+	ResetDescription()
+	ResetDisableL4LbFirewallReconciliation()
+	ResetDnsConfig()
+	ResetEnableAutopilot()
+	ResetEnableCiliumClusterwideNetworkPolicy()
+	ResetEnableFqdnNetworkPolicy()
+	ResetEnableIntranodeVisibility()
+	ResetEnableK8SBetaApis()
+	ResetEnableKubernetesAlpha()
+	ResetEnableL4IlbSubsetting()
+	ResetEnableLegacyAbac()
+	ResetEnableMultiNetworking()
+	ResetEnableShieldedNodes()
+	ResetEnableTpu()
+	ResetEnterpriseConfig()
+	ResetFleet()
+	ResetGatewayApiConfig()
+	ResetGkeAutoUpgradeConfig()
+	ResetId()
+	ResetIdentityServiceConfig()
+	ResetInitialNodeCount()
+	ResetInTransitEncryptionConfig()
+	ResetIpAllocationPolicy()
+	ResetLocation()
+	ResetLoggingConfig()
+	ResetLoggingService()
+	ResetMaintenancePolicy()
+	ResetManagedMachineLearningDiagnosticsConfig()
+	ResetManagedOpentelemetryConfig()
+	ResetMasterAuth()
+	ResetMasterAuthorizedNetworksConfig()
+	ResetMeshCertificates()
+	ResetMinMasterVersion()
+	ResetMonitoringConfig()
+	ResetMonitoringService()
+	ResetNetwork()
+	ResetNetworkingMode()
+	ResetNetworkPerformanceConfig()
+	ResetNetworkPolicy()
+	ResetNodeConfig()
+	ResetNodeLocations()
+	ResetNodePool()
+	ResetNodePoolAutoConfig()
+	ResetNodePoolDefaults()
+	ResetNodeVersion()
+	ResetNotificationConfig()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPodAutoscaling()
+	ResetPodSecurityPolicyConfig()
+	ResetPrivateClusterConfig()
+	ResetPrivateIpv6GoogleAccess()
+	ResetProject()
+	ResetProtectConfig()
+	ResetRbacBindingConfig()
+	ResetReleaseChannel()
+	ResetRemoveDefaultNodePool()
+	ResetResourceLabels()
+	ResetResourceUsageExportConfig()
+	ResetSecretManagerConfig()
+	ResetSecretSyncConfig()
+	ResetSecurityPostureConfig()
+	ResetServiceExternalIpsConfig()
+	ResetSubnetwork()
+	ResetTimeouts()
+	ResetTpuConfig()
+	ResetUserManagedKeysConfig()
+	ResetVerticalPodAutoscaling()
+	ResetWorkloadAltsConfig()
+	ResetWorkloadIdentityConfig()
+	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
+}
+
+// The jsii proxy struct for GoogleContainerCluster
+type jsiiProxy_GoogleContainerCluster struct {
+	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference {
+	var returns GoogleContainerClusterAddonsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"addonsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AddonsConfigInput() *GoogleContainerClusterAddonsConfig {
+	var returns *GoogleContainerClusterAddonsConfig
+	_jsii_.Get(
+		j,
+		"addonsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AllowNetAdmin() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowNetAdmin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AllowNetAdminInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowNetAdminInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AnonymousAuthenticationConfig() GoogleContainerClusterAnonymousAuthenticationConfigOutputReference {
+	var returns GoogleContainerClusterAnonymousAuthenticationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"anonymousAuthenticationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AnonymousAuthenticationConfigInput() *GoogleContainerClusterAnonymousAuthenticationConfig {
+	var returns *GoogleContainerClusterAnonymousAuthenticationConfig
+	_jsii_.Get(
+		j,
+		"anonymousAuthenticationConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AuthenticatorGroupsConfig() GoogleContainerClusterAuthenticatorGroupsConfigOutputReference {
+	var returns GoogleContainerClusterAuthenticatorGroupsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"authenticatorGroupsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AuthenticatorGroupsConfigInput() *GoogleContainerClusterAuthenticatorGroupsConfig {
+	var returns *GoogleContainerClusterAuthenticatorGroupsConfig
+	_jsii_.Get(
+		j,
+		"authenticatorGroupsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AutopilotClusterPolicyConfig() GoogleContainerClusterAutopilotClusterPolicyConfigOutputReference {
+	var returns GoogleContainerClusterAutopilotClusterPolicyConfigOutputReference
+	_jsii_.Get(
+		j,
+		"autopilotClusterPolicyConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AutopilotClusterPolicyConfigInput() *GoogleContainerClusterAutopilotClusterPolicyConfig {
+	var returns *GoogleContainerClusterAutopilotClusterPolicyConfig
+	_jsii_.Get(
+		j,
+		"autopilotClusterPolicyConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AutopilotPrivilegedAdmission() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"autopilotPrivilegedAdmission",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AutopilotPrivilegedAdmissionInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"autopilotPrivilegedAdmissionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) BinaryAuthorization() GoogleContainerClusterBinaryAuthorizationOutputReference {
+	var returns GoogleContainerClusterBinaryAuthorizationOutputReference
+	_jsii_.Get(
+		j,
+		"binaryAuthorization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) BinaryAuthorizationInput() *GoogleContainerClusterBinaryAuthorization {
+	var returns *GoogleContainerClusterBinaryAuthorization
+	_jsii_.Get(
+		j,
+		"binaryAuthorizationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ClusterAutoscaling() GoogleContainerClusterClusterAutoscalingOutputReference {
+	var returns GoogleContainerClusterClusterAutoscalingOutputReference
+	_jsii_.Get(
+		j,
+		"clusterAutoscaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ClusterAutoscalingInput() *GoogleContainerClusterClusterAutoscaling {
+	var returns *GoogleContainerClusterClusterAutoscaling
+	_jsii_.Get(
+		j,
+		"clusterAutoscalingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ClusterIpv4Cidr() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterIpv4Cidr",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ClusterIpv4CidrInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterIpv4CidrInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ClusterTelemetry() GoogleContainerClusterClusterTelemetryOutputReference {
+	var returns GoogleContainerClusterClusterTelemetryOutputReference
+	_jsii_.Get(
+		j,
+		"clusterTelemetry",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ClusterTelemetryInput() *GoogleContainerClusterClusterTelemetry {
+	var returns *GoogleContainerClusterClusterTelemetry
+	_jsii_.Get(
+		j,
+		"clusterTelemetryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ConfidentialNodes() GoogleContainerClusterConfidentialNodesOutputReference {
+	var returns GoogleContainerClusterConfidentialNodesOutputReference
+	_jsii_.Get(
+		j,
+		"confidentialNodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ConfidentialNodesInput() *GoogleContainerClusterConfidentialNodes {
+	var returns *GoogleContainerClusterConfidentialNodes
+	_jsii_.Get(
+		j,
+		"confidentialNodesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ControlPlaneEndpointsConfig() GoogleContainerClusterControlPlaneEndpointsConfigOutputReference {
+	var returns GoogleContainerClusterControlPlaneEndpointsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"controlPlaneEndpointsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ControlPlaneEndpointsConfigInput() *GoogleContainerClusterControlPlaneEndpointsConfig {
+	var returns *GoogleContainerClusterControlPlaneEndpointsConfig
+	_jsii_.Get(
+		j,
+		"controlPlaneEndpointsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) CostManagementConfig() GoogleContainerClusterCostManagementConfigOutputReference {
+	var returns GoogleContainerClusterCostManagementConfigOutputReference
+	_jsii_.Get(
+		j,
+		"costManagementConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) CostManagementConfigInput() *GoogleContainerClusterCostManagementConfig {
+	var returns *GoogleContainerClusterCostManagementConfig
+	_jsii_.Get(
+		j,
+		"costManagementConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DatabaseEncryption() GoogleContainerClusterDatabaseEncryptionOutputReference {
+	var returns GoogleContainerClusterDatabaseEncryptionOutputReference
+	_jsii_.Get(
+		j,
+		"databaseEncryption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DatabaseEncryptionInput() *GoogleContainerClusterDatabaseEncryption {
+	var returns *GoogleContainerClusterDatabaseEncryption
+	_jsii_.Get(
+		j,
+		"databaseEncryptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DatapathProvider() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datapathProvider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DatapathProviderInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datapathProviderInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DefaultMaxPodsPerNode() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"defaultMaxPodsPerNode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DefaultMaxPodsPerNodeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"defaultMaxPodsPerNodeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DefaultSnatStatus() GoogleContainerClusterDefaultSnatStatusOutputReference {
+	var returns GoogleContainerClusterDefaultSnatStatusOutputReference
+	_jsii_.Get(
+		j,
+		"defaultSnatStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DefaultSnatStatusInput() *GoogleContainerClusterDefaultSnatStatus {
+	var returns *GoogleContainerClusterDefaultSnatStatus
+	_jsii_.Get(
+		j,
+		"defaultSnatStatusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DisableL4LbFirewallReconciliation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableL4LbFirewallReconciliation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DisableL4LbFirewallReconciliationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableL4LbFirewallReconciliationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DnsConfig() GoogleContainerClusterDnsConfigOutputReference {
+	var returns GoogleContainerClusterDnsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"dnsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DnsConfigInput() *GoogleContainerClusterDnsConfig {
+	var returns *GoogleContainerClusterDnsConfig
+	_jsii_.Get(
+		j,
+		"dnsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EffectiveLabels() cdktn.StringMap {
+	var returns cdktn.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableAutopilot() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAutopilot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableAutopilotInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAutopilotInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableCiliumClusterwideNetworkPolicy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableCiliumClusterwideNetworkPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableCiliumClusterwideNetworkPolicyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableCiliumClusterwideNetworkPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableFqdnNetworkPolicy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFqdnNetworkPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableFqdnNetworkPolicyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFqdnNetworkPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableIntranodeVisibility() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableIntranodeVisibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableIntranodeVisibilityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableIntranodeVisibilityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableK8SBetaApis() GoogleContainerClusterEnableK8SBetaApisOutputReference {
+	var returns GoogleContainerClusterEnableK8SBetaApisOutputReference
+	_jsii_.Get(
+		j,
+		"enableK8SBetaApis",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableK8SBetaApisInput() *GoogleContainerClusterEnableK8SBetaApis {
+	var returns *GoogleContainerClusterEnableK8SBetaApis
+	_jsii_.Get(
+		j,
+		"enableK8SBetaApisInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableKubernetesAlpha() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableKubernetesAlpha",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableKubernetesAlphaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableKubernetesAlphaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableL4IlbSubsetting() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableL4IlbSubsetting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableL4IlbSubsettingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableL4IlbSubsettingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableLegacyAbac() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableLegacyAbac",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableLegacyAbacInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableLegacyAbacInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableMultiNetworking() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableMultiNetworking",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableMultiNetworkingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableMultiNetworkingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableShieldedNodes() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableShieldedNodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableShieldedNodesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableShieldedNodesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableTpu() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableTpu",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableTpuInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableTpuInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Endpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnterpriseConfig() GoogleContainerClusterEnterpriseConfigOutputReference {
+	var returns GoogleContainerClusterEnterpriseConfigOutputReference
+	_jsii_.Get(
+		j,
+		"enterpriseConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnterpriseConfigInput() *GoogleContainerClusterEnterpriseConfig {
+	var returns *GoogleContainerClusterEnterpriseConfig
+	_jsii_.Get(
+		j,
+		"enterpriseConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Fleet() GoogleContainerClusterFleetOutputReference {
+	var returns GoogleContainerClusterFleetOutputReference
+	_jsii_.Get(
+		j,
+		"fleet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) FleetInput() *GoogleContainerClusterFleet {
+	var returns *GoogleContainerClusterFleet
+	_jsii_.Get(
+		j,
+		"fleetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) GatewayApiConfig() GoogleContainerClusterGatewayApiConfigOutputReference {
+	var returns GoogleContainerClusterGatewayApiConfigOutputReference
+	_jsii_.Get(
+		j,
+		"gatewayApiConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) GatewayApiConfigInput() *GoogleContainerClusterGatewayApiConfig {
+	var returns *GoogleContainerClusterGatewayApiConfig
+	_jsii_.Get(
+		j,
+		"gatewayApiConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) GkeAutoUpgradeConfig() GoogleContainerClusterGkeAutoUpgradeConfigOutputReference {
+	var returns GoogleContainerClusterGkeAutoUpgradeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"gkeAutoUpgradeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) GkeAutoUpgradeConfigInput() *GoogleContainerClusterGkeAutoUpgradeConfig {
+	var returns *GoogleContainerClusterGkeAutoUpgradeConfig
+	_jsii_.Get(
+		j,
+		"gkeAutoUpgradeConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) IdentityServiceConfig() GoogleContainerClusterIdentityServiceConfigOutputReference {
+	var returns GoogleContainerClusterIdentityServiceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"identityServiceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) IdentityServiceConfigInput() *GoogleContainerClusterIdentityServiceConfig {
+	var returns *GoogleContainerClusterIdentityServiceConfig
+	_jsii_.Get(
+		j,
+		"identityServiceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) InitialNodeCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"initialNodeCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) InitialNodeCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"initialNodeCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) InTransitEncryptionConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inTransitEncryptionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) InTransitEncryptionConfigInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inTransitEncryptionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) IpAllocationPolicy() GoogleContainerClusterIpAllocationPolicyOutputReference {
+	var returns GoogleContainerClusterIpAllocationPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"ipAllocationPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) IpAllocationPolicyInput() *GoogleContainerClusterIpAllocationPolicy {
+	var returns *GoogleContainerClusterIpAllocationPolicy
+	_jsii_.Get(
+		j,
+		"ipAllocationPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) LabelFingerprint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"labelFingerprint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) LoggingConfig() GoogleContainerClusterLoggingConfigOutputReference {
+	var returns GoogleContainerClusterLoggingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"loggingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) LoggingConfigInput() *GoogleContainerClusterLoggingConfig {
+	var returns *GoogleContainerClusterLoggingConfig
+	_jsii_.Get(
+		j,
+		"loggingConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) LoggingService() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loggingService",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) LoggingServiceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loggingServiceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) MaintenancePolicy() GoogleContainerClusterMaintenancePolicyOutputReference {
+	var returns GoogleContainerClusterMaintenancePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"maintenancePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) MaintenancePolicyInput() *GoogleContainerClusterMaintenancePolicy {
+	var returns *GoogleContainerClusterMaintenancePolicy
+	_jsii_.Get(
+		j,
+		"maintenancePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ManagedMachineLearningDiagnosticsConfig() GoogleContainerClusterManagedMachineLearningDiagnosticsConfigOutputReference {
+	var returns GoogleContainerClusterManagedMachineLearningDiagnosticsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"managedMachineLearningDiagnosticsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ManagedMachineLearningDiagnosticsConfigInput() *GoogleContainerClusterManagedMachineLearningDiagnosticsConfig {
+	var returns *GoogleContainerClusterManagedMachineLearningDiagnosticsConfig
+	_jsii_.Get(
+		j,
+		"managedMachineLearningDiagnosticsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ManagedOpentelemetryConfig() GoogleContainerClusterManagedOpentelemetryConfigOutputReference {
+	var returns GoogleContainerClusterManagedOpentelemetryConfigOutputReference
+	_jsii_.Get(
+		j,
+		"managedOpentelemetryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ManagedOpentelemetryConfigInput() *GoogleContainerClusterManagedOpentelemetryConfig {
+	var returns *GoogleContainerClusterManagedOpentelemetryConfig
+	_jsii_.Get(
+		j,
+		"managedOpentelemetryConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) MasterAuth() GoogleContainerClusterMasterAuthOutputReference {
+	var returns GoogleContainerClusterMasterAuthOutputReference
+	_jsii_.Get(
+		j,
+		"masterAuth",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) MasterAuthInput() *GoogleContainerClusterMasterAuth {
+	var returns *GoogleContainerClusterMasterAuth
+	_jsii_.Get(
+		j,
+		"masterAuthInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) MasterAuthorizedNetworksConfig() GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference {
+	var returns GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference
+	_jsii_.Get(
+		j,
+		"masterAuthorizedNetworksConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) MasterAuthorizedNetworksConfigInput() *GoogleContainerClusterMasterAuthorizedNetworksConfig {
+	var returns *GoogleContainerClusterMasterAuthorizedNetworksConfig
+	_jsii_.Get(
+		j,
+		"masterAuthorizedNetworksConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) MasterVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) MeshCertificates() GoogleContainerClusterMeshCertificatesOutputReference {
+	var returns GoogleContainerClusterMeshCertificatesOutputReference
+	_jsii_.Get(
+		j,
+		"meshCertificates",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) MeshCertificatesInput() *GoogleContainerClusterMeshCertificates {
+	var returns *GoogleContainerClusterMeshCertificates
+	_jsii_.Get(
+		j,
+		"meshCertificatesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) MinMasterVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"minMasterVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) MinMasterVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"minMasterVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) MonitoringConfig() GoogleContainerClusterMonitoringConfigOutputReference {
+	var returns GoogleContainerClusterMonitoringConfigOutputReference
+	_jsii_.Get(
+		j,
+		"monitoringConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) MonitoringConfigInput() *GoogleContainerClusterMonitoringConfig {
+	var returns *GoogleContainerClusterMonitoringConfig
+	_jsii_.Get(
+		j,
+		"monitoringConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) MonitoringService() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitoringService",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) MonitoringServiceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitoringServiceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Network() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NetworkingMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkingMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NetworkingModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkingModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NetworkPerformanceConfig() GoogleContainerClusterNetworkPerformanceConfigOutputReference {
+	var returns GoogleContainerClusterNetworkPerformanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkPerformanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NetworkPerformanceConfigInput() *GoogleContainerClusterNetworkPerformanceConfig {
+	var returns *GoogleContainerClusterNetworkPerformanceConfig
+	_jsii_.Get(
+		j,
+		"networkPerformanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NetworkPolicy() GoogleContainerClusterNetworkPolicyOutputReference {
+	var returns GoogleContainerClusterNetworkPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"networkPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NetworkPolicyInput() *GoogleContainerClusterNetworkPolicy {
+	var returns *GoogleContainerClusterNetworkPolicy
+	_jsii_.Get(
+		j,
+		"networkPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NodeConfig() GoogleContainerClusterNodeConfigOutputReference {
+	var returns GoogleContainerClusterNodeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"nodeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NodeConfigInput() *GoogleContainerClusterNodeConfig {
+	var returns *GoogleContainerClusterNodeConfig
+	_jsii_.Get(
+		j,
+		"nodeConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NodeLocations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"nodeLocations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NodeLocationsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"nodeLocationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NodePool() GoogleContainerClusterNodePoolList {
+	var returns GoogleContainerClusterNodePoolList
+	_jsii_.Get(
+		j,
+		"nodePool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NodePoolAutoConfig() GoogleContainerClusterNodePoolAutoConfigOutputReference {
+	var returns GoogleContainerClusterNodePoolAutoConfigOutputReference
+	_jsii_.Get(
+		j,
+		"nodePoolAutoConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NodePoolAutoConfigInput() *GoogleContainerClusterNodePoolAutoConfig {
+	var returns *GoogleContainerClusterNodePoolAutoConfig
+	_jsii_.Get(
+		j,
+		"nodePoolAutoConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NodePoolDefaults() GoogleContainerClusterNodePoolDefaultsOutputReference {
+	var returns GoogleContainerClusterNodePoolDefaultsOutputReference
+	_jsii_.Get(
+		j,
+		"nodePoolDefaults",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NodePoolDefaultsInput() *GoogleContainerClusterNodePoolDefaults {
+	var returns *GoogleContainerClusterNodePoolDefaults
+	_jsii_.Get(
+		j,
+		"nodePoolDefaultsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NodePoolInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nodePoolInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NodeVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NodeVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NotificationConfig() GoogleContainerClusterNotificationConfigOutputReference {
+	var returns GoogleContainerClusterNotificationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"notificationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NotificationConfigInput() *GoogleContainerClusterNotificationConfig {
+	var returns *GoogleContainerClusterNotificationConfig
+	_jsii_.Get(
+		j,
+		"notificationConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Operation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"operation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) PodAutoscaling() GoogleContainerClusterPodAutoscalingOutputReference {
+	var returns GoogleContainerClusterPodAutoscalingOutputReference
+	_jsii_.Get(
+		j,
+		"podAutoscaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) PodAutoscalingInput() *GoogleContainerClusterPodAutoscaling {
+	var returns *GoogleContainerClusterPodAutoscaling
+	_jsii_.Get(
+		j,
+		"podAutoscalingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) PodSecurityPolicyConfig() GoogleContainerClusterPodSecurityPolicyConfigOutputReference {
+	var returns GoogleContainerClusterPodSecurityPolicyConfigOutputReference
+	_jsii_.Get(
+		j,
+		"podSecurityPolicyConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) PodSecurityPolicyConfigInput() *GoogleContainerClusterPodSecurityPolicyConfig {
+	var returns *GoogleContainerClusterPodSecurityPolicyConfig
+	_jsii_.Get(
+		j,
+		"podSecurityPolicyConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) PrivateClusterConfig() GoogleContainerClusterPrivateClusterConfigOutputReference {
+	var returns GoogleContainerClusterPrivateClusterConfigOutputReference
+	_jsii_.Get(
+		j,
+		"privateClusterConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) PrivateClusterConfigInput() *GoogleContainerClusterPrivateClusterConfig {
+	var returns *GoogleContainerClusterPrivateClusterConfig
+	_jsii_.Get(
+		j,
+		"privateClusterConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) PrivateIpv6GoogleAccess() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateIpv6GoogleAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) PrivateIpv6GoogleAccessInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateIpv6GoogleAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ProtectConfig() GoogleContainerClusterProtectConfigOutputReference {
+	var returns GoogleContainerClusterProtectConfigOutputReference
+	_jsii_.Get(
+		j,
+		"protectConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ProtectConfigInput() *GoogleContainerClusterProtectConfig {
+	var returns *GoogleContainerClusterProtectConfig
+	_jsii_.Get(
+		j,
+		"protectConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) RbacBindingConfig() GoogleContainerClusterRbacBindingConfigOutputReference {
+	var returns GoogleContainerClusterRbacBindingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"rbacBindingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) RbacBindingConfigInput() *GoogleContainerClusterRbacBindingConfig {
+	var returns *GoogleContainerClusterRbacBindingConfig
+	_jsii_.Get(
+		j,
+		"rbacBindingConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ReleaseChannel() GoogleContainerClusterReleaseChannelOutputReference {
+	var returns GoogleContainerClusterReleaseChannelOutputReference
+	_jsii_.Get(
+		j,
+		"releaseChannel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ReleaseChannelInput() *GoogleContainerClusterReleaseChannel {
+	var returns *GoogleContainerClusterReleaseChannel
+	_jsii_.Get(
+		j,
+		"releaseChannelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) RemoveDefaultNodePool() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"removeDefaultNodePool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) RemoveDefaultNodePoolInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"removeDefaultNodePoolInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ResourceLabels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ResourceLabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceLabelsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ResourceUsageExportConfig() GoogleContainerClusterResourceUsageExportConfigOutputReference {
+	var returns GoogleContainerClusterResourceUsageExportConfigOutputReference
+	_jsii_.Get(
+		j,
+		"resourceUsageExportConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ResourceUsageExportConfigInput() *GoogleContainerClusterResourceUsageExportConfig {
+	var returns *GoogleContainerClusterResourceUsageExportConfig
+	_jsii_.Get(
+		j,
+		"resourceUsageExportConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) SecretManagerConfig() GoogleContainerClusterSecretManagerConfigOutputReference {
+	var returns GoogleContainerClusterSecretManagerConfigOutputReference
+	_jsii_.Get(
+		j,
+		"secretManagerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) SecretManagerConfigInput() *GoogleContainerClusterSecretManagerConfig {
+	var returns *GoogleContainerClusterSecretManagerConfig
+	_jsii_.Get(
+		j,
+		"secretManagerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) SecretSyncConfig() GoogleContainerClusterSecretSyncConfigOutputReference {
+	var returns GoogleContainerClusterSecretSyncConfigOutputReference
+	_jsii_.Get(
+		j,
+		"secretSyncConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) SecretSyncConfigInput() *GoogleContainerClusterSecretSyncConfig {
+	var returns *GoogleContainerClusterSecretSyncConfig
+	_jsii_.Get(
+		j,
+		"secretSyncConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) SecurityPostureConfig() GoogleContainerClusterSecurityPostureConfigOutputReference {
+	var returns GoogleContainerClusterSecurityPostureConfigOutputReference
+	_jsii_.Get(
+		j,
+		"securityPostureConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) SecurityPostureConfigInput() *GoogleContainerClusterSecurityPostureConfig {
+	var returns *GoogleContainerClusterSecurityPostureConfig
+	_jsii_.Get(
+		j,
+		"securityPostureConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) SelfLink() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"selfLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ServiceExternalIpsConfig() GoogleContainerClusterServiceExternalIpsConfigOutputReference {
+	var returns GoogleContainerClusterServiceExternalIpsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"serviceExternalIpsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ServiceExternalIpsConfigInput() *GoogleContainerClusterServiceExternalIpsConfig {
+	var returns *GoogleContainerClusterServiceExternalIpsConfig
+	_jsii_.Get(
+		j,
+		"serviceExternalIpsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ServicesIpv4Cidr() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servicesIpv4Cidr",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Subnetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) SubnetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetworkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) TerraformLabels() cdktn.StringMap {
+	var returns cdktn.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Timeouts() GoogleContainerClusterTimeoutsOutputReference {
+	var returns GoogleContainerClusterTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) TpuConfig() GoogleContainerClusterTpuConfigOutputReference {
+	var returns GoogleContainerClusterTpuConfigOutputReference
+	_jsii_.Get(
+		j,
+		"tpuConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) TpuConfigInput() *GoogleContainerClusterTpuConfig {
+	var returns *GoogleContainerClusterTpuConfig
+	_jsii_.Get(
+		j,
+		"tpuConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) TpuIpv4CidrBlock() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tpuIpv4CidrBlock",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) UserManagedKeysConfig() GoogleContainerClusterUserManagedKeysConfigOutputReference {
+	var returns GoogleContainerClusterUserManagedKeysConfigOutputReference
+	_jsii_.Get(
+		j,
+		"userManagedKeysConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) UserManagedKeysConfigInput() *GoogleContainerClusterUserManagedKeysConfig {
+	var returns *GoogleContainerClusterUserManagedKeysConfig
+	_jsii_.Get(
+		j,
+		"userManagedKeysConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) VerticalPodAutoscaling() GoogleContainerClusterVerticalPodAutoscalingOutputReference {
+	var returns GoogleContainerClusterVerticalPodAutoscalingOutputReference
+	_jsii_.Get(
+		j,
+		"verticalPodAutoscaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) VerticalPodAutoscalingInput() *GoogleContainerClusterVerticalPodAutoscaling {
+	var returns *GoogleContainerClusterVerticalPodAutoscaling
+	_jsii_.Get(
+		j,
+		"verticalPodAutoscalingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) WorkloadAltsConfig() GoogleContainerClusterWorkloadAltsConfigOutputReference {
+	var returns GoogleContainerClusterWorkloadAltsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"workloadAltsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) WorkloadAltsConfigInput() *GoogleContainerClusterWorkloadAltsConfig {
+	var returns *GoogleContainerClusterWorkloadAltsConfig
+	_jsii_.Get(
+		j,
+		"workloadAltsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfig() GoogleContainerClusterWorkloadIdentityConfigOutputReference {
+	var returns GoogleContainerClusterWorkloadIdentityConfigOutputReference
+	_jsii_.Get(
+		j,
+		"workloadIdentityConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfigInput() *GoogleContainerClusterWorkloadIdentityConfig {
+	var returns *GoogleContainerClusterWorkloadIdentityConfig
+	_jsii_.Get(
+		j,
+		"workloadIdentityConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) GoogleContainerCluster {
+	_init_.Initialize()
+
+	if err := validateNewGoogleContainerClusterParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_GoogleContainerCluster{}
+
+	_jsii_.Create(
+		"@cdktn/provider-google-beta.googleContainerCluster.GoogleContainerCluster",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktn/provider-google-beta.googleContainerCluster.GoogleContainerCluster",
+		[]interface{}{scope, id, config},
+		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetAllowNetAdmin(val interface{}) {
+	if err := j.validateSetAllowNetAdminParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowNetAdmin",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetAutopilotPrivilegedAdmission(val *[]*string) {
+	if err := j.validateSetAutopilotPrivilegedAdmissionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autopilotPrivilegedAdmission",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetClusterIpv4Cidr(val *string) {
+	if err := j.validateSetClusterIpv4CidrParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterIpv4Cidr",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetDatapathProvider(val *string) {
+	if err := j.validateSetDatapathProviderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"datapathProvider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetDefaultMaxPodsPerNode(val *float64) {
+	if err := j.validateSetDefaultMaxPodsPerNodeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultMaxPodsPerNode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetDisableL4LbFirewallReconciliation(val interface{}) {
+	if err := j.validateSetDisableL4LbFirewallReconciliationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableL4LbFirewallReconciliation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetEnableAutopilot(val interface{}) {
+	if err := j.validateSetEnableAutopilotParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableAutopilot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetEnableCiliumClusterwideNetworkPolicy(val interface{}) {
+	if err := j.validateSetEnableCiliumClusterwideNetworkPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableCiliumClusterwideNetworkPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetEnableFqdnNetworkPolicy(val interface{}) {
+	if err := j.validateSetEnableFqdnNetworkPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableFqdnNetworkPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetEnableIntranodeVisibility(val interface{}) {
+	if err := j.validateSetEnableIntranodeVisibilityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableIntranodeVisibility",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetEnableKubernetesAlpha(val interface{}) {
+	if err := j.validateSetEnableKubernetesAlphaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableKubernetesAlpha",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetEnableL4IlbSubsetting(val interface{}) {
+	if err := j.validateSetEnableL4IlbSubsettingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableL4IlbSubsetting",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetEnableLegacyAbac(val interface{}) {
+	if err := j.validateSetEnableLegacyAbacParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableLegacyAbac",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetEnableMultiNetworking(val interface{}) {
+	if err := j.validateSetEnableMultiNetworkingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableMultiNetworking",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetEnableShieldedNodes(val interface{}) {
+	if err := j.validateSetEnableShieldedNodesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableShieldedNodes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetEnableTpu(val interface{}) {
+	if err := j.validateSetEnableTpuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableTpu",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetForEach(val cdktn.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetInitialNodeCount(val *float64) {
+	if err := j.validateSetInitialNodeCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"initialNodeCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetInTransitEncryptionConfig(val *string) {
+	if err := j.validateSetInTransitEncryptionConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inTransitEncryptionConfig",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetLoggingService(val *string) {
+	if err := j.validateSetLoggingServiceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"loggingService",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetMinMasterVersion(val *string) {
+	if err := j.validateSetMinMasterVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minMasterVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetMonitoringService(val *string) {
+	if err := j.validateSetMonitoringServiceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"monitoringService",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetNetwork(val *string) {
+	if err := j.validateSetNetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"network",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetNetworkingMode(val *string) {
+	if err := j.validateSetNetworkingModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkingMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetNodeLocations(val *[]*string) {
+	if err := j.validateSetNodeLocationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeLocations",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetNodeVersion(val *string) {
+	if err := j.validateSetNodeVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetPrivateIpv6GoogleAccess(val *string) {
+	if err := j.validateSetPrivateIpv6GoogleAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateIpv6GoogleAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetProvider(val cdktn.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetRemoveDefaultNodePool(val interface{}) {
+	if err := j.validateSetRemoveDefaultNodePoolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"removeDefaultNodePool",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetResourceLabels(val *map[string]*string) {
+	if err := j.validateSetResourceLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceLabels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetSubnetwork(val *string) {
+	if err := j.validateSetSubnetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subnetwork",
+		val,
+	)
+}
+
+// Generates CDKTN code for importing a GoogleContainerCluster resource upon running "cdktn plan <stack-name>".
+func GoogleContainerCluster_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateGoogleContainerCluster_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktn.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktn/provider-google-beta.googleContainerCluster.GoogleContainerCluster",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func GoogleContainerCluster_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleContainerCluster_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktn/provider-google-beta.googleContainerCluster.GoogleContainerCluster",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleContainerCluster_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleContainerCluster_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktn/provider-google-beta.googleContainerCluster.GoogleContainerCluster",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleContainerCluster_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleContainerCluster_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktn/provider-google-beta.googleContainerCluster.GoogleContainerCluster",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func GoogleContainerCluster_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktn/provider-google-beta.googleContainerCluster.GoogleContainerCluster",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) AddMoveTarget(moveTarget *string) {
+	if err := g.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktn.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		g,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		g,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		g,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		g,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ImportFrom(id *string, provider cdktn.TerraformProvider) {
+	if err := g.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktn.IResolvable
+
+	_jsii_.Invoke(
+		g,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) MarkWriteOnlyAttribute(value interface{}) interface{} {
+	if err := g.validateMarkWriteOnlyAttributeParameters(value); err != nil {
+		panic(err)
+	}
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"markWriteOnlyAttribute",
+		[]interface{}{value},
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) MoveTo(moveTarget *string, index interface{}) {
+	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutAddonsConfig(value *GoogleContainerClusterAddonsConfig) {
+	if err := g.validatePutAddonsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAddonsConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutAnonymousAuthenticationConfig(value *GoogleContainerClusterAnonymousAuthenticationConfig) {
+	if err := g.validatePutAnonymousAuthenticationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAnonymousAuthenticationConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutAuthenticatorGroupsConfig(value *GoogleContainerClusterAuthenticatorGroupsConfig) {
+	if err := g.validatePutAuthenticatorGroupsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAuthenticatorGroupsConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutAutopilotClusterPolicyConfig(value *GoogleContainerClusterAutopilotClusterPolicyConfig) {
+	if err := g.validatePutAutopilotClusterPolicyConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutopilotClusterPolicyConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutBinaryAuthorization(value *GoogleContainerClusterBinaryAuthorization) {
+	if err := g.validatePutBinaryAuthorizationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBinaryAuthorization",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutClusterAutoscaling(value *GoogleContainerClusterClusterAutoscaling) {
+	if err := g.validatePutClusterAutoscalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putClusterAutoscaling",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutClusterTelemetry(value *GoogleContainerClusterClusterTelemetry) {
+	if err := g.validatePutClusterTelemetryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putClusterTelemetry",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutConfidentialNodes(value *GoogleContainerClusterConfidentialNodes) {
+	if err := g.validatePutConfidentialNodesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putConfidentialNodes",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutControlPlaneEndpointsConfig(value *GoogleContainerClusterControlPlaneEndpointsConfig) {
+	if err := g.validatePutControlPlaneEndpointsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putControlPlaneEndpointsConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutCostManagementConfig(value *GoogleContainerClusterCostManagementConfig) {
+	if err := g.validatePutCostManagementConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCostManagementConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutDatabaseEncryption(value *GoogleContainerClusterDatabaseEncryption) {
+	if err := g.validatePutDatabaseEncryptionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDatabaseEncryption",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutDefaultSnatStatus(value *GoogleContainerClusterDefaultSnatStatus) {
+	if err := g.validatePutDefaultSnatStatusParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDefaultSnatStatus",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutDnsConfig(value *GoogleContainerClusterDnsConfig) {
+	if err := g.validatePutDnsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDnsConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutEnableK8SBetaApis(value *GoogleContainerClusterEnableK8SBetaApis) {
+	if err := g.validatePutEnableK8SBetaApisParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEnableK8SBetaApis",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutEnterpriseConfig(value *GoogleContainerClusterEnterpriseConfig) {
+	if err := g.validatePutEnterpriseConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEnterpriseConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutFleet(value *GoogleContainerClusterFleet) {
+	if err := g.validatePutFleetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putFleet",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutGatewayApiConfig(value *GoogleContainerClusterGatewayApiConfig) {
+	if err := g.validatePutGatewayApiConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGatewayApiConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutGkeAutoUpgradeConfig(value *GoogleContainerClusterGkeAutoUpgradeConfig) {
+	if err := g.validatePutGkeAutoUpgradeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGkeAutoUpgradeConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutIdentityServiceConfig(value *GoogleContainerClusterIdentityServiceConfig) {
+	if err := g.validatePutIdentityServiceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putIdentityServiceConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutIpAllocationPolicy(value *GoogleContainerClusterIpAllocationPolicy) {
+	if err := g.validatePutIpAllocationPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putIpAllocationPolicy",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutLoggingConfig(value *GoogleContainerClusterLoggingConfig) {
+	if err := g.validatePutLoggingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putLoggingConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutMaintenancePolicy(value *GoogleContainerClusterMaintenancePolicy) {
+	if err := g.validatePutMaintenancePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMaintenancePolicy",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutManagedMachineLearningDiagnosticsConfig(value *GoogleContainerClusterManagedMachineLearningDiagnosticsConfig) {
+	if err := g.validatePutManagedMachineLearningDiagnosticsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putManagedMachineLearningDiagnosticsConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutManagedOpentelemetryConfig(value *GoogleContainerClusterManagedOpentelemetryConfig) {
+	if err := g.validatePutManagedOpentelemetryConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putManagedOpentelemetryConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutMasterAuth(value *GoogleContainerClusterMasterAuth) {
+	if err := g.validatePutMasterAuthParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMasterAuth",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutMasterAuthorizedNetworksConfig(value *GoogleContainerClusterMasterAuthorizedNetworksConfig) {
+	if err := g.validatePutMasterAuthorizedNetworksConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMasterAuthorizedNetworksConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutMeshCertificates(value *GoogleContainerClusterMeshCertificates) {
+	if err := g.validatePutMeshCertificatesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMeshCertificates",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutMonitoringConfig(value *GoogleContainerClusterMonitoringConfig) {
+	if err := g.validatePutMonitoringConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMonitoringConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutNetworkPerformanceConfig(value *GoogleContainerClusterNetworkPerformanceConfig) {
+	if err := g.validatePutNetworkPerformanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNetworkPerformanceConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutNetworkPolicy(value *GoogleContainerClusterNetworkPolicy) {
+	if err := g.validatePutNetworkPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNetworkPolicy",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutNodeConfig(value *GoogleContainerClusterNodeConfig) {
+	if err := g.validatePutNodeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNodeConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutNodePool(value interface{}) {
+	if err := g.validatePutNodePoolParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNodePool",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutNodePoolAutoConfig(value *GoogleContainerClusterNodePoolAutoConfig) {
+	if err := g.validatePutNodePoolAutoConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNodePoolAutoConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutNodePoolDefaults(value *GoogleContainerClusterNodePoolDefaults) {
+	if err := g.validatePutNodePoolDefaultsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNodePoolDefaults",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutNotificationConfig(value *GoogleContainerClusterNotificationConfig) {
+	if err := g.validatePutNotificationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNotificationConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutPodAutoscaling(value *GoogleContainerClusterPodAutoscaling) {
+	if err := g.validatePutPodAutoscalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPodAutoscaling",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutPodSecurityPolicyConfig(value *GoogleContainerClusterPodSecurityPolicyConfig) {
+	if err := g.validatePutPodSecurityPolicyConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPodSecurityPolicyConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutPrivateClusterConfig(value *GoogleContainerClusterPrivateClusterConfig) {
+	if err := g.validatePutPrivateClusterConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPrivateClusterConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutProtectConfig(value *GoogleContainerClusterProtectConfig) {
+	if err := g.validatePutProtectConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putProtectConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutRbacBindingConfig(value *GoogleContainerClusterRbacBindingConfig) {
+	if err := g.validatePutRbacBindingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRbacBindingConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutReleaseChannel(value *GoogleContainerClusterReleaseChannel) {
+	if err := g.validatePutReleaseChannelParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putReleaseChannel",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutResourceUsageExportConfig(value *GoogleContainerClusterResourceUsageExportConfig) {
+	if err := g.validatePutResourceUsageExportConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putResourceUsageExportConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutSecretManagerConfig(value *GoogleContainerClusterSecretManagerConfig) {
+	if err := g.validatePutSecretManagerConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSecretManagerConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutSecretSyncConfig(value *GoogleContainerClusterSecretSyncConfig) {
+	if err := g.validatePutSecretSyncConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSecretSyncConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutSecurityPostureConfig(value *GoogleContainerClusterSecurityPostureConfig) {
+	if err := g.validatePutSecurityPostureConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSecurityPostureConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutServiceExternalIpsConfig(value *GoogleContainerClusterServiceExternalIpsConfig) {
+	if err := g.validatePutServiceExternalIpsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putServiceExternalIpsConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutTimeouts(value *GoogleContainerClusterTimeouts) {
+	if err := g.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutTpuConfig(value *GoogleContainerClusterTpuConfig) {
+	if err := g.validatePutTpuConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTpuConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutUserManagedKeysConfig(value *GoogleContainerClusterUserManagedKeysConfig) {
+	if err := g.validatePutUserManagedKeysConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putUserManagedKeysConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutVerticalPodAutoscaling(value *GoogleContainerClusterVerticalPodAutoscaling) {
+	if err := g.validatePutVerticalPodAutoscalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putVerticalPodAutoscaling",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutWorkloadAltsConfig(value *GoogleContainerClusterWorkloadAltsConfig) {
+	if err := g.validatePutWorkloadAltsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putWorkloadAltsConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutWorkloadIdentityConfig(value *GoogleContainerClusterWorkloadIdentityConfig) {
+	if err := g.validatePutWorkloadIdentityConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putWorkloadIdentityConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := g.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetAddonsConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAddonsConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetAllowNetAdmin() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowNetAdmin",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetAnonymousAuthenticationConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAnonymousAuthenticationConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetAuthenticatorGroupsConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAuthenticatorGroupsConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetAutopilotClusterPolicyConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutopilotClusterPolicyConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetAutopilotPrivilegedAdmission() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutopilotPrivilegedAdmission",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetBinaryAuthorization() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBinaryAuthorization",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetClusterAutoscaling() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetClusterAutoscaling",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetClusterIpv4Cidr() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetClusterIpv4Cidr",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetClusterTelemetry() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetClusterTelemetry",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetConfidentialNodes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConfidentialNodes",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetControlPlaneEndpointsConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetControlPlaneEndpointsConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetCostManagementConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCostManagementConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetDatabaseEncryption() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDatabaseEncryption",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetDatapathProvider() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDatapathProvider",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetDefaultMaxPodsPerNode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultMaxPodsPerNode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetDefaultSnatStatus() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultSnatStatus",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionProtection",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetDescription() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetDisableL4LbFirewallReconciliation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisableL4LbFirewallReconciliation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetDnsConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDnsConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetEnableAutopilot() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableAutopilot",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetEnableCiliumClusterwideNetworkPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableCiliumClusterwideNetworkPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetEnableFqdnNetworkPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableFqdnNetworkPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetEnableIntranodeVisibility() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableIntranodeVisibility",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetEnableK8SBetaApis() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableK8SBetaApis",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetEnableKubernetesAlpha() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableKubernetesAlpha",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetEnableL4IlbSubsetting() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableL4IlbSubsetting",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetEnableLegacyAbac() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableLegacyAbac",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetEnableMultiNetworking() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableMultiNetworking",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetEnableShieldedNodes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableShieldedNodes",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetEnableTpu() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableTpu",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetEnterpriseConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnterpriseConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetFleet() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFleet",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetGatewayApiConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGatewayApiConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetGkeAutoUpgradeConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGkeAutoUpgradeConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetIdentityServiceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIdentityServiceConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetInitialNodeCount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInitialNodeCount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetInTransitEncryptionConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInTransitEncryptionConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetIpAllocationPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpAllocationPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetLocation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLocation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetLoggingConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLoggingConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetLoggingService() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLoggingService",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetMaintenancePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaintenancePolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetManagedMachineLearningDiagnosticsConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManagedMachineLearningDiagnosticsConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetManagedOpentelemetryConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManagedOpentelemetryConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetMasterAuth() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMasterAuth",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetMasterAuthorizedNetworksConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMasterAuthorizedNetworksConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetMeshCertificates() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMeshCertificates",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetMinMasterVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMinMasterVersion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetMonitoringConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMonitoringConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetMonitoringService() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMonitoringService",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetNetworkingMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkingMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetNetworkPerformanceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkPerformanceConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetNetworkPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetNodeConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNodeConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetNodeLocations() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNodeLocations",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetNodePool() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNodePool",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetNodePoolAutoConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNodePoolAutoConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetNodePoolDefaults() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNodePoolDefaults",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetNodeVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNodeVersion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetNotificationConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNotificationConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetPodAutoscaling() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPodAutoscaling",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetPodSecurityPolicyConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPodSecurityPolicyConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetPrivateClusterConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrivateClusterConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetPrivateIpv6GoogleAccess() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrivateIpv6GoogleAccess",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetProject() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetProtectConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProtectConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetRbacBindingConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRbacBindingConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetReleaseChannel() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetRemoveDefaultNodePool() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRemoveDefaultNodePool",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetResourceLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetResourceLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetResourceUsageExportConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetResourceUsageExportConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetSecretManagerConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecretManagerConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetSecretSyncConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecretSyncConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetSecurityPostureConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecurityPostureConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetServiceExternalIpsConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceExternalIpsConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetSubnetwork() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSubnetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetTpuConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTpuConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetUserManagedKeysConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUserManagedKeysConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetVerticalPodAutoscaling() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVerticalPodAutoscaling",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetWorkloadAltsConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWorkloadAltsConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetWorkloadIdentityConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWorkloadIdentityConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toHclTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		g,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		g,
+		"with",
+		args,
+		&returns,
+	)
+
+	return returns
+}
+

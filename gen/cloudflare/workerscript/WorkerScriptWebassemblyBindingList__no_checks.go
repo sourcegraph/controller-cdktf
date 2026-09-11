@@ -12,7 +12,7 @@ func (w *jsiiProxy_WorkerScriptWebassemblyBindingList) validateGetParameters(ind
 	return nil
 }
 
-func (w *jsiiProxy_WorkerScriptWebassemblyBindingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerScriptWebassemblyBindingList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WorkerScriptWebassemblyBindingList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScriptWebassemblyBindingList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkerScriptWebassemblyBindingList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WorkerScriptWebassemblyBindingList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewWorkerScriptWebassemblyBindingListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWorkerScriptWebassemblyBindingListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

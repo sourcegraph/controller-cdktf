@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleFolderOrganizationPolicy) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFolderOrganizationPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFolderOrganizationPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (g *jsiiProxy_GoogleFolderOrganizationPolicy) validatePutRestorePolicyParam
 }
 
 func (g *jsiiProxy_GoogleFolderOrganizationPolicy) validatePutTimeoutsParameters(value *GoogleFolderOrganizationPolicyTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFolderOrganizationPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_GoogleFolderOrganizationPolicy) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFolderOrganizationPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleFolderOrganizationPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleNetworkServicesMesh) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesMesh) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesMesh) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleNetworkServicesMesh) validateOverrideLogicalIdParameter
 }
 
 func (g *jsiiProxy_GoogleNetworkServicesMesh) validatePutTimeoutsParameters(value *GoogleNetworkServicesMeshTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesMesh) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleNetworkServicesMesh) validateSetLabelsParameters(val *m
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesMesh) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleNetworkServicesMesh) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

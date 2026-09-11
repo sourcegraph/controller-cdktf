@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_DataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataplexTaskSparkInfrastructureSpecVpcNetworkOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

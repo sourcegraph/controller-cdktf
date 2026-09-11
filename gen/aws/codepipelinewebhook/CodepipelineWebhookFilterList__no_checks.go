@@ -12,7 +12,7 @@ func (c *jsiiProxy_CodepipelineWebhookFilterList) validateGetParameters(index *f
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineWebhookFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineWebhookFilterList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CodepipelineWebhookFilterList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineWebhookFilterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodepipelineWebhookFilterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CodepipelineWebhookFilterList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewCodepipelineWebhookFilterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCodepipelineWebhookFilterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

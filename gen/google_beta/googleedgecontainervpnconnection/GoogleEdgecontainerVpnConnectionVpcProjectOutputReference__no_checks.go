@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnectionVpcProjectOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerVpnConnectionVpcProjectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnectionVpcProjectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerVpnConnectionVpcProjectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnectionVpcProjectOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnectionVpcProjectOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnectionVpcProjectOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnectionVpcProjectOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleEdgecontainerVpnConnectionVpcProjectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleEdgecontainerVpnConnectionVpcProjectOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleObservabilityFolderSettingsTimeoutsOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleObservabilityFolderSettingsTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleObservabilityFolderSettingsTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleObservabilityFolderSettingsTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleObservabilityFolderSettingsTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleObservabilityFolderSettingsTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleObservabilityFolderSettingsTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleObservabilityFolderSettingsTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleObservabilityFolderSettingsTimeoutsOutputReference) val
 	return nil
 }
 
-func validateNewGoogleObservabilityFolderSettingsTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleObservabilityFolderSettingsTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (e *jsiiProxy_EmailRoutingRuleMatcherOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (e *jsiiProxy_EmailRoutingRuleMatcherOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmailRoutingRuleMatcherOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmailRoutingRuleMatcherOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmailRoutingRuleMatcherOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_EmailRoutingRuleMatcherOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_EmailRoutingRuleMatcherOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EmailRoutingRuleMatcherOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_EmailRoutingRuleMatcherOutputReference) validateSetValueParam
 	return nil
 }
 
-func validateNewEmailRoutingRuleMatcherOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEmailRoutingRuleMatcherOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

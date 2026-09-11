@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

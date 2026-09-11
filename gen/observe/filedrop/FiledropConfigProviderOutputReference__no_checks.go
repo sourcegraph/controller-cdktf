@@ -40,7 +40,7 @@ func (f *jsiiProxy_FiledropConfigProviderOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (f *jsiiProxy_FiledropConfigProviderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FiledropConfigProviderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (f *jsiiProxy_FiledropConfigProviderOutputReference) validatePutAwsParamete
 	return nil
 }
 
-func (f *jsiiProxy_FiledropConfigProviderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FiledropConfigProviderOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_FiledropConfigProviderOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_FiledropConfigProviderOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FiledropConfigProviderOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewFiledropConfigProviderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFiledropConfigProviderOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

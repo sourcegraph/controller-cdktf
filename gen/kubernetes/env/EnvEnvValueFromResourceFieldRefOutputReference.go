@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/env/internal"
 )
 
 type EnvEnvValueFromResourceFieldRefOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type EnvEnvValueFromResourceFieldRefOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type EnvEnvValueFromResourceFieldRefOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetContainerName()
 	ResetDivisor()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type EnvEnvValueFromResourceFieldRefOutputReference interface {
 
 // The jsii proxy struct for EnvEnvValueFromResourceFieldRefOutputReference
 type jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) ComplexObjectIndex() interface{} {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) TerraformReso
 }
 
 
-func NewEnvEnvValueFromResourceFieldRefOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EnvEnvValueFromResourceFieldRefOutputReference {
+func NewEnvEnvValueFromResourceFieldRefOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EnvEnvValueFromResourceFieldRefOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEnvEnvValueFromResourceFieldRefOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -227,7 +227,7 @@ func NewEnvEnvValueFromResourceFieldRefOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.env.EnvEnvValueFromResourceFieldRefOutputReference",
+		"@cdktn/provider-kubernetes.env.EnvEnvValueFromResourceFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewEnvEnvValueFromResourceFieldRefOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewEnvEnvValueFromResourceFieldRefOutputReference_Override(e EnvEnvValueFromResourceFieldRefOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEnvEnvValueFromResourceFieldRefOutputReference_Override(e EnvEnvValueFromResourceFieldRefOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.env.EnvEnvValueFromResourceFieldRefOutputReference",
+		"@cdktn/provider-kubernetes.env.EnvEnvValueFromResourceFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -322,7 +322,7 @@ func (j *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (e *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (e *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -490,8 +490,8 @@ func (e *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) GetStringMapA
 	return returns
 }
 
-func (e *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -503,16 +503,16 @@ func (e *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) Interpolation
 	return returns
 }
 
-func (e *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (e *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) ResetDivisor(
 	)
 }
 
-func (e *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (e *jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

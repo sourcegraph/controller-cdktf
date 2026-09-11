@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/storagebucket/internal"
 )
 
 type StorageBucketLifecycleRuleConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Age() *float64
 	SetAge(val *float64)
 	AgeInput() *float64
@@ -76,9 +76,9 @@ type StorageBucketLifecycleRuleConditionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WithState() *string
 	SetWithState(val *string)
 	WithStateInput() *string
@@ -87,7 +87,7 @@ type StorageBucketLifecycleRuleConditionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -103,9 +103,9 @@ type StorageBucketLifecycleRuleConditionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAge()
 	ResetCreatedBefore()
 	ResetCustomTimeBefore()
@@ -123,7 +123,7 @@ type StorageBucketLifecycleRuleConditionOutputReference interface {
 	ResetWithState()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -133,7 +133,7 @@ type StorageBucketLifecycleRuleConditionOutputReference interface {
 
 // The jsii proxy struct for StorageBucketLifecycleRuleConditionOutputReference
 type jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) Age() *float64 {
@@ -476,8 +476,8 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -507,7 +507,7 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) WithState
 }
 
 
-func NewStorageBucketLifecycleRuleConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StorageBucketLifecycleRuleConditionOutputReference {
+func NewStorageBucketLifecycleRuleConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) StorageBucketLifecycleRuleConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewStorageBucketLifecycleRuleConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -516,7 +516,7 @@ func NewStorageBucketLifecycleRuleConditionOutputReference(terraformResource cdk
 	j := jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference",
+		"@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -524,11 +524,11 @@ func NewStorageBucketLifecycleRuleConditionOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewStorageBucketLifecycleRuleConditionOutputReference_Override(s StorageBucketLifecycleRuleConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewStorageBucketLifecycleRuleConditionOutputReference_Override(s StorageBucketLifecycleRuleConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference",
+		"@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -732,7 +732,7 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -783,11 +783,11 @@ func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) GetAnyMap
 	return returns
 }
 
-func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -911,8 +911,8 @@ func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) GetString
 	return returns
 }
 
-func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -924,16 +924,16 @@ func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) Interpola
 	return returns
 }
 
-func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1060,8 +1060,8 @@ func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) ResetWith
 	)
 }
 
-func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1069,7 +1069,7 @@ func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) Resolve(_
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

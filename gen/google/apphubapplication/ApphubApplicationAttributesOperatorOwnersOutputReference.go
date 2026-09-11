@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/apphubapplication/internal"
 )
 
 type ApphubApplicationAttributesOperatorOwnersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type ApphubApplicationAttributesOperatorOwnersOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type ApphubApplicationAttributesOperatorOwnersOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDisplayName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type ApphubApplicationAttributesOperatorOwnersOutputReference interface {
 
 // The jsii proxy struct for ApphubApplicationAttributesOperatorOwnersOutputReference
 type jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference) Ter
 }
 
 
-func NewApphubApplicationAttributesOperatorOwnersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApphubApplicationAttributesOperatorOwnersOutputReference {
+func NewApphubApplicationAttributesOperatorOwnersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApphubApplicationAttributesOperatorOwnersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewApphubApplicationAttributesOperatorOwnersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +203,7 @@ func NewApphubApplicationAttributesOperatorOwnersOutputReference(terraformResour
 	j := jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference",
+		"@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewApphubApplicationAttributesOperatorOwnersOutputReference(terraformResour
 	return &j
 }
 
-func NewApphubApplicationAttributesOperatorOwnersOutputReference_Override(a ApphubApplicationAttributesOperatorOwnersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewApphubApplicationAttributesOperatorOwnersOutputReference_Override(a ApphubApplicationAttributesOperatorOwnersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference",
+		"@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (a *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference) Get
 	return returns
 }
 
-func (a *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -455,8 +455,8 @@ func (a *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference) Get
 	return returns
 }
 
-func (a *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -468,16 +468,16 @@ func (a *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference) Int
 	return returns
 }
 
-func (a *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (a *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference) Res
 	)
 }
 
-func (a *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (a *jsiiProxy_ApphubApplicationAttributesOperatorOwnersOutputReference) Res
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

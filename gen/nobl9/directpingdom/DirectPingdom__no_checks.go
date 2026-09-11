@@ -56,6 +56,10 @@ func (d *jsiiProxy_DirectPingdom) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (d *jsiiProxy_DirectPingdom) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectPingdom) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DirectPingdom) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (d *jsiiProxy_DirectPingdom) validatePutQueryDelayParameters(value *DirectPingdomQueryDelay) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectPingdom) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_DirectPingdom) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DirectPingdom) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DirectPingdom) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

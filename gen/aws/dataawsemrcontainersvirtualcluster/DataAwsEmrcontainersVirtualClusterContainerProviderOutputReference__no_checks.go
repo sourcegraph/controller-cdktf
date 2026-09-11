@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsEmrcontainersVirtualClusterContainerProviderOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEmrcontainersVirtualClusterContainerProviderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEmrcontainersVirtualClusterContainerProviderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEmrcontainersVirtualClusterContainerProviderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEmrcontainersVirtualClusterContainerProviderOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsEmrcontainersVirtualClusterContainerProviderOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEmrcontainersVirtualClusterContainerProviderOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsEmrcontainersVirtualClusterContainerProviderOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsEmrcontainersVirtualClusterContainerProviderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsEmrcontainersVirtualClusterContainerProviderOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

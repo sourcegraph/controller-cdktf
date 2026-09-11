@@ -40,7 +40,7 @@ func (v *jsiiProxy_VectorSearchCollectionVectorSchemaOutputReference) validateGe
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchCollectionVectorSchemaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VectorSearchCollectionVectorSchemaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (v *jsiiProxy_VectorSearchCollectionVectorSchemaOutputReference) validatePu
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchCollectionVectorSchemaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VectorSearchCollectionVectorSchemaOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_VectorSearchCollectionVectorSchemaOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchCollectionVectorSchemaOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VectorSearchCollectionVectorSchemaOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewVectorSearchCollectionVectorSchemaOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewVectorSearchCollectionVectorSchemaOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

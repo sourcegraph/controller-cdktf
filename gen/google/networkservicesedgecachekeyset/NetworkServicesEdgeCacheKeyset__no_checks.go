@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateInterpolationForAttri
 	return nil
 }
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validatePutTimeoutsParameters
 }
 
 func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validatePutValidationSharedKeysParameters(value interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateSetLabelsParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

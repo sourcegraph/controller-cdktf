@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeinstance/internal"
 )
 
 type ComputeInstanceInstanceEncryptionKeyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,15 +41,15 @@ type ComputeInstanceInstanceEncryptionKeyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,14 +65,14 @@ type ComputeInstanceInstanceEncryptionKeyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetKmsKeySelfLink()
 	ResetKmsKeyServiceAccount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type ComputeInstanceInstanceEncryptionKeyOutputReference interface {
 
 // The jsii proxy struct for ComputeInstanceInstanceEncryptionKeyOutputReference
 type jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference) ComplexObjectIndex() interface{} {
@@ -195,8 +195,8 @@ func (j *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -206,7 +206,7 @@ func (j *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference) Terrafor
 }
 
 
-func NewComputeInstanceInstanceEncryptionKeyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeInstanceInstanceEncryptionKeyOutputReference {
+func NewComputeInstanceInstanceEncryptionKeyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComputeInstanceInstanceEncryptionKeyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeInstanceInstanceEncryptionKeyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -215,7 +215,7 @@ func NewComputeInstanceInstanceEncryptionKeyOutputReference(terraformResource cd
 	j := jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceInstanceEncryptionKeyOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceInstanceEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -223,11 +223,11 @@ func NewComputeInstanceInstanceEncryptionKeyOutputReference(terraformResource cd
 	return &j
 }
 
-func NewComputeInstanceInstanceEncryptionKeyOutputReference_Override(c ComputeInstanceInstanceEncryptionKeyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComputeInstanceInstanceEncryptionKeyOutputReference_Override(c ComputeInstanceInstanceEncryptionKeyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeInstance.ComputeInstanceInstanceEncryptionKeyOutputReference",
+		"@cdktn/provider-google.computeInstance.ComputeInstanceInstanceEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,11 +339,11 @@ func (c *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference) GetAnyMa
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -467,8 +467,8 @@ func (c *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference) GetStrin
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -480,16 +480,16 @@ func (c *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference) Interpol
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -512,8 +512,8 @@ func (c *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference) ResetKms
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -521,7 +521,7 @@ func (c *jsiiProxy_ComputeInstanceInstanceEncryptionKeyOutputReference) Resolve(
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

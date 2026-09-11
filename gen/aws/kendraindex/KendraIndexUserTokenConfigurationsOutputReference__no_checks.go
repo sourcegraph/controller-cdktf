@@ -40,7 +40,7 @@ func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) validateGe
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) validatePu
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewKendraIndexUserTokenConfigurationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewKendraIndexUserTokenConfigurationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

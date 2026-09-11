@@ -56,6 +56,10 @@ func (m *jsiiProxy_MemorystoreInstanceDesiredUserCreatedEndpoints) validateInter
 	return nil
 }
 
+func (m *jsiiProxy_MemorystoreInstanceDesiredUserCreatedEndpoints) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemorystoreInstanceDesiredUserCreatedEndpoints) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (m *jsiiProxy_MemorystoreInstanceDesiredUserCreatedEndpoints) validatePutDe
 }
 
 func (m *jsiiProxy_MemorystoreInstanceDesiredUserCreatedEndpoints) validatePutTimeoutsParameters(value *MemorystoreInstanceDesiredUserCreatedEndpointsTimeouts) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorystoreInstanceDesiredUserCreatedEndpoints) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_MemorystoreInstanceDesiredUserCreatedEndpoints) validateSetId
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceDesiredUserCreatedEndpoints) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MemorystoreInstanceDesiredUserCreatedEndpoints) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

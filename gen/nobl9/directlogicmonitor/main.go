@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directLogicMonitor.DirectLogicMonitor",
+		"@cdktn/provider-nobl9.directLogicMonitor.DirectLogicMonitor",
 		reflect.TypeOf((*DirectLogicMonitor)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKey", GoGetter: "AccessKey"},
@@ -50,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "logCollectionEnabled", GoGetter: "LogCollectionEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "logCollectionEnabledInput", GoGetter: "LogCollectionEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -66,6 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "queryDelay", GoGetter: "QueryDelay"},
 			_jsii_.MemberProperty{JsiiProperty: "queryDelayInput", GoGetter: "QueryDelayInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseChannel", GoGetter: "ReleaseChannel"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseChannelInput", GoGetter: "ReleaseChannelInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessKey", GoMethod: "ResetAccessKey"},
@@ -91,27 +93,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectLogicMonitor{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directLogicMonitor.DirectLogicMonitorConfig",
+		"@cdktn/provider-nobl9.directLogicMonitor.DirectLogicMonitorConfig",
 		reflect.TypeOf((*DirectLogicMonitorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directLogicMonitor.DirectLogicMonitorHistoricalDataRetrieval",
+		"@cdktn/provider-nobl9.directLogicMonitor.DirectLogicMonitorHistoricalDataRetrieval",
 		reflect.TypeOf((*DirectLogicMonitorHistoricalDataRetrieval)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directLogicMonitor.DirectLogicMonitorHistoricalDataRetrievalDefaultDuration",
+		"@cdktn/provider-nobl9.directLogicMonitor.DirectLogicMonitorHistoricalDataRetrievalDefaultDuration",
 		reflect.TypeOf((*DirectLogicMonitorHistoricalDataRetrievalDefaultDuration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directLogicMonitor.DirectLogicMonitorHistoricalDataRetrievalDefaultDurationList",
+		"@cdktn/provider-nobl9.directLogicMonitor.DirectLogicMonitorHistoricalDataRetrievalDefaultDurationList",
 		reflect.TypeOf((*DirectLogicMonitorHistoricalDataRetrievalDefaultDurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -128,12 +131,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalDefaultDurationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directLogicMonitor.DirectLogicMonitorHistoricalDataRetrievalDefaultDurationOutputReference",
+		"@cdktn/provider-nobl9.directLogicMonitor.DirectLogicMonitorHistoricalDataRetrievalDefaultDurationOutputReference",
 		reflect.TypeOf((*DirectLogicMonitorHistoricalDataRetrievalDefaultDurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -164,16 +167,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalDefaultDurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directLogicMonitor.DirectLogicMonitorHistoricalDataRetrievalMaxDuration",
+		"@cdktn/provider-nobl9.directLogicMonitor.DirectLogicMonitorHistoricalDataRetrievalMaxDuration",
 		reflect.TypeOf((*DirectLogicMonitorHistoricalDataRetrievalMaxDuration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directLogicMonitor.DirectLogicMonitorHistoricalDataRetrievalMaxDurationList",
+		"@cdktn/provider-nobl9.directLogicMonitor.DirectLogicMonitorHistoricalDataRetrievalMaxDurationList",
 		reflect.TypeOf((*DirectLogicMonitorHistoricalDataRetrievalMaxDurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -190,12 +193,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalMaxDurationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directLogicMonitor.DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputReference",
+		"@cdktn/provider-nobl9.directLogicMonitor.DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputReference",
 		reflect.TypeOf((*DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -226,12 +229,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directLogicMonitor.DirectLogicMonitorHistoricalDataRetrievalOutputReference",
+		"@cdktn/provider-nobl9.directLogicMonitor.DirectLogicMonitorHistoricalDataRetrievalOutputReference",
 		reflect.TypeOf((*DirectLogicMonitorHistoricalDataRetrievalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -264,16 +267,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directLogicMonitor.DirectLogicMonitorQueryDelay",
+		"@cdktn/provider-nobl9.directLogicMonitor.DirectLogicMonitorQueryDelay",
 		reflect.TypeOf((*DirectLogicMonitorQueryDelay)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directLogicMonitor.DirectLogicMonitorQueryDelayOutputReference",
+		"@cdktn/provider-nobl9.directLogicMonitor.DirectLogicMonitorQueryDelayOutputReference",
 		reflect.TypeOf((*DirectLogicMonitorQueryDelayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -304,7 +307,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectLogicMonitorQueryDelayOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -40,7 +40,7 @@ func (w *jsiiProxy_WafXssMatchSetXssMatchTuplesOutputReference) validateGetStrin
 	return nil
 }
 
-func (w *jsiiProxy_WafXssMatchSetXssMatchTuplesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafXssMatchSetXssMatchTuplesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (w *jsiiProxy_WafXssMatchSetXssMatchTuplesOutputReference) validatePutField
 	return nil
 }
 
-func (w *jsiiProxy_WafXssMatchSetXssMatchTuplesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafXssMatchSetXssMatchTuplesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_WafXssMatchSetXssMatchTuplesOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_WafXssMatchSetXssMatchTuplesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WafXssMatchSetXssMatchTuplesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_WafXssMatchSetXssMatchTuplesOutputReference) validateSetTextT
 	return nil
 }
 
-func validateNewWafXssMatchSetXssMatchTuplesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWafXssMatchSetXssMatchTuplesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 
